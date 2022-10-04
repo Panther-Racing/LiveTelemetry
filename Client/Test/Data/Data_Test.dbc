@@ -1,0 +1,603 @@
+VERSION "100"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: C125
+
+
+BO_ 2636251137 Display_1: 8 C125
+ SG_ G_Force_Lat : 7|16@0- (0.01,0) [-500|500] "G"  Vector__XXX
+ SG_ G_Force_Long : 23|16@0- (0.01,0) [-500|500] "G"  Vector__XXX
+ SG_ Bat_Volts_ECU : 39|16@0- (0.01,0) [800|1500] "V"  Vector__XXX
+ SG_ G_Force_Vert : 55|16@0- (0.01,0) [-500|500] "G"  Vector__XXX
+
+BO_ 2636251138 Display_2: 8 C125
+ SG_ Alternator_Current : 7|16@0- (0.1,0) [0|1000] "A"  Vector__XXX
+ SG_ Gear_Output_Shaft_Speed : 23|16@0- (0.1,0) [0|1333] "rps"  Vector__XXX
+ SG_ Alt_Fuel_Cont_Efficiency : 39|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+ SG_ Drive_Speed : 55|16@0- (0.1,0) [0|3000] "km/h"  Vector__XXX
+
+BO_ 2636251139 Display_3: 8 C125
+ SG_ Ground_Speed : 7|16@0- (0.1,0) [0|3000] "km/h"  Vector__XXX
+ SG_ Alt_Fuel_Pressure_Sensor : 23|16@0- (0.1,0) [0|0] "kPa"  Vector__XXX
+ SG_ Boost_Aim : 39|16@0- (0.1,0) [0|3000] "kPa"  Vector__XXX
+ SG_ Alt_Fuel_Ign_Timing : 55|16@0- (0.1,0) [0|0] "deg"  Vector__XXX
+
+BO_ 2636251140 Display_4: 8 C125
+ SG_ Alt_Fuel_Mix_Aim_Blend : 7|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+ SG_ Alt_Fuel_Ign_Timing_Blend : 23|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+ SG_ Alt_Fuel_Timing_Prim_Blend : 39|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+ SG_ Bat_Volts_Dash : 55|16@0- (0.01,0) [0|0] "V"  Vector__XXX
+
+BO_ 2636251141 Display_5: 8 C125
+ SG_ Gear_Input_Shaft_Speed : 7|16@0- (0.1,0) [0|1333] "rps"  Vector__XXX
+ SG_ Display_Mode_Change : 23|16@0- (1,0) [0|1] ""  Vector__XXX
+ SG_ Alarm_Acknowledge : 39|16@0- (1,0) [0|1] ""  Vector__XXX
+ SG_ Display_Next_Line : 55|16@0- (1,0) [0|1] ""  Vector__XXX
+
+BO_ 2636251142 Display_6: 6 C125
+ SG_ Alt_Fuel_Timing_Sec_Blend : 7|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+ SG_ GPS_Sats_Used : 23|32@0- (1,0) [0|15] ""  Vector__XXX
+
+BO_ 2636251143 Display_7: 8 C125
+ SG_ GPS_Altitude : 7|32@0- (0.1,0) [0|0] "m"  Vector__XXX
+ SG_ GPS_Latitude : 39|32@0- (1E-07,0) [0|0] "deg"  Vector__XXX
+
+BO_ 2636251144 Display_8: 8 C125
+ SG_ GPS_Longitude : 7|32@0- (1E-07,0) [0|0] "deg"  Vector__XXX
+ SG_ GPS_Heading : 39|32@0- (0.01,0) [0|0] "deg"  Vector__XXX
+
+BO_ 2636251145 Display_9: 8 C125
+ SG_ GPS_Time : 7|32@0- (0.001,0) [0|0] ""  Vector__XXX
+ SG_ GPS_Date : 39|32@0- (1,0) [0|0] ""  Vector__XXX
+
+BO_ 2636251146 Display_10: 8 C125
+ SG_ GPS_Speed : 7|32@0- (0.1,0) [0|0] "km/h"  Vector__XXX
+ SG_ Comms_RS2322_Diag : 39|16@0- (1,0) [0|1024] ""  Vector__XXX
+ SG_ Airbox_Mass_Flow : 55|16@0- (0.1,0) [0|3000] "g/s"  Vector__XXX
+
+BO_ 2636251147 Display_11: 8 C125
+ SG_ Alt_Fuel_Timing_Prim : 7|16@0- (0.1,0) [0|0] "deg"  Vector__XXX
+ SG_ Gear : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Alt_Fuel_Timing_Sec : 39|16@0- (0.1,0) [0|0] "deg"  Vector__XXX
+ SG_ Alt_Fuel_Mix_Aim : 55|16@0- (0.01,0) [0|0] "LA"  Vector__XXX
+
+BO_ 2636251148 Display_12: 8 C125
+ SG_ Brake_Temp_FL : 7|16@0- (1,0) [0|1000] "C"  Vector__XXX
+ SG_ Brake_Temp_FR : 23|16@0- (1,0) [0|1000] "C"  Vector__XXX
+ SG_ Brake_Temp_RL : 39|16@0- (1,0) [0|1000] "C"  Vector__XXX
+ SG_ Brake_Temp_RR : 55|16@0- (1,0) [0|1000] "C"  Vector__XXX
+
+BO_ 2636251149 Display_13: 8 C125
+ SG_ Alt_Fuel_Temperature : 7|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+ SG_ CAN_Comms_Diag_0x640 : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ CAN_Comms_Diag_0x650 : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Mixture_Aim : 55|16@0- (0.01,0) [0|0] "LA"  Vector__XXX
+
+BO_ 2636251150 Display_14: 8 C125
+ SG_ Fuel_Pressure_Sensor : 7|16@0- (0.1,0) [0|0] "kPa"  Vector__XXX
+ SG_ Ignition_Cyl_1_Knock_Level : 23|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Ignition_Cyl_2_Knock_Level : 39|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Ignition_Cyl_3_Knock_Level : 55|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+
+BO_ 2636251151 Display_15: 8 C125
+ SG_ Ignition_Cyl_4_Knock_Level : 7|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Ignition_Cyl_5_Knock_Level : 23|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Engine_Efficiency : 39|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Fuel_Output_Cut_Average : 55|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+
+BO_ 2636251152 Display_16: 8 C125
+ SG_ Ignition_Cut_State : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Boost_Pressure : 23|16@0- (0.1,0) [0|0] "kPa"  Vector__XXX
+ SG_ Boost_Actuator_Duty_Cycle : 39|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Exhaust_Camshaft_Aim : 55|16@0- (0.1,0) [0|0] "deg"  Vector__XXX
+
+BO_ 2636251153 Display_17: 8 C125
+ SG_ Exhaust_Camshaft_Bank1_Pos : 7|16@0- (0.1,0) [0|0] "deg"  Vector__XXX
+ SG_ Exhaust_Camshaft_Bank2_Pos : 23|16@0- (0.1,0) [0|0] "deg"  Vector__XXX
+ SG_ Exhaust_Cam_Bank1_Duty_Cycle : 39|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Exhaust_Cam_Bank2_Duty_Cycle : 55|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+
+BO_ 2636251154 Display_18: 8 C125
+ SG_ Ambient_Temperature : 7|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+ SG_ Exhaust_Temperature : 23|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+ SG_ Aux_Output_2_Duty_Cycle : 39|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Ignition_Cyl_1_Trim_Knock : 55|16@0- (0.1,0) [0|0] "deg"  Vector__XXX
+
+BO_ 2636251155 Display_19: 8 C125
+ SG_ Ignition_Cyl_2_Trim_Knock : 7|16@0- (0.1,0) [0|0] "deg"  Vector__XXX
+ SG_ Ignition_Cyl_3_Trim_Knock : 23|16@0- (0.1,0) [0|0] "deg"  Vector__XXX
+ SG_ Ignition_Cyl_4_Trim_Knock : 39|16@0- (0.1,0) [0|0] "deg"  Vector__XXX
+ SG_ Ignition_Cyl_5_Trim_Knock : 55|16@0- (0.1,0) [0|0] "deg"  Vector__XXX
+
+BO_ 2636251156 Display_20: 8 C125
+ SG_ Aux_Output_3_Duty_Cycle : 7|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Aux_Output_4_Duty_Cycle : 23|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Aux_Output_5_Duty_Cycle : 39|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ CAN_Comms_Diag_0x6A0 : 55|16@0- (1,0) [0|0] ""  Vector__XXX
+
+BO_ 2636251157 Display_21: 8 C125
+ SG_ Engine_Speed : 7|16@0- (0.1,0) [0|0] "rps"  Vector__XXX
+ SG_ Engine_Oil_Pressure : 23|16@0- (0.1,0) [0|0] "kPa"  Vector__XXX
+ SG_ Coolant_Pressure : 39|16@0- (0.1,0) [0|0] "kPa"  Vector__XXX
+ SG_ Engine_Crankcase_Pressure : 55|16@0- (0.1,0) [0|0] "kPa"  Vector__XXX
+
+BO_ 2636251158 Display_22: 8 C125
+ SG_ Airbox_Temperature : 7|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+ SG_ Coolant_Temperature : 23|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+ SG_ Fuel_Temperature : 39|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+ SG_ Engine_Oil_Temperature : 55|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+
+BO_ 2636251159 Display_23: 8 C125
+ SG_ Ambient_Pressure : 7|16@0- (0.01,0) [0|0] "kPa"  Vector__XXX
+ SG_ Brake_Pressure_Front : 23|16@0- (1,0) [0|0] "kPa"  Vector__XXX
+ SG_ Brake_Pressure_Rear : 39|16@0- (1,0) [0|0] "kPa"  Vector__XXX
+ SG_ Gear_Lever_Force_Sensor : 55|16@0- (0.01,0) [0|0] "kg"  Vector__XXX
+
+BO_ 2636251160 Display_24: 8 C125
+ SG_ Fuel_Closed_Loop_Diagnostic : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Used_M1 : 23|16@0- (0.01,0) [0|0] "l"  Vector__XXX
+ SG_ Engine_Load : 39|16@0- (1E-06,0) [0|0] "kg"  Vector__XXX
+ SG_ Fuel_Closed_Loop_Ctrl_B1_Trim : 55|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+
+BO_ 2636251161 Display_25: 8 C125
+ SG_ Fuel_Closed_Loop_Ctrl_B2_Trim : 7|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Fuel_Volume : 23|16@0- (1E-06,0) [0|0] "l"  Vector__XXX
+ SG_ Brake_State : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Driver_Switch_1 : 55|16@0- (1,0) [0|0] ""  Vector__XXX
+
+BO_ 2636251162 Display_26: 8 C125
+ SG_ Driver_Switch_2 : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Driver_Switch_3 : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Driver_Switch_4 : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Inj_Primary_Duty_Cycle : 55|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+
+BO_ 2636251163 Display_27: 8 C125
+ SG_ Engine_Run_Switch : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Inj_Sec_Contribution : 23|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+ SG_ Fuel_Pres_Direct : 39|16@0- (1,0) [0|0] "kPa"  Vector__XXX
+ SG_ Fuel_Pres_Direct_Aim : 55|16@0- (1,0) [0|0] "kPa"  Vector__XXX
+
+BO_ 2636251164 Display_28: 8 C125
+ SG_ Fuel_Pres_Direct_Ctrl : 7|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+ SG_ Fuel_Pres_Direct_Ctrl_FF : 23|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+ SG_ Fuel_Pres_Direct_Ctrl_Prop : 39|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+ SG_ Fuel_Pres_Direct_Ctrl_Int : 55|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+
+BO_ 2636251165 Display_29: 8 C125
+ SG_ Fuel_Pres_Direct_B2 : 7|16@0- (1,0) [0|0] "kPa"  Vector__XXX
+ SG_ Fuel_Pres_Direct_B2_Aim : 23|16@0- (1,0) [0|0] "kPa"  Vector__XXX
+ SG_ Fuel_Pres_Direct_B2_Ctrl : 39|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+ SG_ Fuel_Pres_Direct_B2_Ctrl_FF : 55|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+
+BO_ 2636251166 Display_30: 8 C125
+ SG_ Fuel_Pres_Direct_B2_Ctrl_Prop : 7|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+ SG_ Fuel_Pres_Direct_B2_Ctrl_Int : 23|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+ SG_ Fuel_Inj_Primary_Press : 39|16@0- (0.1,0) [0|0] "kPa"  Vector__XXX
+ SG_ Fuel_Inj_Secondary_Press : 55|16@0- (0.1,0) [0|0] "kPa"  Vector__XXX
+
+BO_ 2636251167 Display_31: 8 C125
+ SG_ Driver_Switch_5 : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Driver_Switch_6 : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Inj_Secondary_Duty_Cycle : 39|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Ignition_Cyl_10_Knock_Level : 55|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+
+BO_ 2636251168 Display_32: 8 C125
+ SG_ Ignition_Cyl_11_Knock_Level : 7|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Ignition_Cyl_12_Knock_Level : 23|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Ignition_Cyl_10_Trim_Knock : 39|16@0- (0.1,0) [0|0] "deg"  Vector__XXX
+ SG_ Ignition_Cyl_11_Trim_Knock : 55|16@0- (0.1,0) [0|0] "deg"  Vector__XXX
+
+BO_ 2636251169 Display_33: 8 C125
+ SG_ Ignition_Cyl_12_Trim_Knock : 7|16@0- (0.1,0) [0|0] "deg"  Vector__XXX
+ SG_ Exhaust_Pressure_Bank_1 : 23|16@0- (0.1,0) [0|2000] "kPa"  Vector__XXX
+ SG_ Exhaust_Pressure_Bank_2 : 39|16@0- (0.1,0) [0|2000] "kPa"  Vector__XXX
+ SG_ Fuel_Cyl1_Prim_Pulse_Width_1 : 55|16@0- (1E-06,0) [0|0] "s"  Vector__XXX
+
+BO_ 2636251170 Display_34: 8 C125
+ SG_ Engine_Speed_Limit : 7|16@0- (0.1,0) [0|0] "rps"  Vector__XXX
+ SG_ Exhaust_Lambda : 23|16@0- (0.01,0) [0|0] "LA"  Vector__XXX
+ SG_ Exhaust_Lambda_Bank_1 : 39|16@0- (0.01,0) [0|0] "LA"  Vector__XXX
+ SG_ Exhaust_Lambda_Bank_2 : 55|16@0- (0.01,0) [0|0] "LA"  Vector__XXX
+
+BO_ 2636251171 Display_35: 8 C125
+ SG_ Driver_Switch_7 : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Driver_Switch_8 : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Aux_Output_1_Duty_Cycle : 39|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+ SG_ Fuel_Composition : 55|16@0- (0.001,0) [0|1000] "ratio"  Vector__XXX
+
+BO_ 2636251172 Display_36: 8 C125
+ SG_ Alt_Fuel_Pump_Active : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Exhaust_Temp_Bank_1 : 23|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+ SG_ Alt_Fuel_Press_Warning : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Timing_Primary : 55|16@0- (0.1,0) [0|10000] "deg"  Vector__XXX
+
+BO_ 2636251173 Display_37: 8 C125
+ SG_ Exhaust_Temp_Bank_2 : 7|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+ SG_ Gear_Detect_Value : 23|16@0- (0.1,0) [0|5000] ""  Vector__XXX
+ SG_ Boost_Limit_Disable_Switch : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Timing_Secondary : 55|16@0- (0.1,0) [0|10000] "deg"  Vector__XXX
+
+BO_ 2636251174 Display_38: 2 C125
+ SG_ Fuel_Tank_Level : 7|16@0- (0.1,0) [0|1500] "l"  Vector__XXX
+
+BO_ 2636251175 Display_39: 8 C125
+ SG_ Brightness_Switch : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Output_Cut_Count : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Engine_Run_Time : 39|16@0- (1,0) [0|0] "s"  Vector__XXX
+ SG_ ECU_Uptime : 55|16@0- (1,0) [0|0] "s"  Vector__XXX
+
+BO_ 2636251176 Display_40: 8 C125
+ SG_ Coolant_Temperature_Warning : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Coolant_Pressure_Warning : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Engine_Speed_Warning : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Engine_Oil_Temp_Warning : 55|16@0- (1,0) [0|0] ""  Vector__XXX
+
+BO_ 2636251177 Display_41: 8 C125
+ SG_ Engine_Oil_Pressure_Warning : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Crankcase_Pressure_Warning : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Pressure_Warning : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Engine_OilPressure_Low_Switch : 55|16@0- (1,0) [0|0] ""  Vector__XXX
+
+BO_ 2636251178 Display_42: 8 C125
+ SG_ Anti_Lag_Switch : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Engine_State : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Pump_State : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Boost_Aim_State : 55|16@0- (1,0) [0|0] ""  Vector__XXX
+
+BO_ 2636251179 Display_43: 8 C125
+ SG_ Engine_Overrun_State : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Cut_State : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Purge_State : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Engine_Load_Average : 55|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+
+BO_ 2636251180 Display_44: 8 C125
+ SG_ Beacon : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Driver_Rotary_Switch_3 : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ _5V_Aux_Supply : 39|16@0- (0.001,0) [4000|6000] "V"  Vector__XXX
+ SG_ _8V_Aux_Supply : 55|16@0- (0.001,0) [7000|9000] "V"  Vector__XXX
+
+BO_ 2636251181 Display_45: 8 C125
+ SG_ Driver_Rotary_Switch_5 : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Driver_Rotary_Switch_6 : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Anti_Lag_State : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ CPU_Usage : 55|16@0- (0.001,0) [0|0] "ratio"  Vector__XXX
+
+BO_ 2636251182 Display_46: 8 C125
+ SG_ Gear_Neutral_Switch : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Driver_Rotary_Switch_7 : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Driver_Rotary_Switch_8 : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Differential_Temperature : 55|16@0- (0.1,0) [0|1500] "C"  Vector__XXX
+
+BO_ 2636251183 Display_47: 8 C125
+ SG_ Alt_Fuel_Mode : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Comp_Sensor_Diag : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Driver_Rotary_Switch_1 : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Flow : 55|16@0- (0.01,0) [0|0] "cc/s"  Vector__XXX
+
+BO_ 2636251184 Display_48: 8 C125
+ SG_ Engine_Run_Hours_Total : 7|16@0- (0.1,0) [0|0] ""  Vector__XXX
+ SG_ Boost_Control_Diagnostic : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Device_Up_Time : 39|32@0- (0.001,0) [0|0] "s"  Vector__XXX
+
+BO_ 2636251185 Display_49: 8 C125
+ SG_ Anti_Lag_Diagnostic : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Engine_Speed_Limit_State : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Dash_Temp : 39|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+ SG_ Driver_Rotary_Switch_2 : 55|16@0- (1,0) [0|0] ""  Vector__XXX
+
+BO_ 2636251186 Display_50: 8 C125
+ SG_ Engine_Speed_Reference_State : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Driver_Rotary_Switch_4 : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Closed_Loop_State : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Alt_Fuel_Pump_State : 55|16@0- (1,0) [0|0] ""  Vector__XXX
+
+BO_ 2636251187 Display_51: 2 C125
+ SG_ Fuel_State : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+
+BO_ 2636251188 Alarm_Message: 8 C125
+ SG_ Alarm_Message : 7|64@0+ (0,0) [0|0] ""  Vector__XXX
+
+BO_ 2636251189 Alarm_Value: 8 C125
+ SG_ Alarm_Value : 7|64@0+ (0,0) [0|0] ""  Vector__XXX
+
+BO_ 2636251190 Alarm_Status: 2 C125
+ SG_ Alarm_Active : 7|8@0+ (0,0) [0|0] ""  Vector__XXX
+ SG_ Alarm_Flash : 15|8@0+ (0,0) [0|0] ""  Vector__XXX
+
+BO_ 2636251136 CRC32: 4 C125
+ SG_ CRC32 : 7|32@0+ (1,0) [0|0] ""  Vector__XXX
+
+
+
+BA_DEF_  "MoTeC_CRC" INT 0 0;
+BA_DEF_ SG_  "MoTeC_Type" ENUM  "Number","Compound_String";
+BA_DEF_ SG_  "MoTeC_Usage" ENUM  "General","CRC32","Alarm_Message","Alarm_Value","Alarm_Active_State","Alarm_Flash_State";
+BA_DEF_ SG_  "MoTeC_Channel" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_DEF_  "MoTeC_CRC" 1148533233;
+BA_DEF_DEF_  "MoTeC_Type" "Number";
+BA_DEF_DEF_  "MoTeC_Usage" "General";
+BA_DEF_DEF_  "MoTeC_Channel" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 50;
+BA_ "GenMsgCycleTime" BO_ 2636251137 50;
+BA_ "GenMsgCycleTime" BO_ 2636251138 50;
+BA_ "GenMsgCycleTime" BO_ 2636251139 50;
+BA_ "GenMsgCycleTime" BO_ 2636251140 50;
+BA_ "GenMsgCycleTime" BO_ 2636251141 50;
+BA_ "GenMsgCycleTime" BO_ 2636251142 50;
+BA_ "GenMsgCycleTime" BO_ 2636251143 50;
+BA_ "GenMsgCycleTime" BO_ 2636251144 50;
+BA_ "GenMsgCycleTime" BO_ 2636251145 50;
+BA_ "GenMsgCycleTime" BO_ 2636251146 50;
+BA_ "GenMsgCycleTime" BO_ 2636251147 100;
+BA_ "GenMsgCycleTime" BO_ 2636251148 100;
+BA_ "GenMsgCycleTime" BO_ 2636251149 100;
+BA_ "GenMsgCycleTime" BO_ 2636251150 100;
+BA_ "GenMsgCycleTime" BO_ 2636251151 100;
+BA_ "GenMsgCycleTime" BO_ 2636251152 100;
+BA_ "GenMsgCycleTime" BO_ 2636251153 100;
+BA_ "GenMsgCycleTime" BO_ 2636251154 100;
+BA_ "GenMsgCycleTime" BO_ 2636251155 100;
+BA_ "GenMsgCycleTime" BO_ 2636251156 100;
+BA_ "GenMsgCycleTime" BO_ 2636251157 100;
+BA_ "GenMsgCycleTime" BO_ 2636251158 100;
+BA_ "GenMsgCycleTime" BO_ 2636251159 100;
+BA_ "GenMsgCycleTime" BO_ 2636251160 100;
+BA_ "GenMsgCycleTime" BO_ 2636251161 100;
+BA_ "GenMsgCycleTime" BO_ 2636251162 100;
+BA_ "GenMsgCycleTime" BO_ 2636251163 100;
+BA_ "GenMsgCycleTime" BO_ 2636251164 100;
+BA_ "GenMsgCycleTime" BO_ 2636251165 100;
+BA_ "GenMsgCycleTime" BO_ 2636251166 100;
+BA_ "GenMsgCycleTime" BO_ 2636251167 100;
+BA_ "GenMsgCycleTime" BO_ 2636251168 100;
+BA_ "GenMsgCycleTime" BO_ 2636251169 100;
+BA_ "GenMsgCycleTime" BO_ 2636251170 100;
+BA_ "GenMsgCycleTime" BO_ 2636251171 100;
+BA_ "GenMsgCycleTime" BO_ 2636251172 200;
+BA_ "GenMsgCycleTime" BO_ 2636251173 200;
+BA_ "GenMsgCycleTime" BO_ 2636251174 500;
+BA_ "GenMsgCycleTime" BO_ 2636251175 1000;
+BA_ "GenMsgCycleTime" BO_ 2636251176 1000;
+BA_ "GenMsgCycleTime" BO_ 2636251177 1000;
+BA_ "GenMsgCycleTime" BO_ 2636251178 1000;
+BA_ "GenMsgCycleTime" BO_ 2636251179 1000;
+BA_ "GenMsgCycleTime" BO_ 2636251180 1000;
+BA_ "GenMsgCycleTime" BO_ 2636251181 1000;
+BA_ "GenMsgCycleTime" BO_ 2636251182 1000;
+BA_ "GenMsgCycleTime" BO_ 2636251183 1000;
+BA_ "GenMsgCycleTime" BO_ 2636251184 1000;
+BA_ "GenMsgCycleTime" BO_ 2636251185 1000;
+BA_ "GenMsgCycleTime" BO_ 2636251186 1000;
+BA_ "GenMsgCycleTime" BO_ 2636251187 1000;
+BA_ "GenMsgCycleTime" BO_ 2636251188 50;
+BA_ "GenMsgCycleTime" BO_ 2636251189 50;
+BA_ "GenMsgCycleTime" BO_ 2636251190 50;
+BA_ "GenMsgCycleTime" BO_ 2636251136 1000;
+BA_ "MoTeC_Channel" SG_ 2636251137 G_Force_Lat "G Force Lat";
+BA_ "MoTeC_Channel" SG_ 2636251137 G_Force_Long "G Force Long";
+BA_ "MoTeC_Channel" SG_ 2636251137 Bat_Volts_ECU "Bat Volts ECU";
+BA_ "MoTeC_Channel" SG_ 2636251137 G_Force_Vert "G Force Vert";
+BA_ "MoTeC_Channel" SG_ 2636251138 Alternator_Current "Alternator Current";
+BA_ "MoTeC_Channel" SG_ 2636251138 Gear_Output_Shaft_Speed "Gear Output Shaft Speed";
+BA_ "MoTeC_Channel" SG_ 2636251138 Alt_Fuel_Cont_Efficiency "Alt Fuel Cont Efficiency";
+BA_ "MoTeC_Channel" SG_ 2636251138 Drive_Speed "Drive Speed";
+BA_ "MoTeC_Channel" SG_ 2636251139 Ground_Speed "Ground Speed";
+BA_ "MoTeC_Channel" SG_ 2636251139 Alt_Fuel_Pressure_Sensor "Alt Fuel Pressure Sensor";
+BA_ "MoTeC_Channel" SG_ 2636251139 Boost_Aim "Boost Aim";
+BA_ "MoTeC_Channel" SG_ 2636251139 Alt_Fuel_Ign_Timing "Alt Fuel Ign Timing";
+BA_ "MoTeC_Channel" SG_ 2636251140 Alt_Fuel_Mix_Aim_Blend "Alt Fuel Mix Aim Blend";
+BA_ "MoTeC_Channel" SG_ 2636251140 Alt_Fuel_Ign_Timing_Blend "Alt Fuel Ign Timing Blend";
+BA_ "MoTeC_Channel" SG_ 2636251140 Alt_Fuel_Timing_Prim_Blend "Alt Fuel Timing Prim Blend";
+BA_ "MoTeC_Channel" SG_ 2636251140 Bat_Volts_Dash "Bat Volts Dash";
+BA_ "MoTeC_Channel" SG_ 2636251141 Gear_Input_Shaft_Speed "Gear Input Shaft Speed";
+BA_ "MoTeC_Channel" SG_ 2636251141 Display_Mode_Change "Display Mode Change";
+BA_ "MoTeC_Channel" SG_ 2636251141 Alarm_Acknowledge "Alarm Acknowledge";
+BA_ "MoTeC_Channel" SG_ 2636251141 Display_Next_Line "Display Next Line";
+BA_ "MoTeC_Channel" SG_ 2636251142 Alt_Fuel_Timing_Sec_Blend "Alt Fuel Timing Sec Blend";
+BA_ "MoTeC_Channel" SG_ 2636251142 GPS_Sats_Used "GPS Sats Used";
+BA_ "MoTeC_Channel" SG_ 2636251143 GPS_Altitude "GPS Altitude";
+BA_ "MoTeC_Channel" SG_ 2636251143 GPS_Latitude "GPS Latitude";
+BA_ "MoTeC_Channel" SG_ 2636251144 GPS_Longitude "GPS Longitude";
+BA_ "MoTeC_Channel" SG_ 2636251144 GPS_Heading "GPS Heading";
+BA_ "MoTeC_Channel" SG_ 2636251145 GPS_Time "GPS Time";
+BA_ "MoTeC_Channel" SG_ 2636251145 GPS_Date "GPS Date";
+BA_ "MoTeC_Channel" SG_ 2636251146 GPS_Speed "GPS Speed";
+BA_ "MoTeC_Channel" SG_ 2636251146 Comms_RS2322_Diag "Comms RS232-2 Diag";
+BA_ "MoTeC_Channel" SG_ 2636251146 Airbox_Mass_Flow "Airbox Mass Flow";
+BA_ "MoTeC_Channel" SG_ 2636251147 Alt_Fuel_Timing_Prim "Alt Fuel Timing Prim";
+BA_ "MoTeC_Channel" SG_ 2636251147 Gear "Gear";
+BA_ "MoTeC_Channel" SG_ 2636251147 Alt_Fuel_Timing_Sec "Alt Fuel Timing Sec";
+BA_ "MoTeC_Channel" SG_ 2636251147 Alt_Fuel_Mix_Aim "Alt Fuel Mix Aim";
+BA_ "MoTeC_Channel" SG_ 2636251148 Brake_Temp_FL "Brake Temp FL";
+BA_ "MoTeC_Channel" SG_ 2636251148 Brake_Temp_FR "Brake Temp FR";
+BA_ "MoTeC_Channel" SG_ 2636251148 Brake_Temp_RL "Brake Temp RL";
+BA_ "MoTeC_Channel" SG_ 2636251148 Brake_Temp_RR "Brake Temp RR";
+BA_ "MoTeC_Channel" SG_ 2636251149 Alt_Fuel_Temperature "Alt Fuel Temperature";
+BA_ "MoTeC_Channel" SG_ 2636251149 CAN_Comms_Diag_0x640 "CAN Comms Diag 0x640";
+BA_ "MoTeC_Channel" SG_ 2636251149 CAN_Comms_Diag_0x650 "CAN Comms Diag 0x650";
+BA_ "MoTeC_Channel" SG_ 2636251149 Fuel_Mixture_Aim "Fuel Mixture Aim";
+BA_ "MoTeC_Channel" SG_ 2636251150 Fuel_Pressure_Sensor "Fuel Pressure Sensor";
+BA_ "MoTeC_Channel" SG_ 2636251150 Ignition_Cyl_1_Knock_Level "Ignition Cyl 1 Knock Level";
+BA_ "MoTeC_Channel" SG_ 2636251150 Ignition_Cyl_2_Knock_Level "Ignition Cyl 2 Knock Level";
+BA_ "MoTeC_Channel" SG_ 2636251150 Ignition_Cyl_3_Knock_Level "Ignition Cyl 3 Knock Level";
+BA_ "MoTeC_Channel" SG_ 2636251151 Ignition_Cyl_4_Knock_Level "Ignition Cyl 4 Knock Level";
+BA_ "MoTeC_Channel" SG_ 2636251151 Ignition_Cyl_5_Knock_Level "Ignition Cyl 5 Knock Level";
+BA_ "MoTeC_Channel" SG_ 2636251151 Engine_Efficiency "Engine Efficiency";
+BA_ "MoTeC_Channel" SG_ 2636251151 Fuel_Output_Cut_Average "Fuel Output Cut Average";
+BA_ "MoTeC_Channel" SG_ 2636251152 Ignition_Cut_State "Ignition Cut State";
+BA_ "MoTeC_Channel" SG_ 2636251152 Boost_Pressure "Boost Pressure";
+BA_ "MoTeC_Channel" SG_ 2636251152 Boost_Actuator_Duty_Cycle "Boost Actuator Duty Cycle";
+BA_ "MoTeC_Channel" SG_ 2636251152 Exhaust_Camshaft_Aim "Exhaust Camshaft Aim";
+BA_ "MoTeC_Channel" SG_ 2636251153 Exhaust_Camshaft_Bank1_Pos "Exhaust Camshaft Bank1 Pos";
+BA_ "MoTeC_Channel" SG_ 2636251153 Exhaust_Camshaft_Bank2_Pos "Exhaust Camshaft Bank2 Pos";
+BA_ "MoTeC_Channel" SG_ 2636251153 Exhaust_Cam_Bank1_Duty_Cycle "Exhaust Cam Bank1 Duty Cycle";
+BA_ "MoTeC_Channel" SG_ 2636251153 Exhaust_Cam_Bank2_Duty_Cycle "Exhaust Cam Bank2 Duty Cycle";
+BA_ "MoTeC_Channel" SG_ 2636251154 Ambient_Temperature "Ambient Temperature";
+BA_ "MoTeC_Channel" SG_ 2636251154 Exhaust_Temperature "Exhaust Temperature";
+BA_ "MoTeC_Channel" SG_ 2636251154 Aux_Output_2_Duty_Cycle "Aux Output 2 Duty Cycle";
+BA_ "MoTeC_Channel" SG_ 2636251154 Ignition_Cyl_1_Trim_Knock "Ignition Cyl 1 Trim Knock";
+BA_ "MoTeC_Channel" SG_ 2636251155 Ignition_Cyl_2_Trim_Knock "Ignition Cyl 2 Trim Knock";
+BA_ "MoTeC_Channel" SG_ 2636251155 Ignition_Cyl_3_Trim_Knock "Ignition Cyl 3 Trim Knock";
+BA_ "MoTeC_Channel" SG_ 2636251155 Ignition_Cyl_4_Trim_Knock "Ignition Cyl 4 Trim Knock";
+BA_ "MoTeC_Channel" SG_ 2636251155 Ignition_Cyl_5_Trim_Knock "Ignition Cyl 5 Trim Knock";
+BA_ "MoTeC_Channel" SG_ 2636251156 Aux_Output_3_Duty_Cycle "Aux Output 3 Duty Cycle";
+BA_ "MoTeC_Channel" SG_ 2636251156 Aux_Output_4_Duty_Cycle "Aux Output 4 Duty Cycle";
+BA_ "MoTeC_Channel" SG_ 2636251156 Aux_Output_5_Duty_Cycle "Aux Output 5 Duty Cycle";
+BA_ "MoTeC_Channel" SG_ 2636251156 CAN_Comms_Diag_0x6A0 "CAN Comms Diag 0x6A0";
+BA_ "MoTeC_Channel" SG_ 2636251157 Engine_Speed "Engine Speed";
+BA_ "MoTeC_Channel" SG_ 2636251157 Engine_Oil_Pressure "Engine Oil Pressure";
+BA_ "MoTeC_Channel" SG_ 2636251157 Coolant_Pressure "Coolant Pressure";
+BA_ "MoTeC_Channel" SG_ 2636251157 Engine_Crankcase_Pressure "Engine Crankcase Pressure";
+BA_ "MoTeC_Channel" SG_ 2636251158 Airbox_Temperature "Airbox Temperature";
+BA_ "MoTeC_Channel" SG_ 2636251158 Coolant_Temperature "Coolant Temperature";
+BA_ "MoTeC_Channel" SG_ 2636251158 Fuel_Temperature "Fuel Temperature";
+BA_ "MoTeC_Channel" SG_ 2636251158 Engine_Oil_Temperature "Engine Oil Temperature";
+BA_ "MoTeC_Channel" SG_ 2636251159 Ambient_Pressure "Ambient Pressure";
+BA_ "MoTeC_Channel" SG_ 2636251159 Brake_Pressure_Front "Brake Pressure Front";
+BA_ "MoTeC_Channel" SG_ 2636251159 Brake_Pressure_Rear "Brake Pressure Rear";
+BA_ "MoTeC_Channel" SG_ 2636251159 Gear_Lever_Force_Sensor "Gear Lever Force Sensor";
+BA_ "MoTeC_Channel" SG_ 2636251160 Fuel_Closed_Loop_Diagnostic "Fuel Closed Loop Diagnostic";
+BA_ "MoTeC_Channel" SG_ 2636251160 Fuel_Used_M1 "Fuel Used M1";
+BA_ "MoTeC_Channel" SG_ 2636251160 Engine_Load "Engine Load";
+BA_ "MoTeC_Channel" SG_ 2636251160 Fuel_Closed_Loop_Ctrl_B1_Trim "Fuel Closed Loop Ctrl B1 Trim";
+BA_ "MoTeC_Channel" SG_ 2636251161 Fuel_Closed_Loop_Ctrl_B2_Trim "Fuel Closed Loop Ctrl B2 Trim";
+BA_ "MoTeC_Channel" SG_ 2636251161 Fuel_Volume "Fuel Volume";
+BA_ "MoTeC_Channel" SG_ 2636251161 Brake_State "Brake State";
+BA_ "MoTeC_Channel" SG_ 2636251161 Driver_Switch_1 "Driver Switch 1";
+BA_ "MoTeC_Channel" SG_ 2636251162 Driver_Switch_2 "Driver Switch 2";
+BA_ "MoTeC_Channel" SG_ 2636251162 Driver_Switch_3 "Driver Switch 3";
+BA_ "MoTeC_Channel" SG_ 2636251162 Driver_Switch_4 "Driver Switch 4";
+BA_ "MoTeC_Channel" SG_ 2636251162 Fuel_Inj_Primary_Duty_Cycle "Fuel Inj Primary Duty Cycle";
+BA_ "MoTeC_Channel" SG_ 2636251163 Engine_Run_Switch "Engine Run Switch";
+BA_ "MoTeC_Channel" SG_ 2636251163 Fuel_Inj_Sec_Contribution "Fuel Inj Sec Contribution";
+BA_ "MoTeC_Channel" SG_ 2636251163 Fuel_Pres_Direct "Fuel Pres Direct";
+BA_ "MoTeC_Channel" SG_ 2636251163 Fuel_Pres_Direct_Aim "Fuel Pres Direct Aim";
+BA_ "MoTeC_Channel" SG_ 2636251164 Fuel_Pres_Direct_Ctrl "Fuel Pres Direct Ctrl";
+BA_ "MoTeC_Channel" SG_ 2636251164 Fuel_Pres_Direct_Ctrl_FF "Fuel Pres Direct Ctrl FF";
+BA_ "MoTeC_Channel" SG_ 2636251164 Fuel_Pres_Direct_Ctrl_Prop "Fuel Pres Direct Ctrl Prop";
+BA_ "MoTeC_Channel" SG_ 2636251164 Fuel_Pres_Direct_Ctrl_Int "Fuel Pres Direct Ctrl Int";
+BA_ "MoTeC_Channel" SG_ 2636251165 Fuel_Pres_Direct_B2 "Fuel Pres Direct B2";
+BA_ "MoTeC_Channel" SG_ 2636251165 Fuel_Pres_Direct_B2_Aim "Fuel Pres Direct B2 Aim";
+BA_ "MoTeC_Channel" SG_ 2636251165 Fuel_Pres_Direct_B2_Ctrl "Fuel Pres Direct B2 Ctrl";
+BA_ "MoTeC_Channel" SG_ 2636251165 Fuel_Pres_Direct_B2_Ctrl_FF "Fuel Pres Direct B2 Ctrl FF";
+BA_ "MoTeC_Channel" SG_ 2636251166 Fuel_Pres_Direct_B2_Ctrl_Prop "Fuel Pres Direct B2 Ctrl Prop";
+BA_ "MoTeC_Channel" SG_ 2636251166 Fuel_Pres_Direct_B2_Ctrl_Int "Fuel Pres Direct B2 Ctrl Int";
+BA_ "MoTeC_Channel" SG_ 2636251166 Fuel_Inj_Primary_Press "Fuel Inj Primary Press";
+BA_ "MoTeC_Channel" SG_ 2636251166 Fuel_Inj_Secondary_Press "Fuel Inj Secondary Press";
+BA_ "MoTeC_Channel" SG_ 2636251167 Driver_Switch_5 "Driver Switch 5";
+BA_ "MoTeC_Channel" SG_ 2636251167 Driver_Switch_6 "Driver Switch 6";
+BA_ "MoTeC_Channel" SG_ 2636251167 Fuel_Inj_Secondary_Duty_Cycle "Fuel Inj Secondary Duty Cycle";
+BA_ "MoTeC_Channel" SG_ 2636251167 Ignition_Cyl_10_Knock_Level "Ignition Cyl 10 Knock Level";
+BA_ "MoTeC_Channel" SG_ 2636251168 Ignition_Cyl_11_Knock_Level "Ignition Cyl 11 Knock Level";
+BA_ "MoTeC_Channel" SG_ 2636251168 Ignition_Cyl_12_Knock_Level "Ignition Cyl 12 Knock Level";
+BA_ "MoTeC_Channel" SG_ 2636251168 Ignition_Cyl_10_Trim_Knock "Ignition Cyl 10 Trim Knock";
+BA_ "MoTeC_Channel" SG_ 2636251168 Ignition_Cyl_11_Trim_Knock "Ignition Cyl 11 Trim Knock";
+BA_ "MoTeC_Channel" SG_ 2636251169 Ignition_Cyl_12_Trim_Knock "Ignition Cyl 12 Trim Knock";
+BA_ "MoTeC_Channel" SG_ 2636251169 Exhaust_Pressure_Bank_1 "Exhaust Pressure Bank 1";
+BA_ "MoTeC_Channel" SG_ 2636251169 Exhaust_Pressure_Bank_2 "Exhaust Pressure Bank 2";
+BA_ "MoTeC_Channel" SG_ 2636251169 Fuel_Cyl1_Prim_Pulse_Width_1 "Fuel Cyl1 Prim Pulse Width 1";
+BA_ "MoTeC_Channel" SG_ 2636251170 Engine_Speed_Limit "Engine Speed Limit";
+BA_ "MoTeC_Channel" SG_ 2636251170 Exhaust_Lambda "Exhaust Lambda";
+BA_ "MoTeC_Channel" SG_ 2636251170 Exhaust_Lambda_Bank_1 "Exhaust Lambda Bank 1";
+BA_ "MoTeC_Channel" SG_ 2636251170 Exhaust_Lambda_Bank_2 "Exhaust Lambda Bank 2";
+BA_ "MoTeC_Channel" SG_ 2636251171 Driver_Switch_7 "Driver Switch 7";
+BA_ "MoTeC_Channel" SG_ 2636251171 Driver_Switch_8 "Driver Switch 8";
+BA_ "MoTeC_Channel" SG_ 2636251171 Aux_Output_1_Duty_Cycle "Aux Output 1 Duty Cycle";
+BA_ "MoTeC_Channel" SG_ 2636251171 Fuel_Composition "Fuel Composition";
+BA_ "MoTeC_Channel" SG_ 2636251172 Alt_Fuel_Pump_Active "Alt Fuel Pump Active";
+BA_ "MoTeC_Channel" SG_ 2636251172 Exhaust_Temp_Bank_1 "Exhaust Temp Bank 1";
+BA_ "MoTeC_Channel" SG_ 2636251172 Alt_Fuel_Press_Warning "Alt Fuel Press Warning";
+BA_ "MoTeC_Channel" SG_ 2636251172 Fuel_Timing_Primary "Fuel Timing Primary";
+BA_ "MoTeC_Channel" SG_ 2636251173 Exhaust_Temp_Bank_2 "Exhaust Temp Bank 2";
+BA_ "MoTeC_Channel" SG_ 2636251173 Gear_Detect_Value "Gear Detect Value";
+BA_ "MoTeC_Channel" SG_ 2636251173 Boost_Limit_Disable_Switch "Boost Limit Disable Switch";
+BA_ "MoTeC_Channel" SG_ 2636251173 Fuel_Timing_Secondary "Fuel Timing Secondary";
+BA_ "MoTeC_Channel" SG_ 2636251174 Fuel_Tank_Level "Fuel Tank Level";
+BA_ "MoTeC_Channel" SG_ 2636251175 Brightness_Switch "Brightness Switch";
+BA_ "MoTeC_Channel" SG_ 2636251175 Fuel_Output_Cut_Count "Fuel Output Cut Count";
+BA_ "MoTeC_Channel" SG_ 2636251175 Engine_Run_Time "Engine Run Time";
+BA_ "MoTeC_Channel" SG_ 2636251175 ECU_Uptime "ECU Uptime";
+BA_ "MoTeC_Channel" SG_ 2636251176 Coolant_Temperature_Warning "Coolant Temperature Warning";
+BA_ "MoTeC_Channel" SG_ 2636251176 Coolant_Pressure_Warning "Coolant Pressure Warning";
+BA_ "MoTeC_Channel" SG_ 2636251176 Engine_Speed_Warning "Engine Speed Warning";
+BA_ "MoTeC_Channel" SG_ 2636251176 Engine_Oil_Temp_Warning "Engine Oil Temp Warning";
+BA_ "MoTeC_Channel" SG_ 2636251177 Engine_Oil_Pressure_Warning "Engine Oil Pressure Warning";
+BA_ "MoTeC_Channel" SG_ 2636251177 Crankcase_Pressure_Warning "Crankcase Pressure Warning";
+BA_ "MoTeC_Channel" SG_ 2636251177 Fuel_Pressure_Warning "Fuel Pressure Warning";
+BA_ "MoTeC_Channel" SG_ 2636251177 Engine_OilPressure_Low_Switch "Engine OilPressure Low Switch";
+BA_ "MoTeC_Channel" SG_ 2636251178 Anti_Lag_Switch "Anti Lag Switch";
+BA_ "MoTeC_Channel" SG_ 2636251178 Engine_State "Engine State";
+BA_ "MoTeC_Channel" SG_ 2636251178 Fuel_Pump_State "Fuel Pump State";
+BA_ "MoTeC_Channel" SG_ 2636251178 Boost_Aim_State "Boost Aim State";
+BA_ "MoTeC_Channel" SG_ 2636251179 Engine_Overrun_State "Engine Overrun State";
+BA_ "MoTeC_Channel" SG_ 2636251179 Fuel_Cut_State "Fuel Cut State";
+BA_ "MoTeC_Channel" SG_ 2636251179 Fuel_Purge_State "Fuel Purge State";
+BA_ "MoTeC_Channel" SG_ 2636251179 Engine_Load_Average "Engine Load Average";
+BA_ "MoTeC_Channel" SG_ 2636251180 Beacon "Beacon";
+BA_ "MoTeC_Channel" SG_ 2636251180 Driver_Rotary_Switch_3 "Driver Rotary Switch 3";
+BA_ "MoTeC_Channel" SG_ 2636251180 _5V_Aux_Supply "5V Aux Supply";
+BA_ "MoTeC_Channel" SG_ 2636251180 _8V_Aux_Supply "8V Aux Supply";
+BA_ "MoTeC_Channel" SG_ 2636251181 Driver_Rotary_Switch_5 "Driver Rotary Switch 5";
+BA_ "MoTeC_Channel" SG_ 2636251181 Driver_Rotary_Switch_6 "Driver Rotary Switch 6";
+BA_ "MoTeC_Channel" SG_ 2636251181 Anti_Lag_State "Anti Lag State";
+BA_ "MoTeC_Channel" SG_ 2636251181 CPU_Usage "CPU Usage";
+BA_ "MoTeC_Channel" SG_ 2636251182 Gear_Neutral_Switch "Gear Neutral Switch";
+BA_ "MoTeC_Channel" SG_ 2636251182 Driver_Rotary_Switch_7 "Driver Rotary Switch 7";
+BA_ "MoTeC_Channel" SG_ 2636251182 Driver_Rotary_Switch_8 "Driver Rotary Switch 8";
+BA_ "MoTeC_Channel" SG_ 2636251182 Differential_Temperature "Differential Temperature";
+BA_ "MoTeC_Channel" SG_ 2636251183 Alt_Fuel_Mode "Alt Fuel Mode";
+BA_ "MoTeC_Channel" SG_ 2636251183 Fuel_Comp_Sensor_Diag "Fuel Comp Sensor Diag";
+BA_ "MoTeC_Channel" SG_ 2636251183 Driver_Rotary_Switch_1 "Driver Rotary Switch 1";
+BA_ "MoTeC_Channel" SG_ 2636251183 Fuel_Flow "Fuel Flow";
+BA_ "MoTeC_Channel" SG_ 2636251184 Engine_Run_Hours_Total "Engine Run Hours Total";
+BA_ "MoTeC_Channel" SG_ 2636251184 Boost_Control_Diagnostic "Boost Control Diagnostic";
+BA_ "MoTeC_Channel" SG_ 2636251184 Device_Up_Time "Device Up Time";
+BA_ "MoTeC_Channel" SG_ 2636251185 Anti_Lag_Diagnostic "Anti Lag Diagnostic";
+BA_ "MoTeC_Channel" SG_ 2636251185 Engine_Speed_Limit_State "Engine Speed Limit State";
+BA_ "MoTeC_Channel" SG_ 2636251185 Dash_Temp "Dash Temp";
+BA_ "MoTeC_Channel" SG_ 2636251185 Driver_Rotary_Switch_2 "Driver Rotary Switch 2";
+BA_ "MoTeC_Channel" SG_ 2636251186 Engine_Speed_Reference_State "Engine Speed Reference State";
+BA_ "MoTeC_Channel" SG_ 2636251186 Driver_Rotary_Switch_4 "Driver Rotary Switch 4";
+BA_ "MoTeC_Channel" SG_ 2636251186 Fuel_Closed_Loop_State "Fuel Closed Loop State";
+BA_ "MoTeC_Channel" SG_ 2636251186 Alt_Fuel_Pump_State "Alt Fuel Pump State";
+BA_ "MoTeC_Channel" SG_ 2636251187 Fuel_State "Fuel State";
+BA_ "MoTeC_Type" SG_ 2636251188 Alarm_Message 1;
+BA_ "MoTeC_Usage" SG_ 2636251188 Alarm_Message 2;
+BA_ "MoTeC_Type" SG_ 2636251189 Alarm_Value 1;
+BA_ "MoTeC_Usage" SG_ 2636251189 Alarm_Value 3;
+BA_ "MoTeC_Usage" SG_ 2636251190 Alarm_Active 4;
+BA_ "MoTeC_Usage" SG_ 2636251190 Alarm_Flash 5;
+BA_ "MoTeC_Usage" SG_ 2636251136 CRC32 1;
