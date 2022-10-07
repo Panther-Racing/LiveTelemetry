@@ -4,6 +4,7 @@ dir_to_ignore/
 .idea*
 desktop.ini
 
+##############################
 # vscode gitignore
 .vscode/*
 !.vscode/settings.json
@@ -17,3 +18,4 @@ desktop.ini
 
 # Built Visual Studio Code Extensions
 *.vsix
+##############################
