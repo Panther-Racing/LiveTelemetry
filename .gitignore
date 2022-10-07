@@ -1,4 +1,0 @@
-# file: ~/.gitignore_global
-dir_to_ignore/
-.DS_Store
-.idea*
