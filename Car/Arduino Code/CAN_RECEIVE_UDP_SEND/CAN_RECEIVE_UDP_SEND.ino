@@ -2,7 +2,7 @@
 //Written by Yahya Farag
 #include <SPI.h>              //Library for using SPI Communication 
 #include <mcp2515.h>          //Library for using CAN Communication (https://github.com/autowp/arduino-mcp2515/)
-#include <Ethernet.h>         //Library for using Ethernet
+#include <Ethernet.h>         //Library for using Ethernet (https://www.arduino.cc/reference/en/libraries/ethernet/)
 #include <EthernetUdp.h>      //Library for sending UDP packets over ethernet
 
 struct can_frame canMsg; // Can message structure for using all CAN functionalities
