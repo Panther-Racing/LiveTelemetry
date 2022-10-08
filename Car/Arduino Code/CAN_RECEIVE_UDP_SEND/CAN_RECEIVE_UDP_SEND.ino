@@ -20,7 +20,7 @@ void setup() {
  while (!Serial);
   Serial.begin(115200);       //begin Serial Monitor at baud rate of 115200
   canInitialize(); //intialize mcp 2515 and CAN bus
-  Ethernet.init(10);  // tie ethernet to pin 10 !!!! Must change interfears witjh MCP board (This shpuld be moved into udpInitalize() once resolved)
+  Ethernet.init(9);  // tie ethernet to pin 10 !!!! Must change interfears witjh MCP board (This shpuld be moved into udpInitalize() once resolved)
   udpInitialize(); // Initialize udp and ethernet functionalities
 }
 void loop() {
