@@ -32,17 +32,13 @@ clientList = []
 # Create 3 datagram sockets, one for car, one for sending to clients, and one for adding new clients
 UDPCarSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
-listenSocket = socket.socket(family=socket.AF_INET, type = socket.SOCK_STREAM)
+listenSocket = socket.socket(family=socket.AF_INET, type = socket.SOCK_DGRAM)
 
 # Bind all sockets to address and ip
 UDPCarSocket.bind((localIP, carPort))
 UDPClientSocket.bind((localIP, clientPort))
 listenSocket.bind((localIP,listenPort))
 
-#Set the listening socket to listen for new requests to be added
-listenSocket.listen()
-#Make the listening socket non-blocking
-listenSocket.setblocking(False)
 #Add listening socket to selector so it creates an interrupt when it recieves data
 sel.register(listenSocket, selectors.EVENT_READ, data=None)
 
