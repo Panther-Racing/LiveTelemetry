@@ -7,13 +7,14 @@ Written By: Raheel Farouk
 '''
 
 import socket
+import time
 
  #Message to send from client, this will be from arduino to the Server
 msgFromClient       = "Hello UDP Server"
 
 bytesToSend         = str.encode(msgFromClient)
 
-serverAddressPort   = (socket.gethostbyname('arfarouk.tplinkdns.com'), 20001)
+serverAddressPort   = (socket.gethostbyname('raheelfarouk.tplinkdns.com'), 20001)
 
 bufferSize          = 1024
 
@@ -24,10 +25,10 @@ bufferSize          = 1024
 UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 
  
-
-# Send to server using created UDP socket
-
-UDPClientSocket.sendto(bytesToSend, serverAddressPort)
+while True:
+    # Send to server using created UDP socket
+    UDPClientSocket.sendto(bytesToSend, serverAddressPort)
+    time.sleep(0.01)
 
  
 
