@@ -32,7 +32,7 @@ clientList = []
 # Create 3 datagram sockets, one for car, one for sending to clients, and one for adding new clients
 UDPCarSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
-listenSocket = socket.socket(family=socket.AF_INET, type = socket.SOCK_DGRAM)
+listenSocket = socket.socket(family=socket.AF_INET, type = socket.SOCK_STREAM)
 
 # Bind all sockets to address and ip
 UDPCarSocket.bind((localIP, carPort))
@@ -77,10 +77,11 @@ def data_handler(key):
     data.inb += carMsg
 
     # Add newline to end of car data
-    carMsg += "\n"
+    carMsgString = carMsg.decode("utf-8")
+    carMsgString += "\n"
 
     # Encode the car data
-    bytesToSend = str.encode(carMsg)
+    bytesToSend = str.encode(carMsgString)
 
     for clientAddress in clientList:
         # Sending data to client
