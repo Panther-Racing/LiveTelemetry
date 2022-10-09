@@ -3,6 +3,7 @@
 import socket
 import selectors
 import types
+import time
 
 #Create a selector for handling multiple clients
 sel = selectors.DefaultSelector()
@@ -33,8 +34,10 @@ UDPCarSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 listenSocket = socket.socket(family=socket.AF_INET, type = socket.SOCK_DGRAM)
 
+time.delay(1)
+
 #Set the listening socket to listen for new requests to be added
-listenSocket.listen(100)
+listenSocket.listen()
 #Make the listening socket non-blocking
 listenSocket.setblocking(False)
 #Add listening socket to selector so it creates an interrupt when it recieves data
