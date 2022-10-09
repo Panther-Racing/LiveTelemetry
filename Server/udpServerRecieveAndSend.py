@@ -99,6 +99,7 @@ try:
         for key, mask in events:
             #If key.data is none, then the key is the listenPort and we'll call a function to add it to the client list
             if key.data is None:
+                print("client request received")
                 accept_wrapper(key.fileobj)
             #If key.data is not none, then the event is from the car so run a function to recieve and send out that data
             else:
