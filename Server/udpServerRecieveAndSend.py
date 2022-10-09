@@ -34,7 +34,7 @@ UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 listenSocket = socket.socket(family=socket.AF_INET, type = socket.SOCK_DGRAM)
 
 #Set the listening socket to listen for new requests to be added
-listenSocket.listen()
+listenSocket.listen(100)
 #Make the listening socket non-blocking
 listenSocket.setblocking(False)
 #Add listening socket to selector so it creates an interrupt when it recieves data
