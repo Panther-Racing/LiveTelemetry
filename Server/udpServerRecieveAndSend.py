@@ -34,7 +34,10 @@ UDPCarSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 listenSocket = socket.socket(family=socket.AF_INET, type = socket.SOCK_DGRAM)
 
-time.delay(1)
+# Bind all sockets to address and ip
+UDPCarSocket.bind((localIP, carPort))
+UDPClientSocket.bind((localIP, clientPort))
+listenSocket.bind((localIP,listenPort))
 
 #Set the listening socket to listen for new requests to be added
 listenSocket.listen()
@@ -46,11 +49,6 @@ sel.register(listenSocket, selectors.EVENT_READ, data=None)
 #Add the car socket to the selector
 carData = types.SimpleNamespace(type="car", inb=b"")
 sel.register(UDPCarSocket, selectors.EVENT_READ, data=carData)
-
-
-# Bind both sockets to address and ip
-UDPCarSocket.bind((localIP, carPort))
-UDPClientSocket.bind((localIP, clientPort))
 
 print("UDP server up and listening")
 
