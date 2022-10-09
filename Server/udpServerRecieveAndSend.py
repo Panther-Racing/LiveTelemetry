@@ -2,6 +2,8 @@
 
 import socket
 import selectors
+import types
+import time
 
 #Create a selector for handling multiple clients
 sel = selectors.DefaultSelector()
@@ -13,6 +15,8 @@ localIP     = "192.168.0.150"
 carPort   = 20001
 #Client UDP Port
 clientPort = 20002
+#Create a UDP Port to listen for new client requests
+listenPort = 20003
 #UDP Buffer size maybe? Need to check CHK
 bufferSize  = 1024
 
@@ -21,51 +25,86 @@ bufferSize  = 1024
 msgFromServer       = "Hello UDP Client"
 bytesToSend         = str.encode(msgFromServer)
 
- 
+#Create a list of client addresses to send to
+clientList = []
 
-# Create two datagram sockets, one for car and one for clients
+
+# Create 3 datagram sockets, one for car, one for sending to clients, and one for adding new clients
 UDPCarSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 UDPClientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
+listenSocket = socket.socket(family=socket.AF_INET, type = socket.SOCK_STREAM)
 
- 
-
-# Bind both sockets to address and ip
+# Bind all sockets to address and ip
 UDPCarSocket.bind((localIP, carPort))
 UDPClientSocket.bind((localIP, clientPort))
+listenSocket.bind((localIP,listenPort))
+
+#Set the listening socket to listen for new requests to be added
+listenSocket.listen()
+#Make the listening socket non-blocking
+listenSocket.setblocking(False)
+#Add listening socket to selector so it creates an interrupt when it recieves data
+sel.register(listenSocket, selectors.EVENT_READ, data=None)
+
+#Add the car socket to the selector
+carData = types.SimpleNamespace(type="car", inb=b"")
+sel.register(UDPCarSocket, selectors.EVENT_READ, data=carData)
 
 print("UDP server up and listening")
 
- 
+#Function to get new clients
+def accept_wrapper(sock):
+    #Get message and address from listenSocket
+    newClient = sock.recvfrom(bufferSize)
+    #If client request is valid, add client to clientList, else produce error
+    if newClient[0] == "Add Me":
+        clientList.append(newClient[1])
+        print(f"Accepted connection from {newClient[1]}")
+    else:
+        print("Invalid Client Request")
 
-# Listen for incoming datagrams
-while(True):
-
-    #Listen for incoming requests to be a client
-    clientRequestPackage = UDPClientSocket.recvfrom(bufferSize)
-    # Get address of client
-    clientAddress = clientRequestPackage[1]
-    #Get message from client -- Not really needed
-    clientMsg = clientRequestPackage[0]
-
-    #Listen for incoming data from the car
+#Function to
+def data_handler(key):
+    # Get incoming data from the car
     carDataPackage = UDPCarSocket.recvfrom(bufferSize)
-    #Get address of car -- Not really needed
-    carAddress = carDataPackage[1]
-    #Extract Message from the car
+
+    # Extract Message from the car
     carMsg = carDataPackage[0]
-
-    
-    print("Message from Client:{}".format(clientMsg))
-    print("Client IP Address:{}".format(clientAddress))
     print("Car Data:{}".format(carMsg))
-    print("Car IP Address:{}".format(carAddress))
 
-   
-    #Add newline to end of car data
-    carMsg += "\n"
+    #Add notes for the socket
+    data = key.data
+    data.inb += carMsg
 
-    #Encode the car data
-    bytesToSend = str.encode(carMsg)
+    # Add newline to end of car data
+    carMsgString = carMsg.decode("utf-8")
+    carMsgString += "\n"
 
-    # Sending data to client
-    UDPClientSocket.sendto(bytesToSend, clientAddress)
+    # Encode the car data
+    bytesToSend = str.encode(carMsgString)
+
+    for clientAddress in clientList:
+        # Sending data to client
+        UDPClientSocket.sendto(bytesToSend, clientAddress)
+
+
+#Main program
+try:
+    # Listen for incoming datagrams
+    while(True):
+
+        #Wait for an event (receiving input from or ready to send output to a socket)
+        events = sel.select(timeout=None)
+        #Extract key, which holds the socket object and mask which is an event mask of the operations that are ready
+        for key, mask in events:
+            #If key.data is none, then the key is the listenPort and we'll call a function to add it to the client list
+            if key.data is None:
+                accept_wrapper(key.fileobj)
+            #If key.data is not none, then the event is from the car so run a function to recieve and send out that data
+            else:
+                data_handler(key)
+
+except KeyboardInterrupt:
+    print("Caught Keyboard interrupt, exiting")
+finally:
+    sel.close()
