@@ -83,6 +83,7 @@ def data_handler(key):
     for clientAddress in clientList:
         # Sending data to client
         UDPClientSocket.sendto(bytesToSend, clientAddress)
+        print("Sent car message to:".format(clientAddress))
 
 
 #Main program
