@@ -53,11 +53,12 @@ def accept_wrapper(sock):
     #Get message and address from listenSocket
     newClient = sock.recvfrom(bufferSize)
     #If client request is valid, add client to clientList, else produce error
-    if newClient[0] == "Add Me":
+    if newClient[0] == b'Add Me': #Message that comes from UDP comes in as a byte
         clientList.append(newClient[1])
         print(f"Accepted connection from {newClient[1]}")
     else:
         print("Invalid Client Request")
+        print(f"Client Said: {newClient[0]}")
 
 #Function to
 def data_handler(key):
