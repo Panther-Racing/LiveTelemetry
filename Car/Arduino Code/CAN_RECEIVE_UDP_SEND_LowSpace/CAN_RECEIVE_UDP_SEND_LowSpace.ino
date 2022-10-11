@@ -6,7 +6,7 @@
 #include <EthernetUdp.h>    
 
 struct can_frame canMsg;
-MCP2515 mcp2515(10);                
+MCP2515 mcp2515(8);                
 
 byte mac[] = {0xB8, 0xCA, 0x3A, 0x8B, 0x3B, 0xC6}; 
 

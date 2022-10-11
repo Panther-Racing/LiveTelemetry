@@ -6,7 +6,7 @@
 #include <EthernetUdp.h>      //Library for sending UDP packets over ethernet
 
 struct can_frame canMsg; // Can message structure for using all CAN functionalities
-MCP2515 mcp2515(10);                 // SPI CS Pin 10
+MCP2515 mcp2515(8);                 // SPI CS Pin 10
 
 byte mac[] = {0xB8, 0xCA, 0x3A, 0x8B, 0x3B, 0xC6}; //mac adress of output device
 IPAddress ip(192, 168, 1, 177); //ip adress of output device
@@ -22,6 +22,7 @@ void setup() {
   canInitialize(); //intialize mcp 2515 and CAN bus
   Ethernet.init(9);  // tie ethernet to pin 10 !!!! Must change interfears witjh MCP board (This shpuld be moved into udpInitalize() once resolved)
   udpInitialize(); // Initialize udp and ethernet functionalities
+  Serial.println("Bootup");
 }
 void loop() {
   String tempCANstr = canRead(checkBus(canMsg)); //put CAN message into String to then be given to UDP
