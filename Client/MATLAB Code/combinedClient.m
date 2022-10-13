@@ -20,6 +20,9 @@ udpSocket1 = udpport("byte", "IPV4");
 write(udpSocket1, "Add Me", "string", "raheelfarouk.tplinkdns.com", 20003);
 %write(client,"Add Me")
 
+%Set the CAN Channel online
+start(can1)
+
 while true
     %Read data from UDP Server
     udpData = readline(udpSocket1)
@@ -27,9 +30,6 @@ while true
     %This makes the message to send --
     %pack(message,value,startbit,signalsize,byteorder) 
     pack(messageout,25,0,8,udpData)
-    
-    %Set the CAN Channel online
-    start(can1)
     
     %Send the message, messageout has the data to send
     transmit(can1,messageout)
