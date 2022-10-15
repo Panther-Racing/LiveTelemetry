@@ -42,14 +42,19 @@ void message1() {
   frame.can_id  = 0xE0;
   frame.can_dlc = 8;
 
-  unsigned int bitfield = 010203040506070 << 59;
+  frame.data[0] = 0;
+  frame.data[1] = 1;
+  frame.data[2] = 2;
+  frame.data[3] = 3;
+  frame.data[4] = 4;
+  frame.data[5] = 5;
+  frame.data[6] = 6;
 
-  bitfield |= i;
-  i++;
-
-  mcp2515.sendMessage(&frame);
-  Serial.println("Message Sent");
-  Serial.println(bitfield);
+  for(int i = 0; i < 17; i++){
+    frame.data[7] = i;
+    mcp2515.sendMessage(&frame);
+    Serial.println("Message Sent");
+  }
   //
   //  unsigned int bitfield = digitalRead(PD2);
   //      bitfield |= digitalRead(PD3) << 1;
