@@ -4,7 +4,7 @@ import socket
 
  
 #Change to local IP of server -Future version get this automatically
-localIP     = "192.168.0.150"
+localIP     = "192.168.1.6"
 #local UDP Port
 localPort   = 20001
 #UDP Buffer size maybe? Need to check CHK
