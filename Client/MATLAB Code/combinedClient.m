@@ -34,7 +34,7 @@ while true
     udpData = readline(udpSocket1)
 
     %We need to decode the UDP Packet here
-    canNums = split(udpData, ",")
+    canNums = split(udpData, ",");
     canid = canNums(0)
     canMsgLen = canNums(1)
     canData
