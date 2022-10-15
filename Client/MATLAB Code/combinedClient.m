@@ -34,6 +34,10 @@ while true
     udpData = readline(udpSocket1)
 
     %We need to decode the UDP Packet here
+    canNums = split(udpData, ",")
+    canid = canNums(0)
+    canMsgLen = canNums(1)
+    canData
 
     %This is the message object we are sending to the CAN Bus -- canMessage(CAN ID, Extended, Datalength)
     messageout = canMessage(500,false,8);
