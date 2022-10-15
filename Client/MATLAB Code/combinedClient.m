@@ -1,3 +1,5 @@
+clear;
+
 %--------------------------------------------------------------------------------------
 %Setup Virtual CAN Adapter here
 %--------------------------------------------------------------------------------------
@@ -20,7 +22,7 @@ udpSocket1 = udpport("byte", "IPV4");
 %udpSocket2 = udpport("byte", "IPV4");
 %client = tcpclient("raheelfarouk.tplinkdns.com",20003)
 
-serverAddress = "raheelfarouk.tplinkdns.com";
+serverAddress = "192.168.1.100";
 
 % write to UDP Server
 write(udpSocket1, "Add Me", "string", serverAddress, 20003);
@@ -35,18 +37,17 @@ while true
 
     %We need to decode the UDP Packet here
     canNums = split(udpData, ",")
-    canid = canNums(0)
-    canMsgLen = canNums(1)
-    canData
+    canid = canNums(1)
+    canMsgLen = canNums(2)
 
     %This is the message object we are sending to the CAN Bus -- canMessage(CAN ID, Extended, Datalength)
-    messageout = canMessage(500,false,8);
+%     messageout = canMessage(500,false,8);
 
     %This makes the message to send --
     %pack(message,value,startbit,signalsize,byteorder) 
-    pack(messageout,udpData,0,8,'BigEndian')
+%     pack(messageout,udpData,0,8,'BigEndian')
     
     %Send the message, messageout has the data to send
-    transmit(can1,messageout)
+%     transmit(can1,messageout)
 end
 %--------------------------------------------------------------------------------------

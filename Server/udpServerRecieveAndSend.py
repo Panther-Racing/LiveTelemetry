@@ -7,8 +7,13 @@ import types
 # Create a selector for handling data recieve events
 sel = selectors.DefaultSelector()
 
+'''adding an input box here to get the IP Address from the user'''
+
+localIP = input("Enter the IP Address of the server: ")
+print(localIP, "Is being used")
+
 # Change to local IP of server -Future version get this automatically
-localIP = "192.168.0.150"
+# localIP = "192.168.0.150"
 # Car UDP Port
 carPort = 20001
 # Client UDP Port
