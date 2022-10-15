@@ -37,13 +37,15 @@ while true
 
     %We need to decode the UDP Packet here
     canNums = split(udpData, ",")
-    canid = str2int(canNums(1))
-    canMsgLen = str2int(canNums(2))
+    canid = str2double(canNums(1))
+    canMsgLen = str2double(canNums(2))
     
-    n = 0;
-
+    n = 1;
+    x = 3;
     while n < canMsgLen
-        disp(print)
+        canData = str2double(canNums(x))
+        n= n+1;
+        x = x+1;
     end
     %This is the message object we are sending to the CAN Bus -- canMessage(CAN ID, Extended, Datalength)
 %     messageout = canMessage(500,false,8);
