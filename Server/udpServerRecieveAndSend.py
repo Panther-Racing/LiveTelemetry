@@ -11,7 +11,7 @@ window = tk.TK()
 # Create a selector for handling data receive events
 sel = selectors.DefaultSelector()
 
-'''adding an input box here to get the IP Address from the user'''
+# adding an input box here to get the IP Address from the user
 
 localIP = input("Enter the IP Address of the server: ")
 print(localIP, "Is being used")
