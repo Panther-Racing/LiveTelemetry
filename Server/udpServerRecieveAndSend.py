@@ -6,7 +6,17 @@ import types
 import time
 import tkinter as tk
 
-# window = tk.TK()
+# GUI SETUP:
+
+# Set up GUI window
+window = tk.Tk()
+window.geometry("1600x1000")
+window.title("Server Control Panel")
+startButton = tk.Button(window, text="Start Server", fg='red')
+startButton.place(x=60, y=60)
+window.mainloop()
+
+
 
 # Create a selector for handling data receive events
 sel = selectors.DefaultSelector()

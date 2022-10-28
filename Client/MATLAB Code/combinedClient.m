@@ -22,7 +22,9 @@ udpSocket1 = udpport("byte", "IPV4");
 %udpSocket2 = udpport("byte", "IPV4");
 %client = tcpclient("raheelfarouk.tplinkdns.com",20003)
 
-serverAddress = "192.168.1.100";
+serverAddress = input('Please enter the server address: ','s');
+%serverAddress = "192.168.1.100";
+
 
 % write to UDP Server
 write(udpSocket1, "Add Me", "string", serverAddress, 20003);
