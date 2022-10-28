@@ -6,7 +6,7 @@ import types
 import time
 import tkinter as tk
 
-window = tk.TK()
+# window = tk.TK()
 
 # Create a selector for handling data receive events
 sel = selectors.DefaultSelector()
