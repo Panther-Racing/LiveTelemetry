@@ -4,68 +4,85 @@ import socket
 import selectors
 import types
 import time
-import tkinter as tk
+from tkinter import *
 
-# GUI SETUP:
-
-# Set up GUI window
-window = tk.Tk()
-window.geometry("1600x1000")
-window.title("Server Control Panel")
-startButton = tk.Button(window, text="Start Server", fg='red')
-startButton.place(x=60, y=60)
-window.mainloop()
+# Declare global variables
+numClients = None
+clientList = None
+sel = None
+bufferSize = None
+timeoutTime = None
+clientSocket = None
 
 
+def setup_server():
+    # Declare global variables to ensure they aren't shadowed
+    global numClients
+    global clientList
+    global sel
+    global bufferSize
+    global timeoutTime
+    global clientSocket
 
-# Create a selector for handling data receive events
-sel = selectors.DefaultSelector()
+    # Get the ip address that the user entered in the textbox
+    localIP = ipAddressField.get(index1=1.0, index2="end-1c")
 
-# adding an input box here to get the IP Address from the user
+    # Create a selector for handling data receive events
+    sel = selectors.DefaultSelector()
 
-localIP = input("Enter the IP Address of the server: ")
-print(localIP, "Is being used")
+    # adding an input box here to get the IP Address from the user
 
-# Change to local IP of server -Future version get this automatically
-# localIP = "192.168.0.150"
-# Car UDP Port
-carPort = 20001
-# Client UDP Port
-clientPort = 20003
-# UDP Buffer size maybe? Need to check CHK
-bufferSize = 1024
+    # localIP = input("Enter the IP Address of the server: ")
+    print(localIP, "is being used for ip address")
 
-# Create a list of client addresses to send to
-# Client list will contain tuples, with the first value being client address and second value time joined
-clientList = []
-# Variable to track current number of clients
-numClients = 0
+    # Change to local IP of server -Future version get this automatically
+    # localIP = "192.168.0.150"
+    # Car UDP Port
+    carPort = 20001
+    # Client UDP Port
+    clientPort = 20003
+    # UDP Buffer size maybe? Need to check CHK
+    bufferSize = 1024
 
-# Create a variable for how long before timing out
-timeoutTime = 7200
+    # Create a list of client addresses to send to
+    # Client list will contain tuples, with the first value being client address and second value time joined
+    clientList = []
+    # Variable to track current number of clients
+    numClients = 0
 
-# Create 2 datagram sockets, one for car, one for listening for and sending to clients
-carSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
-clientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
+    # Create a variable for how long before timing out
+    timeoutTime = 7200
 
-# Bind all sockets to address and ip
-carSocket.bind((localIP, carPort))
-clientSocket.bind((localIP, clientPort))
+    # Create 2 datagram sockets, one for car, one for listening for and sending to clients
+    carSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
+    clientSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 
-# Add client socket to selector so an interrupt event is crated when a client tries to join
-# Don't create a data attribute so that it can be told apart from the car socket
-sel.register(clientSocket, selectors.EVENT_READ, data=None)
+    # Bind all sockets to address and ip
+    carSocket.bind((localIP, carPort))
+    clientSocket.bind((localIP, clientPort))
 
-# Create a data attribute to differentiate car events from client events and to log incoming car data
-carData = types.SimpleNamespace(type="car", inb=b"")
-# Add the car socket to the selector so incoming car data creates an interrupt event
-sel.register(carSocket, selectors.EVENT_READ, data=carData)
+    # Add client socket to selector so an interrupt event is crated when a client tries to join
+    # Don't create a data attribute so that it can be told apart from the car socket
+    sel.register(clientSocket, selectors.EVENT_READ, data=None)
 
-print("UDP server up and listening")
+    # Create a data attribute to differentiate car events from client events and to log incoming car data
+    carData = types.SimpleNamespace(type="car", inb=b"")
+    # Add the car socket to the selector so incoming car data creates an interrupt event
+    sel.register(carSocket, selectors.EVENT_READ, data=carData)
+
+    print("UDP server up and listening")
 
 
 # Function to get new clients -- called when clients request to be added
 def accept_wrapper(sock):
+    # Declare global variables to ensure they aren't shadowed
+    global numClients
+    global clientList
+    global sel
+    global bufferSize
+    global timeoutTime
+    global clientSocket
+
     # Get message and address from the clientSocket
     commClient = sock.recvfrom(bufferSize)
     # If client request is valid, add client to clientList, else produce error
@@ -87,6 +104,14 @@ def accept_wrapper(sock):
 
 # Function to remove the client from the client list at index j
 def remove_client(removeAddress):
+    # Declare global variables to ensure they aren't shadowed
+    global numClients
+    global clientList
+    global sel
+    global bufferSize
+    global timeoutTime
+    global clientSocket
+
     # Use the client address to figure out the index number of the client to remove
     i = 0
     global numClients
@@ -101,8 +126,16 @@ def remove_client(removeAddress):
 
 # Function to receive data from car and send it to clients -- called when new car data is received
 def data_handler(key):
+    # Declare global variables to ensure they aren't shadowed
+    global numClients
+    global clientList
+    global sel
+    global bufferSize
+    global timeoutTime
+    global clientSocket
+
     # Get incoming data from the car
-    carDataPackage = carSocket.recvfrom(bufferSize)
+    carDataPackage = key.recvfrom(bufferSize)
 
     # Extract Message from the car data
     carMsg = carDataPackage[0]
@@ -125,37 +158,65 @@ def data_handler(key):
 
 
 # Main program
-try:
-    # Run indefinitely to constantly listen for client requests and car data
-    while (True):
-        # Wait for an event (input has been received on one of the sockets) and never timeout
-        events = sel.select(timeout=None)
+def main_loop():
+    # Declare global variables to ensure they aren't shadowed
+    global numClients
+    global clientList
+    global sel
+    global bufferSize
+    global timeoutTime
+    global clientSocket
 
-        # Check how long each client has been connected and disconnect them if it has been too long
-        current = time.time()
-        for client in clientList:
-            if client[1] - current > timeoutTime:
-                remove_client(client[0])
+    try:
+        # Run indefinitely to constantly listen for client requests and car data
+        while (True):
+            # Wait for an event (input has been received on one of the sockets) and never timeout
+            events = sel.select(timeout=None)
 
-        # Extract key, which holds the socket object that triggered the event, and mask, which is an event mask
-        # of the operations that are ready (if it is a receive or send event - we only use receive events)
-        for key, mask in events:
-            # If key.data is none, then the key is the client (which has no data label)
-            # and we'll call a function to add it to the client list
-            if key.data is None:
-                print("client request received")
-                accept_wrapper(key.fileobj)
-            # If key.data is not none, then the event is from the car so run a function to receive and send out that data
-            else:
-                data_handler(key)
+            # Check how long each client has been connected and disconnect them if it has been too long
+            current = time.time()
+            for client in clientList:
+                if client[1] - current > timeoutTime:
+                    remove_client(client[0])
 
-except KeyboardInterrupt:
-    # If a user on the server interrupts the program, it will stop the infinite loop
-    print("Caught Keyboard interrupt, exiting")
-finally:
-    # The selector will be closed when the program ends
-    sel.close()
+            # Extract key, which holds the socket object that triggered the event, and mask, which is an event mask
+            # of the operations that are ready (if it is a receive or send event - we only use receive events)
+            for key, mask in events:
+                # If key.data is none, then the key is the client (which has no data label)
+                # and we'll call a function to add it to the client list
+                if key.data is None:
+                    print("client request received")
+                    accept_wrapper(key.fileobj)
+                # If key.data is not none, then the event is from the car so run a function to receive and send out
+                # that data
+                else:
+                    data_handler(key)
+
+    except KeyboardInterrupt:
+        # If a user on the server interrupts the program, it will stop the infinite loop
+        print("Caught Keyboard interrupt, exiting")
+    finally:
+        # The selector will be closed when the program ends
+        sel.close()
 
 
 # GUI to Change port, server ip address, timeout, show list of clients connected
 
+# GUI SETUP:
+
+# Set up GUI window
+window = Tk()
+window.geometry("1000x700")
+window.title("Server Control Panel")
+
+# Get the ip address of the server
+promptInput = Label(text="Enter the ip address of the server:", font='Trebuchet')
+ipAddressField = Text(window, height=1, width=20)
+startButton = Button(window, text="Start Server", fg='black', bg='white', activebackground='grey', font='Trebuchet',
+                     command=setup_server)
+
+# Put items on the screen
+promptInput.pack()
+ipAddressField.pack()
+startButton.pack()
+window.mainloop()
