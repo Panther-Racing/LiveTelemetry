@@ -12,7 +12,7 @@ clientList = None
 sel = None
 bufferSize = None
 timeoutTime = None
-clientSocket = None
+localIP = None
 
 
 def setup_server():
@@ -23,9 +23,12 @@ def setup_server():
     global bufferSize
     global timeoutTime
     global clientSocket
+    global localIP
 
-    # Get the ip address that the user entered in the textbox
+    # Get the ip address and ports that the user entered in the textboxes
     localIP = ipAddressField.get(index1=1.0, index2="end-1c")
+    carPort = int(setClientPort.get(index1=1.0, index2="end-1c"))
+    clientPort = int(setCarPort).get(index1=1.0, index2="end-1c")
 
     # Create a selector for handling data receive events
     sel = selectors.DefaultSelector()
@@ -38,9 +41,9 @@ def setup_server():
     # Change to local IP of server -Future version get this automatically
     # localIP = "192.168.0.150"
     # Car UDP Port
-    carPort = 20001
+    # carPort = 20001
     # Client UDP Port
-    clientPort = 20003
+    # clientPort = 20003
     # UDP Buffer size maybe? Need to check CHK
     bufferSize = 1024
 
@@ -73,6 +76,16 @@ def setup_server():
     print("UDP server up and listening")
 
 
+    # Delete all old gui elements
+    promptInput.destroy()
+    ipAddressField.destroy()
+    startButton.destroy()
+    changeClientPort.destroy()
+    changeCarPort.destroy()
+    submitCarChange.destroy()
+    submitClientChange.destroy()
+
+
 # Function to get new clients -- called when clients request to be added
 def accept_wrapper(sock):
     # Declare global variables to ensure they aren't shadowed
@@ -82,6 +95,7 @@ def accept_wrapper(sock):
     global bufferSize
     global timeoutTime
     global clientSocket
+    global localIP
 
     # Get message and address from the clientSocket
     commClient = sock.recvfrom(bufferSize)
@@ -111,6 +125,7 @@ def remove_client(removeAddress):
     global bufferSize
     global timeoutTime
     global clientSocket
+    global localIP
 
     # Use the client address to figure out the index number of the client to remove
     i = 0
@@ -133,6 +148,7 @@ def data_handler(key):
     global bufferSize
     global timeoutTime
     global clientSocket
+    global localIP
 
     # Get incoming data from the car
     carDataPackage = key.recvfrom(bufferSize)
@@ -166,6 +182,7 @@ def main_loop():
     global bufferSize
     global timeoutTime
     global clientSocket
+    global localIP
 
     try:
         # Run indefinitely to constantly listen for client requests and car data
@@ -215,8 +232,16 @@ ipAddressField = Text(window, height=1, width=20)
 startButton = Button(window, text="Start Server", fg='black', bg='white', activebackground='grey', font='Trebuchet',
                      command=setup_server)
 
+#Get the port for the client and car
+setClientPort = Text(window, height=1, width=5)
+setCarPort = Text(window, height=1, width=5)
+
 # Put items on the screen
 promptInput.pack()
 ipAddressField.pack()
+setClientPort.pack()
+setCarPort.pack()
 startButton.pack()
+
+
 window.mainloop()
