@@ -89,7 +89,7 @@ def setup_server():
 
     # Display the server settings
     addressLabel = Label(text=f"IP Address:\t{localIP}")
-    carPortLabel = Label(text=f"Car Port:\t{carPort}")
+    carPortLabel = Label(text=f"Car Port:\t\t{carPort}")
     clientPortLabel = Label(text=f"Client Port:\t{clientPort}")
     addressLabel.grid(row=currentRow)
     currentRow += 1
@@ -262,19 +262,19 @@ window.geometry("1000x700")
 window.title("Server Control Panel")
 
 # Get the ip address of the server
-promptInput = Label(text="Enter the ip address of the server:", font='Trebuchet')
+promptInput = Label(text="Enter the ip address of the server:")
 ipAddressField = Text(window, height=1, width=20)
-startButton = Button(window, text="Start Server", fg='black', bg='white', activebackground='grey', font='Trebuchet',
+startButton = Button(window, text="Start Server", fg='black', bg='white', activebackground='grey',
                      command=setup_server)
 
 # Get the port for the client and car
-promptClientInput = Label(text="Enter the port to use for the client (default = 20003)", font='Trebuchet')
+promptClientInput = Label(text="Enter the port to use for the client (default = 20003)")
 setClientPort = Text(window, height=1, width=5)
-promptCarInput = Label(text="Enter the port to use for the car (default = 20001)", font='Trebuchet')
+promptCarInput = Label(text="Enter the port to use for the car (default = 20001)")
 setCarPort = Text(window, height=1, width=5)
 
 # Create GUI for continuously running server
-packetDisplay = Label(text=f"Packets Handled: {packetsHandled}", font='Trebuchet')
+packetDisplay = Label(text=f"Packets Handled: {packetsHandled}")
 
 # Put items on the screen
 promptInput.grid(row=0, column=0)
