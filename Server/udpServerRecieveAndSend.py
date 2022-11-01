@@ -13,6 +13,8 @@ sel = None
 bufferSize = None
 timeoutTime = None
 localIP = None
+packetsHandled = 0
+currentRow = 0;
 
 
 def setup_server():
@@ -24,11 +26,12 @@ def setup_server():
     global timeoutTime
     global clientSocket
     global localIP
+    global currentRow
 
     # Get the ip address and ports that the user entered in the textboxes
     localIP = ipAddressField.get(index1=1.0, index2="end-1c")
     carPort = int(setClientPort.get(index1=1.0, index2="end-1c"))
-    clientPort = int(setCarPort).get(index1=1.0, index2="end-1c")
+    clientPort = int(setCarPort.get(index1=1.0, index2="end-1c"))
 
     # Create a selector for handling data receive events
     sel = selectors.DefaultSelector()
@@ -36,7 +39,6 @@ def setup_server():
     # adding an input box here to get the IP Address from the user
 
     # localIP = input("Enter the IP Address of the server: ")
-    print(localIP, "is being used for ip address")
 
     # Change to local IP of server -Future version get this automatically
     # localIP = "192.168.0.150"
@@ -73,17 +75,39 @@ def setup_server():
     # Add the car socket to the selector so incoming car data creates an interrupt event
     sel.register(carSocket, selectors.EVENT_READ, data=carData)
 
-    print("UDP server up and listening")
+    print(f"UDP server up and listening at {localIP} on car port {carPort} and client port {clientPort}")
 
 
     # Delete all old gui elements
     promptInput.destroy()
     ipAddressField.destroy()
     startButton.destroy()
-    changeClientPort.destroy()
-    changeCarPort.destroy()
-    submitCarChange.destroy()
-    submitClientChange.destroy()
+    setClientPort.destroy()
+    setCarPort.destroy()
+    promptCarInput.destroy()
+    promptClientInput.destroy()
+
+    # Display the server settings
+    addressLabel = Label(text=f"IP Address:\t{localIP}")
+    carPortLabel = Label(text=f"Car Port:\t{carPort}")
+    clientPortLabel = Label(text=f"Client Port:\t{clientPort}")
+    addressLabel.grid(row=currentRow)
+    currentRow += 1
+    carPortLabel.grid(row=currentRow, pady=5)
+    currentRow += 1
+    clientPortLabel.grid(row=currentRow, pady=5)
+    currentRow += 1
+
+    # Add the new GUI elements to the window
+    packetDisplay.grid(row=currentRow, pady=30)
+    currentRow += 1
+
+    # Create Label for Client List
+    clientListLabel = Label(text="Active Clients:")
+    clientListLabel.grid(row=currentRow, pady=20)
+    currentRow += 1
+
+    main_loop()
 
 
 # Function to get new clients -- called when clients request to be added
@@ -96,6 +120,7 @@ def accept_wrapper(sock):
     global timeoutTime
     global clientSocket
     global localIP
+    global currentRow
 
     # Get message and address from the clientSocket
     commClient = sock.recvfrom(bufferSize)
@@ -126,6 +151,7 @@ def remove_client(removeAddress):
     global timeoutTime
     global clientSocket
     global localIP
+    global currentRow
 
     # Use the client address to figure out the index number of the client to remove
     i = 0
@@ -149,6 +175,7 @@ def data_handler(key):
     global timeoutTime
     global clientSocket
     global localIP
+    global currentRow
 
     # Get incoming data from the car
     carDataPackage = key.recvfrom(bufferSize)
@@ -172,6 +199,10 @@ def data_handler(key):
     for client in clientList:
         clientSocket.sendto(bytesToSend, client[0])
 
+    global packetsHandled
+    packetsHandled += 1
+    packetDisplay.configure(text=f"Packets Handled: {packetsHandled}")
+
 
 # Main program
 def main_loop():
@@ -183,10 +214,14 @@ def main_loop():
     global timeoutTime
     global clientSocket
     global localIP
+    global currentRow
+
+    print("In Main")
 
     try:
         # Run indefinitely to constantly listen for client requests and car data
         while (True):
+            print("Waiting")
             # Wait for an event (input has been received on one of the sockets) and never timeout
             events = sel.select(timeout=None)
 
@@ -217,7 +252,7 @@ def main_loop():
         sel.close()
 
 
-# GUI to Change port, server ip address, timeout, show list of clients connected
+# GUI to show list of clients connected and allow for removal of clients
 
 # GUI SETUP:
 
@@ -232,16 +267,22 @@ ipAddressField = Text(window, height=1, width=20)
 startButton = Button(window, text="Start Server", fg='black', bg='white', activebackground='grey', font='Trebuchet',
                      command=setup_server)
 
-#Get the port for the client and car
+# Get the port for the client and car
+promptClientInput = Label(text="Enter the port to use for the client (default = 20003)", font='Trebuchet')
 setClientPort = Text(window, height=1, width=5)
+promptCarInput = Label(text="Enter the port to use for the car (default = 20001)", font='Trebuchet')
 setCarPort = Text(window, height=1, width=5)
 
-# Put items on the screen
-promptInput.pack()
-ipAddressField.pack()
-setClientPort.pack()
-setCarPort.pack()
-startButton.pack()
+# Create GUI for continuously running server
+packetDisplay = Label(text=f"Packets Handled: {packetsHandled}", font='Trebuchet')
 
+# Put items on the screen
+promptInput.grid(row=0, column=0)
+ipAddressField.grid(row=0, column=1)
+promptClientInput.grid(row=1, column=0)
+setClientPort.grid(row=1, column=1)
+promptCarInput.grid(row=2, column=0)
+setCarPort.grid(row=2, column=1)
+startButton.grid(row=3)
 
 window.mainloop()
