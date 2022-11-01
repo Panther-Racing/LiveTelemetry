@@ -5,16 +5,23 @@ import selectors
 import types
 import time
 from tkinter import *
+import threading
+import sys
 
 # Declare global variables
-numClients = None
-clientList = None
 sel = None
 bufferSize = None
 timeoutTime = None
 localIP = None
 packetsHandled = 0
 currentRow = 0;
+clientLabels = list()
+# Create a list of client addresses to send to
+# Client list will contain tuples, with the first value being client address and second value time joined
+clientList = list()
+# Variable to track current number of clients
+numClients = 0
+removeList = list()
 
 
 def setup_server():
@@ -30,8 +37,8 @@ def setup_server():
 
     # Get the ip address and ports that the user entered in the textboxes
     localIP = ipAddressField.get(index1=1.0, index2="end-1c")
-    carPort = int(setClientPort.get(index1=1.0, index2="end-1c"))
-    clientPort = int(setCarPort.get(index1=1.0, index2="end-1c"))
+    clientPort = int(setClientPort.get(index1=1.0, index2="end-1c"))
+    carPort = int(setCarPort.get(index1=1.0, index2="end-1c"))
 
     # Create a selector for handling data receive events
     sel = selectors.DefaultSelector()
@@ -48,12 +55,6 @@ def setup_server():
     # clientPort = 20003
     # UDP Buffer size maybe? Need to check CHK
     bufferSize = 1024
-
-    # Create a list of client addresses to send to
-    # Client list will contain tuples, with the first value being client address and second value time joined
-    clientList = []
-    # Variable to track current number of clients
-    numClients = 0
 
     # Create a variable for how long before timing out
     timeoutTime = 7200
@@ -77,7 +78,6 @@ def setup_server():
 
     print(f"UDP server up and listening at {localIP} on car port {carPort} and client port {clientPort}")
 
-
     # Delete all old gui elements
     promptInput.destroy()
     ipAddressField.destroy()
@@ -88,9 +88,9 @@ def setup_server():
     promptClientInput.destroy()
 
     # Display the server settings
-    addressLabel = Label(text=f"IP Address:\t{localIP}")
-    carPortLabel = Label(text=f"Car Port:\t\t{carPort}")
-    clientPortLabel = Label(text=f"Client Port:\t{clientPort}")
+    addressLabel = Label(frame, text=f"IP Address:\t{localIP}")
+    carPortLabel = Label(frame, text=f"Car Port:  \t{carPort}")
+    clientPortLabel = Label(frame, text=f"Client Port:\t{clientPort}")
     addressLabel.grid(row=currentRow)
     currentRow += 1
     carPortLabel.grid(row=currentRow, pady=5)
@@ -103,11 +103,11 @@ def setup_server():
     currentRow += 1
 
     # Create Label for Client List
-    clientListLabel = Label(text="Active Clients:")
+    clientListLabel = Label(frame, text="Active Clients:")
     clientListLabel.grid(row=currentRow, pady=20)
     currentRow += 1
 
-    main_loop()
+    listenThread.start()
 
 
 # Function to get new clients -- called when clients request to be added
@@ -128,10 +128,20 @@ def accept_wrapper(sock):
     if commClient[0] == b'Add Me':  # Message that comes from UDP comes in as a byte
         # Add a tuple of the clients address and time added to the client list
         clientList.append((commClient[1], time.time()))
+
+        # Add client to gui
+        clientLabels.append(Label(frame, text=f"Client {numClients + 1}\tAddress: {((clientList[numClients])[0])[0]}   "
+                                              f" \tTime Joined: {(clientList[numClients])[1]}"))
+        removeList.append(Button(frame, text="Start Server", fg='black', bg='white', activebackground='grey',
+                                 command=setup_server))
+        clientLabels[numClients].grid(row=currentRow, column=0)
+        removeList[numClients].grid(row=currentRow, column=1)
+        currentRow += 1
+
         # Increment the number of clients on the server
-        global numClients
         numClients += 1
         print(f"Accepted connection from {commClient[1]} at time {(clientList[numClients - 1])[1]}")
+
     # If client requests to be removed, call remove function to remove them
     elif commClient[0] == b'Remove Me':
         print(f"Requested removal from {commClient[1]}")
@@ -178,7 +188,7 @@ def data_handler(key):
     global currentRow
 
     # Get incoming data from the car
-    carDataPackage = key.recvfrom(bufferSize)
+    carDataPackage = key.fileobj.recvfrom(bufferSize)
 
     # Extract Message from the car data
     carMsg = carDataPackage[0]
@@ -216,12 +226,9 @@ def main_loop():
     global localIP
     global currentRow
 
-    print("In Main")
-
     try:
         # Run indefinitely to constantly listen for client requests and car data
-        while (True):
-            print("Waiting")
+        while True:
             # Wait for an event (input has been received on one of the sockets) and never timeout
             events = sel.select(timeout=None)
 
@@ -252,29 +259,44 @@ def main_loop():
         sel.close()
 
 
+def onFrameConfigure(canvas):
+    # Reset the scroll region to encompass the inner frame
+    canvas.configure(scrollregion=canvas.bbox("all"))
+
+
 # GUI to show list of clients connected and allow for removal of clients
 
 # GUI SETUP:
 
-# Set up GUI window
+# Set up GUI frame in the GUI window
 window = Tk()
 window.geometry("1000x700")
 window.title("Server Control Panel")
 
+# Add scrollbar to frame using canvas
+canvas = Canvas(window, borderwidth=0)
+vsb = Scrollbar(window, orient="vertical", command=canvas.yview)
+canvas.configure(yscrollcommand=vsb.set)
+frame = Frame(canvas)
+vsb.pack(side="right", fill="y")
+canvas.pack(side="left", fill="both", expand=True)
+canvas.create_window((4, 4), window=frame, anchor="nw")
+frame.bind("<Configure>", lambda event, canvas=canvas: onFrameConfigure(canvas))
+
 # Get the ip address of the server
-promptInput = Label(text="Enter the ip address of the server:")
-ipAddressField = Text(window, height=1, width=20)
-startButton = Button(window, text="Start Server", fg='black', bg='white', activebackground='grey',
+promptInput = Label(frame, text="Enter the ip address of the server:")
+ipAddressField = Text(frame, height=1, width=20)
+startButton = Button(frame, text="Start Server", fg='black', bg='white', activebackground='grey',
                      command=setup_server)
 
 # Get the port for the client and car
-promptClientInput = Label(text="Enter the port to use for the client (default = 20003)")
-setClientPort = Text(window, height=1, width=5)
-promptCarInput = Label(text="Enter the port to use for the car (default = 20001)")
-setCarPort = Text(window, height=1, width=5)
+promptClientInput = Label(frame, text="Enter the port to use for the client (default = 20003)")
+setClientPort = Text(frame, height=1, width=5)
+promptCarInput = Label(frame, text="Enter the port to use for the car (default = 20001)")
+setCarPort = Text(frame, height=1, width=5)
 
 # Create GUI for continuously running server
-packetDisplay = Label(text=f"Packets Handled: {packetsHandled}")
+packetDisplay = Label(frame, text=f"Packets Handled: {packetsHandled}")
 
 # Put items on the screen
 promptInput.grid(row=0, column=0)
@@ -285,4 +307,10 @@ promptCarInput.grid(row=2, column=0)
 setCarPort.grid(row=2, column=1)
 startButton.grid(row=3)
 
+# Create thread to listen for car data
+listenThread = threading.Thread(target=main_loop)
+listenThread.daemon = True
+
+# Stop the thread once the window is closed
 window.mainloop()
+sys.exit()
