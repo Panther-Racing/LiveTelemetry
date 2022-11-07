@@ -11,7 +11,7 @@ import sys
 # Declare global variables
 sel = None
 bufferSize = None
-timeoutTime = None
+timeoutTime = 1
 localIP = None
 packetsHandled = 0
 currentRow = 0;
@@ -22,6 +22,8 @@ clientList = list()
 # Variable to track current number of clients
 numClients = 0
 removeList = list()
+clientSocket = None
+timeoutLabel = None
 
 
 def setup_server():
@@ -34,11 +36,14 @@ def setup_server():
     global clientSocket
     global localIP
     global currentRow
+    global timeoutLabel
 
-    # Get the ip address and ports that the user entered in the textboxes
+    # Get the ip address and ports and timeout time that the user entered in the textboxes
     localIP = ipAddressField.get(index1=1.0, index2="end-1c")
     clientPort = int(setClientPort.get(index1=1.0, index2="end-1c"))
     carPort = int(setCarPort.get(index1=1.0, index2="end-1c"))
+    timeoutLabel = Label(frame, text=f"Timeout time: {timeoutTime} seconds")
+    change_timeout()
 
     # Create a selector for handling data receive events
     sel = selectors.DefaultSelector()
@@ -57,7 +62,7 @@ def setup_server():
     bufferSize = 1024
 
     # Create a variable for how long before timing out
-    timeoutTime = 7200
+    # timeoutTime = 7200
 
     # Create 2 datagram sockets, one for car, one for listening for and sending to clients
     carSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
@@ -97,8 +102,18 @@ def setup_server():
     currentRow += 1
     clientPortLabel.grid(row=currentRow, pady=5)
     currentRow += 1
+    timeoutLabel.grid(row=currentRow, pady=5)
+    currentRow += 1
 
-    # Add the new GUI elements to the window
+    # Give the option to change the timeout time
+    changeTimeoutButton = Button(frame, text="Change", fg='black', bg='white', activebackground='grey',
+                                 command=change_timeout)
+    timeoutPrompt.grid(row=currentRow, column=0, pady=5)
+    timeoutInput.grid(row=currentRow, column=1, pady=5)
+    changeTimeoutButton.grid(row=currentRow, column=2, pady=5)
+    currentRow += 1
+
+    # Display the number of packets received
     packetDisplay.grid(row=currentRow, pady=30)
     currentRow += 1
 
@@ -108,6 +123,31 @@ def setup_server():
     currentRow += 1
 
     listenThread.start()
+    timeoutThread.start()
+
+
+# Function to remove clients from the list and GUI given an address
+def remove_client(address):
+    global numClients
+    global clientList
+    global sel
+    global bufferSize
+    global timeoutTime
+    global localIP
+    global currentRow
+
+    i = 0
+    for client in clientList:
+        if address == client[0]:
+            clientList.pop(i)
+            clientLabels[i].destroy()
+            clientLabels.pop(i)
+            removeList[i].destroy()
+            removeList.pop(i)
+            numClients -= 1
+            currentRow -= 1
+            print(f"Removed client at address {(client[0])[0]}")
+        i += 1
 
 
 # Function to get new clients -- called when clients request to be added
@@ -126,14 +166,17 @@ def accept_wrapper(sock):
     commClient = sock.recvfrom(bufferSize)
     # If client request is valid, add client to clientList, else produce error
     if commClient[0] == b'Add Me':  # Message that comes from UDP comes in as a byte
+        # Remove client if it is already in the list (to then re-add it)
+        remove_client(commClient[1])
+
         # Add a tuple of the clients address and time added to the client list
         clientList.append((commClient[1], time.time()))
 
         # Add client to gui
         clientLabels.append(Label(frame, text=f"Client {numClients + 1}\tAddress: {((clientList[numClients])[0])[0]}   "
                                               f" \tTime Joined: {(clientList[numClients])[1]}"))
-        removeList.append(Button(frame, text="Start Server", fg='black', bg='white', activebackground='grey',
-                                 command=setup_server))
+        removeList.append(Button(frame, text="Remove Client", fg='black', bg='white', activebackground='grey',
+                                 command=lambda: remove_client(commClient[1])))
         clientLabels[numClients].grid(row=currentRow, column=0)
         removeList[numClients].grid(row=currentRow, column=1)
         currentRow += 1
@@ -149,30 +192,6 @@ def accept_wrapper(sock):
     else:
         print("Invalid Client Request")
         print(f"Client Said: {commClient[0]}")
-
-
-# Function to remove the client from the client list at index j
-def remove_client(removeAddress):
-    # Declare global variables to ensure they aren't shadowed
-    global numClients
-    global clientList
-    global sel
-    global bufferSize
-    global timeoutTime
-    global clientSocket
-    global localIP
-    global currentRow
-
-    # Use the client address to figure out the index number of the client to remove
-    i = 0
-    global numClients
-    for clients in clientList:
-        if clients[0] == removeAddress:
-            # Remove the proper client and reduce the count of the number of clients
-            clientList.pop(i)
-            numClients -= 1
-        i += 1
-    print(f"Removed client {removeAddress}")
 
 
 # Function to receive data from car and send it to clients -- called when new car data is received
@@ -214,6 +233,25 @@ def data_handler(key):
     packetDisplay.configure(text=f"Packets Handled: {packetsHandled}")
 
 
+# Function to check how long each client has been connected and disconnect them if it has been too long
+def timeout():
+    global clientList
+    global timeoutTime
+    while True:
+        current = time.time()
+        for client in clientList:
+            if (current - client[1]) > timeoutTime:
+                print(f"Client at address {(client[0])[0]} timed out")
+                remove_client(client[0])
+
+
+def change_timeout():
+    global timeoutTime
+    global timeoutLabel
+    timeoutTime = int(timeoutInput.get(index1=1.0, index2="end-1c"))
+    timeoutLabel.configure(text=f"Timeout time: {timeoutTime} seconds")
+
+
 # Main program
 def main_loop():
     # Declare global variables to ensure they aren't shadowed
@@ -231,12 +269,6 @@ def main_loop():
         while True:
             # Wait for an event (input has been received on one of the sockets) and never timeout
             events = sel.select(timeout=None)
-
-            # Check how long each client has been connected and disconnect them if it has been too long
-            current = time.time()
-            for client in clientList:
-                if client[1] - current > timeoutTime:
-                    remove_client(client[0])
 
             # Extract key, which holds the socket object that triggered the event, and mask, which is an event mask
             # of the operations that are ready (if it is a receive or send event - we only use receive events)
@@ -263,8 +295,6 @@ def onFrameConfigure(canvas):
     # Reset the scroll region to encompass the inner frame
     canvas.configure(scrollregion=canvas.bbox("all"))
 
-
-# GUI to show list of clients connected and allow for removal of clients
 
 # GUI SETUP:
 
@@ -295,6 +325,10 @@ setClientPort = Text(frame, height=1, width=5)
 promptCarInput = Label(frame, text="Enter the port to use for the car (default = 20001)")
 setCarPort = Text(frame, height=1, width=5)
 
+# Get the timeout time
+timeoutPrompt = Label(frame, text="Enter the time it takes to timeout (in seconds): ")
+timeoutInput = Text(frame, height=1, width=5)
+
 # Create GUI for continuously running server
 packetDisplay = Label(frame, text=f"Packets Handled: {packetsHandled}")
 
@@ -305,11 +339,17 @@ promptClientInput.grid(row=1, column=0)
 setClientPort.grid(row=1, column=1)
 promptCarInput.grid(row=2, column=0)
 setCarPort.grid(row=2, column=1)
-startButton.grid(row=3)
+timeoutPrompt.grid(row=3, column=0)
+timeoutInput.grid(row=3, column=1)
+startButton.grid(row=4)
 
 # Create thread to listen for car data
 listenThread = threading.Thread(target=main_loop)
 listenThread.daemon = True
+
+# Create a thread to check for timeouts
+timeoutThread = threading.Thread(target=timeout)
+timeoutThread.daemon = True
 
 # Stop the thread once the window is closed
 window.mainloop()
