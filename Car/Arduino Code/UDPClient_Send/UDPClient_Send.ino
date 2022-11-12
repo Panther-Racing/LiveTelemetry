@@ -27,7 +27,7 @@ int counter=0;
 byte mac[] = {
   0xB8, 0xCA, 0x3A, 0x8B, 0x3B, 0xC6
 };
-IPAddress ip(192, 168, 1, 177);
+IPAddress ip(192, 168, 1, 100);
 
 unsigned int localPort = 8888;      // local port to listen on
 
@@ -76,13 +76,13 @@ void setup() {
 void loop() {
   //Serial.println("Beginning of Loop");
   // send a reply to the IP address and port that sent us the packet we received
-  Udp.beginPacket(IPAddress(108,17,70,25), 20001);
+  Udp.beginPacket(ip, 20001);
   //Serial.println("After Begin Packet");
   Udp.write("TEST");
   //Serial.println("After Write");
   Serial.println(Udp.endPacket());
 
-  Udp.beginPacket(IPAddress(108,17,70,25), 20001);
+  Udp.beginPacket(ip, 20001);
   //Serial.println("After Begin Packet");
   String count = "Counter:"+String(counter);
   char Buf[50];
