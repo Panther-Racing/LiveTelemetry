@@ -14,7 +14,7 @@ bufferSize = None
 timeoutTime = 1
 localIP = None
 packetsHandled = 0
-currentRow = 0;
+currentRow = 0
 clientLabels = list()
 # Create a list of client addresses to send to
 # Client list will contain tuples, with the first value being client address and second value time joined
