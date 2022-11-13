@@ -19,7 +19,7 @@ serverSocket.bind((myAddress, serverPort))
 counter = 0
 
 while True:
-    messageToSend = "123456789" + str(counter)
+    messageToSend = "1234567890" + str(counter)
     bytesToSend = str.encode(messageToSend)
     serverSocket.sendto(bytesToSend, serverAddress)
-    counter = (counter + 1) % 16
+    counter = (counter + 1) % 10
