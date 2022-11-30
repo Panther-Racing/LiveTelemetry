@@ -40,10 +40,13 @@ while true
     canid = str2double(canNums(1))
     canMsgLen = str2double(canNums(2))
     
+    messageout = canMessage(canid,false,canMsgLen);
+
     n = 1;
     x = 3;
     while n < canMsgLen
         canData = str2double(canNums(x))
+        pack(messageout,canData,8*(n-1),8,'BigEndian')
         n= n+1;
         x = x+1;
     end
@@ -55,6 +58,6 @@ while true
 %     pack(messageout,udpData,0,8,'BigEndian')
     
     %Send the message, messageout has the data to send
-%     transmit(can1,messageout)
+    transmit(can1,messageout)
 end
 %--------------------------------------------------------------------------------------
