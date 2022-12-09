@@ -40,19 +40,22 @@ def setup():
 
 def data_handler(key):
     global db
+    #Extract the message from the socket
     message = key.fileobj.recvfrom(bufferSize)
+
+    #Seperate CAN message into id and data
     frame_id = message[0:5]
     data = message[5:]
+
     # Decode each incoming message and print it out
     print(db.decode_message(frame_id, data))
 
 
 def main():
     while True:
-        # Wait for an event (input has been received on one of the sockets) and never timeout
+        #Wait for an event (input has been received on one of the sockets) and never timeout
         events = sel.select(timeout=None)
 
-        # Extract key, which holds the socket object that triggered the event, and mask, which is an event mask
-        # of the operations that are ready (if it is a receive or send event - we only use receive events)
+        #Call a function to handle data
         for key, mask in events:
             data_handler(key)
