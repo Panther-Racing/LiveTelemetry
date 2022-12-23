@@ -9,7 +9,8 @@ serverPort = 20001
 
 # Get the current computer's Address and the server's Address
 myAddress = input("Enter the IP Address of this computer: ")
-serverAddress = (input("Enter the IP Address of the server: "), 20001)
+# serverAddress = (input("Enter the IP Address of the server: "), 20001)
+serverAddress = ("litelserver.eastus.cloudapp.azure.com", 20001)
 
 # Create and bind the socket
 serverSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
@@ -23,3 +24,4 @@ while True:
     bytesToSend = str.encode(messageToSend)
     serverSocket.sendto(bytesToSend, serverAddress)
     counter = (counter + 1) % 10
+
