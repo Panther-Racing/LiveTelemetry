@@ -65,7 +65,7 @@ def data_handler(key):
 
     # Extract Message from the car data
     carMsg = carDataPackage[0]
-    print("Car Data:{}".format(carMsg))
+    # print("Car Data:{}".format(carMsg))
 
     # Log received data in notes connected to the car socket
     data = key.data
@@ -81,6 +81,8 @@ def data_handler(key):
     #For each client, send out the received car data
     for clientAddress in clientList:
         clientSocket.sendto(bytesToSend, clientAddress)
+        # print(f'Sent {bytesToSend} to {clientAddress}')
+    # print('Done sending message')
 
 
 # Main program
