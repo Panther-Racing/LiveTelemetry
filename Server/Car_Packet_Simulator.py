@@ -9,8 +9,8 @@ serverPort = 20001
 
 # Get the current computer's Address and the server's Address
 myAddress = input("Enter the IP Address of this computer: ")
-# serverAddress = (input("Enter the IP Address of the server: "), 20001)
-serverAddress = ("litelserver.eastus.cloudapp.azure.com", 20001)
+serverAddress = (input("Enter the IP Address of the server: "), 20001)
+# serverAddress = ("litelserver.eastus.cloudapp.azure.com", 20001)
 
 # Create and bind the socket
 serverSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
@@ -37,8 +37,10 @@ while line:
     # strip removes the newline character from the end of the data
     line = line.strip()
     canID = line[14:23]
+    length = line[36:38]
+    messageData = line[38:63]
     # Create a tuple from the data: (time sent, canID, length, data)
-    dataTuple = (line[0:9], canID.strip(), line[37:38], line[39:63])
+    dataTuple = (line[0:9], canID.strip(), length.strip(), messageData.strip())
     # Append tuple to the data array
     data.append(dataTuple)
     line = f.readline()
@@ -50,12 +52,16 @@ for x in range(7):
 
 # Send the data from the array at the proper time intervals
 previousTime = float(data[0][0])
+# Initialize counter for each message sent
+messageNum = 0
 for element in data:
     currentTime = float(element[0])
     # Delay to be in accordance with the rate that the car sends out data
     time.sleep(currentTime-previousTime)
     previousTime = currentTime
     # Create and encode the message and send it to the server
-    messageToSend = element[1] + ',' + element[2] + ',' + element[3]
+    messageToSend = f'{messageNum},' + element[1] + ',' + element[2] + ',' + element[3]
     bytesToSend = str.encode(messageToSend)
     serverSocket.sendto(bytesToSend, serverAddress)
+    # Increment Counter
+    messageNum += 1
