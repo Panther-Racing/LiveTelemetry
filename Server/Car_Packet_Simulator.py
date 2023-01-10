@@ -9,7 +9,8 @@ serverPort = 20001
 
 # Get the current computer's Address and the server's Address
 myAddress = input("Enter the IP Address of this computer: ")
-serverAddress = (input("Enter the IP Address of the server: "), 20001)
+#serverAddress = (input("Enter the IP Address of the server: "), 20001)
+serverAddress = socket.gethostbyname('litelserver.eastus.cloudapp.azure.com')
 # serverAddress = ("litelserver.eastus.cloudapp.azure.com", 20001)
 
 # Create and bind the socket

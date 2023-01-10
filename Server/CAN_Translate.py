@@ -26,7 +26,8 @@ def setup():
     # Get the address of the computer, what port to be on, and the IP address of the server
     localIP = input("Enter the IP address of this program: ")
     receivePort = 20003
-    serverIP = input('Enter the IP address of the server: ')
+    # serverIP = input('Enter the IP address of the server: ')
+    serverIP = socket.gethostbyname('litelserver.eastus.cloudapp.azure.com')
     # Create the socket
     CANSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
     CANSocket.bind((localIP, receivePort))
