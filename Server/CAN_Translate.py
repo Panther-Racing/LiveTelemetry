@@ -92,7 +92,7 @@ def main():
 
 try:
     main()
-except:
+except KeyboardInterrupt:
     # When program is terminated (keyboard interrupt) ask to be removed from the server
     bytesToSend = str.encode("Remove Me")
     CANSocket.sendto(bytesToSend, (serverIP, receivePort))
