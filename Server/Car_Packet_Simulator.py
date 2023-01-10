@@ -51,12 +51,11 @@ f.close()
 for x in range(7):
     data.pop(0)
 
-# Send the data from the array at the proper time intervals
-previousTime = float(data[0][0])
-# Initialize counter for each message sent
-messageNum = 0
-
 while True:
+    # Send the data from the array at the proper time intervals
+    previousTime = float(data[0][0])
+    # Initialize counter for each message sent
+    messageNum = 0
     for element in data:
         currentTime = float(element[0])
         # Delay to be in accordance with the rate that the car sends out data

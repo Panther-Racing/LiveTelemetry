@@ -75,14 +75,17 @@ def accept_wrapper(sock):
     global carSocket
 
     # Get message and address from the clientSocket
-    newClient = sock.recvfrom(bufferSize)
+    clientMessage = sock.recvfrom(bufferSize)
     # If client request is valid, add client to clientList, else produce error
-    if newClient[0] == b'Add Me':  # Message that comes from UDP comes in as a byte
-        clientList.append(newClient[1])
-        print(f"Accepted connection from {newClient[1]}")
+    if clientMessage[0] == b'Add Me':  # Message that comes from UDP comes in as a byte
+        clientList.append(clientMessage[1])
+        print(f"Accepted connection from {clientMessage[1]}")
+    elif clientMessage[0] == b'Remove Me':
+        clientList.remove(clientMessage[1])
+        print(f"Removed {clientMessage[1]} on request")
     else:
         print("Invalid Client Request")
-        print(f"Client Said: {newClient[0]}")
+        print(f"Client Said: {clientMessage[0]}")
 
 
 # Function to receive data from car and send it to clients -- called when new car data is received
@@ -116,17 +119,6 @@ def data_handler(key):
         clientSocket.sendto(bytesToSend, clientAddress)
         # print(f'Sent {bytesToSend} to {clientAddress}')
     # print('Done sending message')
-
-
-def timeout():
-    global clientList
-    global timeoutTime
-    while True:
-        current = time.time()
-        for client in clientList:
-            if (current - client[1]) > timeoutTime:
-                print(f"Client at address {(client[0])[0]} timed out")
-                remove_client(client[0])
 
 
 def remove_client(address):
@@ -171,11 +163,4 @@ def main_loop():
 
 # Main program
 setup_server()
-# Create thread to listen for car data
-listenThread = threading.Thread(target=main_loop)
-
-# Create a thread to check for timeouts
-timeoutThread = threading.Thread(target=timeout)
-
-listenThread.start()
-# timeoutThread.start()
+main_loop()

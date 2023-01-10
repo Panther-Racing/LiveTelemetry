@@ -17,11 +17,17 @@ import cantools
 sel = None
 db = None
 bufferSize = 1024
+CANSocket = None
+serverIP = None
+receivePort = None
 
 
 def setup():
     global sel
     global db
+    global CANSocket
+    global serverIP
+    global receivePort
     # Connect to server to get CAN data
     # Get the address of the computer, what port to be on, and the IP address of the server
     localIP = input("Enter the IP address of this program: ")
@@ -61,13 +67,16 @@ def data_handler(key):
     message = key.fileobj.recvfrom(bufferSize)[0].decode().strip()
 
     # Seperate CAN message into id and data
-    frame_id = int(message[find_nth(message, ',', 1)+1:find_nth(message, ',', 2)])
+    frame_id = message[find_nth(message, ',', 1)+1:find_nth(message, ',', 2)]
     data = message[find_nth(message, ',', 3)+1:]
     print(frame_id)
     print(data)
 
-    # Decode each incoming message and print it out
-    print(db.decode_message(frame_id, data))
+    try:
+        # Decode each incoming message and print it out
+        print(db.decode_message(frame_id, data))
+    except KeyError as error:
+        print('Key error: %s' % error)
 
 
 def main():
@@ -80,4 +89,11 @@ def main():
         for key, mask in events:
             data_handler(key)
 
-main()
+
+try:
+    main()
+except:
+    # When program is terminated (keyboard interrupt) ask to be removed from the server
+    bytesToSend = str.encode("Add Me")
+    CANSocket.sendto(bytesToSend, (serverIP, receivePort))
+    print(f'Removed from {serverIP}')
