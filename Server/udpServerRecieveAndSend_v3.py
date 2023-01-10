@@ -172,9 +172,7 @@ def main_loop():
 # Main program
 setup_server()
 # Create thread to listen for car data
+listenThread = threading.Thread(target=main_loop)
 
-while True:
-    listenThread = threading.Thread(target=main_loop)
-
-    # Create a thread to check for timeouts
-    timeoutThread = threading.Thread(target=timeout)
+# Create a thread to check for timeouts
+timeoutThread = threading.Thread(target=timeout)
