@@ -9,7 +9,8 @@ sel = selectors.DefaultSelector()
 
 '''adding an input box here to get the IP Address from the user'''
 
-localIP = input("Enter the IP Address of the server: ")
+# localIP = input("Enter the IP Address of the server: ")
+localIP = socket.gethostbyname(socket.gethostname())
 print(localIP, "Is being used")
 
 # Change to local IP of server -Future version get this automatically
