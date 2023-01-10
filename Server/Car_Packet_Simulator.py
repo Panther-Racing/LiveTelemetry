@@ -54,14 +54,16 @@ for x in range(7):
 previousTime = float(data[0][0])
 # Initialize counter for each message sent
 messageNum = 0
-for element in data:
-    currentTime = float(element[0])
-    # Delay to be in accordance with the rate that the car sends out data
-    time.sleep(currentTime-previousTime)
-    previousTime = currentTime
-    # Create and encode the message and send it to the server
-    messageToSend = f'{messageNum},' + element[1] + ',' + element[2] + ',' + element[3]
-    bytesToSend = str.encode(messageToSend)
-    serverSocket.sendto(bytesToSend, serverAddress)
-    # Increment Counter
-    messageNum += 1
+
+while True:
+    for element in data:
+        currentTime = float(element[0])
+        # Delay to be in accordance with the rate that the car sends out data
+        time.sleep(currentTime-previousTime)
+        previousTime = currentTime
+        # Create and encode the message and send it to the server
+        messageToSend = f'{messageNum},' + element[1] + ',' + element[2] + ',' + element[3]
+        bytesToSend = str.encode(messageToSend)
+        serverSocket.sendto(bytesToSend, serverAddress)
+        # Increment Counter
+        messageNum += 1

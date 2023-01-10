@@ -18,15 +18,23 @@ sel = None
 db = None
 bufferSize = 1024
 
+
 def setup():
     global sel
     global db
     # Connect to server to get CAN data
+    # Get the address of the computer, what port to be on, and the IP address of the server
     localIP = input("Enter the IP address of this program: ")
-    receivePort = input("Enter the port of incoming CAN data: ")
+    receivePort = 20003
+    serverIP = input('Enter the IP address of the server: ')
+    # Create the socket
     CANSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
     CANSocket.bind((localIP, receivePort))
-    print(f"UDP server up and listening at {localIP} on port {receivePort}")
+    # Request to be added to the server
+    bytesToSend = str.encode("Add Me")
+    CANSocket.sendto(bytesToSend, (serverIP, receivePort))
+    print(f'Added as client on {serverIP}')
+    print(f'UDP server up and listening at {localIP} on port {receivePort}')
 
     # Create a selector for handling data receive events
     sel = selectors.DefaultSelector()
@@ -38,24 +46,37 @@ def setup():
     db.add_dbc_file('DBC1.dbc')
 
 
+def find_nth(haystack, needle, n):
+    start = haystack.find(needle)
+    while start >= 0 and n > 1:
+        start = haystack.find(needle, start+len(needle))
+        n -= 1
+    return start
+
+
 def data_handler(key):
     global db
-    #Extract the message from the socket
-    message = key.fileobj.recvfrom(bufferSize)
+    # Extract the message from the socket
+    message = key.fileobj.recvfrom(bufferSize)[0].decode().strip()
 
-    #Seperate CAN message into id and data
-    frame_id = message[0:5]
-    data = message[5:]
+    # Seperate CAN message into id and data
+    frame_id = int(message[find_nth(message, ',', 1)+1:find_nth(message, ',', 2)])
+    data = message[find_nth(message, ',', 3)+1:]
+    print(frame_id)
+    print(data)
 
     # Decode each incoming message and print it out
     print(db.decode_message(frame_id, data))
 
 
 def main():
+    setup()
     while True:
-        #Wait for an event (input has been received on one of the sockets) and never timeout
+        # Wait for an event (input has been received on one of the sockets) and never timeout
         events = sel.select(timeout=None)
 
-        #Call a function to handle data
+        # Call a function to handle data
         for key, mask in events:
             data_handler(key)
+
+main()
