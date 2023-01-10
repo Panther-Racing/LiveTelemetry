@@ -177,5 +177,5 @@ listenThread = threading.Thread(target=main_loop)
 # Create a thread to check for timeouts
 timeoutThread = threading.Thread(target=timeout)
 
-while True:
-    pass
+listenThread.start()
+timeoutThread.start()
