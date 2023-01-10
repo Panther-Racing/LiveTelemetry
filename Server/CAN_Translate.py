@@ -94,6 +94,6 @@ try:
     main()
 except:
     # When program is terminated (keyboard interrupt) ask to be removed from the server
-    bytesToSend = str.encode("Add Me")
+    bytesToSend = str.encode("Remove Me")
     CANSocket.sendto(bytesToSend, (serverIP, receivePort))
     print(f'Removed from {serverIP}')

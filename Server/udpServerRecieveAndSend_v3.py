@@ -11,8 +11,6 @@ bufferSize = None
 clientList = None
 clientSocket = None
 carSocket = None
-timeoutTime = None
-
 
 def setup_server():
     global sel
@@ -20,7 +18,6 @@ def setup_server():
     global clientList
     global clientSocket
     global carSocket
-    global timeoutTime
 
     # Create a selector for handling data recieve events
     sel = selectors.DefaultSelector()
@@ -30,9 +27,6 @@ def setup_server():
     # localIP = input("Enter the IP Address of the server: ")
     localIP = socket.gethostbyname(socket.gethostname())
     print(localIP, "Is being used")
-
-    # Enter the time to timeout in seconds:
-    timeoutTime = input('Enter the time for the client to timeout in seconds: ')
 
     # Change to local IP of server -Future version get this automatically
     # localIP = "192.168.0.150"
