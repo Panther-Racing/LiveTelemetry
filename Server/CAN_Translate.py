@@ -20,7 +20,7 @@ bufferSize = 1024
 CANSocket = None
 serverIP = None
 receivePort = None
-
+outfile = open('output.txt', 'a')
 
 def setup():
     global sel
@@ -28,6 +28,7 @@ def setup():
     global CANSocket
     global serverIP
     global receivePort
+    global outfile
     # Connect to server to get CAN data
     # Get the address of the computer, what port to be on, and the IP address of the server
     localIP = input("Enter the IP address of this program: ")
@@ -40,12 +41,15 @@ def setup():
     # Request to be added to the server
     bytesToSend = str.encode("Add Me")
     CANSocket.sendto(bytesToSend, (serverIP, receivePort))
+    outfile.write(f'Added as client on {serverIP}\n')
+    outfile.write(f'UDP server up and listening at {localIP} on port {receivePort}\n')
     print(f'Added as client on {serverIP}')
     print(f'UDP server up and listening at {localIP} on port {receivePort}')
 
     # Create a selector for handling data receive events
     sel = selectors.DefaultSelector()
     sel.register(CANSocket, selectors.EVENT_READ, data=None)
+    outfile.write('Selector created\n')
     print("Selector created")
 
     # Add the DBC file to the CAN reader
@@ -63,23 +67,37 @@ def find_nth(haystack, needle, n):
 
 def data_handler(key):
     global db
+    global outfile
     # Extract the message from the socket
     message = key.fileobj.recvfrom(bufferSize)[0].decode().strip()
 
-    # Seperate CAN message into id and data
-    frame_id = message[find_nth(message, ',', 1)+1:find_nth(message, ',', 2)]
-    data = message[find_nth(message, ',', 3)+1:]
-    print(frame_id)
-    print(data)
+    # Separate CAN message into id and data
+    # Except non hexadecimal values
+    try:
+        frame_id = int(message[find_nth(message, ',', 1)+1:find_nth(message, ',', 2)], 16)
+    except ValueError as error:
+        print('Non hexadecimal frame_id: %s' % error)
+        outfile.write('Non hexadecimal frame_id: %s\n\n' % error)
+        frame_id = 'ERROR'
+
+    data = bytes(message[find_nth(message, ',', 3)+1:], 'utf-8')
+    outfile.write(f'Frame ID: {frame_id}     data: {data}\n\n')
+    print(f'Frame ID: {frame_id}     data: {data}')
 
     try:
         # Decode each incoming message and print it out
+        outfile.write(str(db.decode_message(frame_id, data)))
+        outfile.write('\n\n')
         print(db.decode_message(frame_id, data))
     except KeyError as error:
+        outfile.write('Key error: %s\n\n' % error)
         print('Key error: %s' % error)
 
 
 def main():
+    global outfile
+    outfile.write('NEW INSTANCE')
+    outfile.write('-------------------------------------------------------\n\n\n\n')
     setup()
     while True:
         # Wait for an event (input has been received on one of the sockets) and never timeout
@@ -97,3 +115,4 @@ except KeyboardInterrupt:
     bytesToSend = str.encode("Remove Me")
     CANSocket.sendto(bytesToSend, (serverIP, receivePort))
     print(f'Removed from {serverIP}')
+    outfile.write(f'Removed from {serverIP}\n')
