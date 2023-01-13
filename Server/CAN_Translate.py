@@ -21,6 +21,7 @@ CANSocket = None
 serverIP = None
 receivePort = None
 outfile = open('output.txt', 'a')
+jsonFile = open('forjson.txt', 'a')
 
 def setup():
     global sel
@@ -87,6 +88,8 @@ def data_handler(key):
     try:
         # Decode each incoming message and print it out
         outfile.write(str(db.decode_message(frame_id, data)))
+        jsonFile.write(str(db.decode_message(frame_id, data)))
+        jsonFile.write('\n')
         outfile.write('\n\n')
         print(db.decode_message(frame_id, data))
     except KeyError as error:
