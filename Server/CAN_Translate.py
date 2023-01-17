@@ -5,6 +5,7 @@ import selectors
 import can
 import cantools
 import json
+import time
 
 # import can_decoder
 
@@ -23,6 +24,7 @@ serverIP = None
 receivePort = None
 outfile = open('output.txt', 'a')
 # jsonFile = open('forjson.txt', 'a')
+json_file_name = "json_data.json"
 
 
 def setup():
@@ -59,6 +61,10 @@ def setup():
     db = cantools.database.Database()
     db.add_dbc_file('DBC1.dbc')
 
+    # Reset the json file
+    json_file = open(json_file_name, "w")
+    json_file.write('{}')
+
 
 def find_nth(haystack, needle, n):
     start = haystack.find(needle)
@@ -70,10 +76,17 @@ def find_nth(haystack, needle, n):
 
 # Translate each string from the decoded CAN message into a dictionary and then output that dictionary to the json file
 def to_json(message):
-    with open("json_data.json", "r+") as json_file:
+    with open(json_file_name, "r+") as json_file:
+        # Traverse through the new dictionary and add time stamps
+        for key in message:
+            data_value = message[key]
+            message[key] = (time.time(), data_value)
         json_dict = json.load(json_file)
+        # print(json_dict)
         json_dict.update(message)
-        json_file.seek(0)
+        json_file.close()
+        open(json_file_name, "w").close()
+        json_file = open(json_file_name, "r+")
         json.dump(json_dict, json_file)
 
 
