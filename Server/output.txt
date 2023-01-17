@@ -99471,3 +99471,454 @@ Frame ID: 1631     data: b'00 00 03 E8 04 B0 00 00'
 
 
 Removed from 20.62.162.97
+NEW INSTANCE-------------------------------------------------------
+
+
+
+Added as client on 20.62.162.97
+UDP server up and listening at 10.4.32.244 on port 20003
+Selector created
+Frame ID: 1283     data: b'04 3E 3E 00 00 00 00 00'
+
+Key error: 1283
+
+Frame ID: 1281     data: b'00 00 00 00 00 00 00 00'
+
+Key error: 1281
+
+Frame ID: 1625     data: b'FF FF FF FF 00 00 00 00'
+
+NEW INSTANCE-------------------------------------------------------
+
+
+
+Added as client on 20.62.162.97
+UDP server up and listening at 10.4.32.244 on port 20003
+Selector created
+Frame ID: 1587     data: b'10 00 F0 01 00 00 00 00'
+
+Key error: 1587
+
+Frame ID: 1588     data: b'00 7F FF FF FF 00 00 00'
+
+Key error: 1588
+
+Frame ID: 1589     data: b'7F FF FF FF 01 01 00 00'
+
+Key error: 1589
+
+Frame ID: 1590     data: b'FF FF FF FF 7F FF FF FF'
+
+Key error: 1590
+
+Frame ID: 1872     data: b'FF FF 08 4D 07 EE 07 FD'
+
+Key error: 1872
+
+Frame ID: 1604     data: b'00 00 00 00 00 10 00 00'
+
+NEW INSTANCE-------------------------------------------------------
+
+
+
+Added as client on 20.62.162.97
+UDP server up and listening at 10.4.32.244 on port 20003
+Selector created
+Frame ID: 282     data: b'00 00 00'
+
+NEW INSTANCE-------------------------------------------------------
+
+
+
+Added as client on 20.62.162.97
+UDP server up and listening at 10.4.32.244 on port 20003
+Selector created
+Frame ID: 1600     data: b'00 00 00 00 00 00 03 E8'
+
+NEW INSTANCE-------------------------------------------------------
+
+
+
+Added as client on 20.62.162.97
+UDP server up and listening at 10.4.32.244 on port 20003
+Selector created
+Frame ID: 1590     data: b'FF FF FF FF 7F FF FF FF'
+
+Key error: 1590
+
+Frame ID: 1590     data: b'FF FF FF FF 7F FF FF FF'
+
+Key error: 1590
+
+Frame ID: 1590     data: b'FF FF FF FF 7F FF FF FF'
+
+Key error: 1590
+
+Frame ID: 1590     data: b'FF FF FF FF 7F FF FF FF'
+
+Key error: 1590
+
+Frame ID: 1872     data: b'FF FF 07 F8 08 11 08 39'
+
+Key error: 1872
+
+Frame ID: 1872     data: b'FF FF 07 F8 08 11 08 39'
+
+Key error: 1872
+
+Frame ID: 1872     data: b'FF FF 07 F8 08 11 08 39'
+
+Key error: 1872
+
+Frame ID: 1872     data: b'FF FF 07 F8 08 11 08 39'
+
+Key error: 1872
+
+Frame ID: 1604     data: b'00 00 00 00 00 10 00 00'
+
+NEW INSTANCE-------------------------------------------------------
+
+
+
+Added as client on 20.62.162.97
+UDP server up and listening at 10.4.32.244 on port 20003
+Selector created
+Frame ID: 1608     data: b'00 00 00 00 00 00 00 00'
+
+NEW INSTANCE-------------------------------------------------------
+
+
+
+Added as client on 20.62.162.97
+UDP server up and listening at 10.4.32.244 on port 20003
+Selector created
+Frame ID: 1588     data: b'00 7F FF FF FF 00 00 00'
+
+Key error: 1588
+
+Frame ID: 1588     data: b'00 7F FF FF FF 00 00 00'
+
+Key error: 1588
+
+Frame ID: 1588     data: b'00 7F FF FF FF 00 00 00'
+
+Key error: 1588
+
+Frame ID: 1588     data: b'00 7F FF FF FF 00 00 00'
+
+Key error: 1588
+
+Frame ID: 1588     data: b'00 7F FF FF FF 00 00 00'
+
+Key error: 1588
+
+Frame ID: 1588     data: b'00 7F FF FF FF 00 00 00'
+
+Key error: 1588
+
+Frame ID: 1589     data: b'7F FF FF FF 01 01 00 00'
+
+Key error: 1589
+
+Frame ID: 1589     data: b'7F FF FF FF 01 01 00 00'
+
+Key error: 1589
+
+Frame ID: 1589     data: b'7F FF FF FF 01 01 00 00'
+
+Key error: 1589
+
+Frame ID: 1589     data: b'7F FF FF FF 01 01 00 00'
+
+Key error: 1589
+
+Frame ID: 1589     data: b'7F FF FF FF 01 01 00 00'
+
+Key error: 1589
+
+Frame ID: 1589     data: b'7F FF FF FF 01 01 00 00'
+
+Key error: 1589
+
+Frame ID: 1590     data: b'FF FF FF FF 7F FF FF FF'
+
+Key error: 1590
+
+Frame ID: 1590     data: b'FF FF FF FF 7F FF FF FF'
+
+Key error: 1590
+
+Frame ID: 1590     data: b'FF FF FF FF 7F FF FF FF'
+
+Key error: 1590
+
+Frame ID: 1590     data: b'FF FF FF FF 7F FF FF FF'
+
+Key error: 1590
+
+Frame ID: 1590     data: b'FF FF FF FF 7F FF FF FF'
+
+Key error: 1590
+
+Frame ID: 1590     data: b'FF FF FF FF 7F FF FF FF'
+
+Key error: 1590
+
+Frame ID: 233     data: b'01 FE D1 1F FE FE FE FE'
+
+Key error: 233
+
+Frame ID: 233     data: b'01 FE D1 1F FE FE FE FE'
+
+Key error: 233
+
+Frame ID: 233     data: b'01 FE D1 1F FE FE FE FE'
+
+Key error: 233
+
+Frame ID: 233     data: b'01 FE D1 1F FE FE FE FE'
+
+Key error: 233
+
+Frame ID: 233     data: b'01 FE D1 1F FE FE FE FE'
+
+Key error: 233
+
+Frame ID: 233     data: b'01 FE D1 1F FE FE FE FE'
+
+Key error: 233
+
+Frame ID: 1872     data: b'FF FF 08 22 08 36 07 F6'
+
+Key error: 1872
+
+Frame ID: 1872     data: b'FF FF 08 22 08 36 07 F6'
+
+Key error: 1872
+
+Frame ID: 1872     data: b'FF FF 08 22 08 36 07 F6'
+
+Key error: 1872
+
+Frame ID: 1872     data: b'FF FF 08 22 08 36 07 F6'
+
+Key error: 1872
+
+Frame ID: 1872     data: b'FF FF 08 22 08 36 07 F6'
+
+Key error: 1872
+
+Frame ID: 1872     data: b'FF FF 08 22 08 36 07 F6'
+
+Key error: 1872
+
+Frame ID: 1604     data: b'00 00 00 00 00 10 00 00'
+
+NEW INSTANCE-------------------------------------------------------
+
+
+
+Added as client on 20.62.162.97
+UDP server up and listening at 10.4.32.244 on port 20003
+Selector created
+Frame ID: 280     data: b'00 64 00 00 00 19 00 00'
+
+NEW INSTANCE-------------------------------------------------------
+
+
+
+Added as client on 20.62.162.97
+UDP server up and listening at 10.4.32.244 on port 20003
+Selector created
+Frame ID: 1615     data: b'00 28 C8 C8 FF FF 00 04'
+
+NEW INSTANCE-------------------------------------------------------
+
+
+
+Added as client on 20.62.162.97
+UDP server up and listening at 10.4.32.244 on port 20003
+Selector created
+Frame ID: 1605     data: b'7F FF 00 00 00 00 00 7F'
+
+
+
+Frame ID: 1605     data: b'7F FF 00 00 00 00 00 7F'
+
+NEW INSTANCE-------------------------------------------------------
+
+
+
+Added as client on 20.62.162.97
+UDP server up and listening at 10.4.32.244 on port 20003
+Selector created
+Frame ID: 1285     data: b'00 3C 3D 3B 3B 3B 3B 3B'
+
+Key error: 1285
+
+Frame ID: 1285     data: b'00 3C 3D 3B 3B 3B 3B 3B'
+
+Key error: 1285
+
+Frame ID: 1285     data: b'00 3C 3D 3B 3B 3B 3B 3B'
+
+Key error: 1285
+
+Frame ID: 1285     data: b'00 3C 3D 3B 3B 3B 3B 3B'
+
+Key error: 1285
+
+Frame ID: 1285     data: b'00 3C 3D 3B 3B 3B 3B 3B'
+
+Key error: 1285
+
+Frame ID: 1285     data: b'00 3C 3D 3B 3B 3B 3B 3B'
+
+Key error: 1285
+
+Frame ID: 1285     data: b'00 3C 3D 3B 3B 3B 3B 3B'
+
+Key error: 1285
+
+Frame ID: 1285     data: b'00 3C 3D 3B 3B 3B 3B 3B'
+
+Key error: 1285
+
+Frame ID: 1285     data: b'00 3C 3D 3B 3B 3B 3B 3B'
+
+Key error: 1285
+
+Frame ID: 1285     data: b'00 3C 3D 3B 3B 3B 3B 3B'
+
+Key error: 1285
+
+Frame ID: 42     data: b'01 10 00 00 00 00 C2 00'
+
+Key error: 42
+
+Frame ID: 42     data: b'01 10 00 00 00 00 C2 00'
+
+Key error: 42
+
+Frame ID: 42     data: b'01 10 00 00 00 00 C2 00'
+
+Key error: 42
+
+Frame ID: 42     data: b'01 10 00 00 00 00 C2 00'
+
+Key error: 42
+
+Frame ID: 42     data: b'01 10 00 00 00 00 C2 00'
+
+Key error: 42
+
+Frame ID: 42     data: b'01 10 00 00 00 00 C2 00'
+
+Key error: 42
+
+Frame ID: 42     data: b'01 10 00 00 00 00 C2 00'
+
+Key error: 42
+
+Frame ID: 42     data: b'01 10 00 00 00 00 C2 00'
+
+Key error: 42
+
+Frame ID: 42     data: b'01 10 00 00 00 00 C2 00'
+
+Key error: 42
+
+Frame ID: 42     data: b'01 10 00 00 00 00 C2 00'
+
+Key error: 42
+
+Frame ID: 1280     data: b'10 00 00 00 00 00 00 00'
+
+Key error: 1280
+
+Frame ID: 1280     data: b'10 00 00 00 00 00 00 00'
+
+Key error: 1280
+
+Frame ID: 1280     data: b'10 00 00 00 00 00 00 00'
+
+Key error: 1280
+
+Frame ID: 1280     data: b'10 00 00 00 00 00 00 00'
+
+Key error: 1280
+
+Frame ID: 1280     data: b'10 00 00 00 00 00 00 00'
+
+Key error: 1280
+
+Frame ID: 1280     data: b'10 00 00 00 00 00 00 00'
+
+Key error: 1280
+
+Frame ID: 1280     data: b'10 00 00 00 00 00 00 00'
+
+Key error: 1280
+
+Frame ID: 1280     data: b'10 00 00 00 00 00 00 00'
+
+Key error: 1280
+
+Frame ID: 1280     data: b'10 00 00 00 00 00 00 00'
+
+Key error: 1280
+
+Frame ID: 1280     data: b'10 00 00 00 00 00 00 00'
+
+Key error: 1280
+
+Frame ID: 1281     data: b'01 01 00 00 00 00 00 00'
+
+Key error: 1281
+
+Frame ID: 1281     data: b'01 01 00 00 00 00 00 00'
+
+Key error: 1281
+
+Frame ID: 1281     data: b'01 01 00 00 00 00 00 00'
+
+Key error: 1281
+
+Frame ID: 1281     data: b'01 01 00 00 00 00 00 00'
+
+Key error: 1281
+
+Frame ID: 1281     data: b'01 01 00 00 00 00 00 00'
+
+Key error: 1281
+
+Frame ID: 1281     data: b'01 01 00 00 00 00 00 00'
+
+Key error: 1281
+
+Frame ID: 1281     data: b'01 01 00 00 00 00 00 00'
+
+Key error: 1281
+
+Frame ID: 1281     data: b'01 01 00 00 00 00 00 00'
+
+Key error: 1281
+
+Frame ID: 1281     data: b'01 01 00 00 00 00 00 00'
+
+Key error: 1281
+
+Frame ID: 1281     data: b'01 01 00 00 00 00 00 00'
+
+Key error: 1281
+
+Frame ID: 1281     data: b'01 01 00 00 00 00 00 00'
+
+Key error: 1281
+
+Frame ID: 1600     data: b'00 00 00 00 00 00 03 E8'
+
+
+
+Frame ID: 1600     data: b'00 00 00 00 00 00 03 E8'
+

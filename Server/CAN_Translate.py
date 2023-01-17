@@ -70,8 +70,10 @@ def find_nth(haystack, needle, n):
 
 # Translate each string from the decoded CAN message into a dictionary and then output that dictionary to the json file
 def to_json(message):
-    with open("json_data.json", "a") as outfile:
-        json.dump(message, outfile)
+    with open("json_data.json", "r+") as json_file:
+        json_dict = json.load(json_file)
+        json_dict.update(message)
+        json.dump(json_dict, json_file)
 
 
 def data_handler(key):
