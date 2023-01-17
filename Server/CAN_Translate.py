@@ -24,6 +24,7 @@ receivePort = None
 outfile = open('output.txt', 'a')
 jsonFile = open('forjson.txt', 'a')
 
+
 def setup():
     global sel
     global db
@@ -71,23 +72,26 @@ def find_nth(haystack, needle, n):
 def to_json(message):
     # Remove the brackets from the string
     json_dict = {}
-    message = message.replace('{', '')
-    message = message.replace('}', '')
+    # message = message.replace('{', '')
+    # message = message.replace('}', '')
+    #
+    # # Separate each separate dictionary item by finding the comma separating them (continue until there are no new
+    # # items)
+    # comma = message.find(',')
+    # while comma > 0:
+    #     data_line = message[0:comma]
+    #     # Remove the quotes from the string
+    #     data_line = data_line.replace('\'', '')
+    #     # Separate the key and the data by finding the colon
+    #     colon = data_line.index(':')
+    #     json_dict[data_line[0:colon]] = float(data_line[colon + 2:])
+    #     message = message[comma + 2:]
+    #     comma = message.find(',')
+    # with open("json_data.json", "a") as outfile:
+    #     json.dump(json_dict, outfile)
 
-    # Separate each separate dictionary item by finding the comma separating them (continue until there are no new
-    # items)
-    comma = message.find(',')
-    while comma > 0:
-        data_line = message[0:comma]
-        # Remove the quotes from the string
-        data_line = data_line.replace('\'', '')
-        # Separate the key and the data by finding the colon
-        colon = data_line.index(':')
-        json_dict[data_line[0:colon]] = float(data_line[colon + 2:])
-        message = message[comma + 2:]
-        comma = message.find(',')
     with open("json_data.json", "a") as outfile:
-        json.dump(json_dict, outfile)
+        json.dump(message, outfile)
 
 
 def data_handler(key):
