@@ -73,6 +73,7 @@ def to_json(message):
     with open("json_data.json", "r+") as json_file:
         json_dict = json.load(json_file)
         json_dict.update(message)
+        json_file.seek(0)
         json.dump(json_dict, json_file)
 
 
