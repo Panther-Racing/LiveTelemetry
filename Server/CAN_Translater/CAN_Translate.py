@@ -59,7 +59,7 @@ def setup():
 
     # Add the DBC file to the CAN reader
     db = cantools.database.Database()
-    db.add_dbc_file('DBC1.dbc')
+    db.add_dbc_file('DBCS/DBC1.dbc')
 
     # Reset the json file
     json_file = open(json_file_name, "w")
