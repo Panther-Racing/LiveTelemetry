@@ -23,6 +23,11 @@ CANSocket = None
 serverIP = None
 receivePort = None
 outfile = open('output.txt', 'a')
+errorfile = open('error.txt', 'a')
+missing_CAN_file = open('missing_CAN.txt', 'a')
+missing_CAN = set()
+nonLiterals = set()
+nonLiteral_file = open('nonLiterals.txt', 'a')
 # jsonFile = open('forjson.txt', 'a')
 json_file_name = "json_data.json"
 
@@ -93,6 +98,7 @@ def to_json(message):
 def data_handler(key):
     global db
     global outfile
+    global errorfile
     # Extract the message from the socket
     message = key.fileobj.recvfrom(bufferSize)[0].decode().strip()
 
@@ -103,6 +109,8 @@ def data_handler(key):
     except ValueError as error:
         print('Non hexadecimal frame_id: %s' % error)
         outfile.write('Non hexadecimal frame_id: %s\n\n' % error)
+        errorfile.write('Non hexadecimal frame_id: %s\n\n' % error)
+        nonLiterals.add(str(error))
         frame_id = 'ERROR'
 
     data = bytes(message[find_nth(message, ',', 3)+1:], 'utf-8')
@@ -119,13 +127,24 @@ def data_handler(key):
         print(db.decode_message(frame_id, data))
     except KeyError as error:
         outfile.write('Key error: %s\n\n' % error)
+        errorfile.write('Key error: %s\n\n' % error)
+        missing_CAN.add(str(error))
         print('Key error: %s' % error)
 
 
 def main():
     global outfile
+    global errorfile
+    global missing_CAN_file
+    global nonLiteral_file
     outfile.write('NEW INSTANCE')
     outfile.write('-------------------------------------------------------\n\n\n\n')
+    errorfile.write('NEW INSTANCE')
+    errorfile.write('-------------------------------------------------------\n\n\n\n')
+    missing_CAN_file.write('NEW INSTANCE')
+    missing_CAN_file.write('-------------------------------------------------------\n\n\n\n')
+    nonLiteral_file.write('NEW INSTANCE')
+    nonLiteral_file.write('-------------------------------------------------------\n\n\n\n')
     setup()
     while True:
         # Wait for an event (input has been received on one of the sockets) and never timeout
@@ -144,3 +163,5 @@ except KeyboardInterrupt:
     CANSocket.sendto(bytesToSend, (serverIP, receivePort))
     print(f'Removed from {serverIP}')
     outfile.write(f'Removed from {serverIP}\n')
+    missing_CAN_file.write(str(missing_CAN))
+    nonLiteral_file.write(str(nonLiterals))
