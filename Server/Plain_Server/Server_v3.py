@@ -76,8 +76,11 @@ def accept_wrapper(sock):
         print(f"Accepted connection from {clientMessage[1]}")
     elif clientMessage[0] == b'Remove Me':
         print(f"Attempting to Remove {clientMessage[1]} on request")
-        clientList.remove(clientMessage[1])
-        print(f"Removed {clientMessage[1]} on request")
+        try:
+            clientList.remove(clientMessage[1])
+            print(f"Removed {clientMessage[1]} on request")
+        except ValueError:
+            print('Client was not on server')
     else:
         print("Invalid Client Request")
         print(f"Client Said: {clientMessage[0]}")
