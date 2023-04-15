@@ -3,9 +3,12 @@
 
 import socket
 import time
+import random
 
 # Set server Port
 serverPort = 20001
+
+newer_num = 0
 
 # Get the current computer's Address and the server's Address
 myAddress = input("Enter the IP Address of this computer: ")
@@ -40,8 +43,19 @@ while line:
     canID = line[14:23]
     length = line[36:38]
     messageData = line[38:63]
-    # Create a tuple from the data: (time sent, canID, length, data)
     dataTuple = (line[0:9], canID.strip(), length.strip(), messageData.strip())
+    # Create a tuple from the data: (time sent, canID, length, data)
+    # print(messageData.replace(' ', ''))
+    # try:
+    #     new_num = int(messageData.replace(' ', ''), 16)
+    #     new_num += round(new_num * random.random() * pow(-1, random.randint(1, 3)))
+    #     print(f'new num: {new_num}')
+    #     newer_num = hex(new_num)
+    #     print(f'new hex {newer_num}')
+    # except ValueError as error:
+    #     print(error)
+    #
+    # dataTuple = (line[0:9], canID.strip(), length.strip(), newer_num)
     # Append tuple to the data array
     data.append(dataTuple)
     line = f.readline()

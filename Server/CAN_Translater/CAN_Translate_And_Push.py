@@ -141,6 +141,7 @@ def data_handler(key):
         frame_id = 'ERROR'
 
     data = bytes(message[find_nth(message, ',', 3)+1:], 'utf-8')
+    # print(data)
     outfile.write(f'Frame ID: {frame_id}     data: {data}\n\n')
     # print(f'Frame ID: {frame_id}     data: {data}')
 
@@ -157,6 +158,8 @@ def data_handler(key):
         errorfile.write('Key error: %s\n\n' % error)
         missing_CAN.add(str(error))
         # print('Key error: %s' % error)
+    except ValueError as error:
+        print(error)
 
 
 def main():
