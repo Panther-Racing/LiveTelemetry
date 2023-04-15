@@ -55504,3 +55504,579 @@ Key error: 1872
 
 Key error: 42
 
+NEW INSTANCE-------------------------------------------------------
+
+
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 41
+
+Key error: 233
+
+Key error: 1280
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 1284
+
+Key error: 1285
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 42
+
+Key error: 233
+
+Key error: 1280
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 1284
+
+Key error: 1285
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 2037
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 1776
+
+Key error: 41
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 1284
+
+Key error: 1285
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 42
+
+Key error: 233
+
+Key error: 1280
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 224
+
+Key error: 1283
+
+Key error: 1284
+
+Key error: 2037
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 41
+
+Key error: 233
+
+Key error: 1280
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 233
+
+Key error: 42
+
+Key error: 1280
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 1284
+
+Key error: 1285
+
+Key error: 2037
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 41
+
+Key error: 233
+
+Key error: 1280
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 1284
+
+Key error: 1285
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 42
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 1284
+
+Key error: 1285
+
+Key error: 2037
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 224
+
+Key error: 41
+
+Key error: 233
+
+Key error: 1280
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 1284
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 233
+
+Key error: 1280
+
+Key error: 42
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 2037
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 41
+
+Key error: 233
+
+Key error: 1280
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 1284
+
+Key error: 1285
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 233
+
+Key error: 1280
+
+Key error: 1281
+
+Key error: 42
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 1284
+
+Key error: 1285
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 2037
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 1776
+
+Key error: 41
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 224
+
+Key error: 1284
+
+Key error: 1285
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 233
+
+Key error: 1280
+
+Key error: 1281
+
+Key error: 42
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 1284
+
+Key error: 2037
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 41
+
+Key error: 233
+
+Key error: 1280
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 233
+
+Key error: 1280
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 42
+
+Key error: 1283
+
+Key error: 1284
+
+Key error: 1285
+
+Key error: 2037
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 41
+
+Key error: 233
+
+Key error: 1280
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 1283
+
+Key error: 1284
+
+Key error: 1285
+
+Key error: 1584
+
+Key error: 1585
+
+Key error: 1586
+
+Key error: 1587
+
+Key error: 1588
+
+Key error: 1589
+
+Key error: 1590
+
+Key error: 1872
+
+Key error: 224
+
+Key error: 1281
+
+Key error: 1282
+
+Key error: 42
+
+Key error: 1283
+
+Key error: 1284
+
+Key error: 1285
+
+Key error: 2037
+
