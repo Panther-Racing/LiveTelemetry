@@ -45,6 +45,8 @@ while line:
     messageData = line[38:63]
     dataTuple = (line[0:9], canID.strip(), length.strip(), messageData.strip())
     # Create a tuple from the data: (time sent, canID, length, data)
+
+    # Simulate fluctuating Data:
     # print(messageData.replace(' ', ''))
     # try:
     #     new_num = int(messageData.replace(' ', ''), 16)
