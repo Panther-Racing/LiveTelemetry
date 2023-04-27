@@ -41,7 +41,7 @@ def data_handler(car_data_package):
     # print("Car Data:{}".format(carMsg))
 
     # Add newline to end of car data
-    car_msg_string = car_msg.decode("utf-8")
+    car_msg_string = str(car_msg.decode("utf-8"))
     car_msg_string += "\n"
 
     # Encode the car data into bytes
