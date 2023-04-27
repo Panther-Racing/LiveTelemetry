@@ -1,37 +1,14 @@
-#!/usr/bin/env python
-
-import socket
-import selectors
 import cantools
 import json
 import time
 
 
-sel = None
-db = None
-bufferSize = 1024
-CANSocket = None
-serverIP = None
-receivePort = None
-outfile = open('output.txt', 'a')
-errorfile = open('error.txt', 'a')
-missing_CAN_file = open('missing_CAN.txt', 'a')
-missing_CAN = set()
-nonLiterals = set()
-nonLiteral_file = open('nonLiterals.txt', 'a')
-# jsonFile = open('forjson.txt', 'a')
-json_file_name = 'json_data.json'
-test = 0
-
-# Setup socket to send JSON to SQL program
-port = 1500
-address = "127.0.0.1"
-
-try:
-    json_sock = socket.socket()
-    json_sock.connect((address, port))
-except socket.error as err:
-    print('Socket error because of %s' % (err))
+def start(receive_socket, socket):
+    print('Starting')
+    global send_socket
+    send_socket = socket
+    setup()
+    main(receive_socket)
 
 
 def setup():
@@ -41,28 +18,31 @@ def setup():
     global serverIP
     global receivePort
     global outfile
-    # Connect to server to get CAN data
-    # Get the address of the computer, what port to be on, and the IP address of the server
-    localIP = input('Enter the IP address of this program: ')
-    receivePort = 20003
-    # serverIP = input('Enter the IP address of the server: ')
-    serverIP = socket.gethostbyname('litelserver.eastus.cloudapp.azure.com')
-    # Create the socket
-    CANSocket = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
-    CANSocket.bind((localIP, receivePort))
-    # Request to be added to the server
-    bytesToSend = str.encode('Add Me')
-    CANSocket.sendto(bytesToSend, (serverIP, receivePort))
-    outfile.write(f'Added as client on {serverIP}\n')
-    outfile.write(f'UDP server up and listening at {localIP} on port {receivePort}\n')
-    # print(f'Added as client on {serverIP}')
-    # print(f'UDP server up and listening at {localIP} on port {receivePort}')
+    global bufferSize
+    global errorfile
+    global missing_CAN_file
+    global missing_CAN
+    global nonLiterals
+    global nonLiteral_file
+    global json_file_name
+    bufferSize = 1024
+    outfile = open('output.txt', 'a')
+    errorfile = open('error.txt', 'a')
+    missing_CAN_file = open('missing_CAN.txt', 'a')
+    missing_CAN = set()
+    nonLiterals = set()
+    nonLiteral_file = open('nonLiterals.txt', 'a')
+    json_file_name = 'json_data.json'
 
-    # Create a selector for handling data receive events
-    sel = selectors.DefaultSelector()
-    sel.register(CANSocket, selectors.EVENT_READ, data=None)
-    outfile.write('Selector created\n')
-    # print('Selector created')
+    # Write new instance to logging files
+    outfile.write('NEW INSTANCE')
+    outfile.write('-------------------------------------------------------\n\n\n\n')
+    errorfile.write('NEW INSTANCE')
+    errorfile.write('-------------------------------------------------------\n\n\n\n')
+    missing_CAN_file.write('NEW INSTANCE')
+    missing_CAN_file.write('-------------------------------------------------------\n\n\n\n')
+    nonLiteral_file.write('NEW INSTANCE')
+    nonLiteral_file.write('-------------------------------------------------------\n\n\n\n')
 
     # Add the DBC file to the CAN reader
     db = cantools.database.Database()
@@ -100,12 +80,12 @@ def to_json(message):
         send_json(json_dict)
 
 
-def data_handler(key):
+def data_handler(data):
     global db
     global outfile
     global errorfile
     # Extract the message from the socket
-    message = key.fileobj.recvfrom(bufferSize)[0].decode().strip()
+    message = data.decode().strip()
 
     # Separate CAN message into id and data
     # Except non hexadecimal values
@@ -144,45 +124,15 @@ def send_json(json_string):
     json_result = json.dumps(json_string)
 
     try:
-        json_sock.send(json_result.encode())
+        send_socket.send(json_result.encode())
     except ConnectionResetError as error:
         print(error)
 
     print(json_result, 'was sent!')
-    time.sleep(1)
+    # time.sleep(1)
 
 
-def main():
-    global outfile
-    global errorfile
-    global missing_CAN_file
-    global nonLiteral_file
-    outfile.write('NEW INSTANCE')
-    outfile.write('-------------------------------------------------------\n\n\n\n')
-    errorfile.write('NEW INSTANCE')
-    errorfile.write('-------------------------------------------------------\n\n\n\n')
-    missing_CAN_file.write('NEW INSTANCE')
-    missing_CAN_file.write('-------------------------------------------------------\n\n\n\n')
-    nonLiteral_file.write('NEW INSTANCE')
-    nonLiteral_file.write('-------------------------------------------------------\n\n\n\n')
-    setup()
+def main(receive_socket):
     while True:
-        # Wait for an event (input has been received on one of the sockets) and never timeout
-        events = sel.select(timeout=None)
+        data_handler(receive_socket.recv())
 
-        # Call a function to handle data
-        for key, mask in events:
-            data_handler(key)
-
-
-try:
-    main()
-except KeyboardInterrupt:
-    # When program is terminated (keyboard interrupt) ask to be removed from the server
-    bytesToSend = str.encode('Remove Me')
-    CANSocket.sendto(bytesToSend, (serverIP, receivePort))
-    print(f'Removed from {serverIP}')
-    outfile.write(f'Removed from {serverIP}\n')
-    missing_CAN_file.write(str(missing_CAN))
-    nonLiteral_file.write(str(nonLiterals))
-    json_sock.close()
