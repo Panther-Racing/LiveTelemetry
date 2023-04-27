@@ -50,15 +50,12 @@ def data_handler(car_data_package):
 
 
 def main(conn):
-    try:
-        # Run indefinitely to constantly listen for client requests and car data
-        while (True):
-            print('listening')
-            data = car_socket.recv(buffer_size)
-            conn.send(data_handler(data))
-    except KeyboardInterrupt:
-        #If a user on the server interrupts the program, it will stop the infinite loop
-        print("Caught Keyboard interrupt, exiting")
+    # Run indefinitely to constantly listen for client requests and car data
+    while (True):
+        print('listening')
+        data = car_socket.recv(buffer_size)
+        print(data)
+        conn.send(data_handler(data))
 
 # random_port = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
 # random_port.bind(('127.0.0.1', 20002))
