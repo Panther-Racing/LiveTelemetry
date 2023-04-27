@@ -52,7 +52,7 @@ def data_handler(car_data_package):
 def main(conn):
     # Run indefinitely to constantly listen for client requests and car data
     while (True):
-        print('listening')
+        # print('listening')
         data = car_socket.recvfrom(buffer_size)
         # print(data)
         conn.send(data_handler(data))
