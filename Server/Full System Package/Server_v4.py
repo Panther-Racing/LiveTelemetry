@@ -41,7 +41,7 @@ def data_handler(car_data_package):
     # print("Car Data:{}".format(carMsg))
 
     # Add newline to end of car data
-    car_msg_string = str(car_msg.decode("utf-8"))
+    car_msg_string = car_msg.decode("utf-8")
     car_msg_string += "\n"
 
     # Encode the car data into bytes
@@ -53,7 +53,7 @@ def main(conn):
     # Run indefinitely to constantly listen for client requests and car data
     while (True):
         print('listening')
-        data = car_socket.recv(buffer_size)
+        data = car_socket.recvfrom(buffer_size)
         print(data)
         conn.send(data_handler(data))
 
