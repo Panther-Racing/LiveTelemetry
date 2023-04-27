@@ -3,6 +3,7 @@ import CAN_Translate_And_Send_v1
 import send_sql_v1
 import Server_v4
 import threading
+import time
 
 # Import multiprocessing
 from multiprocessing import Process, Pipe
@@ -38,13 +39,15 @@ def sql_process():
 def main():
     # Create and run threads to have all programs running simultaneously
     print('Creating threads')
-    server_thread = threading.Thread(target=server_process())
-    translate_thread = threading.Thread(target=translate_process())
-    sql_thread = threading.Thread(target=sql_process())
+    server_thread = threading.Thread(target=server_process)
+    translate_thread = threading.Thread(target=translate_process)
+    sql_thread = threading.Thread(target=sql_process)
     print('Start thread 1')
     server_thread.start()
+    time.sleep(.1)
     print('Start thread 2')
     translate_thread.start()
+    time.sleep(.1)
     print('Start thread 3')
     sql_thread.start()
 

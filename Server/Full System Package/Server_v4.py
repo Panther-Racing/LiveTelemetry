@@ -10,8 +10,8 @@ def start(conn):
 def setup_server():
     # localIP = input("Enter the IP Address of the server: ")
     # Use IP address of current computer
-    # localIP = socket.gethostbyname(socket.gethostname())
-    localIP = '127.0.0.1'
+    localIP = socket.gethostbyname(socket.gethostname())
+    # localIP = '127.0.0.1'
     print(localIP, "Is being used")
 
     # Car UDP Port
