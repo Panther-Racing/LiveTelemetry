@@ -2,7 +2,7 @@ import socket
 
 
 def start(conn):
-    print('Starting')
+    print('Starting Server')
     setup_server()
     main(conn)
 
@@ -54,7 +54,7 @@ def main(conn):
     while (True):
         print('listening')
         data = car_socket.recvfrom(buffer_size)
-        print(data)
+        # print(data)
         conn.send(data_handler(data))
 
 # random_port = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)

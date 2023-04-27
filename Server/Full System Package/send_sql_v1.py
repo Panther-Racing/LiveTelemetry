@@ -3,7 +3,7 @@ import json
 
 
 def start(sock):
-    print('Starting')
+    print('Starting SQL Sender')
     setup()
     main(sock)
 
@@ -24,7 +24,7 @@ def setup():
 def main(sock):
     while True:
         json_received = sock.recv()
-        print('Json received -->', json_received.decode().replace('\\', ''))
+        # print('Json received -->', json_received.decode().replace('\\', ''))
         send_data(json_received)
 
 
@@ -57,6 +57,6 @@ def send_data(json_received):
     except pyodbc.ProgrammingError as error:
         print('ERROR2', error)
 
-    print('Sent')
+    print('Sent SQL')
 
     # time.sleep(1)

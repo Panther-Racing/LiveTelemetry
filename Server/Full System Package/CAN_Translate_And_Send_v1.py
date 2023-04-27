@@ -4,7 +4,7 @@ import time
 
 
 def start(receive_socket, socket):
-    print('Starting')
+    print('Starting CAN Translator')
     global send_socket
     send_socket = socket
     setup()
@@ -17,32 +17,12 @@ def setup():
     global CANSocket
     global serverIP
     global receivePort
-    global outfile
     global bufferSize
-    global errorfile
-    global missing_CAN_file
-    global missing_CAN
     global nonLiterals
-    global nonLiteral_file
     global json_file_name
     bufferSize = 1024
-    outfile = open('output.txt', 'a')
-    errorfile = open('error.txt', 'a')
-    missing_CAN_file = open('missing_CAN.txt', 'a')
-    missing_CAN = set()
     nonLiterals = set()
-    nonLiteral_file = open('nonLiterals.txt', 'a')
     json_file_name = 'json_data.json'
-
-    # Write new instance to logging files
-    outfile.write('NEW INSTANCE')
-    outfile.write('-------------------------------------------------------\n\n\n\n')
-    errorfile.write('NEW INSTANCE')
-    errorfile.write('-------------------------------------------------------\n\n\n\n')
-    missing_CAN_file.write('NEW INSTANCE')
-    missing_CAN_file.write('-------------------------------------------------------\n\n\n\n')
-    nonLiteral_file.write('NEW INSTANCE')
-    nonLiteral_file.write('-------------------------------------------------------\n\n\n\n')
 
     # Add the DBC file to the CAN reader
     db = cantools.database.Database()
@@ -81,9 +61,6 @@ def to_json(message):
 
 
 def data_handler(data):
-    global db
-    global outfile
-    global errorfile
     # Extract the message from the socket
     message = data.decode().strip()
 
@@ -93,29 +70,18 @@ def data_handler(data):
         frame_id = int(message[find_nth(message, ',', 1)+1:find_nth(message, ',', 2)], 16)
     except ValueError as error:
         # print('Non hexadecimal frame_id: %s' % error)
-        outfile.write('Non hexadecimal frame_id: %s\n\n' % error)
-        errorfile.write('Non hexadecimal frame_id: %s\n\n' % error)
         nonLiterals.add(str(error))
         frame_id = 'ERROR'
 
     data = bytes(message[find_nth(message, ',', 3)+1:], 'utf-8')
     # print(data)
-    outfile.write(f'Frame ID: {frame_id}     data: {data}\n\n')
     # print(f'Frame ID: {frame_id}     data: {data}')
 
     try:
-        # Decode each incoming message and print it out
-        # outfile.write(str(db.decode_message(frame_id, data)))
-        # jsonFile.write(str(db.decode_message(frame_id, data)))
+        # Decode each incoming message
         to_json(db.decode_message(frame_id, data))
-        # jsonFile.write('\n')
-        outfile.write('\n\n')
-        print(db.decode_message(frame_id, data))
     except KeyError as error:
-        outfile.write('Key error: %s\n\n' % error)
-        errorfile.write('Key error: %s\n\n' % error)
-        missing_CAN.add(str(error))
-        # print('Key error: %s' % error)
+        print('Key error: %s' % error)
     except ValueError as error:
         print(error)
 
@@ -128,7 +94,7 @@ def send_json(json_string):
     except ConnectionResetError as error:
         print(error)
 
-    print(json_result, 'was sent!')
+    # print(json_result, 'was sent!')
     # time.sleep(1)
 
 
