@@ -14,7 +14,8 @@ newer_num = 0
 # myAddress = input("Enter the IP Address of this computer: ")
 myAddress = socket.gethostbyname(socket.gethostname())
 #serverAddress = (input("Enter the IP Address of the server: "), 20001)
-ip = socket.gethostbyname('litelserver.eastus.cloudapp.azure.com')
+# ip = socket.gethostbyname('litelserver.eastus.cloudapp.azure.com')
+ip = '10.95.158.99'
 serverAddress = (ip, 20001)
 # serverAddress = ("litelserver.eastus.cloudapp.azure.com", 20001)
 

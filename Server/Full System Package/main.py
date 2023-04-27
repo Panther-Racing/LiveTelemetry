@@ -42,13 +42,10 @@ def main():
     server_thread = threading.Thread(target=server_process)
     translate_thread = threading.Thread(target=translate_process)
     sql_thread = threading.Thread(target=sql_process)
-    print('Start thread 1')
     server_thread.start()
     time.sleep(.1)
-    print('Start thread 2')
     translate_thread.start()
     time.sleep(.1)
-    print('Start thread 3')
     sql_thread.start()
 
 main()
