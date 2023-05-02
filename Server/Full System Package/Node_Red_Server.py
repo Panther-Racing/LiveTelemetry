@@ -53,7 +53,7 @@ def query_sql(top_num=1):
 
 
 def send_to_node_red(data):
-    destination = 'arf-ece1188.eastus.cloudapp.azure.com'
+    destination = '20.81.190.176'
     destination_address = (destination, comm_port)
     data = data.encode()
     # print(f'Data encoded: {data}')
