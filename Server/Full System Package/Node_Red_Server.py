@@ -1,6 +1,5 @@
 import pyodbc
 import socket
-import time
 
 
 def start():
