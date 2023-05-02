@@ -58,3 +58,4 @@ def send_to_node_red(data):
     data = data.encode()
     # print(f'Data encoded: {data}')
     comm_socket.sendto(data, destination_address)
+    print('Node Red Data Sent')
