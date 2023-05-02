@@ -33,8 +33,8 @@ def wait_for_request():
     connect_node_red()
     while True:
         # print('Waiting to send Data')
-        # request = comm_socket.recv(1048)
-        request = 'Live'
+        request = comm_socket.recv(1048)
+        # request = 'Live'
         if request == 'Live':
             print('Starting Live Data')
             while True:
