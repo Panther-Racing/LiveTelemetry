@@ -44,7 +44,7 @@ def wait_for_request():
             print(request)
 
 
-def query_sql(top_num=10):
+def query_sql(top_num=1):
     cursor = conn.cursor()
     result = cursor.execute('SELECT TOP (?) * FROM dbo.race_data', top_num)
     data = str(result.fetchall())
@@ -58,5 +58,3 @@ def send_to_node_red(data):
     data = data.encode()
     # print(f'Data encoded: {data}')
     comm_socket.sendto(data, destination_address)
-
-start()
