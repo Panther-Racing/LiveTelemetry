@@ -36,6 +36,7 @@ def wait_for_request():
         # request = comm_socket.recv(1048)
         request = 'Live'
         if request == 'Live':
+            print('Starting Live Data')
             while True:
                 # print('Sending Data')
                 send_to_node_red(query_sql())
