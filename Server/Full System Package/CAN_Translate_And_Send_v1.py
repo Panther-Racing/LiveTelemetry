@@ -75,7 +75,7 @@ def data_handler(data):
         frame_id = 'ERROR'
 
     data = bytes(message[find_nth(message, ',', 3)+1:], 'utf-8')
-    print(data)
+    print(message)
     print(f'Frame ID: {frame_id}     data: {data}')
 
     data_string = str(data)
