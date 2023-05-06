@@ -57,6 +57,6 @@ def send_data(json_received):
     except pyodbc.ProgrammingError as error:
         print('ERROR2', error)
 
-    # print('Sent SQL')
+    print('Sent SQL')
 
     # time.sleep(1)

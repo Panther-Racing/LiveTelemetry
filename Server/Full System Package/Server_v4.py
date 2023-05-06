@@ -39,7 +39,7 @@ def data_handler(car_data_package):
     # print(car_data_package)
     # Extract Message from the car data
     car_msg = car_data_package[0]
-    # print("Car Data:{}".format(carMsg))
+    print("Car Data:{}".format(car_msg))
 
     # Add newline to end of car data
     try:
