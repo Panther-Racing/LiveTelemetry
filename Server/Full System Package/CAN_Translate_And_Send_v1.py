@@ -74,7 +74,7 @@ def data_handler(data):
         nonLiterals.add(str(error))
         frame_id = 'ERROR'
 
-    data = bytes(message[find_nth(message, ',', 3)+1:], 'utf-8')
+    data = bytes(message[find_nth(message, ',', 2)+1:], 'utf-8')
     print(message)
     print(f'Frame ID: {frame_id}     data: {data}')
 
