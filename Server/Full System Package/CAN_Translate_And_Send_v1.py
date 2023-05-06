@@ -74,25 +74,16 @@ def data_handler(data):
         nonLiterals.add(str(error))
         frame_id = 'ERROR'
 
-    data = bytes(message[find_nth(message, ',', 2)+1:], 'utf-8')
     print(message)
     print(f'Frame ID: {frame_id}     data: {data}')
 
     data_string = message[find_nth(message, ',', 2)+1:]
+    data = bytes(data_string, 'utf-8')
 
     # Remove any non-hex characters from the hexadecimal data
     # data_string = re.sub(r"\s|[^a-fA-F\d]", "", data_string)
 
-    print(data_string)
-
-    default_data = '20000000'
-
-    try:
-        reversed_data = bytes.fromhex(data_string)[::-1]
-    except ValueError as error:
-        print(error)
-        reversed_data = bytes.fromhex(default_data)[::-1]
-
+    reversed_data = reverse(data_string)
 
     try:
         # Decode each incoming message
@@ -113,6 +104,27 @@ def send_json(json_string):
 
     # print(json_result, 'was sent!')
     # time.sleep(1)
+
+
+def reverse(data_string):
+
+    print(data_string)
+
+    length = len(data_string)
+    i = length
+    reverse = ''
+    if length % 2 == 0:
+        i -= 1
+        reverse = '0' + data_string[i:]
+
+    while i >= 0:
+        i -= 2
+        reverse += data_string[i:i+2]
+
+    print(reverse)
+
+    return reverse
+
 
 
 def main(receive_socket):
