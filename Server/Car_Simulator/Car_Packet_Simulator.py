@@ -11,12 +11,12 @@ serverPort = 20001
 newer_num = 0
 
 # Get the current computer's Address and the server's Address
-# myAddress = input("Enter the IP Address of this computer: ")
-myAddress = socket.gethostbyname(socket.gethostname())
+myAddress = input("Enter the IP Address of this computer: ")
+# myAddress = socket.gethostbyname(socket.gethostname())
 #serverAddress = (input("Enter the IP Address of the server: "), 20001)
 # ip = socket.gethostbyname('litelserver.eastus.cloudapp.azure.com')
-# ip = '20.81.190.176'
-ip = socket.gethostbyname('litelserver.eastus2.cloudapp.azure.com')
+ip = '20.81.190.176'
+# ip = socket.gethostbyname('litelserver.eastus2.cloudapp.azure.com')
 serverAddress = (ip, 20001)
 # serverAddress = ("litelserver.eastus.cloudapp.azure.com", 20001)
 
