@@ -80,7 +80,9 @@ def data_handler(data):
 
     data_string = str(data)
     # Remove any non-hex characters from the hexadecimal data
-    data_string = re.sub(r"\s|[^a-fA-F\d]", "", data_string)
+    # data_string = re.sub(r"\s|[^a-fA-F\d]", "", data_string)
+
+    print(data_string)
 
     reversed_data = bytes.fromhex(data_string)[::-1]
 
