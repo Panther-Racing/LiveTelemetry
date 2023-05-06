@@ -75,8 +75,8 @@ def data_handler(data):
         frame_id = 'ERROR'
 
     data = bytes(message[find_nth(message, ',', 3)+1:], 'utf-8')
-    # print(data)
-    # print(f'Frame ID: {frame_id}     data: {data}')
+    print(data)
+    print(f'Frame ID: {frame_id}     data: {data}')
 
     data_string = str(data)
     # Remove any non-hex characters from the hexadecimal data
