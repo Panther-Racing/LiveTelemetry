@@ -85,12 +85,14 @@ def data_handler(data):
 
     print(data_string)
 
-    try:
-        reversed_data = bytes.fromhex(data_string)[::-1]
-    except ValueError as error:
-        print(error)
-        data_string += '0'
-        reversed_data = bytes.fromhex(data_string)[::-1]
+    reversed_data = bytes.fromhex(data_string)[::-1]
+
+    # try:
+    #     reversed_data = bytes.fromhex(data_string)[::-1]
+    # except ValueError as error:
+    #     print(error)
+    #     data_string += '0'
+    #     reversed_data = bytes.fromhex(data_string)[::-1]
 
 
     try:
