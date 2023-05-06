@@ -78,8 +78,10 @@ def data_handler(data):
     # print(f'Frame ID: {frame_id}     data: {data}')
 
     data_string = str(data)
-
-    reversed_data = bytes.fromhex(data_string)[::-1]
+    try:
+        reversed_data = bytes.fromhex(data_string)[::-1]
+    except ValueError as error:
+        print(error)
 
     try:
         # Decode each incoming message
