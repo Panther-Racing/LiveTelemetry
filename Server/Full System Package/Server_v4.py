@@ -38,7 +38,7 @@ def setup_server():
 def data_handler(car_data_package):
     # Extract Message from the car data
     car_msg = car_data_package[0]
-    # print("Car Data:{}".format(carMsg))
+    print("Car Data:{}".format(carMsg))
 
     # Add newline to end of car data
     try:
