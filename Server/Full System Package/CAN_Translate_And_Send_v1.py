@@ -78,18 +78,18 @@ def data_handler(data):
     print(message)
     print(f'Frame ID: {frame_id}     data: {data}')
 
-    data_string = str(data)
+    # data_string = str(data)
     # Remove any non-hex characters from the hexadecimal data
     # data_string = re.sub(r"\s|[^a-fA-F\d]", "", data_string)
 
-    print(data_string)
+    # print(data_string)
 
-    reversed_data = bytes.fromhex(data_string)[::-1]
+    # reversed_data = bytes.fromhex(data_string)[::-1]
 
 
     try:
         # Decode each incoming message
-        to_json(db.decode_message(frame_id, reversed_data))
+        to_json(db.decode_message(frame_id, data))
     except KeyError as error:
         print('Key error: %s' % error)
     except ValueError as error:
