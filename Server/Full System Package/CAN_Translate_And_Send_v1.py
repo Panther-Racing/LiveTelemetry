@@ -1,6 +1,7 @@
 import cantools
 import json
 import time
+import re
 
 
 def start(receive_socket, socket):
@@ -78,11 +79,11 @@ def data_handler(data):
     # print(f'Frame ID: {frame_id}     data: {data}')
 
     data_string = str(data)
-    try:
-        reversed_data = bytes.fromhex(data_string)[::-1]
-    except ValueError as error:
-        print(error)
-        reversed_data = 1
+    # Remove any non-hex characters from the hexadecimal data
+    data_string = re.sub(r"\s|[^a-fA-F\d]", "", data_string)
+
+    reversed_data = bytes.fromhex(data_string)[::-1]
+
 
     try:
         # Decode each incoming message
