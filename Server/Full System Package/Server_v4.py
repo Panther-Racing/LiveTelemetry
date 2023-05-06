@@ -36,16 +36,17 @@ def setup_server():
 
 # Function to receive data from car and send it to clients -- called when new car data is received
 def data_handler(car_data_package):
+    # print(car_data_package)
     # Extract Message from the car data
     car_msg = car_data_package[0]
-    print("Car Data:{}".format(carMsg))
+    # print("Car Data:{}".format(carMsg))
 
     # Add newline to end of car data
     try:
         car_msg_string = car_msg.decode("utf-8")
         car_msg_string += "\n"
     except UnicodeDecodeError as error:
-        print(f'Decode error {error}')
+        # print(f'Decode error {error}')
         car_msg_string = ''
 
     # Encode the car data into bytes
