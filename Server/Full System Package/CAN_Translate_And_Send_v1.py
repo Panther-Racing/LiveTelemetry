@@ -77,9 +77,11 @@ def data_handler(data):
     # print(data)
     # print(f'Frame ID: {frame_id}     data: {data}')
 
+    reversed_data = bytes.fromhex(data)[::-1]
+
     try:
         # Decode each incoming message
-        to_json(db.decode_message(frame_id, data))
+        to_json(db.decode_message(frame_id, reversed_data))
     except KeyError as error:
         print('Key error: %s' % error)
     except ValueError as error:
