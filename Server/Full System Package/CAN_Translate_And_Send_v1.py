@@ -77,7 +77,9 @@ def data_handler(data):
     # print(data)
     # print(f'Frame ID: {frame_id}     data: {data}')
 
-    reversed_data = bytes.fromhex(data)[::-1]
+    data_string = str(data)
+
+    reversed_data = bytes.fromhex(data_string)[::-1]
 
     try:
         # Decode each incoming message
