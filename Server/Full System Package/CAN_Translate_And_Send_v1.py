@@ -82,6 +82,7 @@ def data_handler(data):
         reversed_data = bytes.fromhex(data_string)[::-1]
     except ValueError as error:
         print(error)
+        reversed_data = 1
 
     try:
         # Decode each incoming message
