@@ -78,7 +78,8 @@ def data_handler(data):
     print(message)
     print(f'Frame ID: {frame_id}     data: {data}')
 
-    data_string = str(data)
+    data_string = message[find_nth(message, ',', 2)+1:]
+
     # Remove any non-hex characters from the hexadecimal data
     # data_string = re.sub(r"\s|[^a-fA-F\d]", "", data_string)
 
