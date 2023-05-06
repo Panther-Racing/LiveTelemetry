@@ -46,6 +46,7 @@ def data_handler(car_data_package):
         car_msg_string += "\n"
     except UnicodeDecodeError as error:
         print(f'Decode error {error}')
+        car_msg_string = ''
 
     # Encode the car data into bytes
     bytesToSend = str.encode(car_msg_string)
