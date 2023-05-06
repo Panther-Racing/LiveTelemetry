@@ -89,8 +89,8 @@ def data_handler(data):
         reversed_data = bytes.fromhex(data_string)[::-1]
     except ValueError as error:
         print(error)
-        default = {0, 0, 0, 0, 0, 0, 0, 0}
-        reversed_data = bytes(default)
+        data_string += '0'
+        reversed_data = bytes.fromhex(data_string)[::-1]
 
 
     try:
