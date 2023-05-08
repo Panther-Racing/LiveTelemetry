@@ -27,7 +27,7 @@ def setup():
 
     # Add the DBC file to the CAN reader
     db = cantools.database.Database()
-    db.add_dbc_file('DBCS/DBC1.dbc')
+    db.add_dbc_file('DBCS/DBC2.dbc')
 
     # Reset the json file
     json_file = open(json_file_name, 'w')
@@ -82,6 +82,7 @@ def data_handler(data):
     data = bytes(data_string, 'utf-8')
 
     reversed_data = reverse(data_string)
+    reversed_data = bytes(reversed_data, 'utf-8')
 
     try:
         # Decode each incoming message
@@ -89,6 +90,8 @@ def data_handler(data):
     except KeyError as error:
         print('Key error: %s' % error)
     except ValueError as error:
+        print(error)
+    except Exception as error:
         print(error)
 
 
