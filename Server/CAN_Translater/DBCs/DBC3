@@ -34,11 +34,26 @@ NS_ :
 BS_:
 
 BU_:
-
-
 VAL_TABLE_ Alternative_Fuel_Mode_Enum 2 "Secondary Fuel" 1 "Flex Fuel" 0 "Not in Use" ;
 
 
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ Warning : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Coolant_Pump_After_Run : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Inlet_Camshaft_Actuator_On : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Air_Conditioner_Clutch : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Tip_Over_Switch : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Rain_Light_Switch : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Starter_Solenoid : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Intercooler_Spray_Pump : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Power_Steering_Pump : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Transmission_Pump : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Coolant_Tank_Pump : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Transmission_Coolant_Fan : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Coolant_Fan_2_On : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Coolant_Fan_1_On : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fuel_Pump_On : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Engine_Run : 0|1@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 1650 M1_Flex_Fuel_0x672: 8 Vector__XXX
  SG_ Alt_Fuel_Pressure_Warning : 33|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -168,8 +183,8 @@ BO_ 1616 M1_General_0x650: 8 Vector__XXX
  SG_ Driver_Rotary_Switch_5 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
  SG_ Driver_Switch_4 : 60|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ Driver_Switch_3 : 61|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Driver_Switch_2 : 62|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Driver_Switch_1 : 63|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Driver_Switch_2 : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Driver_Switch_1 : 63|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ Driver_Rotary_Switch_4 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
  SG_ Driver_Rotary_Switch_3 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
  SG_ Driver_Rotary_Switch_2 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
@@ -193,28 +208,43 @@ BO_ 1088 M1_GPR_to_ADR_0x440: 8 Vector__XXX
  SG_ Engine_Speed_ADR : 7|16@0+ (6,0) [0|393210] "RPM" Vector__XXX
 
 BO_ 282 M1_GPR_to_PDM_0x11A: 3 Vector__XXX
- SG_ Warning : 18|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Coolant_Pump_After_Run : 19|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Brake_State_PDM : 12|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Inlet_Camshaft_Actuator_On : 21|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Air_Conditioner_Clutch : 22|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Tip_Over_Switch : 23|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Pit_Switch_PDM : 8|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Clutch_Switch : 9|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Neutral_Switch_PDM : 10|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Rain_Light_Switch : 11|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Starter_Solenoid : 13|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Intercooler_Spray_Pump : 14|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Power_Steering_Pump : 15|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Transmission_Pump : 0|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Coolant_Tank_Pump : 1|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Transmission_Coolant_Fan : 2|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Coolant_Fan_2_On : 3|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Coolant_Fan_1_On : 4|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Fuel_Pump_On : 6|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Engine_Run : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDM_Byte_2_Mask_80 : 23|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_2_Mask_40 : 22|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_2_Mask_20 : 21|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_2_Mask_10 : 20|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_2_Mask_08 : 19|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_2_Mask_04 : 18|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_2_Mask_02 : 17|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_2_Mask_01 : 16|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_1_Mask_80 : 15|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_1_Mask_40 : 14|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_1_Mask_20 : 13|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_1_Mask_10 : 12|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_1_Mask_08 : 11|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_1_Mask_04 : 10|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_1_Mask_02 : 9|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_1_Mask_01 : 8|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_0_Mask_80 : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_0_Mask_40 : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_0_Mask_20 : 5|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_0_Mask_10 : 4|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_0_Mask_08 : 3|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_0_Mask_04 : 2|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_0_Mask_02 : 1|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ PDM_Byte_0_Mask_01 : 0|1@0+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 281 M1_GPR_to_PDM_0x119: 1 Vector__XXX
+BO_ 281 M1_GPR_to_PDM_0x119: 8 Vector__XXX
+ SG_ Engine_State_PDM : 32|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Warning_Source_PDM : 33|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Driver_Switch_2 : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Driver_Switch_1 : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Engine_Run_Switch : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Pit_Switch : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Clutch_State : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Clutch_Switch : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Neutral_Switch : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Brake_State : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Steering_Angle_PDM : 23|16@0- (0.1,0) [-3276|3276] "°" Vector__XXX
  SG_ Fuel_Pressure_PDM : 7|8@0+ (10,0) [0|2550] "kPa" Vector__XXX
 
 BO_ 280 M1_GPR_to_PDM_0x118: 8 Vector__XXX
@@ -266,7 +296,7 @@ BO_ 1613 M1_General_0x64D: 8 Vector__XXX
  SG_ Fuel_Pump_State : 3|4@0+ (1,0) [0|15] "" Vector__XXX
  SG_ Engine_State : 7|4@0+ (1,0) [0|15] "" Vector__XXX
 
-BO_ 1612 M1_General_0x64C: 8 Vector__XXX
+BO_ 1612 M1_General_0x64C: 6 Vector__XXX
  SG_ Knock_Warning : 55|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ Fuel_Pressure_Warning : 40|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ Crankcase_Pressure_Warning : 41|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -371,6 +401,7 @@ BO_ 1600 M1_General_0x640: 8 Vector__XXX
 
 
 
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 CM_ SG_ 1649 Alt_Fuel_Timing_Secondary "-ve means BTDC";
 CM_ SG_ 1649 Alt_Fuel_Timing_Primary "-ve means BTDC";
 CM_ SG_ 1626 Ignition_Cyl_12_Trim_Knock "+ve means ATDC";
