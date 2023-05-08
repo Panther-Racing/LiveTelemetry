@@ -34,7 +34,10 @@ NS_ :
 BS_:
 
 BU_:
+
+
 VAL_TABLE_ Alternative_Fuel_Mode_Enum 2 "Secondary Fuel" 1 "Flex Fuel" 0 "Not in Use" ;
+
 
 
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
@@ -297,9 +300,9 @@ BO_ 1613 M1_General_0x64D: 8 Vector__XXX
  SG_ Engine_State : 7|4@0+ (1,0) [0|15] "" Vector__XXX
 
 BO_ 1612 M1_General_0x64C: 6 Vector__XXX
- SG_ Knock_Warning : 55|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Fuel_Pressure_Warning : 40|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ Crankcase_Pressure_Warning : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Knock_Warning : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Fuel_Pressure_Warning : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Crankcase_Pressure_Warning : 42|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ Engine_Oil_Pressure_Warning : 43|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ Engine_Oil_Temperature_Warning : 44|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ Engine_Speed_Warning : 45|1@0+ (1,0) [0|1] "" Vector__XXX
