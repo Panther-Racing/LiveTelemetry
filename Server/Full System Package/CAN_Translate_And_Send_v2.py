@@ -107,8 +107,10 @@ def data_handler(data):
         current_space = next_space + 1
         start_pos = current_space + 1
 
+    print(frame_byte1)
+    print(frame_byte2)
     print(data_bytes)
-    
+
     formatted_data = bytes([frame_byte1, frame_byte2, data_bytes[0], data_bytes[1], data_bytes[2], data_bytes[3],
                             data_bytes[4], data_bytes[5], data_bytes[6], data_bytes[7]])
 
