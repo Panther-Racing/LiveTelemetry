@@ -2,6 +2,7 @@ import cantools
 import json
 import time
 import can_decoder
+import pandas
 
 
 def start(receive_socket, socket):
@@ -119,7 +120,7 @@ def data_handler(data):
 
     try:
         # Decode each incoming message
-        to_json(decoder.decode_frame(formatted_data))
+        to_json(decoder.decode_frame(formatted_message))
     except KeyError as error:
         print('Key error: %s' % error)
     except ValueError as error:
