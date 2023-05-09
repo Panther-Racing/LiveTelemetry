@@ -114,13 +114,17 @@ def data_handler(data):
     # frame_bytes = bytes(frame_byte1 + frame_byte2, 'utf-8')
     frame_id_int = int(frame_id)
     data_bytes = bytes(formatted_data, 'utf-8')
-    formatted_message = {'ID': frame_id_int, 'DataBytes': data_bytes, 'IDE': False}
+    # formatted_message = {'ID': frame_id_int, 'DataBytes': data_bytes, 'IDE': False}
 
-    print(formatted_message)
+    data_list = [frame_id_int, data_bytes, False]
+    data_labels = ['ID', 'DataBytes', 'IDE']
+    dataframe_message = pandas.DataFrame(data_list, data_labels)
+
+    print(dataframe_message)
 
     try:
         # Decode each incoming message
-        to_json(decoder.decode_frame(formatted_message))
+        to_json(decoder.decode_frame(dataframe_message))
     except KeyError as error:
         print('Key error: %s' % error)
     except ValueError as error:
