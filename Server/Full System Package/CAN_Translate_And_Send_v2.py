@@ -99,9 +99,9 @@ def data_handler(data):
         if next_space - current_space == 1:
             data_array.append(int('0' + data_string[start_pos:next_space], 16))
         elif next_space - current_space == 2:
-            data_array.append(int(data_string[start_pos:next_space]), 16)
+            data_array.append(int(data_string[start_pos:next_space], 16))
         else:
-            data_array.append(int(data_string[start_pos:]), 16)
+            data_array.append(int(data_string[start_pos:], 16))
         print('looking for more spaces')
         i += 1
         current_space = next_space + 1
