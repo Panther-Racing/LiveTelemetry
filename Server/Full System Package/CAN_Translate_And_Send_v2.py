@@ -84,8 +84,8 @@ def data_handler(data):
 
     reversed_data = reverse(data_string)
     reversed_data = bytes(reversed_data, 'utf-8')
-    frame_byte1 = hex('0x' + frame_id[0:2].strip())
-    frame_byte2 = hex('0x' + frame_id[2:].strip() + '0')
+    frame_byte1 = int(frame_id[0:2], 16)
+    frame_byte2 = int(frame_id[2:] + '0', 16)
     start_pos = 0
     current_space = 0
     next_space = 0
@@ -96,10 +96,10 @@ def data_handler(data):
         print(next_space)
         print(next_space-current_space)
         if next_space - current_space == 1:
-            data_bytes.append(hex('0x0' + data_string[start_pos:next_space]))
+            data_bytes.append(int('0' + data_string[start_pos:next_space], 16))
             print(data_bytes[i])
         elif next_space - current_space == 2:
-            data_bytes.append(hex('0x' + data_string[start_pos:next_space]))
+            data_bytes.append(int(data_string[start_pos:next_space], 16))
         else:
             print('Error dealing with spaces')
         print('looking for more spaces')
