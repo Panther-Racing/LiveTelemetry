@@ -91,17 +91,17 @@ def data_handler(data):
     current_space = 0
     next_space = 0
     i = 0
-    formatted_data = ''
+    data_array = []
     while next_space >= 0:
         next_space = find_nth(data_string, ' ', i+1)
         print(next_space)
         print(next_space-current_space)
         if next_space - current_space == 1:
-            formatted_data += '0' + data_string[start_pos:next_space]
+            data_array.append(int('0' + data_string[start_pos:next_space], 16))
         elif next_space - current_space == 2:
-            formatted_data += data_string[start_pos:next_space]
+            data_array.append(int(data_string[start_pos:next_space]), 16)
         else:
-            formatted_data += data_string[start_pos:]
+            data_array.append(int(data_string[start_pos:]), 16)
         print('looking for more spaces')
         i += 1
         current_space = next_space + 1
@@ -109,11 +109,11 @@ def data_handler(data):
 
     print(frame_byte1)
     print(frame_byte2)
-    print(formatted_data)
+    print(data_array)
 
     # frame_bytes = bytes(frame_byte1 + frame_byte2, 'utf-8')
     frame_id_int = int(frame_id, 16)
-    data_bytes = bytearray(formatted_data, 'utf-8')
+    data_bytes = bytearray(data_array)
     # formatted_message = {'ID': frame_id_int, 'DataBytes': data_bytes, 'IDE': False}
 
     data_list = [frame_id_int, data_bytes, False]
