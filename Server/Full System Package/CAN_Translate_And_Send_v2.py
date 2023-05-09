@@ -94,6 +94,7 @@ def data_handler(data):
     while next_space >= 0:
         next_space = find_nth(data_string, ' ', i)
         print(next_space)
+        print(next_space-current_space)
         if next_space - current_space == 1:
             data_bytes.append(int('0' + data_string[start_pos:next_space], 16))
             print(data_bytes[i])
