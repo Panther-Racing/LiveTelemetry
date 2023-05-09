@@ -91,7 +91,7 @@ def data_handler(data):
     current_space = 0
     next_space = 0
     i = 0
-    data_array = []
+    data_array = [1,2]
     while next_space >= 0:
         next_space = find_nth(data_string, ' ', i+1)
         print(next_space)
