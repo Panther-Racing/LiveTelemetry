@@ -86,20 +86,22 @@ def data_handler(data):
     reversed_data = bytes(reversed_data, 'utf-8')
     frame_byte1 = int(frame_id[0:2])
     frame_byte2 = int(frame_id[2:] + '0')
-    current_space = -1
+    start_pos = 0
+    current_space = 0
     next_space = 0
     i = 0
     data_bytes = []
     while next_space >= 0:
         next_space = find_nth(data_string, ' ', i)
         if next_space - current_space == 1:
-            data_bytes.append(int('0' + data_string[current_space+1:next_space]))
+            data_bytes.append(int('0' + data_string[start_pos:next_space]))
         elif next_space - current_space == 2:
-            data_bytes.append(int(data_string[current_space+1:next_space]))
+            data_bytes.append(int(data_string[start_pos:next_space]))
         else:
             print('Error dealing with spaces')
         i += 1
         current_space = next_space
+        start_pos = current_space + 1
 
     formatted_data = bytes([frame_byte1, frame_byte2, data_bytes[0], data_bytes[1], data_bytes[2], data_bytes[3],
                             data_bytes[4], data_bytes[5], data_bytes[6], data_bytes[7]])
