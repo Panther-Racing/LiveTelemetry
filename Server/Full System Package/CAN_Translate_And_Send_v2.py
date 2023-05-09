@@ -84,8 +84,8 @@ def data_handler(data):
 
     reversed_data = reverse(data_string)
     reversed_data = bytes(reversed_data, 'utf-8')
-    frame_byte1 = int('0x' + frame_id[0:2], 16)
-    frame_byte2 = int('0x' + frame_id[2:] + '0', 16)
+    frame_byte1 = hex('0x' + frame_id[0:2].strip())
+    frame_byte2 = hex('0x' + frame_id[2:].strip() + '0')
     start_pos = 0
     current_space = 0
     next_space = 0
