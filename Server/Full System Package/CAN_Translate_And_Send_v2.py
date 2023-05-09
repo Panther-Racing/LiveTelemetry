@@ -94,15 +94,15 @@ def data_handler(data):
     data_array = [1, 2]
     while next_space >= 0:
         next_space = find_nth(data_string, ' ', i+1)
-        print(next_space)
-        print(next_space-current_space)
+        # print(next_space)
+        # print(next_space-current_space)
         if next_space - current_space == 1:
             data_array.append(int('0' + data_string[start_pos:next_space], 16))
         elif next_space - current_space == 2:
             data_array.append(int(data_string[start_pos:next_space], 16))
         else:
             data_array.append(int(data_string[start_pos:], 16))
-        print('looking for more spaces')
+        # print('looking for more spaces')
         i += 1
         current_space = next_space + 1
         start_pos = current_space
@@ -118,8 +118,8 @@ def data_handler(data):
     data_bytes = bytearray(data_array)
     # formatted_message = {'ID': frame_id_int, 'DataBytes': data_bytes, 'IDE': False}
 
-    data_list = [[data_bytes, frame_id_int]]
-    data_labels = ['DataBytes', 'ID']
+    data_list = [[data_bytes, frame_id_int, False]]
+    data_labels = ['DataBytes', 'ID', 'IDE']
     dataframe_message = pandas.DataFrame(data=data_list, columns=data_labels)
 
     print(f'dataframe_message: {dataframe_message}')
