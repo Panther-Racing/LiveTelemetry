@@ -104,7 +104,7 @@ def data_handler(data):
             print('Error dealing with spaces')
         print('looking for more spaces')
         i += 1
-        current_space = next_space
+        current_space = next_space + 1
         start_pos = current_space + 1
 
     formatted_data = bytes([frame_byte1, frame_byte2, data_bytes[0], data_bytes[1], data_bytes[2], data_bytes[3],
