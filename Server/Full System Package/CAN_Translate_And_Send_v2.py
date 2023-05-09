@@ -118,8 +118,8 @@ def data_handler(data):
     data_bytes = bytearray(data_array)
     # formatted_message = {'ID': frame_id_int, 'DataBytes': data_bytes, 'IDE': False}
 
-    data_list = [frame_id_int, data_bytes, False]
-    data_labels = ['ID', 'DataBytes', 'IDE']
+    data_list = [frame_id_int, data_bytes]
+    data_labels = ['ID', 'DataBytes']
     dataframe_message = pandas.DataFrame(data_list, data_labels)
 
     print(f'dataframe_message: {dataframe_message}')
