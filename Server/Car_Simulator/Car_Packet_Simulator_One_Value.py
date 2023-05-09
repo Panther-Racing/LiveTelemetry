@@ -19,7 +19,7 @@ serverSocket.bind((myAddress, serverPort))
 
 while True:
 
-    line = '00 00 03 d0 01 40 00 ad'
+    line = '8, 640, 00 00 03 d0 01 40 00 ad'
     bytesToSend = str.encode(line)
     serverSocket.sendto(bytesToSend, serverAddress)
     time.sleep(.1)
