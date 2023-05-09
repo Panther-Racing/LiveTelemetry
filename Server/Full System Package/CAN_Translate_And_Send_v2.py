@@ -101,7 +101,7 @@ def data_handler(data):
         elif next_space - current_space == 2:
             data_bytes.append(int(data_string[start_pos:next_space], 16))
         else:
-            print('Error dealing with spaces')
+            data_bytes.append(int(data_string[start_pos:], 16))
         print('looking for more spaces')
         i += 1
         current_space = next_space + 1
