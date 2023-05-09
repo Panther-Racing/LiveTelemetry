@@ -92,7 +92,7 @@ def data_handler(data):
     i = 0
     data_bytes = []
     while next_space >= 0:
-        next_space = find_nth(data_string, ' ', i)
+        next_space = find_nth(data_string, ' ', i+1)
         print(next_space)
         print(next_space-current_space)
         if next_space - current_space == 1:
