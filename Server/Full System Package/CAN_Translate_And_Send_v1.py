@@ -102,6 +102,7 @@ def data_handler(data):
         start_pos = current_space
 
     fixed_data = bytes(data_reformatted, 'utf-8')
+    print(fixed_data)
 
     reversed_data = reverse(data_string)
     reversed_data = bytes(reversed_data, 'utf-8')
