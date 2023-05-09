@@ -399,8 +399,8 @@ BO_ 1601 M1_General_0x641: 8 Vector__XXX
 BO_ 1600 M1_General_0x640: 8 Vector__XXX
  SG_ Throttle_Position : 55|16@0+ (0.1,0) [0|100] "%" Vector__XXX
  SG_ Inlet_Air_Temperature : 39|16@0- (0.1,0) [-40|120] "C" Vector__XXX
- SG_ Inlet_Manifold_Pressure : 23|16@0- (0.1,0) [0|500] "kPa" Vector__XXX
- SG_ Engine_Speed : 7|16@0- (1,0) [0|16000] "RPM" Vector__XXX
+ SG_ Inlet_Manifold_Pressure : 23|16@0+ (0.1,0) [0|500] "kPa" Vector__XXX
+ SG_ Engine_Speed : 7|16@0+ (1,0) [0|16000] "RPM" Vector__XXX
 
 
 
