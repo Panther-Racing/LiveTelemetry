@@ -101,6 +101,7 @@ def data_handler(data):
         current_space = next_space + 1
         start_pos = current_space
 
+    print(data_reformatted)
     fixed_data = bytes(data_reformatted, 'utf-8')
     print(fixed_data)
 
