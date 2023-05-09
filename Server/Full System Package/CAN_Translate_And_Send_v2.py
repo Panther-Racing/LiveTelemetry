@@ -113,7 +113,7 @@ def data_handler(data):
 
     # frame_bytes = bytes(frame_byte1 + frame_byte2, 'utf-8')
     frame_id_int = int(frame_id, 16)
-    data_bytes = bytes(formatted_data, 'utf-8')
+    data_bytes = bytearray(formatted_data, 'utf-8')
     # formatted_message = {'ID': frame_id_int, 'DataBytes': data_bytes, 'IDE': False}
 
     data_list = [frame_id_int, data_bytes, False]
