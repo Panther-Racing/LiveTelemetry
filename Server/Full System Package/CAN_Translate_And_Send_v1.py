@@ -50,7 +50,7 @@ def to_json(message):
         #     data_value = message[key]
         #     message[key] = (time.time(), data_value)
         json_dict = json.load(json_file)
-        print(json_dict)
+        # print(json_dict)
         json_dict.update(message)
         #Add a value to hold the current time
         json_dict.update({'Timestamp': time.time()})
@@ -86,7 +86,7 @@ def data_handler(data):
 
     try:
         # Decode each incoming message
-        to_json(db.decode_message(frame_id_or_name=frame_id, data=data, decode_choices=False, scaling=True, decode_containers=False, allow_truncated=False))
+        to_json(db.decode_message(frame_id_or_name=frame_id, data=data, decode_choices=True, scaling=True, decode_containers=False, allow_truncated=True))
     except KeyError as error:
         print('Key error: %s' % error)
     except ValueError as error:
