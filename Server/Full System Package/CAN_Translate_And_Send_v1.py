@@ -78,7 +78,7 @@ def data_handler(data):
     print(f'Frame ID: {frame_id}     data: {data}')
 
     data_string = message[find_nth(message, ',', 2) + 1:]
-    data_string = data_string.replace(' ', '')
+    # data_string = data_string.replace(' ', '')
     data = bytes(data_string, 'utf-8')
 
     start_pos = 0
