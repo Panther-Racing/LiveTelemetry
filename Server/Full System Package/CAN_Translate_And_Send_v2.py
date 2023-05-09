@@ -27,8 +27,7 @@ def setup():
 
     # Add the DBC file to the CAN reader
     db = can_decoder.load_dbc('DBCS/DBC3.dbc')
-
-    decoder = can_decoder.DataFrameDecoder(db)
+    decoder = can_decoder.dataframe.DataFrameDecoder(db)
 
     # Reset the json file
     json_file = open(json_file_name, 'w')
