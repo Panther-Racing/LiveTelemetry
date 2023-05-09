@@ -113,7 +113,7 @@ def data_handler(data):
 
     formatted_data = bytes(frame_byte1 + frame_byte2 + data_bytes[0] + data_bytes[1] + data_bytes[2] + data_bytes[3] +
                            data_bytes[4] + data_bytes[5] + data_bytes[6] + data_bytes[7], 'utf-8')
-    print(formatted data)
+    print(formatted_data)
 
     try:
         # Decode each incoming message
