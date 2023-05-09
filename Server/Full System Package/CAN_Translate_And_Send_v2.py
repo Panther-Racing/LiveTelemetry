@@ -90,18 +90,18 @@ def data_handler(data):
     current_space = 0
     next_space = 0
     i = 0
-    data_bytes = []
+    formatted_data = ''
     while next_space >= 0:
         next_space = find_nth(data_string, ' ', i+1)
         print(next_space)
         print(next_space-current_space)
         if next_space - current_space == 1:
-            data_bytes.append('0' + data_string[start_pos:next_space])
+            data_bytes += '0' + data_string[start_pos:next_space]
             print(data_bytes[i])
         elif next_space - current_space == 2:
-            data_bytes.append(data_string[start_pos:next_space])
+            data_bytes += data_string[start_pos:next_space]
         else:
-            data_bytes.append(data_string[start_pos:])
+            data_bytes += data_string[start_pos:]
         print('looking for more spaces')
         i += 1
         current_space = next_space + 1
@@ -109,11 +109,14 @@ def data_handler(data):
 
     print(frame_byte1)
     print(frame_byte2)
-    print(data_bytes)
-
-    formatted_data = bytes(frame_byte1 + frame_byte2 + data_bytes[0] + data_bytes[1] + data_bytes[2] + data_bytes[3] +
-                           data_bytes[4] + data_bytes[5] + data_bytes[6] + data_bytes[7], 'utf-8')
     print(formatted_data)
+
+    # frame_bytes = bytes(frame_byte1 + frame_byte2, 'utf-8')
+    frame_id_int = int(frame_id)
+    data_bytes = bytes(formatted_data, 'utf-8')
+    formatted_message = {'ID': frame_id_int, 'DataBytes': data_bytes, 'IDE': False}
+
+    print(formatted_message)
 
     try:
         # Decode each incoming message
