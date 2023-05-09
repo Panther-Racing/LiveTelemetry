@@ -69,7 +69,7 @@ def data_handler(data):
     # Separate CAN message into id and data
     # Except non hexadecimal values
     try:
-        frame_id = int(message[find_nth(message, ',', 1)+1:find_nth(message, ',', 2)], 16)
+        frame_id = message[find_nth(message, ',', 1)+1:find_nth(message, ',', 2)]
     except ValueError as error:
         # print('Non hexadecimal frame_id: %s' % error)
         nonLiterals.add(str(error))
