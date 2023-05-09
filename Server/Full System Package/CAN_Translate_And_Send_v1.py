@@ -77,16 +77,38 @@ def data_handler(data):
     print(message)
     print(f'Frame ID: {frame_id}     data: {data}')
 
-    data_string = message[find_nth(message, ',', 2)+1:]
+    data_string = message[find_nth(message, ',', 2) + 1:]
     data_string = data_string.replace(' ', '')
     data = bytes(data_string, 'utf-8')
+
+    start_pos = 0
+    current_space = 0
+    next_space = 0
+    i = 0
+    data_reformatted = ''
+    while next_space >= 0:
+        next_space = find_nth(data_string, ' ', i + 1)
+        # print(next_space)
+        # print(next_space-current_space)
+        if next_space - current_space == 1:
+            data_reformatted += '\\x0' + data_string[start_pos:next_space]
+        elif next_space - current_space == 2:
+            data_reformatted += '\\x' + data_string[start_pos:next_space]
+        else:
+            data_reformatted += '\\x' + data_string[start_pos:]
+        # print('looking for more spaces')
+        i += 1
+        current_space = next_space + 1
+        start_pos = current_space
+
+    fixed_data = bytes(data_reformatted, 'utf-8')
 
     reversed_data = reverse(data_string)
     reversed_data = bytes(reversed_data, 'utf-8')
 
     try:
         # Decode each incoming message
-        to_json(db.decode_message(frame_id_or_name=frame_id, data=data, decode_choices=True, scaling=True, decode_containers=False, allow_truncated=True))
+        to_json(db.decode_message(frame_id_or_name=frame_id, data=fixed_data, decode_choices=False, scaling=True, decode_containers=False, allow_truncated=True))
     except KeyError as error:
         print('Key error: %s' % error)
     except ValueError as error:
