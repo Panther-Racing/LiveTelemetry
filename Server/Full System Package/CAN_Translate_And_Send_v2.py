@@ -120,7 +120,7 @@ def data_handler(data):
 
     data_list = [data_bytes, frame_id_int]
     data_labels = ['DataBytes', 'ID']
-    dataframe_message = pandas.DataFrame(data_list, data_labels)
+    dataframe_message = pandas.DataFrame(data=data_list, columns=data_labels)
 
     print(f'dataframe_message: {dataframe_message}')
 
