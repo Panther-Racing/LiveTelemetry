@@ -83,8 +83,8 @@ def data_handler(data):
     # data_string = data_string.replace(' ', '')
     data = bytes(data_string, 'utf-8')
 
-    reversed_data = reverse(data_string)
-    reversed_data = bytes(reversed_data, 'utf-8')
+    # reversed_data = reverse(data_string)
+    # reversed_data = bytes(reversed_data, 'utf-8')
     frame_byte1 = frame_id[0:2]
     frame_byte2 = frame_id[2:] + '0'
     start_pos = 0
@@ -109,9 +109,9 @@ def data_handler(data):
 
     data_array.pop(0)
     data_array.pop(0)
-    print(frame_byte1)
-    print(frame_byte2)
-    print(data_array)
+    # print(frame_byte1)
+    # print(frame_byte2)
+    # print(data_array)
 
     # frame_bytes = bytes(frame_byte1 + frame_byte2, 'utf-8')
     frame_id_int = int(frame_id, 16)
@@ -143,7 +143,7 @@ def send_json(json_string):
     except ConnectionResetError as error:
         print(error)
 
-    # print(json_result, 'was sent!')
+    print(json_result, 'was sent!')
     # time.sleep(1)
 
 
