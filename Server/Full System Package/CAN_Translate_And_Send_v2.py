@@ -120,7 +120,7 @@ def data_handler(data):
     data_labels = ['ID', 'DataBytes', 'IDE']
     dataframe_message = pandas.DataFrame(data_list, data_labels)
 
-    print(dataframe_message)
+    print(f'dataframe_message: {dataframe_message}')
 
     try:
         # Decode each incoming message
