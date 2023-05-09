@@ -96,12 +96,11 @@ def data_handler(data):
         print(next_space)
         print(next_space-current_space)
         if next_space - current_space == 1:
-            data_bytes += '0' + data_string[start_pos:next_space]
-            print(data_bytes[i])
+            formatted_data += '0' + data_string[start_pos:next_space]
         elif next_space - current_space == 2:
-            data_bytes += data_string[start_pos:next_space]
+            formatted_data += data_string[start_pos:next_space]
         else:
-            data_bytes += data_string[start_pos:]
+            formatted_data += data_string[start_pos:]
         print('looking for more spaces')
         i += 1
         current_space = next_space + 1
