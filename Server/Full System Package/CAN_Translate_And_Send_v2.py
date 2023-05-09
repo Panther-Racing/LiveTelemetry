@@ -102,6 +102,7 @@ def data_handler(data):
             data_bytes.append(int(data_string[start_pos:next_space], 16))
         else:
             print('Error dealing with spaces')
+        print('looking for more spaces')
         i += 1
         current_space = next_space
         start_pos = current_space + 1
