@@ -63,26 +63,7 @@ def to_json(message):
         send_json(json_dict)
 
 
-def data_handler(data):
-    # Extract the message from the socket
-    message = data.decode().strip()
-
-    # Separate CAN message into id and data
-    # Except non hexadecimal values
-    try:
-        frame_id = int(message[find_nth(message, ',', 1) + 1:find_nth(message, ',', 2)], 16)
-    except ValueError as error:
-        # print('Non hexadecimal frame_id: %s' % error)
-        nonLiterals.add(str(error))
-        frame_id = 'ERROR'
-
-    print(message)
-    print(f'Frame ID: {frame_id}     data: {data}')
-
-    data_string = message[find_nth(message, ',', 2) + 1:]
-    # data_string = data_string.replace(' ', '')
-    data = bytes(data_string, 'utf-8')
-
+def reformatter(data_string):
     start_pos = 0
     current_space = 0
     next_space = 0
@@ -103,16 +84,42 @@ def data_handler(data):
         current_space = next_space + 1
         start_pos = current_space
 
-    # print(data_reformatted)
+        return data_reformatted
+
+
+def data_handler(data):
+    # Extract the message from the socket
+    message = data.decode().strip()
+
+    # Separate CAN message into id and data
+    # Except non hexadecimal values
+    try:
+        frame_id = int(message[find_nth(message, ',', 1) + 1:find_nth(message, ',', 2)], 16)
+    except ValueError as error:
+        # print('Non hexadecimal frame_id: %s' % error)
+        nonLiterals.add(str(error))
+        frame_id = 'ERROR'
+
+    print(message)
+    print(f'Frame ID: {frame_id}     data: {data}')
+
+    data_string = message[find_nth(message, ',', 2) + 1:]
+    # data_string = data_string.replace(' ', '')
+    data = bytes(data_string, 'utf-8')
+
+    data_reformatted = reformatter(data_string)
     fixed_data = bytes(data_reformatted, 'utf-8')
     print(fixed_data)
 
     reversed_data = reverse(data_string)
-    reversed_data = bytes(reversed_data, 'utf-8')
+    reversed_reformatted = bytes(reformatter(reversed_data), 'utf-8')
+
+    regular_reversed = data_string[::-1]
+    regular_reversed_reformatted = bytes(reformatter(regular_reversed), 'utf-8')
 
     try:
         # Decode each incoming message
-        to_json(db.decode_message(frame_id_or_name=frame_id, data=fixed_data, decode_choices=False, scaling=True,
+        to_json(db.decode_message(frame_id_or_name=frame_id, data=reversed_reformatted, decode_choices=False, scaling=True,
                                   decode_containers=False, allow_truncated=False))
     except KeyError as error:
         print('Key error: %s' % error)
