@@ -123,7 +123,7 @@ def data_handler(data):
 
     weird_reversed = bytes(reverse(reformatter(regular_reversed)), 'utf-8')
 
-    to_send = data_reformatted
+    to_send = fixed_data
     print(to_send)
 
     try:
