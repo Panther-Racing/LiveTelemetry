@@ -52,7 +52,7 @@ def to_json(message):
         #     data_value = message[key]
         #     message[key] = (time.time(), data_value)
         json_dict = json.load(json_file)
-        # print(json_dict)
+        print(json_dict)
         json_dict.update(message)
         # Add a value to hold the current time
         json_dict.update({'Timestamp': time.time()})
