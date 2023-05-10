@@ -115,8 +115,8 @@ def data_handler(data):
     fixed_data = bytes(data_reformatted, 'utf-8')
     # print(fixed_data)
 
-    reversed_data = reverse(data_string)
-    reversed_reformatted = bytes(reformatter(reversed_data), 'utf-8')
+    reversed_reformatted = reverse(data_reformatted)
+    # reversed_reformatted = bytes(reformatter(reversed_data), 'utf-8')
 
     regular_reversed = data_string[::-1]
     regular_reversed_reformatted = bytes(reformatter(regular_reversed), 'utf-8')
@@ -149,17 +149,12 @@ def reverse(data_string):
     print(data_string)
 
     length = len(data_string)
-    i = length-1
+    i = int(length/4)
     reverse_string = ''
-    if length % 2 == 0:
+    while i > 0:
+        startpos = find_nth(data_string, '\\', i)
+        reverse_string += data_string[startpos:startpos+4]
         i -= 1
-        reverse_string = ('0' + data_string[i:]).strip()
-
-    while i >= 0:
-        i -= 2
-        reverse_string += ' ' + (data_string[i:i + 2]).strip()
-
-    # reverse_string = reverse_string.replace('  ', '')
     print(reverse_string)
 
     return reverse_string
