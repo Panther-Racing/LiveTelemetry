@@ -115,7 +115,7 @@ def data_handler(data):
     fixed_data = bytes(data_reformatted, 'utf-8')
     # print(fixed_data)
 
-    reversed_reformatted = reverse(data_reformatted)
+    reversed_reformatted = bytes(reverse(data_reformatted), 'utf-8')
     # reversed_reformatted = bytes(reformatter(reversed_data), 'utf-8')
 
     regular_reversed = data_string[::-1]
