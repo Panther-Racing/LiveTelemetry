@@ -84,6 +84,8 @@ def reformatter(data_string):
         current_space = next_space + 1
         start_pos = current_space
 
+        print(data_reformatted)
+
         return data_reformatted
 
 
@@ -109,7 +111,7 @@ def data_handler(data):
 
     data_reformatted = reformatter(data_string)
     fixed_data = bytes(data_reformatted, 'utf-8')
-    print(fixed_data)
+    # print(fixed_data)
 
     reversed_data = reverse(data_string)
     reversed_reformatted = bytes(reformatter(reversed_data), 'utf-8')
@@ -142,7 +144,7 @@ def send_json(json_string):
 
 
 def reverse(data_string):
-    print(data_string)
+    # print(data_string)
 
     length = len(data_string)
     i = length
@@ -156,7 +158,7 @@ def reverse(data_string):
         reverse_string += data_string[i:i + 2]
 
     reverse_string = reverse_string.replace(' ', '')
-    print(reverse_string)
+    # print(reverse_string)
 
     return reverse_string
 
