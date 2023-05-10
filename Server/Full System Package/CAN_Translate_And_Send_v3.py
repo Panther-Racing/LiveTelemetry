@@ -119,7 +119,7 @@ def data_handler(data):
 
     try:
         # Decode each incoming message
-        to_json(db.decode_message(frame_id_or_name=frame_id, data=reversed_reformatted, decode_choices=False, scaling=True,
+        to_json(db.decode_message(frame_id_or_name=frame_id, data=regular_reversed_reformatted, decode_choices=False, scaling=True,
                                   decode_containers=False, allow_truncated=False))
     except KeyError as error:
         print('Key error: %s' % error)
