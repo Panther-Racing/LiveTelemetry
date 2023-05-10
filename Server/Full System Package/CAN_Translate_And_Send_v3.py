@@ -28,7 +28,8 @@ def setup():
     # Add the DBC file to the CAN reader
     # cantools.database.load_file(filename, database_format=None, encoding=None, frame_id_mask=None,
     # prune_choices=False, strict=True, cache_dir=None, sort_signals=<function sort_signals_by_start_bit
-    db = cantools.database.load_file('DBCS/DBC3.dbc')
+    db = cantools.database.load_file('DBCS/DBC3.dbc', database_format=None, encoding='cp1252', frame_id_mask=None,
+                                     prune_choices=False, strict=True, cache_dir=None)
 
     # Reset the json file
     json_file = open(json_file_name, 'w')
@@ -38,7 +39,7 @@ def setup():
 def find_nth(haystack, needle, n):
     start = haystack.find(needle)
     while start >= 0 and n > 1:
-        start = haystack.find(needle, start+len(needle))
+        start = haystack.find(needle, start + len(needle))
         n -= 1
     return start
 
@@ -53,7 +54,7 @@ def to_json(message):
         json_dict = json.load(json_file)
         # print(json_dict)
         json_dict.update(message)
-        #Add a value to hold the current time
+        # Add a value to hold the current time
         json_dict.update({'Timestamp': time.time()})
         json_file.close()
         open(json_file_name, 'w').close()
@@ -69,7 +70,7 @@ def data_handler(data):
     # Separate CAN message into id and data
     # Except non hexadecimal values
     try:
-        frame_id = int(message[find_nth(message, ',', 1)+1:find_nth(message, ',', 2)], 16)
+        frame_id = int(message[find_nth(message, ',', 1) + 1:find_nth(message, ',', 2)], 16)
     except ValueError as error:
         # print('Non hexadecimal frame_id: %s' % error)
         nonLiterals.add(str(error))
@@ -111,8 +112,8 @@ def data_handler(data):
 
     try:
         # Decode each incoming message
-        # decode_message(frame_id_or_name, data, decode_choices=True, scaling=True, decode_containers=False, allow_truncated=False
-        to_json(db.decode_message(frame_id_or_name=frame_id, data=fixed_data, decode_choices=False, scaling=True, decode_containers=False, allow_truncated=False))
+        to_json(db.decode_message(frame_id_or_name=frame_id, data=fixed_data, decode_choices=False, scaling=True,
+                                  decode_containers=False, allow_truncated=False))
     except KeyError as error:
         print('Key error: %s' % error)
     except ValueError as error:
@@ -134,7 +135,6 @@ def send_json(json_string):
 
 
 def reverse(data_string):
-
     print(data_string)
 
     length = len(data_string)
@@ -146,7 +146,7 @@ def reverse(data_string):
 
     while i >= 0:
         i -= 2
-        reverse_string += data_string[i:i+2]
+        reverse_string += data_string[i:i + 2]
 
     reverse_string = reverse_string.replace(' ', '')
     print(reverse_string)
@@ -154,8 +154,6 @@ def reverse(data_string):
     return reverse_string
 
 
-
 def main(receive_socket):
     while True:
         data_handler(receive_socket.recv())
-
