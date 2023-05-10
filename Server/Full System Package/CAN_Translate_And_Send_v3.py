@@ -46,6 +46,7 @@ def find_nth(haystack, needle, n):
 
 # Translate each string from the decoded CAN message into a dictionary and then output that dictionary to the json file
 def to_json(message):
+    print(message)
     with open(json_file_name, 'r+') as json_file:
         # # Traverse through the new dictionary and add time stamps
         # for key in message:
