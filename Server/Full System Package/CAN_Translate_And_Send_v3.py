@@ -156,7 +156,7 @@ def reverse(data_string):
         reverse_string = '0' + data_string[i:]
 
     while i >= 0:
-        i -= 2
+        i -= 3
         reverse_string += data_string[i:i + 2]
 
     # reverse_string = reverse_string.replace('  ', '')
