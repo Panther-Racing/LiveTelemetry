@@ -71,8 +71,8 @@ def reformatter(data_string):
     data_reformatted = ''
     while next_space >= 0:
         next_space = find_nth(data_string, ' ', i + 1)
-        # print(next_space)
-        # print(next_space-current_space)
+        print(next_space)
+        print(next_space-current_space)
         if next_space - current_space == 1:
             data_reformatted += ('\\x0' + data_string[start_pos:next_space])
         elif next_space - current_space == 2:
