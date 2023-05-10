@@ -64,6 +64,7 @@ def to_json(message):
 
 
 def reformatter(data_string):
+    print(data_string)
     start_pos = 0
     current_space = 0
     next_space = 0
