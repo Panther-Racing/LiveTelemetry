@@ -146,7 +146,7 @@ def send_json(json_string):
 
 
 def reverse(data_string):
-    # print(data_string)
+    print(data_string)
 
     length = len(data_string)
     i = length
@@ -159,8 +159,8 @@ def reverse(data_string):
         i -= 2
         reverse_string += data_string[i:i + 2]
 
-    reverse_string = reverse_string.replace('  ', '')
-    # print(reverse_string)
+    # reverse_string = reverse_string.replace('  ', '')
+    print(reverse_string)
 
     return reverse_string
 
