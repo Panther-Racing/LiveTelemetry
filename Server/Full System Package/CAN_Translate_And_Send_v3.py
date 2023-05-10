@@ -86,7 +86,7 @@ def reformatter(data_string):
         current_space = next_space + 1
         start_pos = current_space
 
-        print(data_reformatted)
+        # print(data_reformatted)
 
     return data_reformatted
 
@@ -125,7 +125,7 @@ def data_handler(data):
 
     try:
         # Decode each incoming message
-        to_json(db.decode_message(frame_id_or_name=frame_id, data=weird_reversed, decode_choices=False, scaling=True,
+        to_json(db.decode_message(frame_id_or_name=frame_id, data=regular_reversed_reformatted, decode_choices=False, scaling=True,
                                   decode_containers=False, allow_truncated=False))
     except KeyError as error:
         print('Key error: %s' % error)
@@ -148,7 +148,7 @@ def send_json(json_string):
 
 
 def reverse(data_string):
-    print(data_string)
+    # print(data_string)
 
     length = len(data_string)
     i = int(length/4)
@@ -157,7 +157,7 @@ def reverse(data_string):
         startpos = find_nth(data_string, '\\', i)
         reverse_string += data_string[startpos:startpos+4]
         i -= 1
-    print(reverse_string)
+    # print(reverse_string)
 
     return reverse_string
 
