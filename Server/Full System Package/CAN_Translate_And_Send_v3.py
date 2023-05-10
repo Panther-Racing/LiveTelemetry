@@ -64,17 +64,17 @@ def to_json(message):
 
 
 def reformatter(data_string):
-    print(data_string)
+    # print(data_string)
     start_pos = 0
     current_space = 0
     next_space = 0
     i = 0
     data_reformatted = ''
     while next_space >= 0:
-        print(data_string)
+        # print(data_string)
         next_space = find_nth(data_string, ' ', i + 1)
-        print(next_space)
-        print(next_space-current_space)
+        # print(next_space)
+        # print(next_space-current_space)
         if next_space - current_space == 1:
             data_reformatted += ('\\x0' + data_string[start_pos:next_space])
         elif next_space - current_space == 2:
@@ -88,7 +88,7 @@ def reformatter(data_string):
 
         print(data_reformatted)
 
-        return data_reformatted
+    return data_reformatted
 
 
 def data_handler(data):
