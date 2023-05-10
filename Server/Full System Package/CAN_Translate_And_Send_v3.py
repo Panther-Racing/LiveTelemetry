@@ -153,11 +153,11 @@ def reverse(data_string):
     reverse_string = ''
     if length % 2 == 0:
         i -= 1
-        reverse_string = '0' + data_string[i:]
+        reverse_string = ('0' + data_string[i:]).strip() + ' '
 
     while i >= 0:
-        i -= 3
-        reverse_string += data_string[i:i + 2]
+        i -= 2
+        reverse_string += (data_string[i:i + 2]).strip() + ' '
 
     # reverse_string = reverse_string.replace('  ', '')
     print(reverse_string)
