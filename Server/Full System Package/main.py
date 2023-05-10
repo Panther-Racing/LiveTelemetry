@@ -1,5 +1,5 @@
 # Import other programs we wrote
-import CAN_Translate_And_Send_v1
+import CAN_Translate_And_Send_v3
 import send_sql_v1
 import Server_v4
 import Node_Red_Server
@@ -26,7 +26,7 @@ def translate_process():
     global translate_conn
     translate_conn, translate_child_conn = Pipe()
     # The data acquired from the previous process is sent to this process, and we receive data through translate_conn
-    translate = Process(target=CAN_Translate_And_Send_v1.start(server_conn, translate_child_conn))
+    translate = Process(target=CAN_Translate_And_Send_v3.start(server_conn, translate_child_conn))
     translate.start()
 
 
