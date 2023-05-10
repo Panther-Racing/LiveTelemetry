@@ -149,7 +149,7 @@ def reverse(data_string):
     print(data_string)
 
     length = len(data_string)
-    i = length
+    i = length-1
     reverse_string = ''
     if length % 2 == 0:
         i -= 1
