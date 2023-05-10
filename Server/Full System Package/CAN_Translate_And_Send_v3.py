@@ -121,7 +121,7 @@ def data_handler(data):
     regular_reversed = data_string[::-1]
     regular_reversed_reformatted = bytes(reformatter(regular_reversed), 'utf-8')
 
-    weird_reversed = bytes(reverse(regular_reversed), 'utf-8')
+    weird_reversed = bytes(reverse(reformatter(regular_reversed)), 'utf-8')
 
     try:
         # Decode each incoming message
