@@ -28,7 +28,7 @@ def setup():
     # Add the DBC file to the CAN reader
     # cantools.database.load_file(filename, database_format=None, encoding=None, frame_id_mask=None,
     # prune_choices=False, strict=True, cache_dir=None, sort_signals=<function sort_signals_by_start_bit
-    db = cantools.database.load_file('DBCS/DBC4.dbc', database_format='dbc', encoding='cp1252', frame_id_mask=None,
+    db = cantools.database.load_file('DBCS/DBC5.dbc', database_format='dbc', encoding='cp1252', frame_id_mask=None,
                                      prune_choices=False, strict=True, cache_dir=None)
 
     # Reset the json file

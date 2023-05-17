@@ -1,0 +1,156 @@
+VERSION "100"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: C125
+
+
+BO_ 234 Display_1: 8 C125
+ SG_ Bat_Volts_ECU : 7|16@0- (0.01,0) [800|1500] "V"  Vector__XXX
+ SG_ Wheel_Speed_FL : 23|16@0- (0.1,0) [0|3000] "km/h"  Vector__XXX
+ SG_ Wheel_Speed_FR : 39|16@0- (0.1,0) [0|3000] "km/h"  Vector__XXX
+ SG_ Wheel_Speed_RL : 55|16@0- (0.1,0) [0|3000] "km/h"  Vector__XXX
+
+BO_ 235 Display_2: 8 C125
+ SG_ Wheel_Speed_RR : 7|16@0- (0.1,0) [0|3000] "km/h"  Vector__XXX
+ SG_ Vehicle_Speed : 23|16@0- (0.1,0) [0|3000] "km/h"  Vector__XXX
+ SG_ Bat_Volts_Dash : 39|16@0- (0.01,0) [0|0] "V"  Vector__XXX
+ SG_ Ground_Speed : 55|16@0- (0.1,0) [0|3000] "km/h"  Vector__XXX
+
+BO_ 236 Display_3: 4 C125
+ SG_ GPS_Speed : 7|32@0- (0.1,0) [0|0] "km/h"  Vector__XXX
+
+BO_ 237 Display_4: 8 C125
+ SG_ Gear : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Mixture_Aim : 23|16@0- (0.01,0) [0|0] "LA"  Vector__XXX
+ SG_ Fuel_Pressure_Sensor : 39|16@0- (0.1,0) [0|0] "kPa"  Vector__XXX
+ SG_ Engine_Speed : 55|16@0- (0.1,0) [0|0] "rps"  Vector__XXX
+
+BO_ 238 Display_5: 8 C125
+ SG_ Engine_Oil_Pressure : 7|16@0- (0.1,0) [0|0] "kPa"  Vector__XXX
+ SG_ Coolant_Temperature : 23|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+ SG_ Engine_Oil_Temperature : 39|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+ SG_ Inlet_Manifold_Pressure : 55|16@0- (0.1,0) [0|0] "kPa"  Vector__XXX
+
+BO_ 239 Display_6: 8 C125
+ SG_ Inlet_Air_Temperature : 7|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+ SG_ Exhaust_Temperature : 23|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+ SG_ Engine_Speed_Limit : 39|16@0- (0.1,0) [0|0] "rps"  Vector__XXX
+ SG_ Fuel_Temperature : 55|16@0- (0.1,0) [0|0] "C"  Vector__XXX
+
+BO_ 240 Display_7: 8 C125
+ SG_ Coolant_Temperature_Warning : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Engine_Oil_Temp_Warning : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Engine_Oil_Pressure_Warning : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Fuel_Pressure_Warning : 55|16@0- (1,0) [0|0] ""  Vector__XXX
+
+BO_ 241 Display_8: 8 C125
+ SG_ Launch_Switch : 7|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Launch_State : 23|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Engine_Speed_Warning : 39|16@0- (1,0) [0|0] ""  Vector__XXX
+ SG_ Engine_Speed_Limit_State : 55|16@0- (1,0) [0|0] ""  Vector__XXX
+
+BO_ 242 Alarm_Message: 8 C125
+ SG_ Alarm_Message : 7|64@0+ (0,0) [0|0] ""  Vector__XXX
+
+BO_ 243 Alarm_Value: 8 C125
+ SG_ Alarm_Value : 7|64@0+ (0,0) [0|0] ""  Vector__XXX
+
+BO_ 244 Alarm_Status: 2 C125
+ SG_ Alarm_Active : 7|8@0+ (0,0) [0|0] ""  Vector__XXX
+ SG_ Alarm_Flash : 15|8@0+ (0,0) [0|0] ""  Vector__XXX
+
+BO_ 233 CRC32: 4 C125
+ SG_ CRC32 : 7|32@0+ (1,0) [0|0] ""  Vector__XXX
+
+
+
+BA_DEF_  "MoTeC_CRC" INT 0 0;
+BA_DEF_ SG_  "MoTeC_Type" ENUM  "Number","Compound_String";
+BA_DEF_ SG_  "MoTeC_Usage" ENUM  "General","CRC32","Alarm_Message","Alarm_Value","Alarm_Active_State","Alarm_Flash_State";
+BA_DEF_ SG_  "MoTeC_Channel" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_DEF_  "MoTeC_CRC" -33385111;
+BA_DEF_DEF_  "MoTeC_Type" "Number";
+BA_DEF_DEF_  "MoTeC_Usage" "General";
+BA_DEF_DEF_  "MoTeC_Channel" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 50;
+BA_ "GenMsgCycleTime" BO_ 234 50;
+BA_ "GenMsgCycleTime" BO_ 235 50;
+BA_ "GenMsgCycleTime" BO_ 236 50;
+BA_ "GenMsgCycleTime" BO_ 237 100;
+BA_ "GenMsgCycleTime" BO_ 238 100;
+BA_ "GenMsgCycleTime" BO_ 239 100;
+BA_ "GenMsgCycleTime" BO_ 240 1000;
+BA_ "GenMsgCycleTime" BO_ 241 1000;
+BA_ "GenMsgCycleTime" BO_ 242 50;
+BA_ "GenMsgCycleTime" BO_ 243 50;
+BA_ "GenMsgCycleTime" BO_ 244 50;
+BA_ "GenMsgCycleTime" BO_ 233 1000;
+BA_ "MoTeC_Channel" SG_ 234 Bat_Volts_ECU "Bat Volts ECU";
+BA_ "MoTeC_Channel" SG_ 234 Wheel_Speed_FL "Wheel Speed FL";
+BA_ "MoTeC_Channel" SG_ 234 Wheel_Speed_FR "Wheel Speed FR";
+BA_ "MoTeC_Channel" SG_ 234 Wheel_Speed_RL "Wheel Speed RL";
+BA_ "MoTeC_Channel" SG_ 235 Wheel_Speed_RR "Wheel Speed RR";
+BA_ "MoTeC_Channel" SG_ 235 Vehicle_Speed "Vehicle Speed";
+BA_ "MoTeC_Channel" SG_ 235 Bat_Volts_Dash "Bat Volts Dash";
+BA_ "MoTeC_Channel" SG_ 235 Ground_Speed "Ground Speed";
+BA_ "MoTeC_Channel" SG_ 236 GPS_Speed "GPS Speed";
+BA_ "MoTeC_Channel" SG_ 237 Gear "Gear";
+BA_ "MoTeC_Channel" SG_ 237 Fuel_Mixture_Aim "Fuel Mixture Aim";
+BA_ "MoTeC_Channel" SG_ 237 Fuel_Pressure_Sensor "Fuel Pressure Sensor";
+BA_ "MoTeC_Channel" SG_ 237 Engine_Speed "Engine Speed";
+BA_ "MoTeC_Channel" SG_ 238 Engine_Oil_Pressure "Engine Oil Pressure";
+BA_ "MoTeC_Channel" SG_ 238 Coolant_Temperature "Coolant Temperature";
+BA_ "MoTeC_Channel" SG_ 238 Engine_Oil_Temperature "Engine Oil Temperature";
+BA_ "MoTeC_Channel" SG_ 238 Inlet_Manifold_Pressure "Inlet Manifold Pressure";
+BA_ "MoTeC_Channel" SG_ 239 Inlet_Air_Temperature "Inlet Air Temperature";
+BA_ "MoTeC_Channel" SG_ 239 Exhaust_Temperature "Exhaust Temperature";
+BA_ "MoTeC_Channel" SG_ 239 Engine_Speed_Limit "Engine Speed Limit";
+BA_ "MoTeC_Channel" SG_ 239 Fuel_Temperature "Fuel Temperature";
+BA_ "MoTeC_Channel" SG_ 240 Coolant_Temperature_Warning "Coolant Temperature Warning";
+BA_ "MoTeC_Channel" SG_ 240 Engine_Oil_Temp_Warning "Engine Oil Temp Warning";
+BA_ "MoTeC_Channel" SG_ 240 Engine_Oil_Pressure_Warning "Engine Oil Pressure Warning";
+BA_ "MoTeC_Channel" SG_ 240 Fuel_Pressure_Warning "Fuel Pressure Warning";
+BA_ "MoTeC_Channel" SG_ 241 Launch_Switch "Launch Switch";
+BA_ "MoTeC_Channel" SG_ 241 Launch_State "Launch State";
+BA_ "MoTeC_Channel" SG_ 241 Engine_Speed_Warning "Engine Speed Warning";
+BA_ "MoTeC_Channel" SG_ 241 Engine_Speed_Limit_State "Engine Speed Limit State";
+BA_ "MoTeC_Type" SG_ 242 Alarm_Message 1;
+BA_ "MoTeC_Usage" SG_ 242 Alarm_Message 2;
+BA_ "MoTeC_Type" SG_ 243 Alarm_Value 1;
+BA_ "MoTeC_Usage" SG_ 243 Alarm_Value 3;
+BA_ "MoTeC_Usage" SG_ 244 Alarm_Active 4;
+BA_ "MoTeC_Usage" SG_ 244 Alarm_Flash 5;
+BA_ "MoTeC_Usage" SG_ 233 CRC32 1;
