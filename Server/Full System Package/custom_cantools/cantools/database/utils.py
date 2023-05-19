@@ -165,6 +165,7 @@ def decode_data(data: bytes,
     for signal in signals:
         try:
             value = unpacked[signal.name]
+            print(f'Unpacked value: {value}')
         except KeyError:
             if not allow_truncated:
                 raise

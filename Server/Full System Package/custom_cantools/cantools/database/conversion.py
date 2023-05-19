@@ -125,6 +125,7 @@ class IdentityConversion(BaseConversion):
         raw_value: Union[int, float],
         decode_choices: bool = True,
     ) -> Union[int, float]:
+        print(f'conversion.py: {raw_value}')
         return raw_value
 
     def scaled_to_raw(self, scaled_value: SignalValueType) -> Union[int, float]:
