@@ -489,7 +489,7 @@ class Database:
 
         if message.is_container:
             if decode_containers:
-                print(type(message))
+                print(f'message type: {type(message)}')
                 return message.decode(data,
                                       decode_choices,
                                       scaling,
