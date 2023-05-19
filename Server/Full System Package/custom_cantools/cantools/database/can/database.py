@@ -489,7 +489,7 @@ class Database:
 
         if message.is_container:
             if decode_containers:
-                print(f'message type: {type(message)}')
+                print(f'message type (is_container): {type(message)}')
                 return message.decode(data,
                                       decode_choices,
                                       scaling,
@@ -500,6 +500,7 @@ class Database:
                                   f'message, but decoding such messages has '
                                   f'not been enabled!')
 
+        print(f'message type (not container): {type(message)}')
         return message.decode(data,
                               decode_choices,
                               scaling,
