@@ -951,6 +951,7 @@ class Message:
 
         return encoded.to_bytes(self._length, "big")
 
+# IMPORTANT FUNCTION
     def _decode(self,
                 node: Codec,
                 data: bytes,
@@ -965,6 +966,7 @@ class Message:
                               scaling,
                               allow_truncated)
 
+        print(f'node: {node}')
         multiplexers = node['multiplexers']
 
         for signal in multiplexers:
