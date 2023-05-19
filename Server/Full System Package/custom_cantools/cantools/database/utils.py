@@ -125,9 +125,15 @@ def decode_data(data: bytes,
                 allow_truncated: bool,
                 ) -> SignalDictType:
 
+    print(f'utils: data: {data}')
+    print(f'utils: expected_length: {expected_length}')
+    print(f'utils: signals: {signals}')
+    print(f'utils: formats: {formats}')
+
     actual_length = len(data)
     if allow_truncated and actual_length < expected_length:
         data = data.ljust(expected_length, b"\xFF")
+        print(f'allow_truncated & actual_length less: {data}')
 
     unpacked = {
         **formats.big_endian.unpack(data),
@@ -135,11 +141,13 @@ def decode_data(data: bytes,
     }
 
     if allow_truncated and not (scaling or decode_choices):
+        print(f'allow_truncated & not scaling nor decode_choices: {unpacked}')
         return unpacked
 
     if allow_truncated and actual_length < expected_length:
         # remove signals that are outside available data bytes
         actual_bit_count = actual_length * 8
+        print(f'allow_truncated & actual)length less bit count: {actual_bit_count}')
         for signal in signals:
             if signal.byte_order == "little_endian":
                 sequential_start_bit = signal.start
@@ -149,6 +157,7 @@ def decode_data(data: bytes,
                 # is inlined for improved performance.
                 sequential_start_bit = (8 * (signal.start // 8)) + (7 - (signal.start % 8))
 
+            print(f'sequential_start_bit: {sequential_start_bit}')
             if sequential_start_bit + signal.length > actual_bit_count:
                 del unpacked[signal.name]
 
@@ -163,13 +172,17 @@ def decode_data(data: bytes,
 
         if scaling:
             decoded[signal.name] = signal.conversion.raw_to_scaled(value, decode_choices)
+            print(f'scaled: {decoded[signal.name]}')
         elif (decode_choices
               and signal.conversion.choices
               and (choice := signal.conversion.choices.get(value, None)) is not None):
             decoded[signal.name] = choice
+            print(f'choices: {decoded[signal.name]}')
         else:
             decoded[signal.name] = value
+            print(f'else: {decoded[signal.name]}')
 
+    print(f'fulle decoded: {decoded}')
     return decoded
 
 
