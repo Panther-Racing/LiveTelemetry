@@ -203,6 +203,7 @@ class Database:
         with fopen(filename, 'r', encoding=encoding) as fin:
             self.add_dbc(fin)
 
+# IMPORTANT FUNCTION
     def add_dbc_string(self, string: str) -> None:
         """Parse given DBC data string and add the parsed data to the
         database.
