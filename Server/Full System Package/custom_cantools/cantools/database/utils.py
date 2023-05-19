@@ -139,6 +139,7 @@ def decode_data(data: bytes,
         **formats.big_endian.unpack(data),
         **formats.little_endian.unpack(data[::-1]),
     }
+    print(f'full unpacked: {unpacked}')
 
     if allow_truncated and not (scaling or decode_choices):
         print(f'allow_truncated & not scaling nor decode_choices: {unpacked}')
