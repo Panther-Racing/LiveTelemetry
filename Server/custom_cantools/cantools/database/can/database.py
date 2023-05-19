@@ -480,8 +480,10 @@ class Database:
 
         if isinstance(frame_id_or_name, int):
             message = self._frame_id_to_message[frame_id_or_name]
+            print(f'database message: {message}')
         elif isinstance(frame_id_or_name, str):
             message = self._name_to_message[frame_id_or_name]
+            print(f'database message: {message}')
         else:
             raise ValueError(f"Invalid frame_id_or_name '{frame_id_or_name}'")
 

@@ -1967,21 +1967,37 @@ def load_string(string: str, strict: bool = True,
     tokens = Parser().parse(string)
 
     comments = _load_comments(tokens)
+    print(f'comments: {comments}')
     definitions = _load_attribute_definitions(tokens)
+    print(f'definitions: {definitions}')
     defaults = _load_attribute_definition_defaults(tokens)
+    print(f'defaults: {defaults}')
     definitions_relation = _load_attribute_definitions_relation(tokens)
+    print(f'definitions_relation: {definitions_relation}')
     defaults_relation = _load_attribute_definition_relation_defaults(tokens)
+    print(f'defaults_relation: {defaults_relation}')
     attribute_definitions = get_definitions_dict(definitions, defaults)
+    print(f'attribute_definitions: {attribute_definitions}')
     attributes = _load_attributes(tokens, attribute_definitions)
+    print(f'attributes: {attributes}')
     attribute_rel_definitions = get_definitions_rel_dict(definitions_relation, defaults_relation)
+    print(f'attribute_rel_definitions: {attribute_rel_definitions}')
     attributes_rel = _load_attributes_rel(tokens, attribute_rel_definitions)
+    print(f'attributes_rel: {attributes_rel}')
     bus = _load_bus(attributes, comments)
+    print(f'bus: {bus}')
     value_tables = _load_value_tables(tokens)
+    print(f'value_tables: {value_tables}')
     choices = _load_choices(tokens)
+    print(f'choices: {choices}')
     message_senders = _load_message_senders(tokens, attributes)
+    print(f'message_senders: {message_senders}')
     signal_types = _load_signal_types(tokens)
+    print(f'signal_types: {signal_types}')
     signal_multiplexer_values = _load_signal_multiplexer_values(tokens)
+    print(f'signal_multiplexer: {signal_multiplexer_values}')
     signal_groups = _load_signal_groups(tokens)
+    print(f'signal_groups: {signal_groups}')
     messages = _load_messages(tokens,
                               comments,
                               attributes,
@@ -1994,16 +2010,20 @@ def load_string(string: str, strict: bool = True,
                               bus.name if bus else None,
                               signal_groups,
                               sort_signals)
+    print(f'messages: {messages}')
     nodes = _load_nodes(tokens, comments, attributes, attribute_definitions)
+    print(f'nodes: {nodes}')
     version = _load_version(tokens)
+    print(f'version: {version}')
     environment_variables = _load_environment_variables(tokens, comments, attributes)
+    print(f'environment_variables: {environment_variables}')
     dbc_specifics = DbcSpecifics(attributes.get('database', None),
                                  attribute_definitions,
                                  environment_variables,
                                  value_tables,
                                  attributes_rel,
                                  attribute_rel_definitions)
-
+    print(f'dbc_specifics: {dbc_specifics}')
     return InternalDatabase(messages,
                             nodes,
                             [bus] if bus else [],
