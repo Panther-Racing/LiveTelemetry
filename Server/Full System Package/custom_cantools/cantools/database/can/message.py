@@ -965,7 +965,7 @@ class Message:
                               decode_choices,
                               scaling,
                               allow_truncated)
-
+        print(f'message: data: {data}')
         # print(f'node: {node}')
         multiplexers = node['multiplexers']
 

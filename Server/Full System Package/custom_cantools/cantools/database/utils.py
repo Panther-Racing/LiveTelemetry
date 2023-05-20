@@ -135,6 +135,7 @@ def decode_data(data: bytes,
         data = data.ljust(expected_length, b"\xFF")
         print(f'allow_truncated & actual_length less: {data}')
 
+    # Using bitstruct.unpack to turn data from bytestring to int
     unpacked = {
         **formats.big_endian.unpack(data),
         **formats.little_endian.unpack(data[::-1]),

@@ -501,6 +501,7 @@ class Database:
                                   f'not been enabled!')
 
         print(f'message type (not container): {type(message)}')
+        print(f'database: data: {data}')
         return message.decode(data,
                               decode_choices,
                               scaling,
