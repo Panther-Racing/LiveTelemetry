@@ -502,9 +502,9 @@ class Database:
 
         print(f'message type (not container): {type(message)}')
         print(f'database: data: {data}')
-        return message.decode(data,
-                              decode_choices,
-                              scaling,
+        return message.decode(data=data,
+                              decode_choices=decode_choices,
+                              scaling=scaling,
                               allow_truncated=allow_truncated)
 
     def refresh(self) -> None:
