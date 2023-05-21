@@ -958,6 +958,7 @@ class Message:
                 decode_choices: bool,
                 scaling: bool,
                 allow_truncated: bool) -> SignalDictType:
+        print(f'message: data: {data}')
         decoded = decode_data(data,
                               self.length,
                               node['signals'],
@@ -965,7 +966,6 @@ class Message:
                               decode_choices,
                               scaling,
                               allow_truncated)
-        print(f'message: data: {data}')
         # print(f'node: {node}')
         multiplexers = node['multiplexers']
 
@@ -1121,6 +1121,7 @@ class Message:
             raise ValueError('Codec is not initialized.')
 
         data = bytes(data[:self._length])
+        print(self._length)
 
         return self._decode(self._codecs,
                             data,
