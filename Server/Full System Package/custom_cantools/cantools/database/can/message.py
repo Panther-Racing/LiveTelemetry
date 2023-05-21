@@ -1121,7 +1121,8 @@ class Message:
             raise ValueError('Codec is not initialized.')
 
         print(f'data before shortening: {data}')
-        data = bytes(data[:self._length])
+        # REMOVED DATA SHORTENING
+        # data = bytes(data[:self._length])
         print(f'decode simple: shortening data to a length: {self._length}')
         print(f'data after shortening: {data}')
 
