@@ -46,14 +46,14 @@ def find_nth(haystack, needle, n):
 
 # Translate each string from the decoded CAN message into a dictionary and then output that dictionary to the json file
 def to_json(message):
-    print(message)
+    # print(message)
     with open(json_file_name, 'r+') as json_file:
         # # Traverse through the new dictionary and add time stamps
         # for key in message:
         #     data_value = message[key]
         #     message[key] = (time.time(), data_value)
         json_dict = json.load(json_file)
-        # print(json_dict)
+        print(json_dict)
         json_dict.update(message)
         # Add a value to hold the current time
         json_dict.update({'Timestamp': time.time()})
@@ -105,7 +105,7 @@ def data_handler(data):
         nonLiterals.add(str(error))
         frame_id = 'ERROR'
 
-    print(message)
+    # print(message)
     print(f'Frame ID: {frame_id}     data: {data}')
 
     data_string = message[find_nth(message, ',', 2) + 1:]
@@ -125,7 +125,7 @@ def data_handler(data):
     weird_reversed = bytes(reverse(reformatter(regular_reversed)), 'utf-8')
 
     to_send = fixed_data
-    print(to_send)
+    # print(to_send)
 
     try:
         # Decode each incoming message
@@ -147,7 +147,7 @@ def send_json(json_string):
     except ConnectionResetError as error:
         print(error)
 
-    print(json_result, 'was sent!')
+    # print(json_result, 'was sent!')
     # time.sleep(1)
 
 
