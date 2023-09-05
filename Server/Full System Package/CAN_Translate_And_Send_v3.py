@@ -147,7 +147,7 @@ def send_json(json_string):
     except ConnectionResetError as error:
         print(error)
 
-    # print(json_result, 'was sent!')
+    print(json_result, 'was sent!')
     # time.sleep(1)
 
 
