@@ -8,7 +8,7 @@ output_monitoring = open('Output.txt', 'w')
 
 def start(receive_socket, socket):
     print('Starting CAN Translator')
-    output_monitoring.write('Starting CAN Translator')
+    output_monitoring.write('Starting CAN Translator\n')
     global send_socket
     send_socket = socket
     setup()
@@ -56,8 +56,8 @@ def to_json(message):
         #     data_value = message[key]
         #     message[key] = (time.time(), data_value)
         json_dict = json.load(json_file)
-        print(json_dict)
-        output_monitoring.print(json_dict)
+        print(f'json_dict {json_dict}')
+        output_monitoring.write(f'dict {json_dict}\n\n')
         json_dict.update(message)
         # Add a value to hold the current time
         json_dict.update({'Timestamp': time.time()})
@@ -111,7 +111,7 @@ def data_handler(data):
 
     # print(message)
     print(f'Frame ID: {frame_id}     data: {data}')
-    output_monitoring.write(f'Frame ID: {frame_id}           data: {data}')
+    # output_monitoring.write(f'Frame ID: {frame_id}           data: {data}')
 
     data_string = message[find_nth(message, ',', 2) + 1:]
     # data_string = data_string.replace(' ', '')
