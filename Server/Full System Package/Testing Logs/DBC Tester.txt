@@ -1,0 +1,43 @@
+"C:\Users\flaud\Generic Locations\Documents\GitHub\LiveTelemetry\venv\Scripts\python.exe" "C:\Users\flaud\Generic Locations\Documents\GitHub\LiveTelemetry\Server\Full System Package\DBC_Tester.py" 
+Starting
+database message: message('a', 0x1, False, 8, None)
+message type (not container): <class 'custom_cantools.cantools.database.can.message.Message'>
+database: data: b'\\xff\\x03\\x00\\x00\\x00\\x00\\x00\\x0'
+data before shortening: b'\\xff\\x03\\x00\\x00\\x00\\x00\\x00\\x0'
+decode simple: shortening data to a length: 8
+data after shortening: b'\\xff\\x03\\x00\\x00\\x00\\x00\\x00\\x0'
+message: data: b'\\xff\\x03\\x00\\x00\\x00\\x00\\x00\\x0'
+utils: data: b'\\xff\\x03\\x00\\x00\\x00\\x00\\x00\\x0'
+utils: expected_length: 8
+utils: signals: [signal('a1', 0, 1, 'little_endian', False, None, 1, -127, None, None, 'None', False, None, None, None, None), signal('a2', 1, 1, 'little_endian', False, None, 1, -127, None, None, 'None', False, None, None, None, None), signal('a3', 2, 1, 'little_endian', False, None, 1, -127, None, None, 'None', False, None, None, None, None), signal('a4', 3, 1, 'little_endian', False, None, 1, -127, None, None, 'None', False, None, None, None, None), signal('a5', 4, 1, 'little_endian', False, None, 1, -127, None, None, 'None', False, None, None, None, None), signal('a6', 5, 1, 'little_endian', False, None, 1, -127, None, None, 'None', False, None, None, None, None), signal('a7', 6, 1, 'little_endian', False, None, 1, -127, None, None, 'None', False, None, None, None, None), signal('a8', 7, 1, 'little_endian', False, None, 1, -127, None, None, 'None', False, None, None, None, None), signal('a9', 8, 1, 'little_endian', False, None, 1, -127, None, None, 'None', False, None, None, None, None), signal('a10', 9, 1, 'little_endian', False, None, 1, -127, None, None, 'None', False, None, None, None, None)]
+utils: formats: Formats(big_endian=<bitstruct.CompiledFormatDict object at 0x000002E00888D950>, little_endian=<bitstruct.CompiledFormatDict object at 0x000002E00980D110>, padding_mask=71213169107795967)
+full unpacked: {'a10': 0, 'a9': 0, 'a8': 0, 'a7': 0, 'a6': 1, 'a5': 1, 'a4': 0, 'a3': 0, 'a2': 0, 'a1': 0}
+Unpacked value: 0
+scaled: -127
+Unpacked value: 0
+scaled: -127
+Unpacked value: 0
+scaled: -127
+Unpacked value: 0
+scaled: -127
+Unpacked value: 1
+scaled: -126
+Unpacked value: 1
+scaled: -126
+Unpacked value: 0
+scaled: -127
+Unpacked value: 0
+scaled: -127
+Unpacked value: 0
+scaled: -127
+Unpacked value: 0
+scaled: -127
+fulle decoded: {'a1': -127, 'a2': -127, 'a3': -127, 'a4': -127, 'a5': -126, 'a6': -126, 'a7': -127, 'a8': -127, 'a9': -127, 'a10': -127}
+{'a1': -127, 'a2': -127, 'a3': -127, 'a4': -127, 'a5': -126, 'a6': -126, 'a7': -127, 'a8': -127, 'a9': -127, 'a10': -127}
+
+Process finished with exit code 0
+
+
+
+
+

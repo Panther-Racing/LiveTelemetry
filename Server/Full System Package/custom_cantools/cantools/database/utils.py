@@ -118,7 +118,7 @@ def encode_data(signal_values: SignalMappingType,
 
 def decode_data(data: bytes,
                 expected_length: int,
-                signals: Sequence[Union["Signal", "Data"]],
+                signals: Sequence[Union["Signal", "Data"]],         # FSAE Important argument -- find signals
                 formats: Formats,
                 decode_choices: bool,
                 scaling: bool,
@@ -127,7 +127,7 @@ def decode_data(data: bytes,
 
     print(f'utils: data: {data}')
     print(f'utils: expected_length: {expected_length}')
-    print(f'utils: signals: {signals}')
+    print(f'utils: signals: {signals}')                             # FSAE Source of issue??
     print(f'utils: formats: {formats}')
 
     actual_length = len(data)
