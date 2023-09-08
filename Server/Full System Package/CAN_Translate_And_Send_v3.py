@@ -75,8 +75,9 @@ def reformatter(data_string):
     next_space = 0
     i = 0
     data_reformatted = ''
+    data_string = str(data_string)
+    print(data_string)
     while next_space >= 0:
-        # print(data_string)
         next_space = find_nth(data_string, ' ', i + 1)
         # print(next_space)
         # print(next_space-current_space)
@@ -85,13 +86,11 @@ def reformatter(data_string):
         elif next_space - current_space == 2:
             data_reformatted += ('\\x' + data_string[start_pos:next_space])
         else:
-            data_reformatted += ('\\x' + data_string[start_pos:])
+            data_reformatted += ('\\x0' + data_string[start_pos:])
         # print('looking for more spaces')
         i += 1
         current_space = next_space + 1
         start_pos = current_space
-
-        # print(data_reformatted)
 
     return data_reformatted
 

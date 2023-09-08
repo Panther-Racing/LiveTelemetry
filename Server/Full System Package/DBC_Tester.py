@@ -12,7 +12,10 @@ def main():
 
     # Use custom message with known output
     frame_id = 1
-    to_send = b'\\xff\\x03\\x00\\x00\\x00\\x00\\x00\\x0'
+    data = '\\xff\\x03\\x00\\x00\\x00\\x00\\x00\\x00'
+    print(bytes(data, 'utf-8'))
+    to_send = b'\xff\x03\x00\x00\x00\x00\x00\x00'
+    print(len(to_send))
 
     # Attempt Decoding test message and print result
     print(db.decode_message(frame_id_or_name=frame_id, data=to_send, decode_choices=False, scaling=True,
