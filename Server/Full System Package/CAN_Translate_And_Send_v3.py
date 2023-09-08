@@ -125,18 +125,8 @@ def data_handler(data):
     data = bytes(data_string, 'utf-8')
 
     data_reformatted = reformatter(data_string)
-    fixed_data = bytes(data_reformatted, 'utf-8')
-    # print(fixed_data)
 
-    reversed_reformatted = bytes(reverse(data_reformatted), 'utf-8')
-    # reversed_reformatted = bytes(reformatter(reversed_data), 'utf-8')
-
-    regular_reversed = data_string[::-1]
-    regular_reversed_reformatted = bytes(reformatter(regular_reversed), 'utf-8')
-
-    weird_reversed = bytes(reverse(reformatter(regular_reversed)), 'utf-8')
-
-    to_send = fixed_data
+    to_send = data_reformatted
     # print(to_send)
 
     try:

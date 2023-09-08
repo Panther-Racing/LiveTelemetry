@@ -958,7 +958,7 @@ class Message:
                 decode_choices: bool,
                 scaling: bool,
                 allow_truncated: bool) -> SignalDictType:
-        print(f'message: data: {data}')
+        # print(f'message: data: {data}')
         decoded = decode_data(data,
                               self.length,
                               node['signals'],          # FSAE node[signals] goes to utils decode_data as signals
@@ -1120,11 +1120,11 @@ class Message:
         elif self._codecs is None:
             raise ValueError('Codec is not initialized.')
 
-        print(f'data before shortening: {data}')
+        # print(f'data before shortening: {data}')
         # REMOVED DATA SHORTENING
         # data = bytes(data[:self._length])
-        print(f'decode simple: shortening data to a length: {self._length}')
-        print(f'data after shortening: {data}')
+        # print(f'decode simple: shortening data to a length: {self._length}')
+        # print(f'data after shortening: {data}')
 
         return self._decode(self._codecs,
                             data,

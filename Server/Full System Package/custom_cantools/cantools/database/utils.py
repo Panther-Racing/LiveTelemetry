@@ -125,15 +125,15 @@ def decode_data(data: bytes,
                 allow_truncated: bool,
                 ) -> SignalDictType:
 
-    print(f'utils: data: {data}')
-    print(f'utils: expected_length: {expected_length}')
-    print(f'utils: signals: {signals}')                             # FSAE Source of issue??
-    print(f'utils: formats: {formats}')
+    # print(f'utils: data: {data}')
+    # print(f'utils: expected_length: {expected_length}')
+    # print(f'utils: signals: {signals}')                             # FSAE Source of issue??
+    # print(f'utils: formats: {formats}')
 
     actual_length = len(data)
     if allow_truncated and actual_length < expected_length:
         data = data.ljust(expected_length, b"\xFF")
-        print(f'allow_truncated & actual_length less: {data}')
+        # print(f'allow_truncated & actual_length less: {data}')
 
     # Using bitstruct.unpack to turn data from bytestring to int
     unpacked = {
@@ -143,13 +143,13 @@ def decode_data(data: bytes,
     print(f'full unpacked: {unpacked}')
 
     if allow_truncated and not (scaling or decode_choices):
-        print(f'allow_truncated & not scaling nor decode_choices: {unpacked}')
+        # print(f'allow_truncated & not scaling nor decode_choices: {unpacked}')
         return unpacked
 
     if allow_truncated and actual_length < expected_length:
         # remove signals that are outside available data bytes
         actual_bit_count = actual_length * 8
-        print(f'allow_truncated & actual)length less bit count: {actual_bit_count}')
+        # print(f'allow_truncated & actual)length less bit count: {actual_bit_count}')
         for signal in signals:
             if signal.byte_order == "little_endian":
                 sequential_start_bit = signal.start
@@ -159,7 +159,7 @@ def decode_data(data: bytes,
                 # is inlined for improved performance.
                 sequential_start_bit = (8 * (signal.start // 8)) + (7 - (signal.start % 8))
 
-            print(f'sequential_start_bit: {sequential_start_bit}')
+            # print(f'sequential_start_bit: {sequential_start_bit}')
             if sequential_start_bit + signal.length > actual_bit_count:
                 del unpacked[signal.name]
 
@@ -167,7 +167,7 @@ def decode_data(data: bytes,
     for signal in signals:
         try:
             value = unpacked[signal.name]
-            print(f'Unpacked value: {value}')
+            # print(f'Unpacked value: {value}')
         except KeyError:
             if not allow_truncated:
                 raise
@@ -175,17 +175,17 @@ def decode_data(data: bytes,
 
         if scaling:
             decoded[signal.name] = signal.conversion.raw_to_scaled(value, decode_choices)
-            print(f'scaled: {decoded[signal.name]}')
+            # print(f'scaled: {decoded[signal.name]}')
         elif (decode_choices
               and signal.conversion.choices
               and (choice := signal.conversion.choices.get(value, None)) is not None):
             decoded[signal.name] = choice
-            print(f'choices: {decoded[signal.name]}')
+            # print(f'choices: {decoded[signal.name]}')
         else:
             decoded[signal.name] = value
-            print(f'else: {decoded[signal.name]}')
+            # print(f'else: {decoded[signal.name]}')
 
-    print(f'fulle decoded: {decoded}')
+    print(f'fully decoded: {decoded}')
     return decoded
 
 
