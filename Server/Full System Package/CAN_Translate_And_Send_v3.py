@@ -92,7 +92,15 @@ def reformatter(data_string):
         current_space = next_space + 1
         start_pos = current_space
 
-    return data_reformatted
+    data_bytes = convert_to_bytes_with_escape(data_reformatted)
+
+    return data_bytes
+
+
+def convert_to_bytes_with_escape(input_string):
+    hex_values = input_string.split('\\x')[1:]  # Split by '\\x' and skip the empty first element
+    byte_string = bytes(int(value, 16) for value in hex_values)
+    return byte_string
 
 
 def data_handler(data):
