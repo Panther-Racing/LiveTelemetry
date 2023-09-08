@@ -118,7 +118,7 @@ def encode_data(signal_values: SignalMappingType,
 
 def decode_data(data: bytes,
                 expected_length: int,
-                signals: Sequence[Union["Signal", "Data"]],         # FSAE Important argument -- find signals
+                signals: Sequence[Union["Signal", "Data"]],         # FSAE Important argument -- comes from message.py
                 formats: Formats,
                 decode_choices: bool,
                 scaling: bool,

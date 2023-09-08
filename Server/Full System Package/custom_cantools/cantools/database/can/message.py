@@ -961,8 +961,8 @@ class Message:
         print(f'message: data: {data}')
         decoded = decode_data(data,
                               self.length,
-                              node['signals'],
-                              node['formats'],
+                              node['signals'],          # FSAE node[signals] goes to utils decode_data as signals
+                              node['formats'],                  # Comes from
                               decode_choices,
                               scaling,
                               allow_truncated)
