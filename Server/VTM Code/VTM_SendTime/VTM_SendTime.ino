@@ -4,6 +4,9 @@
 #include <Ethernet.h>         //Library for using Ethernet (https://www.arduino.cc/reference/en/libraries/ethernet/)
 #include <EthernetUdp.h>      //Library for sending UDP packets over ethernet
 
+//int status = WL_IDLE_STATUS;
+//#include "arduino_secrets.h"
+
 struct can_frame canMsg; // Can message structure for using all CAN functionalities
 MCP2515 mcp2515(8);                 // SPI CS Pin 10
 
@@ -15,7 +18,19 @@ unsigned int localPort = 8888;      // local port to listen on
 
 char packetBuffer[UDP_TX_PACKET_MAX_SIZE];  // buffer to hold incoming packet,
 
+//NTP stuff - Start
+//char ssid[] = WIFI_SSID       //enter network SSID (name)
+//char pass[] = WIFI_Pass       //enter network password
+int keyIndex = 0;             //enter network key index (only needed for WEP)
+
+unsigned int localPort2 = 2390;                //Local  port to listen for UDP packets 
+IPAddress timeServer(129, 6, 15,  28);         //time.nist.gov NTP server     
+const int NTP_PACKET_SIZE = 48;               //NTP time stamp is in the first 48 bytes of the message
+byte packerBuffer[ NTP_PACKET_SIZE];          //buffer to hold incoming and outoing packets
+//NTP stuff - End
+unsigned long timeSinceStart;                 //int for the time since arduino started
 EthernetUDP Udp; //DecleareEthernet udp structure for udp/ethernet functionalities
+//WiFiUDP Udp;     
 
 void setup() {
  while (!Serial);
@@ -25,8 +40,8 @@ void setup() {
   // Ethernet.begin(mac);
   Serial.println("After Ethernet Begin");
   canInitialize(); //intialize mcp 2515 and CAN bus
-  
   udpInitialize(); // Initialize udp and ethernet functionalities
+  timeSinceStart = millis();
   Serial.println("Bootup");
 }
 void loop() {
@@ -39,6 +54,31 @@ void loop() {
   }
   // Serial.println("In Loop");
  
+ //NTP stuff - Start
+ 
+ //NEED TO DECLARE timeserver
+ sendNTPpacket(timeserver);
+ delay(1000);  //waititng to see if reply is available
+ if (Udp.parsePacket()){
+    Udp.read(packetBuffer, NTP_PACKET_SIZE);        //read the packet into the buffer
+    
+    //the timestamp starts at byte 40 of the received packet and is four bytes
+    unsigned long highWord = word(packetBuffer[40], packetBuffer[41]);
+    unsigned long lowWord = word(packetBuffer[42], packetBuffer[43]);
+    //combine the two words into a long integer
+    unsigned long secsSince1900 = highWord << 16 | lowWord;
+    //now comvert NTP to everyday time
+    const unsigned long seventyYears = 2208988800UL;  //Unix time starts on Jan 1 1970. In seconds, that's 2208988800
+    unsigned long epoch = secsSince1900 - seventyYears;
+    //start here once you come back
+    // Questions: 
+    //Should we convert one of the times into the other's unit (should we convert epoch(seconds) in to milliseconds to add to the start time or vice-versa?)
+    
+
+ }
+
+
+
 }
 //intialize MCP 2515 board
 void canInitialize(){
