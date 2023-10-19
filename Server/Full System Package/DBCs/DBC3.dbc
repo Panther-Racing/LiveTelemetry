@@ -63,7 +63,7 @@ BO_ 1650 M1_Flex_Fuel_0x672: 8 Vector__XXX
  SG_ Alt_Fuel_Pump_State : 39|4@0+ (1,0) [0|15] "" Vector__XXX
  SG_ Alt_Fuel_Pump_On : 32|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ Alt_Fuel_Contribution_Efficiency : 31|8@0+ (1,0) [0|0] "%" Vector__XXX
- SG_ Alt_Fuel_Temperature : 23|8@0+ (1,-40) [-40|215] "C" Vector__XXX
+ SG_ Alt_Fuel_Temperature : 23|8@0+ (1,-40) [4294967256|215] "C" Vector__XXX
  SG_ Alt_Fuel_Pressure_Sensor : 7|16@0+ (0.1,0) [0|1000] "kPa" Vector__XXX
 
 BO_ 1649 M1_Flex_Fuel_0x671: 8 Vector__XXX
@@ -195,22 +195,22 @@ BO_ 1616 M1_General_0x650: 8 Vector__XXX
 
 BO_ 1152 M1_LTC_Enable: 8 Vector__XXX
 
-BO_ 1090 M1_GPR_to_ADR_0x442: 8 Vector__XXX
+BO_ 1090 M1_GPR_ADR_0x442: 8 Vector__XXX
  SG_ Steering_Angle_ADR : 7|16@0- (0.1,0) [0|0] "" Vector__XXX
 
-BO_ 1089 M1_GPR_to_ADR_0x441: 8 Vector__XXX
+BO_ 1089 M1_GPR_ADR_0x441: 8 Vector__XXX
  SG_ Wheel_Speed_Rear_Right_ADR : 55|16@0+ (0.1,0) [0|340] "kmh" Vector__XXX
  SG_ Wheel_Speed_Rear_Left_ADR : 39|16@0+ (0.1,0) [0|340] "kmh" Vector__XXX
  SG_ Wheel_Speed_Front_Right_ADR : 23|16@0+ (0.1,0) [0|340] "kmh" Vector__XXX
  SG_ Wheel_Speed_Front_Left_ADR : 7|16@0+ (0.1,0) [0|340] "kmh" Vector__XXX
 
-BO_ 1088 M1_GPR_to_ADR_0x440: 8 Vector__XXX
+BO_ 1088 M1_GPR_ADR_0x440: 8 Vector__XXX
  SG_ Brake_Pressure_Rear_ADR : 55|16@0- (0.01,0) [-327.68|327.67] "bar" Vector__XXX
  SG_ Brake_Pressure_Front_ADR : 39|16@0- (0.01,0) [-327.68|327.67] "bar" Vector__XXX
  SG_ Throttle_Position_ADR : 23|16@0+ (0.1,0) [0|100] "%" Vector__XXX
  SG_ Engine_Speed_ADR : 7|16@0+ (6,0) [0|393210] "RPM" Vector__XXX
 
-BO_ 282 M1_GPR_to_PDM_0x11A: 3 Vector__XXX
+BO_ 282 M1_GPR_PDM_0x11A: 3 Vector__XXX
  SG_ PDM_Byte_2_Mask_80 : 23|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ PDM_Byte_2_Mask_40 : 22|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ PDM_Byte_2_Mask_20 : 21|1@0+ (1,0) [0|0] "" Vector__XXX
@@ -236,7 +236,7 @@ BO_ 282 M1_GPR_to_PDM_0x11A: 3 Vector__XXX
  SG_ PDM_Byte_0_Mask_02 : 1|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ PDM_Byte_0_Mask_01 : 0|1@0+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 281 M1_GPR_to_PDM_0x119: 8 Vector__XXX
+BO_ 281 M1_GPR_PDM_0x119: 8 Vector__XXX
  SG_ Engine_State_PDM : 32|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ Warning_Source_PDM : 33|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ Driver_Switch_2 : 41|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -250,7 +250,7 @@ BO_ 281 M1_GPR_to_PDM_0x119: 8 Vector__XXX
  SG_ Steering_Angle_PDM : 23|16@0- (0.1,0) [-3276|3276] "°" Vector__XXX
  SG_ Fuel_Pressure_PDM : 7|8@0+ (10,0) [0|2550] "kPa" Vector__XXX
 
-BO_ 280 M1_GPR_to_PDM_0x118: 8 Vector__XXX
+BO_ 280 M1_GPR_PDM_0x118: 8 Vector__XXX
  SG_ Transmission_Temperature_PDM : 55|8@0+ (1,0) [0|255] "C" Vector__XXX
  SG_ Differential_Temperature_PDM : 63|8@0+ (1,0) [0|255] "C" Vector__XXX
  SG_ Fuel_Temperature_PDM : 47|8@0+ (1,0) [0|255] "C" Vector__XXX
