@@ -1,0 +1,570 @@
+if (CAN Bus neq CAN Bus.Not in Use)
+{
+	local val = 0;
+	local ok = true;
+	local bool1 = true;
+	local <Floating Point> valU = 4;
+	local <Floating Point> value = 4;
+//Calculate.Absolute(0);
+	DBC.TestBench.Init(CAN Bus.AsInteger() - 1);
+	
+	// this opens DBC file
+	local h = DBC.TestBench.M1 Flex Fuel 0x672.TxOpen();
+	DBC.TestBench.M1 Flex Fuel 0x672.TxInitialise(h);
+	// set bit for boolean variables
+	DBC.TestBench.M1 Flex Fuel 0x672.alt fuel pressure warning.SetBit(h, bool1);
+	DBC.TestBench.M1 Flex Fuel 0x672.alt fuel pump state.SetScaled(h, valU);
+	DBC.TestBench.M1 Flex Fuel 0x672.alt fuel pump on.SetBit(h, bool1);
+	DBC.TestBench.M1 Flex Fuel 0x672.alt fuel contribution efficiency.SetScaled(h, valU);
+	DBC.TestBench.M1 Flex Fuel 0x672.alt fuel temperature.SetScaled(h, valU);
+	DBC.TestBench.M1 Flex Fuel 0x672.alt fuel pressure sensor.SetScaled(h, valU);
+	
+	//bool1 = not bool1;
+	
+	ok = DBC.TestBench.M1 Flex Fuel 0x672.Tx(h);
+	
+	// reset h to a new variable
+	h = DBC.TestBench.M1 Flex Fuel 0x671.TxOpen();
+
+	DBC.TestBench.M1 Flex Fuel 0x671.TxInitialise(h);
+	DBC.TestBench.M1 Flex Fuel 0x671.alt fuel mixture aim.SetScaled(h, valU);
+	DBC.TestBench.M1 Flex Fuel 0x671.alt fuel timing secondary.SetScaled(h, value);
+	DBC.TestBench.M1 Flex Fuel 0x671.alt fuel timing primary.SetScaled(h, value);
+			
+	ok = DBC.TestBench.M1 Flex Fuel 0x671.Tx(h);
+
+	h = DBC.TestBench.M1 Flex Fuel 0x670.TxOpen();
+	
+	DBC.TestBench.M1 Flex Fuel 0x670.TxInitialise(h);
+	DBC.TestBench.M1 Flex Fuel 0x670.fuel composition sensor diag.SetScaled(h, value);
+	DBC.TestBench.M1 Flex Fuel 0x670.alt fuel ignition timing.SetScaled(h, value);
+	DBC.TestBench.M1 Flex Fuel 0x670.fuel composition.SetScaled(h, valU);
+	DBC.TestBench.M1 Flex Fuel 0x670.alt fuel mixture aim blend.SetScaled(h, valU);
+	DBC.TestBench.M1 Flex Fuel 0x670.alt fuel ignition timing blend.SetScaled(h, valU);
+	DBC.TestBench.M1 Flex Fuel 0x670.alt fuel timing secondary blend.SetScaled(h, valU);
+	DBC.TestBench.M1 Flex Fuel 0x670.alt fuel timing primary blend.SetScaled(h, valU);
+	DBC.TestBench.M1 Flex Fuel 0x670.alternative fuel mode.SetScaled(h, value);
+
+	ok = DBC.TestBench.M1 Flex Fuel 0x670.Tx(h);
+
+	
+	h = DBC.TestBench.M1 General 0x65A.TxOpen();
+
+	DBC.TestBench.M1 General 0x65A.TxInitialise(h);
+	DBC.TestBench.M1 General 0x65A.M1 General 0x650 version.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x65A.ignition cylinder 12 trim knock.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x65A.ignition cylinder 11 trim knock.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x65A.ignition cylinder 10 trim knock.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x65A.ignition cylinder 9 trim knock.SetScaled(h, valU);
+			
+	ok = DBC.TestBench.M1 General 0x65A.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x659.TxOpen();
+
+	DBC.TestBench.M1 General 0x659.TxInitialise(h);
+	DBC.TestBench.M1 General 0x659.vehicle speed.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x659.ignition cylinder 12 knock level.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x659.ignition cylinder 11 knock level.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x659.ignition cylinder 10 knock level.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x659.ignition cylinder 9 knock level.SetScaled(h, valU);
+			
+	ok = DBC.TestBench.M1 General 0x659.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x65F.TxOpen();
+
+	DBC.TestBench.M1 General 0x65F.TxInitialise(h);
+	DBC.TestBench.M1 General 0x65F.launch engine speed.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x65F.vehicle speed limit.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x65F.logging system 1 used.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x65F.knock threshold.SetScaled(h, valU);
+		
+	ok = DBC.TestBench.M1 General 0x65F.Tx(h);
+	
+
+	h = DBC.TestBench.M1 General 0x65E.TxOpen();
+
+	DBC.TestBench.M1 General 0x65E.TxInitialise(h);
+	DBC.TestBench.M1 General 0x65E.alternator current.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x65E.engine crank case pressure.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x65E.exhaust pressure bank 2.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x65E.exhaust pressure bank 1.SetScaled(h, value);
+		
+	ok = DBC.TestBench.M1 General 0x65E.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x65D.TxOpen();
+
+	DBC.TestBench.M1 General 0x65D.TxInitialise(h);
+	DBC.TestBench.M1 General 0x65D.brake temperature rear right.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x65D.brake temperature rear left.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x65D.brake temperature front right.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x65D.brake temperature front left.SetScaled(h, value);
+		
+	ok = DBC.TestBench.M1 General 0x65D.Tx(h);
+
+	h = DBC.TestBench.M1 General 0x65B.TxOpen();
+
+	DBC.TestBench.M1 General 0x65B.TxInitialise(h);
+	DBC.TestBench.M1 General 0x65B.lap distance.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x65B.lap number.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x65B.lap time running.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x65B.lap time.SetScaled(h, valU);
+		
+	ok = DBC.TestBench.M1 General 0x65B.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x658.TxOpen();
+
+	DBC.TestBench.M1 General 0x658.TxInitialise(h);
+	DBC.TestBench.M1 General 0x658.vehicle yaw rate.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x658.vehicle accel vertical.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x658.vehicle accel longitudinal.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x658.vehicle accel vertical.SetScaled(h, value);
+		
+	ok = DBC.TestBench.M1 General 0x658.Tx(h);
+	
+
+	h = DBC.TestBench.M1 General 0x657.TxOpen();
+
+	DBC.TestBench.M1 General 0x657.TxInitialise(h);
+	DBC.TestBench.M1 General 0x657.gear output shaft speed.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x657.gear input shaft speed.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x657.fuel injector secondary pressure.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x657.fuel injector primary pressure.SetScaled(h, value);
+		
+	ok = DBC.TestBench.M1 General 0x657.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x65C.TxOpen();
+
+	DBC.TestBench.M1 General 0x65C.TxInitialise(h);
+	DBC.TestBench.M1 General 0x65C.differential temperature rear.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x65C.differential temperature centre.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x65C.steering temperature.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x65C.differential temperature front.SetScaled(h, value);
+		
+	ok = DBC.TestBench.M1 General 0x65C.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x656.TxOpen();
+
+	DBC.TestBench.M1 General 0x656.TxInitialise(h);
+	DBC.TestBench.M1 General 0x656.fuel flow.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x656.airbox mass flow.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x656.inlet mass flow.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x656.steering angle.SetScaled(h, value);
+		
+	ok = DBC.TestBench.M1 General 0x656.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x655.TxOpen();
+
+	DBC.TestBench.M1 General 0x655.TxInitialise(h);
+	DBC.TestBench.M1 General 0x655.steering pressure.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x655.coolant pressure.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x655.brake pressure rear.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x655.brake pressure front.SetScaled(h, value);
+		
+	ok = DBC.TestBench.M1 General 0x655.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x654.TxOpen();
+
+	DBC.TestBench.M1 General 0x654.TxInitialise(h);
+	DBC.TestBench.M1 General 0x654.fuel pressure direct B2 integral.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x654.fuel pressure direct B2 prop.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x654.fuel pressure direct B2 feed fwd.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x654.fuel pressure direct B2 control.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x654.fuel pressure direct B2 aim.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x654.Fuel Pressure Direct B2.SetScaled(h, valU);
+		
+	ok = DBC.TestBench.M1 General 0x654.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x653.TxOpen();
+
+	DBC.TestBench.M1 General 0x653.TxInitialise(h);
+	DBC.TestBench.M1 General 0x653.fuel pressure direct integral.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x653.fuel pressure direct prop.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x653.fuel pressure direct feed fwd.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x653.fuel pressure direct control.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x653.fuel pressure direct aim.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x653.fuel pressure direct.SetScaled(h, valU);
+		
+	ok = DBC.TestBench.M1 General 0x653.Tx(h);
+	
+
+	h = DBC.TestBench.M1 General 0x652.TxOpen();
+
+	DBC.TestBench.M1 General 0x652.TxInitialise(h);
+	DBC.TestBench.M1 General 0x652.fuel injector sec contribution.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x652.fuel injector duty cycle secdry.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x652.fuel timing secondary.SetScaled(h, value);
+		
+	ok = DBC.TestBench.M1 General 0x652.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x651.TxOpen();
+
+	DBC.TestBench.M1 General 0x651.TxInitialise(h);
+	DBC.TestBench.M1 General 0x651.exhaust temperature bank 2.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x651.exhaust temperature bank 1.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x651.exhaust lambda bank 2.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x651.exhaust lambda bank 1.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x651.exhaust lambda.SetScaled(h, valU);
+		
+	ok = DBC.TestBench.M1 General 0x651.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x650.TxOpen();
+
+	DBC.TestBench.M1 General 0x650.TxInitialise(h);
+	DBC.TestBench.M1 General 0x650.driver switch 8.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x650.driver switch 7.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x650.driver switch 6.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x650.driver switch 5.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x650.driver rotary switch 6.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x650.driver rotary switch 5.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x650.driver switch 4.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x650.driver switch 3.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x650.driver switch 2.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x650.driver switch 1.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x650.driver rotary switch 4.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x650.driver rotary switch 3.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x650.driver rotary switch 2.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x650.driver rotary switch 1.SetScaled(h, valU);
+		
+	ok = DBC.TestBench.M1 General 0x650.Tx(h);
+	
+	//'to' is recognized as part of an expand statement
+	h = DBC.TestBench.M1 GPR ADR 0x442.TxOpen();
+
+	DBC.TestBench.M1 GPR ADR 0x442.TxInitialise(h);
+	DBC.TestBench.M1 GPR ADR 0x442.steering angle adr.SetScaled(h, value);
+		
+	ok = DBC.TestBench.M1 GPR ADR 0x442.Tx(h);
+	
+	h = DBC.TestBench.M1 GPR ADR 0x441.TxOpen();
+	
+	DBC.TestBench.M1 GPR ADR 0x441.TxInitialise(h);
+	DBC.TestBench.M1 GPR ADR 0x441.Wheel Speed Front Left ADR.SetScaled(h, valU);
+	DBC.TestBench.M1 GPR ADR 0x441.Wheel Speed Front Right ADR.SetScaled(h, valU);
+	DBC.TestBench.M1 GPR ADR 0x441.Wheel Speed Rear Left ADR.SetScaled(h, valU);
+	DBC.TestBench.M1 GPR ADR 0x441.Wheel Speed Rear Right ADR.SetScaled(h, valU);
+	
+	ok = DBC.TestBench.M1 GPR ADR 0x441.Tx(h);
+
+	h = DBC.TestBench.M1 GPR ADR 0x440.TxOpen();
+	
+	DBC.TestBench.M1 GPR ADR 0x440.TxInitialise(h);
+	DBC.TestBench.M1 GPR ADR 0x440.brake pressure front.SetScaled(h, value);
+	DBC.TestBench.M1 GPR ADR 0x440.brake pressure front.SetScaled(h, value);
+	DBC.TestBench.M1 GPR ADR 0x440.throttle position.SetScaled(h, valU);
+	DBC.TestBench.M1 GPR ADR 0x440.engine speed.SetScaled(h, valU);
+	
+	ok = DBC.TestBench.M1 GPR ADR 0x440.Tx(h);
+	
+	h = DBC.TestBench.M1 GPR PDM 0x11A.TxOpen();
+	
+	DBC.TestBench.M1 GPR PDM 0x11A.TxInitialise(h);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 2 mask 80.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 2 mask 40.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 2 mask 20.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 2 mask 10.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 2 mask 08.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 2 mask 04.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 2 mask 02.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 2 mask 01.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 1 mask 80.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 1 mask 40.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 1 mask 20.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 1 mask 10.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 1 mask 08.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 1 mask 04.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 1 mask 02.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 1 mask 01.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 0 mask 80.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 0 mask 20.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 0 mask 10.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 0 mask 08.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 0 mask 04.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 0 mask 02.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x11A.pdm byte 0 mask 01.SetBit(h, bool1);
+
+	ok = DBC.TestBench.M1 GPR PDM 0x11A.Tx(h);
+	
+	h = DBC.TestBench.M1 GPR PDM 0x119.TxOpen();
+
+	DBC.TestBench.M1 GPR PDM 0x119.TxInitialise(h);
+	DBC.TestBench.M1 GPR PDM 0x119.engine state PDM.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x119.warning source PDM.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x119.driver switch 2.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x119.driver switch 1.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x119.engine run switch.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x119.pit switch.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x119.clutch state.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x119.clutch switch.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x119.neutral switch.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x119.brake state.SetBit(h, bool1);
+	DBC.TestBench.M1 GPR PDM 0x119.steering angle PDM.SetScaled(h, val);
+	DBC.TestBench.M1 GPR PDM 0x119.fuel pressure PDM.SetScaled(h, valU);
+
+	ok = DBC.TestBench.M1 GPR PDM 0x119.Tx(h);
+	
+	h = DBC.TestBench.M1 GPR PDM 0x118.TxOpen();
+
+	DBC.TestBench.M1 GPR PDM 0x118.TxInitialise(h);
+	DBC.TestBench.M1 GPR PDM 0x118.transmission temperature PDM.SetScaled(h, valU);
+	DBC.TestBench.M1 GPR PDM 0x118.differential temperature PDM.SetScaled(h, valU);
+	DBC.TestBench.M1 GPR PDM 0x118.fuel temperature PDM.SetScaled(h, valU);
+	DBC.TestBench.M1 GPR PDM 0x118.engine oil temperature PDM.SetScaled(h, valU);
+	DBC.TestBench.M1 GPR PDM 0x118.coolant temperature PDM.SetScaled(h, valU);
+	DBC.TestBench.M1 GPR PDM 0x118.vehicle speed PDM.SetScaled(h, valU);
+	DBC.TestBench.M1 GPR PDM 0x118.throttle position PDM.SetScaled(h, valU);
+	DBC.TestBench.M1 GPR PDM 0x118.engine speed PDM.SetScaled(h, valU);
+
+	ok = DBC.TestBench.M1 GPR PDM 0x118.Tx(h);
+	
+
+	h = DBC.TestBench.M1 General 0x64F.TxOpen();
+
+	DBC.TestBench.M1 General 0x64F.TxInitialise(h);
+	DBC.TestBench.M1 General 0x64F.M1 General 0x640 Version.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64F.fuel tank level.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64F.gearbox temperature.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x64F.fuel closed loop ctrl bk 2 trim.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64F.fuel closed loop ctrl bk 1 trim.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64F.engine run time total.SetScaled(h, valU);
+
+	ok = DBC.TestBench.M1 General 0x64F.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x64E.TxOpen();
+
+	DBC.TestBench.M1 General 0x64E.TxInitialise(h);
+	DBC.TestBench.M1 General 0x64E.fuel cut state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64E.brake state.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64E.neutral switch.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64E.engine run switch.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64E.anti lag switch.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64E.traction switch.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64E.launch switch.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64E.pit switch.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64E.engine oil pressure low switch.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64E.fuel closed loop diagnostic.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x64E.boost control diagnostic.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x64E.launch diagnostic.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x64E.anti lag diagnostic.SetScaled(h, value);
+
+	ok = DBC.TestBench.M1 General 0x64E.Tx(h);
+	
+
+	h = DBC.TestBench.M1 General 0x64D.TxOpen();
+
+	DBC.TestBench.M1 General 0x64D.TxInitialise(h);
+	DBC.TestBench.M1 General 0x64D.engine speed limit state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64D.fuel state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64D.gear.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x64D.engine speed reference state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64D.fuel closed loop state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64D.throttle aim state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64D.knock state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64D.fuel purge state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64D.engine overrun state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64D.boost aim state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64D.launch state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64D.anti lag state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64D.fuel pump state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64D.engine state.SetScaled(h, valU);
+	
+	ok = DBC.TestBench.M1 General 0x64D.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x64C.TxOpen();
+
+	DBC.TestBench.M1 General 0x64C.TxInitialise(h);
+	DBC.TestBench.M1 General 0x64C.knock warning.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64C.fuel pressure warning.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64C.crankcase pressure warning.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64C.engine oil pressure warning.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64C.engine oil temperature warning.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64C.engine speed warning.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64C.coolant pressure warning.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64C.coolant temperature warning.SetBit(h, bool1);
+	DBC.TestBench.M1 General 0x64C.warning source.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64C.ecu up time.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64C.engine run time.SetScaled(h, valU);
+
+	ok = DBC.TestBench.M1 General 0x64C.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x64B.TxOpen();
+
+	DBC.TestBench.M1 General 0x64B.TxInitialise(h);
+	DBC.TestBench.M1 General 0x64B.ignition cylinder 8 trim knock.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64B.ignition cylinder 7 trim knock.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64B.ignition cylinder 6 trim knock.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64B.ignition cylinder 5 trim knock.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64B.ignition cylinder 4 trim knock.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64B.ignition cylinder 3 trim knock.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64B.ignition cylinder 2 trim knock.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64B.ignition cylinder 1 trim knock.SetScaled(h, valU);
+
+	ok = DBC.TestBench.M1 General 0x64B.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x64A.TxOpen();
+
+	DBC.TestBench.M1 General 0x64A.TxInitialise(h);
+	DBC.TestBench.M1 General 0x64A.ambient pressure.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x64A.engine speed limit.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64A.engine load average.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x64A.exhaust temperature.SetScaled(h, valU);
+
+	ok = DBC.TestBench.M1 General 0x64A.Tx(h);
+	
+
+	h = DBC.TestBench.M1 General 0x649.TxOpen();
+
+	DBC.TestBench.M1 General 0x649.TxInitialise(h);
+	DBC.TestBench.M1 General 0x649.fuel used.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x649.ecu battery voltage.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x649.airbox temperature.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x649.ambient temperature.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x649.fuel temperature.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x649.engine oil temperature.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x649.coolant temperature.SetScaled(h, value);
+
+	ok = DBC.TestBench.M1 General 0x649.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x648.TxOpen();
+
+	DBC.TestBench.M1 General 0x648.TxInitialise(h);
+	DBC.TestBench.M1 General 0x648.wheel speed rear right.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x648.wheel speed rear left.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x648.wheel speed front right.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x648.wheel speed front left.SetScaled(h, valU);
+
+	ok = DBC.TestBench.M1 General 0x648.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x647.TxOpen();
+
+	DBC.TestBench.M1 General 0x647.TxInitialise(h);
+	DBC.TestBench.M1 General 0x647.exh cam bk 2 output duty cycle.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x647.exh cam bk 1 output duty cycle.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x647.exhaust camshaft bank 2 position.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x647.exhaust camshaft bank 1 position.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x647.exhaust camshaft aim.SetScaled(h, value);
+	
+	ok = DBC.TestBench.M1 General 0x647.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x646.TxOpen();
+
+	DBC.TestBench.M1 General 0x646.TxInitialise(h);
+	DBC.TestBench.M1 General 0x646.inlet cam bk 2 output duty cycle.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x646.inlet cam bk 1 output duty cycle.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x646.inlet camshaft bank 2 position.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x646.inlet camshaft bank 1 position.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x646.inlet camshaft aim.SetScaled(h, value);
+	
+	ok = DBC.TestBench.M1 General 0x646.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x645.TxOpen();
+
+	DBC.TestBench.M1 General 0x645.TxInitialise(h);
+	DBC.TestBench.M1 General 0x645.gear lever force sensor.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x645.boost actuator output duty cycle.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x645.boost aim.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x645.boost pressure.SetScaled(h, value);
+	
+	ok = DBC.TestBench.M1 General 0x645.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x644.TxOpen();
+
+	DBC.TestBench.M1 General 0x644.TxInitialise(h);
+	DBC.TestBench.M1 General 0x644.engine oil pressure.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x644.ignition cut state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x644.ignition timing state.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x644.fuel cyl 1 prim output pls wdth.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x644.fuel output cut average.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x644.ignition output cut average.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x644.fuel output cut count.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x644.ignition output cut count.SetScaled(h, valU);
+		
+	ok = DBC.TestBench.M1 General 0x644.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x643.TxOpen();
+
+	DBC.TestBench.M1 General 0x643.TxInitialise(h);
+	DBC.TestBench.M1 General 0x643.ignition cylinder 8 knock level.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x643.ignition cylinder 7 knock level.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x643.ignition cylinder 6 knock level.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x643.ignition cylinder 5 knock level.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x643.ignition cylinder 4 knock level.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x643.ignition cylinder 3 knock level.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x643.ignition cylinder 2 knock level.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x643.ignition cylinder 1 knock level.SetScaled(h, valU);
+		
+	ok = DBC.TestBench.M1 General 0x643.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x642.TxOpen();
+
+	DBC.TestBench.M1 General 0x642.TxInitialise(h);
+	DBC.TestBench.M1 General 0x642.fuel timing primary.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x642.ignition timing.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x642.engine load.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x642.throttle pedal.SetScaled(h, valU);
+		
+	ok = DBC.TestBench.M1 General 0x642.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x641.TxOpen();
+
+	DBC.TestBench.M1 General 0x641.TxInitialise(h);
+	DBC.TestBench.M1 General 0x641.fuel injector primary duty cycle.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x641.engine efficiency.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x641.fuel pressure sensor.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x641.fuel mixture aim.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x641.fuel volume.SetScaled(h, valU);
+	
+	ok = DBC.TestBench.M1 General 0x641.Tx(h);
+	
+	
+	h = DBC.TestBench.M1 General 0x640.TxOpen();
+
+	DBC.TestBench.M1 General 0x640.TxInitialise(h);
+	DBC.TestBench.M1 General 0x640.throttle position.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x640.inlet air temperature.SetScaled(h, value);
+	DBC.TestBench.M1 General 0x640.inlet manifold pressure.SetScaled(h, valU);
+	DBC.TestBench.M1 General 0x640.engine speed.SetScaled(h, valU);
+	
+	ok = DBC.TestBench.M1 General 0x640.Tx(h);
+	
+	
+	
+
+	/*val = val + 1;
+	valU = valU + 1;
+	
+	if (val > 20)
+	{
+		val = 0;
+	}
+	
+	if (valU > 20)
+	{
+		valU = 0;
+	}
+	
+	// shut up build*/
+	ok = ok;
+}
