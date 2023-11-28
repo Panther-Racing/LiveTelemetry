@@ -11,7 +11,7 @@ def setup_server():
     # localIP = input("Enter the IP Address of the server: ")
     # Use IP address of current computer
     # localIP = socket.gethostbyname(socket.gethostname())
-    localIP = '192.168.88.251'
+    localIP = '169.254.36.31'
     # localIP = '127.0.0.1'
     print(localIP, "Is being used")
 
