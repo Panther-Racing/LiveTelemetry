@@ -1,0 +1,549 @@
+//******************************BUSMASTER Messages and signals Database ******************************//
+
+[DATABASE_VERSION] 1.3
+
+[PROTOCOL] CAN
+
+[BUSMASTER_VERSION] [3.2.2]
+[NUMBER_OF_MESSAGES] 42
+
+[START_MSG] M1_Flex_Fuel_0x672,1650,8,6,0,S,
+[START_SIGNALS] alt_fuel_pressure_warning,1,5,1,B,1,0,0,0,1,,,
+[START_SIGNALS] alt_fuel_pump_state,4,5,4,U,15,0,0,0,1,,,
+[START_SIGNALS] alt_fuel_pump_on,1,5,0,B,1,0,0,0,1,,,
+[START_SIGNALS] alt_fuel_contribution_efficiency,8,4,0,U,255,0,0,0,1,%,,
+[START_SIGNALS] alt_fuel_temperature,8,3,0,U,255,0,0,-40,1,C,,
+[START_SIGNALS] alt_fuel_pressure_sensor,16,2,0,U,10000,0,0,0,0.1,kPa,,
+[END_MSG]
+
+[START_MSG] M1_Flex_Fuel_0x671,1649,8,3,0,S,
+[START_SIGNALS] alt_fuel_mixture_aim,16,6,0,U,200,0,0,0,0.01,LA,,
+[START_SIGNALS] alt_fuel_timing_secondary,16,4,0,I,7200,-7200,0,0,0.1,deg,,
+[START_SIGNALS] alt_fuel_timing_primary,16,2,0,I,7200,-7200,0,0,0.1,deg,,
+[END_MSG]
+
+[START_MSG] M1_Flex_Fuel_0x670,1648,8,8,0,S,
+[START_SIGNALS] fuel_composition_sensor_diag,4,1,0,I,7,-8,0,0,1,,,
+[START_SIGNALS] alt_fuel_ignition_timing,8,7,0,I,127,-128,0,0,0.5,deg,,
+[START_SIGNALS] fuel_composition,8,6,0,U,255,0,0,0,1,%,,
+[START_SIGNALS] alt_fuel_mixture_aim_blend,8,5,0,U,255,0,0,0,1,%,,
+[START_SIGNALS] alt_fuel_ignition_timing_blend,8,4,0,U,255,0,0,0,1,%,,
+[START_SIGNALS] alt_fuel_timing_secondary_blend,8,3,0,U,255,0,0,0,1,%,,
+[START_SIGNALS] alt_fuel_timing_primary_blend,8,2,0,U,255,0,0,0,1,%,,
+[START_SIGNALS] alternative_fuel_mode,4,1,4,I,7,-8,0,0,1,,,
+[VALUE_DESCRIPTION] "Secondary Fuel",2
+[VALUE_DESCRIPTION] "Flex Fuel",1
+[VALUE_DESCRIPTION] "Not in Use",0
+[END_MSG]
+
+[START_MSG] M1_General_0x65A,1626,8,5,0,S,
+[START_SIGNALS] M1_General_0x650_Version,8,5,0,U,255,0,0,0,1,,,
+[START_SIGNALS] ignition_cylinder_12_trim_knock,8,4,0,U,255,0,0,0,0.1,deg,,
+[START_SIGNALS] ignition_cylinder_11_trim_knock,8,3,0,U,255,0,0,0,0.1,deg,,
+[START_SIGNALS] ignition_cylinder_10_trim_knock,8,2,0,U,255,0,0,0,0.1,deg,,
+[START_SIGNALS] ignition_cylinder_9_trim_knock,8,1,0,U,255,0,0,0,0.1,deg,,
+[END_MSG]
+
+[START_MSG] M1_General_0x659,1625,8,5,0,S,
+[START_SIGNALS] vehicle_speed,16,6,0,U,65535,0,0,0,0.1,kmh,,
+[START_SIGNALS] ignition_cylinder_12_knock_level,8,4,0,U,200,0,0,0,1,%,,
+[START_SIGNALS] ignition_cylinder_11_knock_level,8,3,0,U,200,0,0,0,1,%,,
+[START_SIGNALS] ignition_cylinder_10_knock_level,8,2,0,U,200,0,0,0,1,%,,
+[START_SIGNALS] ignition_cylinder_9_knock_level,8,1,0,U,200,0,0,0,1,%,,
+[END_MSG]
+
+[START_MSG] M1_General_0x65F,1631,8,4,0,S,
+[START_SIGNALS] launch_engine_speed,16,8,0,U,16000,0,0,0,1,RPM,,
+[START_SIGNALS] vehicle_speed_limit,16,6,0,U,65535,0,0,0,0.1,kmh,,
+[START_SIGNALS] logging_system_1_used,16,4,0,U,65535,0,0,0,0.1,%,,
+[START_SIGNALS] knock_threshold,16,2,0,U,2000,0,0,0,0.1,%,,
+[END_MSG]
+
+[START_MSG] M1_General_0x65E,1630,8,4,0,S,
+[START_SIGNALS] alternator_current,16,8,0,U,65535,0,0,0,0.01,A,,
+[START_SIGNALS] engine_crank_case_pressure,16,6,0,I,32767,0,0,0,0.1,kPa,,
+[START_SIGNALS] exhaust_pressure_bank_2,16,4,0,I,32767,0,0,0,0.1,kPa,,
+[START_SIGNALS] exhaust_pressure_bank_1,16,2,0,I,32767,0,0,0,0.1,kPa,,
+[END_MSG]
+
+[START_MSG] M1_General_0x65D,1629,8,4,0,S,
+[START_SIGNALS] brake_temperature_rear_right,16,8,0,I,12000,-500,0,0,0.1,C,,
+[START_SIGNALS] brake_temperature_rear_left,16,6,0,I,12000,-500,0,0,0.1,C,,
+[START_SIGNALS] brake_temperature_front_right,16,4,0,I,12000,-500,0,0,0.1,C,,
+[START_SIGNALS] brake_temperature_front_left,16,2,0,I,12000,-500,0,0,0.1,C,,
+[END_MSG]
+
+[START_MSG] M1_General_0x65B,1627,8,4,0,S,
+[START_SIGNALS] lap_distance,16,8,0,U,65535,0,0,0,1,m,,
+[START_SIGNALS] lap_number,16,6,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] lap_time_running,16,4,0,U,65535,0,0,0,0.01,s,,
+[START_SIGNALS] lap_time,16,2,0,U,65535,0,0,0,0.01,s,,
+[END_MSG]
+
+[START_MSG] M1_General_0x658,1624,8,4,0,S,
+[START_SIGNALS] vehicle_yaw_rate,16,8,0,I,32767,-32768,0,0,0.1,deg/s,,
+[START_SIGNALS] vehicle_accel_vertical,16,6,0,I,32767,-32768,0,0,0.001,g,,
+[START_SIGNALS] vehicle_accel_longitudinal,16,4,0,I,32767,-32768,0,0,0.001,g,,
+[START_SIGNALS] vehicle_accel_lateral,16,2,0,I,32767,-32768,0,0,0.001,g,,
+[END_MSG]
+
+[START_MSG] M1_General_0x657,1623,8,4,0,S,
+[START_SIGNALS] gear_output_shaft_speed,16,8,0,U,65535,0,0,0,1,RPM,,
+[START_SIGNALS] gear_input_shaft_speed,16,6,0,U,65535,0,0,0,1,RPM,,
+[START_SIGNALS] fuel_injector_secondary_pressure,16,4,0,I,32767,0,0,0,0.1,kPa,,
+[START_SIGNALS] fuel_injector_primary_pressure,16,2,0,I,32767,0,0,0,0.1,kPa,,
+[END_MSG]
+
+[START_MSG] M1_General_0x65C,1628,8,4,0,S,
+[START_SIGNALS] differential_temperature_rear,16,6,0,I,1600,-300,0,0,0.1,C,,
+[START_SIGNALS] differential_temperature_centre,16,4,0,I,1600,-300,0,0,0.1,C,,
+[START_SIGNALS] steering_temperature,16,8,0,I,1600,-300,0,0,0.1,C,,
+[START_SIGNALS] differential_temperature_front,16,2,0,I,1600,-300,0,0,0.1,C,,
+[END_MSG]
+
+[START_MSG] M1_General_0x656,1622,8,4,0,S,
+[START_SIGNALS] fuel_flow,16,8,0,U,65535,0,0,0,0.01,ml/s,,
+[START_SIGNALS] airbox_mass_flow,16,6,0,U,65535,0,0,0,0.1,g/s,,
+[START_SIGNALS] inlet_mass_flow,16,4,0,U,65535,0,0,0,0.1,g/s,,
+[START_SIGNALS] steering_angle,16,2,0,I,32767,-32768,0,0,0.1,,,
+[END_MSG]
+
+[START_MSG] M1_General_0x655,1621,8,4,0,S,
+[START_SIGNALS] steering_pressure,16,8,0,U,5000,0,0,0,0.1,kPa,,
+[START_SIGNALS] coolant_pressure,16,6,0,U,5000,0,0,0,0.1,kPa,,
+[START_SIGNALS] brake_pressure_rear,16,4,0,I,32767,-32768,0,0,0.01,bar,,
+[START_SIGNALS] brake_pressure_front,16,2,0,I,32767,-32768,0,0,0.01,bar,,
+[END_MSG]
+
+[START_MSG] M1_General_0x654,1620,8,6,0,S,
+[START_SIGNALS] fuel_pressure_direct_B2_integral,8,8,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] fuel_pressure_direct_B2_prop,8,7,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] fuel_pressure_direct_B2_feed_fwd,8,6,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] fuel_pressure_direct_B2_control,8,5,0,U,200,0,0,0,0.5,%,,
+[START_SIGNALS] fuel_pressure_direct_B2_aim,16,4,0,U,24000,0,0,0,1,kPa,,
+[START_SIGNALS] fuel_pressure_direct_B2,16,2,0,U,24000,0,0,0,1,kPa,,
+[END_MSG]
+
+[START_MSG] M1_General_0x653,1619,8,6,0,S,
+[START_SIGNALS] fuel_pressure_direct_integral,8,8,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] fuel_pressure_direct_prop,8,7,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] fuel_pressure_direct_feed_fwd,8,6,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] fuel_pressure_direct_control,8,5,0,U,200,0,0,0,0.5,%,,
+[START_SIGNALS] fuel_pressure_direct_aim,16,4,0,U,24000,0,0,0,1,kPa,,
+[START_SIGNALS] fuel_pressure_direct,16,2,0,U,24000,0,0,0,1,kPa,,
+[END_MSG]
+
+[START_MSG] M1_General_0x652,1618,8,3,0,S,
+[START_SIGNALS] fuel_injector_sec_contribution,16,2,0,U,1000,0,0,0,0.1,%,,
+[START_SIGNALS] fuel_injector_duty_cycle_secdry,8,5,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] fuel_timing_secondary,16,4,0,I,7200,-7200,0,0,0.1,deg,,
+[END_MSG]
+
+[START_MSG] M1_General_0x651,1617,8,5,0,S,
+[START_SIGNALS] exhaust_temperature_bank_2,16,8,0,U,12000,0,0,0,0.1,C,,
+[START_SIGNALS] exhaust_temperature_bank_1,16,6,0,U,12000,0,0,0,0.1,C,,
+[START_SIGNALS] exhaust_lambda_bank_2,8,4,0,U,255,0,0,0,0.01,LA,,
+[START_SIGNALS] exhaust_lambda_bank_1,8,3,0,U,255,0,0,0,0.01,LA,,
+[START_SIGNALS] exhaust_lambda,8,1,0,U,255,0,0,0,0.01,LA,,
+[END_MSG]
+
+[START_MSG] M1_General_0x650,1616,8,14,0,S,
+[START_SIGNALS] driver_switch_8,1,8,0,B,1,0,0,0,1,,,
+[START_SIGNALS] driver_switch_7,1,8,1,B,1,0,0,0,1,,,
+[START_SIGNALS] driver_switch_6,1,8,2,B,1,0,0,0,1,,,
+[START_SIGNALS] driver_switch_5,1,8,3,B,1,0,0,0,1,,,
+[START_SIGNALS] driver_rotary_switch_6,8,6,0,U,255,0,0,0,1,,,
+[START_SIGNALS] driver_rotary_switch_5,8,5,0,U,255,0,0,0,1,,,
+[START_SIGNALS] driver_switch_4,1,8,4,B,1,0,0,0,1,,,
+[START_SIGNALS] driver_switch_3,1,8,5,B,1,0,0,0,1,,,
+[START_SIGNALS] driver_switch_2,1,8,6,B,1,0,0,0,1,,,
+[START_SIGNALS] driver_switch_1,1,8,7,B,1,0,0,0,1,,,
+[START_SIGNALS] driver_rotary_switch_4,8,4,0,U,255,0,0,0,1,,,
+[START_SIGNALS] driver_rotary_switch_3,8,3,0,U,255,0,0,0,1,,,
+[START_SIGNALS] driver_rotary_switch_2,8,2,0,U,255,0,0,0,1,,,
+[START_SIGNALS] driver_rotary_switch_1,8,1,0,U,255,0,0,0,1,,,
+[END_MSG]
+
+[START_MSG] M1_LTC_Enable,1152,8,0,1,S,
+[END_MSG]
+
+[START_MSG] M1_GPR_ADR_0x442,1090,8,1,0,S,
+[START_SIGNALS] steering_angle_adr,16,2,0,I,32767,-32768,0,0,0.1,,,
+[END_MSG]
+
+[START_MSG] M1_GPR_ADR_0x441,1089,8,4,0,S,
+[START_SIGNALS] wheel_speed_rear_right_adr,16,8,0,U,3400,0,0,0,0.1,kmh,,
+[START_SIGNALS] wheel_speed_rear_left_adr,16,6,0,U,3400,0,0,0,0.1,kmh,,
+[START_SIGNALS] wheel_speed_front_right_adr,16,4,0,U,3400,0,0,0,0.1,kmh,,
+[START_SIGNALS] wheel_speed_front_left_adr,16,2,0,U,3400,0,0,0,0.1,kmh,,
+[END_MSG]
+
+[START_MSG] M1_GPR_ADR_0x440,1088,8,4,0,S,
+[START_SIGNALS] brake_pressure_rear,16,8,0,I,32767,-32768,0,0,0.01,bar,,
+[START_SIGNALS] brake_pressure_front,16,6,0,I,32767,-32768,0,0,0.01,bar,,
+[START_SIGNALS] throttle_position,16,4,0,U,1000,0,0,0,0.1,%,,
+[START_SIGNALS] engine_speed,16,2,0,U,65535,0,0,0,6,RPM,,
+[END_MSG]
+
+[START_MSG] M1_GPR_PDM_0x11A,282,3,24,0,S,
+[START_SIGNALS] pdm_byte_2_mask_80,1,3,7,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_2_mask_40,1,3,6,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_2_mask_20,1,3,5,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_2_mask_10,1,3,4,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_2_mask_08,1,3,3,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_2_mask_04,1,3,2,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_2_mask_02,1,3,1,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_2_mask_01,1,3,0,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_1_mask_80,1,2,7,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_1_mask_40,1,2,6,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_1_mask_20,1,2,5,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_1_mask_10,1,2,4,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_1_mask_08,1,2,3,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_1_mask_04,1,2,2,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_1_mask_02,1,2,1,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_1_mask_01,1,2,0,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_0_mask_80,1,1,7,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_0_mask_40,1,1,6,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_0_mask_20,1,1,5,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_0_mask_10,1,1,4,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_0_mask_08,1,1,3,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_0_mask_04,1,1,2,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_0_mask_02,1,1,1,B,1,0,0,0,1,,,
+[START_SIGNALS] pdm_byte_0_mask_01,1,1,0,B,1,0,0,0,1,,,
+[END_MSG]
+
+[START_MSG] M1_GPR_PDM_0x119,281,8,12,0,S,
+[START_SIGNALS] engine_state_PDM,1,5,0,B,1,0,0,0,1,,,
+[START_SIGNALS] warning_source_PDM,1,5,1,B,1,0,0,0,1,,,
+[START_SIGNALS] driver_switch_2,1,6,1,B,1,0,0,0,1,,,
+[START_SIGNALS] driver_switch_1,1,6,0,B,1,0,0,0,1,,,
+[START_SIGNALS] engine_run_switch,1,5,7,B,1,0,0,0,1,,,
+[START_SIGNALS] pit_switch,1,5,6,B,1,0,0,0,1,,,
+[START_SIGNALS] clutch_state,1,5,5,B,1,0,0,0,1,,,
+[START_SIGNALS] clutch_switch,1,5,4,B,1,0,0,0,1,,,
+[START_SIGNALS] neutral_switch,1,5,3,B,1,0,0,0,1,,,
+[START_SIGNALS] brake_state,1,5,2,B,1,0,0,0,1,,,
+[START_SIGNALS] steering_angle_PDM,16,4,0,I,32760,-32760,0,0,0.1,°,,
+[START_SIGNALS] fuel_pressure_PDM,8,1,0,U,255,0,0,0,10,kPa,,
+[END_MSG]
+
+[START_MSG] M1_GPR_PDM_0x118,280,8,8,0,S,
+[START_SIGNALS] transmission_temperature_PDM,8,7,0,U,255,0,0,0,1,C,,
+[START_SIGNALS] differential_temperature_PDM,8,8,0,U,255,0,0,0,1,C,,
+[START_SIGNALS] fuel_temperature_PDM,8,6,0,U,255,0,0,0,1,C,,
+[START_SIGNALS] engine_oil_temperature_PDM,8,5,0,U,255,0,0,0,1,C,,
+[START_SIGNALS] coolant_temperature_PDM,8,4,0,U,255,0,0,0,1,C,,
+[START_SIGNALS] vehicle_speed_PDM,8,3,0,U,255,0,0,0,1,kmh,,
+[START_SIGNALS] throttle_position_PDM,8,2,0,U,255,0,0,0,1,%,,
+[START_SIGNALS] engine_speed_PDM,8,1,0,U,255,0,0,0,100,RPM,,
+[END_MSG]
+
+[START_MSG] M1_General_0x64F,1615,8,6,0,S,
+[START_SIGNALS] M1_General_0x640_Version,8,8,0,U,255,0,0,0,1,,,
+[START_SIGNALS] fuel_tank_level,8,6,0,U,255,0,0,0,1,l,,
+[START_SIGNALS] gearbox_temperature,8,5,0,I,127,0,0,-40,1,C,,
+[START_SIGNALS] fuel_closed_loop_ctrl_bk_2_trim,8,4,0,U,255,0,0,0,0.005,Ratio,,
+[START_SIGNALS] fuel_closed_loop_ctrl_bk_1_trim,8,3,0,U,255,0,0,0,0.005,Ratio,,
+[START_SIGNALS] engine_run_time_total,16,2,0,U,65535,0,0,0,0.1,hour,,
+[END_MSG]
+
+[START_MSG] M1_General_0x64E,1614,8,13,0,S,
+[START_SIGNALS] fuel_cut_state,4,2,0,U,15,0,0,0,1,,,
+[START_SIGNALS] brake_state,1,4,3,B,1,0,0,0,1,,,
+[START_SIGNALS] neutral_switch,1,4,0,B,1,0,0,0,1,,,
+[START_SIGNALS] engine_run_switch,1,4,1,B,1,0,0,0,1,,,
+[START_SIGNALS] anti_lag_switch,1,4,2,B,1,0,0,0,1,,,
+[START_SIGNALS] traction_switch,1,4,4,B,1,0,0,0,1,,,
+[START_SIGNALS] launch_switch,1,4,5,B,1,0,0,0,1,,,
+[START_SIGNALS] pit_switch,1,4,6,B,1,0,0,0,1,,,
+[START_SIGNALS] engine_oil_pressure_low_switch,1,4,7,B,1,0,0,0,1,,,
+[START_SIGNALS] fuel_closed_loop_diagnostic,4,3,4,I,7,-8,0,0,1,,,
+[START_SIGNALS] boost_control_diagnostic,4,2,4,I,7,-8,0,0,1,,,
+[START_SIGNALS] launch_diagnostic,4,1,0,I,7,-8,0,0,1,,,
+[START_SIGNALS] anti_lag_diagnostic,4,1,4,I,7,-8,0,0,1,,,
+[END_MSG]
+
+[START_MSG] M1_General_0x64D,1613,8,14,0,S,
+[START_SIGNALS] engine_speed_limit_state,8,8,0,U,255,0,0,0,1,,,
+[START_SIGNALS] fuel_state,4,4,0,U,15,0,0,0,1,,,
+[START_SIGNALS] gear,4,7,0,I,7,-8,0,0,1,,,
+[START_SIGNALS] engine_speed_reference_state,4,7,4,U,15,0,0,0,1,,,
+[START_SIGNALS] fuel_closed_loop_state,4,6,0,U,15,0,0,0,1,,,
+[START_SIGNALS] throttle_aim_state,4,6,4,U,15,0,0,0,1,,,
+[START_SIGNALS] knock_state,4,5,0,U,15,0,0,0,1,,,
+[START_SIGNALS] fuel_purge_state,4,5,4,U,15,0,0,0,1,,,
+[START_SIGNALS] engine_overrun_state,4,4,4,U,15,0,0,0,1,,,
+[START_SIGNALS] boost_aim_state,4,3,4,U,15,0,0,0,1,,,
+[START_SIGNALS] launch_state,4,2,0,U,15,0,0,0,1,,,
+[START_SIGNALS] anti_lag_state,4,2,4,U,15,0,0,0,1,,,
+[START_SIGNALS] fuel_pump_state,4,1,0,U,15,0,0,0,1,,,
+[START_SIGNALS] engine_state,4,1,4,U,15,0,0,0,1,,,
+[END_MSG]
+
+[START_MSG] M1_General_0x64C,1612,6,11,0,S,
+[START_SIGNALS] knock_warning,1,6,0,B,1,0,0,0,1,,,
+[START_SIGNALS] fuel_pressure_warning,1,6,1,B,1,0,0,0,1,,,
+[START_SIGNALS] crankcase_pressure_warning,1,6,2,B,1,0,0,0,1,,,
+[START_SIGNALS] engine_oil_pressure_warning,1,6,3,B,1,0,0,0,1,,,
+[START_SIGNALS] engine_oil_temperature_warning,1,6,4,B,1,0,0,0,1,,,
+[START_SIGNALS] engine_speed_warning,1,6,5,B,1,0,0,0,1,,,
+[START_SIGNALS] coolant_pressure_warning,1,6,6,B,1,0,0,0,1,,,
+[START_SIGNALS] coolant_temperature_warning,1,6,7,B,1,0,0,0,1,,,
+[START_SIGNALS] warning_source,8,5,0,U,255,0,0,0,1,,,
+[START_SIGNALS] ecu_up_time,16,4,0,U,65535,0,0,0,1,s,,
+[START_SIGNALS] engine_run_time,16,2,0,U,65535,0,0,0,1,s,,
+[END_MSG]
+
+[START_MSG] M1_General_0x64B,1611,8,8,0,S,
+[START_SIGNALS] ignition_cylinder_8_trim_knock,8,8,0,U,255,0,0,0,0.1,deg,,
+[START_SIGNALS] ignition_cylinder_7_trim_knock,8,7,0,U,255,0,0,0,0.1,deg,,
+[START_SIGNALS] ignition_cylinder_6_trim_knock,8,6,0,U,255,0,0,0,0.1,deg,,
+[START_SIGNALS] ignition_cylinder_5_trim_knock,8,5,0,U,255,0,0,0,0.1,deg,,
+[START_SIGNALS] ignition_cylinder_4_trim_knock,8,4,0,U,255,0,0,0,0.1,deg,,
+[START_SIGNALS] ignition_cylinder_3_trim_knock,8,3,0,U,255,0,0,0,0.1,deg,,
+[START_SIGNALS] ignition_cylinder_2_trim_knock,8,2,0,U,255,0,0,0,0.1,deg,,
+[START_SIGNALS] ignition_cylinder_1_trim_knock,8,1,0,U,255,0,0,0,0.1,deg,,
+[END_MSG]
+
+[START_MSG] M1_General_0x64A,1610,8,4,0,S,
+[START_SIGNALS] ambient_pressure,16,8,0,I,1100,600,0,0,0.1,kPa,,
+[START_SIGNALS] engine_speed_limit,16,6,0,U,16000,0,0,0,1,RPM,,
+[START_SIGNALS] engine_load_average,16,4,0,U,1000,0,0,0,0.1,%,,
+[START_SIGNALS] exhaust_temperature,16,2,0,U,12000,0,0,0,0.1,C,,
+[END_MSG]
+
+[START_MSG] M1_General_0x649,1609,8,7,0,S,
+[START_SIGNALS] fuel_used,16,8,0,U,65535,0,0,0,0.01,l,,
+[START_SIGNALS] ecu_battery_voltage,8,6,0,U,255,0,0,0,0.1,V,,
+[START_SIGNALS] airbox_temperature,8,5,0,I,127,0,0,-40,1,C,,
+[START_SIGNALS] ambient_temperature,8,4,0,I,127,0,0,-40,1,C,,
+[START_SIGNALS] fuel_temperature,8,3,0,I,127,0,0,-40,1,C,,
+[START_SIGNALS] engine_oil_temperature,8,2,0,I,127,0,0,-40,1,C,,
+[START_SIGNALS] coolant_temperature,8,1,0,I,127,0,0,-40,1,C,,
+[END_MSG]
+
+[START_MSG] M1_General_0x648,1608,8,4,0,S,
+[START_SIGNALS] wheel_speed_rear_right,16,8,0,U,3400,0,0,0,0.1,kmh,,
+[START_SIGNALS] wheel_speed_rear_left,16,6,0,U,3400,0,0,0,0.1,kmh,,
+[START_SIGNALS] wheel_speed_front_right,16,4,0,U,3400,0,0,0,0.1,kmh,,
+[START_SIGNALS] wheel_speed_front_left,16,2,0,U,3400,0,0,0,0.1,kmh,,
+[END_MSG]
+
+[START_MSG] M1_General_0x647,1607,8,5,0,S,
+[START_SIGNALS] exh_cam_bk_2_output_duty_cycle,8,8,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] exh_cam_bk_1_output_duty_cycle,8,7,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] exhaust_camshaft_bank_2_position,16,6,0,I,600,-600,0,0,0.1,deg,,
+[START_SIGNALS] exhaust_camshaft_bank_1_position,16,4,0,I,600,-600,0,0,0.1,deg,,
+[START_SIGNALS] exhaust_camshaft_aim,16,2,0,I,600,-600,0,0,0.1,deg,,
+[END_MSG]
+
+[START_MSG] M1_General_0x646,1606,8,5,0,S,
+[START_SIGNALS] inlet_cam_bk_2_output_duty_cycle,8,8,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] inlet_cam_bk_1_output_duty_cycle,8,7,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] inlet_camshaft_bank_2_position,16,6,0,I,600,-600,0,0,0.1,deg,,
+[START_SIGNALS] inlet_camshaft_bank_1_position,16,4,0,I,600,-600,0,0,0.1,deg,,
+[START_SIGNALS] inlet_camshaft_aim,16,2,0,I,600,-600,0,0,0.1,deg,,
+[END_MSG]
+
+[START_MSG] M1_General_0x645,1605,8,4,0,S,
+[START_SIGNALS] gear_lever_force_sensor,8,8,0,I,127,-127,0,0,5,N,,
+[START_SIGNALS] boost_actuator_output_duty_cycle,8,7,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] boost_aim,16,4,0,U,10000,0,0,0,0.1,kPa,,
+[START_SIGNALS] boost_pressure,16,2,0,I,10000,0,0,0,0.1,kPa,,
+[END_MSG]
+
+[START_MSG] M1_General_0x644,1604,8,8,0,S,
+[START_SIGNALS] engine_oil_pressure,16,8,0,U,65535,0,0,0,0.1,kPa,,
+[START_SIGNALS] ignition_cut_state,4,6,0,U,15,0,0,0,1,Enumerated,,
+[START_SIGNALS] ignition_timing_state,4,6,4,U,15,0,0,0,1,Enumerated,,
+[START_SIGNALS] fuel_cyl_1_prim_output_pls_wdth,8,5,0,U,255,0,0,0,0.1,mS,,
+[START_SIGNALS] fuel_output_cut_average,8,4,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] ignition_output_cut_average,8,3,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] fuel_output_cut_count,8,2,0,U,255,0,0,0,1,,,
+[START_SIGNALS] ignition_output_cut_count,8,1,0,U,255,0,0,0,1,,,
+[END_MSG]
+
+[START_MSG] M1_General_0x643,1603,8,8,0,S,
+[START_SIGNALS] ignition_cylinder_8_knock_level,8,8,0,U,200,0,0,0,1,%,,
+[START_SIGNALS] ignition_cylinder_7_knock_level,8,7,0,U,200,0,0,0,1,%,,
+[START_SIGNALS] ignition_cylinder_6_knock_level,8,6,0,U,200,0,0,0,1,%,,
+[START_SIGNALS] ignition_cylinder_5_knock_level,8,5,0,U,200,0,0,0,1,%,,
+[START_SIGNALS] ignition_cylinder_4_knock_level,8,4,0,U,200,0,0,0,1,%,,
+[START_SIGNALS] ignition_cylinder_3_knock_level,8,3,0,U,200,0,0,0,1,%,,
+[START_SIGNALS] ignition_cylinder_2_knock_level,8,2,0,U,200,0,0,0,1,%,,
+[START_SIGNALS] ignition_cylinder_1_knock_level,8,1,0,U,200,0,0,0,1,%,,
+[END_MSG]
+
+[START_MSG] M1_General_0x642,1602,8,4,0,S,
+[START_SIGNALS] fuel_timing_primary,16,8,0,I,7200,-7200,0,0,0.1,deg,,
+[START_SIGNALS] ignition_timing,16,6,0,I,1000,-1000,0,0,0.1,deg,,
+[START_SIGNALS] engine_load,16,4,0,U,1000,0,0,0,1,mg,,
+[START_SIGNALS] throttle_pedal,16,2,0,U,1000,0,0,0,0.1,%,,
+[END_MSG]
+
+[START_MSG] M1_General_0x641,1601,8,5,0,S,
+[START_SIGNALS] fuel_injector_primary_duty_cycle,8,7,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] engine_efficiency,8,8,0,U,160,0,0,0,1,%,,
+[START_SIGNALS] fuel_pressure_sensor,16,6,0,U,10000,0,0,0,0.1,kPa,,
+[START_SIGNALS] fuel_mixture_aim,16,4,0,U,200,0,0,0,0.01,LA,,
+[START_SIGNALS] fuel_volume,16,2,0,U,500,0,0,0,1,ul,,
+[END_MSG]
+
+[START_MSG] M1_General_0x640,1600,8,4,0,S,
+[START_SIGNALS] throttle_position,16,8,0,U,1000,0,0,0,0.1,%,,
+[START_SIGNALS] inlet_air_temperature,16,6,0,I,1200,-400,0,0,0.1,C,,
+[START_SIGNALS] inlet_manifold_pressure,16,4,0,U,5000,0,0,0,0.1,kPa,,
+[START_SIGNALS] engine_speed,16,2,0,U,16000,0,0,0,1,RPM,,
+[END_MSG]
+
+[START_SIG_LIST]
+[START_SIGNALS] Warning,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Coolant_Pump_After_Run,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Inlet_Camshaft_Actuator_On,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Air_Conditioner_Clutch,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Tip_Over_Switch,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Rain_Light_Switch,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Starter_Solenoid,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Intercooler_Spray_Pump,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Power_Steering_Pump,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Transmission_Pump,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Coolant_Tank_Pump,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Transmission_Coolant_Fan,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Coolant_Fan_2_On,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Coolant_Fan_1_On,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Fuel_Pump_On,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Engine_Run,1,1,0,B,1,0,0,0,1,,,
+[END_SIG_LIST]
+
+[START_VALUE_TABLE]
+[START_TABLE] Alternative_Fuel_Mode_Enum
+[VALUE_DESCRIPTION] "Secondary Fuel",2
+[VALUE_DESCRIPTION] "Flex Fuel",1
+[VALUE_DESCRIPTION] "Not in Use",0
+[END_TABLE]
+[END_VALUE_TABLE]
+
+[NODE] 
+
+[START_DESC]
+[START_DESC_NET]
+[END_DESC_NET]
+
+[START_DESC_NODE]
+[END_DESC_NODE]
+
+[START_DESC_MSG]
+1073741824 X "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+[END_DESC_MSG]
+
+[START_DESC_SIG]
+1649 S alt_fuel_timing_secondary "-ve means BTDC";
+1649 S alt_fuel_timing_primary "-ve means BTDC";
+1626 S ignition_cylinder_12_trim_knock "+ve means ATDC";
+1626 S ignition_cylinder_11_trim_knock "+ve means ATDC";
+1626 S ignition_cylinder_10_trim_knock "+ve means ATDC";
+1626 S ignition_cylinder_9_trim_knock "+ve means ATDC";
+1618 S fuel_timing_secondary "-ve means BTDC";
+1615 S engine_run_time_total "Does not roll over";
+1612 S ecu_up_time "Does not roll over";
+1612 S engine_run_time "Does not roll over";
+1611 S ignition_cylinder_8_trim_knock "+ve means ATDC";
+1611 S ignition_cylinder_7_trim_knock "+ve means ATDC";
+1611 S ignition_cylinder_6_trim_knock "+ve means ATDC";
+1611 S ignition_cylinder_5_trim_knock "+ve means ATDC";
+1611 S ignition_cylinder_4_trim_knock "+ve means ATDC";
+1611 S ignition_cylinder_3_trim_knock "+ve means ATDC";
+1611 S ignition_cylinder_2_trim_knock "+ve means ATDC";
+1611 S ignition_cylinder_1_trim_knock "+ve means ATDC";
+1607 S exhaust_camshaft_bank_2_position "-ve means BTDC";
+1607 S exhaust_camshaft_bank_1_position "-ve means BTDC";
+1607 S exhaust_camshaft_aim "-ve means BTDC";
+1606 S inlet_camshaft_bank_2_position "-ve means BTDC";
+1606 S inlet_camshaft_bank_1_position "-ve means BTDC";
+1606 S inlet_camshaft_aim "-ve means BTDC";
+1604 S fuel_output_cut_average "Rolls over at 255";
+1604 S ignition_output_cut_average "Rolls over at 255";
+1604 S fuel_output_cut_count "Rolls over at 255";
+1604 S ignition_output_cut_count "Rolls over at 255";
+1602 S fuel_timing_primary "-ve means BTDC";
+1602 S ignition_timing "-ve means BTDC";
+[END_DESC_SIG]
+[END_DESC]
+
+[START_PARAM]
+[START_PARAM_NET]
+"BusType",STRING,""
+[END_PARAM_NET]
+
+[START_PARAM_NODE]
+"NodeLayerModules",STRING,""
+"ECU",STRING,""
+"CANoeJitterMax",INT,0,0,0
+"CANoeJitterMin",INT,0,0,0
+"CANoeDrift",INT,0,0,0
+"CANoeStartDelay",INT,0,0,0
+[END_PARAM_NODE]
+
+[START_PARAM_MSG]
+[END_PARAM_MSG]
+
+[START_PARAM_SIG]
+[END_PARAM_SIG]
+
+[START_PARAM_NODE_RX_SIG]
+[END_PARAM_NODE_RX_SIG]
+
+[START_PARAM_NODE_TX_MSG]
+[END_PARAM_NODE_TX_MSG]
+[END_PARAM]
+
+[START_PARAM_VAL]
+[START_PARAM_NET_VAL]
+[END_PARAM_NET_VAL]
+
+[START_PARAM_NODE_VAL]
+[END_PARAM_NODE_VAL]
+
+[START_PARAM_MSG_VAL]
+[END_PARAM_MSG_VAL]
+
+[START_PARAM_SIG_VAL]
+[END_PARAM_SIG_VAL]
+
+[END_PARAM_VAL]
+
+
+[START_NOT_SUPPORTED]
+[END_NOT_SUPPORTED]
+
+[START_NOT_PROCESSED]
+	PZ_
+	ON_QRS_
+	ON_
+	INY_
+	PNG_QRS_
+	PNG_
+	SVYGRE
+	ON_QRS_QRS_
+	RI_QNGN_
+	RAIINE_QNGN_
+	FTGLCR_
+	FTGLCR_INY_
+	ON_QRS_FTGLCR_
+	ON_FTGLCR_
+	FVT_GLCR_ERS_
+	INY_GNOYR_
+	FVT_TEBHC_
+	FVT_INYGLCR_
+	FVTGLCR_INYGLCR_
+	OB_GK_OH_
+	ON_QRS_ERY_
+	ON_ERY_
+	ON_QRS_QRS_ERY_
+	OH_FT_ERY_
+	OH_RI_ERY_
+	OH_OB_ERY_
+	FT_ZHY_INY_
+OF_:
+
+[END_NOT_PROCESSED]

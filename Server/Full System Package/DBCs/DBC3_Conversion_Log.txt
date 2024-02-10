@@ -1,0 +1,133 @@
+Conversion Warnings Log
+
+
+MSG_ID: 1650 	MSG_TYPE: S 	MSG_NAME: M1_Flex_Fuel_0x672
+	SIG_NAME: alt_fuel_contribution_efficiency, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1648 	MSG_TYPE: S 	MSG_NAME: M1_Flex_Fuel_0x670
+	SIG_NAME: alt_fuel_ignition_timing, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: fuel_composition, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: alt_fuel_mixture_aim_blend, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: alt_fuel_ignition_timing_blend, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: alt_fuel_timing_secondary_blend, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: alt_fuel_timing_primary_blend, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: alternative_fuel_mode, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1626 	MSG_TYPE: S 	MSG_NAME: M1_General_0x65A
+	SIG_NAME: M1_General_0x650_Version, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1631 	MSG_TYPE: S 	MSG_NAME: M1_General_0x65F
+	SIG_NAME: logging_system_1_used, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1630 	MSG_TYPE: S 	MSG_NAME: M1_General_0x65E
+	SIG_NAME: alternator_current, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: engine_crank_case_pressure, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: exhaust_pressure_bank_2, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: exhaust_pressure_bank_1, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1627 	MSG_TYPE: S 	MSG_NAME: M1_General_0x65B
+	SIG_NAME: lap_distance, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: lap_number, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: lap_time_running, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: lap_time, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1624 	MSG_TYPE: S 	MSG_NAME: M1_General_0x658
+	SIG_NAME: vehicle_yaw_rate, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: vehicle_accel_vertical, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: vehicle_accel_longitudinal, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: vehicle_accel_lateral, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1623 	MSG_TYPE: S 	MSG_NAME: M1_General_0x657
+	SIG_NAME: gear_output_shaft_speed, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: gear_input_shaft_speed, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: fuel_injector_secondary_pressure, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: fuel_injector_primary_pressure, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1622 	MSG_TYPE: S 	MSG_NAME: M1_General_0x656
+	SIG_NAME: fuel_flow, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: airbox_mass_flow, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: inlet_mass_flow, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: steering_angle, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1617 	MSG_TYPE: S 	MSG_NAME: M1_General_0x651
+	SIG_NAME: exhaust_lambda_bank_2, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: exhaust_lambda_bank_1, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: exhaust_lambda, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1616 	MSG_TYPE: S 	MSG_NAME: M1_General_0x650
+	SIG_NAME: driver_switch_8, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: driver_switch_7, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: driver_switch_6, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: driver_switch_5, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: driver_rotary_switch_6, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: driver_rotary_switch_5, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: driver_switch_4, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: driver_switch_3, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: driver_rotary_switch_4, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: driver_rotary_switch_3, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: driver_rotary_switch_2, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: driver_rotary_switch_1, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1090 	MSG_TYPE: S 	MSG_NAME: M1_GPR_ADR_0x442
+	SIG_NAME: steering_angle_adr, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 282 	MSG_TYPE: S 	MSG_NAME: M1_GPR_PDM_0x11A
+	SIG_NAME: pdm_byte_2_mask_80, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_2_mask_40, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_2_mask_20, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_2_mask_10, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_2_mask_08, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_2_mask_04, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_2_mask_02, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_2_mask_01, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_1_mask_80, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_1_mask_40, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_1_mask_20, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_1_mask_10, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_1_mask_08, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_1_mask_04, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_1_mask_02, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_1_mask_01, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_0_mask_80, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_0_mask_40, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_0_mask_20, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_0_mask_10, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_0_mask_08, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_0_mask_04, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_0_mask_02, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: pdm_byte_0_mask_01, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1615 	MSG_TYPE: S 	MSG_NAME: M1_General_0x64F
+	SIG_NAME: M1_General_0x640_Version, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: gearbox_temperature, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1612 	MSG_TYPE: S 	MSG_NAME: M1_General_0x64C
+	SIG_NAME: warning_source, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1609 	MSG_TYPE: S 	MSG_NAME: M1_General_0x649
+	SIG_NAME: airbox_temperature, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: ambient_temperature, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: fuel_temperature, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: engine_oil_temperature, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: coolant_temperature, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1604 	MSG_TYPE: S 	MSG_NAME: M1_General_0x644
+	SIG_NAME: engine_oil_pressure, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1073741824 	MSG_TYPE: X 	MSG_NAME: VECTOR__INDEPENDENT_SIG_MSG
+	SIG_NAME: Warning, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Coolant_Pump_After_Run, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Inlet_Camshaft_Actuator_On, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Air_Conditioner_Clutch, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Tip_Over_Switch, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Rain_Light_Switch, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Starter_Solenoid, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Intercooler_Spray_Pump, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Power_Steering_Pump, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Transmission_Pump, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Coolant_Tank_Pump, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Transmission_Coolant_Fan, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Coolant_Fan_2_On, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Coolant_Fan_1_On, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Fuel_Pump_On, STATUS: No error, ACTION: Signal Discarded
+	SIG_NAME: Engine_Run, STATUS: No error, ACTION: Signal Discarded
