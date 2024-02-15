@@ -48,7 +48,7 @@ def find_nth(haystack, needle, n):
 
 
 # Translate each string from the decoded CAN message into a dictionary and then output that dictionary to the json file
-def to_json(message):
+def to_json(message): 
     # print(message)
     with open(json_file_name, 'r+') as json_file:
         # # Traverse through the new dictionary and add time stamps
@@ -106,6 +106,7 @@ def convert_to_bytes_with_escape(input_string):
 def data_handler(data):
     # Extract the message from the socket
     message = data.decode().strip()
+    output_monitoring.write(f"message: {message}\n")
 
     # Separate CAN message into id and data
     # Except non hexadecimal values
@@ -128,6 +129,7 @@ def data_handler(data):
 
     to_send = data_reformatted
     # print(to_send)
+    output_monitoring.write(f"{to_send}\n")
 
     try:
         # Decode each incoming message
@@ -135,6 +137,7 @@ def data_handler(data):
                                   decode_containers=False, allow_truncated=False))
     except KeyError as error:
         print('Key error: %s' % error)
+        output_monitoring.write('Key error: %s \n' % error)
     except ValueError as error:
         print(error)
     except Exception as error:
