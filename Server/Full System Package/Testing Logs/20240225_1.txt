@@ -1,0 +1,251 @@
+Starting CAN Translator
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,500,0 0 0 0 0 0 0 0
+b'\x00\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1280 
+message: 8,502,0 0 0 0 0 0 0 0
+b'\x00\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1282 
+message: 8,504,1 1 0 1 0 0 1 0
+b'\x01\x01\x00\x01\x00\x00\x01\x00'
+Key error: 1284 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,501,2 0 0 0 0 0 0 0
+b'\x02\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1281 
+message: 8,503,2 4 4 4 3e 4 3 4
+b'\x02\x04\x04\x04>\x04\x03\x04'
+Key error: 1283 
+message: 8,505,2 3b 3b 0 0 0 0 0
+b'\x02;;\x00\x00\x00\x00\x00'
+Key error: 1285 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,501,3 0 0 0 0 0 0 0
+b'\x03\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1281 
+message: 8,118,0 0 0 0 0 0 0 0
+b'\x00\x00\x00\x00\x00\x00\x00\x00'
+dict {}
+
+message: 8,504,c1 0 0 0 0 1 0 0
+b'\xc1\x00\x00\x00\x00\x01\x00\x00'
+Key error: 1284 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,500,40 0 0 0 0 0 0 0
+b'@\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1280 
+message: 8,502,4 0 0 0 0 0 0 0
+b'\x04\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1282 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,500,0 0 0 0 0 0 0 0
+b'\x00\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1280 
+message: 8,502,0 0 0 0 0 0 0 0
+b'\x00\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1282 
+message: 8,504,1 1 0 1 0 0 1 0
+b'\x01\x01\x00\x01\x00\x00\x01\x00'
+Key error: 1284 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,500,10 0 0 0 0 0 0 0
+b'\x10\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1280 
+message: 8,502,1 0 0 0 0 0 0 0
+b'\x01\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1282 
+message: 8,504,40 0 0 0 1 0 0 0
+b'@\x00\x00\x00\x01\x00\x00\x00'
+Key error: 1284 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,502,2 0 0 0 0 0 0 0
+b'\x02\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1282 
+message: 8,504,80 1 0 0 0 0 0 0
+b'\x80\x01\x00\x00\x00\x00\x00\x00'
+Key error: 1284 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,500,30 1d 65 0 1 9c 42 0
+b'0\x1de\x00\x01\x9cB\x00'
+Key error: 1280 
+message: 8,502,3 0 0 0 0 0 0 0
+b'\x03\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1282 
+message: 8,504,c1 0 0 0 0 1 0 0
+b'\xc1\x00\x00\x00\x00\x01\x00\x00'
+Key error: 1284 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,501,4 0 0 0 0 0 0 0
+b'\x04\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1281 
+message: 3,11a,0 0 0
+b'\x00\x00\x00'
+dict {'engine_speed_PDM': 0, 'throttle_position_PDM': 0, 'vehicle_speed_PDM': 0, 'coolant_temperature_PDM': 0, 'engine_oil_temperature_PDM': 0, 'fuel_temperature_PDM': 0, 'transmission_temperature_PDM': 0, 'differential_temperature_PDM': 0, 'Timestamp': 1708890039.847566}
+
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,500,0 0 0 0 0 0 0 0
+b'\x00\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1280 
+message: 8,502,0 0 0 0 0 0 0 0
+b'\x00\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1282 
+message: 8,504,1 1 0 1 0 0 1 0
+b'\x01\x01\x00\x01\x00\x00\x01\x00'
+Key error: 1284 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,501,1 0 0 0 0 0 0 0
+b'\x01\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1281 
+message: 8,503,1 0 4 4 4 4 3d 4
+b'\x01\x00\x04\x04\x04\x04=\x04'
+Key error: 1283 
+message: 8,505,1 3b 3a 3b 3b 3b 3b 3b
+b'\x01;:;;;;;'
+Key error: 1285 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,500,30 1d 65 0 0 9b 42 0
+b'0\x1de\x00\x00\x9bB\x00'
+Key error: 1280 
+message: 8,502,3 0 0 0 0 0 0 0
+b'\x03\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1282 
+message: 8,504,c1 0 0 0 0 1 0 0
+b'\xc1\x00\x00\x00\x00\x01\x00\x00'
+Key error: 1284 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,500,40 0 0 0 0 0 0 0
+b'@\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1280 
+message: 8,502,4 0 0 0 0 0 0 0
+b'\x04\x00\x00\x00\x00\x00\x00\x00'
+Key error: 1282 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,501,0 0 0 0 2 0 0 0
+b'\x00\x00\x00\x00\x02\x00\x00\x00'
+Key error: 1281 
+message: 8,118,0 0 0 0 0 0 0 0
+b'\x00\x00\x00\x00\x00\x00\x00\x00'
+dict {'engine_speed_PDM': 0, 'throttle_position_PDM': 0, 'vehicle_speed_PDM': 0, 'coolant_temperature_PDM': 0, 'engine_oil_temperature_PDM': 0, 'fuel_temperature_PDM': 0, 'transmission_temperature_PDM': 0, 'differential_temperature_PDM': 0, 'Timestamp': 1708890040.9513721, 'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+
+message: 8,505,0 3b 3b 3b 3b 3b 3b 3b
+b'\x00;;;;;;;'
+Key error: 1285 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5
+b'\x00\x00\x00\x00\x01\x00\xdc\x05'
+Key error: 192 
+message: 8,c0,0 0 0 0 1 0 dc 5

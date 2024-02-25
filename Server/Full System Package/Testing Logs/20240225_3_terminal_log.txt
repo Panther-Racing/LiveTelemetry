@@ -1,0 +1,1675 @@
+Microsoft Windows [Version 10.0.19045.4046]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\WINDOWS\system32>cd "C:\Users\Panther Racing\Documents\GitHub\LiveTelemetry\Server\Full System Package"
+
+C:\Users\Panther Racing\Documents\GitHub\LiveTelemetry\Server\Full System Package>python main.py
+Creating threads
+Starting process 1
+Starting Server
+192.168.88.250 Is being used
+UDP server up and listening at 192.168.88.250 on car port 20001
+starting process 2
+Starting CAN Translator
+starting process 3
+Starting SQL Sender
+Exception in thread Thread-3 (sql_process):
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\Python312\Lib\threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\Panther Racing\Documents\GitHub\LiveTelemetry\Server\Full System Package\main.py", line 37, in sql_process
+    SQL = Process(target=send_sql_v1.start(translate_conn))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Panther Racing\Documents\GitHub\LiveTelemetry\Server\Full System Package\send_sql_v1.py", line 7, in start
+    setup()
+  File "C:\Users\Panther Racing\Documents\GitHub\LiveTelemetry\Server\Full System Package\send_sql_v1.py", line 21, in setup
+    conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';ENCRYPT=yes;UID='+username+';PWD='+ password+'TrustServerCertificate=yes;')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pyodbc.InterfaceError: ('28000', "[28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'raheelfarouk'.  Reason: The password of the account has expired. (18487) (SQLDriverConnect); [28000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user 'raheelfarouk'.  Reason: The password of the account has expired. (18487)")
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,502,1 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,504,40 0 0 0 1 0 0 0 '
+Key error: 192
+Car Data:b'8,505,1 3a 3a 3b 3b 3b 3b 3b '
+Frame ID: 1282     data: b'8,502,1 0 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+1 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1282
+Car Data:b'8,502,2 0 0 0 0 0 0 0 '
+Frame ID: 1284     data: b'8,504,40 0 0 0 1 0 0 0 \n'
+40 0 0 0 1 0 0 0
+Car Data:b'8,504,80 1 0 0 0 0 0 0 '
+Key error: 1284
+Car Data:b'8,119,0 0 0 0 0 0 0 0 '
+Frame ID: 1285     data: b'8,505,1 3a 3a 3b 3b 3b 3b 3b \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+1 3a 3a 3b 3b 3b 3b 3b
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1285
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,503,3 4 4 4 3e 4 4 4 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,501,4 0 0 0 0 0 0 0 '
+Key error: 192
+Car Data:b'8,503,4 4 3d 0 0 0 0 0 '
+Frame ID: 1282     data: b'8,502,2 0 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+2 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1282
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1284     data: b'8,504,80 1 0 0 0 0 0 0 \n'
+Car Data:b'8,501,0 0 0 0 0 0 0 0 '
+80 1 0 0 0 0 0 0
+Car Data:b'8,503,0 3d 3d 11 3d 12 11 3d '
+Key error: 1284
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 281     data: b'8,119,0 0 0 0 0 0 0 0 \n'
+0 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+database message: message('M1_GPR_PDM_0x119', 0x119, False, 8, None)
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+message type (not container): <class 'custom_cantools.cantools.database.can.message.Message'>
+database: data: b'\x00\x00\x00\x00\x00\x00\x00\x00'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+full unpacked: {'fuel_pressure_PDM': 0, 'steering_angle_PDM': 0, 'engine_run_switch': 0, 'pit_switch': 0, 'clutch_state': 0, 'clutch_switch': 0, 'neutral_switch': 0, 'brake_state': 0, 'warning_source_PDM': 0, 'engine_state_PDM': 0, 'driver_switch_2': 0, 'driver_switch_1': 0}
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+conversion.py: 0
+Car Data:b'8,505,1 3b 3a 3b 3b 3b 3b 3b '
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+conversion.py: 0
+conversion.py: 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+conversion.py: 0
+conversion.py: 0
+Car Data:b'8,501,2 0 0 0 0 0 0 0 '
+conversion.py: 0
+Car Data:b'8,503,2 4 4 4 3e 4 3 4 '
+conversion.py: 0
+Car Data:b'8,505,2 3b 3b 0 0 0 0 0 '
+fully decoded: {'fuel_pressure_PDM': 0, 'steering_angle_PDM': 0.0, 'engine_run_switch': 0, 'pit_switch': 0, 'clutch_state': 0, 'clutch_switch': 0, 'neutral_switch': 0, 'brake_state': 0, 'warning_source_PDM': 0, 'engine_state_PDM': 0, 'driver_switch_2': 0, 'driver_switch_1': 0}
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+json_dict {}
+Car Data:b'8,500,30 1d 65 0 0 9b 42 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,502,3 0 0 0 0 0 0 0 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1281     data: b'8,501,3 0 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+3 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1281
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1283     data: b'8,503,3 4 4 4 3e 4 4 4 \n'
+3 4 4 4 3e 4 4 4
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1283
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,503,0 3d 3d 11 3d 12 11 3d '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,505,0 3b 3b 3b 3b 3b 3b 3b '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,500,10 0 0 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,502,1 0 0 0 0 0 0 0 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1281     data: b'8,501,4 0 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+4 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1281
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1283     data: b'8,503,4 4 3d 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+4 4 3d 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1283
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,503,4 4 3d 0 0 0 0 0 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1281     data: b'8,501,0 0 0 0 0 0 0 0 \n'
+0 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1281
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1283     data: b'8,503,0 3d 3d 11 3d 12 11 3d \n'
+Car Data:b'8,501,0 0 0 0 2 0 0 0 '
+0 3d 3d 11 3d 12 11 3d
+Car Data:b'8,503,0 3d 3d 11 3d 12 11 3d '
+Key error: 1283
+Car Data:b'8,505,0 3c 3c 3c 3c 3a 3a 3a '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,503,3 4 4 4 3d 4 4 4 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1285     data: b'8,505,1 3b 3a 3b 3b 3b 3b 3b \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+1 3b 3a 3b 3b 3b 3b 3b
+Car Data:b'8,501,4 0 0 0 0 0 0 0 '
+Key error: 1285
+Car Data:b'8,503,4 4 3d 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,501,0 0 0 0 2 0 0 0 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,503,0 3e 3d 11 3d 12 11 3d '
+Key error: 192
+Car Data:b'8,505,0 3b 3b 3a 3b 3b 3b 3b '
+Frame ID: 1281     data: b'8,501,2 0 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+2 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1281
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1283     data: b'8,503,2 4 4 4 3e 4 3 4 \n'
+Car Data:b'8,505,1 3a 3a 3b 3b 3b 3b 3b '
+2 4 4 4 3e 4 3 4
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1283
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1285     data: b'8,505,2 3b 3b 0 0 0 0 0 \n'
+Car Data:b'8,501,2 0 0 0 0 0 0 0 '
+2 3b 3b 0 0 0 0 0
+Car Data:b'8,503,2 4 4 4 3e 4 3 4 '
+Key error: 1285
+Car Data:b'8,118,0 0 0 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,502,3 0 0 0 0 0 0 0 '
+Frame ID: 1280     data: b'8,500,30 1d 65 0 0 9b 42 0 \n'
+Car Data:b'8,504,c1 0 0 0 0 1 0 0 '
+30 1d 65 0 0 9b 42 0
+Key error: 1280
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1282     data: b'8,502,3 0 0 0 0 0 0 0 \n'
+3 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1282
+Car Data:b'8,500,40 0 0 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,502,4 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,505,2 3b 3b 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,503,3 4 4 4 3e 4 4 4 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1283     data: b'8,503,0 3d 3d 11 3d 12 11 3d \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 3d 3d 11 3d 12 11 3d
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1283
+Car Data:b'8,501,4 0 0 0 0 0 0 0 '
+Frame ID: 1285     data: b'8,505,0 3b 3b 3b 3b 3b 3b 3b \n'
+Car Data:b'8,503,4 4 3d 0 0 0 0 0 '
+0 3b 3b 3b 3b 3b 3b 3b
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1285
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,501,0 0 1 0 2 0 0 0 '
+Key error: 192
+Car Data:b'8,503,0 3d 3d 11 3d 12 11 3d '
+Frame ID: 1280     data: b'8,500,10 0 0 0 0 0 0 0 \n'
+Car Data:b'3,11a,0 0 0 '
+10 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1280
+Car Data:b'8,500,10 0 0 0 0 0 0 0 '
+Frame ID: 1282     data: b'8,502,1 0 0 0 0 0 0 0 \n'
+Car Data:b'8,501,1 0 0 0 0 0 0 0 '
+1 0 0 0 0 0 0 0
+Car Data:b'8,503,1 0 4 4 4 4 3d 4 '
+Key error: 1282
+Car Data:b'8,505,1 3a 3a 3b 3b 3b 3b 3b '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,501,4 0 0 0 0 0 0 0 '
+Key error: 192
+Car Data:b'8,503,4 4 3d 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,501,0 0 0 0 2 0 0 0 '
+Key error: 192
+Car Data:b'8,503,0 3d 3d 11 3d 12 11 3d '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,505,0 3c 3c 3b 3c 3b 3a 3a '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Car Data:b'8,503,2 4 4 4 3d 4 3 4 '
+Key error: 192
+Car Data:b'8,505,2 3b 3b 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,503,3 4 4 4 3e 4 4 4 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,501,4 0 0 0 0 0 0 0 '
+Key error: 192
+Car Data:b'8,503,4 4 3d 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1283     data: b'8,503,4 4 3d 0 0 0 0 0 \n'
+Car Data:b'8,502,0 0 0 0 0 0 0 0 '
+4 4 3d 0 0 0 0 0
+Car Data:b'8,504,1 1 0 1 0 0 1 0 '
+Key error: 1283
+Car Data:b'3,11a,0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,501,1 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,503,1 0 4 4 4 4 3d 4 '
+Key error: 192
+Car Data:b'8,505,1 3a 3a 3b 3b 3b 3b 3b '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,502,2 0 0 0 0 0 0 0 '
+Frame ID: 1281     data: b'8,501,0 0 0 0 2 0 0 0 \n'
+0 0 0 0 2 0 0 0
+Car Data:b'8,504,80 1 0 0 0 0 0 0 '
+Key error: 1281
+Car Data:b'3,11a,0 0 0 '
+Frame ID: 1283     data: b'8,503,0 3d 3d 11 3d 12 11 3d \n'
+0 3d 3d 11 3d 12 11 3d
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1283
+Car Data:b'8,500,30 1d 65 0 1 9b 42 0 '
+Frame ID: 1285     data: b'8,505,0 3c 3c 3c 3c 3a 3a 3a \n'
+0 3c 3c 3c 3c 3a 3a 3a
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+Key error: 1285
+Car Data:b'8,504,c1 0 0 0 0 1 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,500,40 0 0 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,501,2 0 0 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,503,2 4 4 4 3e 4 3 4 '
+Key error: 192
+Car Data:b'8,505,2 3b 3b 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+Key error: 192
+Car Data:b'8,503,3 4 4 4 3d 4 4 4 '
+Frame ID: 1281     data: b'8,501,3 0 0 0 0 0 0 0 \n'
+3 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1281
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1283     data: b'8,503,3 4 4 4 3d 4 4 4 \n'
+3 4 4 4 3d 4 4 4
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1283
+Car Data:b'8,501,4 0 0 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,503,4 4 3d 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,502,0 0 0 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,504,1 1 0 1 0 0 1 0 '
+0 0 0 0 1 0 dc 5
+Car Data:b'3,11a,0 0 0 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1281     data: b'8,501,4 0 0 0 0 0 0 0 \n'
+4 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Car Data:b'8,501,1 0 0 0 0 0 0 0 '
+Key error: 1281
+Car Data:b'8,503,1 0 4 4 4 4 3d 4 '
+Frame ID: 1283     data: b'8,503,4 4 3d 0 0 0 0 0 \n'
+Car Data:b'8,505,1 3b 3a 3b 3b 3b 3b 3b '
+4 4 3d 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1283
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,502,2 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,504,80 1 0 0 0 0 0 0 '
+Key error: 192
+Car Data:b'3,11a,0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,500,30 1d 66 0 1 9b 42 0 '
+Key error: 192
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,504,c1 0 0 0 0 1 0 0 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1281     data: b'8,501,0 0 0 0 2 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 2 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1281
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1283     data: b'8,503,0 3e 3d 11 3d 12 11 3d \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 3e 3d 11 3d 12 11 3d
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1283
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1285     data: b'8,505,0 3b 3b 3a 3b 3b 3b 3b \n'
+0 3b 3b 3a 3b 3b 3b 3b
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1285
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1285     data: b'8,505,1 3a 3a 3b 3b 3b 3b 3b \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+1 3a 3a 3b 3b 3b 3b 3b
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1285
+Car Data:b'8,503,2 4 4 4 3e 4 3 4 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,505,2 3b 3b 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+Key error: 192
+Car Data:b'8,503,3 4 4 5 3d 4 4 4 '
+Frame ID: 1281     data: b'8,501,2 0 0 0 0 0 0 0 \n'
+2 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1281
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1283     data: b'8,503,2 4 4 4 3e 4 3 4 \n'
+2 4 4 4 3e 4 3 4
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1283
+Car Data:b'8,501,4 0 0 0 0 0 0 0 '
+Frame ID: 280     data: b'8,118,0 0 0 0 0 0 0 0 \n'
+0 0 0 0 0 0 0 0
+Car Data:b'8,503,4 4 3d 0 0 0 0 0 '
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+database message: message('M1_GPR_PDM_0x118', 0x118, False, 8, None)
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+message type (not container): <class 'custom_cantools.cantools.database.can.message.Message'>
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+database: data: b'\x00\x00\x00\x00\x00\x00\x00\x00'
+Car Data:b'8,501,0 0 0 0 2 0 0 0 '
+full unpacked: {'engine_speed_PDM': 0, 'throttle_position_PDM': 0, 'vehicle_speed_PDM': 0, 'coolant_temperature_PDM': 0, 'engine_oil_temperature_PDM': 0, 'fuel_temperature_PDM': 0, 'transmission_temperature_PDM': 0, 'differential_temperature_PDM': 0}
+conversion.py: 0
+Car Data:b'8,504,1 1 0 1 0 0 1 0 '
+conversion.py: 0
+Car Data:b'3,11a,0 0 0 '
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+conversion.py: 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+fully decoded: {'engine_speed_PDM': 0, 'throttle_position_PDM': 0, 'vehicle_speed_PDM': 0, 'coolant_temperature_PDM': 0, 'engine_oil_temperature_PDM': 0, 'fuel_temperature_PDM': 0, 'transmission_temperature_PDM': 0, 'differential_temperature_PDM': 0}
+Car Data:b'8,501,1 0 0 0 0 0 0 0 '
+Car Data:b'8,503,1 0 4 4 4 4 3d 4 '
+Car Data:b'8,505,1 3a 3a 3b 3b 3b 3b 3b '
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Car Data:b'8,502,2 0 0 0 0 0 0 0 '
+json_dict {'fuel_pressure_PDM': 0, 'steering_angle_PDM': 0.0, 'engine_run_switch': 0, 'pit_switch': 0, 'clutch_state': 0, 'clutch_switch': 0, 'neutral_switch': 0, 'brake_state': 0, 'warning_source_PDM': 0, 'engine_state_PDM': 0, 'driver_switch_2': 0, 'driver_switch_1': 0, 'Timestamp': 1708890638.2774286}
+Car Data:b'8,504,80 1 0 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'3,11a,0 0 0 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,500,30 1d 66 0 1 9b 42 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,504,c1 0 0 0 0 1 0 0 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1282     data: b'8,502,3 0 0 0 0 0 0 0 \n'
+3 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1282
+Car Data:b'8,500,40 0 0 0 0 0 0 0 '
+Frame ID: 1284     data: b'8,504,c1 0 0 0 0 1 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+c1 0 0 0 0 1 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1284
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1280     data: b'8,500,40 0 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+40 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1280
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1282     data: b'8,502,4 0 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+4 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1282
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,501,2 0 0 0 0 0 0 0 '
+Key error: 192
+Car Data:b'8,503,2 4 4 4 3e 4 3 4 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,505,2 3b 3b 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Car Data:b'8,503,3 4 4 4 3d 4 4 4 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,501,4 0 0 0 0 0 0 0 '
+Key error: 192
+Car Data:b'8,503,4 4 3d 0 0 0 0 0 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,502,0 0 0 0 0 0 0 0 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,504,1 1 0 1 0 0 1 0 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'3,11a,0 0 0 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,501,1 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,503,1 0 4 4 4 4 3d 4 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 1285     data: b'8,505,2 3b 3b 0 0 0 0 0 \n'
+2 3b 3b 0 0 0 0 0
+Car Data:b'8,505,1 3b 3a 3b 3b 3b 3b 3b '
+Key error: 1285
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 1281     data: b'8,501,3 0 0 0 0 0 0 0 \n'
+Car Data:b'8,502,2 0 0 0 0 0 0 0 '
+3 0 0 0 0 0 0 0
+Key error: 1281
+Frame ID: 1283     data: b'8,503,3 4 4 4 3e 4 4 4 \n'
+3 4 4 4 3e 4 4 4
+Car Data:b'8,504,80 1 0 0 0 0 0 0 '
+Key error: 1283
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'3,11a,0 0 0 '
+Key error: 192
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,500,30 1d 65 0 1 9b 42 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 1281     data: b'8,501,4 0 0 0 0 0 0 0 \n'
+4 0 0 0 0 0 0 0
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+Key error: 1281
+Frame ID: 1283     data: b'8,503,4 4 3d 0 0 0 0 0 \n'
+4 4 3d 0 0 0 0 0
+Car Data:b'8,504,c1 0 0 0 0 1 0 0 '
+Key error: 1283
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 1281     data: b'8,501,0 0 1 0 2 0 0 0 \n'
+0 0 1 0 2 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1281
+Frame ID: 1283     data: b'8,503,0 3d 3d 11 3d 12 11 3d \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 3d 3d 11 3d 12 11 3d
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1283
+Frame ID: 282     data: b'3,11a,0 0 0 \n'
+0 0 0
+database message: message('M1_GPR_PDM_0x11A', 0x11a, False, 3, None)
+message type (not container): <class 'custom_cantools.cantools.database.can.message.Message'>
+database: data: b'\x00\x00\x00'
+full unpacked: {'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+fully decoded: {'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+json_dict {'fuel_pressure_PDM': 0, 'steering_angle_PDM': 0.0, 'engine_run_switch': 0, 'pit_switch': 0, 'clutch_state': 0, 'clutch_switch': 0, 'neutral_switch': 0, 'brake_state': 0, 'warning_source_PDM': 0, 'engine_state_PDM': 0, 'driver_switch_2': 0, 'driver_switch_1': 0, 'Timestamp': 1708890640.3267627, 'engine_speed_PDM': 0, 'throttle_position_PDM': 0, 'vehicle_speed_PDM': 0, 'coolant_temperature_PDM': 0, 'engine_oil_temperature_PDM': 0, 'fuel_temperature_PDM': 0, 'transmission_temperature_PDM': 0, 'differential_temperature_PDM': 0}
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 1280     data: b'8,500,10 0 0 0 0 0 0 0 \n'
+10 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1280
+Frame ID: 1281     data: b'8,501,1 0 0 0 0 0 0 0 \n'
+1 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1281
+Frame ID: 1283     data: b'8,503,1 0 4 4 4 4 3d 4 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+1 0 4 4 4 4 3d 4
+Key error: 1283
+Frame ID: 1285     data: b'8,505,1 3a 3a 3b 3b 3b 3b 3b \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+1 3a 3a 3b 3b 3b 3b 3b
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1285
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,503,2 4 4 4 3e 4 3 4 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,505,2 3b 3b 0 0 0 0 0 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+Key error: 192
+Frame ID: 1281     data: b'8,501,4 0 0 0 0 0 0 0 \n'
+4 0 0 0 0 0 0 0
+Car Data:b'8,503,3 4 4 4 3d 4 4 4 '
+Key error: 1281
+Frame ID: 1283     data: b'8,503,4 4 3d 0 0 0 0 0 \n'
+4 4 3d 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1283
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,501,4 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 1281     data: b'8,501,0 0 0 0 2 0 0 0 \n'
+0 0 0 0 2 0 0 0
+Car Data:b'8,503,4 4 3d 0 0 0 0 0 '
+Key error: 1281
+Frame ID: 1283     data: b'8,503,0 3d 3d 11 3d 12 11 3d \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 3d 3d 11 3d 12 11 3d
+Key error: 1283
+Frame ID: 1285     data: b'8,505,0 3c 3c 3b 3c 3b 3a 3a \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 3c 3c 3b 3c 3b 3a 3a
+Key error: 1285
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,501,0 0 0 0 2 0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,504,1 1 0 1 0 0 1 0 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'3,11a,0 0 0 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,501,1 0 0 0 0 0 0 0 '
+Key error: 192
+Frame ID: 1283     data: b'8,503,2 4 4 4 3d 4 3 4 \n'
+2 4 4 4 3d 4 3 4
+Car Data:b'8,503,1 0 4 4 4 4 3e 4 '
+Key error: 1283
+Frame ID: 1285     data: b'8,505,2 3b 3b 0 0 0 0 0 \n'
+Car Data:b'8,505,1 3b 3a 3b 3b 3b 3b 3b '
+2 3b 3b 0 0 0 0 0
+Key error: 1285
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 1281     data: b'8,501,3 0 0 0 0 0 0 0 \n'
+3 0 0 0 0 0 0 0
+Car Data:b'8,502,2 0 0 0 0 0 0 0 '
+Key error: 1281
+Frame ID: 1283     data: b'8,503,3 4 4 4 3e 4 4 4 \n'
+3 4 4 4 3e 4 4 4
+Car Data:b'8,504,80 1 0 0 0 0 0 0 '
+Key error: 1283
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'3,11a,0 0 0 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,500,30 1d 65 0 1 9b 42 0 '
+Key error: 192
+Frame ID: 1281     data: b'8,501,4 0 0 0 0 0 0 0 \n'
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+4 0 0 0 0 0 0 0
+Key error: 1281
+Frame ID: 1283     data: b'8,503,4 4 3d 0 0 0 0 0 \n'
+Car Data:b'8,504,c1 0 0 0 0 1 0 0 '
+4 4 3d 0 0 0 0 0
+Key error: 1283
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,500,40 0 0 0 0 0 0 0 '
+Key error: 192
+Frame ID: 1282     data: b'8,502,0 0 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 0 0 0 0
+Key error: 1282
+Frame ID: 1284     data: b'8,504,1 1 0 1 0 0 1 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+1 1 0 1 0 0 1 0
+Key error: 1284
+Frame ID: 282     data: b'3,11a,0 0 0 \n'
+0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+database message: message('M1_GPR_PDM_0x11A', 0x11a, False, 3, None)
+message type (not container): <class 'custom_cantools.cantools.database.can.message.Message'>
+database: data: b'\x00\x00\x00'
+full unpacked: {'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+fully decoded: {'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+json_dict {'fuel_pressure_PDM': 0, 'steering_angle_PDM': 0.0, 'engine_run_switch': 0, 'pit_switch': 0, 'clutch_state': 0, 'clutch_switch': 0, 'neutral_switch': 0, 'brake_state': 0, 'warning_source_PDM': 0, 'engine_state_PDM': 0, 'driver_switch_2': 0, 'driver_switch_1': 0, 'Timestamp': 1708890641.2498944, 'engine_speed_PDM': 0, 'throttle_position_PDM': 0, 'vehicle_speed_PDM': 0, 'coolant_temperature_PDM': 0, 'engine_oil_temperature_PDM': 0, 'fuel_temperature_PDM': 0, 'transmission_temperature_PDM': 0, 'differential_temperature_PDM': 0, 'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 1281     data: b'8,501,1 0 0 0 0 0 0 0 \n'
+1 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1281
+Frame ID: 1283     data: b'8,503,1 0 4 4 4 4 3d 4 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+1 0 4 4 4 4 3d 4
+Key error: 1283
+Frame ID: 1285     data: b'8,505,1 3a 3a 3b 3b 3b 3b 3b \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+1 3a 3a 3b 3b 3b 3b 3b
+Key error: 1285
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 1282     data: b'8,502,2 0 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+2 0 0 0 0 0 0 0
+Key error: 1282
+Frame ID: 1284     data: b'8,504,80 1 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+80 1 0 0 0 0 0 0
+Key error: 1284
+Frame ID: 282     data: b'3,11a,0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0
+database message: message('M1_GPR_PDM_0x11A', 0x11a, False, 3, None)
+message type (not container): <class 'custom_cantools.cantools.database.can.message.Message'>
+database: data: b'\x00\x00\x00'
+full unpacked: {'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+fully decoded: {'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+json_dict {'fuel_pressure_PDM': 0, 'steering_angle_PDM': 0.0, 'engine_run_switch': 0, 'pit_switch': 0, 'clutch_state': 0, 'clutch_switch': 0, 'neutral_switch': 0, 'brake_state': 0, 'warning_source_PDM': 0, 'engine_state_PDM': 0, 'driver_switch_2': 0, 'driver_switch_1': 0, 'Timestamp': 1708890642.2559974, 'engine_speed_PDM': 0, 'throttle_position_PDM': 0, 'vehicle_speed_PDM': 0, 'coolant_temperature_PDM': 0, 'engine_oil_temperature_PDM': 0, 'fuel_temperature_PDM': 0, 'transmission_temperature_PDM': 0, 'differential_temperature_PDM': 0, 'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 1280     data: b'8,500,30 1d 65 0 1 9b 42 0 \n'
+Car Data:b'8,501,2 0 0 0 0 0 0 0 '
+30 1d 65 0 1 9b 42 0
+Key error: 1280
+Frame ID: 1281     data: b'8,501,3 0 0 0 0 0 0 0 \n'
+Car Data:b'8,503,2 4 4 4 3d 4 4 4 '
+3 0 0 0 0 0 0 0
+Key error: 1281
+Frame ID: 1284     data: b'8,504,c1 0 0 0 0 1 0 0 \n'
+Car Data:b'8,505,2 3b 3b 0 0 0 0 0 '
+c1 0 0 0 0 1 0 0
+Key error: 1284
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 1280     data: b'8,500,40 0 0 0 0 0 0 0 \n'
+40 0 0 0 0 0 0 0
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+Key error: 1280
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,503,3 4 4 4 3d 4 4 4 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,501,4 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,503,4 4 3d 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,502,0 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,504,1 1 0 1 0 0 1 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'3,11a,0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 1281     data: b'8,501,2 0 0 0 0 0 0 0 \n'
+Car Data:b'8,501,1 0 0 0 0 0 0 0 '
+2 0 0 0 0 0 0 0
+Key error: 1281
+Frame ID: 1283     data: b'8,503,2 4 4 4 3e 4 3 4 \n'
+Car Data:b'8,503,1 0 4 4 4 4 3d 4 '
+2 4 4 4 3e 4 3 4
+Key error: 1283
+Frame ID: 1285     data: b'8,505,2 3b 3b 0 0 0 0 0 \n'
+Car Data:b'8,505,1 3b 3a 3b 3b 3b 3b 3b '
+2 3b 3b 0 0 0 0 0
+Key error: 1285
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 1281     data: b'8,501,3 0 0 0 0 0 0 0 \n'
+Car Data:b'8,502,2 0 0 0 0 0 0 0 '
+3 0 0 0 0 0 0 0
+Key error: 1281
+Frame ID: 1283     data: b'8,503,3 4 4 4 3d 4 4 4 \n'
+Car Data:b'8,504,80 1 0 0 0 0 0 0 '
+3 4 4 4 3d 4 4 4
+Key error: 1283
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'3,11a,0 0 0 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,500,30 1d 65 0 1 9b 42 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 1281     data: b'8,501,4 0 0 0 0 0 0 0 \n'
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+4 0 0 0 0 0 0 0
+Key error: 1281
+Frame ID: 1283     data: b'8,503,4 4 3d 0 0 0 0 0 \n'
+Car Data:b'8,504,c1 0 0 0 0 1 0 0 '
+4 4 3d 0 0 0 0 0
+Key error: 1283
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 1282     data: b'8,502,0 0 0 0 0 0 0 0 \n'
+0 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1282
+Frame ID: 1284     data: b'8,504,1 1 0 1 0 0 1 0 \n'
+1 1 0 1 0 0 1 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1284
+Frame ID: 282     data: b'3,11a,0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0
+database message: message('M1_GPR_PDM_0x11A', 0x11a, False, 3, None)
+message type (not container): <class 'custom_cantools.cantools.database.can.message.Message'>
+database: data: b'\x00\x00\x00'
+full unpacked: {'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+fully decoded: {'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+json_dict {'fuel_pressure_PDM': 0, 'steering_angle_PDM': 0.0, 'engine_run_switch': 0, 'pit_switch': 0, 'clutch_state': 0, 'clutch_switch': 0, 'neutral_switch': 0, 'brake_state': 0, 'warning_source_PDM': 0, 'engine_state_PDM': 0, 'driver_switch_2': 0, 'driver_switch_1': 0, 'Timestamp': 1708890642.56678, 'engine_speed_PDM': 0, 'throttle_position_PDM': 0, 'vehicle_speed_PDM': 0, 'coolant_temperature_PDM': 0, 'engine_oil_temperature_PDM': 0, 'fuel_temperature_PDM': 0, 'transmission_temperature_PDM': 0, 'differential_temperature_PDM': 0, 'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 1281     data: b'8,501,1 0 0 0 0 0 0 0 \n'
+1 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1281
+Frame ID: 1283     data: b'8,503,1 0 4 4 4 4 3d 4 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+1 0 4 4 4 4 3d 4
+Key error: 1283
+Frame ID: 1285     data: b'8,505,1 3b 3a 3b 3b 3b 3b 3b \n'
+1 3b 3a 3b 3b 3b 3b 3b
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1285
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 1282     data: b'8,502,2 0 0 0 0 0 0 0 \n'
+2 0 0 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1282
+Frame ID: 1284     data: b'8,504,80 1 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+80 1 0 0 0 0 0 0
+Key error: 1284
+Frame ID: 282     data: b'3,11a,0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0
+database message: message('M1_GPR_PDM_0x11A', 0x11a, False, 3, None)
+message type (not container): <class 'custom_cantools.cantools.database.can.message.Message'>
+database: data: b'\x00\x00\x00'
+full unpacked: {'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+fully decoded: {'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+json_dict {'fuel_pressure_PDM': 0, 'steering_angle_PDM': 0.0, 'engine_run_switch': 0, 'pit_switch': 0, 'clutch_state': 0, 'clutch_switch': 0, 'neutral_switch': 0, 'brake_state': 0, 'warning_source_PDM': 0, 'engine_state_PDM': 0, 'driver_switch_2': 0, 'driver_switch_1': 0, 'Timestamp': 1708890643.350135, 'engine_speed_PDM': 0, 'throttle_position_PDM': 0, 'vehicle_speed_PDM': 0, 'coolant_temperature_PDM': 0, 'engine_oil_temperature_PDM': 0, 'fuel_temperature_PDM': 0, 'transmission_temperature_PDM': 0, 'differential_temperature_PDM': 0, 'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 1280     data: b'8,500,30 1d 66 0 1 9b 42 0 \n'
+30 1d 66 0 1 9b 42 0
+Key error: 1280
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Frame ID: 1281     data: b'8,501,3 0 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+3 0 0 0 0 0 0 0
+Key error: 1281
+Frame ID: 1284     data: b'8,504,c1 0 0 0 0 1 0 0 \n'
+Car Data:b'8,505,2 3b 3b 0 0 0 0 0 '
+c1 0 0 0 0 1 0 0
+Key error: 1284
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,501,3 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,503,3 4 4 4 3e 4 4 4 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,501,4 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,503,4 4 3d 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,501,0 0 1 0 2 0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,503,0 3d 3d 11 3d 12 11 3d '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'3,11a,0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,500,10 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,501,1 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 1283     data: b'8,503,2 4 4 4 3e 4 3 4 \n'
+Car Data:b'8,503,1 0 4 4 4 4 3d 4 '
+2 4 4 4 3e 4 3 4
+Key error: 1283
+Frame ID: 1285     data: b'8,505,2 3b 3b 0 0 0 0 0 \n'
+Car Data:b'8,505,1 3a 3a 3b 3b 3b 3b 3b '
+2 3b 3b 0 0 0 0 0
+Key error: 1285
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 1281     data: b'8,501,3 0 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+3 0 0 0 0 0 0 0
+Key error: 1281
+Frame ID: 1283     data: b'8,503,3 4 4 5 3d 4 4 4 \n'
+3 4 4 5 3d 4 4 4
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1283
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 1281     data: b'8,501,4 0 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+4 0 0 0 0 0 0 0
+Key error: 1281
+Frame ID: 1283     data: b'8,503,4 4 3d 0 0 0 0 0 \n'
+4 4 3d 0 0 0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1283
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+0 0 0 0 1 0 dc 5
+Car Data:b'8,501,4 0 0 0 0 0 0 0 '
+Key error: 192
+Frame ID: 1281     data: b'8,501,0 0 0 0 2 0 0 0 \n'
+Car Data:b'8,503,4 4 3d 0 0 0 0 0 '
+0 0 0 0 2 0 0 0
+Key error: 1281
+Frame ID: 1284     data: b'8,504,1 1 0 1 0 0 1 0 \n'
+1 1 0 1 0 0 1 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+Key error: 1284
+Frame ID: 282     data: b'3,11a,0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0
+database message: message('M1_GPR_PDM_0x11A', 0x11a, False, 3, None)
+message type (not container): <class 'custom_cantools.cantools.database.can.message.Message'>
+database: data: b'\x00\x00\x00'
+full unpacked: {'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+fully decoded: {'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+json_dict {'fuel_pressure_PDM': 0, 'steering_angle_PDM': 0.0, 'engine_run_switch': 0, 'pit_switch': 0, 'clutch_state': 0, 'clutch_switch': 0, 'neutral_switch': 0, 'brake_state': 0, 'warning_source_PDM': 0, 'engine_state_PDM': 0, 'driver_switch_2': 0, 'driver_switch_1': 0, 'Timestamp': 1708890643.6741002, 'engine_speed_PDM': 0, 'throttle_position_PDM': 0, 'vehicle_speed_PDM': 0, 'coolant_temperature_PDM': 0, 'engine_oil_temperature_PDM': 0, 'fuel_temperature_PDM': 0, 'transmission_temperature_PDM': 0, 'differential_temperature_PDM': 0, 'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,501,0 0 0 0 0 0 0 0 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 1281     data: b'8,501,1 0 0 0 0 0 0 0 \n'
+1 0 0 0 0 0 0 0
+Car Data:b'8,503,0 3d 3d 11 3d 12 11 3d '
+Key error: 1281
+Frame ID: 1283     data: b'8,503,1 0 4 4 4 4 3d 4 \n'
+1 0 4 4 4 4 3d 4
+Key error: 1283
+Frame ID: 1285     data: b'8,505,1 3a 3a 3b 3b 3b 3b 3b \n'
+1 3a 3a 3b 3b 3b 3b 3b
+Car Data:b'8,505,0 3c 3c 3b 3c 3b 3a 3a '
+Key error: 1285
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 192     data: b'8,c0,0 0 0 0 1 0 dc 5 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+0 0 0 0 1 0 dc 5
+Key error: 192
+Frame ID: 1282     data: b'8,502,2 0 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+2 0 0 0 0 0 0 0
+Key error: 1282
+Frame ID: 1284     data: b'8,504,80 1 0 0 0 0 0 0 \n'
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+80 1 0 0 0 0 0 0
+Key error: 1284
+Frame ID: 282     data: b'3,11a,0 0 0 \n'
+0 0 0
+Car Data:b'8,c0,0 0 0 0 1 0 dc 5 '
+database message: message('M1_GPR_PDM_0x11A', 0x11a, False, 3, None)
+message type (not container): <class 'custom_cantools.cantools.database.can.message.Message'>
+database: data: b'\x00\x00\x00'
+full unpacked: {'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+conversion.py: 0
+fully decoded: {'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
+json_dict {'fuel_pressure_PDM': 0, 'steering_angle_PDM': 0.0, 'engine_run_switch': 0, 'pit_switch': 0, 'clutch_state': 0, 'clutch_switch': 0, 'neutral_switch': 0, 'brake_state': 0, 'warning_source_PDM': 0, 'engine_state_PDM': 0, 'driver_switch_2': 0, 'driver_switch_1': 0, 'Timestamp': 1708890644.4663908, 'engine_speed_PDM': 0, 'throttle_position_PDM': 0, 'vehicle_speed_PDM': 0, 'coolant_temperature_PDM': 0, 'engine_oil_temperature_PDM': 0, 'fuel_temperature_PDM': 0, 'transmission_temperature_PDM': 0, 'differential_temperature_PDM': 0, 'pdm_byte_0_mask_80': 0, 'pdm_byte_0_mask_40': 0, 'pdm_byte_0_mask_20': 0, 'pdm_byte_0_mask_10': 0, 'pdm_byte_0_mask_08': 0, 'pdm_byte_0_mask_04': 0, 'pdm_byte_0_mask_02': 0, 'pdm_byte_0_mask_01': 0, 'pdm_byte_1_mask_80': 0, 'pdm_byte_1_mask_40': 0, 'pdm_byte_1_mask_20': 0, 'pdm_byte_1_mask_10': 0, 'pdm_byte_1_mask_08': 0, 'pdm_byte_1_mask_04': 0, 'pdm_byte_1_mask_02': 0, 'pdm_byte_1_mask_01': 0, 'pdm_byte_2_mask_80': 0, 'pdm_byte_2_mask_40': 0, 'pdm_byte_2_mask_20': 0, 'pdm_byte_2_mask_10': 0, 'pdm_byte_2_mask_08': 0, 'pdm_byte_2_mask_04': 0, 'pdm_byte_2_mask_02': 0, 'pdm_byte_2_mask_01': 0}
