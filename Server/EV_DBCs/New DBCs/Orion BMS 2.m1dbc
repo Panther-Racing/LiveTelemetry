@@ -1,0 +1,694 @@
+<?xml version="1.0"?>
+<DBC Locale="English_United States.1252" DefaultLocale="C">
+ <ComponentStream>
+  <List>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X6B0">
+    <Props CANId="6B0" DLC="8" Transmit="RX"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B0.CRC Checksum">
+    <Props Type="u32" StartBit="38" Length="8" Multiplier="1.00000000000000000e+00" Offset="1.72000000000000000e+03"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.DBC" MD5="efd8b365a5eb364ac472181cf548897b" Name="Orion BMS 2">
+    <Props FileName="C:\Users\Panther Racing\Downloads\Orion_CANBUS_PantherRacing_2023_09_12 (3).dbc"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B0.Relay State">
+    <Props Type="u32" StartBit="28" Length="10" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B0.Pack SOC">
+    <Props Type="u32" Qty="ratio" StartBit="20" Length="8" Multiplier="5.00000000000000000e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="%"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B0.Pack Inst Voltage">
+    <Props Type="u32" Qty="V" StartBit="10" Length="10" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B0.Pack Current">
+    <Props Type="u32" Qty="A" StartBit="0" Length="10" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="A"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X6B1">
+    <Props CANId="6B1" DLC="8" Transmit="RX"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B1.CRC Checksum">
+    <Props Type="u32" StartBit="38" Length="8" Multiplier="1.00000000000000000e+00" Offset="1.72100000000000000e+03"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B1.Blank">
+    <Props Type="u32" StartBit="30" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B1.Low Temperature">
+    <Props Type="u32" Qty="C" StartBit="28" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="C"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B1.High Temperature">
+    <Props Type="u32" Qty="C" StartBit="20" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="C"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B1.Blank 1">
+    <Props Type="u32" StartBit="18" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B1.Pack CCL">
+    <Props Type="u32" Qty="A" StartBit="10" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="A"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B1.Pack DCL">
+    <Props Type="u32" Qty="A" StartBit="0" Length="10" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="A"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X6B2">
+    <Props CANId="6B2" DLC="8" Transmit="RX"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B2.Blank">
+    <Props Type="u32" StartBit="38" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B2.Failsafe Statuses">
+    <Props Type="u32" StartBit="28" Length="10" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B2.Pack Amphours">
+    <Props Type="u32" Qty="A.s" StartBit="18" Length="10" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="A.h"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B2.Pack Open Voltage">
+    <Props Type="u32" Qty="V" StartBit="8" Length="10" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B2.Rolling Counter">
+    <Props Type="u32" StartBit="0" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X6B3">
+    <Props CANId="6B3" DLC="8" Transmit="RX"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B3.Blank">
+    <Props Type="u32" StartBit="38" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B3.Blank 1">
+    <Props Type="u32" StartBit="30" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B3.Blank 2">
+    <Props Type="u32" StartBit="28" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B3.Blank 3">
+    <Props Type="u32" StartBit="20" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B3.Blank 4">
+    <Props Type="u32" StartBit="18" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B3.Low Thermistor ID">
+    <Props Type="u32" StartBit="10" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B3.Pack Resistance">
+    <Props Type="u32" Qty="ohm" StartBit="0" Length="10" Multiplier="1.00000004749745131e-03" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="ohm"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X1806E7F4">
+    <Props IdType="Extended" CANId="1806E7F4" DLC="8"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E7F4.Blank">
+    <Props Type="u32" StartBit="38" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E7F4.Blank 1">
+    <Props Type="u32" StartBit="30" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E7F4.Blank 2">
+    <Props Type="u32" StartBit="28" Length="8" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E7F4.DTC P0A08 Charger Safety Relay Fault">
+    <Props Type="bool" StartBit="20" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E7F4.Blank 3">
+    <Props Type="bool" StartBit="21" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E7F4.Blank 4">
+    <Props Type="bool" StartBit="22" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E7F4.Blank 5">
+    <Props Type="bool" StartBit="23" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E7F4.Blank 6">
+    <Props Type="bool" StartBit="24" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E7F4.Blank 7">
+    <Props Type="bool" StartBit="25" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E7F4.Blank 8">
+    <Props Type="bool" StartBit="26" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E7F4.Blank 9">
+    <Props Type="bool" StartBit="27" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E7F4.Pack CCL">
+    <Props Type="u32" Qty="A" StartBit="10" Length="10" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="A"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E7F4.Maximum Pack Voltage">
+    <Props Type="u32" Qty="V" StartBit="0" Length="10" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X6B5">
+    <Props CANId="6B5" DLC="8" Transmit="RX"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B5.Blank">
+    <Props Type="u32" StartBit="38" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B5.Blank 1">
+    <Props Type="u32" StartBit="30" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B5.Blank 2">
+    <Props Type="u32" StartBit="28" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B5.Blank 3">
+    <Props Type="u32" StartBit="20" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B5.Total Pack Cycles">
+    <Props Type="u32" StartBit="10" Length="10" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B5.Current Limits Status">
+    <Props Type="u32" StartBit="0" Length="10" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X6B6">
+    <Props CANId="6B6" DLC="8" Transmit="RX"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B6.Blank">
+    <Props Type="u32" StartBit="38" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B6.Blank 1">
+    <Props Type="u32" StartBit="30" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B6.Blank 2">
+    <Props Type="u32" StartBit="28" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B6.Blank 3">
+    <Props Type="u32" StartBit="20" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B6.Maximum Pack Voltage">
+    <Props Type="u32" Qty="V" StartBit="10" Length="10" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B6.Avg Cell Resistance">
+    <Props Type="u32" Qty="mohm" StartBit="0" Length="10" Multiplier="9.99999977648258209e-03" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="mohm"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X1806E5F4">
+    <Props IdType="Extended" CANId="1806E5F4" DLC="8"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E5F4.Blank">
+    <Props Type="u32" StartBit="38" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E5F4.Blank 1">
+    <Props Type="u32" StartBit="30" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E5F4.Blank 2">
+    <Props Type="u32" StartBit="28" Length="8" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E5F4.DTC P0A08 Charger Safety Relay Fault">
+    <Props Type="bool" StartBit="20" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E5F4.Blank 3">
+    <Props Type="bool" StartBit="21" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E5F4.Blank 4">
+    <Props Type="bool" StartBit="22" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E5F4.Blank 5">
+    <Props Type="bool" StartBit="23" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E5F4.Blank 6">
+    <Props Type="bool" StartBit="24" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E5F4.Blank 7">
+    <Props Type="bool" StartBit="25" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E5F4.Blank 8">
+    <Props Type="bool" StartBit="26" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E5F4.Blank 9">
+    <Props Type="bool" StartBit="27" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E5F4.Pack CCL">
+    <Props Type="u32" Qty="A" StartBit="10" Length="10" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="A"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E5F4.Maximum Cell Voltage">
+    <Props Type="u32" Qty="V" StartBit="0" Length="10" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X6B8">
+    <Props CANId="6B8" DLC="8" Transmit="RX"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B8.High Cell Voltage">
+    <Props Type="u32" Qty="V" StartBit="30" Length="10" Multiplier="9.99999974737875164e-05" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B8.Low Cell Voltage">
+    <Props Type="u32" Qty="V" StartBit="20" Length="10" Multiplier="9.99999974737875164e-05" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B8.Average Current">
+    <Props Type="u32" Qty="A" StartBit="10" Length="10" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="A"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B8.Minimum Pack Voltage">
+    <Props Type="u32" Qty="V" StartBit="0" Length="10" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X6B9">
+    <Props CANId="6B9" DLC="8" Transmit="RX"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B9.Blank">
+    <Props Type="u32" StartBit="38" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B9.High Intres ID">
+    <Props Type="u32" StartBit="30" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B9.Low Intres ID">
+    <Props Type="u32" StartBit="28" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B9.High Cell Voltage ID">
+    <Props Type="u32" StartBit="20" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B9.Low Cell Voltage ID">
+    <Props Type="u32" StartBit="18" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B9.Internal Temperature">
+    <Props Type="u32" Qty="C" StartBit="10" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="C"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B9.Average Temperature">
+    <Props Type="u32" Qty="C" StartBit="8" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="C"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6B9.High Thermistor ID">
+    <Props Type="u32" StartBit="0" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X6BA">
+    <Props CANId="6BA" DLC="8" Transmit="RX"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BA.Maximum Cell Voltage">
+    <Props Type="u32" Qty="V" StartBit="30" Length="10" Multiplier="9.99999974737875164e-05" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BA.High Cell Resistance">
+    <Props Type="u32" Qty="mohm" StartBit="20" Length="10" Multiplier="9.99999977648258209e-03" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="mohm"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BA.Low Cell Resistance">
+    <Props Type="u32" Qty="mohm" StartBit="10" Length="10" Multiplier="9.99999977648258209e-03" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="mohm"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BA.Avg Cell Voltage">
+    <Props Type="u32" Qty="V" StartBit="0" Length="10" Multiplier="9.99999974737875164e-05" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X6BB">
+    <Props CANId="6BB" DLC="8" Transmit="RX"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BB.DTC Flags 2">
+    <Props Type="u32" StartBit="30" Length="10" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BB.DTC Flags 1">
+    <Props Type="u32" StartBit="20" Length="10" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BB.Input Supply Voltage">
+    <Props Type="u32" Qty="V" StartBit="10" Length="10" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BB.Minimum Cell Voltage">
+    <Props Type="u32" Qty="V" StartBit="0" Length="10" Multiplier="9.99999974737875164e-05" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X6BC">
+    <Props CANId="6BC" DLC="8" Transmit="RX"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BC.Blank">
+    <Props Type="u32" StartBit="38" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BC.Blank 1">
+    <Props Type="u32" StartBit="30" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BC.Blank 2">
+    <Props Type="u32" StartBit="28" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BC.Blank 3">
+    <Props Type="u32" StartBit="20" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BC.Blank 4">
+    <Props Type="u32" StartBit="18" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BC.Blank 5">
+    <Props Type="u32" StartBit="10" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X6BC.Pack CCL">
+    <Props Type="u32" Qty="A" StartBit="0" Length="10" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="A"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X1806E9F4">
+    <Props IdType="Extended" CANId="1806E9F4" DLC="8"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E9F4.Blank">
+    <Props Type="u32" StartBit="38" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E9F4.Blank 1">
+    <Props Type="u32" StartBit="30" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E9F4.Blank 2">
+    <Props Type="u32" StartBit="28" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E9F4.DTC P0A08 Charger Safety Relay Fault">
+    <Props Type="bool" StartBit="20" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E9F4.Blank 3">
+    <Props Type="bool" StartBit="21" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E9F4.Blank 4">
+    <Props Type="bool" StartBit="22" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E9F4.Blank 5">
+    <Props Type="bool" StartBit="23" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E9F4.Blank 6">
+    <Props Type="bool" StartBit="24" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E9F4.Blank 7">
+    <Props Type="bool" StartBit="25" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E9F4.Blank 8">
+    <Props Type="bool" StartBit="26" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E9F4.Blank 9">
+    <Props Type="bool" StartBit="27" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E9F4.Pack CCL">
+    <Props Type="u32" Qty="A" StartBit="10" Length="10" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="A"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X1806E9F4.Maximum Cell Voltage">
+    <Props Type="u32" Qty="V" StartBit="0" Length="10" Multiplier="1.00000001490116119e-01" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="Third_Party_Device" Name="Orion BMS 2.MSGID 0X18FF50E5">
+    <Props IdType="Extended" CANId="18FF50E5" DLC="8"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="BMS" Name="Orion BMS 2.MSGID 0X18FF50E5.Blank">
+    <Props Type="u32" StartBit="38" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="BMS" Name="Orion BMS 2.MSGID 0X18FF50E5.Blank 1">
+    <Props Type="u32" StartBit="30" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="BMS" Name="Orion BMS 2.MSGID 0X18FF50E5.Blank 2">
+    <Props Type="u32" StartBit="28" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="BMS" Name="Orion BMS 2.MSGID 0X18FF50E5.Blank 3">
+    <Props Type="u32" StartBit="20" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="BMS" Name="Orion BMS 2.MSGID 0X18FF50E5.Blank 4">
+    <Props Type="u32" StartBit="18" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="BMS" Name="Orion BMS 2.MSGID 0X18FF50E5.Blank 5">
+    <Props Type="u32" StartBit="10" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="BMS" Name="Orion BMS 2.MSGID 0X18FF50E5.Blank 6">
+    <Props Type="u32" StartBit="8" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="BMS" Name="Orion BMS 2.MSGID 0X18FF50E5.Blank 7">
+    <Props Type="u32" StartBit="0" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Message" Sender="BMS" Name="Orion BMS 2.MSGID 0X36 CELLBCAST">
+    <Props CANId="36" DLC="8" Transmit="RX"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X36 CELLBCAST.CellBalancing">
+    <Props Type="bool" StartBit="18" Length="1" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X36 CELLBCAST.Checksum">
+    <Props Type="u32" StartBit="38" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X36 CELLBCAST.CellOpenVoltage">
+    <Props Type="u32" Qty="V" StartBit="28" Length="10" Multiplier="9.99999974737875164e-05" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X36 CELLBCAST.CellResistance">
+    <Props Type="u32" Qty="mohm" StartBit="19" Length="F" Multiplier="9.99999977648258209e-03" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="mohm"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X36 CELLBCAST.CellVoltage">
+    <Props Type="u32" Qty="V" StartBit="8" Length="10" Multiplier="9.99999974737875164e-05" Offset="0.00000000000000000e+00">
+     <Locale>
+      <Default Unit="V"/>
+     </Locale>
+    </Props>
+   </Component>
+   <Component Classname="BuiltIn.CAN.Signal" Receivers="Third_Party_Device" Name="Orion BMS 2.MSGID 0X36 CELLBCAST.CellId">
+    <Props Type="u32" StartBit="0" Length="8" Multiplier="1.00000000000000000e+00" Offset="0.00000000000000000e+00"/>
+   </Component>
+  </List>
+  <Organisation>
+   <Component Name="Orion BMS 2">
+    <Component Name="MSGID 0X6B0">
+     <Component Name="CRC Checksum"/>
+     <Component Name="Relay State"/>
+     <Component Name="Pack SOC"/>
+     <Component Name="Pack Inst Voltage"/>
+     <Component Name="Pack Current"/>
+    </Component>
+    <Component Name="MSGID 0X6B1">
+     <Component Name="CRC Checksum"/>
+     <Component Name="Blank"/>
+     <Component Name="Low Temperature"/>
+     <Component Name="High Temperature"/>
+     <Component Name="Blank 1"/>
+     <Component Name="Pack CCL"/>
+     <Component Name="Pack DCL"/>
+    </Component>
+    <Component Name="MSGID 0X6B2">
+     <Component Name="Blank"/>
+     <Component Name="Failsafe Statuses"/>
+     <Component Name="Pack Amphours"/>
+     <Component Name="Pack Open Voltage"/>
+     <Component Name="Rolling Counter"/>
+    </Component>
+    <Component Name="MSGID 0X6B3">
+     <Component Name="Blank"/>
+     <Component Name="Blank 1"/>
+     <Component Name="Blank 2"/>
+     <Component Name="Blank 3"/>
+     <Component Name="Blank 4"/>
+     <Component Name="Low Thermistor ID"/>
+     <Component Name="Pack Resistance"/>
+    </Component>
+    <Component Name="MSGID 0X1806E7F4">
+     <Component Name="Blank"/>
+     <Component Name="Blank 1"/>
+     <Component Name="Blank 2"/>
+     <Component Name="DTC P0A08 Charger Safety Relay Fault"/>
+     <Component Name="Blank 3"/>
+     <Component Name="Blank 4"/>
+     <Component Name="Blank 5"/>
+     <Component Name="Blank 6"/>
+     <Component Name="Blank 7"/>
+     <Component Name="Blank 8"/>
+     <Component Name="Blank 9"/>
+     <Component Name="Pack CCL"/>
+     <Component Name="Maximum Pack Voltage"/>
+    </Component>
+    <Component Name="MSGID 0X6B5">
+     <Component Name="Blank"/>
+     <Component Name="Blank 1"/>
+     <Component Name="Blank 2"/>
+     <Component Name="Blank 3"/>
+     <Component Name="Total Pack Cycles"/>
+     <Component Name="Current Limits Status"/>
+    </Component>
+    <Component Name="MSGID 0X6B6">
+     <Component Name="Blank"/>
+     <Component Name="Blank 1"/>
+     <Component Name="Blank 2"/>
+     <Component Name="Blank 3"/>
+     <Component Name="Maximum Pack Voltage"/>
+     <Component Name="Avg Cell Resistance"/>
+    </Component>
+    <Component Name="MSGID 0X1806E5F4">
+     <Component Name="Blank"/>
+     <Component Name="Blank 1"/>
+     <Component Name="Blank 2"/>
+     <Component Name="DTC P0A08 Charger Safety Relay Fault"/>
+     <Component Name="Blank 3"/>
+     <Component Name="Blank 4"/>
+     <Component Name="Blank 5"/>
+     <Component Name="Blank 6"/>
+     <Component Name="Blank 7"/>
+     <Component Name="Blank 8"/>
+     <Component Name="Blank 9"/>
+     <Component Name="Pack CCL"/>
+     <Component Name="Maximum Cell Voltage"/>
+    </Component>
+    <Component Name="MSGID 0X6B8">
+     <Component Name="High Cell Voltage"/>
+     <Component Name="Low Cell Voltage"/>
+     <Component Name="Average Current"/>
+     <Component Name="Minimum Pack Voltage"/>
+    </Component>
+    <Component Name="MSGID 0X6B9">
+     <Component Name="Blank"/>
+     <Component Name="High Intres ID"/>
+     <Component Name="Low Intres ID"/>
+     <Component Name="High Cell Voltage ID"/>
+     <Component Name="Low Cell Voltage ID"/>
+     <Component Name="Internal Temperature"/>
+     <Component Name="Average Temperature"/>
+     <Component Name="High Thermistor ID"/>
+    </Component>
+    <Component Name="MSGID 0X6BA">
+     <Component Name="Maximum Cell Voltage"/>
+     <Component Name="High Cell Resistance"/>
+     <Component Name="Low Cell Resistance"/>
+     <Component Name="Avg Cell Voltage"/>
+    </Component>
+    <Component Name="MSGID 0X6BB">
+     <Component Name="DTC Flags 2"/>
+     <Component Name="DTC Flags 1"/>
+     <Component Name="Input Supply Voltage"/>
+     <Component Name="Minimum Cell Voltage"/>
+    </Component>
+    <Component Name="MSGID 0X6BC">
+     <Component Name="Blank"/>
+     <Component Name="Blank 1"/>
+     <Component Name="Blank 2"/>
+     <Component Name="Blank 3"/>
+     <Component Name="Blank 4"/>
+     <Component Name="Blank 5"/>
+     <Component Name="Pack CCL"/>
+    </Component>
+    <Component Name="MSGID 0X1806E9F4">
+     <Component Name="Blank"/>
+     <Component Name="Blank 1"/>
+     <Component Name="Blank 2"/>
+     <Component Name="DTC P0A08 Charger Safety Relay Fault"/>
+     <Component Name="Blank 3"/>
+     <Component Name="Blank 4"/>
+     <Component Name="Blank 5"/>
+     <Component Name="Blank 6"/>
+     <Component Name="Blank 7"/>
+     <Component Name="Blank 8"/>
+     <Component Name="Blank 9"/>
+     <Component Name="Pack CCL"/>
+     <Component Name="Maximum Cell Voltage"/>
+    </Component>
+    <Component Name="MSGID 0X18FF50E5">
+     <Component Name="Blank"/>
+     <Component Name="Blank 1"/>
+     <Component Name="Blank 2"/>
+     <Component Name="Blank 3"/>
+     <Component Name="Blank 4"/>
+     <Component Name="Blank 5"/>
+     <Component Name="Blank 6"/>
+     <Component Name="Blank 7"/>
+    </Component>
+    <Component Name="MSGID 0X36 CELLBCAST">
+     <Component Name="CellBalancing"/>
+     <Component Name="Checksum"/>
+     <Component Name="CellOpenVoltage"/>
+     <Component Name="CellResistance"/>
+     <Component Name="CellVoltage"/>
+     <Component Name="CellId"/>
+    </Component>
+   </Component>
+  </Organisation>
+ </ComponentStream>
+</DBC>
