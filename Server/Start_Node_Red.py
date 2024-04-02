@@ -5,7 +5,7 @@ def start_node_red():
     while True:
         try:
             # Replace 'node-red' with the actual command to start Node-RED if it's different
-            subprocess.run(["node-red"], check=True)
+            subprocess.run(["C:/Users/raheelfarouk/AppData/Roaming/npm/node-red"], check=True)
         except subprocess.CalledProcessError as e:
             print(f"Node-RED crashed with error: {e}")
             print("Restarting Node-RED...")
