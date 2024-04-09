@@ -16,11 +16,11 @@ def latencyWrite(message, isLatencyIn, error=None):
         data['Error'] = error
 
     if isLatencyIn:
-        json.dump(data, latencyIn_monitoring)
-        latencyIn_monitoring.close()
+        with open('LatencyIn.json', 'r+') as latencyIn_monitoring:
+            json.dump(data, latencyIn_monitoring)
     else:
-        json.dump(data, latencyOut_monitoring)
-        latencyOut_monitoring.close()
+        with open('LatencyOut.json', 'r+') as latencyOut_monitoring:
+            json.dump(data, latencyOut_monitoring)
 
 def start(receive_socket, socket):
     print('Starting CAN Translator')
@@ -149,6 +149,7 @@ def data_handler(data):
     # print(to_send)
     output_monitoring.write(f"{to_send}\n")
 
+    tempError = None
     try:
         # Decode each incoming message
         to_json(db.decode_message(frame_id_or_name=frame_id, data=to_send, decode_choices=False, scaling=True,
@@ -156,12 +157,15 @@ def data_handler(data):
     except KeyError as error:
         print('Key error: %s' % error)
         output_monitoring.write('Key error: %s \n' % error)
+        tempError = error
     except ValueError as error:
         print(error)
+        tempError = error
     except Exception as error:
         print(error)
+        tempError = error
 
-    latencyWrite(message, False)
+    latencyWrite(message, False, tempError)
 
 
 def send_json(json_string):

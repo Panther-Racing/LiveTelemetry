@@ -136,7 +136,7 @@ def data_handler(data):
 
     to_send = data_reformatted
     # print(to_send)
-    output_monitoring.write(f"{to_send}\n")
+    output_monitoring.write(f"{to_send}{latency.total_seconds()}\n")
 
     try:
         # Decode each incoming message
