@@ -21,10 +21,8 @@ def setup():
     global CANSocket
     global serverIP
     global receivePort
-    global bufferSize
     global nonLiterals
     global json_file_name
-    bufferSize = 1024
     nonLiterals = set()
     json_file_name = 'json_data.json'
 
