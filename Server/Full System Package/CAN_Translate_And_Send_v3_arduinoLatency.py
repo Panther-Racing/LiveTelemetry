@@ -6,6 +6,7 @@ import re
 
 output_monitoring = open('Output.txt', 'w')
 latency_file = open('total_latency.txt', 'w')
+firstMessage = True
 
 def start(receive_socket, socket):
     print('Starting CAN Translator')
@@ -25,9 +26,7 @@ def setup():
     global bufferSize
     global nonLiterals
     global json_file_name
-    global firstMessage
-    
-    firstMessage = True
+
     bufferSize = 1024
     nonLiterals = set()
     json_file_name = 'json_data.json'
@@ -109,6 +108,7 @@ def convert_to_bytes_with_escape(input_string):
 
 
 def data_handler(data):
+    global firstMessage
     # Extract the message from the socket
     message = data.decode().strip()
     output_monitoring.write(f"message: {message}\n")
@@ -119,7 +119,7 @@ def data_handler(data):
     #Set offset to account for skewed arduino clock on the first message only
     offset = 0
     if(firstMessage):
-        offset = date_time.now - date_time_obj
+        offset = date_time_obj - date_time_obj
         firstMessage = False
 
     latency = datetime.now - date_time_obj - offset
