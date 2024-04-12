@@ -4,8 +4,8 @@ import time
 import re
 
 output_monitoring = open('Output.txt', 'w')
-latencyIn_monitoring = open('LatencyIn.json', 'w')
-latencyOut_monitoring = open('LatencyOut.json', 'w')
+latencyIn_monitoring = open('LatencyIn.txt', 'w')
+latencyOut_monitoring = open('LatencyOut.txt', 'w')
 
 def latencyWrite(message, isLatencyIn, error=None):
     data = {
@@ -16,16 +16,14 @@ def latencyWrite(message, isLatencyIn, error=None):
         data['Error'] = error
 
     if isLatencyIn:
-        with open('LatencyIn.json', 'r+') as latencyIn_monitoring:
-            json.dump(data, latencyIn_monitoring)
+        latencyIn_monitoring.write(json.dumps(data) + '\n')
     else:
-        with open('LatencyOut.json', 'r+') as latencyOut_monitoring:
-            json.dump(data, latencyOut_monitoring)
+        latencyOut_monitoring.write(json.dumps(data) + '\n')
 
 def start(receive_socket, socket):
     print('Starting CAN Translator')
     output_monitoring.write('Starting CAN Translator\n')
-    output_monitoring.close()
+    #output_monitoring.close()
     global send_socket
     send_socket = socket
     setup()
@@ -48,7 +46,7 @@ def setup():
     # Add the DBC file to the CAN reader
     # cantools.database.load_file(filename, database_format=None, encoding=None, frame_id_mask=None,
     # prune_choices=False, strict=True, cache_dir=None, sort_signals=<function sort_signals_by_start_bit
-    db = cantools.database.load_file('DBCS/Combined.dbc', database_format='dbc', encoding='cp1252', frame_id_mask=None,
+    db = cantools.database.load_file('DBCS/DBC3.dbc', database_format='dbc', encoding='cp1252', frame_id_mask=None,
                                      prune_choices=False, strict=True, cache_dir=None)
 
     # Reset the json file
@@ -121,9 +119,9 @@ def convert_to_bytes_with_escape(input_string):
 
 
 def data_handler(data):
+    latencyWrite('a', True)
     # Extract the message from the socket
     message = data.decode().strip()
-    latencyWrite(message, True)
     output_monitoring.write(f"message: {message}\n")
 
     # Separate CAN message into id and data
@@ -165,7 +163,7 @@ def data_handler(data):
         print(error)
         tempError = error
 
-    latencyWrite(message, False, tempError)
+    latencyWrite('a', False, None)
 
 
 def send_json(json_string):
@@ -198,3 +196,4 @@ def reverse(data_string):
 def main(receive_socket):
     while True:
         data_handler(receive_socket.recv())
+    output_monitoring.close()

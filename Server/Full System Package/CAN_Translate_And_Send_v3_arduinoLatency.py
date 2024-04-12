@@ -5,6 +5,7 @@ import time
 import re
 
 output_monitoring = open('Output.txt', 'w')
+latency_file = open('total_latency.txt', 'w')
 
 def start(receive_socket, socket):
     print('Starting CAN Translator')
@@ -149,6 +150,10 @@ def data_handler(data):
         print(error)
     except Exception as error:
         print(error)
+    
+    latency = datetime.now - date_time_obj
+    latency_file.write(f'Total Latency: {latency}\n')
+
 
 
 def send_json(json_string):
