@@ -1,5 +1,5 @@
 from custom_cantools import cantools
-from datetime import datetime
+import datetime
 import json
 import time
 import re
@@ -7,6 +7,7 @@ import re
 output_monitoring = open('Output.txt', 'w')
 latency_file = open('total_latency.txt', 'w')
 firstMessage = True
+offset = 0
 
 def start(receive_socket, socket):
     print('Starting CAN Translator')
@@ -34,7 +35,7 @@ def setup():
     # Add the DBC file to the CAN reader
     # cantools.database.load_file(filename, database_format=None, encoding=None, frame_id_mask=None,
     # prune_choices=False, strict=True, cache_dir=None, sort_signals=<function sort_signals_by_start_bit
-    db = cantools.database.load_file('DBCS/Combined.dbc', database_format='dbc', encoding='cp1252', frame_id_mask=None,
+    db = cantools.database.load_file('DBCS/DBC3.dbc', database_format='dbc', encoding='cp1252', frame_id_mask=None,
                                      prune_choices=False, strict=True, cache_dir=None)
 
     # Reset the json file
@@ -64,7 +65,7 @@ def to_json(message, latencyAmount):
         json_dict.update(message)
         # Add a value to hold the current time
         json_dict.update({'Timestamp': time.time()})
-        json_dict.update({'Latency': latencyAmount.total_seconds()})
+        json_dict.update({'Latency': latencyAmount})
         json_file.close()
         open(json_file_name, 'w').close()
         json_file = open(json_file_name, 'r+')
@@ -109,6 +110,7 @@ def convert_to_bytes_with_escape(input_string):
 
 def data_handler(data):
     global firstMessage
+    global offset
     # Extract the message from the socket
     message = data.decode().strip()
     output_monitoring.write(f"message: {message}\n")
@@ -117,12 +119,11 @@ def data_handler(data):
     date_time_obj = int(date_time_str)
 
     #Set offset to account for skewed arduino clock on the first message only
-    offset = 0
     if(firstMessage):
-        offset = date_time_obj - date_time_obj
+        offset = time.time()*1000 - date_time_obj
         firstMessage = False
 
-    latency = datetime.now - date_time_obj - offset
+    latency = time.time()*1000 - date_time_obj - offset
     message = message.rsplit(',', 1)[0]  # Rewrite message to everything before the last comma (to keep rest of the code consistent when decoding)
 
     # Separate CAN message into id and data
@@ -146,7 +147,7 @@ def data_handler(data):
 
     to_send = data_reformatted
     # print(to_send)
-    output_monitoring.write(f"{to_send}{latency.total_seconds()}\n")
+    output_monitoring.write(f"{to_send}{latency}\n")
 
     try:
         # Decode each incoming message
@@ -160,8 +161,8 @@ def data_handler(data):
     except Exception as error:
         print(error)
     
-    latency = datetime.now - date_time_obj - offset
-    latency_file.write(f'Total Latency: {latency}\n')
+    new_latency = time.time()*1000 - date_time_obj - offset
+    latency_file.write(f'Current Time: {time.time()*1000}\nArduino Time Sent: {date_time_obj}\noffset: {offset}\nReceive Latency: {latency}\nTotal latency: {new_latency}\n\n')
 
 
 
