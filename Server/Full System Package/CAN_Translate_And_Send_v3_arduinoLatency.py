@@ -25,6 +25,9 @@ def setup():
     global bufferSize
     global nonLiterals
     global json_file_name
+    global firstMessage
+    
+    firstMessage = True
     bufferSize = 1024
     nonLiterals = set()
     json_file_name = 'json_data.json'
@@ -111,9 +114,15 @@ def data_handler(data):
     output_monitoring.write(f"message: {message}\n")
 
     date_time_str = message.split(',')[-1]
-    date_time_obj = datetime.strptime(date_time_str, "%H:%M:%S %d/%m/%Y")
+    date_time_obj = int(date_time_str)
 
-    latency = datetime.now - date_time_obj
+    #Set offset to account for skewed arduino clock on the first message only
+    offset = 0
+    if(firstMessage):
+        offset = date_time.now - date_time_obj
+        firstMessage = False
+
+    latency = datetime.now - date_time_obj - offset
     message = message.rsplit(',', 1)[0]  # Rewrite message to everything before the last comma (to keep rest of the code consistent when decoding)
 
     # Separate CAN message into id and data
@@ -151,7 +160,7 @@ def data_handler(data):
     except Exception as error:
         print(error)
     
-    latency = datetime.now - date_time_obj
+    latency = datetime.now - date_time_obj - offset
     latency_file.write(f'Total Latency: {latency}\n')
 
 
