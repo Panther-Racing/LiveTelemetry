@@ -20,7 +20,7 @@ def setup_server():
     carPort = 20001
     # UDP Buffer size maybe? Need to check CHK
     global buffer_size
-    buffer_size = 200
+    buffer_size = 48
 
     # Create a list of client addresses to send to
     global clientList
