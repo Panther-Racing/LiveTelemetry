@@ -1,4 +1,4 @@
-from custom_cantools import cantools
+import cantools
 import datetime
 import json
 import time
