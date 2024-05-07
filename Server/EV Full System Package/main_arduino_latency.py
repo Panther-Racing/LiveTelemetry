@@ -2,7 +2,6 @@
 import CAN_Translate_And_Send_v3_arduinoLatency
 import send_sql_v1
 import Server_v4
-import Node_Red_Server
 import threading
 import time
 
@@ -38,13 +37,6 @@ def sql_process():
     SQL.start()
 
 
-def node_red_process():
-    print('Starting process 4')
-    # Start the process that reads the sql data and sends it to node red
-    node_red = Process(target=Node_Red_Server.start)
-    node_red.start()
-
-
 def main():
     # Create and run threads to have all programs running simultaneously
     print('Creating threads')
@@ -58,6 +50,5 @@ def main():
     time.sleep(.1)
     sql_thread.start()
     # time.sleep(.1)
-    # node_red_thread.start()
 
 main()
