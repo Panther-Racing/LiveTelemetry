@@ -9,14 +9,16 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
     output_monitoring.write(f"message: {message}\n")
 
     date_time_str = message.split(',')[-1]
-    date_time_obj = int(date_time_str)
+    arduino_time_raw = int(date_time_str)
 
     # Set offset to account for skewed arduino clock on the first message only
     if (firstMessage):
-        offset = time.time() * 1000 - date_time_obj
+        offset = time.time() * 1000 - arduino_time_raw
         firstMessage = False
 
-    latency = time.time() * 1000 - date_time_obj - offset
+    arduino_time = arduino_time_raw + offset
+
+    latency = time.time() * 1000 - arduino_time
     message = message.rsplit(',', 1)[
         0]  # Rewrite message to everything before the last comma (to keep rest of the code consistent when decoding)
 
@@ -45,7 +47,7 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
         # Decode each incoming message
         to_json(db.decode_message(frame_id_or_name=frame_id, data=to_send, decode_choices=False, scaling=True,
                                   decode_containers=False, allow_truncated=False), latency / 1000, json_file_name,
-                output_monitoring, processed_data)
+                output_monitoring, processed_data, arduino_time)
     except KeyError as error:
         print('Key error: %s' % error)
         output_monitoring.write('Key error: %s \n' % error)
@@ -54,13 +56,13 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
     except Exception as error:
         print(error)
 
-    new_latency = time.time() * 1000 - date_time_obj - offset
+    new_latency = time.time() * 1000 - arduino_time
     latency_file.write(
-        f'Current Time: {time.time() * 1000}\nArduino Time Sent: {date_time_obj}\noffset: {offset}\nReceive Latency: {latency}\nTotal latency: {new_latency}\n\n')
+        f'Current Time: {time.time() * 1000}\nArduino Time Sent: {arduino_time_raw}\noffset: {offset}\nReceive Latency: {latency}\nTotal latency: {new_latency}\n\n')
 
 
 # Translate each string from the decoded CAN message into a dictionary and then output that dictionary to the json file
-def to_json(message, latencyAmount, json_file_name, output_monitoring, processed_data):
+def to_json(message, latencyAmount, json_file_name, output_monitoring, processed_data, arduino_time):
     # print(message)
     with open(json_file_name, 'r+') as json_file:
         # # Traverse through the new dictionary and add time stamps
@@ -74,6 +76,7 @@ def to_json(message, latencyAmount, json_file_name, output_monitoring, processed
         # Add a value to hold the current time
         json_dict.update({'Timestamp': time.time()})
         json_dict.update({'Latency': latencyAmount})
+        json_dict.update({'Arduino_Time': arduino_time})
         json_file.close()
         open(json_file_name, 'w').close()
         json_file = open(json_file_name, 'r+')
