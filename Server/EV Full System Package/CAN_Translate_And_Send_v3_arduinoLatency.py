@@ -150,7 +150,7 @@ def data_handler(data):
     try:
         # Decode each incoming message
         to_json(db.decode_message(frame_id_or_name=frame_id, data=to_send, decode_choices=False, scaling=True,
-                                  decode_containers=False, allow_truncated=False), latency)
+                                  decode_containers=False, allow_truncated=False), latency/1000)
     except KeyError as error:
         print('Key error: %s' % error)
         output_monitoring.write('Key error: %s \n' % error)
