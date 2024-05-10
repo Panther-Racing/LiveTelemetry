@@ -1,9 +1,4 @@
-# Import other programs we wrote
-import CAN_Translate
-import Send_SQL
-import Receive_Data
-
-# Import System Packages
+# Import system packages
 import queue
 import threading
 import time
@@ -16,21 +11,18 @@ import Send_SQL
 raw_data = queue.Queue(maxsize=48)
 translated_data = queue.Queue(maxsize=48)
 
-# Create flag variables to control the infinite loops in threads
-terminate_flag = False
+# Create event object to signal termination
+terminate_event = threading.Event()
 
-
-# Function to set the terminate flag
-def set_terminate_flag():
-    global terminate_flag
-    terminate_flag = True
-
+# Function to set the terminate event
+def set_terminate_event():
+    terminate_event.set()
 
 # Create and run threads to have all programs running simultaneously
 print('Creating threads')
-receive_data_thread = threading.Thread(target=Receive_Data.Receive_Data, args=(raw_data,))
-translate_thread = threading.Thread(target=CAN_Translate.CAN_Translate, args=(raw_data, translated_data,))
-sql_thread = threading.Thread(target=Send_SQL.Send_SQL, args=(translated_data,))
+receive_data_thread = threading.Thread(target=Receive_Data.Receive_Data, args=(raw_data, terminate_event))
+translate_thread = threading.Thread(target=CAN_Translate.CAN_Translate, args=(raw_data, translated_data, terminate_event))
+sql_thread = threading.Thread(target=Send_SQL.Send_SQL, args=(translated_data, terminate_event))
 # node_red_thread = threading.Thread(target=node_red_process)
 receive_data_thread.start()
 time.sleep(.1)
@@ -44,7 +36,7 @@ try:
         pass
 except KeyboardInterrupt:
     print("Ctrl+C detected. Exiting...")
-    set_terminate_flag()  # Set the terminate flag to True
+    set_terminate_event()  # Set the terminate event
     sys.exit(0)
 
 # Join threads to ensure they complete before exiting
