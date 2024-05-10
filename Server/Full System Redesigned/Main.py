@@ -10,8 +10,8 @@ import time
 import sys
 
 # Create queues to hold raw incoming data and translated data
-raw_data = queue.Queue()
-translated_data = queue.Queue()
+raw_data = queue.Queue(maxsize=48)
+translated_data = queue.Queue(maxsize=48)
 
 # Create and run threads to have all programs running simultaneously
 print('Creating threads')

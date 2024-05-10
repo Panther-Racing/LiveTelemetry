@@ -3,7 +3,7 @@ import time
 import cantools
 
 
-def data_handler(data, db, output_monitoring, latency_file, json_file_name, processed_data, nonLiterals, firstMessage):
+def data_handler(data, db, output_monitoring, latency_file, json_file_name, processed_data, firstMessage):
     # Extract the message from the socket
     message = data.decode().strip()
     output_monitoring.write(f"message: {message}\n")
@@ -25,8 +25,6 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
     try:
         frame_id = int(message[find_nth(message, ',', 1) + 1:find_nth(message, ',', 2)], 16)
     except ValueError as error:
-        # print('Non hexadecimal frame_id: %s' % error)
-        nonLiterals.add(str(error))
         frame_id = 'ERROR'
 
     # print(message)
@@ -136,7 +134,6 @@ def CAN_Translate(unprocessed_data, processed_data):
     # initialize Variables
     firstMessage = True
     offset = 0
-    nonLiterals = set()
     json_file_name = 'json_data.json'
 
     # Write to log files
@@ -156,4 +153,5 @@ def CAN_Translate(unprocessed_data, processed_data):
     while True:
         # If the queue has data in it, read the data
         if not unprocessed_data.empty():
-            data_handler(unprocessed_data.get(), db, output_monitoring, latency_file, json_file_name, processed_data, nonLiterals, firstMessage)
+            print('Waiting for Data\n')
+            data_handler(unprocessed_data.get(), db, output_monitoring, latency_file, json_file_name, processed_data, firstMessage)
