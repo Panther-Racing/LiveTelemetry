@@ -15,9 +15,9 @@ translated_data = queue.Queue()
 
 # Create and run threads to have all programs running simultaneously
 print('Creating threads')
-receive_data_thread = threading.Thread(target=Receive_Data, args=(raw_data,))
-translate_thread = threading.Thread(target=CAN_Translate, args=(raw_data, translated_data,))
-sql_thread = threading.Thread(target=Send_SQL, args=(translated_data,))
+receive_data_thread = threading.Thread(target=Receive_Data.Receive_Data(), args=(raw_data,))
+translate_thread = threading.Thread(target=CAN_Translate.CAN_Translate(), args=(raw_data, translated_data,))
+sql_thread = threading.Thread(target=Send_SQL.Send_SQL(), args=(translated_data,))
 # node_red_thread = threading.Thread(target=node_red_process)
 receive_data_thread.start()
 time.sleep(.1)
