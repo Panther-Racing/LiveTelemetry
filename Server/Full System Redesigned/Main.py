@@ -27,9 +27,8 @@ sql_thread.start()
 
 # Continue running unless there is a keyboard interrupt
 try:
-    receive_data_thread.join()
-    translated_data.join()
-    sql_thread.join()
+    while True:
+        pass
 except KeyboardInterrupt:
     print("Ctrl+C detected. Exiting...")
     sys.exit(0)
