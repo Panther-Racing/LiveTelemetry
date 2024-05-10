@@ -17,7 +17,7 @@ def Send_SQL(translated_data, terminate_event):
 
     while not terminate_event.set():
         # If there is data in the translated_data buffer, read it
-        if not translated_data.epmty():
+        if not translated_data.empty():
             send_data(translated_data.get(), conn)
 
 
