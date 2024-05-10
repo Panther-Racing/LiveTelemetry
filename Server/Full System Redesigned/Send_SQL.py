@@ -1,6 +1,8 @@
 import pyodbc
 import json
 
+import Main
+
 
 def Send_SQL(translated_data):
     # Print startup message
@@ -15,7 +17,7 @@ def Send_SQL(translated_data):
     conn = pyodbc.connect(
         'DRIVER={ODBC Driver 17 for SQL Server};SERVER=' + server + ';DATABASE=' + database + ';ENCRYPT=yes;UID=' + username + ';PWD=' + password + 'TrustServerCertificate=yes;')
 
-    while True:
+    while not Main.terminate_flag:
         # If there is data in the translated_data buffer, read it
         if not translated_data.epmty():
             send_data(translated_data.get(), conn)

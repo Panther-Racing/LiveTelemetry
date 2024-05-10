@@ -2,6 +2,8 @@ import json
 import time
 import cantools
 
+import Main
+
 
 def data_handler(data, db, output_monitoring, latency_file, json_file_name, processed_data, firstMessage):
     # Extract the message from the socket
@@ -153,7 +155,7 @@ def CAN_Translate(unprocessed_data, processed_data):
     db = cantools.database.load_file('DBCS/Combined.dbc', database_format='dbc', encoding='cp1252', frame_id_mask=None,
                                      prune_choices=False, strict=True, cache_dir=None)
 
-    while True:
+    while not Main.terminateFlag:
         # If the queue has data in it, read the data
         if not unprocessed_data.empty():
             print('Waiting for Data\n')
