@@ -1,0 +1,885 @@
+Starting CAN Translator
+message: 8,36,4 0 0 0 0 0 0 0 ,772477
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'0.0
+dict {}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772480
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'7.969970703125
+message: 8,c0,28 0 4 0 0 0 28 0 ,772482
+b'(\x00\x04\x00\x00\x00(\x00\x00'18.935546875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.6739314, 'Latency': 0.0}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772485
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'42.86865234375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.7138264, 'Latency': 18.935546875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772487
+b'\x00(\x00(\x80\x00\x00\x00\x00'57.727294921875
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772490
+b'(\x00(\x00(\x00(\x00\x00'71.684326171875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.7316995, 'Latency': 42.86865234375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772498
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'95.596923828125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.7805562, 'Latency': 71.684326171875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772500
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'115.539306640625
+message: 8,c0,28 0 4 0 0 0 28 0 ,772502
+b'(\x00\x04\x00\x00\x00(\x00\x00'123.50927734375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.8005035, 'Latency': 95.596923828125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772504
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'146.44580078125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.8374043, 'Latency': 123.50927734375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772507
+b'\x00(\x00(\x80\x00\x00\x00\x00'170.37255859375
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772509
+b'(\x00(\x00(\x00(\x00\x00'182.33740234375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.8643315, 'Latency': 146.44580078125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772516
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'189.29736328125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.8922548, 'Latency': 182.33740234375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772518
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'200.26123046875
+message: 8,c0,28 0 4 0 0 0 28 0 ,772521
+b'(\x00\x04\x00\x00\x00(\x00\x00'198.25927734375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.904223, 'Latency': 189.29736328125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772524
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'207.228271484375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.918186, 'Latency': 198.25927734375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772526
+b'\x00(\x00(\x80\x00\x00\x00\x00'220.192138671875
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772529
+b'(\x00(\x00(\x00(\x00\x00'221.179443359375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.9321487, 'Latency': 207.228271484375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772536
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'235.12109375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.957082, 'Latency': 221.179443359375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0}
+
+message: 8,a0,28 0 28 0 28 0 28 0 ,772538
+b'(\x00(\x00(\x00(\x00\x00'249.077392578125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.974037, 'Latency': 235.12109375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0}
+
+message: 8,c1,4 0 0 0 4 0 0 0 ,772540
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'259.0458984375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.9850075, 'Latency': 249.077392578125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772542
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'270.012451171875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302969.9989731, 'Latency': 259.0458984375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772545
+b'\x00(\x00(\x80\x00\x00\x00\x00'278.979248046875
+Key error: 2550589940 
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772547
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'280.970703125
+message: 8,36,4 0 0 0 0 0 0 0 ,772553
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'284.943359375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.0109377, 'Latency': 270.012451171875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4}
+
+message: 8,a0,28 0 28 0 28 0 28 0 ,772555
+b'(\x00(\x00(\x00(\x00\x00'295.907470703125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.0378652, 'Latency': 284.943359375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4}
+
+message: 8,c1,4 0 0 0 4 0 0 0 ,772558
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'308.864013671875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.0538404, 'Latency': 295.907470703125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772560
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'326.81103515625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.0737689, 'Latency': 308.864013671875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772562
+b'\x00(\x00(\x80\x00\x00\x00\x00'334.785400390625
+Key error: 2550589940 
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772566
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'339.759521484375
+message: 8,36,4 0 0 0 0 0 0 0 ,772573
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'336.74951171875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.0817475, 'Latency': 326.81103515625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772575
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'354.698486328125
+message: 8,c1,4 0 0 0 4 0 0 0 ,772577
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'358.68017578125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.115661, 'Latency': 336.74951171875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772579
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'372.638427734375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.1385987, 'Latency': 358.68017578125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772581
+b'\x00(\x00(\x80\x00\x00\x00\x00'384.60009765625
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772584
+b'(\x00(\x00(\x00(\x00\x00'382.597412109375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.1525586, 'Latency': 372.638427734375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772589
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'389.56884765625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.1645262, 'Latency': 382.597412109375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772591
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'399.532958984375
+message: 8,c2,4 0 0 0 4 0 0 0 ,772594
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'397.531005859375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.1784887, 'Latency': 389.56884765625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4}
+
+message: 8,6bb,9c 40 0 28 0 4 0 4 ,772596
+b'\x9c@\x00(\x00\x04\x00\x04\x00'423.4599609375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.1924536, 'Latency': 397.531005859375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772598
+b'\x00(\x00(\x80\x00\x00\x00\x00'456.13623046875
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772601
+b'(\x00(\x00(\x00(\x00\x00'454.134765625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.2183836, 'Latency': 423.4599609375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772609
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'527.916015625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.2590477, 'Latency': 454.134765625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,a0,28 0 28 0 28 0 28 0 ,772611
+b'(\x00(\x00(\x00(\x00\x00'561.81884765625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.3388336, 'Latency': 527.916015625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,c1,4 0 0 0 4 0 0 0 ,772613
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'595.751953125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.3707492, 'Latency': 561.81884765625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772615
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'665.53369140625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.4056556, 'Latency': 595.751953125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772618
+b'\x00(\x00(\x80\x00\x00\x00\x00'699.434326171875
+Key error: 2550589940 
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772620
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'702.41845703125
+message: 8,36,4 0 0 0 0 0 0 0 ,772626
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'704.3984375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.4784615, 'Latency': 665.53369140625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772628
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'725.337890625
+message: 8,c1,4 0 0 0 4 0 0 0 ,772631
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'726.325439453125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.536308, 'Latency': 704.3984375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6bb,9c 40 0 28 0 4 0 4 ,772633
+b'\x9c@\x00(\x00\x04\x00\x04\x00'758.236083984375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.5572493, 'Latency': 726.325439453125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772635
+b'\x00(\x00(\x80\x00\x00\x00\x00'829.043701171875
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772638
+b'(\x00(\x00(\x00(\x00\x00'836.014892578125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.5931618, 'Latency': 758.236083984375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772646
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'856.9375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.675932, 'Latency': 836.014892578125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772648
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'895.827880859375
+message: 8,c0,28 0 4 0 0 0 28 0 ,772651
+b'(\x00\x04\x00\x00\x00(\x00\x00'895.85693359375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.6979067, 'Latency': 856.9375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772653
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'926.994140625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.7430136, 'Latency': 895.85693359375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772656
+b'\x00(\x00(\x80\x00\x00\x00\x00'960.895263671875
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772658
+b'(\x00(\x00(\x00(\x00\x00'968.866943359375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.7849038, 'Latency': 926.994140625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772665
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'988.793212890625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.8267922, 'Latency': 968.866943359375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772667
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'1026.6865234375
+message: 8,c1,4 0 0 0 4 0 0 0 ,772670
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'1035.655029296875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.8567114, 'Latency': 988.793212890625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772672
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'1059.587158203125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.9055796, 'Latency': 1035.655029296875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772674
+b'\x00(\x00(\x80\x00\x00\x00\x00'1093.48876953125
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772677
+b'(\x00(\x00(\x00(\x00\x00'1093.48193359375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.9295154, 'Latency': 1059.587158203125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772684
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'1120.400634765625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302970.9823759, 'Latency': 1093.48193359375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772686
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'1155.291259765625
+message: 8,c1,4 0 0 0 4 0 0 0 ,772688
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'1161.2705078125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.0093024, 'Latency': 1120.400634765625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772690
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'1195.175537109375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.0472, 'Latency': 1161.2705078125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772694
+b'\x00(\x00(\x80\x00\x00\x00\x00'1234.080322265625
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772696
+b'(\x00(\x00(\x00(\x00\x00'1241.0361328125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.0890877, 'Latency': 1195.175537109375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772703
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'1263.95947265625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.1349838, 'Latency': 1241.0361328125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,a0,28 0 28 0 28 0 28 0 ,772705
+b'(\x00(\x00(\x00(\x00\x00'1297.861083984375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.1678782, 'Latency': 1263.95947265625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,c1,4 0 0 0 4 0 0 0 ,772707
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'1333.759033203125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.2027843, 'Latency': 1297.861083984375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772710
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'1376.283447265625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.2376895, 'Latency': 1333.759033203125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772712
+b'\x00(\x00(\x80\x00\x00\x00\x00'1413.181884765625
+Key error: 2550589940 
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772715
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'1422.147705078125
+message: 8,36,4 0 0 0 0 0 0 0 ,772723
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'1416.142578125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.288204, 'Latency': 1376.283447265625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772725
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'1436.08544921875
+message: 8,c0,28 0 4 0 0 0 28 0 ,772727
+b'(\x00\x04\x00\x00\x00(\x00\x00'1436.08056640625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.344055, 'Latency': 1416.142578125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772729
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'1471.97705078125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.363999, 'Latency': 1436.08056640625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772732
+b'\x00(\x00(\x80\x00\x00\x00\x00'1506.876953125
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772734
+b'(\x00(\x00(\x00(\x00\x00'1513.8515625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.3999047, 'Latency': 1471.97705078125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772742
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'1533.7841796875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.4507682, 'Latency': 1513.8515625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772744
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'1568.677978515625
+message: 8,c0,28 0 4 0 0 0 28 0 ,772747
+b'(\x00\x04\x00\x00\x00(\x00\x00'1575.6513671875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.4757006, 'Latency': 1533.7841796875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772749
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'1600.582763671875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.5255685, 'Latency': 1575.6513671875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772751
+b'\x00(\x00(\x80\x00\x00\x00\x00'1635.482421875
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772754
+b'(\x00(\x00(\x00(\x00\x00'1640.46142578125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.5485063, 'Latency': 1600.582763671875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772762
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'1662.381103515625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.595381, 'Latency': 1640.46142578125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772764
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'1696.2841796875
+message: 8,c0,28 0 4 0 0 0 28 0 ,772766
+b'(\x00\x04\x00\x00\x00(\x00\x00'1696.282470703125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.6223092, 'Latency': 1662.381103515625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772768
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'1729.187255859375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.6612046, 'Latency': 1696.282470703125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772771
+b'\x00(\x00(\x80\x00\x00\x00\x00'1763.0869140625
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772773
+b'(\x00(\x00(\x00(\x00\x00'1765.07568359375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.6941178, 'Latency': 1729.187255859375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772782
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'1790.1904296875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.7389982, 'Latency': 1765.07568359375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772784
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'1823.096923828125
+message: 8,c0,28 0 4 0 0 0 28 0 ,772786
+b'(\x00\x04\x00\x00\x00(\x00\x00'1824.10302734375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.7721148, 'Latency': 1790.1904296875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772789
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'1856.0068359375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.811011, 'Latency': 1824.10302734375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772791
+b'\x00(\x00(\x80\x00\x00\x00\x00'1890.900390625
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772794
+b'(\x00(\x00(\x00(\x00\x00'1897.8701171875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.8479111, 'Latency': 1856.0068359375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772801
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'1916.8017578125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.890797, 'Latency': 1897.8701171875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772803
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'1950.708251953125
+message: 8,c1,4 0 0 0 4 0 0 0 ,772805
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'1951.6982421875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.9127386, 'Latency': 1916.8017578125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772807
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'1983.6064453125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.9576182, 'Latency': 1951.6982421875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772810
+b'\x00(\x00(\x80\x00\x00\x00\x00'2021.50439453125
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772812
+b'(\x00(\x00(\x00(\x00\x00'2026.525146484375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302971.9935222, 'Latency': 1983.6064453125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772820
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'2048.3994140625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.0464144, 'Latency': 2026.525146484375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772823
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'2083.2978515625
+message: 8,c0,28 0 4 0 0 0 28 0 ,772825
+b'(\x00\x04\x00\x00\x00(\x00\x00'2098.255859375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.0663311, 'Latency': 2048.3994140625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772828
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'2115.198974609375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.1231754, 'Latency': 2098.255859375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772830
+b'\x00(\x00(\x80\x00\x00\x00\x00'2150.119140625
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772833
+b'(\x00(\x00(\x00(\x00\x00'2152.090576171875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.1411288, 'Latency': 2115.198974609375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772841
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'2176.003662109375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.1899986, 'Latency': 2152.090576171875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772843
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'2209.9052734375
+message: 8,c1,4 0 0 0 4 0 0 0 ,772845
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'2213.890380859375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.21493, 'Latency': 2176.003662109375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772847
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'2251.9912109375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.259868, 'Latency': 2213.890380859375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772849
+b'\x00(\x00(\x80\x00\x00\x00\x00'2285.89208984375
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772852
+b'(\x00(\x00(\x00(\x00\x00'2285.8818359375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.2999077, 'Latency': 2251.9912109375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772859
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'2313.789306640625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.3388035, 'Latency': 2285.8818359375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772861
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'2348.68994140625
+message: 8,c0,28 0 4 0 0 0 28 0 ,772864
+b'(\x00\x04\x00\x00\x00(\x00\x00'2351.697509765625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.3737109, 'Latency': 2313.789306640625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772867
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'2380.5947265625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.4205847, 'Latency': 2351.697509765625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772869
+b'\x00(\x00(\x80\x00\x00\x00\x00'2414.49365234375
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772872
+b'(\x00(\x00(\x00(\x00\x00'2414.485595703125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.447512, 'Latency': 2380.5947265625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772880
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'2439.396484375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.4893994, 'Latency': 2414.485595703125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,a0,28 0 28 0 28 0 28 0 ,772882
+b'(\x00(\x00(\x00(\x00\x00'2474.297607421875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.5163314, 'Latency': 2439.396484375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,c1,4 0 0 0 4 0 0 0 ,772884
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'2509.201904296875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.5552237, 'Latency': 2474.297607421875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772886
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'2544.103271484375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.5951176, 'Latency': 2509.201904296875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772888
+b'\x00(\x00(\x80\x00\x00\x00\x00'2580.003173828125
+Key error: 2550589940 
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772891
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'2584.00244140625
+message: 8,36,4 0 0 0 0 0 0 0 ,772898
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'2580.972412109375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.6360087, 'Latency': 2544.103271484375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772900
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'2608.916015625
+message: 8,c0,28 0 4 0 0 0 28 0 ,772903
+b'(\x00\x04\x00\x00\x00(\x00\x00'2613.868408203125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.6778963, 'Latency': 2580.972412109375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772905
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'2645.778076171875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.7217793, 'Latency': 2613.868408203125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772908
+b'\x00(\x00(\x80\x00\x00\x00\x00'2684.553466796875
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772911
+b'(\x00(\x00(\x00(\x00\x00'2696.5146484375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.748707, 'Latency': 2645.778076171875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772919
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'2713.447021484375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.8124237, 'Latency': 2696.5146484375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772921
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'2748.35009765625
+message: 8,c1,4 0 0 0 4 0 0 0 ,772923
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'2749.3720703125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.8323753, 'Latency': 2713.447021484375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772925
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'2780.25390625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.875256, 'Latency': 2749.3720703125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772927
+b'\x00(\x00(\x80\x00\x00\x00\x00'2814.156982421875
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772930
+b'(\x00(\x00(\x00(\x00\x00'2816.142822265625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.9072046, 'Latency': 2780.25390625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772937
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'2842.067138671875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.9520512, 'Latency': 2816.142822265625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772939
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'2879.95263671875
+message: 8,c0,28 0 4 0 0 0 28 0 ,772941
+b'(\x00\x04\x00\x00\x00(\x00\x00'2880.94140625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302972.9789805, 'Latency': 2842.067138671875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772944
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'2911.8505859375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.0238602, 'Latency': 2880.94140625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772946
+b'\x00(\x00(\x80\x00\x00\x00\x00'2946.75244140625
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772950
+b'(\x00(\x00(\x00(\x00\x00'2954.71826171875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.053782, 'Latency': 2911.8505859375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772958
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'2970.68310546875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.107636, 'Latency': 2954.71826171875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,a0,28 0 28 0 28 0 28 0 ,772960
+b'(\x00(\x00(\x00(\x00\x00'3004.560546875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.1306052, 'Latency': 2970.68310546875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,c1,4 0 0 0 4 0 0 0 ,772962
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'3039.461181640625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.167514, 'Latency': 3004.560546875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772964
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'3073.4462890625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.1973941, 'Latency': 3039.461181640625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772966
+b'\x00(\x00(\x80\x00\x00\x00\x00'3129.272705078125
+Key error: 2550589940 
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772969
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'3141.227294921875
+message: 8,36,4 0 0 0 0 0 0 0 ,772977
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'3136.218994140625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.235294, 'Latency': 3073.4462890625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772979
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'3167.1328125
+message: 8,c1,4 0 0 0 4 0 0 0 ,772981
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'3177.100341796875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.3133876, 'Latency': 3136.218994140625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,772984
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'3198.0341796875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.359022, 'Latency': 3177.100341796875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,772986
+b'\x00(\x00(\x80\x00\x00\x00\x00'3232.9365234375
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,772988
+b'(\x00(\x00(\x00(\x00\x00'3233.928955078125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.3819585, 'Latency': 3198.0341796875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,772997
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'3258.8388671875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.424844, 'Latency': 3233.928955078125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,772999
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'3293.73876953125
+message: 8,c0,28 0 4 0 0 0 28 0 ,773001
+b'(\x00\x04\x00\x00\x00(\x00\x00'3299.717041015625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.453768, 'Latency': 3258.8388671875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,773003
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'3325.6455078125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.5006661, 'Latency': 3299.717041015625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773005
+b'\x00(\x00(\x80\x00\x00\x00\x00'3361.54248046875
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,773008
+b'(\x00(\x00(\x00(\x00\x00'3363.529052734375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.534556, 'Latency': 3325.6455078125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,773016
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'3387.44775390625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.5734484, 'Latency': 3363.529052734375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,773018
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'3424.339111328125
+message: 8,c0,28 0 4 0 0 0 28 0 ,773020
+b'(\x00\x04\x00\x00\x00(\x00\x00'3425.3349609375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.611345, 'Latency': 3387.44775390625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,773023
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'3455.24609375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.6442587, 'Latency': 3425.3349609375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773025
+b'\x00(\x00(\x80\x00\x00\x00\x00'3495.131103515625
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,773028
+b'(\x00(\x00(\x00(\x00\x00'3496.13720703125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.6782105, 'Latency': 3455.24609375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,773036
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'3522.030517578125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.7271338, 'Latency': 3496.13720703125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,a0,28 0 28 0 28 0 28 0 ,773038
+b'(\x00(\x00(\x00(\x00\x00'3558.751708984375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.757954, 'Latency': 3522.030517578125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,c1,4 0 0 0 4 0 0 0 ,773040
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'3591.943603515625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.79696, 'Latency': 3558.751708984375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,773042
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'3626.852783203125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.8298712, 'Latency': 3591.943603515625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773044
+b'\x00(\x00(\x80\x00\x00\x00\x00'3660.75048828125
+Key error: 2550589940 
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,773047
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'3659.744384765625
+message: 8,36,4 0 0 0 0 0 0 0 ,773053
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'3656.735595703125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.8727627, 'Latency': 3626.852783203125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,a0,28 0 28 0 28 0 28 0 ,773055
+b'(\x00(\x00(\x00(\x00\x00'3687.6474609375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.9116528, 'Latency': 3656.735595703125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,c1,4 0 0 0 4 0 0 0 ,773057
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'3724.5439453125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.945598, 'Latency': 3687.6474609375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6bb,9c 40 0 28 0 4 0 4 ,773059
+b'\x9c@\x00(\x00\x04\x00\x04\x00'3758.46875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302973.9794726, 'Latency': 3724.5439453125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773062
+b'\x00(\x00(\x80\x00\x00\x00\x00'3791.35009765625
+Key error: 2550589940 
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,773064
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'3794.342529296875
+message: 8,36,4 0 0 0 0 0 0 0 ,773072
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'3790.3271484375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302974.0153751, 'Latency': 3758.46875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,773074
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'3816.2529296875
+message: 8,c0,28 0 4 0 0 0 28 0 ,773078
+b'(\x00\x04\x00\x00\x00(\x00\x00'3819.235595703125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302974.0612552, 'Latency': 3790.3271484375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,773080
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'3848.162109375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302974.0961597, 'Latency': 3819.235595703125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773082
+b'\x00(\x00(\x80\x00\x00\x00\x00'3888.042724609375
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,773085
+b'(\x00(\x00(\x00(\x00\x00'3889.06298828125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302974.1530092, 'Latency': 3848.162109375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,773091
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'3916.939453125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302974.1739523, 'Latency': 3889.06298828125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,a0,28 0 28 0 28 0 28 0 ,773093
+b'(\x00(\x00(\x00(\x00\x00'15904.28466796875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.1662931, 'Latency': 3916.939453125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,c1,4 0 0 0 4 0 0 0 ,773095
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'15944.169189453125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.1952097, 'Latency': 15904.28466796875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6bb,9c 40 0 28 0 4 0 4 ,773097
+b'\x9c@\x00(\x00\x04\x00\x04\x00'15979.071533203125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.2390926, 'Latency': 15944.169189453125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773100
+b'\x00(\x00(\x80\x00\x00\x00\x00'16012.972900390625
+Key error: 2550589940 
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,773102
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'16020.945556640625
+message: 8,36,4 0 0 0 0 0 0 0 ,773109
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'16018.933349609375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.275994, 'Latency': 15979.071533203125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,773111
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'16044.85693359375
+message: 8,c0,28 0 4 0 0 0 28 0 ,773114
+b'(\x00\x04\x00\x00\x00(\x00\x00'16047.877685546875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.328853, 'Latency': 16018.933349609375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,773116
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'16076.76025390625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.360767, 'Latency': 16047.877685546875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773118
+b'\x00(\x00(\x80\x00\x00\x00\x00'16110.6650390625
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,773122
+b'(\x00(\x00(\x00(\x00\x00'16109.656005859375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.39072, 'Latency': 16076.76025390625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,773130
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'16135.0458984375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.4275885, 'Latency': 16109.656005859375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,773132
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'16169.948486328125
+message: 8,c0,28 0 4 0 0 0 28 0 ,773134
+b'(\x00\x04\x00\x00\x00(\x00\x00'16173.930419921875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.4629745, 'Latency': 16135.0458984375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,773136
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'16201.885986328125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.5098484, 'Latency': 16173.930419921875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773139
+b'\x00(\x00(\x80\x00\x00\x00\x00'16236.75
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,773141
+b'(\x00(\x00(\x00(\x00\x00'16242.727783203125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.5407667, 'Latency': 16201.885986328125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,773148
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'16264.65087890625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.5826538, 'Latency': 16242.727783203125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,a0,28 0 28 0 28 0 28 0 ,773150
+b'(\x00(\x00(\x00(\x00\x00'16298.554443359375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.6105826, 'Latency': 16264.65087890625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,c1,4 0 0 0 4 0 0 0 ,773153
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'16331.458251953125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.6454856, 'Latency': 16298.554443359375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,773155
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'16365.362060546875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.6813893, 'Latency': 16331.458251953125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773157
+b'\x00(\x00(\x80\x00\x00\x00\x00'16401.2607421875
+Key error: 2550589940 
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,773160
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'16401.260498046875
+message: 8,36,4 0 0 0 0 0 0 0 ,773168
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'16396.26171875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.717294, 'Latency': 16365.362060546875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,773170
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'16425.163330078125
+message: 8,c1,4 0 0 0 4 0 0 0 ,773172
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'16430.142822265625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.7631707, 'Latency': 16396.26171875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,773174
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'18555.247802734375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302986.800074, 'Latency': 16430.142822265625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773177
+b'\x00(\x00(\x80\x00\x00\x00\x00'18588.2099609375
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,773179
+b'(\x00(\x00(\x00(\x00\x00'18595.162841796875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302988.9291706, 'Latency': 18555.247802734375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,773187
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'18614.530029296875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302988.9757514, 'Latency': 18595.162841796875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,773189
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'18648.397705078125
+message: 8,c0,28 0 4 0 0 0 28 0 ,773192
+b'(\x00\x04\x00\x00\x00(\x00\x00'18653.376708984375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.0024161, 'Latency': 18614.530029296875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,773194
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'18685.291259765625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.050288, 'Latency': 18653.376708984375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773196
+b'\x00(\x00(\x80\x00\x00\x00\x00'18720.194091796875
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,773199
+b'(\x00(\x00(\x00(\x00\x00'18729.1552734375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.083201, 'Latency': 18685.291259765625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,773207
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'18746.089111328125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.1370554, 'Latency': 18729.1552734375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,a0,28 0 28 0 28 0 28 0 ,773209
+b'(\x00(\x00(\x00(\x00\x00'18780.991455078125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.1589968, 'Latency': 18746.089111328125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,c1,4 0 0 0 4 0 0 0 ,773211
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'18814.531494140625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.188971, 'Latency': 18780.991455078125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,773213
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'18850.57763671875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.2268403, 'Latency': 18814.531494140625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773216
+b'\x00(\x00(\x80\x00\x00\x00\x00'18884.73046875
+Key error: 2550589940 
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,773218
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'18888.70703125
+message: 8,36,4 0 0 0 0 0 0 0 ,773225
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'18885.730224609375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.2647758, 'Latency': 18850.57763671875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,773227
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'18909.626953125
+message: 8,c0,28 0 4 0 0 0 28 0 ,773230
+b'(\x00\x04\x00\x00\x00(\x00\x00'18911.61083984375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.3106217, 'Latency': 18885.730224609375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,773232
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'18940.53076171875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.353504, 'Latency': 18911.61083984375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773234
+b'\x00(\x00(\x80\x00\x00\x00\x00'18975.431884765625
+Key error: 2550589940 
+message: 8,a0,28 0 28 0 28 0 28 0 ,773237
+b'(\x00(\x00(\x00(\x00\x00'18973.42822265625
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.3744473, 'Latency': 18940.53076171875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,36,4 0 0 0 0 0 0 0 ,773242
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'19003.3349609375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.410351, 'Latency': 18973.42822265625, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,a0,28 0 28 0 28 0 28 0 ,773244
+b'(\x00(\x00(\x00(\x00\x00'19039.2392578125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.4532366, 'Latency': 19003.3349609375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,c2,4 0 0 0 4 0 0 0 ,773246
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'19074.26904296875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.4851656, 'Latency': 19039.2392578125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6bb,9c 40 0 28 0 4 0 4 ,773249
+b'\x9c@\x00(\x00\x04\x00\x04\x00'19109.16845703125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302989.5172584, 'Latency': 19074.26904296875, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773252
+b'\x00(\x00(\x80\x00\x00\x00\x00'20497.225341796875
+Key error: 2550589940 
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,773254
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'20501.203125
+message: 8,36,4 0 0 0 0 0 0 0 ,773261
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'20496.198486328125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302990.9311907, 'Latency': 19109.16845703125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,a0,28 0 28 0 28 0 28 0 ,773263
+b'(\x00(\x00(\x00(\x00\x00'20527.110595703125
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302990.9571218, 'Latency': 20496.198486328125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,c1,4 0 0 0 4 0 0 0 ,773266
+b'\x04\x00\x00\x00\x04\x00\x00\x00\x00'20561.204833984375
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302990.9890373, 'Latency': 20527.110595703125, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,6ba,9c 40 1 90 1 90 9c 40 ,773268
+b'\x9c@\x01\x90\x01\x90\x9c@\x00'20595.95263671875
+dict {'BMS_cellBalancing': 4, 'Timestamp': 1715302991.028989, 'Latency': 20561.204833984375, 'VCU_INV_Torque_Command': 4.0, 'VCU_INV_Speed_Command': 4, 'VCU_INV_Direction_Command': 0, 'VCU_INV_Inverter_Enable': 0, 'VCU_INV_Inverter_Discharge': 0, 'VCU_INV_Speed_Mode_Enable': 0, 'VCU_INV_Torque_Limit_Command': 4.0, 'Avg_Cell_Voltage': 4.0, 'Low_Cell_Resistance': 4.0, 'High_Cell_Resistance': 4.0, 'Maximum_Cell_Voltage': 4.0, 'INV_Module_A_Temp': 4.0, 'INV_Module_B_Temp': 4.0, 'INV_Module_C_Temp': 4.0, 'INV_Gate_Driver_Board_Temp': 4.0, 'VCU_INV_Parameter_Address': 4, 'VCU_INV_Parameter_RW_Command': 0, 'VCU_INV_Parameter_Data': 4, 'INV_Parameter_Response_Addr': 4, 'INV_Parameter_Response_Write_OK': 0, 'INV_Parameter_Response_Data': 4, 'Minimum_Cell_Voltage': 4.0, 'Input_Supply_Voltage': 4.0, 'DTC_Flags_1': 4, 'DTC_Flags_2': 4}
+
+message: 8,9806e9f4,0 28 0 28 80 0 0 0 ,773270
+b'\x00(\x00(\x80\x00\x00\x00\x00'20630.854248046875
+Key error: 2550589940 
+message: 8,7b,4 d2 f0 d2 f0 28 a0 0 ,773273
+b'\x04\xd2\xf0\xd2\xf0(\xa0\x00\x00'20641.82080078125
+message: 8,36,4 0 0 0 0 0 0 0 ,773280
+b'\x04\x00\x00\x00\x00\x00\x00\x00\x00'20643.79296875
