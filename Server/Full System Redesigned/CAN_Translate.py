@@ -160,4 +160,4 @@ def CAN_Translate(unprocessed_data, processed_data, terminate_event):
         # If the queue has data in it, read the data
         if not unprocessed_data.empty():
             print('Waiting for Data\n')
-            data_handler(unprocessed_data.get(), db, output_monitoring, latency_file, json_file_name, processed_data, firstMessage)
+            data_handler(unprocessed_data.get(), output_monitoring, latency_file, json_file_name, processed_data, firstMessage)
