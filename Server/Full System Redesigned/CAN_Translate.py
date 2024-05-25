@@ -42,8 +42,10 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
 
     try:
         # Decode each incoming message
-        to_json(db.decode_message(frame_id_or_name=frame_id, data=to_send, decode_choices=False, scaling=True,
-                                  decode_containers=False, allow_truncated=False), latency / 1000, json_file_name,
+        decoded = db.decode_message(frame_id_or_name=frame_id, data=to_send, decode_choices=False, scaling=True,
+                                  decode_containers=False, allow_truncated=False)
+
+        to_json(decoded, latency / 1000, json_file_name,
                 output_monitoring, processed_data, arduino_time)
     except KeyError as error:
         print('Key error: %s' % error)
