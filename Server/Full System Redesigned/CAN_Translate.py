@@ -2,8 +2,11 @@ import json
 import time
 import cantools
 
+global db
 
-def data_handler(data, db, output_monitoring, latency_file, json_file_name, processed_data, firstMessage):
+
+def data_handler(data, output_monitoring, latency_file, json_file_name, processed_data, firstMessage):
+    global db
     # Extract the message from the socket
     message = data.strip()
     # output_monitoring.write(f"message: {message}\n")
@@ -127,6 +130,7 @@ def convert_to_bytes_with_escape(input_string):
 
 
 def CAN_Translate(unprocessed_data, processed_data, terminate_event):
+    global db
     # Run setup code
 
     # Open log files
