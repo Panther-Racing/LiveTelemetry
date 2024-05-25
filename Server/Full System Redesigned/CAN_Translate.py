@@ -5,7 +5,7 @@ import cantools
 
 def data_handler(data, db, output_monitoring, latency_file, json_file_name, processed_data, firstMessage):
     # Extract the message from the socket
-    message = data.decode().strip()
+    message = data.strip()
     output_monitoring.write(f"message: {message}\n")
 
     date_time_str = message.split(',')[-1]
