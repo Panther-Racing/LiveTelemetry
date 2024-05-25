@@ -29,6 +29,7 @@ time.sleep(.1)
 translate_thread.start()
 time.sleep(.1)
 sql_thread.start()
+time.sleep(.1)
 
 # Continue running unless there is a keyboard interrupt
 try:
