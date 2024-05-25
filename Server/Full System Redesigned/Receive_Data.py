@@ -25,7 +25,7 @@ def Receive_Data(output_queue, terminate_event):
     print(f"UDP server up and listening at {localIP} on car port {carPort}")
 
     # Run indefinitely to constantly listen for client requests and car data
-    while not terminate_event.set():
+    while not terminate_event.is_set():
         # Wait for incoming data
         data = car_socket.recvfrom(buffer_size)
 

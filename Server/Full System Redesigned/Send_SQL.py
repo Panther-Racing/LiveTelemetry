@@ -15,7 +15,7 @@ def Send_SQL(translated_data, terminate_event):
     conn = pyodbc.connect(
         'DRIVER={ODBC Driver 17 for SQL Server};SERVER=' + server + ';DATABASE=' + database + ';ENCRYPT=yes;UID=' + username + ';PWD=' + password + 'TrustServerCertificate=yes;')
 
-    while not terminate_event.set():
+    while not terminate_event.is_set():
         # If there is data in the translated_data buffer, read it
         if not translated_data.empty():
             send_data(translated_data.get(), conn)

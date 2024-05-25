@@ -82,7 +82,6 @@ def to_json(message, latencyAmount, json_file_name, output_monitoring, processed
         json_file = open(json_file_name, 'r+')
         json.dump(json_dict, json_file)
         processed_data.put(json.dumps(json_dict))
-        print(processed_data)
 
 
 def find_nth(haystack, needle, n):
@@ -154,7 +153,7 @@ def CAN_Translate(unprocessed_data, processed_data, terminate_event):
     db = cantools.database.load_file('DBCS/Combined.dbc', database_format='dbc', encoding='cp1252', frame_id_mask=None,
                                      prune_choices=False, strict=True, cache_dir=None)
 
-    while not terminate_event.set():
+    while not terminate_event.is_set():
         # If the queue has data in it, read the data
         if not unprocessed_data.empty():
             print('Waiting for Data\n')
