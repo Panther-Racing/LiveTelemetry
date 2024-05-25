@@ -41,6 +41,7 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
     print(to_send)
 
     try:
+        print(type(to_send))
         # Decode each incoming message
         decoded = db.decode_message(frame_id_or_name=frame_id, data=to_send, decode_choices=False, scaling=True,
                                   decode_containers=False, allow_truncated=False)

@@ -130,6 +130,7 @@ def data_handler(data):
     output_monitoring.write(f"{to_send}\n")
 
     try:
+        print(type(to_send))
         # Decode each incoming message
         to_json(db.decode_message(frame_id_or_name=frame_id, data=to_send, decode_choices=False, scaling=True,
                                   decode_containers=False, allow_truncated=False))
