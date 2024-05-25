@@ -82,6 +82,7 @@ def to_json(message, latencyAmount, json_file_name, output_monitoring, processed
         json_file = open(json_file_name, 'r+')
         json.dump(json_dict, json_file)
         processed_data.put(json.dumps(json_dict))
+        print(processed_data)
 
 
 def find_nth(haystack, needle, n):
