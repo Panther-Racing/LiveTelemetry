@@ -5,9 +5,8 @@ import cantools
 
 def data_handler(data, db, output_monitoring, latency_file, json_file_name, processed_data, firstMessage):
     # Extract the message from the socket
-    # message = data.strip()
-    message = data
-    output_monitoring.write(f"message: {message}\n")
+    message = data.strip()
+    # output_monitoring.write(f"message: {message}\n")
 
     date_time_str = message.split(',')[-1]
     arduino_time_raw = int(date_time_str)
@@ -42,7 +41,7 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
 
     to_send = data_reformatted
     # print(to_send)
-    output_monitoring.write(f"{to_send}{latency}\n")
+    # output_monitoring.write(f"{to_send}{latency}\n")
 
     try:
         # Decode each incoming message
@@ -53,8 +52,10 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
         print('Key error: %s' % error)
         output_monitoring.write('Key error: %s \n' % error)
     except ValueError as error:
+        print('Value Error:')
         print(error)
     except Exception as error:
+        print('Other Error:')
         print(error)
 
     new_latency = time.time() * 1000 - arduino_time
@@ -72,7 +73,7 @@ def to_json(message, latencyAmount, json_file_name, output_monitoring, processed
         #     message[key] = (time.time(), data_value)
         json_dict = json.load(json_file)
         print(f'json_dict {json_dict}')
-        output_monitoring.write(f'dict {json_dict}\n\n')
+        # output_monitoring.write(f'dict {json_dict}\n\n')
         json_dict.update(message)
         # Add a value to hold the current time
         json_dict.update({'Timestamp': time.time()})
