@@ -37,8 +37,9 @@ def Receive_Data(output_queue, terminate_event):
         try:
             car_msg_string = car_msg.decode("utf-8")
             car_msg_string += "\n"
+            bytesToSend = str.encode(car_msg_string)
             # Add the car data to a queue for the next thread
-            output_queue.put(car_msg_string)
+            output_queue.put(bytesToSend)
         except UnicodeDecodeError as error:
             print(f'Decode error {error}')
             car_msg_string = ''
