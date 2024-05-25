@@ -144,7 +144,7 @@ def data_handler(data):
     data_reformatted = reformatter(data_string)
 
     to_send = data_reformatted
-    # print(to_send)
+    print(to_send)
     output_monitoring.write(f"{to_send}{latency}\n")
 
     try:

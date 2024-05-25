@@ -34,14 +34,11 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
     # output_monitoring.write(f'Frame ID: {frame_id}           data: {data}')
 
     data_string = message[find_nth(message, ',', 2) + 1:]
-    # data_string = data_string.replace(' ', '')
-    data = bytes(data_string, 'utf-8')
 
     data_reformatted = reformatter(data_string)
 
     to_send = data_reformatted
-    # print(to_send)
-    # output_monitoring.write(f"{to_send}{latency}\n")
+    print(to_send)
 
     try:
         # Decode each incoming message
