@@ -44,6 +44,8 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
         # Decode each incoming message
         decoded = db.decode_message(frame_id_or_name=frame_id, data=to_send, decode_choices=False, scaling=True,
                                   decode_containers=False, allow_truncated=False)
+        print(f'decoded: {decoded}')
+        to_json(decoded, latency / 1000, json_file_name, output_monitoring, processed_data, arduino_time)
 
     except KeyError as error:
         print('Key error: %s' % error)
@@ -55,12 +57,8 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
         print('Other Error:')
         print(error)
 
-    print(f'decoded: {decoded}')
-    to_json(decoded, latency / 1000, json_file_name, output_monitoring, processed_data, arduino_time)
-
     new_latency = time.time() * 1000 - arduino_time
-    latency_file.write(
-        f'Current Time: {time.time() * 1000}\nArduino Time Sent: {arduino_time_raw}\noffset: {offset}\nReceive Latency: {latency}\nTotal latency: {new_latency}\n\n')
+    latency_file.write(f'Current Time: {time.time() * 1000}\nArduino Time Sent: {arduino_time_raw}\noffset: {offset}\nReceive Latency: {latency}\nTotal latency: {new_latency}\n\n')
 
 
 # Translate each string from the decoded CAN message into a dictionary and then output that dictionary to the json file
@@ -87,10 +85,6 @@ def to_json(message, latencyAmount, json_file_name, output_monitoring, processed
             json_dict = {}
 
         print(f'json_file_name: {json_file_name}')
-
-        # Load the existing JSON data
-        json_dict = json.load(json_file)
-        print(f'json_dict {json_dict}')
 
         # Update the JSON dictionary with the new data
         json_dict.update(message)
