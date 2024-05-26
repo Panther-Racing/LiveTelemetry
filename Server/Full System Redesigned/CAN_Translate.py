@@ -72,6 +72,18 @@ def to_json(message, latencyAmount, json_file_name, output_monitoring, processed
     # Assuming latencyAmount, arduino_time, and processed_data are defined elsewhere
 
     with open(json_file_name, 'r+') as json_file:
+
+        # Read the file content
+        content = json_file.read().strip()
+
+        if content:
+            # Load the existing JSON data if the file is not empty
+            json_file.seek(0)
+            json_dict = json.load(json_file)
+        else:
+            # Initialize with an empty dictionary if the file is empty
+            json_dict = {}
+
         print(f'json_file_name: {json_file_name}')
 
         # Load the existing JSON data
