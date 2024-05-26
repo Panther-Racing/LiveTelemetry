@@ -101,6 +101,7 @@ def to_json(message, latencyAmount, json_file_name, output_monitoring, processed
 
         # Push the updated JSON data to the processed_data queue
         processed_data.put(json.dumps(json_dict))
+        print(f'processed data queue has {processed_data.len()} items in it')
 
 
 def find_nth(haystack, needle, n):

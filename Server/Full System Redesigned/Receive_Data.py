@@ -40,6 +40,7 @@ def Receive_Data(output_queue, terminate_event):
             bytesToSend = str.encode(car_msg_string)
             # Add the car data to a queue for the next thread
             output_queue.put(bytesToSend)
+            print(f'Translate queue has {output_queue.len()} items in it')
         except UnicodeDecodeError as error:
             print(f'Decode error {error}')
             car_msg_string = ''
