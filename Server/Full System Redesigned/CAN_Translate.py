@@ -19,8 +19,7 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
     arduino_time = arduino_time_raw + offset
 
     latency = time.time() * 1000 - arduino_time
-    message = message.rsplit(',', 1)[
-        0]  # Rewrite message to everything before the last comma (to keep rest of the code consistent when decoding)
+    message = message.rsplit(',', 1)[0]  # Rewrite message to everything before the last comma (to keep rest of the code consistent when decoding)
 
     # Separate CAN message into id and data
     # Except non hexadecimal values
@@ -46,8 +45,6 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
         decoded = db.decode_message(frame_id_or_name=frame_id, data=to_send, decode_choices=False, scaling=True,
                                   decode_containers=False, allow_truncated=False)
 
-        to_json(decoded, latency / 1000, json_file_name,
-                output_monitoring, processed_data, arduino_time)
     except KeyError as error:
         print('Key error: %s' % error)
         output_monitoring.write('Key error: %s \n' % error)
@@ -58,6 +55,9 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
         print('Other Error:')
         print(error)
 
+    print(f'decoded: {decoded}')
+    to_json(decoded, latency / 1000, json_file_name, output_monitoring, processed_data, arduino_time)
+
     new_latency = time.time() * 1000 - arduino_time
     latency_file.write(
         f'Current Time: {time.time() * 1000}\nArduino Time Sent: {arduino_time_raw}\noffset: {offset}\nReceive Latency: {latency}\nTotal latency: {new_latency}\n\n')
@@ -67,6 +67,7 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
 def to_json(message, latencyAmount, json_file_name, output_monitoring, processed_data, arduino_time):
     # print(message)
     with open(json_file_name, 'r+') as json_file:
+        print(f'json_file_name: {json_file_name}')
         # # Traverse through the new dictionary and add time stamps
         # for key in message:
         #     data_value = message[key]
@@ -81,9 +82,9 @@ def to_json(message, latencyAmount, json_file_name, output_monitoring, processed
         json_dict.update({'Arduino_Time': arduino_time})
         json_file.close()
         open(json_file_name, 'w').close()
-        json_file = open(json_file_name, 'r+')
-        json.dump(json_dict, json_file)
-        processed_data.put(json.dumps(json_dict))
+        with open(json_file_name, 'r+') as json_file:
+            json.dump(json_dict, json_file)
+            processed_data.put(json.dumps(json_dict))
 
 
 def find_nth(haystack, needle, n):
@@ -102,7 +103,7 @@ def reformatter(data_string):
     i = 0
     data_reformatted = ''
     data_string = str(data_string)
-    print(data_string)
+    print(f'data before reformat: {data_string}')
     while next_space >= 0:
         next_space = find_nth(data_string, ' ', i + 1)
         # print(next_space)

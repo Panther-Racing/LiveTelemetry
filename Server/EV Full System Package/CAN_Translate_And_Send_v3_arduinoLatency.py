@@ -79,7 +79,7 @@ def reformatter(data_string):
     i = 0
     data_reformatted = ''
     data_string = str(data_string)
-    print(data_string)
+    print(f'data before reformat: {data_string}')
     while next_space >= 0:
         next_space = find_nth(data_string, ' ', i + 1)
         # print(next_space)
@@ -149,6 +149,7 @@ def data_handler(data):
 
     try:
         # Decode each incoming message
+        print(f'data type: {type(to_send)}')
         to_json(db.decode_message(frame_id_or_name=frame_id, data=to_send, decode_choices=False, scaling=True,
                                   decode_containers=False, allow_truncated=False), latency/1000)
     except KeyError as error:
