@@ -66,25 +66,33 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
 # Translate each string from the decoded CAN message into a dictionary and then output that dictionary to the json file
 def to_json(message, latencyAmount, json_file_name, output_monitoring, processed_data, arduino_time):
     # print(message)
+    import json
+    import time
+
+    # Assuming latencyAmount, arduino_time, and processed_data are defined elsewhere
+
     with open(json_file_name, 'r+') as json_file:
         print(f'json_file_name: {json_file_name}')
-        # # Traverse through the new dictionary and add time stamps
-        # for key in message:
-        #     data_value = message[key]
-        #     message[key] = (time.time(), data_value)
+
+        # Load the existing JSON data
         json_dict = json.load(json_file)
         print(f'json_dict {json_dict}')
-        # output_monitoring.write(f'dict {json_dict}\n\n')
+
+        # Update the JSON dictionary with the new data
         json_dict.update(message)
-        # Add a value to hold the current time
         json_dict.update({'Timestamp': time.time()})
         json_dict.update({'Latency': latencyAmount})
         json_dict.update({'Arduino_Time': arduino_time})
-        json_file.close()
-        open(json_file_name, 'w').close()
-        with open(json_file_name, 'r+') as json_file:
-            json.dump(json_dict, json_file)
-            processed_data.put(json.dumps(json_dict))
+
+        # Move the file pointer to the beginning and truncate the file
+        json_file.seek(0)
+        json_file.truncate()
+
+        # Write the updated JSON data back to the file
+        json.dump(json_dict, json_file)
+
+        # Push the updated JSON data to the processed_data queue
+        processed_data.put(json.dumps(json_dict))
 
 
 def find_nth(haystack, needle, n):
