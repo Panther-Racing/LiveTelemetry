@@ -1,9 +1,14 @@
 import json
 import time
 import cantools
+import queue
 
+global firstMessage
+global offset
 
-def data_handler(data, db, output_monitoring, latency_file, json_file_name, processed_data, firstMessage):
+def data_handler(data, db, output_monitoring, latency_file, json_file_name, processed_data):
+    global firstMessage
+    global offset
     # Extract the message from the socket
     message = data.decode().strip()
     # output_monitoring.write(f"message: {message}\n")
@@ -19,6 +24,7 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
     arduino_time = arduino_time_raw + offset
 
     latency = time.time() * 1000 - arduino_time
+    print(f'latency: {latency}\toffset: {offset}')
     message = message.rsplit(',', 1)[0]  # Rewrite message to everything before the last comma (to keep rest of the code consistent when decoding)
 
     # Separate CAN message into id and data
@@ -28,9 +34,7 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
     except ValueError as error:
         frame_id = 'ERROR'
 
-    # print(message)
     print(f'Frame ID: {frame_id}     data: {data}')
-    # output_monitoring.write(f'Frame ID: {frame_id}           data: {data}')
 
     data_string = message[find_nth(message, ',', 2) + 1:]
 
@@ -40,7 +44,6 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
     print(to_send)
 
     try:
-        print(type(to_send))
         # Decode each incoming message
         decoded = db.decode_message(frame_id_or_name=frame_id, data=to_send, decode_choices=False, scaling=True,
                                   decode_containers=False, allow_truncated=False)
@@ -63,7 +66,6 @@ def data_handler(data, db, output_monitoring, latency_file, json_file_name, proc
 
 # Translate each string from the decoded CAN message into a dictionary and then output that dictionary to the json file
 def to_json(message, latencyAmount, json_file_name, output_monitoring, processed_data, arduino_time):
-    # print(message)
     import json
     import time
 
@@ -84,11 +86,9 @@ def to_json(message, latencyAmount, json_file_name, output_monitoring, processed
             print("Error decoding JSON from the file. Initializing with an empty dictionary.")
             json_dict = {}
 
-        print(f'json_file_name: {json_file_name}')
-
         # Update the JSON dictionary with the new data
         json_dict.update(message)
-        json_dict.update({'Timestamp': time.time()})
+        json_dict.update({'Timestamp': time.time()*1000})
         json_dict.update({'Latency': latencyAmount})
         json_dict.update({'Arduino_Time': arduino_time})
 
@@ -100,8 +100,11 @@ def to_json(message, latencyAmount, json_file_name, output_monitoring, processed
         json.dump(json_dict, json_file)
 
         # Push the updated JSON data to the processed_data queue
-        processed_data.put(json.dumps(json_dict))
-        print(f'processed data queue has {processed_data.len()} items in it')
+        try:
+            processed_data.put_nowait(json.dumps(json_dict))
+            print(f'processed data queue has {processed_data.qsize()} items in it')
+        except queue.Full as error:
+            print('Data discarded, decoded data queue full')
 
 
 def find_nth(haystack, needle, n):
@@ -113,25 +116,20 @@ def find_nth(haystack, needle, n):
 
 
 def reformatter(data_string):
-    # print(data_string)
     start_pos = 0
     current_space = 0
     next_space = 0
     i = 0
     data_reformatted = ''
     data_string = str(data_string)
-    print(f'data before reformat: {data_string}')
     while next_space >= 0:
         next_space = find_nth(data_string, ' ', i + 1)
-        # print(next_space)
-        # print(next_space-current_space)
         if next_space - current_space == 1:
             data_reformatted += ('\\x0' + data_string[start_pos:next_space])
         elif next_space - current_space == 2:
             data_reformatted += ('\\x' + data_string[start_pos:next_space])
         else:
             data_reformatted += ('\\x0' + data_string[start_pos:])
-        # print('looking for more spaces')
         i += 1
         current_space = next_space + 1
         start_pos = current_space
@@ -148,6 +146,7 @@ def convert_to_bytes_with_escape(input_string):
 
 
 def CAN_Translate(unprocessed_data, processed_data, terminate_event):
+    global firstMessage
     # Run setup code
 
     # Open log files
@@ -177,4 +176,4 @@ def CAN_Translate(unprocessed_data, processed_data, terminate_event):
         # If the queue has data in it, read the data
         if not unprocessed_data.empty():
             print('Waiting for Data\n')
-            data_handler(unprocessed_data.get(), db, output_monitoring, latency_file, json_file_name, processed_data, firstMessage)
+            data_handler(unprocessed_data.get(), db, output_monitoring, latency_file, json_file_name, processed_data)

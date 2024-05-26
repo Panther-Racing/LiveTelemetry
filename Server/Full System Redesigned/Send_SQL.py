@@ -12,12 +12,14 @@ def Send_SQL(translated_data, terminate_event):
     username = 'raheelfarouk'
     password = 'li.telServer;'
     # ENCRYPT defaults to yes starting in ODBC Driver 18. It's good to always specify ENCRYPT=yes on the client side to avoid MITM attacks.
-    conn = pyodbc.connect(
-        'DRIVER={ODBC Driver 17 for SQL Server};SERVER=' + server + ';DATABASE=' + database + ';ENCRYPT=yes;UID=' + username + ';PWD=' + password + 'TrustServerCertificate=yes;')
+    conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=' + server + ';DATABASE=' + database + ';ENCRYPT=yes;UID=' + username + ';PWD=' + password + 'TrustServerCertificate=yes;')
+
+    print('SQL Server Started')
 
     while not terminate_event.is_set():
         # If there is data in the translated_data buffer, read it
         if not translated_data.empty():
+            print('SQL Processing Data')
             send_data(translated_data.get(), conn)
 
 
@@ -49,6 +51,8 @@ def send_data(json_received, conn):
         conn.commit()
     except pyodbc.ProgrammingError as error:
         print('ERROR2', error)
+    except pyodbc.DataError as error:
+        print(f'sql data error: {error}')
 
     print('Sent SQL')
 

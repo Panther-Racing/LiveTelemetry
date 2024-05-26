@@ -1,0 +1,3906 @@
+Current Time: 1716694582562.9941
+Arduino Time Sent: 6765556
+offset: 1716687816708.7024
+Receive Latency: 0.0
+Total latency: 298.291748046875
+
+Current Time: 1716694583106.4604
+Arduino Time Sent: 6765558
+offset: 1716687816708.7024
+Receive Latency: 437.238037109375
+Total latency: 839.758056640625
+
+Current Time: 1716694583632.28
+Arduino Time Sent: 6765561
+offset: 1716687816708.7024
+Receive Latency: 923.886962890625
+Total latency: 1362.57763671875
+
+Current Time: 1716694584101.8413
+Arduino Time Sent: 6765563
+offset: 1716687816708.7024
+Receive Latency: 1425.14697265625
+Total latency: 1830.138916015625
+
+Current Time: 1716694584333.764
+Arduino Time Sent: 6765565
+offset: 1716687816708.7024
+Receive Latency: 1880.828125
+Total latency: 2060.0615234375
+
+Current Time: 1716694584816.662
+Arduino Time Sent: 6765569
+offset: 1716687816708.7024
+Receive Latency: 2142.23193359375
+Total latency: 2538.959716796875
+
+Current Time: 1716694585192.8015
+Arduino Time Sent: 6765572
+offset: 1716687816708.7024
+Receive Latency: 2557.532958984375
+Total latency: 2912.09912109375
+
+Current Time: 1716694585679.2732
+Arduino Time Sent: 6765574
+offset: 1716687816708.7024
+Receive Latency: 3006.64208984375
+Total latency: 3396.57080078125
+
+Current Time: 1716694586032.2104
+Arduino Time Sent: 6765577
+offset: 1716687816708.7024
+Receive Latency: 3416.571044921875
+Total latency: 3746.508056640625
+
+Current Time: 1716694586245.183
+Arduino Time Sent: 6765579
+offset: 1716687816708.7024
+Receive Latency: 3821.086181640625
+Total latency: 3957.480712890625
+
+Current Time: 1716694586425.3137
+Arduino Time Sent: 6765583
+offset: 1716687816708.7024
+Receive Latency: 3969.48046875
+Total latency: 4133.611328125
+
+Current Time: 1716694586781.8936
+Arduino Time Sent: 6765586
+offset: 1716687816708.7024
+Receive Latency: 4258.888427734375
+Total latency: 4487.191162109375
+
+Current Time: 1716694587335.2312
+Arduino Time Sent: 6765589
+offset: 1716687816708.7024
+Receive Latency: 4605.34326171875
+Total latency: 5037.52880859375
+
+Current Time: 1716694587840.2126
+Arduino Time Sent: 6765592
+offset: 1716687816708.7024
+Receive Latency: 5136.029541015625
+Total latency: 5539.51025390625
+
+Current Time: 1716694588306.3477
+Arduino Time Sent: 6765595
+offset: 1716687816708.7024
+Receive Latency: 5576.1845703125
+Total latency: 6002.645263671875
+
+Current Time: 1716694588523.996
+Arduino Time Sent: 6765598
+offset: 1716687816708.7024
+Receive Latency: 6075.845947265625
+Total latency: 6217.293701171875
+
+Current Time: 1716694588773.8623
+Arduino Time Sent: 6765601
+offset: 1716687816708.7024
+Receive Latency: 6277.92626953125
+Total latency: 6464.159912109375
+
+Current Time: 1716694589347.897
+Arduino Time Sent: 6765604
+offset: 1716687816708.7024
+Receive Latency: 6543.388427734375
+Total latency: 7035.194580078125
+
+Current Time: 1716694589756.8394
+Arduino Time Sent: 6765607
+offset: 1716687816708.7024
+Receive Latency: 7107.940185546875
+Total latency: 7441.136962890625
+
+Current Time: 1716694590064.254
+Arduino Time Sent: 6765609
+offset: 1716687816708.7024
+Receive Latency: 7564.36181640625
+Total latency: 7746.551513671875
+
+Current Time: 1716694590386.7483
+Arduino Time Sent: 6765614
+offset: 1716687816708.7024
+Receive Latency: 7818.560302734375
+Total latency: 8064.0458984375
+
+Current Time: 1716694590859.3745
+Arduino Time Sent: 6765618
+offset: 1716687816708.7024
+Receive Latency: 8132.06298828125
+Total latency: 8532.672119140625
+
+Current Time: 1716694591212.8691
+Arduino Time Sent: 6765620
+offset: 1716687816708.7024
+Receive Latency: 8580.346435546875
+Total latency: 8884.166748046875
+
+Current Time: 1716694591789.0984
+Arduino Time Sent: 6765622
+offset: 1716687816708.7024
+Receive Latency: 8994.43310546875
+Total latency: 9458.39599609375
+
+Current Time: 1716694592309.1226
+Arduino Time Sent: 6765625
+offset: 1716687816708.7024
+Receive Latency: 9588.720458984375
+Total latency: 9975.420166015625
+
+Current Time: 1716694592653.0605
+Arduino Time Sent: 6765628
+offset: 1716687816708.7024
+Receive Latency: 10062.614990234375
+Total latency: 10316.358154296875
+
+Current Time: 1716694592898.9775
+Arduino Time Sent: 6765631
+offset: 1716687816708.7024
+Receive Latency: 10376.367919921875
+Total latency: 10559.275146484375
+
+Current Time: 1716694593534.665
+Arduino Time Sent: 6765634
+offset: 1716687816708.7024
+Receive Latency: 10690.328125
+Total latency: 11191.962646484375
+
+Current Time: 1716694593989.4849
+Arduino Time Sent: 6765637
+offset: 1716687816708.7024
+Receive Latency: 11251.619384765625
+Total latency: 11643.782470703125
+
+Current Time: 1716694594293.2876
+Arduino Time Sent: 6765639
+offset: 1716687816708.7024
+Receive Latency: 11757.3271484375
+Total latency: 11945.585205078125
+
+Current Time: 1716694594531.9473
+Arduino Time Sent: 6765642
+offset: 1716687816708.7024
+Receive Latency: 12014.815185546875
+Total latency: 12181.244873046875
+
+Current Time: 1716694594817.5208
+Arduino Time Sent: 6765645
+offset: 1716687816708.7024
+Receive Latency: 12284.02490234375
+Total latency: 12463.818359375
+
+Current Time: 1716694595391.838
+Arduino Time Sent: 6765648
+offset: 1716687816708.7024
+Receive Latency: 12587.543701171875
+Total latency: 13035.135498046875
+
+Current Time: 1716694596018.7659
+Arduino Time Sent: 6765651
+offset: 1716687816708.7024
+Receive Latency: 13105.03271484375
+Total latency: 13659.0634765625
+
+Current Time: 1716694596348.2593
+Arduino Time Sent: 6765655
+offset: 1716687816708.7024
+Receive Latency: 13680.9150390625
+Total latency: 13984.556884765625
+
+Current Time: 1716694596605.5505
+Arduino Time Sent: 6765657
+offset: 1716687816708.7024
+Receive Latency: 14031.14697265625
+Total latency: 14239.84814453125
+
+Current Time: 1716694596996.055
+Arduino Time Sent: 6765661
+offset: 1716687816708.7024
+Receive Latency: 14375.4833984375
+Total latency: 14626.3525390625
+
+Current Time: 1716694597665.0
+Arduino Time Sent: 6765664
+offset: 1716687816708.7024
+Receive Latency: 14656.353271484375
+Total latency: 15292.297607421875
+
+Current Time: 1716694597987.3118
+Arduino Time Sent: 6765666
+offset: 1716687816708.7024
+Receive Latency: 15352.299560546875
+Total latency: 15612.609375
+
+Current Time: 1716694598327.4424
+Arduino Time Sent: 6765669
+offset: 1716687816708.7024
+Receive Latency: 15679.18359375
+Total latency: 15949.739990234375
+
+Current Time: 1716694598644.6978
+Arduino Time Sent: 6765672
+offset: 1716687816708.7024
+Receive Latency: 16049.357666015625
+Total latency: 16263.995361328125
+
+Current Time: 1716694598982.985
+Arduino Time Sent: 6765675
+offset: 1716687816708.7024
+Receive Latency: 16405.189453125
+Total latency: 16599.28271484375
+
+Current Time: 1716694599368.0579
+Arduino Time Sent: 6765678
+offset: 1716687816708.7024
+Receive Latency: 16612.286865234375
+Total latency: 16981.35546875
+
+Current Time: 1716694599791.1035
+Arduino Time Sent: 6765681
+offset: 1716687816708.7024
+Receive Latency: 17011.355224609375
+Total latency: 17401.401123046875
+
+Current Time: 1716694600187.7383
+Arduino Time Sent: 6765684
+offset: 1716687816708.7024
+Receive Latency: 17478.724609375
+Total latency: 17795.035888671875
+
+Current Time: 1716694600547.2322
+Arduino Time Sent: 6765686
+offset: 1716687816708.7024
+Receive Latency: 17909.18994140625
+Total latency: 18152.52978515625
+
+Current Time: 1716694600826.6638
+Arduino Time Sent: 6765690
+offset: 1716687816708.7024
+Receive Latency: 18261.144775390625
+Total latency: 18427.96142578125
+
+Current Time: 1716694601332.11
+Arduino Time Sent: 6765693
+offset: 1716687816708.7024
+Receive Latency: 18548.61328125
+Total latency: 18930.40771484375
+
+Current Time: 1716694601774.136
+Arduino Time Sent: 6765696
+offset: 1716687816708.7024
+Receive Latency: 19061.63818359375
+Total latency: 19369.43359375
+
+Current Time: 1716694602204.8943
+Arduino Time Sent: 6765699
+offset: 1716687816708.7024
+Receive Latency: 19440.147705078125
+Total latency: 19797.19189453125
+
+Current Time: 1716694602416.6592
+Arduino Time Sent: 6765702
+offset: 1716687816708.7024
+Receive Latency: 19900.84423828125
+Total latency: 20005.956787109375
+
+Current Time: 1716694602702.0217
+Arduino Time Sent: 6765706
+offset: 1716687816708.7024
+Receive Latency: 20086.55908203125
+Total latency: 20287.3193359375
+
+Current Time: 1716694603064.447
+Arduino Time Sent: 6765709
+offset: 1716687816708.7024
+Receive Latency: 20370.93359375
+Total latency: 20646.74462890625
+
+Current Time: 1716694603510.8403
+Arduino Time Sent: 6765711
+offset: 1716687816708.7024
+Receive Latency: 20705.3251953125
+Total latency: 21091.137939453125
+
+Current Time: 1716694603915.5833
+Arduino Time Sent: 6765714
+offset: 1716687816708.7024
+Receive Latency: 21205.418212890625
+Total latency: 21492.880859375
+
+Current Time: 1716694604287.4668
+Arduino Time Sent: 6765717
+offset: 1716687816708.7024
+Receive Latency: 21608.274169921875
+Total latency: 21861.764404296875
+
+Current Time: 1716694604631.2058
+Arduino Time Sent: 6765720
+offset: 1716687816708.7024
+Receive Latency: 21934.287841796875
+Total latency: 22202.50341796875
+
+Current Time: 1716694605025.4333
+Arduino Time Sent: 6765722
+offset: 1716687816708.7024
+Receive Latency: 22291.149658203125
+Total latency: 22594.73095703125
+
+Current Time: 1716694605345.4294
+Arduino Time Sent: 6765726
+offset: 1716687816708.7024
+Receive Latency: 22675.348388671875
+Total latency: 22910.72705078125
+
+Current Time: 1716694605631.9204
+Arduino Time Sent: 6765729
+offset: 1716687816708.7024
+Receive Latency: 22977.46240234375
+Total latency: 23194.218017578125
+
+Current Time: 1716694605917.848
+Arduino Time Sent: 6765732
+offset: 1716687816708.7024
+Receive Latency: 23217.25537109375
+Total latency: 23477.1455078125
+
+Current Time: 1716694606386.3674
+Arduino Time Sent: 6765750
+offset: 1716687816708.7024
+Receive Latency: 23535.760986328125
+Total latency: 23927.6650390625
+
+Current Time: 1716694607054.8398
+Arduino Time Sent: 6765777
+offset: 1716687816708.7024
+Receive Latency: 24032.278076171875
+Total latency: 24569.137451171875
+
+Current Time: 1716694607432.4932
+Arduino Time Sent: 6765801
+offset: 1716687816708.7024
+Receive Latency: 24658.352783203125
+Total latency: 24922.790771484375
+
+Current Time: 1716694607924.1326
+Arduino Time Sent: 6765809
+offset: 1716687816708.7024
+Receive Latency: 24958.408203125
+Total latency: 25406.43017578125
+
+Current Time: 1716694608193.2605
+Arduino Time Sent: 6765816
+offset: 1716687816708.7024
+Receive Latency: 25475.01416015625
+Total latency: 25668.55810546875
+
+Current Time: 1716694608603.3547
+Arduino Time Sent: 6765842
+offset: 1716687816708.7024
+Receive Latency: 25736.196533203125
+Total latency: 26052.65234375
+
+Current Time: 1716694609050.51
+Arduino Time Sent: 6765854
+offset: 1716687816708.7024
+Receive Latency: 26143.261474609375
+Total latency: 26487.8076171875
+
+Current Time: 1716694609293.6387
+Arduino Time Sent: 6765863
+offset: 1716687816708.7024
+Receive Latency: 26526.67724609375
+Total latency: 26721.936279296875
+
+Current Time: 1716694609753.69
+Arduino Time Sent: 6765869
+offset: 1716687816708.7024
+Receive Latency: 26796.16748046875
+Total latency: 27175.987548828125
+
+Current Time: 1716694610189.4658
+Arduino Time Sent: 6765893
+offset: 1716687816708.7024
+Receive Latency: 27223.57666015625
+Total latency: 27587.763427734375
+
+Current Time: 1716694610666.8398
+Arduino Time Sent: 6765911
+offset: 1716687816708.7024
+Receive Latency: 27631.76416015625
+Total latency: 28047.137451171875
+
+Current Time: 1716694611061.9192
+Arduino Time Sent: 6765939
+offset: 1716687816708.7024
+Receive Latency: 28042.75537109375
+Total latency: 28414.216796875
+
+Current Time: 1716694611344.1428
+Arduino Time Sent: 6765961
+offset: 1716687816708.7024
+Receive Latency: 28452.505859375
+Total latency: 28674.4404296875
+
+Current Time: 1716694611797.7373
+Arduino Time Sent: 6765969
+offset: 1716687816708.7024
+Receive Latency: 28759.11572265625
+Total latency: 29120.034912109375
+
+Current Time: 1716694612209.8457
+Arduino Time Sent: 6765978
+offset: 1716687816708.7024
+Receive Latency: 29211.261962890625
+Total latency: 29523.143310546875
+
+Current Time: 1716694612574.0835
+Arduino Time Sent: 6766006
+offset: 1716687816708.7024
+Receive Latency: 29594.756103515625
+Total latency: 29859.381103515625
+
+Current Time: 1716694612792.458
+Arduino Time Sent: 6766029
+offset: 1716687816708.7024
+Receive Latency: 29913.492431640625
+Total latency: 30054.755615234375
+
+Current Time: 1716694613275.74
+Arduino Time Sent: 6766039
+offset: 1716687816708.7024
+Receive Latency: 30107.501220703125
+Total latency: 30528.03759765625
+
+Current Time: 1716694613590.8608
+Arduino Time Sent: 6766048
+offset: 1716687816708.7024
+Receive Latency: 30578.309814453125
+Total latency: 30834.158447265625
+
+Current Time: 1716694613846.74
+Arduino Time Sent: 6766056
+offset: 1716687816708.7024
+Receive Latency: 30918.90087890625
+Total latency: 31082.03759765625
+
+Current Time: 1716694614219.9436
+Arduino Time Sent: 6766078
+offset: 1716687816708.7024
+Receive Latency: 31207.377685546875
+Total latency: 31433.2412109375
+
+Current Time: 1716694614753.6777
+Arduino Time Sent: 6766111
+offset: 1716687816708.7024
+Receive Latency: 31514.224609375
+Total latency: 31933.975341796875
+
+Current Time: 1716694615141.9846
+Arduino Time Sent: 6766126
+offset: 1716687816708.7024
+Receive Latency: 31938.984130859375
+Total latency: 32307.2822265625
+
+Current Time: 1716694615465.3718
+Arduino Time Sent: 6766134
+offset: 1716687816708.7024
+Receive Latency: 32421.799560546875
+Total latency: 32622.66943359375
+
+Current Time: 1716694615966.0916
+Arduino Time Sent: 6766140
+offset: 1716687816708.7024
+Receive Latency: 32692.184326171875
+Total latency: 33117.38916015625
+
+Current Time: 1716694616395.3496
+Arduino Time Sent: 6766174
+offset: 1716687816708.7024
+Receive Latency: 33116.903076171875
+Total latency: 33512.647216796875
+
+Current Time: 1716694616905.7031
+Arduino Time Sent: 6766191
+offset: 1716687816708.7024
+Receive Latency: 33607.162841796875
+Total latency: 34006.000732421875
+
+Current Time: 1716694617443.6497
+Arduino Time Sent: 6766200
+offset: 1716687816708.7024
+Receive Latency: 34058.00439453125
+Total latency: 34534.947265625
+
+Current Time: 1716694617769.8198
+Arduino Time Sent: 6766209
+offset: 1716687816708.7024
+Receive Latency: 34632.469970703125
+Total latency: 34852.117431640625
+
+Current Time: 1716694618229.6855
+Arduino Time Sent: 6766216
+offset: 1716687816708.7024
+Receive Latency: 34943.149658203125
+Total latency: 35304.983154296875
+
+Current Time: 1716694618814.6968
+Arduino Time Sent: 6766233
+offset: 1716687816708.7024
+Receive Latency: 35424.54296875
+Total latency: 35872.994384765625
+
+Current Time: 1716694619143.306
+Arduino Time Sent: 6766254
+offset: 1716687816708.7024
+Receive Latency: 35923.03173828125
+Total latency: 36180.603515625
+
+Current Time: 1716694619369.5632
+Arduino Time Sent: 6766266
+offset: 1716687816708.7024
+Receive Latency: 36245.283935546875
+Total latency: 36394.86083984375
+
+Current Time: 1716694619825.482
+Arduino Time Sent: 6766274
+offset: 1716687816708.7024
+Receive Latency: 36467.43701171875
+Total latency: 36842.779541015625
+
+Current Time: 1716694619967.517
+Arduino Time Sent: 6766281
+offset: 1716687816708.7024
+Receive Latency: 36857.29296875
+Total latency: 36977.814697265625
+
+Current Time: 1716694620525.1162
+Arduino Time Sent: 6766303
+offset: 1716687816708.7024
+Receive Latency: 37036.66162109375
+Total latency: 37513.413818359375
+
+Current Time: 1716694620720.5898
+Arduino Time Sent: 6766325
+offset: 1716687816708.7024
+Receive Latency: 37552.921630859375
+Total latency: 37686.887451171875
+
+Current Time: 1716694621111.805
+Arduino Time Sent: 6766350
+offset: 1716687816708.7024
+Receive Latency: 37677.889404296875
+Total latency: 38053.1025390625
+
+Current Time: 1716694621336.2507
+Arduino Time Sent: 6766356
+offset: 1716687816708.7024
+Receive Latency: 38112.48876953125
+Total latency: 38271.54833984375
+
+Current Time: 1716694621866.7683
+Arduino Time Sent: 6766365
+offset: 1716687816708.7024
+Receive Latency: 38363.0615234375
+Total latency: 38793.06591796875
+
+Current Time: 1716694622226.903
+Arduino Time Sent: 6766389
+offset: 1716687816708.7024
+Receive Latency: 38878.58837890625
+Total latency: 39129.20068359375
+
+Current Time: 1716694622699.5642
+Arduino Time Sent: 6766412
+offset: 1716687816708.7024
+Receive Latency: 39201.24755859375
+Total latency: 39578.86181640625
+
+Current Time: 1716694623182.1587
+Arduino Time Sent: 6766436
+offset: 1716687816708.7024
+Receive Latency: 39619.86181640625
+Total latency: 40037.456298828125
+
+Current Time: 1716694623476.8196
+Arduino Time Sent: 6766445
+offset: 1716687816708.7024
+Receive Latency: 40089.14599609375
+Total latency: 40323.1171875
+
+Current Time: 1716694623732.6816
+Arduino Time Sent: 6766460
+offset: 1716687816708.7024
+Receive Latency: 40368.70849609375
+Total latency: 40563.979248046875
+
+Current Time: 1716694624029.7432
+Arduino Time Sent: 6766476
+offset: 1716687816708.7024
+Receive Latency: 40653.00830078125
+Total latency: 40845.040771484375
+
+Current Time: 1716694624270.77
+Arduino Time Sent: 6766484
+offset: 1716687816708.7024
+Receive Latency: 40886.04638671875
+Total latency: 41078.067626953125
+
+Current Time: 1716694624581.7385
+Arduino Time Sent: 6766492
+offset: 1716687816708.7024
+Receive Latency: 41104.494873046875
+Total latency: 41381.0361328125
+
+Current Time: 1716694624893.1758
+Arduino Time Sent: 6766502
+offset: 1716687816708.7024
+Receive Latency: 41480.06005859375
+Total latency: 41682.473388671875
+
+Current Time: 1716694625234.2688
+Arduino Time Sent: 6766529
+offset: 1716687816708.7024
+Receive Latency: 41766.988525390625
+Total latency: 41996.56640625
+
+Current Time: 1716694625562.3313
+Arduino Time Sent: 6766560
+offset: 1716687816708.7024
+Receive Latency: 42063.087158203125
+Total latency: 42293.62890625
+
+Current Time: 1716694626060.9387
+Arduino Time Sent: 6766568
+offset: 1716687816708.7024
+Receive Latency: 42301.640380859375
+Total latency: 42784.236328125
+
+Current Time: 1716694626492.373
+Arduino Time Sent: 6766593
+offset: 1716687816708.7024
+Receive Latency: 42873.753662109375
+Total latency: 43190.670654296875
+
+Current Time: 1716694626688.4023
+Arduino Time Sent: 6766602
+offset: 1716687816708.7024
+Receive Latency: 43219.671142578125
+Total latency: 43377.699951171875
+
+Current Time: 1716694627258.8782
+Arduino Time Sent: 6766620
+offset: 1716687816708.7024
+Receive Latency: 43435.966064453125
+Total latency: 43930.17578125
+
+Current Time: 1716694627819.297
+Arduino Time Sent: 6766641
+offset: 1716687816708.7024
+Receive Latency: 44095.7216796875
+Total latency: 44469.5947265625
+
+Current Time: 1716694628218.8757
+Arduino Time Sent: 6766650
+offset: 1716687816708.7024
+Receive Latency: 44522.11572265625
+Total latency: 44860.17333984375
+
+Current Time: 1716694628877.817
+Arduino Time Sent: 6766668
+offset: 1716687816708.7024
+Receive Latency: 44956.578857421875
+Total latency: 45501.114501953125
+
+Current Time: 1716694629356.1316
+Arduino Time Sent: 6766683
+offset: 1716687816708.7024
+Receive Latency: 45540.980224609375
+Total latency: 45964.42919921875
+
+Current Time: 1716694629903.6125
+Arduino Time Sent: 6766707
+offset: 1716687816708.7024
+Receive Latency: 46028.996826171875
+Total latency: 46487.91015625
+
+Current Time: 1716694630156.6382
+Arduino Time Sent: 6766731
+offset: 1716687816708.7024
+Receive Latency: 46547.42236328125
+Total latency: 46716.935791015625
+
+Current Time: 1716694630579.681
+Arduino Time Sent: 6766737
+offset: 1716687816708.7024
+Receive Latency: 46804.44970703125
+Total latency: 47133.978515625
+
+Current Time: 1716694631139.3926
+Arduino Time Sent: 6766764
+offset: 1716687816708.7024
+Receive Latency: 47165.15380859375
+Total latency: 47666.690185546875
+
+Current Time: 1716694631555.7964
+Arduino Time Sent: 6766787
+offset: 1716687816708.7024
+Receive Latency: 47697.206298828125
+Total latency: 48060.093994140625
+
+Current Time: 1716694631912.1726
+Arduino Time Sent: 6766793
+offset: 1716687816708.7024
+Receive Latency: 48119.61181640625
+Total latency: 48410.47021484375
+
+Current Time: 1716694632165.2002
+Arduino Time Sent: 6766802
+offset: 1716687816708.7024
+Receive Latency: 48493.985107421875
+Total latency: 48654.497802734375
+
+Current Time: 1716694632765.0923
+Arduino Time Sent: 6766825
+offset: 1716687816708.7024
+Receive Latency: 48739.585205078125
+Total latency: 49231.389892578125
+
+Current Time: 1716694633193.1807
+Arduino Time Sent: 6766832
+offset: 1716687816708.7024
+Receive Latency: 49333.048583984375
+Total latency: 49652.478271484375
+
+Current Time: 1716694633726.0938
+Arduino Time Sent: 6766842
+offset: 1716687816708.7024
+Receive Latency: 49766.82080078125
+Total latency: 50175.391357421875
+
+Current Time: 1716694634007.8213
+Arduino Time Sent: 6766853
+offset: 1716687816708.7024
+Receive Latency: 50256.580810546875
+Total latency: 50446.118896484375
+
+Current Time: 1716694634272.3875
+Arduino Time Sent: 6766870
+offset: 1716687816708.7024
+Receive Latency: 50507.125
+Total latency: 50693.68505859375
+
+Current Time: 1716694634625.8015
+Arduino Time Sent: 6766895
+offset: 1716687816708.7024
+Receive Latency: 50684.750732421875
+Total latency: 51022.09912109375
+
+Current Time: 1716694634837.628
+Arduino Time Sent: 6766900
+offset: 1716687816708.7024
+Receive Latency: 51077.6064453125
+Total latency: 51228.925537109375
+
+Current Time: 1716694635219.7495
+Arduino Time Sent: 6766924
+offset: 1716687816708.7024
+Receive Latency: 51299.950927734375
+Total latency: 51587.047119140625
+
+Current Time: 1716694635753.2134
+Arduino Time Sent: 6766942
+offset: 1716687816708.7024
+Receive Latency: 51703.02978515625
+Total latency: 52102.510986328125
+
+Current Time: 1716694636013.7583
+Arduino Time Sent: 6766968
+offset: 1716687816708.7024
+Receive Latency: 52153.512939453125
+Total latency: 52337.055908203125
+
+Current Time: 1716694636247.79
+Arduino Time Sent: 6766998
+offset: 1716687816708.7024
+Receive Latency: 52359.05615234375
+Total latency: 52541.087646484375
+
+Current Time: 1716694636742.3872
+Arduino Time Sent: 6767004
+offset: 1716687816708.7024
+Receive Latency: 52629.12109375
+Total latency: 53029.684814453125
+
+Current Time: 1716694637012.2896
+Arduino Time Sent: 6767026
+offset: 1716687816708.7024
+Receive Latency: 53095.052978515625
+Total latency: 53277.587158203125
+
+Current Time: 1716694637290.1387
+Arduino Time Sent: 6767052
+offset: 1716687816708.7024
+Receive Latency: 53294.589111328125
+Total latency: 53529.436279296875
+
+Current Time: 1716694637873.9712
+Arduino Time Sent: 6767062
+offset: 1716687816708.7024
+Receive Latency: 53621.987060546875
+Total latency: 54103.268798828125
+
+Current Time: 1716694638202.8496
+Arduino Time Sent: 6767068
+offset: 1716687816708.7024
+Receive Latency: 54198.78271484375
+Total latency: 54426.147216796875
+
+Current Time: 1716694638425.2097
+Arduino Time Sent: 6767082
+offset: 1716687816708.7024
+Receive Latency: 54422.149169921875
+Total latency: 54634.50732421875
+
+Current Time: 1716694638880.8494
+Arduino Time Sent: 6767088
+offset: 1716687816708.7024
+Receive Latency: 54721.045654296875
+Total latency: 55084.14697265625
+
+Current Time: 1716694639392.6553
+Arduino Time Sent: 6767109
+offset: 1716687816708.7024
+Receive Latency: 55134.65478515625
+Total latency: 55574.952880859375
+
+Current Time: 1716694639719.1733
+Arduino Time Sent: 6767112
+offset: 1716687816708.7024
+Receive Latency: 55677.467041015625
+Total latency: 55898.470947265625
+
+Current Time: 1716694639956.5571
+Arduino Time Sent: 6767135
+offset: 1716687816708.7024
+Receive Latency: 55920.4697265625
+Total latency: 56112.854736328125
+
+Current Time: 1716694640459.828
+Arduino Time Sent: 6767142
+offset: 1716687816708.7024
+Receive Latency: 56246.882080078125
+Total latency: 56609.12548828125
+
+Current Time: 1716694640668.8591
+Arduino Time Sent: 6767165
+offset: 1716687816708.7024
+Receive Latency: 56656.6416015625
+Total latency: 56795.15673828125
+
+Current Time: 1716694640897.5957
+Arduino Time Sent: 6767177
+offset: 1716687816708.7024
+Receive Latency: 56904.18408203125
+Total latency: 57011.893310546875
+
+Current Time: 1716694641148.9556
+Arduino Time Sent: 6767195
+offset: 1716687816708.7024
+Receive Latency: 57011.893310546875
+Total latency: 57245.253173828125
+
+Current Time: 1716694641588.1194
+Arduino Time Sent: 6767219
+offset: 1716687816708.7024
+Receive Latency: 57274.767333984375
+Total latency: 57660.4169921875
+
+Current Time: 1716694641874.3484
+Arduino Time Sent: 6767224
+offset: 1716687816708.7024
+Receive Latency: 57728.353271484375
+Total latency: 57941.64599609375
+
+Current Time: 1716694642297.869
+Arduino Time Sent: 6767232
+offset: 1716687816708.7024
+Receive Latency: 57944.645263671875
+Total latency: 58357.16650390625
+
+Current Time: 1716694642496.938
+Arduino Time Sent: 6767240
+offset: 1716687816708.7024
+Receive Latency: 58371.170166015625
+Total latency: 58548.235595703125
+
+Current Time: 1716694643098.623
+Arduino Time Sent: 6767246
+offset: 1716687816708.7024
+Receive Latency: 58633.966796875
+Total latency: 59143.920654296875
+
+Current Time: 1716694643523.961
+Arduino Time Sent: 6767264
+offset: 1716687816708.7024
+Receive Latency: 59213.923583984375
+Total latency: 59551.258544921875
+
+Current Time: 1716694643917.5693
+Arduino Time Sent: 6767273
+offset: 1716687816708.7024
+Receive Latency: 59657.30859375
+Total latency: 59935.866943359375
+
+Current Time: 1716694644462.4194
+Arduino Time Sent: 6767282
+offset: 1716687816708.7024
+Receive Latency: 60009.401611328125
+Total latency: 60471.717041015625
+
+Current Time: 1716694644758.2783
+Arduino Time Sent: 6767289
+offset: 1716687816708.7024
+Receive Latency: 60536.233154296875
+Total latency: 60760.575927734375
+
+Current Time: 1716694645242.677
+Arduino Time Sent: 6767312
+offset: 1716687816708.7024
+Receive Latency: 60836.547607421875
+Total latency: 61221.974609375
+
+Current Time: 1716694645515.1538
+Arduino Time Sent: 6767330
+offset: 1716687816708.7024
+Receive Latency: 61265.556396484375
+Total latency: 61476.451416015625
+
+Current Time: 1716694645966.2493
+Arduino Time Sent: 6767336
+offset: 1716687816708.7024
+Receive Latency: 61547.96923828125
+Total latency: 61921.546875
+
+Current Time: 1716694646432.9043
+Arduino Time Sent: 6767364
+offset: 1716687816708.7024
+Receive Latency: 61981.0634765625
+Total latency: 62360.201904296875
+
+Current Time: 1716694646975.566
+Arduino Time Sent: 6767379
+offset: 1716687816708.7024
+Receive Latency: 62451.680908203125
+Total latency: 62887.863525390625
+
+Current Time: 1716694647211.7188
+Arduino Time Sent: 6767398
+offset: 1716687816708.7024
+Receive Latency: 62923.379638671875
+Total latency: 63105.016357421875
+
+Current Time: 1716694647524.5288
+Arduino Time Sent: 6767429
+offset: 1716687816708.7024
+Receive Latency: 63182.527587890625
+Total latency: 63386.826416015625
+
+Current Time: 1716694647873.622
+Arduino Time Sent: 6767461
+offset: 1716687816708.7024
+Receive Latency: 63443.33984375
+Total latency: 63703.919677734375
+
+Current Time: 1716694648353.9229
+Arduino Time Sent: 6767485
+offset: 1716687816708.7024
+Receive Latency: 63787.10107421875
+Total latency: 64160.220458984375
+
+Current Time: 1716694648718.8696
+Arduino Time Sent: 6767491
+offset: 1716687816708.7024
+Receive Latency: 64272.625
+Total latency: 64519.167236328125
+
+Current Time: 1716694649256.547
+Arduino Time Sent: 6767515
+offset: 1716687816708.7024
+Receive Latency: 64588.6845703125
+Total latency: 65032.8447265625
+
+Current Time: 1716694649757.2483
+Arduino Time Sent: 6767546
+offset: 1716687816708.7024
+Receive Latency: 65092.36572265625
+Total latency: 65502.5458984375
+
+Current Time: 1716694650205.7834
+Arduino Time Sent: 6767566
+offset: 1716687816708.7024
+Receive Latency: 65560.724609375
+Total latency: 65931.0810546875
+
+Current Time: 1716694650586.1777
+Arduino Time Sent: 6767576
+offset: 1716687816708.7024
+Receive Latency: 66057.60571289062
+Total latency: 66301.47534179688
+
+Current Time: 1716694650975.0796
+Arduino Time Sent: 6767582
+offset: 1716687816708.7024
+Receive Latency: 66349.98291015625
+Total latency: 66684.37719726562
+
+Current Time: 1716694651227.1692
+Arduino Time Sent: 6767602
+offset: 1716687816708.7024
+Receive Latency: 66773.8974609375
+Total latency: 66916.466796875
+
+Current Time: 1716694651676.449
+Arduino Time Sent: 6767627
+offset: 1716687816708.7024
+Receive Latency: 66962.98583984375
+Total latency: 67340.74658203125
+
+Current Time: 1716694651972.3132
+Arduino Time Sent: 6767648
+offset: 1716687816708.7024
+Receive Latency: 67381.26416015625
+Total latency: 67615.61083984375
+
+Current Time: 1716694652415.5786
+Arduino Time Sent: 6767656
+offset: 1716687816708.7024
+Receive Latency: 67656.1259765625
+Total latency: 68050.87622070312
+
+Current Time: 1716694652779.3071
+Arduino Time Sent: 6767660
+offset: 1716687816708.7024
+Receive Latency: 68135.57006835938
+Total latency: 68410.60473632812
+
+Current Time: 1716694653021.65
+Arduino Time Sent: 6767678
+offset: 1716687816708.7024
+Receive Latency: 68494.63891601562
+Total latency: 68634.94750976562
+
+Current Time: 1716694653384.7268
+Arduino Time Sent: 6767683
+offset: 1716687816708.7024
+Receive Latency: 68685.94848632812
+Total latency: 68993.0244140625
+
+Current Time: 1716694653862.935
+Arduino Time Sent: 6767698
+offset: 1716687816708.7024
+Receive Latency: 69049.5361328125
+Total latency: 69456.23266601562
+
+Current Time: 1716694654316.9126
+Arduino Time Sent: 6767719
+offset: 1716687816708.7024
+Receive Latency: 69522.75244140625
+Total latency: 69889.21020507812
+
+Current Time: 1716694654621.9724
+Arduino Time Sent: 6767725
+offset: 1716687816708.7024
+Receive Latency: 69969.25756835938
+Total latency: 70188.27001953125
+
+Current Time: 1716694655137.0217
+Arduino Time Sent: 6767731
+offset: 1716687816708.7024
+Receive Latency: 70259.78588867188
+Total latency: 70697.3193359375
+
+Current Time: 1716694655627.0276
+Arduino Time Sent: 6767749
+offset: 1716687816708.7024
+Receive Latency: 70741.837890625
+Total latency: 71169.3251953125
+
+Current Time: 1716694656034.8176
+Arduino Time Sent: 6767755
+offset: 1716687816708.7024
+Receive Latency: 71293.83911132812
+Total latency: 71571.115234375
+
+Current Time: 1716694656521.4265
+Arduino Time Sent: 6767764
+offset: 1716687816708.7024
+Receive Latency: 71651.6318359375
+Total latency: 72048.72412109375
+
+Current Time: 1716694656900.9368
+Arduino Time Sent: 6767788
+offset: 1716687816708.7024
+Receive Latency: 72109.23828125
+Total latency: 72404.234375
+
+Current Time: 1716694657400.6482
+Arduino Time Sent: 6767795
+offset: 1716687816708.7024
+Receive Latency: 72502.30126953125
+Total latency: 72896.94580078125
+
+Current Time: 1716694657637.6667
+Arduino Time Sent: 6767802
+offset: 1716687816708.7024
+Receive Latency: 72977.94995117188
+Total latency: 73126.96435546875
+
+Current Time: 1716694657936.7278
+Arduino Time Sent: 6767820
+offset: 1716687816708.7024
+Receive Latency: 73165.96948242188
+Total latency: 73408.025390625
+
+Current Time: 1716694658301.1687
+Arduino Time Sent: 6767841
+offset: 1716687816708.7024
+Receive Latency: 73441.02856445312
+Total latency: 73751.46630859375
+
+Current Time: 1716694658525.0845
+Arduino Time Sent: 6767847
+offset: 1716687816708.7024
+Receive Latency: 73832.98876953125
+Total latency: 73969.38208007812
+
+Current Time: 1716694658973.7402
+Arduino Time Sent: 6767856
+offset: 1716687816708.7024
+Receive Latency: 73998.380859375
+Total latency: 74409.03784179688
+
+Current Time: 1716694659238.6162
+Arduino Time Sent: 6767879
+offset: 1716687816708.7024
+Receive Latency: 74446.37426757812
+Total latency: 74650.91381835938
+
+Current Time: 1716694659609.2085
+Arduino Time Sent: 6767886
+offset: 1716687816708.7024
+Receive Latency: 74698.92041015625
+Total latency: 75014.50610351562
+
+Current Time: 1716694659988.811
+Arduino Time Sent: 6767888
+offset: 1716687816708.7024
+Receive Latency: 75124.02563476562
+Total latency: 75392.10864257812
+
+Current Time: 1716694660688.2812
+Arduino Time Sent: 6767898
+offset: 1716687816708.7024
+Receive Latency: 75475.87670898438
+Total latency: 76081.57885742188
+
+Current Time: 1716694660915.343
+Arduino Time Sent: 6767925
+offset: 1716687816708.7024
+Receive Latency: 76066.09033203125
+Total latency: 76281.640625
+
+Current Time: 1716694661478.689
+Arduino Time Sent: 6767930
+offset: 1716687816708.7024
+Receive Latency: 76342.64013671875
+Total latency: 76839.98657226562
+
+Current Time: 1716694661679.9768
+Arduino Time Sent: 6767951
+offset: 1716687816708.7024
+Receive Latency: 76874.09130859375
+Total latency: 77020.2744140625
+
+Current Time: 1716694661950.0413
+Arduino Time Sent: 6767961
+offset: 1716687816708.7024
+Receive Latency: 77076.79028320312
+Total latency: 77280.3388671875
+
+Current Time: 1716694662356.2556
+Arduino Time Sent: 6767988
+offset: 1716687816708.7024
+Receive Latency: 77302.85229492188
+Total latency: 77659.55322265625
+
+Current Time: 1716694662818.5278
+Arduino Time Sent: 6768009
+offset: 1716687816708.7024
+Receive Latency: 77661.06201171875
+Total latency: 78100.82543945312
+
+Current Time: 1716694663375.26
+Arduino Time Sent: 6768018
+offset: 1716687816708.7024
+Receive Latency: 78223.85620117188
+Total latency: 78648.5576171875
+
+Current Time: 1716694663969.968
+Arduino Time Sent: 6768035
+offset: 1716687816708.7024
+Receive Latency: 78729.072265625
+Total latency: 79226.265625
+
+Current Time: 1716694664185.7327
+Arduino Time Sent: 6768045
+offset: 1716687816708.7024
+Receive Latency: 79260.7861328125
+Total latency: 79432.0302734375
+
+Current Time: 1716694664707.2407
+Arduino Time Sent: 6768065
+offset: 1716687816708.7024
+Receive Latency: 79525.54833984375
+Total latency: 79933.53833007812
+
+Current Time: 1716694665002.2969
+Arduino Time Sent: 6768074
+offset: 1716687816708.7024
+Receive Latency: 80007.5439453125
+Total latency: 80219.59448242188
+
+Current Time: 1716694665405.128
+Arduino Time Sent: 6768098
+offset: 1716687816708.7024
+Receive Latency: 80271.84033203125
+Total latency: 80598.42553710938
+
+Current Time: 1716694665734.1528
+Arduino Time Sent: 6768122
+offset: 1716687816708.7024
+Receive Latency: 80682.943359375
+Total latency: 80903.45043945312
+
+Current Time: 1716694666310.3499
+Arduino Time Sent: 6768143
+offset: 1716687816708.7024
+Receive Latency: 80936.70043945312
+Total latency: 81458.6474609375
+
+Current Time: 1716694666703.0642
+Arduino Time Sent: 6768149
+offset: 1716687816708.7024
+Receive Latency: 81594.22827148438
+Total latency: 81845.36181640625
+
+Current Time: 1716694667326.4487
+Arduino Time Sent: 6768158
+offset: 1716687816708.7024
+Receive Latency: 81980.88305664062
+Total latency: 82459.74633789062
+
+Current Time: 1716694667638.6194
+Arduino Time Sent: 6768164
+offset: 1716687816708.7024
+Receive Latency: 82523.93115234375
+Total latency: 82765.9169921875
+
+Current Time: 1716694668118.2036
+Arduino Time Sent: 6768188
+offset: 1716687816708.7024
+Receive Latency: 82839.43725585938
+Total latency: 83221.50122070312
+
+Current Time: 1716694668416.1501
+Arduino Time Sent: 6768194
+offset: 1716687816708.7024
+Receive Latency: 83287.501953125
+Total latency: 83513.44775390625
+
+Current Time: 1716694668926.171
+Arduino Time Sent: 6768226
+offset: 1716687816708.7024
+Receive Latency: 83575.29760742188
+Total latency: 83991.46850585938
+
+Current Time: 1716694669261.9678
+Arduino Time Sent: 6768244
+offset: 1716687816708.7024
+Receive Latency: 84083.98510742188
+Total latency: 84309.26538085938
+
+Current Time: 1716694669494.4673
+Arduino Time Sent: 6768263
+offset: 1716687816708.7024
+Receive Latency: 84319.26953125
+Total latency: 84522.76489257812
+
+Current Time: 1716694670075.7373
+Arduino Time Sent: 6768271
+offset: 1716687816708.7024
+Receive Latency: 84612.93505859375
+Total latency: 85096.03491210938
+
+Current Time: 1716694670445.8794
+Arduino Time Sent: 6768295
+offset: 1716687816708.7024
+Receive Latency: 85157.10620117188
+Total latency: 85442.17700195312
+
+Current Time: 1716694671039.5408
+Arduino Time Sent: 6768302
+offset: 1716687816708.7024
+Receive Latency: 85517.69311523438
+Total latency: 86028.83837890625
+
+Current Time: 1716694671162.777
+Arduino Time Sent: 6768322
+offset: 1716687816708.7024
+Receive Latency: 86081.35595703125
+Total latency: 86132.07470703125
+
+Current Time: 1716694671644.0115
+Arduino Time Sent: 6768328
+offset: 1716687816708.7024
+Receive Latency: 86181.69995117188
+Total latency: 86607.30908203125
+
+Current Time: 1716694671934.1404
+Arduino Time Sent: 6768353
+offset: 1716687816708.7024
+Receive Latency: 86663.36791992188
+Total latency: 86872.43798828125
+
+Current Time: 1716694672443.231
+Arduino Time Sent: 6768362
+offset: 1716687816708.7024
+Receive Latency: 86958.91455078125
+Total latency: 87372.52856445312
+
+Current Time: 1716694672786.6418
+Arduino Time Sent: 6768367
+offset: 1716687816708.7024
+Receive Latency: 87422.53466796875
+Total latency: 87710.939453125
+
+Current Time: 1716694673159.939
+Arduino Time Sent: 6768379
+offset: 1716687816708.7024
+Receive Latency: 87800.54150390625
+Total latency: 88072.23657226562
+
+Current Time: 1716694673661.2913
+Arduino Time Sent: 6768404
+offset: 1716687816708.7024
+Receive Latency: 88146.7041015625
+Total latency: 88548.5888671875
+
+Current Time: 1716694673963.2595
+Arduino Time Sent: 6768422
+offset: 1716687816708.7024
+Receive Latency: 88596.11010742188
+Total latency: 88832.55712890625
+
+Current Time: 1716694674463.0332
+Arduino Time Sent: 6768429
+offset: 1716687816708.7024
+Receive Latency: 88868.04077148438
+Total latency: 89325.33081054688
+
+Current Time: 1716694674915.1047
+Arduino Time Sent: 6768452
+offset: 1716687816708.7024
+Receive Latency: 89401.94848632812
+Total latency: 89754.40234375
+
+Current Time: 1716694675417.1157
+Arduino Time Sent: 6768477
+offset: 1716687816708.7024
+Receive Latency: 89760.4033203125
+Total latency: 90231.41333007812
+
+Current Time: 1716694675663.5007
+Arduino Time Sent: 6768485
+offset: 1716687816708.7024
+Receive Latency: 90300.45141601562
+Total latency: 90469.79833984375
+
+Current Time: 1716694675961.8892
+Arduino Time Sent: 6768503
+offset: 1716687816708.7024
+Receive Latency: 90604.87255859375
+Total latency: 90750.18676757812
+
+Current Time: 1716694676527.211
+Arduino Time Sent: 6768512
+offset: 1716687816708.7024
+Receive Latency: 90850.857421875
+Total latency: 91306.50854492188
+
+Current Time: 1716694677017.3904
+Arduino Time Sent: 6768536
+offset: 1716687816708.7024
+Receive Latency: 91411.62426757812
+Total latency: 91772.68798828125
+
+Current Time: 1716694677654.6252
+Arduino Time Sent: 6768542
+offset: 1716687816708.7024
+Receive Latency: 91868.30102539062
+Total latency: 92403.9228515625
+
+Current Time: 1716694678108.345
+Arduino Time Sent: 6768551
+offset: 1716687816708.7024
+Receive Latency: 92478.32788085938
+Total latency: 92848.642578125
+
+Current Time: 1716694678619.2966
+Arduino Time Sent: 6768567
+offset: 1716687816708.7024
+Receive Latency: 92920.8173828125
+Total latency: 93343.59423828125
+
+Current Time: 1716694678941.5645
+Arduino Time Sent: 6768575
+offset: 1716687816708.7024
+Receive Latency: 93460.00512695312
+Total latency: 93657.86206054688
+
+Current Time: 1716694679402.5034
+Arduino Time Sent: 6768602
+offset: 1716687816708.7024
+Receive Latency: 93773.61401367188
+Total latency: 94091.80102539062
+
+Current Time: 1716694679663.8955
+Arduino Time Sent: 6768608
+offset: 1716687816708.7024
+Receive Latency: 94179.41430664062
+Total latency: 94347.19311523438
+
+Current Time: 1716694680126.3015
+Arduino Time Sent: 6768628
+offset: 1716687816708.7024
+Receive Latency: 94419.52856445312
+Total latency: 94789.59912109375
+
+Current Time: 1716694680695.7734
+Arduino Time Sent: 6768647
+offset: 1716687816708.7024
+Receive Latency: 94869.43798828125
+Total latency: 95340.07104492188
+
+Current Time: 1716694681133.3171
+Arduino Time Sent: 6768671
+offset: 1716687816708.7024
+Receive Latency: 95442.33032226562
+Total latency: 95753.61474609375
+
+Current Time: 1716694681403.737
+Arduino Time Sent: 6768679
+offset: 1716687816708.7024
+Receive Latency: 95816.62158203125
+Total latency: 96016.03466796875
+
+Current Time: 1716694681950.5999
+Arduino Time Sent: 6768704
+offset: 1716687816708.7024
+Receive Latency: 96077.54467773438
+Total latency: 96537.8974609375
+
+Current Time: 1716694682203.9927
+Arduino Time Sent: 6768710
+offset: 1716687816708.7024
+Receive Latency: 96559.9111328125
+Total latency: 96785.29028320312
+
+Current Time: 1716694682491.9685
+Arduino Time Sent: 6768721
+offset: 1716687816708.7024
+Receive Latency: 96877.05883789062
+Total latency: 97062.26611328125
+
+Current Time: 1716694683013.4863
+Arduino Time Sent: 6768745
+offset: 1716687816708.7024
+Receive Latency: 97147.79638671875
+Total latency: 97559.78393554688
+
+Current Time: 1716694683393.3723
+Arduino Time Sent: 6768766
+offset: 1716687816708.7024
+Receive Latency: 97618.92138671875
+Total latency: 97918.669921875
+
+Current Time: 1716694683699.6423
+Arduino Time Sent: 6768790
+offset: 1716687816708.7024
+Receive Latency: 97964.37109375
+Total latency: 98200.93994140625
+
+Current Time: 1716694684272.2385
+Arduino Time Sent: 6768808
+offset: 1716687816708.7024
+Receive Latency: 98286.91357421875
+Total latency: 98755.5361328125
+
+Current Time: 1716694684507.0674
+Arduino Time Sent: 6768817
+offset: 1716687816708.7024
+Receive Latency: 98823.05053710938
+Total latency: 98981.36499023438
+
+Current Time: 1716694684959.6492
+Arduino Time Sent: 6768841
+offset: 1716687816708.7024
+Receive Latency: 99033.41723632812
+Total latency: 99409.94677734375
+
+Current Time: 1716694685295.0608
+Arduino Time Sent: 6768848
+offset: 1716687816708.7024
+Receive Latency: 99522.0146484375
+Total latency: 99738.3583984375
+
+Current Time: 1716694685587.9429
+Arduino Time Sent: 6768868
+offset: 1716687816708.7024
+Receive Latency: 99834.21411132812
+Total latency: 100011.24047851562
+
+Current Time: 1716694686135.697
+Arduino Time Sent: 6768873
+offset: 1716687816708.7024
+Receive Latency: 100117.75073242188
+Total latency: 100553.99462890625
+
+Current Time: 1716694686604.0437
+Arduino Time Sent: 6768903
+offset: 1716687816708.7024
+Receive Latency: 100593.48168945312
+Total latency: 100992.34130859375
+
+Current Time: 1716694687193.5393
+Arduino Time Sent: 6768912
+offset: 1716687816708.7024
+Receive Latency: 101061.85620117188
+Total latency: 101572.8369140625
+
+Current Time: 1716694687541.1047
+Arduino Time Sent: 6768939
+offset: 1716687816708.7024
+Receive Latency: 101651.34130859375
+Total latency: 101893.40234375
+
+Current Time: 1716694687936.094
+Arduino Time Sent: 6768948
+offset: 1716687816708.7024
+Receive Latency: 102005.916015625
+Total latency: 102279.3916015625
+
+Current Time: 1716694688213.6694
+Arduino Time Sent: 6768977
+offset: 1716687816708.7024
+Receive Latency: 102274.39453125
+Total latency: 102527.96704101562
+
+Current Time: 1716694688725.7463
+Arduino Time Sent: 6768988
+offset: 1716687816708.7024
+Receive Latency: 102634.45141601562
+Total latency: 103029.0439453125
+
+Current Time: 1716694689195.855
+Arduino Time Sent: 6769005
+offset: 1716687816708.7024
+Receive Latency: 103117.07739257812
+Total latency: 103482.15258789062
+
+Current Time: 1716694689662.1567
+Arduino Time Sent: 6769011
+offset: 1716687816708.7024
+Receive Latency: 103576.19702148438
+Total latency: 103942.45434570312
+
+Current Time: 1716694689997.4612
+Arduino Time Sent: 6769024
+offset: 1716687816708.7024
+Receive Latency: 104013.10131835938
+Total latency: 104264.7587890625
+
+Current Time: 1716694690202.6357
+Arduino Time Sent: 6769055
+offset: 1716687816708.7024
+Receive Latency: 104271.2783203125
+Total latency: 104438.93334960938
+
+Current Time: 1716694690622.5334
+Arduino Time Sent: 6769064
+offset: 1716687816708.7024
+Receive Latency: 104499.56396484375
+Total latency: 104849.8310546875
+
+Current Time: 1716694690891.3015
+Arduino Time Sent: 6769097
+offset: 1716687816708.7024
+Receive Latency: 104952.4609375
+Total latency: 105085.59912109375
+
+Current Time: 1716694691118.579
+Arduino Time Sent: 6769101
+offset: 1716687816708.7024
+Receive Latency: 105120.255859375
+Total latency: 105308.87670898438
+
+Current Time: 1716694691404.1936
+Arduino Time Sent: 6769122
+offset: 1716687816708.7024
+Receive Latency: 105342.4609375
+Total latency: 105573.4912109375
+
+Current Time: 1716694691942.7693
+Arduino Time Sent: 6769132
+offset: 1716687816708.7024
+Receive Latency: 105650.21459960938
+Total latency: 106102.06689453125
+
+Current Time: 1716694692401.941
+Arduino Time Sent: 6769152
+offset: 1716687816708.7024
+Receive Latency: 106143.06713867188
+Total latency: 106541.23852539062
+
+Current Time: 1716694692945.5583
+Arduino Time Sent: 6769164
+offset: 1716687816708.7024
+Receive Latency: 106589.85400390625
+Total latency: 107072.85595703125
+
+Current Time: 1716694693200.15
+Arduino Time Sent: 6769172
+offset: 1716687816708.7024
+Receive Latency: 107154.69653320312
+Total latency: 107319.44750976562
+
+Current Time: 1716694693478.3784
+Arduino Time Sent: 6769190
+offset: 1716687816708.7024
+Receive Latency: 107405.0966796875
+Total latency: 107579.67602539062
+
+Current Time: 1716694693925.3413
+Arduino Time Sent: 6769197
+offset: 1716687816708.7024
+Receive Latency: 107632.3369140625
+Total latency: 108019.63891601562
+
+Current Time: 1716694694413.566
+Arduino Time Sent: 6769227
+offset: 1716687816708.7024
+Receive Latency: 108039.63427734375
+Total latency: 108477.86352539062
+
+Current Time: 1716694694847.136
+Arduino Time Sent: 6769238
+offset: 1716687816708.7024
+Receive Latency: 108520.4775390625
+Total latency: 108900.43359375
+
+Current Time: 1716694695156.4963
+Arduino Time Sent: 6769262
+offset: 1716687816708.7024
+Receive Latency: 109034.74731445312
+Total latency: 109185.7939453125
+
+Current Time: 1716694695672.1343
+Arduino Time Sent: 6769270
+offset: 1716687816708.7024
+Receive Latency: 109253.4423828125
+Total latency: 109693.43188476562
+
+Current Time: 1716694695888.2812
+Arduino Time Sent: 6769277
+offset: 1716687816708.7024
+Receive Latency: 109704.43188476562
+Total latency: 109902.57885742188
+
+Current Time: 1716694696258.0896
+Arduino Time Sent: 6769303
+offset: 1716687816708.7024
+Receive Latency: 110000.28125
+Total latency: 110246.38720703125
+
+Current Time: 1716694696575.9429
+Arduino Time Sent: 6769336
+offset: 1716687816708.7024
+Receive Latency: 110334.03173828125
+Total latency: 110531.24047851562
+
+Current Time: 1716694696783.1226
+Arduino Time Sent: 6769362
+offset: 1716687816708.7024
+Receive Latency: 110611.76416015625
+Total latency: 110712.42016601562
+
+Current Time: 1716694697220.429
+Arduino Time Sent: 6769383
+offset: 1716687816708.7024
+Receive Latency: 110773.25439453125
+Total latency: 111128.7265625
+
+Current Time: 1716694697620.5876
+Arduino Time Sent: 6769413
+offset: 1716687816708.7024
+Receive Latency: 111171.31225585938
+Total latency: 111498.88525390625
+
+Current Time: 1716694698098.175
+Arduino Time Sent: 6769419
+offset: 1716687816708.7024
+Receive Latency: 111558.50634765625
+Total latency: 111970.47265625
+
+Current Time: 1716694698396.2473
+Arduino Time Sent: 6769437
+offset: 1716687816708.7024
+Receive Latency: 112036.09399414062
+Total latency: 112250.544921875
+
+Current Time: 1716694698851.1704
+Arduino Time Sent: 6769443
+offset: 1716687816708.7024
+Receive Latency: 112330.09228515625
+Total latency: 112699.46801757812
+
+Current Time: 1716694699060.229
+Arduino Time Sent: 6769467
+offset: 1716687816708.7024
+Receive Latency: 112696.50561523438
+Total latency: 112884.52661132812
+
+Current Time: 1716694699671.8298
+Arduino Time Sent: 6769501
+offset: 1716687816708.7024
+Receive Latency: 112901.52661132812
+Total latency: 113462.12744140625
+
+Current Time: 1716694700092.9604
+Arduino Time Sent: 6769518
+offset: 1716687816708.7024
+Receive Latency: 113556.64184570312
+Total latency: 113866.25805664062
+
+Current Time: 1716694700363.8943
+Arduino Time Sent: 6769526
+offset: 1716687816708.7024
+Receive Latency: 113996.48461914062
+Total latency: 114129.19189453125
+
+Current Time: 1716694700818.631
+Arduino Time Sent: 6769550
+offset: 1716687816708.7024
+Receive Latency: 114190.10961914062
+Total latency: 114559.9287109375
+
+Current Time: 1716694701389.7502
+Arduino Time Sent: 6769559
+offset: 1716687816708.7024
+Receive Latency: 114628.50927734375
+Total latency: 115122.0478515625
+
+Current Time: 1716694701695.6465
+Arduino Time Sent: 6769567
+offset: 1716687816708.7024
+Receive Latency: 115215.19946289062
+Total latency: 115419.94409179688
+
+Current Time: 1716694702003.66
+Arduino Time Sent: 6769601
+offset: 1716687816708.7024
+Receive Latency: 115457.55688476562
+Total latency: 115693.95751953125
+
+Current Time: 1716694702594.6023
+Arduino Time Sent: 6769619
+offset: 1716687816708.7024
+Receive Latency: 115758.59838867188
+Total latency: 116266.89990234375
+
+Current Time: 1716694702885.1191
+Arduino Time Sent: 6769627
+offset: 1716687816708.7024
+Receive Latency: 116353.62817382812
+Total latency: 116549.41674804688
+
+Current Time: 1716694703365.2195
+Arduino Time Sent: 6769651
+offset: 1716687816708.7024
+Receive Latency: 116635.81030273438
+Total latency: 117005.51708984375
+
+Current Time: 1716694703733.4214
+Arduino Time Sent: 6769657
+offset: 1716687816708.7024
+Receive Latency: 117112.5927734375
+Total latency: 117367.71899414062
+
+Current Time: 1716694704082.0706
+Arduino Time Sent: 6769681
+offset: 1716687816708.7024
+Receive Latency: 117417.30297851562
+Total latency: 117692.3681640625
+
+Current Time: 1716694704481.4895
+Arduino Time Sent: 6769690
+offset: 1716687816708.7024
+Receive Latency: 117780.0244140625
+Total latency: 118082.787109375
+
+Current Time: 1716694704897.1848
+Arduino Time Sent: 6769696
+offset: 1716687816708.7024
+Receive Latency: 118135.4638671875
+Total latency: 118492.482421875
+
+Current Time: 1716694705200.2097
+Arduino Time Sent: 6769719
+offset: 1716687816708.7024
+Receive Latency: 118572.19995117188
+Total latency: 118772.50732421875
+
+Current Time: 1716694705495.4329
+Arduino Time Sent: 6769751
+offset: 1716687816708.7024
+Receive Latency: 118845.12182617188
+Total latency: 119035.73046875
+
+Current Time: 1716694705780.5298
+Arduino Time Sent: 6769779
+offset: 1716687816708.7024
+Receive Latency: 119066.41186523438
+Total latency: 119292.82739257812
+
+Current Time: 1716694706285.3901
+Arduino Time Sent: 6769788
+offset: 1716687816708.7024
+Receive Latency: 119393.27294921875
+Total latency: 119788.68774414062
+
+Current Time: 1716694706523.5215
+Arduino Time Sent: 6769798
+offset: 1716687816708.7024
+Receive Latency: 119897.02124023438
+Total latency: 120016.81909179688
+
+Current Time: 1716694706795.0742
+Arduino Time Sent: 6769806
+offset: 1716687816708.7024
+Receive Latency: 120071.50708007812
+Total latency: 120280.37182617188
+
+Current Time: 1716694707208.302
+Arduino Time Sent: 6769833
+offset: 1716687816708.7024
+Receive Latency: 120264.37524414062
+Total latency: 120666.599609375
+
+Current Time: 1716694707372.6726
+Arduino Time Sent: 6769853
+offset: 1716687816708.7024
+Receive Latency: 120712.31909179688
+Total latency: 120810.97021484375
+
+Current Time: 1716694707829.178
+Arduino Time Sent: 6769871
+offset: 1716687816708.7024
+Receive Latency: 120836.55834960938
+Total latency: 121249.4755859375
+
+Current Time: 1716694708179.759
+Arduino Time Sent: 6769880
+offset: 1716687816708.7024
+Receive Latency: 121415.23120117188
+Total latency: 121591.056640625
+
+Current Time: 1716694708742.8489
+Arduino Time Sent: 6769889
+offset: 1716687816708.7024
+Receive Latency: 121709.7548828125
+Total latency: 122145.146484375
+
+Current Time: 1716694709200.2043
+Arduino Time Sent: 6769916
+offset: 1716687816708.7024
+Receive Latency: 122184.72607421875
+Total latency: 122575.501953125
+
+Current Time: 1716694709552.385
+Arduino Time Sent: 6769918
+offset: 1716687816708.7024
+Receive Latency: 122605.47583007812
+Total latency: 122925.6826171875
+
+Current Time: 1716694709724.419
+Arduino Time Sent: 6769926
+offset: 1716687816708.7024
+Receive Latency: 123022.76049804688
+Total latency: 123089.71655273438
+
+Current Time: 1716694710136.7966
+Arduino Time Sent: 6769931
+offset: 1716687816708.7024
+Receive Latency: 123111.34545898438
+Total latency: 123497.09423828125
+
+Current Time: 1716694710370.2793
+Arduino Time Sent: 6769964
+offset: 1716687816708.7024
+Receive Latency: 123540.2470703125
+Total latency: 123697.57690429688
+
+Current Time: 1716694710776.372
+Arduino Time Sent: 6769988
+offset: 1716687816708.7024
+Receive Latency: 123707.16357421875
+Total latency: 124079.66967773438
+
+Current Time: 1716694710998.994
+Arduino Time Sent: 6770014
+offset: 1716687816708.7024
+Receive Latency: 124143.30053710938
+Total latency: 124276.29150390625
+
+Current Time: 1716694711189.3054
+Arduino Time Sent: 6770023
+offset: 1716687816708.7024
+Receive Latency: 124294.32495117188
+Total latency: 124457.60302734375
+
+Current Time: 1716694711508.0046
+Arduino Time Sent: 6770028
+offset: 1716687816708.7024
+Receive Latency: 124539.2197265625
+Total latency: 124771.30224609375
+
+Current Time: 1716694711840.0522
+Arduino Time Sent: 6770053
+offset: 1716687816708.7024
+Receive Latency: 124784.34130859375
+Total latency: 125078.34985351562
+
+Current Time: 1716694712283.5156
+Arduino Time Sent: 6770077
+offset: 1716687816708.7024
+Receive Latency: 125114.5
+Total latency: 125497.81323242188
+
+Current Time: 1716694712691.3884
+Arduino Time Sent: 6770103
+offset: 1716687816708.7024
+Receive Latency: 125597.43310546875
+Total latency: 125879.68603515625
+
+Current Time: 1716694713132.979
+Arduino Time Sent: 6770109
+offset: 1716687816708.7024
+Receive Latency: 125996.25634765625
+Total latency: 126315.27661132812
+
+Current Time: 1716694713325.2554
+Arduino Time Sent: 6770129
+offset: 1716687816708.7024
+Receive Latency: 126383.92407226562
+Total latency: 126487.55297851562
+
+Current Time: 1716694713856.4287
+Arduino Time Sent: 6770139
+offset: 1716687816708.7024
+Receive Latency: 126574.87963867188
+Total latency: 127008.72631835938
+
+Current Time: 1716694714275.0842
+Arduino Time Sent: 6770148
+offset: 1716687816708.7024
+Receive Latency: 127081.365234375
+Total latency: 127418.3818359375
+
+Current Time: 1716694714457.962
+Arduino Time Sent: 6770156
+offset: 1716687816708.7024
+Receive Latency: 127454.37963867188
+Total latency: 127593.25952148438
+
+Current Time: 1716694714789.5396
+Arduino Time Sent: 6770163
+offset: 1716687816708.7024
+Receive Latency: 127667.55859375
+Total latency: 127917.83715820312
+
+Current Time: 1716694715144.9373
+Arduino Time Sent: 6770186
+offset: 1716687816708.7024
+Receive Latency: 128050.97729492188
+Total latency: 128250.23486328125
+
+Current Time: 1716694715275.2131
+Arduino Time Sent: 6770201
+offset: 1716687816708.7024
+Receive Latency: 128246.83764648438
+Total latency: 128365.5107421875
+
+Current Time: 1716694715577.7441
+Arduino Time Sent: 6770229
+offset: 1716687816708.7024
+Receive Latency: 128433.4580078125
+Total latency: 128640.04174804688
+
+Current Time: 1716694715854.5933
+Arduino Time Sent: 6770238
+offset: 1716687816708.7024
+Receive Latency: 128713.59765625
+Total latency: 128907.89086914062
+
+Current Time: 1716694716316.5337
+Arduino Time Sent: 6770255
+offset: 1716687816708.7024
+Receive Latency: 128994.73608398438
+Total latency: 129352.83129882812
+
+Current Time: 1716694716761.8145
+Arduino Time Sent: 6770266
+offset: 1716687816708.7024
+Receive Latency: 129451.26586914062
+Total latency: 129787.11206054688
+
+Current Time: 1716694717484.8752
+Arduino Time Sent: 6770300
+offset: 1716687816708.7024
+Receive Latency: 129864.7841796875
+Total latency: 130476.1728515625
+
+Current Time: 1716694717752.3403
+Arduino Time Sent: 6770322
+offset: 1716687816708.7024
+Receive Latency: 130507.76733398438
+Total latency: 130721.63793945312
+
+Current Time: 1716694718169.913
+Arduino Time Sent: 6770327
+offset: 1716687816708.7024
+Receive Latency: 130782.2919921875
+Total latency: 131134.21069335938
+
+Current Time: 1716694718454.845
+Arduino Time Sent: 6770349
+offset: 1716687816708.7024
+Receive Latency: 131186.17944335938
+Total latency: 131397.142578125
+
+Current Time: 1716694718726.6824
+Arduino Time Sent: 6770378
+offset: 1716687816708.7024
+Receive Latency: 131426.71899414062
+Total latency: 131639.97998046875
+
+Current Time: 1716694719170.596
+Arduino Time Sent: 6770386
+offset: 1716687816708.7024
+Receive Latency: 131728.6826171875
+Total latency: 132075.8935546875
+
+Current Time: 1716694719558.8215
+Arduino Time Sent: 6770396
+offset: 1716687816708.7024
+Receive Latency: 132133.83740234375
+Total latency: 132454.119140625
+
+Current Time: 1716694719781.7314
+Arduino Time Sent: 6770422
+offset: 1716687816708.7024
+Receive Latency: 132470.64697265625
+Total latency: 132651.02905273438
+
+Current Time: 1716694720254.974
+Arduino Time Sent: 6770432
+offset: 1716687816708.7024
+Receive Latency: 132708.02490234375
+Total latency: 133114.27172851562
+
+Current Time: 1716694720466.9229
+Arduino Time Sent: 6770452
+offset: 1716687816708.7024
+Receive Latency: 133183.861328125
+Total latency: 133306.22045898438
+
+Current Time: 1716694720857.154
+Arduino Time Sent: 6770459
+offset: 1716687816708.7024
+Receive Latency: 133372.80786132812
+Total latency: 133689.45166015625
+
+Current Time: 1716694721310.9001
+Arduino Time Sent: 6770476
+offset: 1716687816708.7024
+Receive Latency: 133748.74682617188
+Total latency: 134126.19775390625
+
+Current Time: 1716694721918.2527
+Arduino Time Sent: 6770481
+offset: 1716687816708.7024
+Receive Latency: 134237.79077148438
+Total latency: 134728.55029296875
+
+Current Time: 1716694722076.3462
+Arduino Time Sent: 6770499
+offset: 1716687816708.7024
+Receive Latency: 134742.60913085938
+Total latency: 134868.64379882812
+
+Current Time: 1716694722582.9814
+Arduino Time Sent: 6770509
+offset: 1716687816708.7024
+Receive Latency: 134996.38500976562
+Total latency: 135365.27905273438
+
+Current Time: 1716694722958.3262
+Arduino Time Sent: 6770514
+offset: 1716687816708.7024
+Receive Latency: 135381.90258789062
+Total latency: 135735.62377929688
+
+Current Time: 1716694723250.0437
+Arduino Time Sent: 6770523
+offset: 1716687816708.7024
+Receive Latency: 135765.4912109375
+Total latency: 136018.34130859375
+
+Current Time: 1716694723756.7947
+Arduino Time Sent: 6770547
+offset: 1716687816708.7024
+Receive Latency: 136084.91918945312
+Total latency: 136501.09228515625
+
+Current Time: 1716694724182.1147
+Arduino Time Sent: 6770549
+offset: 1716687816708.7024
+Receive Latency: 136580.74877929688
+Total latency: 136924.41235351562
+
+Current Time: 1716694724445.7317
+Arduino Time Sent: 6770555
+offset: 1716687816708.7024
+Receive Latency: 137012.72021484375
+Total latency: 137182.029296875
+
+Current Time: 1716694724810.6433
+Arduino Time Sent: 6770579
+offset: 1716687816708.7024
+Receive Latency: 137235.70532226562
+Total latency: 137522.94091796875
+
+Current Time: 1716694725027.0264
+Arduino Time Sent: 6770585
+offset: 1716687816708.7024
+Receive Latency: 137560.94140625
+Total latency: 137733.32397460938
+
+Current Time: 1716694725482.9187
+Arduino Time Sent: 6770607
+offset: 1716687816708.7024
+Receive Latency: 137755.30981445312
+Total latency: 138167.21630859375
+
+Current Time: 1716694725721.8625
+Arduino Time Sent: 6770615
+offset: 1716687816708.7024
+Receive Latency: 138232.21630859375
+Total latency: 138398.16015625
+
+Current Time: 1716694726086.0825
+Arduino Time Sent: 6770642
+offset: 1716687816708.7024
+Receive Latency: 138382.16552734375
+Total latency: 138735.38012695312
+
+Current Time: 1716694726395.7266
+Arduino Time Sent: 6770655
+offset: 1716687816708.7024
+Receive Latency: 138788.59228515625
+Total latency: 139032.02416992188
+
+Current Time: 1716694726886.7332
+Arduino Time Sent: 6770669
+offset: 1716687816708.7024
+Receive Latency: 139110.73974609375
+Total latency: 139509.03076171875
+
+Current Time: 1716694727441.4602
+Arduino Time Sent: 6770672
+offset: 1716687816708.7024
+Receive Latency: 139608.240234375
+Total latency: 140060.7578125
+
+Current Time: 1716694727944.334
+Arduino Time Sent: 6770702
+offset: 1716687816708.7024
+Receive Latency: 140129.3798828125
+Total latency: 140533.63159179688
+
+Current Time: 1716694728204.8362
+Arduino Time Sent: 6770705
+offset: 1716687816708.7024
+Receive Latency: 140641.91381835938
+Total latency: 140791.1337890625
+
+Current Time: 1716694728492.7456
+Arduino Time Sent: 6770735
+offset: 1716687816708.7024
+Receive Latency: 140848.82861328125
+Total latency: 141049.04321289062
+
+Current Time: 1716694728923.1914
+Arduino Time Sent: 6770741
+offset: 1716687816708.7024
+Receive Latency: 141147.685546875
+Total latency: 141473.48901367188
+
+Current Time: 1716694729498.8015
+Arduino Time Sent: 6770755
+offset: 1716687816708.7024
+Receive Latency: 141541.12670898438
+Total latency: 142035.09912109375
+
+Current Time: 1716694729840.0483
+Arduino Time Sent: 6770761
+offset: 1716687816708.7024
+Receive Latency: 142101.62670898438
+Total latency: 142370.34594726562
+
+Current Time: 1716694730274.3909
+Arduino Time Sent: 6770770
+offset: 1716687816708.7024
+Receive Latency: 142442.16625976562
+Total latency: 142795.6884765625
+
+Current Time: 1716694730598.2004
+Arduino Time Sent: 6770814
+offset: 1716687816708.7024
+Receive Latency: 142886.58056640625
+Total latency: 143075.498046875
+
+Current Time: 1716694730911.9248
+Arduino Time Sent: 6770824
+offset: 1716687816708.7024
+Receive Latency: 143114.53784179688
+Total latency: 143379.22241210938
+
+Current Time: 1716694731301.9985
+Arduino Time Sent: 6770838
+offset: 1716687816708.7024
+Receive Latency: 143386.27905273438
+Total latency: 143755.29614257812
+
+Current Time: 1716694731477.3364
+Arduino Time Sent: 6770844
+offset: 1716687816708.7024
+Receive Latency: 143771.36791992188
+Total latency: 143924.63403320312
+
+Current Time: 1716694731783.129
+Arduino Time Sent: 6770863
+offset: 1716687816708.7024
+Receive Latency: 143971.21337890625
+Total latency: 144211.42651367188
+
+Current Time: 1716694732254.665
+Arduino Time Sent: 6770886
+offset: 1716687816708.7024
+Receive Latency: 144242.11547851562
+Total latency: 144659.96264648438
+
+Current Time: 1716694732477.5251
+Arduino Time Sent: 6770892
+offset: 1716687816708.7024
+Receive Latency: 144687.00439453125
+Total latency: 144876.82275390625
+
+Current Time: 1716694732957.56
+Arduino Time Sent: 6770912
+offset: 1716687816708.7024
+Receive Latency: 144944.46875
+Total latency: 145336.85766601562
+
+Current Time: 1716694733389.0034
+Arduino Time Sent: 6770917
+offset: 1716687816708.7024
+Receive Latency: 145442.41943359375
+Total latency: 145763.30102539062
+
+Current Time: 1716694733586.8706
+Arduino Time Sent: 6770922
+offset: 1716687816708.7024
+Receive Latency: 145846.60766601562
+Total latency: 145956.16821289062
+
+Current Time: 1716694733820.3733
+Arduino Time Sent: 6770931
+offset: 1716687816708.7024
+Receive Latency: 145975.77270507812
+Total latency: 146180.6708984375
+
+Current Time: 1716694734094.5862
+Arduino Time Sent: 6770950
+offset: 1716687816708.7024
+Receive Latency: 146267.26342773438
+Total latency: 146435.8837890625
+
+Current Time: 1716694734294.7632
+Arduino Time Sent: 6770976
+offset: 1716687816708.7024
+Receive Latency: 146480.43334960938
+Total latency: 146610.06079101562
+
+Current Time: 1716694734745.4846
+Arduino Time Sent: 6770995
+offset: 1716687816708.7024
+Receive Latency: 146692.64770507812
+Total latency: 147041.7822265625
+
+Current Time: 1716694735167.2883
+Arduino Time Sent: 6771037
+offset: 1716687816708.7024
+Receive Latency: 147082.298828125
+Total latency: 147421.5859375
+
+Current Time: 1716694735416.5679
+Arduino Time Sent: 6771045
+offset: 1716687816708.7024
+Receive Latency: 147452.15551757812
+Total latency: 147662.86547851562
+
+Current Time: 1716694735707.5903
+Arduino Time Sent: 6771068
+offset: 1716687816708.7024
+Receive Latency: 147718.87426757812
+Total latency: 147930.88793945312
+
+Current Time: 1716694735921.635
+Arduino Time Sent: 6771078
+offset: 1716687816708.7024
+Receive Latency: 147948.88793945312
+Total latency: 148134.9326171875
+
+Current Time: 1716694736367.5562
+Arduino Time Sent: 6771084
+offset: 1716687816708.7024
+Receive Latency: 148232.44409179688
+Total latency: 148574.85375976562
+
+Current Time: 1716694736765.0857
+Arduino Time Sent: 6771101
+offset: 1716687816708.7024
+Receive Latency: 148592.37036132812
+Total latency: 148955.38330078125
+
+Current Time: 1716694736979.6619
+Arduino Time Sent: 6771122
+offset: 1716687816708.7024
+Receive Latency: 149020.439453125
+Total latency: 149148.95947265625
+
+Current Time: 1716694737331.2502
+Arduino Time Sent: 6771130
+offset: 1716687816708.7024
+Receive Latency: 149223.48291015625
+Total latency: 149492.5478515625
+
+Current Time: 1716694737670.86
+Arduino Time Sent: 6771147
+offset: 1716687816708.7024
+Receive Latency: 149568.5791015625
+Total latency: 149815.15771484375
+
+Current Time: 1716694738267.9385
+Arduino Time Sent: 6771154
+offset: 1716687816708.7024
+Receive Latency: 149887.26196289062
+Total latency: 150405.23608398438
+
+Current Time: 1716694738477.0986
+Arduino Time Sent: 6771166
+offset: 1716687816708.7024
+Receive Latency: 150447.75732421875
+Total latency: 150602.39624023438
+
+Current Time: 1716694738717.664
+Arduino Time Sent: 6771183
+offset: 1716687816708.7024
+Receive Latency: 150664.91918945312
+Total latency: 150825.96166992188
+
+Current Time: 1716694739277.6436
+Arduino Time Sent: 6771207
+offset: 1716687816708.7024
+Receive Latency: 150862.94921875
+Total latency: 151361.94116210938
+
+Current Time: 1716694739782.624
+Arduino Time Sent: 6771216
+offset: 1716687816708.7024
+Receive Latency: 151459.73608398438
+Total latency: 151857.92163085938
+
+Current Time: 1716694740260.7449
+Arduino Time Sent: 6771233
+offset: 1716687816708.7024
+Receive Latency: 151928.43798828125
+Total latency: 152319.04248046875
+
+Current Time: 1716694740483.9192
+Arduino Time Sent: 6771255
+offset: 1716687816708.7024
+Receive Latency: 152384.56591796875
+Total latency: 152520.216796875
+
+Current Time: 1716694740685.9644
+Arduino Time Sent: 6771267
+offset: 1716687816708.7024
+Receive Latency: 152550.74145507812
+Total latency: 152710.26196289062
+
+Current Time: 1716694741245.9248
+Arduino Time Sent: 6771289
+offset: 1716687816708.7024
+Receive Latency: 152780.0322265625
+Total latency: 153248.22241210938
+
+Current Time: 1716694741552.6436
+Arduino Time Sent: 6771311
+offset: 1716687816708.7024
+Receive Latency: 153336.89990234375
+Total latency: 153532.94116210938
+
+Current Time: 1716694741847.132
+Arduino Time Sent: 6771318
+offset: 1716687816708.7024
+Receive Latency: 153568.94921875
+Total latency: 153820.4296875
+
+Current Time: 1716694742282.3657
+Arduino Time Sent: 6771335
+offset: 1716687816708.7024
+Receive Latency: 153853.439453125
+Total latency: 154238.66333007812
+
+Current Time: 1716694742797.0479
+Arduino Time Sent: 6771340
+offset: 1716687816708.7024
+Receive Latency: 154318.26635742188
+Total latency: 154748.34545898438
+
+Current Time: 1716694743019.1396
+Arduino Time Sent: 6771359
+offset: 1716687816708.7024
+Receive Latency: 154772.85791015625
+Total latency: 154951.43725585938
+
+Current Time: 1716694743584.5093
+Arduino Time Sent: 6771362
+offset: 1716687816708.7024
+Receive Latency: 155052.9580078125
+Total latency: 155513.80688476562
+
+Current Time: 1716694744001.5354
+Arduino Time Sent: 6771383
+offset: 1716687816708.7024
+Receive Latency: 155557.3271484375
+Total latency: 155909.8330078125
+
+Current Time: 1716694744257.0872
+Arduino Time Sent: 6771404
+offset: 1716687816708.7024
+Receive Latency: 155988.3525390625
+Total latency: 156144.384765625
+
+Current Time: 1716694744733.8691
+Arduino Time Sent: 6771426
+offset: 1716687816708.7024
+Receive Latency: 156199.00830078125
+Total latency: 156599.16674804688
+
+Current Time: 1716694745217.3367
+Arduino Time Sent: 6771451
+offset: 1716687816708.7024
+Receive Latency: 156679.02856445312
+Total latency: 157057.63427734375
+
+Current Time: 1716694745568.5696
+Arduino Time Sent: 6771479
+offset: 1716687816708.7024
+Receive Latency: 157085.63403320312
+Total latency: 157380.8671875
+
+Current Time: 1716694745847.469
+Arduino Time Sent: 6771486
+offset: 1716687816708.7024
+Receive Latency: 157463.39038085938
+Total latency: 157652.7666015625
+
+Current Time: 1716694746405.4612
+Arduino Time Sent: 6771493
+offset: 1716687816708.7024
+Receive Latency: 157739.791015625
+Total latency: 158203.7587890625
+
+Current Time: 1716694746808.699
+Arduino Time Sent: 6771512
+offset: 1716687816708.7024
+Receive Latency: 158262.76538085938
+Total latency: 158587.99658203125
+
+Current Time: 1716694747415.3396
+Arduino Time Sent: 6771535
+offset: 1716687816708.7024
+Receive Latency: 158702.03271484375
+Total latency: 159171.63720703125
+
+Current Time: 1716694747785.434
+Arduino Time Sent: 6771544
+offset: 1716687816708.7024
+Receive Latency: 159307.16040039062
+Total latency: 159532.73168945312
+
+Current Time: 1716694748215.0269
+Arduino Time Sent: 6771559
+offset: 1716687816708.7024
+Receive Latency: 159604.45825195312
+Total latency: 159947.32446289062
+
+Current Time: 1716694748711.7476
+Arduino Time Sent: 6771565
+offset: 1716687816708.7024
+Receive Latency: 160046.42993164062
+Total latency: 160438.04516601562
+
+Current Time: 1716694749136.5103
+Arduino Time Sent: 6771577
+offset: 1716687816708.7024
+Receive Latency: 160601.63696289062
+Total latency: 160850.80786132812
+
+Current Time: 1716694749487.9238
+Arduino Time Sent: 6771595
+offset: 1716687816708.7024
+Receive Latency: 160947.28881835938
+Total latency: 161184.22143554688
+
+Current Time: 1716694749837.0146
+Arduino Time Sent: 6771601
+offset: 1716687816708.7024
+Receive Latency: 161259.74340820312
+Total latency: 161527.31225585938
+
+Current Time: 1716694750101.5647
+Arduino Time Sent: 6771607
+offset: 1716687816708.7024
+Receive Latency: 161569.3125
+Total latency: 161785.8623046875
+
+Current Time: 1716694750690.3228
+Arduino Time Sent: 6771628
+offset: 1716687816708.7024
+Receive Latency: 161908.89770507812
+Total latency: 162353.62036132812
+
+Current Time: 1716694750891.1511
+Arduino Time Sent: 6771637
+offset: 1716687816708.7024
+Receive Latency: 162400.14379882812
+Total latency: 162545.44873046875
+
+Current Time: 1716694751278.2842
+Arduino Time Sent: 6771655
+offset: 1716687816708.7024
+Receive Latency: 162628.01318359375
+Total latency: 162914.58178710938
+
+Current Time: 1716694751575.6147
+Arduino Time Sent: 6771673
+offset: 1716687816708.7024
+Receive Latency: 162958.82543945312
+Total latency: 163193.91235351562
+
+Current Time: 1716694751982.7952
+Arduino Time Sent: 6771676
+offset: 1716687816708.7024
+Receive Latency: 163250.50634765625
+Total latency: 163598.0927734375
+
+Current Time: 1716694752441.4336
+Arduino Time Sent: 6771685
+offset: 1716687816708.7024
+Receive Latency: 163627.61376953125
+Total latency: 164047.73120117188
+
+Current Time: 1716694752749.9927
+Arduino Time Sent: 6771693
+offset: 1716687816708.7024
+Receive Latency: 164115.25122070312
+Total latency: 164348.29028320312
+
+Current Time: 1716694753258.7769
+Arduino Time Sent: 6771700
+offset: 1716687816708.7024
+Receive Latency: 164369.29028320312
+Total latency: 164850.07446289062
+
+Current Time: 1716694753850.0042
+Arduino Time Sent: 6772195
+offset: 1716687816708.7024
+Receive Latency: 164377.076171875
+Total latency: 164946.3017578125
+
+Current Time: 1716694754037.7754
+Arduino Time Sent: 6772749
+offset: 1716687816708.7024
+Receive Latency: 164436.53051757812
+Total latency: 164580.07299804688
+
+Current Time: 1716694754577.1055
+Arduino Time Sent: 6773089
+offset: 1716687816708.7024
+Receive Latency: 164329.59252929688
+Total latency: 164779.40307617188
+
+Current Time: 1716694754874.4841
+Arduino Time Sent: 6773606
+offset: 1716687816708.7024
+Receive Latency: 164320.61743164062
+Total latency: 164559.78173828125
+
+Current Time: 1716694755067.039
+Arduino Time Sent: 6773843
+offset: 1716687816708.7024
+Receive Latency: 164333.78149414062
+Total latency: 164515.33666992188
+
+Current Time: 1716694755468.2551
+Arduino Time Sent: 6774259
+offset: 1716687816708.7024
+Receive Latency: 164203.85424804688
+Total latency: 164500.552734375
+
+Current Time: 1716694755930.3074
+Arduino Time Sent: 6774940
+offset: 1716687816708.7024
+Receive Latency: 163879.07543945312
+Total latency: 164281.60498046875
+
+Current Time: 1716694756114.8748
+Arduino Time Sent: 6775009
+offset: 1716687816708.7024
+Receive Latency: 164252.60693359375
+Total latency: 164397.17236328125
+
+Current Time: 1716694756434.3965
+Arduino Time Sent: 6775162
+offset: 1716687816708.7024
+Receive Latency: 164261.17163085938
+Total latency: 164563.69409179688
+
+Current Time: 1716694756963.8418
+Arduino Time Sent: 6775427
+offset: 1716687816708.7024
+Receive Latency: 164388.22485351562
+Total latency: 164828.13940429688
+
+Current Time: 1716694757378.8157
+Arduino Time Sent: 6776593
+offset: 1716687816708.7024
+Receive Latency: 163706.14501953125
+Total latency: 164077.11328125
+
+Current Time: 1716694757824.2964
+Arduino Time Sent: 6776693
+offset: 1716687816708.7024
+Receive Latency: 164089.51220703125
+Total latency: 164422.59399414062
+
+Current Time: 1716694758059.6836
+Arduino Time Sent: 6776839
+offset: 1716687816708.7024
+Receive Latency: 164333.59375
+Total latency: 164511.98120117188
+
+Current Time: 1716694758378.7722
+Arduino Time Sent: 6777268
+offset: 1716687816708.7024
+Receive Latency: 164181.0322265625
+Total latency: 164402.06982421875
+
+Current Time: 1716694758821.5718
+Arduino Time Sent: 6778027
+offset: 1716687816708.7024
+Receive Latency: 163715.24926757812
+Total latency: 164085.86938476562
+
+Current Time: 1716694759162.2627
+Arduino Time Sent: 6778663
+offset: 1716687816708.7024
+Receive Latency: 163565.9765625
+Total latency: 163790.56030273438
+
+Current Time: 1716694759720.0251
+Arduino Time Sent: 6778775
+offset: 1716687816708.7024
+Receive Latency: 163813.08520507812
+Total latency: 164236.32275390625
+
+Current Time: 1716694760331.6914
+Arduino Time Sent: 6778944
+offset: 1716687816708.7024
+Receive Latency: 164202.8076171875
+Total latency: 164678.98901367188
+
+Current Time: 1716694760636.1958
+Arduino Time Sent: 6779400
+offset: 1716687816708.7024
+Receive Latency: 164266.98974609375
+Total latency: 164527.49340820312
+
+Current Time: 1716694761008.607
+Arduino Time Sent: 6779540
+offset: 1716687816708.7024
+Receive Latency: 164487.01049804688
+Total latency: 164759.90454101562
+
+Current Time: 1716694761440.999
+Arduino Time Sent: 6779921
+offset: 1716687816708.7024
+Receive Latency: 164477.97631835938
+Total latency: 164811.29663085938
+
+Current Time: 1716694761960.1646
+Arduino Time Sent: 6780758
+offset: 1716687816708.7024
+Receive Latency: 164124.34643554688
+Total latency: 164493.46215820312
+
+Current Time: 1716694762396.9934
+Arduino Time Sent: 6781000
+offset: 1716687816708.7024
+Receive Latency: 164301.46630859375
+Total latency: 164688.291015625
+
+Current Time: 1716694762742.2007
+Arduino Time Sent: 6781246
+offset: 1716687816708.7024
+Receive Latency: 164489.93334960938
+Total latency: 164787.49829101562
+
+Current Time: 1716694762958.2769
+Arduino Time Sent: 6781793
+offset: 1716687816708.7024
+Receive Latency: 164346.55102539062
+Total latency: 164456.57446289062
+
+Current Time: 1716694763327.3691
+Arduino Time Sent: 6782377
+offset: 1716687816708.7024
+Receive Latency: 163917.58203125
+Total latency: 164241.66674804688
+
+Current Time: 1716694763640.441
+Arduino Time Sent: 6782460
+offset: 1716687816708.7024
+Receive Latency: 164237.67431640625
+Total latency: 164471.73852539062
+
+Current Time: 1716694763874.426
+Arduino Time Sent: 6783045
+offset: 1716687816708.7024
+Receive Latency: 163897.73657226562
+Total latency: 164120.7236328125
+
+Current Time: 1716694764269.4802
+Arduino Time Sent: 6783574
+offset: 1716687816708.7024
+Receive Latency: 163695.22485351562
+Total latency: 163986.77783203125
+
+Current Time: 1716694764695.5347
+Arduino Time Sent: 6784209
+offset: 1716687816708.7024
+Receive Latency: 163429.29614257812
+Total latency: 163777.83227539062
+
+Current Time: 1716694764907.1106
+Arduino Time Sent: 6784576
+offset: 1716687816708.7024
+Receive Latency: 163448.87939453125
+Total latency: 163622.408203125
+
+Current Time: 1716694765471.0554
+Arduino Time Sent: 6784992
+offset: 1716687816708.7024
+Receive Latency: 163321.26098632812
+Total latency: 163770.35302734375
+
+Current Time: 1716694765979.5115
+Arduino Time Sent: 6785097
+offset: 1716687816708.7024
+Receive Latency: 163805.88061523438
+Total latency: 164173.80908203125
+
+Current Time: 1716694766545.7083
+Arduino Time Sent: 6785523
+offset: 1716687816708.7024
+Receive Latency: 163841.32934570312
+Total latency: 164314.005859375
+
+Current Time: 1716694766711.1223
+Arduino Time Sent: 6785784
+offset: 1716687816708.7024
+Receive Latency: 164125.4150390625
+Total latency: 164218.419921875
+
+Current Time: 1716694767107.737
+Arduino Time Sent: 6786069
+offset: 1716687816708.7024
+Receive Latency: 163944.9296875
+Total latency: 164330.03466796875
+
+Current Time: 1716694767569.6653
+Arduino Time Sent: 6786405
+offset: 1716687816708.7024
+Receive Latency: 164065.54638671875
+Total latency: 164455.962890625
+
+Current Time: 1716694767832.7559
+Arduino Time Sent: 6786670
+offset: 1716687816708.7024
+Receive Latency: 164267.48754882812
+Total latency: 164454.05346679688
+
+Current Time: 1716694768441.0747
+Arduino Time Sent: 6786801
+offset: 1716687816708.7024
+Receive Latency: 164465.6494140625
+Total latency: 164931.37231445312
+
+Current Time: 1716694768734.5908
+Arduino Time Sent: 6787205
+offset: 1716687816708.7024
+Receive Latency: 164594.33715820312
+Total latency: 164820.88842773438
+
+Current Time: 1716694768978.1394
+Arduino Time Sent: 6787299
+offset: 1716687816708.7024
+Receive Latency: 164742.88916015625
+Total latency: 164970.43701171875
+
+Current Time: 1716694769467.7402
+Arduino Time Sent: 6787751
+offset: 1716687816708.7024
+Receive Latency: 164566.44482421875
+Total latency: 165008.03784179688
+
+Current Time: 1716694769991.4197
+Arduino Time Sent: 6787954
+offset: 1716687816708.7024
+Receive Latency: 164860.17626953125
+Total latency: 165328.71728515625
+
+Current Time: 1716694770435.5151
+Arduino Time Sent: 6788480
+offset: 1716687816708.7024
+Receive Latency: 164973.20166015625
+Total latency: 165246.81274414062
+
+Current Time: 1716694770810.4292
+Arduino Time Sent: 6788847
+offset: 1716687816708.7024
+Receive Latency: 164998.6083984375
+Total latency: 165254.72680664062
+
+Current Time: 1716694771313.555
+Arduino Time Sent: 6789629
+offset: 1716687816708.7024
+Receive Latency: 164591.26171875
+Total latency: 164975.8525390625
+
+Current Time: 1716694771798.1113
+Arduino Time Sent: 6790046
+offset: 1716687816708.7024
+Receive Latency: 164683.39892578125
+Total latency: 165043.40893554688
+
+Current Time: 1716694772118.1936
+Arduino Time Sent: 6790278
+offset: 1716687816708.7024
+Receive Latency: 164858.93139648438
+Total latency: 165131.4912109375
+
+Current Time: 1716694772526.414
+Arduino Time Sent: 6790959
+offset: 1716687816708.7024
+Receive Latency: 164567.01147460938
+Total latency: 164858.71166992188
+
+Current Time: 1716694772916.4834
+Arduino Time Sent: 6791587
+offset: 1716687816708.7024
+Receive Latency: 164303.70971679688
+Total latency: 164620.78100585938
+
+Current Time: 1716694773443.916
+Arduino Time Sent: 6791802
+offset: 1716687816708.7024
+Receive Latency: 164514.9765625
+Total latency: 164933.21362304688
+
+Current Time: 1716694773838.975
+Arduino Time Sent: 6792322
+offset: 1716687816708.7024
+Receive Latency: 164512.70556640625
+Total latency: 164808.27270507812
+
+Current Time: 1716694774432.6526
+Arduino Time Sent: 6792511
+offset: 1716687816708.7024
+Receive Latency: 164736.29833984375
+Total latency: 165212.9501953125
+
+Current Time: 1716694774833.8638
+Arduino Time Sent: 6792759
+offset: 1716687816708.7024
+Receive Latency: 164997.94873046875
+Total latency: 165366.16137695312
+
+Current Time: 1716694775301.4443
+Arduino Time Sent: 6793061
+offset: 1716687816708.7024
+Receive Latency: 165160.72094726562
+Total latency: 165531.74194335938
+
+Current Time: 1716694775632.6414
+Arduino Time Sent: 6793552
+offset: 1716687816708.7024
+Receive Latency: 165062.263671875
+Total latency: 165371.93896484375
+
+Current Time: 1716694775873.216
+Arduino Time Sent: 6793751
+offset: 1716687816708.7024
+Receive Latency: 165249.94140625
+Total latency: 165413.513671875
+
+Current Time: 1716694776196.1602
+Arduino Time Sent: 6793973
+offset: 1716687816708.7024
+Receive Latency: 165213.513671875
+Total latency: 165514.45776367188
+
+Current Time: 1716694776697.8057
+Arduino Time Sent: 6794437
+offset: 1716687816708.7024
+Receive Latency: 165090.51342773438
+Total latency: 165552.10327148438
+
+Current Time: 1716694777235.036
+Arduino Time Sent: 6795441
+offset: 1716687816708.7024
+Receive Latency: 164695.7314453125
+Total latency: 165085.33349609375
+
+Current Time: 1716694777574.4714
+Arduino Time Sent: 6795572
+offset: 1716687816708.7024
+Receive Latency: 165031.34008789062
+Total latency: 165293.76904296875
+
+Current Time: 1716694777778.5112
+Arduino Time Sent: 6795898
+offset: 1716687816708.7024
+Receive Latency: 165004.78930664062
+Total latency: 165171.80883789062
+
+Current Time: 1716694778174.384
+Arduino Time Sent: 6796041
+offset: 1716687816708.7024
+Receive Latency: 165113.33837890625
+Total latency: 165424.681640625
+
+Current Time: 1716694778827.685
+Arduino Time Sent: 6796593
+offset: 1716687816708.7024
+Receive Latency: 164993.20361328125
+Total latency: 165525.98266601562
+
+Current Time: 1716694778939.8127
+Arduino Time Sent: 6796854
+offset: 1716687816708.7024
+Receive Latency: 165285.98486328125
+Total latency: 165377.1103515625
+
+Current Time: 1716694779202.7095
+Arduino Time Sent: 6797766
+offset: 1716687816708.7024
+Receive Latency: 164521.11499023438
+Total latency: 164728.00708007812
+
+Current Time: 1716694779660.7158
+Arduino Time Sent: 6798236
+offset: 1716687816708.7024
+Receive Latency: 164340.52490234375
+Total latency: 164716.01342773438
+
+Current Time: 1716694779964.2766
+Arduino Time Sent: 6798461
+offset: 1716687816708.7024
+Receive Latency: 164543.02124023438
+Total latency: 164794.57421875
+
+Current Time: 1716694780257.2654
+Arduino Time Sent: 6799038
+offset: 1716687816708.7024
+Receive Latency: 164301.10327148438
+Total latency: 164510.56298828125
+
+Current Time: 1716694780753.433
+Arduino Time Sent: 6799574
+offset: 1716687816708.7024
+Receive Latency: 164007.56323242188
+Total latency: 164470.73071289062
+
+Current Time: 1716694781348.678
+Arduino Time Sent: 6799916
+offset: 1716687816708.7024
+Receive Latency: 164260.25
+Total latency: 164723.9755859375
+
+Current Time: 1716694781547.244
+Arduino Time Sent: 6800346
+offset: 1716687816708.7024
+Receive Latency: 164338.97290039062
+Total latency: 164492.54150390625
+
+Current Time: 1716694782049.113
+Arduino Time Sent: 6800596
+offset: 1716687816708.7024
+Receive Latency: 164331.76025390625
+Total latency: 164744.41064453125
+
+Current Time: 1716694782276.8828
+Arduino Time Sent: 6800629
+offset: 1716687816708.7024
+Receive Latency: 164787.662109375
+Total latency: 164939.18041992188
+
+Current Time: 1716694782649.8748
+Arduino Time Sent: 6801352
+offset: 1716687816708.7024
+Receive Latency: 164361.29956054688
+Total latency: 164589.17236328125
+
+Current Time: 1716694782919.9236
+Arduino Time Sent: 6801536
+offset: 1716687816708.7024
+Receive Latency: 164488.69213867188
+Total latency: 164675.22119140625
+
+Current Time: 1716694783514.7104
+Arduino Time Sent: 6801781
+offset: 1716687816708.7024
+Receive Latency: 164473.25048828125
+Total latency: 165025.00805664062
+
+Current Time: 1716694783978.9832
+Arduino Time Sent: 6802063
+offset: 1716687816708.7024
+Receive Latency: 164814.51831054688
+Total latency: 165207.28076171875
+
+Current Time: 1716694784403.313
+Arduino Time Sent: 6802597
+offset: 1716687816708.7024
+Receive Latency: 164746.80541992188
+Total latency: 165097.61059570312
+
+Current Time: 1716694784796.4172
+Arduino Time Sent: 6802834
+offset: 1716687816708.7024
+Receive Latency: 164909.64868164062
+Total latency: 165253.71484375
+
+Current Time: 1716694785163.996
+Arduino Time Sent: 6803651
+offset: 1716687816708.7024
+Receive Latency: 164481.24072265625
+Total latency: 164804.29370117188
+
+Current Time: 1716694785330.038
+Arduino Time Sent: 6804219
+offset: 1716687816708.7024
+Receive Latency: 164270.2939453125
+Total latency: 164402.33569335938
+
+Current Time: 1716694785528.142
+Arduino Time Sent: 6804929
+offset: 1716687816708.7024
+Receive Latency: 163780.89697265625
+Total latency: 163890.43969726562
+
+Current Time: 1716694785729.4607
+Arduino Time Sent: 6805047
+offset: 1716687816708.7024
+Receive Latency: 163844.44067382812
+Total latency: 163973.75830078125
+
+Current Time: 1716694786346.5051
+Arduino Time Sent: 6805451
+offset: 1716687816708.7024
+Receive Latency: 163666.2861328125
+Total latency: 164186.802734375
+
+Current Time: 1716694786656.385
+Arduino Time Sent: 6806057
+offset: 1716687816708.7024
+Receive Latency: 163657.80688476562
+Total latency: 163890.6826171875
+
+Current Time: 1716694787025.6064
+Arduino Time Sent: 6806333
+offset: 1716687816708.7024
+Receive Latency: 163726.20581054688
+Total latency: 163983.90405273438
+
+Current Time: 1716694787436.8933
+Arduino Time Sent: 6806953
+offset: 1716687816708.7024
+Receive Latency: 163458.90966796875
+Total latency: 163775.19091796875
+
+Current Time: 1716694787589.4148
+Arduino Time Sent: 6807608
+offset: 1716687816708.7024
+Receive Latency: 163170.19018554688
+Total latency: 163272.71240234375
+
+Current Time: 1716694788013.275
+Arduino Time Sent: 6807794
+offset: 1716687816708.7024
+Receive Latency: 163109.72143554688
+Total latency: 163510.57250976562
+
+Current Time: 1716694788259.6582
+Arduino Time Sent: 6808666
+offset: 1716687816708.7024
+Receive Latency: 162694.60986328125
+Total latency: 162884.95581054688
+
+Current Time: 1716694788434.0972
+Arduino Time Sent: 6809342
+offset: 1716687816708.7024
+Receive Latency: 162274.47680664062
+Total latency: 162383.39477539062
+
+Current Time: 1716694788652.725
+Arduino Time Sent: 6809682
+offset: 1716687816708.7024
+Receive Latency: 162111.396484375
+Total latency: 162262.02270507812
+
+Current Time: 1716694788977.7896
+Arduino Time Sent: 6809769
+offset: 1716687816708.7024
+Receive Latency: 162262.53979492188
+Total latency: 162500.08715820312
+
+Current Time: 1716694789135.3904
+Arduino Time Sent: 6810463
+offset: 1716687816708.7024
+Receive Latency: 161881.16625976562
+Total latency: 161963.68798828125
+
+Current Time: 1716694789496.278
+Arduino Time Sent: 6810728
+offset: 1716687816708.7024
+Receive Latency: 161853.95532226562
+Total latency: 162059.57568359375
+
+Current Time: 1716694789786.041
+Arduino Time Sent: 6811067
+offset: 1716687816708.7024
+Receive Latency: 161821.53295898438
+Total latency: 162010.33862304688
+
+Current Time: 1716694790401.6794
+Arduino Time Sent: 6811422
+offset: 1716687816708.7024
+Receive Latency: 161799.87939453125
+Total latency: 162270.97705078125
+
+Current Time: 1716694790651.7632
+Arduino Time Sent: 6811516
+offset: 1716687816708.7024
+Receive Latency: 162219.00927734375
+Total latency: 162427.06079101562
+
+Current Time: 1716694791113.0452
+Arduino Time Sent: 6812080
+offset: 1716687816708.7024
+Receive Latency: 161917.74145507812
+Total latency: 162324.3427734375
+
+Current Time: 1716694791318.2786
+Arduino Time Sent: 6812358
+offset: 1716687816708.7024
+Receive Latency: 162075.64233398438
+Total latency: 162251.576171875
+
+Current Time: 1716694791782.637
+Arduino Time Sent: 6812743
+offset: 1716687816708.7024
+Receive Latency: 161944.091796875
+Total latency: 162330.9345703125
+
+Current Time: 1716694792148.429
+Arduino Time Sent: 6813230
+offset: 1716687816708.7024
+Receive Latency: 161893.45458984375
+Total latency: 162209.7265625
+
+Current Time: 1716694792342.642
+Arduino Time Sent: 6813637
+offset: 1716687816708.7024
+Receive Latency: 161808.72241210938
+Total latency: 161996.93969726562
+
+Current Time: 1716694792610.2085
+Arduino Time Sent: 6813881
+offset: 1716687816708.7024
+Receive Latency: 161785.93994140625
+Total latency: 162020.50610351562
+
+Current Time: 1716694792962.497
+Arduino Time Sent: 6813906
+offset: 1716687816708.7024
+Receive Latency: 162044.75415039062
+Total latency: 162347.79467773438
+
+Current Time: 1716694793392.4644
+Arduino Time Sent: 6814072
+offset: 1716687816708.7024
+Receive Latency: 162270.31860351562
+Total latency: 162611.76196289062
+
+Current Time: 1716694793811.3716
+Arduino Time Sent: 6814504
+offset: 1716687816708.7024
+Receive Latency: 162257.81787109375
+Total latency: 162598.66918945312
+
+Current Time: 1716694793960.167
+Arduino Time Sent: 6815306
+offset: 1716687816708.7024
+Receive Latency: 161851.82153320312
+Total latency: 161945.46459960938
+
+Current Time: 1716694794234.575
+Arduino Time Sent: 6815848
+offset: 1716687816708.7024
+Receive Latency: 161497.9990234375
+Total latency: 161677.87255859375
+
+Current Time: 1716694794453.3167
+Arduino Time Sent: 6816068
+offset: 1716687816708.7024
+Receive Latency: 161512.82348632812
+Total latency: 161676.6142578125
+
+Current Time: 1716694794652.5662
+Arduino Time Sent: 6816329
+offset: 1716687816708.7024
+Receive Latency: 161508.25146484375
+Total latency: 161614.86376953125
+
+Current Time: 1716694794957.7893
+Arduino Time Sent: 6816881
+offset: 1716687816708.7024
+Receive Latency: 161123.67895507812
+Total latency: 161368.0869140625
+
+Current Time: 1716694795555.456
+Arduino Time Sent: 6816964
+offset: 1716687816708.7024
+Receive Latency: 161420.73608398438
+Total latency: 161882.75366210938
+
+Current Time: 1716694795951.6423
+Arduino Time Sent: 6817289
+offset: 1716687816708.7024
+Receive Latency: 161596.83276367188
+Total latency: 161953.93994140625
+
+Current Time: 1716694796120.4905
+Arduino Time Sent: 6817979
+offset: 1716687816708.7024
+Receive Latency: 161339.17236328125
+Total latency: 161432.7880859375
+
+Current Time: 1716694796633.71
+Arduino Time Sent: 6818359
+offset: 1716687816708.7024
+Receive Latency: 161162.46875
+Total latency: 161566.00756835938
+
+Current Time: 1716694796861.9785
+Arduino Time Sent: 6818530
+offset: 1716687816708.7024
+Receive Latency: 161477.00512695312
+Total latency: 161623.27612304688
+
+Current Time: 1716694797138.3455
+Arduino Time Sent: 6819117
+offset: 1716687816708.7024
+Receive Latency: 161099.31811523438
+Total latency: 161312.64306640625
+
+Current Time: 1716694797547.988
+Arduino Time Sent: 6820049
+offset: 1716687816708.7024
+Receive Latency: 160424.62524414062
+Total latency: 160790.28564453125
+
+Current Time: 1716694797977.5662
+Arduino Time Sent: 6820119
+offset: 1716687816708.7024
+Receive Latency: 160797.41479492188
+Total latency: 161149.86376953125
+
+Current Time: 1716694798623.9895
+Arduino Time Sent: 6821208
+offset: 1716687816708.7024
+Receive Latency: 160202.55834960938
+Total latency: 160707.287109375
+
+Current Time: 1716694799127.645
+Arduino Time Sent: 6821356
+offset: 1716687816708.7024
+Receive Latency: 160671.294921875
+Total latency: 161062.94262695312
+
+Current Time: 1716694799445.5933
+Arduino Time Sent: 6821974
+offset: 1716687816708.7024
+Receive Latency: 160568.98803710938
+Total latency: 160762.89086914062
+
+Current Time: 1716694799869.7085
+Arduino Time Sent: 6822152
+offset: 1716687816708.7024
+Receive Latency: 160639.92260742188
+Total latency: 161009.00610351562
+
+Current Time: 1716694800069.3113
+Arduino Time Sent: 6822682
+offset: 1716687816708.7024
+Receive Latency: 160507.52880859375
+Total latency: 160678.60888671875
+
+Current Time: 1716694800379.8555
+Arduino Time Sent: 6823525
+offset: 1716687816708.7024
+Receive Latency: 159911.24194335938
+Total latency: 160146.15307617188
+
+Current Time: 1716694800748.801
+Arduino Time Sent: 6823790
+offset: 1716687816708.7024
+Receive Latency: 159962.42016601562
+Total latency: 160250.0986328125
+
+Current Time: 1716694801128.3123
+Arduino Time Sent: 6824518
+offset: 1716687816708.7024
+Receive Latency: 159614.73095703125
+Total latency: 159901.60986328125
+
+Current Time: 1716694801453.4695
+Arduino Time Sent: 6824902
+offset: 1716687816708.7024
+Receive Latency: 159623.29760742188
+Total latency: 159842.76708984375
+
+Current Time: 1716694801883.9744
+Arduino Time Sent: 6824973
+offset: 1716687816708.7024
+Receive Latency: 159821.74438476562
+Total latency: 160202.27197265625
+
+Current Time: 1716694802375.1147
+Arduino Time Sent: 6825262
+offset: 1716687816708.7024
+Receive Latency: 160062.89916992188
+Total latency: 160404.41235351562
+
+Current Time: 1716694802918.073
+Arduino Time Sent: 6825489
+offset: 1716687816708.7024
+Receive Latency: 160253.68286132812
+Total latency: 160720.37060546875
+
+Current Time: 1716694803169.6985
+Arduino Time Sent: 6826293
+offset: 1716687816708.7024
+Receive Latency: 159976.6640625
+Total latency: 160167.99609375
+
+Current Time: 1716694803650.5247
+Arduino Time Sent: 6826475
+offset: 1716687816708.7024
+Receive Latency: 160147.23803710938
+Total latency: 160466.822265625
+
+Current Time: 1716694803873.4575
+Arduino Time Sent: 6826777
+offset: 1716687816708.7024
+Receive Latency: 160225.822265625
+Total latency: 160387.75512695312
+
+Current Time: 1716694804171.6482
+Arduino Time Sent: 6826883
+offset: 1716687816708.7024
+Receive Latency: 160363.67602539062
+Total latency: 160579.94580078125
+
+Current Time: 1716694804630.521
+Arduino Time Sent: 6826954
+offset: 1716687816708.7024
+Receive Latency: 160597.66284179688
+Total latency: 160967.81860351562
+
+Current Time: 1716694804990.3813
+Arduino Time Sent: 6827727
+offset: 1716687816708.7024
+Receive Latency: 160295.6845703125
+Total latency: 160554.67895507812
+
+Current Time: 1716694805263.7375
+Arduino Time Sent: 6827904
+offset: 1716687816708.7024
+Receive Latency: 160444.29956054688
+Total latency: 160651.03515625
+
+Current Time: 1716694805475.7246
+Arduino Time Sent: 6828281
+offset: 1716687816708.7024
+Receive Latency: 160350.2421875
+Total latency: 160486.02221679688
+
+Current Time: 1716694805691.1157
+Arduino Time Sent: 6828549
+offset: 1716687816708.7024
+Receive Latency: 160262.02221679688
+Total latency: 160433.41333007812
+
+Current Time: 1716694806010.7974
+Arduino Time Sent: 6828674
+offset: 1716687816708.7024
+Receive Latency: 160367.95043945312
+Total latency: 160628.09497070312
+
+Current Time: 1716694806360.2424
+Arduino Time Sent: 6828880
+offset: 1716687816708.7024
+Receive Latency: 160511.70727539062
+Total latency: 160771.5400390625
+
+Current Time: 1716694806841.9731
+Arduino Time Sent: 6829180
+offset: 1716687816708.7024
+Receive Latency: 160550.275390625
+Total latency: 160953.27075195312
+
+Current Time: 1716694807041.2698
+Arduino Time Sent: 6829285
+offset: 1716687816708.7024
+Receive Latency: 160954.046875
+Total latency: 161047.5673828125
+
+Current Time: 1716694807365.0378
+Arduino Time Sent: 6829753
+offset: 1716687816708.7024
+Receive Latency: 160679.21508789062
+Total latency: 160903.33544921875
+
+Current Time: 1716694807687.2095
+Arduino Time Sent: 6829809
+offset: 1716687816708.7024
+Receive Latency: 160916.38208007812
+Total latency: 161169.50708007812
+
+Current Time: 1716694807897.0125
+Arduino Time Sent: 6830522
+offset: 1716687816708.7024
+Receive Latency: 160474.50708007812
+Total latency: 160666.31005859375
+
+Current Time: 1716694808439.4385
+Arduino Time Sent: 6830787
+offset: 1716687816708.7024
+Receive Latency: 160510.6865234375
+Total latency: 160943.73608398438
+
+Current Time: 1716694808979.977
+Arduino Time Sent: 6831506
+offset: 1716687816708.7024
+Receive Latency: 160314.39428710938
+Total latency: 160765.27465820312
+
+Current Time: 1716694809497.7778
+Arduino Time Sent: 6831626
+offset: 1716687816708.7024
+Receive Latency: 160820.8896484375
+Total latency: 161163.07543945312
+
+Current Time: 1716694809934.6675
+Arduino Time Sent: 6831691
+offset: 1716687816708.7024
+Receive Latency: 161142.15380859375
+Total latency: 161534.96508789062
+
+Current Time: 1716694810366.5764
+Arduino Time Sent: 6832074
+offset: 1716687816708.7024
+Receive Latency: 161213.19799804688
+Total latency: 161583.8740234375
+
+Current Time: 1716694810630.4536
+Arduino Time Sent: 6832437
+offset: 1716687816708.7024
+Receive Latency: 161242.8349609375
+Total latency: 161484.75122070312
+
+Current Time: 1716694811001.4836
+Arduino Time Sent: 6832765
+offset: 1716687816708.7024
+Receive Latency: 161272.42163085938
+Total latency: 161527.78125
+
+Current Time: 1716694811303.4092
+Arduino Time Sent: 6833164
+offset: 1716687816708.7024
+Receive Latency: 161199.51489257812
+Total latency: 161430.70678710938
+
+Current Time: 1716694811707.882
+Arduino Time Sent: 6833456
+offset: 1716687816708.7024
+Receive Latency: 161287.15551757812
+Total latency: 161543.1796875
+
+Current Time: 1716694812191.856
+Arduino Time Sent: 6833514
+offset: 1716687816708.7024
+Receive Latency: 161563.86059570312
+Total latency: 161969.15356445312
+
+Current Time: 1716694812655.2837
+Arduino Time Sent: 6833725
+offset: 1716687816708.7024
+Receive Latency: 161845.77783203125
+Total latency: 162221.58129882812
+
+Current Time: 1716694812906.6848
+Arduino Time Sent: 6833912
+offset: 1716687816708.7024
+Receive Latency: 162079.20166015625
+Total latency: 162285.982421875
+
+Current Time: 1716694813099.5466
+Arduino Time Sent: 6834156
+offset: 1716687816708.7024
+Receive Latency: 162123.216796875
+Total latency: 162234.84423828125
+
+Current Time: 1716694813399.5962
+Arduino Time Sent: 6834503
+offset: 1716687816708.7024
+Receive Latency: 161998.4697265625
+Total latency: 162187.89379882812
+
+Current Time: 1716694813984.026
+Arduino Time Sent: 6835007
+offset: 1716687816708.7024
+Receive Latency: 161776.18505859375
+Total latency: 162268.32348632812
+
+Current Time: 1716694814472.2598
+Arduino Time Sent: 6835088
+offset: 1716687816708.7024
+Receive Latency: 162249.30712890625
+Total latency: 162675.55737304688
+
+Current Time: 1716694814840.7297
+Arduino Time Sent: 6835849
+offset: 1716687816708.7024
+Receive Latency: 161983.4736328125
+Total latency: 162283.02734375
+
+Current Time: 1716694815067.6633
+Arduino Time Sent: 6836143
+offset: 1716687816708.7024
+Receive Latency: 162038.16064453125
+Total latency: 162215.9609375
+
+Current Time: 1716694815702.375
+Arduino Time Sent: 6836395
+offset: 1716687816708.7024
+Receive Latency: 162095.77416992188
+Total latency: 162598.67260742188
+
+Current Time: 1716694815880.0037
+Arduino Time Sent: 6836755
+offset: 1716687816708.7024
+Receive Latency: 162264.67749023438
+Total latency: 162416.30126953125
+
+Current Time: 1716694816039.3645
+Arduino Time Sent: 6837166
+offset: 1716687816708.7024
+Receive Latency: 162065.46801757812
+Total latency: 162164.662109375
+
+Current Time: 1716694816400.894
+Arduino Time Sent: 6838488
+offset: 1716687816708.7024
+Receive Latency: 160864.72998046875
+Total latency: 161204.19165039062
+
+Current Time: 1716694816676.3853
+Arduino Time Sent: 6839316
+offset: 1716687816708.7024
+Receive Latency: 160485.4443359375
+Total latency: 160651.68286132812
+
+Current Time: 1716694816917.3333
+Arduino Time Sent: 6839552
+offset: 1716687816708.7024
+Receive Latency: 160471.67895507812
+Total latency: 160656.630859375
+
+Current Time: 1716694817342.7734
+Arduino Time Sent: 6840058
+offset: 1716687816708.7024
+Receive Latency: 160189.25805664062
+Total latency: 160576.07104492188
+
+Current Time: 1716694817739.6833
+Arduino Time Sent: 6840244
+offset: 1716687816708.7024
+Receive Latency: 160439.26123046875
+Total latency: 160786.98095703125
+
+Current Time: 1716694818004.5178
+Arduino Time Sent: 6840548
+offset: 1716687816708.7024
+Receive Latency: 160516.05444335938
+Total latency: 160747.8154296875
+
+Current Time: 1716694818302.4507
+Arduino Time Sent: 6840668
+offset: 1716687816708.7024
+Receive Latency: 160751.48950195312
+Total latency: 160925.74829101562
+
+Current Time: 1716694818588.85
+Arduino Time Sent: 6840951
+offset: 1716687816708.7024
+Receive Latency: 160787.81787109375
+Total latency: 160929.14770507812
+
+Current Time: 1716694819278.567
+Arduino Time Sent: 6841279
+offset: 1716687816708.7024
+Receive Latency: 160744.81420898438
+Total latency: 161290.86450195312
+
+Current Time: 1716694819717.6636
+Arduino Time Sent: 6842027
+offset: 1716687816708.7024
+Receive Latency: 160553.86547851562
+Total latency: 160981.96118164062
+
+Current Time: 1716694819970.6204
+Arduino Time Sent: 6842459
+offset: 1716687816708.7024
+Receive Latency: 160583.9580078125
+Total latency: 160802.91796875
+
+Current Time: 1716694820397.7053
+Arduino Time Sent: 6843004
+offset: 1716687816708.7024
+Receive Latency: 160312.54272460938
+Total latency: 160685.0029296875
+
+Current Time: 1716694820639.28
+Arduino Time Sent: 6843275
+offset: 1716687816708.7024
+Receive Latency: 160477.35327148438
+Total latency: 160655.57763671875
+
+Current Time: 1716694820829.5378
+Arduino Time Sent: 6843780
+offset: 1716687816708.7024
+Receive Latency: 160195.205078125
+Total latency: 160340.83544921875
+
+Current Time: 1716694821032.6904
+Arduino Time Sent: 6843911
+offset: 1716687816708.7024
+Receive Latency: 160280.46118164062
+Total latency: 160412.98803710938
+
+Current Time: 1716694821572.4453
+Arduino Time Sent: 6844190
+offset: 1716687816708.7024
+Receive Latency: 160242.681640625
+Total latency: 160673.74291992188
+
+Current Time: 1716694821881.8716
+Arduino Time Sent: 6844734
+offset: 1716687816708.7024
+Receive Latency: 160175.33764648438
+Total latency: 160439.16918945312
+
+Current Time: 1716694822198.1638
+Arduino Time Sent: 6845247
+offset: 1716687816708.7024
+Receive Latency: 159937.17919921875
+Total latency: 160242.46142578125
+
+Current Time: 1716694822695.1501
+Arduino Time Sent: 6845368
+offset: 1716687816708.7024
+Receive Latency: 160161.458984375
+Total latency: 160618.44775390625
+
+Current Time: 1716694822896.3193
+Arduino Time Sent: 6845558
+offset: 1716687816708.7024
+Receive Latency: 160515.93627929688
+Total latency: 160629.61694335938
+
+Current Time: 1716694823247.503
+Arduino Time Sent: 6845615
+offset: 1716687816708.7024
+Receive Latency: 160596.61328125
+Total latency: 160923.80053710938
+
+Current Time: 1716694823637.9727
+Arduino Time Sent: 6845919
+offset: 1716687816708.7024
+Receive Latency: 160684.53125
+Total latency: 161010.27026367188
+
+Current Time: 1716694824223.1375
+Arduino Time Sent: 6846138
+offset: 1716687816708.7024
+Receive Latency: 160885.54272460938
+Total latency: 161376.43505859375
+
+Current Time: 1716694824685.4272
+Arduino Time Sent: 6846693
+offset: 1716687816708.7024
+Receive Latency: 160884.10302734375
+Total latency: 161283.72485351562
+
+Current Time: 1716694825063.5789
+Arduino Time Sent: 6846742
+offset: 1716687816708.7024
+Receive Latency: 161332.8779296875
+Total latency: 161612.87646484375
+
+Current Time: 1716694825283.1853
+Arduino Time Sent: 6847091
+offset: 1716687816708.7024
+Receive Latency: 161285.826171875
+Total latency: 161483.48291015625
+
+Current Time: 1716694825794.742
+Arduino Time Sent: 6847182
+offset: 1716687816708.7024
+Receive Latency: 161505.75390625
+Total latency: 161904.03955078125
+
+Current Time: 1716694826139.322
+Arduino Time Sent: 6847477
+offset: 1716687816708.7024
+Receive Latency: 161663.53271484375
+Total latency: 161953.61962890625
+
+Current Time: 1716694826479.636
+Arduino Time Sent: 6847991
+offset: 1716687816708.7024
+Receive Latency: 161534.36157226562
+Total latency: 161779.93359375
+
+Current Time: 1716694826814.4768
+Arduino Time Sent: 6848817
+offset: 1716687816708.7024
+Receive Latency: 161042.509765625
+Total latency: 161288.7744140625
+
+Current Time: 1716694827220.2998
+Arduino Time Sent: 6849434
+offset: 1716687816708.7024
+Receive Latency: 160732.81958007812
+Total latency: 161077.59741210938
+
+Current Time: 1716694827447.3926
+Arduino Time Sent: 6850087
+offset: 1716687816708.7024
+Receive Latency: 160468.59375
+Total latency: 160651.69018554688
+
+Current Time: 1716694827632.843
+Arduino Time Sent: 6850618
+offset: 1716687816708.7024
+Receive Latency: 160186.39868164062
+Total latency: 160306.140625
+
+Current Time: 1716694828095.343
+Arduino Time Sent: 6850877
+offset: 1716687816708.7024
+Receive Latency: 160120.77294921875
+Total latency: 160509.640625
+
+Current Time: 1716694828579.8247
+Arduino Time Sent: 6851283
+offset: 1716687816708.7024
+Receive Latency: 160142.6357421875
+Total latency: 160588.12231445312
+
+Current Time: 1716694828863.3887
+Arduino Time Sent: 6851414
+offset: 1716687816708.7024
+Receive Latency: 160570.13159179688
+Total latency: 160740.68627929688
+
+Current Time: 1716694829093.4292
+Arduino Time Sent: 6851535
+offset: 1716687816708.7024
+Receive Latency: 160636.115234375
+Total latency: 160849.72680664062
+
+Current Time: 1716694829489.2793
+Arduino Time Sent: 6852096
+offset: 1716687816708.7024
+Receive Latency: 160344.70532226562
+Total latency: 160684.57690429688
+
