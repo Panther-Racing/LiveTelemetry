@@ -1,6 +1,7 @@
 import asyncio
 import websockets
 import json
+import time
 
 connected_clients = set()
 
@@ -19,9 +20,10 @@ async def handler(websocket, path):
 
 async def send_updates():
     while True:
-        data = json.dumps({'timestamp': asyncio.get_event_loop().time()})
-        await asyncio.wait([ws.send(data) for ws in connected_clients])
-        await asyncio.sleep(1)
+        if connected_clients:  # Only send updates if there are connected clients
+            data = json.dumps({'timestamp': time.time()})
+            await asyncio.gather(*[ws.send(data) for ws in connected_clients])
+        await asyncio.sleep(1)  # Adjust the interval as needed for your use case
 
 start_server = websockets.serve(handler, "localhost", 8080)
 
