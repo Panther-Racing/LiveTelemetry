@@ -30,6 +30,9 @@ def begin(translated_data, terminate_event):
 
     asyncio.get_event_loop().run_until_complete(start_server)
 
+    print('Started Websocket')
+
     while not terminate_event.isSet():
-        if translated_data.qsize() > 0:
-            send_updates(translated_data.get())
+        send_updates({'Timestamp': 1})
+        # if translated_data.qsize() > 0:
+        #     send_updates(translated_data.get())
