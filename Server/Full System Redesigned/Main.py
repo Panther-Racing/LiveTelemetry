@@ -6,6 +6,7 @@ import sys
 import Receive_Data
 import CAN_Translate
 import Send_SQL
+import Send_Direct
 
 # Create queues to hold raw incoming data and translated data
 raw_data = queue.Queue(maxsize=48)
@@ -23,13 +24,14 @@ print('Creating threads')
 receive_data_thread = threading.Thread(target=Receive_Data.Receive_Data, args=(raw_data, terminate_event))
 translate_thread = threading.Thread(target=CAN_Translate.CAN_Translate, args=(raw_data, translated_data, terminate_event))
 sql_thread = threading.Thread(target=Send_SQL.Send_SQL, args=(translated_data, terminate_event))
+websocket_thread = threading.Thread(target=Send_Direct.begin, args=(translated_data, terminate_event))
 # node_red_thread = threading.Thread(target=node_red_process)
 receive_data_thread.start()
 time.sleep(.1)
 translate_thread.start()
 time.sleep(.1)
-sql_thread.start()
-time.sleep(.1)
+# sql_thread.start()
+# time.sleep(.1)
 
 # Continue running unless there is a keyboard interrupt
 try:

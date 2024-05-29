@@ -18,15 +18,18 @@ async def handler(websocket, path):
         connected_clients.remove(websocket)
 
 
-async def send_updates():
+async def send_updates(data):
     while True:
         if connected_clients:  # Only send updates if there are connected clients
-            data = json.dumps({'timestamp': time.time()})
             await asyncio.gather(*[ws.send(data) for ws in connected_clients])
         await asyncio.sleep(1)  # Adjust the interval as needed for your use case
 
-start_server = websockets.serve(handler, "localhost", 8080)
 
-asyncio.get_event_loop().run_until_complete(start_server)
-asyncio.get_event_loop().create_task(send_updates())
-asyncio.get_event_loop().run_forever()
+def begin(translated_data, terminate_event):
+    start_server = websockets.serve(handler, "localhost", 8080)
+
+    asyncio.get_event_loop().run_until_complete(start_server)
+
+    while not terminate_event.isSet():
+        if translated_data.qsize() > 0:
+            send_updates(translated_data.get())
