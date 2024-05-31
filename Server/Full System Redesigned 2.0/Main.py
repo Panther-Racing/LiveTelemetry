@@ -38,11 +38,13 @@ async def main():
     receiver_thread.start()
 
     # Start the data translator and sender as asyncio tasks
-    translator_task = asyncio.create_task(data_translator())
+    translator_thread = threading.Thread(target=data_translator)
+    translator_thread.start()
+
     sender_task = asyncio.create_task(data_sender())
 
     # Wait for the translator and sender tasks to complete
-    await asyncio.gather(translator_task, sender_task)
+    await asyncio.gather(sender_task)
 
 if __name__ == '__main__':
     latency_file = open('latency_file.txt', 'w')
