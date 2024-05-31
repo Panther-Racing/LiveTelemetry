@@ -38,14 +38,12 @@ class CANTranslator:
             decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
                                              decode_containers=False, allow_truncated=False)
             print(f'decoded: {decoded}')
-            CANTranslator.to_json(decoded, latency / 1000, json_file_name, output_monitoring, processed_data, arduino_time)
+            CANTranslator.to_json(decoded, latency / 1000, json_file_name, processed_data, arduino_time)
 
         except KeyError as error:
             print('Key error: %s' % error)
-            output_monitoring.write('Key error: %s \n' % error)
         except ValueError as error:
             print('Value error: %s' % error)
-            output_monitoring.write('Value error: %s \n' % error)
 
     @staticmethod
     def find_nth(haystack, needle, n):
