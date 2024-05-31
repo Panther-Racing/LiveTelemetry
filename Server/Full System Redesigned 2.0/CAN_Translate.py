@@ -45,6 +45,9 @@ class CANTranslator:
             print('Key error: %s' % error)
         except ValueError as error:
             print('Value error: %s' % error)
+        except Exception as error:
+            print('Other Error:')
+            print(error)
 
     @staticmethod
     def find_nth(haystack, needle, n):
