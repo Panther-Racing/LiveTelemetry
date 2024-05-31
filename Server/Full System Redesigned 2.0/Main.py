@@ -8,7 +8,7 @@ import Send_Direct
 
 # Queues for communication between threads
 raw_data_queue = queue.Queue()
-translated_data_queue = queue.Queue()
+translated_data_queue = asyncio.Queue()
 terminate_event = threading.Event()
 
 # Load the CAN database
@@ -25,6 +25,7 @@ async def data_translator():
         if not raw_data_queue.empty():
             raw_data = raw_data_queue.get()
             translator.data_handler(raw_data, json_file_name, translated_data_queue)
+        await asyncio.sleep(0.01)  # Prevent tight loop
 
 
 async def data_sender():
@@ -32,14 +33,17 @@ async def data_sender():
 
 
 async def main():
+    # Start the data receiver in a separate thread
     receiver_thread = threading.Thread(target=data_receiver)
     receiver_thread.start()
 
+    # Start the data translator and sender as asyncio tasks
     print('Started translator')
     translator_task = asyncio.create_task(data_translator())
-    print('Started Sender')
+    print('Started sender')
     sender_task = asyncio.create_task(data_sender())
 
+    # Wait for the translator and sender tasks to complete
     await asyncio.gather(translator_task, sender_task)
 
 if __name__ == '__main__':
