@@ -56,3 +56,4 @@ if __name__ == '__main__':
         terminate_event.set()
     finally:
         latency_file.close()
+        print("Application terminated")
