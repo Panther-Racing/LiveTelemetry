@@ -22,25 +22,14 @@ async def send_updates(data):
 
 
 async def begin(translated_data, terminate_event):
-    print('Websocket Called')
-    # Create a new event loop
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
+    print('Sender Begun')
+    async with websockets.serve(handler, "localhost", 8080):
+        print('Started WebSocket')
 
-    start_server = websockets.serve(handler, "localhost", 8080)
-
-    loop.run_until_complete(start_server)
-
-    print('Started Websocket')
-
-    async def periodic_send():
-        while not terminate_event.isSet():
-            if translated_data.qsize() > 0:
-                print('queue Received data')
-                data = translated_data.get()  # or translated_data.get() if you are using a queue
+        while not terminate_event.is_set():
+            if not translated_data.empty():
+                data = await translated_data.get()
                 await send_updates(data)
-                print(f'websocket sent {data}')
-                # Delay so node red isn't overloaded with messages
-                await asyncio.sleep(.1)
+                await asyncio.sleep(0.1)
 
-    loop.run_until_complete(periodic_send())
+        print("Server stopping...")

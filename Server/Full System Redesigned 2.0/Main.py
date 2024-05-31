@@ -35,7 +35,9 @@ async def main():
     receiver_thread = threading.Thread(target=data_receiver)
     receiver_thread.start()
 
+    print('Started translator')
     translator_task = asyncio.create_task(data_translator())
+    print('Started Sender')
     sender_task = asyncio.create_task(data_sender())
 
     await asyncio.gather(translator_task, sender_task)
