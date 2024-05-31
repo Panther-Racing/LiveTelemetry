@@ -8,7 +8,7 @@ def begin(raw_data_queue, terminate_event):
     s.settimeout(1)
     print(f'Listening at {socket.gethostbyname(socket.gethostname())} on port 20001')
 
-    while not terminate_event.isSet():
+    while not terminate_event.is_set():
         try:
             data, addr = s.recvfrom(1024)
             print(f'Received {data}')
