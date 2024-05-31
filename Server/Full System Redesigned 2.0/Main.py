@@ -5,9 +5,10 @@ import cantools
 import CAN_Translate
 import Receive_Data
 import Send_Direct
+import socket
 
 # Queues for communication between threads
-raw_data_queue = queue.Queue()
+raw_data_queue = asyncio.Queue()
 translated_data_queue = asyncio.Queue()
 terminate_event = asyncio.Event()
 
@@ -15,10 +16,24 @@ terminate_event = asyncio.Event()
 db = cantools.database.load_file('DBCS/Combined.dbc')
 
 
-def data_receiver():
+async def data_receiver():
     print("Starting data receiver...")
-    Receive_Data.begin(raw_data_queue, terminate_event)
-    print("Data receiver started.")
+    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s.bind((socket.gethostbyname(socket.gethostname()), 20001))
+    s.settimeout(1)
+    print(f'Listening at {socket.gethostbyname(socket.gethostname())} on port 20001')
+
+    loop = asyncio.get_running_loop()
+    while not terminate_event.is_set():
+        try:
+            data, addr = await loop.run_in_executor(None, s.recvfrom, 1024)
+            print(f'Received {data}')
+            await raw_data_queue.put(data)
+        except socket.timeout:
+            continue
+        except Exception as e:
+            print(f"Error: {e}")
+    print("Data receiver stopped.")
 
 
 async def data_translator():
@@ -26,7 +41,7 @@ async def data_translator():
     translator = CAN_Translate.CANTranslator(db)
     while not terminate_event.is_set():
         if not raw_data_queue.empty():
-            raw_data = raw_data_queue.get()
+            raw_data = await raw_data_queue.get()
             print(f"Translating raw data: {raw_data}")
             translator.data_handler(raw_data, 'output.json', translated_data_queue)
     print("Data translator stopped.")
@@ -40,13 +55,11 @@ async def data_sender():
 
 async def main():
     print("Starting main function...")
-    receiver_thread = threading.Thread(target=data_receiver)
-    receiver_thread.start()
-
+    receiver_task = asyncio.create_task(data_receiver())
     translator_task = asyncio.create_task(data_translator())
     sender_task = asyncio.create_task(data_sender())
 
-    await asyncio.gather(translator_task, sender_task)
+    await asyncio.gather(receiver_task, translator_task, sender_task)
     print("Main function completed.")
 
 if __name__ == '__main__':
