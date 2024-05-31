@@ -89,7 +89,7 @@ class CANTranslator:
 
         if not os.path.exists(json_file_name):
             with open(json_file_name, 'w') as f:
-                json.dump([], f)
+                json.dump({}, f)
 
         with open(json_file_name, 'r+') as json_file:
 
@@ -101,10 +101,10 @@ class CANTranslator:
                     json_file.seek(0)
                     json_dict = json.load(json_file)
                 else:
-                    json_dict = {}
+                    json_dict = dict()
             except json.decoder.JSONDecodeError:
                 print("Error decoding JSON from the file. Initializing with an empty dictionary.")
-                json_dict = {}
+                json_dict = dict()
 
             # Update the JSON dictionary with the new data
             json_dict.update(decoded)
