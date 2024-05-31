@@ -54,11 +54,28 @@ class CANTranslator:
         return start
 
     @staticmethod
-    def reformatter(data_string):
-        first_comma = CANTranslator.find_nth(data_string, ',', 1)
-        second_comma = CANTranslator.find_nth(data_string, ',', 2)
-        # Implement additional data reformatting logic here
-        return data_string[first_comma + 1:second_comma]
+    def reformatter(self, data_string):
+        start_pos = 0
+        current_space = 0
+        next_space = 0
+        i = 0
+        data_reformatted = ''
+        data_string = str(data_string)
+        while next_space >= 0:
+            next_space = self.find_nth(data_string, ' ', i + 1)
+            if next_space - current_space == 1:
+                data_reformatted += ('\\x0' + data_string[start_pos:next_space])
+            elif next_space - current_space == 2:
+                data_reformatted += ('\\x' + data_string[start_pos:next_space])
+            else:
+                data_reformatted += ('\\x0' + data_string[start_pos:])
+            i += 1
+            current_space = next_space + 1
+            start_pos = current_space
+
+        data_bytes = self.convert_to_bytes_with_escape(data_reformatted)
+
+        return data_bytes
 
     @staticmethod
     def to_json(decoded, latency, json_file_name, processed_data, arduino_time):
