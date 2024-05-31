@@ -21,7 +21,7 @@ async def handler(websocket, path):
 async def send_updates(data):
     # Only send updates if there are connected clients
     if connected_clients:
-        await asyncio.gather(*[ws.send(json.dumps(data)) for ws in connected_clients])
+        await asyncio.gather(*[ws.send(data) for ws in connected_clients])
 
 
 def begin(translated_data, terminate_event):
@@ -39,9 +39,9 @@ def begin(translated_data, terminate_event):
         while not terminate_event.isSet():
             if translated_data.qsize() > 0:
                 print('queue Received data')
-                data = list(translated_data.get())  # or translated_data.get() if you are using a queue
+                data = translated_data.get()  # or translated_data.get() if you are using a queue
                 await send_updates(data)
-                print(f'queue sent {data}')
+                print(f'websocket sent {data}')
                 # Delay so node red isn't overloaded with messages
                 await asyncio.sleep(.1)
 
