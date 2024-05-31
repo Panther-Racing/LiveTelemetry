@@ -19,20 +19,29 @@ async def handler(websocket, path):
 
 
 async def send_updates(data):
-    while True:
-        if connected_clients:  # Only send updates if there are connected clients
-            await asyncio.gather(*[ws.send(data) for ws in connected_clients])
-        await asyncio.sleep(1)  # Adjust the interval as needed for your use case
+    # Only send updates if there are connected clients
+    if connected_clients:
+        await asyncio.gather(*[ws.send(json.dumps(data)) for ws in connected_clients])
 
 
 def begin(translated_data, terminate_event):
+    # Create a new event loop
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+
     start_server = websockets.serve(handler, "localhost", 8080)
 
-    asyncio.get_event_loop().run_until_complete(start_server)
+    loop.run_until_complete(start_server)
 
     print('Started Websocket')
 
-    while not terminate_event.isSet():
-        send_updates({'Timestamp': 1})
-        # if translated_data.qsize() > 0:
-        #     send_updates(translated_data.get())
+    async def periodic_send():
+        while not terminate_event.isSet():
+            if translated_data.qsize() > 0:
+                data = {translated_data.get()}  # or translated_data.get() if you are using a queue
+                await send_updates(data)
+                #Delay so node red isn't overloaded with messages
+                await asyncio.sleep(.1)
+
+
+    loop.run_until_complete(periodic_send())

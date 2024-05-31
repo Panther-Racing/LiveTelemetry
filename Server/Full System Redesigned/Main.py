@@ -30,6 +30,8 @@ receive_data_thread.start()
 time.sleep(.1)
 translate_thread.start()
 time.sleep(.1)
+websocket_thread.start()
+time.sleep(.1)
 # sql_thread.start()
 # time.sleep(.1)
 
