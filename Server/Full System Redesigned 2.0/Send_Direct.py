@@ -16,22 +16,16 @@ async def handler(websocket, path):
 
 async def send_updates(data):
     if connected_clients:
-        await asyncio.gather(*[ws.send(data) for ws in connected_clients])
+        await asyncio.gather(*[ws.send(data) for ws in connected_clients if ws.open])
 
 async def begin(translated_data, terminate_event):
     async with websockets.serve(handler, "localhost", 8080):
-        print('Started Websocket')
+        print('Started WebSocket')
 
         while not terminate_event.is_set():
-            if translated_data.qsize() > 0:
-                data = translated_data.get()
+            if not translated_data.empty():
+                data = await translated_data.get()
                 await send_updates(data)
-                print(f'Sent {data}')
                 await asyncio.sleep(0.1)
 
-if __name__ == '__main__':
-    terminate_event = asyncio.Event()
-
-    translated_data_queue = asyncio.Queue()
-
-    asyncio.run(begin(translated_data_queue, terminate_event))
+        print("Server stopping...")
