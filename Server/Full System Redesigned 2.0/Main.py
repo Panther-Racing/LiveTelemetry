@@ -12,7 +12,7 @@ translated_data_queue = asyncio.Queue()
 terminate_event = asyncio.Event()
 
 # Load the CAN database
-db = cantools.database.load_file('path_to_your_dbc_file.dbc')
+db = cantools.database.load_file('DBCS/Combined.dbc')
 
 def data_receiver():
     Receive_Data.begin(raw_data_queue, terminate_event)
