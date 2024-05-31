@@ -22,6 +22,7 @@ async def send_updates(data):
 
 
 async def begin(translated_data, terminate_event):
+    print('Websocket Called')
     # Create a new event loop
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
