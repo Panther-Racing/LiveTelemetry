@@ -32,7 +32,7 @@ class CANTranslator:
         print(f'Frame ID: {frame_id}     data: {data}')
 
         data_string = message[CANTranslator.find_nth(message, ',', 2) + 1:]
-        data_reformatted = CANTranslator.reformatter(data_string)
+        data_reformatted = CANTranslator.reformatter(self, data_string)
 
         try:
             decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
