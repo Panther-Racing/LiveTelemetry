@@ -5,6 +5,7 @@ import cantools
 import CAN_Translate
 import Receive_Data
 import Send_Direct
+import time
 
 # Queues for communication between threads
 raw_data_queue = queue.Queue()
@@ -47,11 +48,12 @@ async def main():
     receiver_future = loop.run_in_executor(None, data_receiver)
 
     # Start translator and sender tasks
-    # translator_task = asyncio.create_task(data_translator())
+    translator_task = asyncio.create_task(data_translator())
+    time.sleep(1)
     sender_task = asyncio.create_task(data_sender())
 
     # Wait for all tasks to complete
-    await asyncio.gather(receiver_future, sender_task)
+    await asyncio.gather(receiver_future, translator_task, sender_task)
     print("Main function completed.")
 
 
