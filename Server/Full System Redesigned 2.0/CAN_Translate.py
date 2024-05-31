@@ -1,4 +1,5 @@
 import json
+import os
 import time
 import cantools
 import queue
@@ -85,6 +86,11 @@ class CANTranslator:
 
     @staticmethod
     def to_json(decoded, latency, json_file_name, processed_data, arduino_time):
+
+        if not os.path.exists(json_file_name):
+            with open(json_file_name, 'w') as f:
+                json.dump([], f)
+
         with open(json_file_name, 'r+') as json_file:
 
             # Read the file content
