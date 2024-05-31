@@ -78,6 +78,12 @@ class CANTranslator:
         return data_bytes
 
     @staticmethod
+    def convert_to_bytes_with_escape(input_string):
+        hex_values = input_string.split('\\x')[1:]  # Split by '\\x' and skip the empty first element
+        byte_string = bytes(int(value, 16) for value in hex_values)
+        return byte_string
+
+    @staticmethod
     def to_json(decoded, latency, json_file_name, processed_data, arduino_time):
         with open(json_file_name, 'r+') as json_file:
 
