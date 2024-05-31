@@ -2,7 +2,7 @@ import json
 import os
 import time
 import cantools
-import queue
+import asyncio
 
 class CANTranslator:
     def __init__(self, db):
@@ -58,28 +58,11 @@ class CANTranslator:
         return start
 
     @staticmethod
-    def reformatter(self, data_string):
-        start_pos = 0
-        current_space = 0
-        next_space = 0
-        i = 0
-        data_reformatted = ''
-        data_string = str(data_string)
-        while next_space >= 0:
-            next_space = self.find_nth(data_string, ' ', i + 1)
-            if next_space - current_space == 1:
-                data_reformatted += ('\\x0' + data_string[start_pos:next_space])
-            elif next_space - current_space == 2:
-                data_reformatted += ('\\x' + data_string[start_pos:next_space])
-            else:
-                data_reformatted += ('\\x0' + data_string[start_pos:])
-            i += 1
-            current_space = next_space + 1
-            start_pos = current_space
-
-        data_bytes = self.convert_to_bytes_with_escape(data_reformatted)
-
-        return data_bytes
+    def reformatter(self, data):
+        result = []
+        for i in range(0, len(data), 2):
+            result.append(CANTranslator.convert_to_bytes_with_escape('\\x' + data[i:i + 2]))
+        return b''.join(result)
 
     @staticmethod
     def convert_to_bytes_with_escape(input_string):
@@ -88,8 +71,7 @@ class CANTranslator:
         return byte_string
 
     @staticmethod
-    def to_json(decoded, latency, json_file_name, processed_data, arduino_time):
-
+    async def to_json(decoded, latency, json_file_name, processed_data, arduino_time):
         if not os.path.exists(json_file_name):
             with open(json_file_name, 'w') as f:
                 json.dump({}, f)
@@ -124,7 +106,7 @@ class CANTranslator:
 
             # Push the updated JSON data to the processed_data queue
             try:
-                processed_data.put_nowait(json.dumps(json_dict))
+                await processed_data.put(json.dumps(json_dict))
                 print(f'processed data queue has {processed_data.qsize()} items in it')
-            except queue.Full as error:
+            except asyncio.QueueFull as error:
                 print('Data discarded, decoded data queue full')
