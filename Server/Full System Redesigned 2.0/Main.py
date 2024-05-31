@@ -33,12 +33,11 @@ async def data_sender():
 
 async def main():
     receiver_thread = asyncio.create_task(data_receiver())
-    receiver_thread.start()
 
     translator_task = asyncio.create_task(data_translator())
     sender_task = asyncio.create_task(data_sender())
 
-    await asyncio.gather(translator_task, sender_task)
+    await asyncio.gather(translator_task, sender_task, receiver_thread)
 
 if __name__ == '__main__':
     try:
