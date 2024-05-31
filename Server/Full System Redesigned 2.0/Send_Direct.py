@@ -26,6 +26,7 @@ async def begin(translated_data, terminate_event):
             if translated_data.qsize() > 0:
                 data = translated_data.get()
                 await send_updates(data)
+                print(f'Sent {data}')
                 await asyncio.sleep(0.1)
 
 if __name__ == '__main__':
