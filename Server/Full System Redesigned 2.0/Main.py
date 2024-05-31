@@ -38,9 +38,7 @@ async def main():
     receiver_thread.start()
 
     # Start the data translator and sender as asyncio tasks
-    print('Started translator')
     translator_task = asyncio.create_task(data_translator())
-    print('Started sender')
     sender_task = asyncio.create_task(data_sender())
 
     # Wait for the translator and sender tasks to complete
