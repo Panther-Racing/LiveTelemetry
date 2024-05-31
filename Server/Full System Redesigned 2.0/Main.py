@@ -29,7 +29,7 @@ async def data_translator():
             raw_data = raw_data_queue.get()
             print(f"Translating raw data: {raw_data}")
             translator.data_handler(raw_data, 'output.json', translated_data_queue)
-        await asyncio.sleep(0.1)  # Add a small sleep to prevent blocking
+        await asyncio.sleep(0.01)  # Add a small sleep to prevent blocking
     print("Data translator stopped.")
 
 
