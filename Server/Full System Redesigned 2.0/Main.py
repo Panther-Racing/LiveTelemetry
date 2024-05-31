@@ -5,7 +5,6 @@ import cantools
 import CAN_Translate
 import Receive_Data
 import Send_Direct
-import time
 
 # Queues for communication between threads
 raw_data_queue = queue.Queue()
@@ -30,6 +29,7 @@ async def data_translator():
             raw_data = raw_data_queue.get()
             print(f"Translating raw data: {raw_data}")
             translator.data_handler(raw_data, 'output.json', translated_data_queue)
+        await asyncio.sleep(0.1)  # Add a small sleep to prevent blocking
     print("Data translator stopped.")
 
 
@@ -49,7 +49,6 @@ async def main():
 
     # Start translator and sender tasks
     translator_task = asyncio.create_task(data_translator())
-    time.sleep(1)
     sender_task = asyncio.create_task(data_sender())
 
     # Wait for all tasks to complete
