@@ -9,50 +9,35 @@ import Send_Direct
 # Queues for communication between threads
 raw_data_queue = queue.Queue()
 translated_data_queue = asyncio.Queue()
-terminate_event = threading.Event()
+terminate_event = asyncio.Event()
 
 # Load the CAN database
-db = cantools.database.load_file('DBCS/Combined.dbc')
-
+db = cantools.database.load_file('path_to_your_dbc_file.dbc')
 
 def data_receiver():
     Receive_Data.begin(raw_data_queue, terminate_event)
-
 
 async def data_translator():
     translator = CAN_Translate.CANTranslator(db)
     while not terminate_event.is_set():
         if not raw_data_queue.empty():
             raw_data = raw_data_queue.get()
-            translator.data_handler(raw_data, json_file_name, translated_data_queue)
-        await asyncio.sleep(0.01)  # Prevent tight loop
-
+            translator.data_handler(raw_data, 'output.json', translated_data_queue)
 
 async def data_sender():
     await Send_Direct.begin(translated_data_queue, terminate_event)
 
-
 async def main():
-    # Start the data receiver in a separate thread
     receiver_thread = threading.Thread(target=data_receiver)
     receiver_thread.start()
 
-    # Start the data translator and sender as asyncio tasks
-    translator_thread = threading.Thread(target=data_translator)
-    translator_thread.start()
-
+    translator_task = asyncio.create_task(data_translator())
     sender_task = asyncio.create_task(data_sender())
 
-    # Wait for the translator and sender tasks to complete
-    await asyncio.gather(sender_task)
+    await asyncio.gather(translator_task, sender_task)
 
 if __name__ == '__main__':
-    latency_file = open('latency_file.txt', 'w')
-    json_file_name = 'output.json'
-
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
         terminate_event.set()
-    finally:
-        latency_file.close()
