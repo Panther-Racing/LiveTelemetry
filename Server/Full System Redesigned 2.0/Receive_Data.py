@@ -11,6 +11,7 @@ def begin(raw_data_queue, terminate_event):
     while not terminate_event.isSet():
         try:
             data, addr = s.recvfrom(1024)
+            print(f'Received {data}')
             raw_data_queue.put(data)
         except socket.timeout:
             continue
