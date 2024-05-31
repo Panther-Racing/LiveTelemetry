@@ -13,6 +13,8 @@ async def handler(websocket, path):
         async for message in websocket:
             # Handle incoming messages if needed
             print(f"Received message: {message}")
+    except (websockets.exceptions.ConnectionClosedError, ConnectionAbortedError) as e:
+        print(f"Connection closed: {websocket.remote_address} with error: {e}")
     finally:
         # Unregister client
         connected_clients.remove(websocket)
