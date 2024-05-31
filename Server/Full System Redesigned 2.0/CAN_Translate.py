@@ -89,7 +89,7 @@ class CANTranslator:
 
         if not os.path.exists(json_file_name):
             with open(json_file_name, 'w') as f:
-                json.dump({}, f)
+                json.dump('{}', f)
 
         with open(json_file_name, 'r+') as json_file:
 
