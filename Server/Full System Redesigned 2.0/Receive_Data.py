@@ -15,6 +15,7 @@ async def begin(raw_data_queue, terminate_event):
             data = s.recvfrom(1024)
             print(f'Received {data}')
             await raw_data_queue.put(data)
+            print(f'Raw data contains {raw_data_queue.qsize()} items')
         except socket.timeout:
             continue
         except Exception as e:
