@@ -1,7 +1,6 @@
 import socket
 import asyncio
 
-
 async def begin(raw_data_queue, terminate_event):
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.bind((socket.gethostbyname(socket.gethostname()), 20001))
@@ -18,4 +17,4 @@ async def begin(raw_data_queue, terminate_event):
         except socket.timeout:
             continue
         except Exception as e:
-            print(f"Error: {e}")
+            print(f"Error: { e }")

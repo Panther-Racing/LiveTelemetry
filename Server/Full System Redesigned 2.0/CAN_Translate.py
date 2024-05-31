@@ -10,7 +10,7 @@ class CANTranslator:
         self.offset = 0
         self.db = db
 
-    def data_handler(self, data, json_file_name, processed_data):
+    async def data_handler(self, data, json_file_name, processed_data):
         message = data.decode().strip()
         date_time_str = message.split(',')[-1]
         arduino_time_raw = int(date_time_str)
@@ -22,7 +22,7 @@ class CANTranslator:
         arduino_time = arduino_time_raw + self.offset
 
         latency = time.time() * 1000 - arduino_time
-        print(f'latency: {latency}\toffset: {self.offset}')
+        print(f'latency: { latency }\\toffset: { self.offset }')
         message = message.rsplit(',', 1)[0]
 
         try:
@@ -30,7 +30,7 @@ class CANTranslator:
         except ValueError as error:
             frame_id = 'ERROR'
 
-        print(f'Frame ID: {frame_id}     data: {data}')
+        print(f'Frame ID: { frame_id }     data: { data }')
 
         data_string = message[CANTranslator.find_nth(message, ',', 2) + 1:]
         data_reformatted = CANTranslator.reformatter(self, data_string)
@@ -38,8 +38,8 @@ class CANTranslator:
         try:
             decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
                                              decode_containers=False, allow_truncated=False)
-            print(f'decoded: {decoded}')
-            CANTranslator.to_json(decoded, latency / 1000, json_file_name, processed_data, arduino_time)
+            print(f'decoded: { decoded }')
+            await CANTranslator.to_json(decoded, latency / 1000, json_file_name, processed_data, arduino_time)
 
         except KeyError as error:
             print('Key error: %s' % error)
@@ -107,6 +107,6 @@ class CANTranslator:
             # Push the updated JSON data to the processed_data queue
             try:
                 await processed_data.put(json.dumps(json_dict))
-                print(f'processed data queue has {processed_data.qsize()} items in it')
+                print(f'processed data queue has { processed_data.qsize() } items in it')
             except asyncio.QueueFull as error:
                 print('Data discarded, decoded data queue full')
