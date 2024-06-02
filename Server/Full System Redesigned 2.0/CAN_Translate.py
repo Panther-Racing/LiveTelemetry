@@ -71,7 +71,7 @@ class CANTranslator:
         return byte_string
 
     @staticmethod
-    def to_json(decoded, latency, json_file_name, processed_data, arduino_time):
+    async def to_json(decoded, latency, json_file_name, processed_data, arduino_time):
         if not os.path.exists(json_file_name):
             with open(json_file_name, 'w') as f:
                 json.dump({}, f)
