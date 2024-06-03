@@ -4,8 +4,11 @@ import CAN_Translate
 import Receive_Data
 import Send_Direct
 
+# Set maximum queue size
+MAX_QUEUE_SIZE = 100
+
 # Queues for communication between tasks
-raw_data_queue = asyncio.Queue()
+raw_data_queue = asyncio.Queue(maxsize=MAX_QUEUE_SIZE)
 translated_data_queue = asyncio.Queue()
 terminate_event = asyncio.Event()
 
@@ -16,7 +19,12 @@ async def data_receiver():
     print("Starting data receiver...")
     s = await Receive_Data.begin()
     print("Data receiver started.")
-    await Receive_Data.listen_for_data(s, raw_data_queue, terminate_event)
+    while not terminate_event.is_set():
+        data = await Receive_Data.listen_for_data(s, terminate_event)
+        if raw_data_queue.full():
+            print("Raw data queue is full. Discarding data.")
+        else:
+            await raw_data_queue.put(data)
 
 async def data_translator():
     print("Starting data translator...")

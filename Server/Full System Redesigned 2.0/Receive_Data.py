@@ -15,10 +15,9 @@ async def listen_for_data(s, raw_data_queue, terminate_event):
     while not terminate_event.is_set():
         try:
             data = await loop.run_in_executor(None, s.recvfrom, 128)
-            # print(f'Received {data[0]}')
-            await raw_data_queue.put(data[0])
-            print(f'Raw data contains {raw_data_queue.qsize()} items')
+            return data[0]
         except socket.timeout:
             continue
         except Exception as e:
             print(f"Error: {e}")
+            return None

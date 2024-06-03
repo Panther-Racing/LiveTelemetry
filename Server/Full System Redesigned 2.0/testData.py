@@ -17,7 +17,7 @@ def send_byte_string(ip, port, base_message, interval=0.01):
     try:
         while True:
             # Append the current time in seconds to the base message
-            current_time = str(int(time.time()))
+            current_time = str(int((time.time()-1717378803)*1000))
             message = f"{base_message},{current_time}".encode()
             # Send the message
             sock.sendto(message, (ip, port))
