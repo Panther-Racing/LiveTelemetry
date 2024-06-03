@@ -24,7 +24,11 @@ async def data_receiver():
         if raw_data_queue.full():
             print("Raw data queue is full. Discarding data.")
         else:
-            await raw_data_queue.put(data)
+            try:
+                raw_data_queue.put_nowait(data)
+            except asyncio.QueueFull:
+                print("Raw data queue is full. Discarding data.")
+                
 
 async def data_translator():
     print("Starting data translator...")
