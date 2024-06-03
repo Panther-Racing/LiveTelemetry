@@ -14,8 +14,9 @@ db = cantools.database.load_file('DBCS/Combined.dbc')
 
 async def data_receiver():
     print("Starting data receiver...")
-    await Receive_Data.begin(raw_data_queue, terminate_event)
+    s = await Receive_Data.begin()
     print("Data receiver started.")
+    await Receive_Data.listen_for_data(s, raw_data_queue, terminate_event)
 
 async def data_translator():
     print("Starting data translator...")

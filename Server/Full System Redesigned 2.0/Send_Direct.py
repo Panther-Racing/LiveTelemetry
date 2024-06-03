@@ -25,10 +25,11 @@ async def begin(translated_data, terminate_event):
         print('Started WebSocket')
 
         while not terminate_event.is_set():
-            if not translated_data.empty():
-                data = await translated_data.get()
+            try:
+                data = await asyncio.wait_for(translated_data.get(), timeout=0.1)
                 print(f"Sending data: {data}")
                 await send_updates(data)
-                await asyncio.sleep(0.1)
+            except asyncio.TimeoutError:
+                continue
 
         print("Server stopping...")
