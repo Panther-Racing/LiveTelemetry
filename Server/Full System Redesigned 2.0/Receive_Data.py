@@ -9,12 +9,12 @@ async def begin():
     return s
 
 
-async def listen_for_data(s, raw_data_queue, terminate_event):
+async def listen_for_data(s, terminate_event):
     loop = asyncio.get_running_loop()
 
     while not terminate_event.is_set():
         try:
-            data = await loop.run_in_executor(None, s.recvfrom, 128)
+            data = await loop.run_in_executor(None, s.recvfrom, 1024)
             return data[0]
         except socket.timeout:
             continue
