@@ -7,7 +7,7 @@ import Send_Direct
 # Set maximum queue size
 MAX_QUEUE_SIZE = 100
 
-# Queues for communication between tasks
+# Initialize queues and terminate event
 raw_data_queue = asyncio.Queue(maxsize=MAX_QUEUE_SIZE)
 translated_data_queue = asyncio.Queue()
 terminate_event = asyncio.Event()
@@ -21,10 +21,11 @@ async def data_receiver():
     print("Data receiver started.")
     while not terminate_event.is_set():
         data = await Receive_Data.listen_for_data(s, terminate_event)
-        if raw_data_queue.full():
-            print("Raw data queue is full. Discarding data.")
-        else:
-            await raw_data_queue.put(data)
+        if data:
+            if raw_data_queue.full():
+                print("Raw data queue is full. Discarding data.")
+            else:
+                await raw_data_queue.put(data)
 
 async def data_translator():
     print("Starting data translator...")
@@ -43,7 +44,13 @@ async def data_sender():
     print("Data sender stopped.")
 
 async def main():
+    global raw_data_queue, translated_data_queue, terminate_event
     print("Starting main function...")
+
+    # Reset queues and terminate event
+    raw_data_queue = asyncio.Queue(maxsize=MAX_QUEUE_SIZE)
+    translated_data_queue = asyncio.Queue()
+    terminate_event = asyncio.Event()
 
     # Start the receiver, translator, and sender tasks
     receiver_task = asyncio.create_task(data_receiver())
@@ -59,3 +66,5 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         terminate_event.set()
         print("Terminating...")
+        asyncio.get_event_loop().stop()
+        asyncio.get_event_loop().close()
