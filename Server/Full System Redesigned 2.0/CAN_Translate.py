@@ -22,7 +22,7 @@ class CANTranslator:
         arduino_time = arduino_time_raw + self.offset
 
         latency = time.time() * 1000 - arduino_time
-        print(f'latency: { latency }\\toffset: { self.offset }')
+        print(f'arduino time: {arduino_time}\tserver time: {time.time()*1000}\tlatency: { latency }\toffset: { self.offset }')
         message = message.rsplit(',', 1)[0]
 
         try:
@@ -30,16 +30,16 @@ class CANTranslator:
         except ValueError as error:
             frame_id = 'ERROR'
 
-        print(f'Frame ID: { frame_id }     data: { data }')
+        # print(f'Frame ID: { frame_id }     data: { data }')
 
         data_string = message[await CANTranslator.find_nth(message, ',', 2) + 1:]
-        print(f'data string: {data_string}')
+        # print(f'data string: {data_string}')
         data_reformatted = await CANTranslator.reformatter(self, data_string)
 
         try:
             decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
                                              decode_containers=False, allow_truncated=False)
-            print(f'decoded: { decoded }')
+            # print(f'decoded: { decoded }')
             await CANTranslator.to_json(decoded, latency / 1000, json_file_name, processed_data, arduino_time)
 
         except KeyError as error:
@@ -70,7 +70,7 @@ class CANTranslator:
     @staticmethod
     async def convert_to_bytes_with_escape(input_string):
         hex_values = input_string.split('\\x')[1:]  # Split by '\\x' and skip the empty first element
-        print(f'hex values: {hex_values}')
+        # print(f'hex values: {hex_values}')
         byte_string = bytes(int(value, 16) for value in hex_values)
         return byte_string
 

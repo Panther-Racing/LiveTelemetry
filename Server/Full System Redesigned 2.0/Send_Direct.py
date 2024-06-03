@@ -27,7 +27,7 @@ async def begin(translated_data, terminate_event):
         while not terminate_event.is_set():
             try:
                 data = await asyncio.wait_for(translated_data.get(), timeout=0.1)
-                print(f"Sending data: {data}")
+                # print(f"Sending data: {data}")
                 await send_updates(data)
             except asyncio.TimeoutError:
                 continue
