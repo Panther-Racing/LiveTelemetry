@@ -50,7 +50,7 @@ class CANTranslator:
             print(error)
 
     @staticmethod
-    def find_nth(haystack, needle, n):
+    async def find_nth(haystack, needle, n):
         start = haystack.find(needle)
         while start >= 0 and n > 1:
             start = haystack.find(needle, start + len(needle))
@@ -58,14 +58,14 @@ class CANTranslator:
         return start
 
     @staticmethod
-    def reformatter(self, data):
+    async def reformatter(self, data):
         result = []
         for i in range(0, len(data), 2):
-            result.append(CANTranslator.convert_to_bytes_with_escape('\\x' + data[i:i + 2]))
+            await result.append(CANTranslator.convert_to_bytes_with_escape('\\x' + data[i:i + 2]))
         return b''.join(result)
 
     @staticmethod
-    def convert_to_bytes_with_escape(input_string):
+    async def convert_to_bytes_with_escape(input_string):
         hex_values = input_string.split('\\x')[1:]  # Split by '\\x' and skip the empty first element
         byte_string = bytes(int(value, 16) for value in hex_values)
         return byte_string
