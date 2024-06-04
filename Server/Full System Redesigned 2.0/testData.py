@@ -2,7 +2,7 @@ import socket
 import time
 
 
-def send_byte_string(ip, port, base_message, interval=0.01):
+def send_byte_string(ip, port, base_message, interval=0.001):
     """
     Sends the specified base message with the current time appended to the given IP address and port over UDP repeatedly.
 
