@@ -383,7 +383,7 @@ BO_ 1713 MSGID_0X6B1: 8 BMS
  SG_ Blank : 55|8@0+ (1,0) [0|255] ""  Third_Party_Device
  SG_ Low_Temperature : 47|8@0+ (1,0) [0|255] "C"  Third_Party_Device
  SG_ High_Temperature : 39|8@0+ (1,0) [0|255] "C"  Third_Party_Device
- SG_ Blank : 31|8@0+ (1,0) [0|255] ""  Third_Party_Device
+ SG_ Blank1 : 31|8@0+ (1,0) [0|255] ""  Third_Party_Device
  SG_ Pack_CCL : 23|8@0+ (1,0) [0|255] "A"  Third_Party_Device
  SG_ Pack_DCL : 7|16@0+ (1,0) [0|65535] "A"  Third_Party_Device
 
