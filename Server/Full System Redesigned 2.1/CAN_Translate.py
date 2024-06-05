@@ -37,10 +37,12 @@ class CANTranslator:
         data_string = message[await CANTranslator.find_nth(message, ',', 2) + 1:]
         # print(f'data string: {data_string}')
         data_reformatted = await CANTranslator.reformatter(self, data_string)
+        print(type(data_reformatted))
 
         try:
             decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
                                              decode_containers=False, allow_truncated=False)
+            print(type(decoded))
             # print(f'decoded: { decoded }')
             await CANTranslator.to_json(self, decoded, latency / 1000, processed_data, arduino_time)
 
