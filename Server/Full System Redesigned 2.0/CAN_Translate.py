@@ -9,8 +9,10 @@ class CANTranslator:
         self.first_message = True
         self.offset = 0
         self.db = db
+        self.json_dict = {}
 
-    async def data_handler(self, data, json_file_name, processed_data):
+
+    async def data_handler(self, data, processed_data):
         message = data.decode().strip()
         date_time_str = message.split(',')[-1]
         arduino_time_raw = int(date_time_str)
@@ -40,7 +42,7 @@ class CANTranslator:
             decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
                                              decode_containers=False, allow_truncated=False)
             # print(f'decoded: { decoded }')
-            await CANTranslator.to_json(decoded, latency / 1000, json_file_name, processed_data, arduino_time)
+            await CANTranslator.to_json(decoded, latency / 1000, processed_data, arduino_time)
 
         except KeyError as error:
             print('Key error: %s' % error)
@@ -74,43 +76,17 @@ class CANTranslator:
         byte_string = bytes(int(value, 16) for value in hex_values)
         return byte_string
 
-    @staticmethod
-    async def to_json(decoded, latency, json_file_name, processed_data, arduino_time):
-        if not os.path.exists(json_file_name):
-            with open(json_file_name, 'w') as f:
-                json.dump({}, f)
-
-        with open(json_file_name, 'r+') as json_file:
-            try:
-                json_file.seek(0)
-                content = json_file.read().strip()
-                if content:
-                    json_file.seek(0)
-                    json_dict = json.load(json_file)
-                    if not isinstance(json_dict, dict):
-                        json_dict = {}
-                else:
-                    json_dict = {}
-            except json.decoder.JSONDecodeError:
-                print("Error decoding JSON from the file. Initializing with an empty dictionary.")
-                json_dict = {}
-
+    @profile
+    async def to_json(self, decoded, latency, processed_data, arduino_time):
             # Update the JSON dictionary with the new data
-            json_dict.update(decoded)
-            json_dict.update({'Timestamp': time.time() * 1000})
-            json_dict.update({'Latency': latency})
-            json_dict.update({'Arduino_Time': arduino_time})
-
-            # Move the file pointer to the beginning and truncate the file
-            json_file.seek(0)
-            json_file.truncate()
-
-            # Write the updated JSON data back to the file
-            json.dump(json_dict, json_file)
+            self.json_dict.update(decoded)
+            self.json_dict.update({'Timestamp': time.time() * 1000})
+            self.json_dict.update({'Latency': latency})
+            self.json_dict.update({'Arduino_Time': arduino_time})
 
             # Push the updated JSON data to the processed_data queue
             try:
-                await processed_data.put(json.dumps(json_dict))
+                await processed_data.put(json.dumps(self.json_dict))
                 print(f'processed data queue has { processed_data.qsize() } items in it')
             except asyncio.QueueFull as error:
                 print('Data discarded, decoded data queue full')
