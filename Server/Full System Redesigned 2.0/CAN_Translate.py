@@ -4,6 +4,7 @@ import time
 import cantools
 import asyncio
 
+
 class CANTranslator:
     def __init__(self, db):
         self.first_message = True
@@ -11,7 +12,6 @@ class CANTranslator:
         self.db = db
         self.json_dict = {}
 
-    @profile
     async def data_handler(self, data, processed_data):
         message = data.decode().strip()
         date_time_str = message.split(',')[-1]
@@ -76,7 +76,6 @@ class CANTranslator:
         byte_string = bytes(int(value, 16) for value in hex_values)
         return byte_string
 
-    @profile
     async def to_json(self, decoded, latency, processed_data, arduino_time):
             # Update the JSON dictionary with the new data
             self.json_dict.update(decoded)
