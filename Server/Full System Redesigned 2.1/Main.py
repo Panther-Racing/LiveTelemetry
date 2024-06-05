@@ -21,9 +21,11 @@ async def data_receiver():
     s = await Receive_Data.begin()
     print("Data receiver started.")
     while not terminate_event.is_set():
+        print('Waiting for data')
         data = await Receive_Data.listen_for_data(s, terminate_event)
+        print(f'Received {data}')
         if raw_data_queue.full():
-            # print("Raw data queue is full. Discarding data.")
+            print("Raw data queue is full. Discarding data.")
             pass
         else:
             try:
@@ -38,18 +40,19 @@ async def data_receiver():
 async def data_translator():
     print("Starting data translator...")
     translator = CAN_Translate.CANTranslator(db)
-    buffer = []
-    buffer_limit = 40  # Number of messages to accumulate before sending
+    data = dict()
+    index = 0
+    buffer_amt = 10  # Number of messages to accumulate before sending
     while not terminate_event.is_set():
         if not raw_data_queue.empty():
+            print('Processing data')
             raw_data = await raw_data_queue.get()
-            await translator.data_handler(raw_data, buffer)
-            if len(buffer) >= buffer_limit:
-                await translated_data_queue.put(buffer.copy())
-                buffer.clear()
-        await asyncio.sleep(0.1)  # Check every 100ms
-    if buffer:  # Send remaining messages in buffer
-        await translated_data_queue.put(buffer)
+            data.update(await translator.data_handler(raw_data))
+            if index >= buffer_amt:
+                await translated_data_queue.put(data)
+                index = 0
+            index += 1
+
     print("Data translator stopped.")
 
 

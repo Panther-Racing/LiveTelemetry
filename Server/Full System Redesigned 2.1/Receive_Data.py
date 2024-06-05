@@ -15,6 +15,7 @@ async def listen_for_data(s, terminate_event):
     while not terminate_event.is_set():
         try:
             data = await loop.run_in_executor(None, s.recvfrom, 1024)
+            print(f'Received {data}')
             return data[0]
         except socket.timeout:
             continue

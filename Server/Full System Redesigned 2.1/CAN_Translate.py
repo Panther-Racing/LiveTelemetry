@@ -12,7 +12,7 @@ class CANTranslator:
         self.db = db
         self.json_dict = {}
 
-    async def data_handler(self, data, processed_data):
+    async def data_handler(self, data):
         message = data.decode().strip()
         date_time_str = message.split(',')[-1]
         arduino_time_raw = int(date_time_str)
@@ -40,7 +40,7 @@ class CANTranslator:
         try:
             decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
                                              decode_containers=False, allow_truncated=False)
-            await CANTranslator.to_json(self, decoded, latency / 1000, processed_data, arduino_time)
+            return await CANTranslator.to_json(self, decoded, latency / 1000, arduino_time)
 
         except KeyError as error:
             print('Key error: %s' % error)
@@ -74,17 +74,12 @@ class CANTranslator:
         byte_string = bytes(int(value, 16) for value in hex_values)
         return byte_string
 
-    async def to_json(self, decoded, latency, processed_data, arduino_time):
+    async def to_json(self, decoded, latency, arduino_time):
             # Update the JSON dictionary with the new data
             self.json_dict.update(decoded)
             self.json_dict.update({'Timestamp': time.time() * 1000})
             self.json_dict.update({'Latency': latency})
             self.json_dict.update({'Arduino_Time': arduino_time})
 
-            # Push the updated JSON data to the processed_data queue
-            try:
-                processed_data.append(json.dumps(self.json_dict))
-                # print(f'processed data queue has { processed_data.qsize() } items in it')
-            except asyncio.QueueFull as error:
-                # print('Data discarded, decoded data queue full')
-                pass
+           #return the json dictionary
+            return self.json_dict
