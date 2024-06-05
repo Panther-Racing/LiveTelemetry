@@ -38,7 +38,7 @@ async def data_receiver():
 async def data_translator():
     print("Starting data translator...")
     translator = CAN_Translate.CANTranslator(db)
-    buffer = []
+    buffer = {}
     buffer_limit = 40  # Number of messages to accumulate before sending
     while not terminate_event.is_set():
         if not raw_data_queue.empty():
