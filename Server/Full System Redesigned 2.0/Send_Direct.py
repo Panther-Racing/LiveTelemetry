@@ -16,7 +16,7 @@ async def handler(websocket, path):
 
 async def send_updates(data):
     if connected_clients:
-        print(f"Sending updates to {len(connected_clients)} clients")
+        # print(f"Sending updates to {len(connected_clients)} clients")
         await asyncio.gather(*[ws.send(data) for ws in connected_clients if ws.open])
 
 async def begin(translated_data, terminate_event):
