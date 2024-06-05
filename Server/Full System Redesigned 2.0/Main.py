@@ -3,7 +3,6 @@ import cantools
 import CAN_Translate
 import Receive_Data
 import Send_Direct
-from line_profiler import LineProfiler
 
 # Set maximum queue size
 MAX_QUEUE_SIZE = 100
@@ -47,7 +46,7 @@ async def data_sender():
     await Send_Direct.begin(translated_data_queue, terminate_event)
     print("Data sender stopped.")
 
-async def start():
+async def main():
     print("Starting main function...")
 
     # Start the receiver, translator, and sender tasks
@@ -57,15 +56,6 @@ async def start():
 
     await asyncio.gather(receiver_task, translator_task, sender_task)
     print("Main function completed.")
-
-
-def main():
-    lp = LineProfiler()
-    lp_wrapper = lp(start)
-    result = lp_wrapper()
-    print(result)
-    lp.print_stats()
-
 
 if __name__ == '__main__':
     try:
