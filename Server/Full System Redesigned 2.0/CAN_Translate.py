@@ -11,7 +11,7 @@ class CANTranslator:
         self.db = db
         self.json_dict = {}
 
-
+    @profile
     async def data_handler(self, data, processed_data):
         message = data.decode().strip()
         date_time_str = message.split(',')[-1]
@@ -24,7 +24,7 @@ class CANTranslator:
         arduino_time = arduino_time_raw + self.offset
 
         latency = time.time() * 1000 - arduino_time
-        print(f'arduino time: {arduino_time}\tserver time: {time.time()*1000}\tlatency: { latency }\toffset: { self.offset }')
+        # print(f'arduino time: {arduino_time}\tserver time: {time.time()*1000}\tlatency: { latency }\toffset: { self.offset }')
         message = message.rsplit(',', 1)[0]
 
         try:
@@ -87,6 +87,7 @@ class CANTranslator:
             # Push the updated JSON data to the processed_data queue
             try:
                 await processed_data.put(json.dumps(self.json_dict))
-                print(f'processed data queue has { processed_data.qsize() } items in it')
+                # print(f'processed data queue has { processed_data.qsize() } items in it')
             except asyncio.QueueFull as error:
-                print('Data discarded, decoded data queue full')
+                # print('Data discarded, decoded data queue full')
+                pass
