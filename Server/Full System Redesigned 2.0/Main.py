@@ -61,7 +61,7 @@ async def start():
 
 def main():
     lp = LineProfiler()
-    lp_wrapper = lp(start)
+    lp_wrapper = await lp(start)
     result = lp_wrapper()
     print(result)
     lp.print_stats()
