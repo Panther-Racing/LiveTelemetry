@@ -62,31 +62,9 @@ async def main():
     await asyncio.gather(receiver_task, translator_task, sender_task)
     print("Main function completed.")
 
-
-async def run_with_restarts():
-    """Run the main app and restart it every 30 minutes."""
-    while True:
-        print("Starting the main application...")
-        # Run the main app in a separate coroutine
-        main_task = asyncio.create_task(main())
-
-        # Wait for 30 minutes before restarting
-        await asyncio.sleep(1)  # 1800 seconds = 30 minutes
-
-        # If we reach here, it means the restart timer has expired
-        print("Scheduled restart after 30 minutes.")
-        main_task.cancel()  # Cancel the current running app
-        try:
-            await main_task  # Await task to handle any finalizations or exceptions
-        except asyncio.CancelledError:
-            print("The main application was successfully cancelled for restart.")
-
-        print("Restarting the application now...")
-
-
 if __name__ == '__main__':
     try:
-        asyncio.run(run_with_restarts())
+        asyncio.run(main())
     except KeyboardInterrupt:
         terminate_event.set()
         print("Terminating...")
