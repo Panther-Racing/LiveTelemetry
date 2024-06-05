@@ -30,6 +30,7 @@ async def begin(translated_data, terminate_event):
             try:
                 batch = await asyncio.wait_for(translated_data.get(), timeout=0.1)
                 await send_updates(batch)
+                await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
             except asyncio.TimeoutError:
                 continue
         print("Server stopping...")
