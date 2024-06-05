@@ -69,7 +69,7 @@ def main():
 
 if __name__ == '__main__':
     try:
-        main()
+        asyncio.run(main())
     except KeyboardInterrupt:
         terminate_event.set()
         print("Terminating...")
