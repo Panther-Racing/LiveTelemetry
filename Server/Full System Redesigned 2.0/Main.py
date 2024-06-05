@@ -31,6 +31,8 @@ async def data_receiver():
             except asyncio.QueueFull:
                 # print("Raw data queue is full. Discarding data.")
                 pass
+    print('Closing Socket')
+    s.close()
 
 
 async def data_translator():
@@ -64,18 +66,18 @@ async def main():
 
 
 async def run_with_restarts():
-    """Run the main app and restart it every 30 minutes."""
+    """Run the main thread and restart it every 30 minutes."""
     while True:
         print("Starting the main application...")
         # Run the main app in a separate coroutine
         main_task = asyncio.create_task(main())
 
         # Wait for 30 minutes before restarting
-        await asyncio.sleep(1)  # 1800 seconds = 30 minutes
+        await asyncio.sleep(1800)  # 1800 seconds = 30 minutes
 
         # If we reach here, it means the restart timer has expired
         print("Scheduled restart after 30 minutes.")
-        main_task.cancel()  # Cancel the current running app
+        terminate_event.set()  # Cancel the current running app
         try:
             await main_task  # Await task to handle any finalizations or exceptions
         except asyncio.CancelledError:
