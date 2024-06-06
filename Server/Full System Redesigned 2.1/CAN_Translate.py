@@ -38,7 +38,7 @@ class CANTranslator:
 
         print(f'message {data_string}')
         if data_string == 'startup':
-            self.offset = time.time() * 1000 - arduino_time_raw
+            self.offset = time.time() * 1000 - arduino_time_raw - latency
         else:
             data_reformatted = await CANTranslator.reformatter(self, data_string)
 

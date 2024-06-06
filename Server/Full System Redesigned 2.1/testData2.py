@@ -59,7 +59,7 @@ def create_and_send_can_message(counter):
 
 # Function to create and send the startup message
 def send_startup_message():
-    startup_message = "Startup"
+    startup_message = "startup"
     # Calculate the elapsed time in milliseconds
     elapsed_time = int((time.time() - start_time) * 1000)
     message_format = f"8,00,{startup_message}, {elapsed_time}"
