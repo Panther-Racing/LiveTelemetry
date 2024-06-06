@@ -16,8 +16,10 @@ class CANTranslator:
         message = data.decode().strip()
         print(message)
         date_time_str = message.split(',')[-1]
+        message = message.rsplit(',', 1)[0]
         print(message)
         arduino_time_raw = int(date_time_str)
+        message = message.rsplit(',', 1)[0]
 
         count = int(message.split(',')[-1])
         print(message)
@@ -30,7 +32,6 @@ class CANTranslator:
 
         latency = time.time() * 1000 - arduino_time
         # print(f'arduino time: {arduino_time}\tserver time: {time.time()*1000}\tlatency: { latency }\toffset: { self.offset }')
-        message = message.rsplit(',', 1)[0]
 
         try:
             frame_id = int(message[await CANTranslator.find_nth(message, ',', 1) + 1:await CANTranslator.find_nth(message, ',', 2)], 16)
