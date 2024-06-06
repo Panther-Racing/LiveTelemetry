@@ -22,7 +22,7 @@ class CANTranslator:
         message = message.rsplit(',', 1)[0]
 
         count = int(message.split(',')[-1])
-        print(message)
+        print(f'3: message')
 
         if self.first_message:
             self.offset = time.time() * 1000 - arduino_time_raw
