@@ -63,9 +63,9 @@ async def data_sender():
 async def main():
     print("Starting main function...")
     receiver_task = asyncio.create_task(data_receiver())
-    # translator_task = asyncio.create_task(data_translator())
+    translator_task = asyncio.create_task(data_translator())
     # sender_task = asyncio.create_task(data_sender())
-    await asyncio.gather(receiver_task)
+    await asyncio.gather(receiver_task, translator_task)
     print("Main function completed.")
 
 
