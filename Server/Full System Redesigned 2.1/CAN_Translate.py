@@ -38,8 +38,10 @@ class CANTranslator:
         data_reformatted = await CANTranslator.reformatter(self, data_string)
 
         try:
+            print('Decoding...')
             decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
                                              decode_containers=False, allow_truncated=False)
+            print('Decoded')
             return await CANTranslator.to_json(self, decoded, latency / 1000, arduino_time)
 
         except KeyError as error:
@@ -75,11 +77,11 @@ class CANTranslator:
         return byte_string
 
     async def to_json(self, decoded, latency, arduino_time):
-            # Update the JSON dictionary with the new data
-            self.json_dict.update(decoded)
-            self.json_dict.update({'Timestamp': time.time() * 1000})
-            self.json_dict.update({'Latency': latency})
-            self.json_dict.update({'Arduino_Time': arduino_time})
+        # Update the JSON dictionary with the new data
+        self.json_dict.update(decoded)
+        self.json_dict.update({'Timestamp': time.time() * 1000})
+        self.json_dict.update({'Latency': latency})
+        self.json_dict.update({'Arduino_Time': arduino_time})
 
-           #return the json dictionary
-            return self.json_dict
+        # return the json dictionary
+        return self.json_dict

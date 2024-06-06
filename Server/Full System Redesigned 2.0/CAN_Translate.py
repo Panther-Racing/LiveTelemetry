@@ -77,16 +77,16 @@ class CANTranslator:
         return byte_string
 
     async def to_json(self, decoded, latency, processed_data, arduino_time):
-            # Update the JSON dictionary with the new data
-            self.json_dict.update(decoded)
-            self.json_dict.update({'Timestamp': time.time() * 1000})
-            self.json_dict.update({'Latency': latency})
-            self.json_dict.update({'Arduino_Time': arduino_time})
+        # Update the JSON dictionary with the new data
+        self.json_dict.update(decoded)
+        self.json_dict.update({'Timestamp': time.time() * 1000})
+        self.json_dict.update({'Latency': latency})
+        self.json_dict.update({'Arduino_Time': arduino_time})
 
-            # Push the updated JSON data to the processed_data queue
-            try:
-                await processed_data.put(json.dumps(self.json_dict))
-                # print(f'processed data queue has { processed_data.qsize() } items in it')
-            except asyncio.QueueFull as error:
-                # print('Data discarded, decoded data queue full')
-                pass
+        # Push the updated JSON data to the processed_data queue
+        try:
+            await processed_data.put(json.dumps(self.json_dict))
+            # print(f'processed data queue has { processed_data.qsize() } items in it')
+        except asyncio.QueueFull as error:
+            # print('Data discarded, decoded data queue full')
+            pass
