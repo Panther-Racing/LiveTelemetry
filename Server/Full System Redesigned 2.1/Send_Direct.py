@@ -3,7 +3,7 @@ import websockets
 import json
 
 connected_clients = set()
-BATCH_SIZE = 20
+BATCH_SIZE = 10
 
 async def handler(websocket, path):
     connected_clients.add(websocket)
