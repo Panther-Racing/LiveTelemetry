@@ -33,6 +33,7 @@ async def begin(translated_data, terminate_event):
                 combined = {}
                 for _ in range(BATCH_SIZE):
                     item = await translated_data.get()
+                    print(f'got from dictionary: {item}')
                     combined.update(item)
                     translated_data.task_done()
                 combined_json = json.dumps(combined)
