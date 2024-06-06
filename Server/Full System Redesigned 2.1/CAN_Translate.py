@@ -17,6 +17,7 @@ class CANTranslator:
         arduino_time_raw = int(date_time_str)
 
         if message == 'Startup':
+            print('Received startup message')
             self.offset = time.time() * 1000 - arduino_time_raw
         else:
             arduino_time = arduino_time_raw + self.offset
