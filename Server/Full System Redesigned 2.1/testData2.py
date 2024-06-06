@@ -48,7 +48,7 @@ def create_and_send_can_message(counter):
             elapsed_time = int((time.time() - start_time) * 1000)
 
             # Format the message
-            message_format = f"{message.length},{can_id:x},{format_data(data)}, {elapsed_time}, {counter}"
+            message_format = f"{message.length},{can_id:x},{format_data(data)}, {elapsed_time}"
             print(message_format)
 
             # Send the message over UDP
@@ -59,5 +59,4 @@ def create_and_send_can_message(counter):
 # Periodically send CAN messages
 while True:
     create_and_send_can_message(counter)
-    counter += 1
     time.sleep(0.00001)  # Adjust the interval as needed

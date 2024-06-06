@@ -10,6 +10,7 @@ class CANTranslator:
         self.offset = 0
         self.db = db
         self.json_dict = {}
+        self.first_message = True
 
     async def data_handler(self, data, translated_data):
         message = data.decode().strip()
