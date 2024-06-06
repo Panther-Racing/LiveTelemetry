@@ -34,6 +34,7 @@ async def begin(translated_data, terminate_event):
                 for _ in range(BATCH_SIZE):
                     item = await translated_data.get()
                     print(f'got from dictionary: {item}')
+                    await asyncio.sleep(0.1)
                     combined.update(item)
                     print('Combined')
                     # translated_data.task_done()
