@@ -42,15 +42,15 @@ async def data_translator():
     data = dict()
     index = 0
     buffer_amt = 10  # Number of messages to accumulate before sending
-    while not terminate_event.is_set():
-        if not raw_data_queue.empty():
-            print('Processing data')
-            raw_data = await raw_data_queue.get()
-            # data.update(await translator.data_handler(raw_data))
-            # if index >= buffer_amt:
-            #     await translated_data_queue.put(data)
-            #     index = 0
-            # index += 1
+    # while not terminate_event.is_set():
+    #     if not raw_data_queue.empty():
+    #         print('Processing data')
+    #         raw_data = await raw_data_queue.get()
+    #         data.update(await translator.data_handler(raw_data))
+    #         if index >= buffer_amt:
+    #             await translated_data_queue.put(data)
+    #             index = 0
+    #         index += 1
 
     print("Data translator stopped.")
 
