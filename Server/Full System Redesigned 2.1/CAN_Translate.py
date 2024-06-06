@@ -19,7 +19,7 @@ class CANTranslator:
         print(date_time_str)
         arduino_time_raw = int(date_time_str)
 
-        count = int(message.split(',')[-1])
+        count = int(message.split(',')[-2])
         print(count)
 
         if self.first_message:
