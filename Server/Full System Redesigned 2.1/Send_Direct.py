@@ -28,6 +28,7 @@ async def begin(translated_data, terminate_event):
 
         while not terminate_event.is_set():
             await asyncio.sleep(0.1)
+            print(translated_data.qsize())
             if translated_data.qsize() >= BATCH_SIZE:
                 combined = {}
                 for _ in range(BATCH_SIZE):
