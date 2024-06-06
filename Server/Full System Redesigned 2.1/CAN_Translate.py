@@ -22,7 +22,6 @@ class CANTranslator:
 
         count = int(message.split(',')[-1])
         message = message.rsplit(',', 1)[0]
-        print(f'3: message')
 
         if self.first_message:
             self.offset = time.time() * 1000 - arduino_time_raw
@@ -42,7 +41,7 @@ class CANTranslator:
 
         data_string = message[await CANTranslator.find_nth(message, ',', 2) + 1:]
 
-        print(f'message: {data_string}')
+        # print(f'message: {data_string}')
         if data_string == 'startup':
             terminate_event.set()
         else:
