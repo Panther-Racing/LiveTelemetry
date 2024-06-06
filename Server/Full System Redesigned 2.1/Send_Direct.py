@@ -3,7 +3,7 @@ import websockets
 import json
 
 connected_clients = set()
-BATCH_SIZE = 10
+BATCH_SIZE = 100
 
 async def handler(websocket, path):
     connected_clients.add(websocket)
@@ -18,7 +18,7 @@ async def handler(websocket, path):
 
 async def send_updates(data):
     if connected_clients:
-        print(f'Sending {data}')
+        # print(f'Sending {data}')
         await asyncio.gather(*[ws.send(data) for ws in connected_clients if ws.open])
 
 async def begin(translated_data, terminate_event):
@@ -32,12 +32,9 @@ async def begin(translated_data, terminate_event):
                 combined = {}
                 for _ in range(BATCH_SIZE):
                     item = await translated_data.get()
-                    print(f'got from dictionary: {item}')
                     combined.update(json.loads(item))
-                    print('Combined')
                     translated_data.task_done()
                 combined_json = json.dumps(combined)
-                print(f"Consumed and combined: {combined_json}")
                 try:
                     pass
                     await send_updates(combined_json)

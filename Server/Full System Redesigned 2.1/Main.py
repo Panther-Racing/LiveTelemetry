@@ -5,7 +5,7 @@ import Receive_Data
 import Send_Direct
 
 # Set maximum queue size
-MAX_QUEUE_SIZE = 100
+MAX_QUEUE_SIZE = 500
 
 # Queues for communication between tasks
 raw_data_queue = asyncio.Queue(maxsize=MAX_QUEUE_SIZE)
@@ -22,7 +22,7 @@ async def data_receiver():
     while not terminate_event.is_set():
         data = await Receive_Data.listen_for_data(s, terminate_event)
         if raw_data_queue.full():
-            # print("Raw data queue is full. Discarding data.")
+            print("Raw data queue is full. Discarding data.")
             pass
         else:
             try:
