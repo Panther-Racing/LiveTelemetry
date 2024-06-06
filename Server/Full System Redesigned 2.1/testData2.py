@@ -3,6 +3,20 @@ import socket
 import time
 import random
 
+# Load the DBC file
+dbc_file = 'DBCs/Combined.dbc'
+db = cantools.database.load_file(dbc_file)
+
+# UDP configuration
+UDP_IP = "20.81.190.176"
+UDP_PORT = 20001
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+# Record the start time
+start_time = time.time()
+
+# Initialize the counter
+counter = 0
 
 # Function to generate random data based on DBC signal type
 def generate_random_data(signal):
@@ -34,7 +48,7 @@ def create_and_send_can_message(counter):
             elapsed_time = int((time.time() - start_time) * 1000)
 
             # Format the message
-            message_format = f"{message.length},{can_id:x},{format_data(data)}, {elapsed_time}, {counter}"
+            message_format = f"{message.length},{can_id:x},{format_data(data)}, {elapsed_time}"
             print(message_format)
 
             # Send the message over UDP
@@ -47,28 +61,13 @@ def send_startup_message():
     startup_message = "Startup"
     # Calculate the elapsed time in milliseconds
     elapsed_time = int((time.time() - start_time) * 1000)
-    message_format = f"8,0x00,{startup_message}, {elapsed_time}, 0"
+    message_format = f"8,00,{startup_message}, {elapsed_time}"
     print(message_format)
     sock.sendto(message_format.encode(), (UDP_IP, UDP_PORT))
     time.sleep(1)
 
 
 if __name__ == "__main__":
-
-    # Load the DBC file
-    dbc_file = 'DBCs/Combined.dbc'
-    db = cantools.database.load_file(dbc_file)
-
-    # UDP configuration
-    UDP_IP = "20.81.190.176"
-    UDP_PORT = 20001
-    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-
-    # Record the start time
-    start_time = time.time()
-
-    # Initialize the counter
-    counter = 0
 
     send_startup_message()
 

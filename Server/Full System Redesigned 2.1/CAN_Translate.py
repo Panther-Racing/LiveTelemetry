@@ -10,16 +10,18 @@ class CANTranslator:
         self.offset = 0
         self.db = db
         self.json_dict = {}
+        self.first_message = True
 
     async def data_handler(self, data, translated_data):
         message = data.decode().strip()
         date_time_str = message.split(',')[-1]
         arduino_time_raw = int(date_time_str)
 
-        if message == 'Startup':
+        if self.first_message:
             print('Received startup message cl')
             self.offset = time.time() * 1000 - arduino_time_raw
-            
+            self.first_message = False
+
         arduino_time = arduino_time_raw + self.offset
 
         latency = time.time() * 1000 - arduino_time
