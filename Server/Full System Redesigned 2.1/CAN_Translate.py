@@ -38,10 +38,8 @@ class CANTranslator:
         data_reformatted = await CANTranslator.reformatter(self, data_string)
 
         try:
-            print('Decoding...')
             decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
                                              decode_containers=False, allow_truncated=False)
-            print('Decoded')
             await CANTranslator.to_json(self, decoded, latency / 1000, translated_data, arduino_time)
 
         except KeyError as error:

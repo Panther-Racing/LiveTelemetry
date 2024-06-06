@@ -20,16 +20,13 @@ async def data_receiver():
     s = await Receive_Data.begin()
     print("Data receiver started.")
     while not terminate_event.is_set():
-        print('Waiting for data')
         data = await Receive_Data.listen_for_data(s, terminate_event)
-        print(f'Received {data}')
         if raw_data_queue.full():
-            print("Raw data queue is full. Discarding data.")
+            # print("Raw data queue is full. Discarding data.")
             pass
         else:
             try:
                 raw_data_queue.put_nowait(data)
-                print(raw_data_queue.qsize())
             except asyncio.QueueFull:
                 # print("Raw data queue is full. Discarding data.")
                 pass
