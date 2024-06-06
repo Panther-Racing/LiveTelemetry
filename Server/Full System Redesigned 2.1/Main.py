@@ -19,38 +19,42 @@ async def data_receiver():
     print("Starting data receiver...")
     s = await Receive_Data.begin()
     print("Data receiver started.")
-    while not terminate_event.is_set():
-        # print(f'Raw data queue size: {raw_data_queue.qsize()}')
-        data = await Receive_Data.listen_for_data(s, terminate_event)
-        if raw_data_queue.full():
-            # print("Raw data queue is full. Discarding data.")
-            pass
-        else:
-            try:
-                raw_data_queue.put_nowait(data)
-            except asyncio.QueueFull:
-                # print("Raw data queue is full. Discarding data.")
+    try:
+        while not terminate_event.is_set():
+            data = await Receive_Data.listen_for_data(s, terminate_event)
+            if raw_data_queue.full():
                 pass
-    print('Closing Socket')
-    s.close()
+            else:
+                try:
+                    raw_data_queue.put_nowait(data)
+                except asyncio.QueueFull:
+                    pass
+    except asyncio.CancelledError:
+        print("Data receiver task cancelled.")
+    finally:
+        print('Closing Socket')
+        s.close()
 
 async def data_translator():
     print("Starting data translator...")
     translator = CAN_Translate.CANTranslator(db)
-    while not terminate_event.is_set():
-        if not raw_data_queue.empty():
-            raw_data = await raw_data_queue.get()
-            # print(f"Translating raw data: {raw_data}")
-            await translator.data_handler(raw_data, translated_data_queue, terminate_event)
-        await asyncio.sleep(0.1)
+    try:
+        while not terminate_event.is_set():
+            if not raw_data_queue.empty():
+                raw_data = await raw_data_queue.get()
+                await translator.data_handler(raw_data, translated_data_queue, terminate_event)
+            await asyncio.sleep(0.1)
+    except asyncio.CancelledError:
+        print("Data translator task cancelled.")
     print("Data translator stopped.")
-
 
 async def data_sender():
     print("Starting data sender...")
-    await Send_Direct.begin(translated_data_queue, terminate_event)
+    try:
+        await Send_Direct.begin(translated_data_queue, terminate_event)
+    except asyncio.CancelledError:
+        print("Data sender task cancelled.")
     print("Data sender stopped.")
-
 
 async def main():
     print("Starting main function...")
@@ -62,27 +66,31 @@ async def main():
     await asyncio.gather(receiver_task, translator_task, sender_task)
     print("Main function completed.")
 
-
 async def run_with_restarts():
-    """Run the main thread and restart it every 30 minutes."""
+    """Run the main thread and restart it every 30 minutes or when terminate_event is set."""
     while True:
         print("Starting the main application...")
+        terminate_event.clear()
         # Run the main app in a separate coroutine
         main_task = asyncio.create_task(main())
 
-        # Wait for 30 minutes before restarting
-        await asyncio.sleep(1800)  # 1800 seconds = 30 minutes
+        # Wait for 30 minutes or until terminate_event is set
+        try:
+            await asyncio.wait_for(terminate_event.wait(), timeout=1800)
+        except asyncio.TimeoutError:
+            print("Scheduled restart after 30 minutes.")
 
-        # If we reach here, it means the restart timer has expired
-        print("Scheduled restart after 30 minutes.")
-        terminate_event.set()  # Cancel the current running app
+        # If we reach here, it means the terminate event is set or the timer expired
+        terminate_event.set()  # Ensure the termination event is set
+
+        # Cancel the main task and wait for it to finish
+        main_task.cancel()
         try:
             await main_task  # Await task to handle any finalizations or exceptions
         except asyncio.CancelledError:
             print("The main application was successfully cancelled for restart.")
 
         print("Restarting the application now...")
-
 
 if __name__ == '__main__':
     try:
