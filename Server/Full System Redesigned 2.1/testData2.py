@@ -50,6 +50,7 @@ def send_startup_message():
     message_format = f"8,0x00,{startup_message}, {elapsed_time}, 0"
     print(message_format)
     sock.sendto(message_format.encode(), (UDP_IP, UDP_PORT))
+    time.sleep(1)
 
 
 if __name__ == "__main__":
