@@ -15,7 +15,7 @@ terminate_event = asyncio.Event()
 # Load the CAN database
 db = cantools.database.load_file('DBCS/Combined.dbc')
 
-
+@profile
 async def data_receiver():
     print("Starting data receiver...")
     s = await Receive_Data.begin()
@@ -36,7 +36,7 @@ async def data_receiver():
     print('Closing Socket')
     s.close()
 
-
+@profile
 async def data_translator():
     print("Starting data translator...")
     translator = CAN_Translate.CANTranslator(db)

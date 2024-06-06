@@ -12,6 +12,7 @@ class CANTranslator:
         self.db = db
         self.json_dict = {}
 
+    @profile
     async def data_handler(self, data):
         message = data.decode().strip()
         date_time_str = message.split(',')[-1]
@@ -76,6 +77,7 @@ class CANTranslator:
         byte_string = bytes(int(value, 16) for value in hex_values)
         return byte_string
 
+    @profile
     async def to_json(self, decoded, latency, arduino_time):
         # Update the JSON dictionary with the new data
         self.json_dict.update(decoded)
