@@ -3,7 +3,7 @@ import websockets
 import json
 
 connected_clients = set()
-
+BATCH_SIZE = 10
 
 async def handler(websocket, path):
     connected_clients.add(websocket)
@@ -28,9 +28,18 @@ async def begin(translated_data, terminate_event):
     async with websockets.serve(handler, "localhost", 8080):
         print('Started WebSocket')
         while not terminate_event.is_set():
-            try:
-                await send_updates(translated_data)
-                # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
-            except asyncio.TimeoutError:
-                continue
+
+            if translated_data.qsize() >= BATCH_SIZE:
+                batch = []
+                for _ in range(BATCH_SIZE):
+                    item = await translated_data.get()
+                    batch.append(item)
+                    translated_data.task_done()
+                combined = {i: item for i, item in enumerate(batch)}
+                combined_json = json.dumps(combined)
+                try:
+                    await send_updates(combined_json)
+                    # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
+                except asyncio.TimeoutError:
+                    continue
         print("Server stopping...")

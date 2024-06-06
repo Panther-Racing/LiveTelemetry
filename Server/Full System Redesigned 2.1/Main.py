@@ -39,19 +39,12 @@ async def data_receiver():
 async def data_translator():
     print("Starting data translator...")
     translator = CAN_Translate.CANTranslator(db)
-    data = dict()
-    index = 0
-    buffer_amt = 10  # Number of messages to accumulate before sending
-    # while not terminate_event.is_set():
-    #     if not raw_data_queue.empty():
-    #         print('Processing data')
-    #         raw_data = await raw_data_queue.get()
-    #         data.update(await translator.data_handler(raw_data))
-    #         if index >= buffer_amt:
-    #             await translated_data_queue.put(data)
-    #             index = 0
-    #         index += 1
-
+    while not terminate_event.is_set():
+        if not raw_data_queue.empty():
+            raw_data = await raw_data_queue.get()
+            # print(f"Translating raw data: {raw_data}")
+            await translator.data_handler(raw_data, translated_data_queue)
+        await asyncio.sleep(0.1)
     print("Data translator stopped.")
 
 
