@@ -62,7 +62,7 @@ def send_startup_message():
     startup_message = "startup"
     # Calculate the elapsed time in milliseconds
     elapsed_time = int((time.time() - start_time) * 1000)
-    message_format = f"8,00,{startup_message}, {elapsed_time}"
+    message_format = f"8,00,{startup_message}, {counter}, {elapsed_time}"
     print(message_format)
     sock.sendto(message_format.encode(), (UDP_IP, UDP_PORT))
     time.sleep(1)
@@ -73,4 +73,5 @@ send_startup_message()
 # Periodically send CAN messages
 while True:
     create_and_send_can_message(counter)
-    time.sleep(0.00001)  # Adjust the interval as needed
+    counter += 1
+    time.sleep(0.000001)  # Adjust the interval as needed

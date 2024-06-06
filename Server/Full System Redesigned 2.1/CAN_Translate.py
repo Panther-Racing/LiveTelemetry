@@ -17,6 +17,9 @@ class CANTranslator:
         date_time_str = message.split(',')[-1]
         arduino_time_raw = int(date_time_str)
 
+        count = int(message.split(',')[-1])
+        print(count)
+
         if self.first_message:
             self.offset = time.time() * 1000 - arduino_time_raw
             self.first_message = False
@@ -47,7 +50,7 @@ class CANTranslator:
             try:
                 decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
                                                  decode_containers=False, allow_truncated=False)
-                await CANTranslator.to_json(self, decoded, latency / 1000, translated_data, arduino_time)
+                await CANTranslator.to_json(self, decoded, latency / 1000, translated_data, arduino_time, count)
 
             except KeyError as error:
                 print('Key error: %s' % error)
@@ -81,12 +84,13 @@ class CANTranslator:
         byte_string = bytes(int(value, 16) for value in hex_values)
         return byte_string
 
-    async def to_json(self, decoded, latency, translated_data, arduino_time):
+    async def to_json(self, decoded, latency, translated_data, arduino_time, count):
         # Update the JSON dictionary with the new data
         self.json_dict.update(decoded)
         self.json_dict.update({'Timestamp': time.time() * 1000})
         self.json_dict.update({'Latency': latency})
         self.json_dict.update({'Arduino_Time': arduino_time})
+        self.json_dict.update({'Counter': count})
 
         # Push the updated JSON data to the processed_data queue
         try:
