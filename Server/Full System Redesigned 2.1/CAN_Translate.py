@@ -16,11 +16,11 @@ class CANTranslator:
         message = data.decode().strip()
         print(message)
         date_time_str = message.split(',')[-1]
-        print(date_time_str)
+        print(message)
         arduino_time_raw = int(date_time_str)
 
-        count = int(message.split(',')[-2])
-        print(count)
+        count = int(message.split(',')[-1])
+        print(message)
 
         if self.first_message:
             self.offset = time.time() * 1000 - arduino_time_raw
