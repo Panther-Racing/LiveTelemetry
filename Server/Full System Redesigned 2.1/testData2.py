@@ -48,7 +48,7 @@ def create_and_send_can_message(counter):
             elapsed_time = int((time.time() - start_time) * 1000)
 
             # Format the message
-            message_format = f"{message.length},{can_id:x},{format_data(data)}, {elapsed_time}"
+            message_format = f"{message.length},{can_id:x},{format_data(data)}, {elapsed_time}, {counter}"
             print(message_format)
 
             # Send the message over UDP
@@ -56,23 +56,8 @@ def create_and_send_can_message(counter):
         except Exception as e:
             print(e)
 
-
-def send_startup_message():
-    startup_message = "Startup"
-    # Calculate the elapsed time in milliseconds
-    elapsed_time = int((time.time() - start_time) * 1000)
-    message_format = f"8,00,{startup_message}, {elapsed_time}"
-    print(message_format)
-    sock.sendto(message_format.encode(), (UDP_IP, UDP_PORT))
-    time.sleep(1)
-
-
-if __name__ == "__main__":
-
-    send_startup_message()
-
-    # Periodically send CAN messages
-    while True:
-        create_and_send_can_message(counter)
-        counter += 1
-        time.sleep(0.00001)  # Adjust the interval as needed
+# Periodically send CAN messages
+while True:
+    create_and_send_can_message(counter)
+    counter += 1
+    time.sleep(0.00001)  # Adjust the interval as needed
