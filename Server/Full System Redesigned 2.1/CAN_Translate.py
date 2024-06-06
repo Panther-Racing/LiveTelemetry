@@ -39,7 +39,7 @@ class CANTranslator:
 
         data_string = message[await CANTranslator.find_nth(message, ',', 2) + 1:]
 
-        # print(f'message: {data_string}')
+        print(f'message: {data_string}')
         if data_string == 'startup':
             terminate_event.set()
         else:
