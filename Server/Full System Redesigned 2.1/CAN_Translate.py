@@ -84,7 +84,7 @@ class CANTranslator:
         # Push the updated JSON data to the processed_data queue
         try:
             await translated_data.put(json.dumps(self.json_dict))
-            # print(f'processed data queue has { processed_data.qsize() } items in it')
+            print(f'processed data queue has { processed_data.qsize() } items in it')
         except asyncio.QueueFull as error:
             # print('Data discarded, decoded data queue full')
             pass
