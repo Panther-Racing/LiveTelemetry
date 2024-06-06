@@ -9,7 +9,7 @@ MAX_QUEUE_SIZE = 100
 
 # Queues for communication between tasks
 raw_data_queue = asyncio.Queue(maxsize=MAX_QUEUE_SIZE)
-translated_data_queue = asyncio.Queue(maxsize=MAX_QUEUE_SIZE)
+translated_data_queue = asyncio.Queue()
 terminate_event = asyncio.Event()
 
 # Load the CAN database
