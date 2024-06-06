@@ -35,23 +35,26 @@ class CANTranslator:
         # print(f'Frame ID: { frame_id }     data: { data }')
 
         data_string = message[await CANTranslator.find_nth(message, ',', 2) + 1:]
-        data_reformatted = await CANTranslator.reformatter(self, data_string)
 
         if data_string == 'message':
             self.offset = time.time() * 1000 - arduino_time_raw
+        else:
+            data_reformatted = await CANTranslator.reformatter(self, data_string)
 
-        try:
-            decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
-                                             decode_containers=False, allow_truncated=False)
-            await CANTranslator.to_json(self, decoded, latency / 1000, translated_data, arduino_time)
 
-        except KeyError as error:
-            print('Key error: %s' % error)
-        except ValueError as error:
-            print('Value error: %s' % error)
-        except Exception as error:
-            print('Other Error:')
-            print(error)
+
+            try:
+                decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
+                                                 decode_containers=False, allow_truncated=False)
+                await CANTranslator.to_json(self, decoded, latency / 1000, translated_data, arduino_time)
+
+            except KeyError as error:
+                print('Key error: %s' % error)
+            except ValueError as error:
+                print('Value error: %s' % error)
+            except Exception as error:
+                print('Other Error:')
+                print(error)
 
     @staticmethod
     async def find_nth(haystack, needle, n):
