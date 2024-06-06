@@ -5,7 +5,7 @@ import Receive_Data
 import Send_Direct
 
 # Set maximum queue size
-MAX_QUEUE_SIZE = 500
+MAX_QUEUE_SIZE = 100
 
 # Queues for communication between tasks
 raw_data_queue = asyncio.Queue(maxsize=MAX_QUEUE_SIZE)
@@ -53,9 +53,11 @@ async def data_sender():
 
 async def main():
     print("Starting main function...")
+
     receiver_task = asyncio.create_task(data_receiver())
     translator_task = asyncio.create_task(data_translator())
     sender_task = asyncio.create_task(data_sender())
+
     await asyncio.gather(receiver_task, translator_task, sender_task)
     print("Main function completed.")
 

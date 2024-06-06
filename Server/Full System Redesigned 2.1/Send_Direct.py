@@ -18,7 +18,6 @@ async def handler(websocket, path):
 
 async def send_updates(data):
     if connected_clients:
-        data = json.dumps(data)  # Combine batched data into one JSON file
         print(f'Sending {data}')
         await asyncio.gather(*[ws.send(data) for ws in connected_clients if ws.open])
 
