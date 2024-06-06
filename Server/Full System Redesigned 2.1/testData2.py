@@ -56,6 +56,19 @@ def create_and_send_can_message(counter):
         except Exception as e:
             print(e)
 
+
+# Function to create and send the startup message
+def send_startup_message():
+    startup_message = "Startup Message"
+    # Calculate the elapsed time in milliseconds
+    elapsed_time = int((time.time() - start_time) * 1000)
+    message_format = f"8,0x00,{startup_message}, {elapsed_time}, 0"
+    print(message_format)
+    sock.sendto(message_format.encode(), (UDP_IP, UDP_PORT))
+
+
+send_startup_message()
+
 # Periodically send CAN messages
 while True:
     create_and_send_can_message(counter)

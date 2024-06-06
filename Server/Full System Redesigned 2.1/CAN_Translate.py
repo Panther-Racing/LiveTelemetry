@@ -37,6 +37,9 @@ class CANTranslator:
         data_string = message[await CANTranslator.find_nth(message, ',', 2) + 1:]
         data_reformatted = await CANTranslator.reformatter(self, data_string)
 
+        if data_string == 'message':
+            self.offset = time.time() * 1000 - arduino_time_raw
+
         try:
             decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
                                              decode_containers=False, allow_truncated=False)
