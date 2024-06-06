@@ -28,20 +28,17 @@ async def begin(translated_data, terminate_event):
 
         while not terminate_event.is_set():
             await asyncio.sleep(0.1)
-            if translated_data.qsize() > 0:
-                print(translated_data.qsize())
             if translated_data.qsize() >= BATCH_SIZE:
-                batch = []
+                combined = {}
                 for _ in range(BATCH_SIZE):
                     item = await translated_data.get()
-                    batch.append(item)
+                    combined.update(item)
                     translated_data.task_done()
-                combined = {i: item for i, item in enumerate(batch)}
                 combined_json = json.dumps(combined)
-                print(combined_json)
+                print(f"Consumed and combined: {combined_json}")
                 try:
                     pass
-                    # await send_updates(combined_json)
+                    await send_updates(combined_json)
                     # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
                 except asyncio.TimeoutError:
                     continue
