@@ -7,7 +7,6 @@ import asyncio
 
 class CANTranslator:
     def __init__(self, db):
-        self.first_message = True
         self.offset = 0
         self.db = db
         self.json_dict = {}
@@ -17,38 +16,37 @@ class CANTranslator:
         date_time_str = message.split(',')[-1]
         arduino_time_raw = int(date_time_str)
 
-        if self.first_message:
+        if message == 'Startup':
             self.offset = time.time() * 1000 - arduino_time_raw
-            self.first_message = False
+        else:
+            arduino_time = arduino_time_raw + self.offset
 
-        arduino_time = arduino_time_raw + self.offset
+            latency = time.time() * 1000 - arduino_time
+            # print(f'arduino time: {arduino_time}\tserver time: {time.time()*1000}\tlatency: { latency }\toffset: { self.offset }')
+            message = message.rsplit(',', 1)[0]
 
-        latency = time.time() * 1000 - arduino_time
-        # print(f'arduino time: {arduino_time}\tserver time: {time.time()*1000}\tlatency: { latency }\toffset: { self.offset }')
-        message = message.rsplit(',', 1)[0]
+            try:
+                frame_id = int(message[await CANTranslator.find_nth(message, ',', 1) + 1:await CANTranslator.find_nth(message, ',', 2)], 16)
+            except ValueError as error:
+                frame_id = 'ERROR'
 
-        try:
-            frame_id = int(message[await CANTranslator.find_nth(message, ',', 1) + 1:await CANTranslator.find_nth(message, ',', 2)], 16)
-        except ValueError as error:
-            frame_id = 'ERROR'
+            # print(f'Frame ID: { frame_id }     data: { data }')
 
-        # print(f'Frame ID: { frame_id }     data: { data }')
+            data_string = message[await CANTranslator.find_nth(message, ',', 2) + 1:]
+            data_reformatted = await CANTranslator.reformatter(self, data_string)
 
-        data_string = message[await CANTranslator.find_nth(message, ',', 2) + 1:]
-        data_reformatted = await CANTranslator.reformatter(self, data_string)
+            try:
+                decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
+                                                 decode_containers=False, allow_truncated=False)
+                await CANTranslator.to_json(self, decoded, latency / 1000, translated_data, arduino_time)
 
-        try:
-            decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
-                                             decode_containers=False, allow_truncated=False)
-            await CANTranslator.to_json(self, decoded, latency / 1000, translated_data, arduino_time)
-
-        except KeyError as error:
-            print('Key error: %s' % error)
-        except ValueError as error:
-            print('Value error: %s' % error)
-        except Exception as error:
-            print('Other Error:')
-            print(error)
+            except KeyError as error:
+                print('Key error: %s' % error)
+            except ValueError as error:
+                print('Value error: %s' % error)
+            except Exception as error:
+                print('Other Error:')
+                print(error)
 
     @staticmethod
     async def find_nth(haystack, needle, n):
