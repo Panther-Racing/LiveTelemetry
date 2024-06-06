@@ -28,13 +28,13 @@ async def begin(translated_data, terminate_event):
 
         while not terminate_event.is_set():
             await asyncio.sleep(0.1)
-            print(translated_data.qsize())
             if translated_data.qsize() >= BATCH_SIZE:
                 combined = {}
                 for _ in range(BATCH_SIZE):
                     item = await translated_data.get()
                     print(f'got from dictionary: {item}')
-                    # combined.update(item)
+                    combined.update(item)
+                    await asyncio.sleep(1)
                     print('Combined')
                     translated_data.task_done()
                 combined_json = json.dumps(combined)
