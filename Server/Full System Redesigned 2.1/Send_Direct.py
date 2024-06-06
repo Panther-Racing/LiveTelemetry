@@ -29,6 +29,13 @@ async def begin(translated_data, terminate_event):
 
         while not terminate_event.is_set():
 
+            try:
+                data = await asyncio.wait_for(translated_data.get(), timeout=0.1)
+                # print(f"Sending data: {data}")
+                await send_updates(data)
+
+            except asyncio.TimeoutError:
+                continue
             # if translated_data.qsize() >= BATCH_SIZE:
             #     batch = []
             #     for _ in range(BATCH_SIZE):
@@ -42,5 +49,4 @@ async def begin(translated_data, terminate_event):
             #         # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
             #     except asyncio.TimeoutError:
             #         continue
-            pass
         print("Server stopping...")
