@@ -20,9 +20,10 @@ async def data_receiver():
     s = await Receive_Data.begin()
     print("Data receiver started.")
     while not terminate_event.is_set():
+        print(f'Raw data queue size: {raw_data_queue.qsize()}')
         data = await Receive_Data.listen_for_data(s, terminate_event)
         if raw_data_queue.full():
-            print("Raw data queue is full. Discarding data.")
+            # print("Raw data queue is full. Discarding data.")
             pass
         else:
             try:
