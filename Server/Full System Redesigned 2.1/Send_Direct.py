@@ -35,7 +35,8 @@ async def begin(translated_data, terminate_event):
                     item = await translated_data.get()
                     print(f'got from dictionary: {item}')
                     combined.update(item)
-                    translated_data.task_done()
+                    print('Combined')
+                    # translated_data.task_done()
                 combined_json = json.dumps(combined)
                 print(f"Consumed and combined: {combined_json}")
                 try:
