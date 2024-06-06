@@ -14,7 +14,9 @@ class CANTranslator:
 
     async def data_handler(self, data, translated_data, terminate_event):
         message = data.decode().strip()
+        print(message)
         date_time_str = message.split(',')[-1]
+        print(date_time_str)
         arduino_time_raw = int(date_time_str)
 
         count = int(message.split(',')[-1])
