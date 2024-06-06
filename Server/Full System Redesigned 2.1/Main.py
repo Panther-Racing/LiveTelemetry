@@ -41,7 +41,7 @@ async def data_translator():
         if not raw_data_queue.empty():
             raw_data = await raw_data_queue.get()
             # print(f"Translating raw data: {raw_data}")
-            await translator.data_handler(raw_data, translated_data_queue)
+            await translator.data_handler(raw_data, translated_data_queue, terminate_event)
         await asyncio.sleep(0.1)
     print("Data translator stopped.")
 

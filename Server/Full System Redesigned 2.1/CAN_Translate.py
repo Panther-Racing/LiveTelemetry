@@ -12,7 +12,7 @@ class CANTranslator:
         self.json_dict = {}
         self.first_message = True
 
-    async def data_handler(self, data, translated_data):
+    async def data_handler(self, data, translated_data, terminate_event):
         message = data.decode().strip()
         date_time_str = message.split(',')[-1]
         arduino_time_raw = int(date_time_str)
@@ -38,7 +38,7 @@ class CANTranslator:
 
         # print(f'message: {data_string}')
         if data_string == 'startup':
-            self.offset = time.time() * 1000 - arduino_time_raw - latency
+            terminate_event.set()
         else:
             data_reformatted = await CANTranslator.reformatter(self, data_string)
 
