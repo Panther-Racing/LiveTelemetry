@@ -29,17 +29,18 @@ async def begin(translated_data, terminate_event):
 
         while not terminate_event.is_set():
 
-            if translated_data.qsize() >= BATCH_SIZE:
-                batch = []
-                for _ in range(BATCH_SIZE):
-                    item = await translated_data.get()
-                    batch.append(item)
-                    translated_data.task_done()
-                combined = {i: item for i, item in enumerate(batch)}
-                combined_json = json.dumps(combined)
-                try:
-                    await send_updates(combined_json)
-                    # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
-                except asyncio.TimeoutError:
-                    continue
+            # if translated_data.qsize() >= BATCH_SIZE:
+            #     batch = []
+            #     for _ in range(BATCH_SIZE):
+            #         item = await translated_data.get()
+            #         batch.append(item)
+            #         translated_data.task_done()
+            #     combined = {i: item for i, item in enumerate(batch)}
+            #     combined_json = json.dumps(combined)
+            #     try:
+            #         await send_updates(combined_json)
+            #         # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
+            #     except asyncio.TimeoutError:
+            #         continue
+            pass
         print("Server stopping...")
