@@ -8,7 +8,7 @@ async def begin():
     print(f'Listening at {socket.gethostbyname(socket.gethostname())} on port 20001')
     return s
 
-
+@profile
 async def listen_for_data(s, terminate_event):
     loop = asyncio.get_running_loop()
 
