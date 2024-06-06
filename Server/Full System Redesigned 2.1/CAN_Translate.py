@@ -37,7 +37,7 @@ class CANTranslator:
         data_string = message[await CANTranslator.find_nth(message, ',', 2) + 1:]
 
         print(f'message {data_string}')
-        if data_string == 'message':
+        if data_string == 'startup':
             self.offset = time.time() * 1000 - arduino_time_raw
         else:
             data_reformatted = await CANTranslator.reformatter(self, data_string)

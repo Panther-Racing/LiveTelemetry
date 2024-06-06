@@ -62,7 +62,7 @@ def send_startup_message():
     startup_message = "Startup"
     # Calculate the elapsed time in milliseconds
     elapsed_time = int((time.time() - start_time) * 1000)
-    message_format = f"8,00,{startup_message}, {elapsed_time}, 0"
+    message_format = f"8,00,{startup_message}, {elapsed_time}"
     print(message_format)
     sock.sendto(message_format.encode(), (UDP_IP, UDP_PORT))
     time.sleep(1)
