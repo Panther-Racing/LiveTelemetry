@@ -14,14 +14,14 @@ class CANTranslator:
 
     async def data_handler(self, data, translated_data, terminate_event):
         message = data.decode().strip()
-        print(message)
+
         date_time_str = message.split(',')[-1]
         message = message.rsplit(',', 1)[0]
-        print(message)
+
         arduino_time_raw = int(date_time_str)
-        message = message.rsplit(',', 1)[0]
 
         count = int(message.split(',')[-1])
+        message = message.rsplit(',', 1)[0]
         print(f'3: message')
 
         if self.first_message:
