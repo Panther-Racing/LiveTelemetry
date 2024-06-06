@@ -29,6 +29,7 @@ async def data_receiver():
         else:
             try:
                 raw_data_queue.put_nowait(data)
+                print(raw_data_queue.qsize())
             except asyncio.QueueFull:
                 # print("Raw data queue is full. Discarding data.")
                 pass
@@ -42,7 +43,6 @@ async def data_translator():
     index = 0
     buffer_amt = 10  # Number of messages to accumulate before sending
     while not terminate_event.is_set():
-        print('raw data empty')
         if not raw_data_queue.empty():
             print('Processing data')
             raw_data = await raw_data_queue.get()
