@@ -26,8 +26,10 @@ async def begin(translated_data, terminate_event):
     print('Sender begun')
     async with websockets.serve(handler, "localhost", 8080):
         print('Started WebSocket')
+
         while not terminate_event.is_set():
 
+            print(translated_data.qsize())
             if translated_data.qsize() >= BATCH_SIZE:
                 batch = []
                 for _ in range(BATCH_SIZE):
