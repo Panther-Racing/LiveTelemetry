@@ -97,11 +97,11 @@ class CANTranslator:
         self.json_dict.update({'Latency': latency})
         self.json_dict.update({'Arduino_Time': arduino_time})
         self.json_dict.update({'Counter': count})
-        self.json_dict.update({'Lost_packages': count - self.last_message_num})
+        self.total_lost += (count - self.last_message_num)
+        self.json_dict.update({'Lost_packages': self.total_lost})
         self.last_message_num = count
-        self.total_lost += count - self.last_message_num
         self.json_dict.update({'Percent_lost': self.total_lost / self.total_messages})
-        print(f'Total Lost: {self.total_lost}\t Total Messages: {self.total_messages}\tPercent Lost: {self.total_lost / self.total_messages}')
+        # print(f'Total Lost: {self.total_lost}\t Total Messages: {self.total_messages}\tPercent Lost: {self.total_lost / self.total_messages}')
 
 
         # Push the updated JSON data to the processed_data queue
