@@ -23,9 +23,8 @@ class CANTranslator:
 
         arduino_time_raw = int(date_time_str)
 
-        count = int(message.split(',')[-1])
+        self.total_messages = int(message.split(',')[-1])
         message = message.rsplit(',', 1)[0]
-        self.total_messages += count
 
         if self.first_message:
             self.offset = time.time() * 1000 - arduino_time_raw
@@ -56,7 +55,7 @@ class CANTranslator:
             try:
                 decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
                                                  decode_containers=False, allow_truncated=False)
-                await CANTranslator.to_json(self, decoded, latency / 1000, translated_data, arduino_time, count)
+                await CANTranslator.to_json(self, decoded, latency / 1000, translated_data, arduino_time)
 
             except KeyError as error:
                 print('Key error: %s' % error)
@@ -90,16 +89,16 @@ class CANTranslator:
         byte_string = bytes(int(value, 16) for value in hex_values)
         return byte_string
 
-    async def to_json(self, decoded, latency, translated_data, arduino_time, count):
+    async def to_json(self, decoded, latency, translated_data, arduino_time):
         # Update the JSON dictionary with the new data
         self.json_dict.update(decoded)
         self.json_dict.update({'Timestamp': time.time() * 1000})
         self.json_dict.update({'Latency': latency})
         self.json_dict.update({'Arduino_Time': arduino_time})
-        self.json_dict.update({'Counter': count})
-        self.total_lost += (count - self.last_message_num)
+        self.json_dict.update({'Counter': self.total_messages})
+        self.total_lost += (self.total_messages - self.last_message_num)
         self.json_dict.update({'Lost_packages': self.total_lost})
-        self.last_message_num = count
+        self.last_message_num = self.total_messages
         self.json_dict.update({'Percent_lost': (self.total_lost / self.total_messages)*100})
         # print(f'Total Lost: {self.total_lost}\t Total Messages: {self.total_messages}\tPercent Lost: {self.total_lost / self.total_messages}')
 
