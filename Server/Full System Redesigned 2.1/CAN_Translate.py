@@ -100,7 +100,7 @@ class CANTranslator:
         self.total_lost += (count - self.last_message_num)
         self.json_dict.update({'Lost_packages': self.total_lost})
         self.last_message_num = count
-        self.json_dict.update({'Percent_lost': self.total_lost / self.total_messages})
+        self.json_dict.update({'Percent_lost': (self.total_lost / self.total_messages)*100})
         # print(f'Total Lost: {self.total_lost}\t Total Messages: {self.total_messages}\tPercent Lost: {self.total_lost / self.total_messages}')
 
 
