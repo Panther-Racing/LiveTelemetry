@@ -15,6 +15,7 @@ class CANTranslator:
         self.total_messages = 0
         self.total_lost = 0
 
+    @profile
     async def data_handler(self, data, translated_data, terminate_event):
         message = data.decode().strip()
 
@@ -89,6 +90,7 @@ class CANTranslator:
         byte_string = bytes(int(value, 16) for value in hex_values)
         return byte_string
 
+    @profile
     async def to_json(self, decoded, latency, translated_data, arduino_time):
         # Update the JSON dictionary with the new data
         self.json_dict.update(decoded)
