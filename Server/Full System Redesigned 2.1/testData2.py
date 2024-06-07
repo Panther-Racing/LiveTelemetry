@@ -74,4 +74,5 @@ send_startup_message()
 while True:
     create_and_send_can_message(counter)
     counter += 1
-    time.sleep(0.000001)  # Adjust the interval as needed
+    # time.sleep(0.000001)  # Adjust the interval as needed
+    time.sleep(0.000001)

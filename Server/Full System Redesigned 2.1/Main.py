@@ -55,7 +55,7 @@ async def main():
     can_translator = CAN_Translate.CANTranslator(db)
 
     # Create multiple data processor tasks
-    processor_tasks = [asyncio.create_task(data_processor(can_translator)) for _ in range(3)]
+    processor_tasks = [asyncio.create_task(data_processor(can_translator)) for _ in range(2)]
 
     receiver_task = asyncio.create_task(data_receiver())
     sender_task = asyncio.create_task(Send_Direct.begin(translated_data_queue, terminate_event))
