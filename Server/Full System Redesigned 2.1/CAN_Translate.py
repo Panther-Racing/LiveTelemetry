@@ -11,6 +11,7 @@ class CANTranslator:
         self.db = db
         self.json_dict = {}
         self.first_message = True
+        self.last_message_num = 0
 
     async def data_handler(self, data, translated_data, terminate_event):
         message = data.decode().strip()
@@ -93,6 +94,8 @@ class CANTranslator:
         self.json_dict.update({'Latency': latency})
         self.json_dict.update({'Arduino_Time': arduino_time})
         self.json_dict.update({'Counter': count})
+        self.json_dict.update({'Lost packages': count - self.last_message_num})
+        count = self.last_message_num
 
         # Push the updated JSON data to the processed_data queue
         try:
