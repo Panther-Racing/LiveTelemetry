@@ -24,6 +24,7 @@ class CANTranslator:
         arduino_time_raw = int(date_time_str)
 
         self.total_messages = int(message.split(',')[-1])
+        # print(self.total_messages)
         message = message.rsplit(',', 1)[0]
 
         if self.first_message:
