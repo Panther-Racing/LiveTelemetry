@@ -30,6 +30,7 @@ async def data_receiver():
                     raw_data_queue.put_nowait(data)
                 except asyncio.QueueFull:
                     pass
+            await asyncio.sleep(0.01)
     except asyncio.CancelledError:
         print("Data receiver task cancelled.")
     finally:
