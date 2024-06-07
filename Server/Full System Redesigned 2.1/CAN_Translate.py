@@ -101,6 +101,7 @@ class CANTranslator:
         self.last_message_num = count
         self.total_lost += count - self.last_message_num
         self.json_dict.update({'Percent_lost': self.total_lost / self.total_messages})
+        print(f'Percent Lost: {self.total_lost / self.total_messages}')
 
 
         # Push the updated JSON data to the processed_data queue
