@@ -97,7 +97,7 @@ class CANTranslator:
         self.json_dict.update({'Latency': latency})
         self.json_dict.update({'Arduino_Time': arduino_time})
         self.json_dict.update({'Counter': self.total_messages})
-        self.total_lost += (self.total_messages - self.last_message_num - 1)
+        self.total_lost += abs(self.total_messages - self.last_message_num - 1)
         self.json_dict.update({'Lost_packages': self.total_lost})
         self.last_message_num = self.total_messages
         self.json_dict.update({'Percent_lost': (self.total_lost / self.total_messages)*100})
