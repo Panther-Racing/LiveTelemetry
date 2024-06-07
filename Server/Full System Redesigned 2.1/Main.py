@@ -35,18 +35,11 @@ async def data_receiver():
         print('Closing Socket')
         s.close()
 
-async def data_translator():
-    print("Starting data translator...")
-    translator = CAN_Translate.CANTranslator(db)
-    try:
-        while not terminate_event.is_set():
-            if not raw_data_queue.empty():
-                raw_data = await raw_data_queue.get()
-                await translator.data_handler(raw_data, translated_data_queue, terminate_event)
-            await asyncio.sleep(0.1)
-    except asyncio.CancelledError:
-        print("Data translator task cancelled.")
-    print("Data translator stopped.")
+async def data_processor(can_translator):
+    while not terminate_event.is_set():
+        data = await raw_data_queue.get()
+        await can_translator.data_handler(data, translated_data_queue, terminate_event)
+        raw_data_queue.task_done()
 
 async def data_sender():
     print("Starting data sender...")
@@ -59,11 +52,15 @@ async def data_sender():
 async def main():
     print("Starting main function...")
 
-    receiver_task = asyncio.create_task(data_receiver())
-    translator_task = asyncio.create_task(data_translator())
-    sender_task = asyncio.create_task(data_sender())
+    can_translator = CAN_Translate.CANTranslator(db)
 
-    await asyncio.gather(receiver_task, translator_task, sender_task)
+    # Create multiple data processor tasks
+    processor_tasks = [asyncio.create_task(data_processor(can_translator)) for _ in range(4)]
+
+    receiver_task = asyncio.create_task(data_receiver())
+    sender_task = asyncio.create_task(Send_Direct.begin(translated_data_queue, terminate_event))
+
+    await asyncio.gather(receiver_task, sender_task, *processor_tasks)
     print("Main function completed.")
 
 async def run_with_restarts():
