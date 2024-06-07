@@ -5,7 +5,7 @@ import Receive_Data
 import Send_Direct
 
 # Set maximum queue size
-MAX_QUEUE_SIZE = 100000
+MAX_QUEUE_SIZE = 10000000
 
 # Queues for communication between tasks
 raw_data_queue = asyncio.Queue(maxsize=MAX_QUEUE_SIZE)
