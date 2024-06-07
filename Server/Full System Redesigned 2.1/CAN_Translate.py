@@ -12,6 +12,8 @@ class CANTranslator:
         self.json_dict = {}
         self.first_message = True
         self.last_message_num = 0
+        self.total_messages = 0
+        self.total_lost = 0
 
     async def data_handler(self, data, translated_data, terminate_event):
         message = data.decode().strip()
@@ -23,6 +25,7 @@ class CANTranslator:
 
         count = int(message.split(',')[-1])
         message = message.rsplit(',', 1)[0]
+        self.total_messages += count
 
         if self.first_message:
             self.offset = time.time() * 1000 - arduino_time_raw
@@ -94,8 +97,11 @@ class CANTranslator:
         self.json_dict.update({'Latency': latency})
         self.json_dict.update({'Arduino_Time': arduino_time})
         self.json_dict.update({'Counter': count})
-        self.json_dict.update({'Lost packages': count - self.last_message_num})
-        count = self.last_message_num
+        self.json_dict.update({'Lost_packages': count - self.last_message_num})
+        self.last_message_num = count
+        self.total_lost += count - self.last_message_num
+        self.json_dict.update({'Percent_lost': self.total_lost / self.total_messages})
+
 
         # Push the updated JSON data to the processed_data queue
         try:
