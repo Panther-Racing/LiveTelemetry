@@ -12,10 +12,9 @@ class CANTranslator:
         self.json_dict = {}
         self.first_message = True
         self.last_message_num = 0
-        self.total_messages = 0
+        self.total_messages = 1
         self.total_lost = 0
 
-    @profile
     async def data_handler(self, data, translated_data, terminate_event):
         message = data.decode().strip()
 
@@ -90,7 +89,6 @@ class CANTranslator:
         byte_string = bytes(int(value, 16) for value in hex_values)
         return byte_string
 
-    @profile
     async def to_json(self, decoded, latency, translated_data, arduino_time):
         # Update the JSON dictionary with the new data
         self.json_dict.update(decoded)
@@ -98,7 +96,7 @@ class CANTranslator:
         self.json_dict.update({'Latency': latency})
         self.json_dict.update({'Arduino_Time': arduino_time})
         self.json_dict.update({'Counter': self.total_messages})
-        self.total_lost += (self.total_messages - self.last_message_num-1)
+        self.total_lost += (self.total_messages - self.last_message_num - 1)
         self.json_dict.update({'Lost_packages': self.total_lost})
         self.last_message_num = self.total_messages
         self.json_dict.update({'Percent_lost': (self.total_lost / self.total_messages)*100})
