@@ -1,0 +1,278 @@
+//******************************BUSMASTER Messages and signals Database ******************************//
+
+[DATABASE_VERSION] 1.3
+
+[PROTOCOL] CAN
+
+[BUSMASTER_VERSION] [3.2.2]
+[NUMBER_OF_MESSAGES] 16
+
+[START_MSG] MSGID_0X6B0,1712,8,5,0,S,BMS
+[START_SIGNALS] CRC_Checksum,8,8,0,U,255,0,0,1720,1,,,Third_Party_Device
+[START_SIGNALS] Relay_State,16,7,0,U,65535,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Pack_SOC,8,5,0,U,255,0,0,0,0.5,%,,Third_Party_Device
+[START_SIGNALS] Pack_Inst_Voltage,16,4,0,U,65535,0,0,0,0.1,V,,Third_Party_Device
+[START_SIGNALS] Pack_Current,16,2,0,U,65535,0,0,0,0.1,A,,Third_Party_Device
+[END_MSG]
+
+[START_MSG] MSGID_0X6B1,1713,8,7,0,S,BMS
+[START_SIGNALS] CRC_Checksum,8,8,0,U,255,0,0,1721,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,7,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Low_Temperature,8,6,0,U,255,0,0,0,1,C,,Third_Party_Device
+[START_SIGNALS] High_Temperature,8,5,0,U,255,0,0,0,1,C,,Third_Party_Device
+[START_SIGNALS] Blank,8,4,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Pack_CCL,8,3,0,U,255,0,0,0,1,A,,Third_Party_Device
+[START_SIGNALS] Pack_DCL,16,2,0,U,65535,0,0,0,1,A,,Third_Party_Device
+[END_MSG]
+
+[START_MSG] MSGID_0X6B2,1714,8,5,0,S,BMS
+[START_SIGNALS] Blank,8,8,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Failsafe_Statuses,16,7,0,U,65535,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Pack_Amphours,16,5,0,U,65535,0,0,0,0.1,A.h,,Third_Party_Device
+[START_SIGNALS] Pack_Open_Voltage,16,3,0,U,65535,0,0,0,0.1,V,,Third_Party_Device
+[START_SIGNALS] Rolling_Counter,8,1,0,U,255,0,0,0,1,,,Third_Party_Device
+[END_MSG]
+
+[START_MSG] MSGID_0X6B3,1715,8,7,0,S,BMS
+[START_SIGNALS] Blank,8,8,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,7,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,6,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,5,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,4,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Low_Thermistor_ID,8,3,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Pack_Resistance,16,2,0,U,65535,0,0,0,0.001,ohm,,Third_Party_Device
+[END_MSG]
+
+[START_MSG] MSGID_0X1806E7F4,403105780,8,13,0,X,BMS
+[START_SIGNALS] Blank,8,8,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,7,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,6,0,U,255,0,0,0,0.1,,,Third_Party_Device
+[START_SIGNALS] DTC_P0A08_Charger_Safety_Relay_Fault,1,5,7,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,6,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,5,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,4,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,3,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,2,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,1,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,0,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Pack_CCL,16,4,0,U,65535,0,0,0,0.1,A,,Third_Party_Device
+[START_SIGNALS] Maximum_Pack_Voltage,16,2,0,U,65535,0,0,0,0.1,V,,Third_Party_Device
+[END_MSG]
+
+[START_MSG] MSGID_0X6B5,1717,8,6,0,S,BMS
+[START_SIGNALS] Blank,8,8,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,7,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,6,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,5,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Total_Pack_Cycles,16,4,0,U,65535,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Current_Limits_Status,16,2,0,U,65535,0,0,0,1,,,Third_Party_Device
+[END_MSG]
+
+[START_MSG] MSGID_0X6B6,1718,8,6,0,S,BMS
+[START_SIGNALS] Blank,8,8,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,7,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,6,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,5,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Maximum_Pack_Voltage,16,4,0,U,65535,0,0,0,0.1,V,,Third_Party_Device
+[START_SIGNALS] Avg_Cell_Resistance,16,2,0,U,65535,0,0,0,0.01,mohm,,Third_Party_Device
+[END_MSG]
+
+[START_MSG] MSGID_0X1806E5F4,403105268,8,13,0,X,BMS
+[START_SIGNALS] Blank,8,8,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,7,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,6,0,U,255,0,0,0,0.1,,,Third_Party_Device
+[START_SIGNALS] DTC_P0A08_Charger_Safety_Relay_Fault,1,5,7,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,6,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,5,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,4,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,3,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,2,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,1,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,0,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Pack_CCL,16,4,0,U,65535,0,0,0,0.1,A,,Third_Party_Device
+[START_SIGNALS] Maximum_Cell_Voltage,16,2,0,U,65535,0,0,0,0.1,V,,Third_Party_Device
+[END_MSG]
+
+[START_MSG] MSGID_0X6B8,1720,8,4,0,S,BMS
+[START_SIGNALS] High_Cell_Voltage,16,8,0,U,65535,0,0,0,0.0001,V,,Third_Party_Device
+[START_SIGNALS] Low_Cell_Voltage,16,6,0,U,65535,0,0,0,0.0001,V,,Third_Party_Device
+[START_SIGNALS] Average_Current,16,4,0,U,65535,0,0,0,0.1,A,,Third_Party_Device
+[START_SIGNALS] Minimum_Pack_Voltage,16,2,0,U,65535,0,0,0,0.1,V,,Third_Party_Device
+[END_MSG]
+
+[START_MSG] MSGID_0X6B9,1721,8,8,0,S,BMS
+[START_SIGNALS] Blank,8,8,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] High_Intres_ID,8,7,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Low_Intres_ID,8,6,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] High_Cell_Voltage_ID,8,5,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Low_Cell_Voltage_ID,8,4,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Internal_Temperature,8,3,0,U,255,0,0,0,1,C,,Third_Party_Device
+[START_SIGNALS] Average_Temperature,8,2,0,U,255,0,0,0,1,C,,Third_Party_Device
+[START_SIGNALS] High_Thermistor_ID,8,1,0,U,255,0,0,0,1,,,Third_Party_Device
+[END_MSG]
+
+[START_MSG] MSGID_0X6BA,1722,8,4,0,S,BMS
+[START_SIGNALS] Maximum_Cell_Voltage,16,8,0,U,65535,0,0,0,0.0001,V,,Third_Party_Device
+[START_SIGNALS] High_Cell_Resistance,16,6,0,U,65535,0,0,0,0.01,mohm,,Third_Party_Device
+[START_SIGNALS] Low_Cell_Resistance,16,4,0,U,65535,0,0,0,0.01,mohm,,Third_Party_Device
+[START_SIGNALS] Avg_Cell_Voltage,16,2,0,U,65535,0,0,0,0.0001,V,,Third_Party_Device
+[END_MSG]
+
+[START_MSG] MSGID_0X6BB,1723,8,4,0,S,BMS
+[START_SIGNALS] DTC_Flags_2,16,8,0,U,65535,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] DTC_Flags_1,16,6,0,U,65535,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Input_Supply_Voltage,16,4,0,U,65535,0,0,0,0.1,V,,Third_Party_Device
+[START_SIGNALS] Minimum_Cell_Voltage,16,2,0,U,65535,0,0,0,0.0001,V,,Third_Party_Device
+[END_MSG]
+
+[START_MSG] MSGID_0X6BC,1724,8,7,0,S,BMS
+[START_SIGNALS] Blank,8,8,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,7,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,6,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,5,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,4,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,3,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Pack_CCL,16,2,0,U,65535,0,0,0,1,A,,Third_Party_Device
+[END_MSG]
+
+[START_MSG] MSGID_0X1806E9F4,403106292,8,13,0,X,BMS
+[START_SIGNALS] Blank,8,8,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,7,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,8,6,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] DTC_P0A08_Charger_Safety_Relay_Fault,1,5,7,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,6,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,5,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,4,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,3,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,2,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,1,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Blank,1,5,0,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Pack_CCL,16,4,0,U,65535,0,0,0,0.1,A,,Third_Party_Device
+[START_SIGNALS] Maximum_Cell_Voltage,16,2,0,U,65535,0,0,0,0.1,V,,Third_Party_Device
+[END_MSG]
+
+[START_MSG] MSGID_0X18FF50E5,419385573,8,8,0,X,Third_Party_Device
+[START_SIGNALS] Blank,8,8,0,U,255,0,0,0,1,,,BMS
+[START_SIGNALS] Blank,8,7,0,U,255,0,0,0,1,,,BMS
+[START_SIGNALS] Blank,8,6,0,U,255,0,0,0,1,,,BMS
+[START_SIGNALS] Blank,8,5,0,U,255,0,0,0,1,,,BMS
+[START_SIGNALS] Blank,8,4,0,U,255,0,0,0,1,,,BMS
+[START_SIGNALS] Blank,8,3,0,U,255,0,0,0,1,,,BMS
+[START_SIGNALS] Blank,8,2,0,U,255,0,0,0,1,,,BMS
+[START_SIGNALS] Blank,8,1,0,U,255,0,0,0,1,,,BMS
+[END_MSG]
+
+[START_MSG] MSGID_0X36_CELLBCAST,54,8,6,0,S,BMS
+[START_SIGNALS] CellBalancing,1,4,7,B,1,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] Checksum,8,8,0,U,255,0,0,0,1,,,Third_Party_Device
+[START_SIGNALS] CellOpenVoltage,16,7,0,U,65535,0,0,0,0.0001,V,,Third_Party_Device
+[START_SIGNALS] CellResistance,15,5,0,U,32767,0,0,0,0.01,mohm,,Third_Party_Device
+[START_SIGNALS] CellVoltage,16,3,0,U,65535,0,0,0,0.0001,V,,Third_Party_Device
+[START_SIGNALS] CellId,8,1,0,U,255,0,0,0,1,,,Third_Party_Device
+[END_MSG]
+
+[START_VALUE_TABLE]
+[END_VALUE_TABLE]
+
+[NODE] BMS,Third_Party_Device
+
+[START_DESC]
+[START_DESC_NET]
+[END_DESC_NET]
+
+[START_DESC_NODE]
+[END_DESC_NODE]
+
+[START_DESC_MSG]
+1712 S "This ID Transmits at 8 ms.";
+1713 S "This ID Transmits at 104 ms.";
+1714 S "This ID Transmits at 96 ms.";
+1715 S "This ID Transmits at 16 ms.";
+403105780 X "This ID Transmits at 808 ms.";
+1717 S "This ID Transmits at 496 ms.";
+1718 S "This ID Transmits at 8 ms.";
+403105268 X "This ID Transmits at 808 ms.";
+1720 S "This ID Transmits at 8 ms.";
+1721 S "This ID Transmits at 8 ms.";
+1722 S "This ID Transmits at 8 ms.";
+1723 S "This ID Transmits at 8 ms.";
+1724 S "This ID Transmits at 8 ms.";
+403106292 X "This ID Transmits at 808 ms.";
+54 S "This ID Transmits at 4 ms.";
+[END_DESC_MSG]
+
+[START_DESC_SIG]
+54 S Checksum "Value = (0x36 + 8 + byte0 + byte1 + ... + byte6) & 0xFF";
+[END_DESC_SIG]
+[END_DESC]
+
+[START_PARAM]
+[START_PARAM_NET]
+[END_PARAM_NET]
+
+[START_PARAM_NODE]
+[END_PARAM_NODE]
+
+[START_PARAM_MSG]
+[END_PARAM_MSG]
+
+[START_PARAM_SIG]
+[END_PARAM_SIG]
+
+[START_PARAM_NODE_RX_SIG]
+[END_PARAM_NODE_RX_SIG]
+
+[START_PARAM_NODE_TX_MSG]
+[END_PARAM_NODE_TX_MSG]
+[END_PARAM]
+
+[START_PARAM_VAL]
+[START_PARAM_NET_VAL]
+[END_PARAM_NET_VAL]
+
+[START_PARAM_NODE_VAL]
+[END_PARAM_NODE_VAL]
+
+[START_PARAM_MSG_VAL]
+[END_PARAM_MSG_VAL]
+
+[START_PARAM_SIG_VAL]
+[END_PARAM_SIG_VAL]
+
+[END_PARAM_VAL]
+
+
+[START_NOT_SUPPORTED]
+[END_NOT_SUPPORTED]
+
+[START_NOT_PROCESSED]
+	PZ_
+	ON_QRS_
+	ON_
+	INY_
+	PNG_QRS_
+	PNG_
+	SVYGRE
+	ON_QRS_QRS_
+	RI_QNGN_
+	RAIINE_QNGN_
+	FTGLCR_
+	FTGLCR_INY_
+	ON_QRS_FTGLCR_
+	ON_FTGLCR_
+	FVT_GLCR_ERS_
+	INY_GNOYR_
+	FVT_TEBHC_
+	FVT_INYGLCR_
+	FVTGLCR_INYGLCR_
+	OB_GK_OH_
+	ON_QRS_ERY_
+	ON_ERY_
+	ON_QRS_QRS_ERY_
+	OH_FT_ERY_
+	OH_RI_ERY_
+	OH_OB_ERY_
+	FT_ZHY_INY_
+OF_:
+
+[END_NOT_PROCESSED]

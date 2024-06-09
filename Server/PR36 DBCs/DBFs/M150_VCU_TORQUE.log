@@ -1,0 +1,13 @@
+Conversion Warnings Log
+
+
+MSG_ID: 123 	MSG_TYPE: S 	MSG_NAME: VCU_vehicleInfo100Hz
+	SIG_NAME: VCU_verticalAcceleration, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: VCU_longitudinalAcceleration, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: VCU_lateralAcceleration, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1606 	MSG_TYPE: S 	MSG_NAME: VCU_vehicleState10Hz
+	SIG_NAME: VCU_warningSource, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1604 	MSG_TYPE: S 	MSG_NAME: VCU_vehicleInfo10Hz
+	SIG_NAME: VCU_vcuBatteryVoltage, STATUS: Invalid Max or Min value., ACTION: Value Set to default

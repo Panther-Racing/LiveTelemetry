@@ -1,0 +1,19 @@
+Conversion Warnings Log
+
+
+MSG_ID: 281 	MSG_TYPE: S 	MSG_NAME: VCU_pdmVechicleState
+	SIG_NAME: VCU_warningSource, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: VCU_readyToDriveState, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: VCU_driverRotarySwitch2, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: VCU_driverRotarySwitch1, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: VCU_brakeState, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 280 	MSG_TYPE: S 	MSG_NAME: VCU_pdmVechicleInfo
+	SIG_NAME: VCU_motorCoolantTempIn, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: VCU_radCoolantTempOut, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: VCU_radCoolantTempIn, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: VCU_motorCoolantTempOut, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: VCU_mcCoolantTempOut, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: VCU_mcCoolantTempIn, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: VCU_accuCoolantTempOut, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: VCU_accuCoolantTempIn, STATUS: Invalid Max or Min value., ACTION: Value Set to default
