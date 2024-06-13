@@ -78,19 +78,19 @@ class CANTranslator:
         return start
 
     @staticmethod
-    async def reformatter(self, data):
+    async def reformatter(data):
         result = []
-        # Remove any spaces from the end of the data
-        data = data.strip()
-        for i in range(0, len(data), 2):
-            result.append(await CANTranslator.convert_to_bytes_with_escape('\\x' + data[i:i + 2]))
-            print(f'{i}: {data[i:i + 2]}')
+        # Remove any spaces from the data
+        data = data.split()
+        for i in range(len(data)):
+            hex_value = '\\x' + data[i].zfill(2)  # Pad single digit with leading zero if needed
+            result.append(await CANTranslator.convert_to_bytes_with_escape(hex_value))
+            print(f'{i}: {data[i].zfill(2)}')
         return b''.join(result)
 
     @staticmethod
     async def convert_to_bytes_with_escape(input_string):
         hex_values = input_string.split('\\x')[1:]  # Split by '\\x' and skip the empty first element
-        # print(f'hex values: {hex_values}')
         byte_string = bytes(int(value, 16) for value in hex_values)
         return byte_string
 
