@@ -51,7 +51,7 @@ class CANTranslator:
         if data_string == 'startup':
             terminate_event.set()
         else:
-            data_reformatted = await CANTranslator.reformatter(self, data_string)
+            data_reformatted = await CANTranslator.reformatter(data_string)
             print(f'Reformatted data: {data_reformatted}')
 
 
