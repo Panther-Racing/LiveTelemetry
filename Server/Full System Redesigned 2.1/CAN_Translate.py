@@ -46,8 +46,8 @@ class CANTranslator:
         # print(f'Frame ID: { frame_id }     data: { data }')
 
         data_string = message[await CANTranslator.find_nth(message, ',', 2) + 1:]
+        print(f'message data: {data_string}')
 
-        # print(f'message: {data_string}')
         if data_string == 'startup':
             terminate_event.set()
         else:
@@ -84,6 +84,7 @@ class CANTranslator:
         data = data.strip()
         for i in range(0, len(data), 2):
             result.append(await CANTranslator.convert_to_bytes_with_escape('\\x' + data[i:i + 2]))
+            print(f'{i}: {data[i:i + 2]}')
         return b''.join(result)
 
     @staticmethod
