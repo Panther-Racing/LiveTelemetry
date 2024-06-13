@@ -21,6 +21,8 @@ class CANTranslator:
         date_time_str = message.split(',')[-1]
         message = message.rsplit(',', 1)[0]
 
+        print(f'Raw message: {message}')
+
         arduino_time_raw = int(date_time_str)
 
         self.total_messages = int(message.split(',')[-1])
@@ -50,6 +52,7 @@ class CANTranslator:
             terminate_event.set()
         else:
             data_reformatted = await CANTranslator.reformatter(self, data_string)
+            print(f'Reformatted data: {data_reformatted}')
 
 
 
