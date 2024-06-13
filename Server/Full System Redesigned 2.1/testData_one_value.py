@@ -7,7 +7,7 @@ UDP_PORT = 20001
 
 # List of messages to be sent (without the last number)
 messages = [
-    "8,b0,28 0 28 0 4 0 28 0 ,18"
+    "8,a1,28 0 28 0 28 0 28 0 ,3"
 ]
 
 # Create a UDP socket

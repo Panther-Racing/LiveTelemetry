@@ -21,7 +21,7 @@ class CANTranslator:
         date_time_str = message.split(',')[-1]
         message = message.rsplit(',', 1)[0]
 
-        print(f'Raw message: {message}')
+        # print(f'Raw message: {message}')
 
         arduino_time_raw = int(date_time_str)
 
@@ -46,13 +46,13 @@ class CANTranslator:
         # print(f'Frame ID: { frame_id }     data: { data }')
 
         data_string = message[await CANTranslator.find_nth(message, ',', 2) + 1:]
-        print(f'message data: {data_string}')
+        # print(f'message data: {data_string}')
 
         if data_string == 'startup':
             terminate_event.set()
         else:
             data_reformatted = await CANTranslator.reformatter(data_string)
-            print(f'Reformatted data: {data_reformatted}')
+            # print(f'Reformatted data: {data_reformatted}')
 
 
 
@@ -85,7 +85,7 @@ class CANTranslator:
         for i in range(len(data)):
             hex_value = '\\x' + data[i].zfill(2)  # Pad single digit with leading zero if needed
             result.append(await CANTranslator.convert_to_bytes_with_escape(hex_value))
-            print(f'{i}: {data[i].zfill(2)}')
+            # print(f'{i}: {data[i].zfill(2)}')
         return b''.join(result)
 
     @staticmethod
@@ -106,6 +106,7 @@ class CANTranslator:
         self.last_message_num = self.total_messages
         self.json_dict.update({'Percent_lost': (self.total_lost / self.total_messages)*100})
         # print(f'Total Lost: {self.total_lost}\t Total Messages: {self.total_messages}\tPercent Lost: {self.total_lost / self.total_messages}')
+        print(f'decoded data: {self.json_dict}')
 
 
         # Push the updated JSON data to the processed_data queue
