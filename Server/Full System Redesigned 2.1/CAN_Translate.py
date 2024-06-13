@@ -36,7 +36,7 @@ class CANTranslator:
         arduino_time = arduino_time_raw + self.offset
 
         latency = time.time() * 1000 - arduino_time
-        # print(f'arduino time: {arduino_time}\tserver time: {time.time()*1000}\tlatency: { latency }\toffset: { self.offset }')
+        print(f'arduino time: {arduino_time}\tserver time: {time.time()*1000}\tlatency: { latency }\toffset: { self.offset }')
 
         try:
             frame_id = int(message[await CANTranslator.find_nth(message, ',', 1) + 1:await CANTranslator.find_nth(message, ',', 2)], 16)
