@@ -27,14 +27,13 @@ print(message_format)
 sock.sendto(message_format.encode(), (UDP_IP, UDP_PORT))
 time.sleep(1)
 
-while True:
-    # Send the messages at the specified rate
-    for message in messages:
-        # Calculate the elapsed time since the start
-        elapsed_time = time.time()*1000 - start_time
-        # Append the elapsed time to the message
-        modified_message = f"{message},{round(elapsed_time)}"
-        print(modified_message)
-        # Send the modified message
-        sock.sendto(modified_message.encode(), (UDP_IP, UDP_PORT))
-        time.sleep(interval)
+# Send the messages at the specified rate
+for message in messages:
+    # Calculate the elapsed time since the start
+    elapsed_time = time.time()*1000 - start_time
+    # Append the elapsed time to the message
+    modified_message = f"{message},{round(elapsed_time)}"
+    print(modified_message)
+    # Send the modified message
+    sock.sendto(modified_message.encode(), (UDP_IP, UDP_PORT))
+    time.sleep(interval)

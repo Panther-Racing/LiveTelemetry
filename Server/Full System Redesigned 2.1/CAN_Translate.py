@@ -85,6 +85,7 @@ class CANTranslator:
         for i in range(0, len(data), 2):
             result.append(await CANTranslator.convert_to_bytes_with_escape('\\x' + data[i:i + 2]))
             print(f'{i}: {data[i:i + 2]}')
+            print(f'Converted: {result[i]}')
         return b''.join(result)
 
     @staticmethod
