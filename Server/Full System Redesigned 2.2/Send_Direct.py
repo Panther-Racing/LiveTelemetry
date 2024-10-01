@@ -2,6 +2,7 @@ import asyncio
 import websockets 
 import json
 import time
+from CAN_Translate import json_dict
 connected_clients = set()
 BATCH_SIZE = 2000
 
@@ -40,6 +41,9 @@ async def begin(translated_data, terminate_event):
             try:
                # pass
                await send_updates(combined_json)
+               with open(file="Json_dict.json","w") as json_data:
+                   
+                    json_data.write(json_dict)            
                print(f'Update sent at time {time.time()}')
                 # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
             except asyncio.TimeoutError:
