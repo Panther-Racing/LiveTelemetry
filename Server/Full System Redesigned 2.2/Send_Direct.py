@@ -32,15 +32,14 @@ async def begin(translated_data, terminate_event):
 
             # Run the inner loop for exactly 1 second
             while time.time() - start_time < 1 and not terminate_event.is_set():
-                if translated_data.qsize() > BATCH_SIZE:
-                    item = await translated_data.get()
-                    combined.update(json.loads(item))
-                    translated_data.task_done()
-                    combined_json = json.dumps(combined)
-                    try:
-                       pass
-                       # await send_updates(combined_json)
-                        # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
-                    except asyncio.TimeoutError:
-                        continue
+                item = await translated_data.get()
+                combined.update(json.loads(item))
+                translated_data.task_done()
+                combined_json = json.dumps(combined)
+                try:
+                   pass
+                   # await send_updates(combined_json)
+                    # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
+                except asyncio.TimeoutError:
+                    continue
         print("Server stopping...")
