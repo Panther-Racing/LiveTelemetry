@@ -54,8 +54,6 @@ class CANTranslator:
             data_reformatted = await CANTranslator.reformatter(data_string)
             # print(f'Reformatted data: {data_reformatted}')
 
-
-
             try:
                 decoded = self.db.decode_message(frame_id_or_name=frame_id, data=data_reformatted, decode_choices=False, scaling=True,
                                                  decode_containers=False, allow_truncated=False)

@@ -57,8 +57,9 @@ messages = [
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Calculate the interval between messages
-interval = 1 / 500  # 500 messages per second
-interval = 0.000001
+# interval = 1 / 500  # 500 messages per second
+# interval = 0.000001
+interval = 1 / 400  # The car sends at a rate of about 400 messages per second
 
 # Record the start time
 start_time = time.time()
