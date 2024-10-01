@@ -27,22 +27,18 @@ async def begin(translated_data, terminate_event):
         print('Started WebSocket')
 
         while not terminate_event.is_set():
-            start_time = time.time()  
+            start_time = time.time()
+            combined = {}
 
             # Run the inner loop for exactly 1 second
-            while time.time() - start_time < 1:
+            while time.time() - start_time < 1 and not terminate_event.is_set():
                 if translated_data.qsize() > BATCH_SIZE:
-                    combined = {}
-                        
-                    for _ in range(BATCH_SIZE):
-                        if time.time() - start_time >= 1:
-                            break  # Exit if 1 second has passed 
-                        item = await translated_data.get()
-                        combined.update(json.loads(item))
-                        translated_data.task_done()
+                    item = await translated_data.get()
+                    combined.update(json.loads(item))
+                    translated_data.task_done()
                     combined_json = json.dumps(combined)
                     try:
-                       pass
+                       # pass
                        await send_updates(combined_json)
                         # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
                     except asyncio.TimeoutError:
