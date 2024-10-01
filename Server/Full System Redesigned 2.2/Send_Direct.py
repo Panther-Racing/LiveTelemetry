@@ -37,8 +37,8 @@ async def begin(translated_data, terminate_event):
                 translated_data.task_done()
                 combined_json = json.dumps(combined)
                 try:
-                   pass
-                   # await send_updates(combined_json)
+                   # pass
+                   await send_updates(combined_json)
                     # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
                 except asyncio.TimeoutError:
                     continue
