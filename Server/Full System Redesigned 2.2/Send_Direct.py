@@ -31,7 +31,7 @@ async def begin(translated_data, terminate_event):
             combined = {}
 
             # Run the inner loop for exactly 1 second
-            while time.time() - start_time < 1 and not terminate_event.is_set():
+            while time.time() - start_time < 5 and not terminate_event.is_set():
                 item = await translated_data.get()
                 combined.update(json.loads(item))
                 translated_data.task_done()
