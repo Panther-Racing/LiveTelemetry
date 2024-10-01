@@ -40,7 +40,7 @@ async def begin(translated_data, terminate_event):
             try:
                # pass
                await send_updates(combined_json)
-               with open(file="Json_dict.json","w") as json_data:
+               with open("Json_dict.json","w") as json_data:
                    
                     json_data.write(combined_json)            
                print(f'Update sent at time {time.time()}')
