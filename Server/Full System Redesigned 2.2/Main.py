@@ -66,7 +66,7 @@ async def main():
 
 async def run_with_restarts():
     """Run the main thread and restart it every 30 minutes or when terminate_event is set."""
-    while not terminate_event.set():
+    while True:
         print("Starting the main application...")
         terminate_event.clear()
         # Run the main app in a separate coroutine
