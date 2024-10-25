@@ -37,7 +37,6 @@ async def begin(translated_data, terminate_event):
                     translated_data.task_done()
                 combined_json = json.dumps(combined)
                 try:
-                    pass
                     await send_updates(combined_json)
                     with open("Json_dict.json", "w") as json_data:
                         json_data.write(combined_json)
