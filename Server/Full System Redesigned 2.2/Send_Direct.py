@@ -3,7 +3,7 @@ import websockets
 import json
 import time
 connected_clients = set()
-TIME_THRESH = 10
+TIME_THRESH = 5
 
 async def handler(websocket, path):
     connected_clients.add(websocket)
@@ -36,10 +36,12 @@ async def begin(translated_data, terminate_event):
                 combined.update(json.loads(item))
                 translated_data.task_done()
                 combined_json = json.dumps(combined)
+                print(time.time()-start_time)
 
             try:
                 # pass
                 await send_updates(combined_json)
+                print('Sending Updates')
                 with open("Json_dict.json", "w") as json_data:
                     json_data.write(combined_json)
                 print(f'Update sent at time {time.time()}')
