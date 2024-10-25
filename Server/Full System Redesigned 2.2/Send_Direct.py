@@ -46,7 +46,7 @@ async def begin(translated_data, terminate_event):
                 # pass
                 await send_updates(combined_json)
                 if combined_json:
-                    with open("Json_dict.json", "w") as json_data:
+                    with open("Test_dict.json", "w") as json_data:
                         json_data.write(combined_json)
                 # print(f'Update sent at time {time.time()}')
                 # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
