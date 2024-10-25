@@ -32,7 +32,7 @@ async def begin(translated_data, terminate_event):
 
             # Run the inner loop for the time_thresh amount of time
             while time.time() - start_time < TIME_THRESH and not terminate_event.is_set():
-                item = await translated_data.get()
+                item = await asyncio.wait_for(translated_data.get(), timeout=0.5*TIME_THRESH)
                 combined.update(json.loads(item))
                 translated_data.task_done()
                 combined_json = json.dumps(combined)

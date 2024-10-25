@@ -75,7 +75,7 @@ for message in messages:
     # Calculate the elapsed time since the start
     elapsed_time = time.time() - start_time
     # Append the elapsed time to the message
-    modified_message = f"{message},{round(elapsed_time)}"
+    modified_message = f"{message}"
     print(modified_message)
     # Send the modified message
     sock.sendto(modified_message.encode(), (UDP_IP, UDP_PORT))
