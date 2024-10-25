@@ -38,7 +38,6 @@ async def begin(translated_data, terminate_event):
                     combined.update(json.loads(item))
                     translated_data.task_done()
                     combined_json = json.dumps(combined)
-                    print(time.time()-start_time)
                 except asyncio.TimeoutError:
                     # Timeout reached without getting an item
                     continue
@@ -49,7 +48,7 @@ async def begin(translated_data, terminate_event):
                 print('Sending Updates')
                 with open("Json_dict.json", "w") as json_data:
                     json_data.write(combined_json)
-                print(f'Update sent at time {time.time()}')
+                # print(f'Update sent at time {time.time()}')
                 # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
             except asyncio.TimeoutError:
                 continue
