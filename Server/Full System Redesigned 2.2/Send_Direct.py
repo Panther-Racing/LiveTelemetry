@@ -29,6 +29,7 @@ async def begin(translated_data, terminate_event):
         while not terminate_event.is_set():
             start_time = time.time()
             combined = {}
+            combined_json = {}
 
             # Run the inner loop for the time_thresh amount of time
             while time.time() - start_time < TIME_THRESH and not terminate_event.is_set():
