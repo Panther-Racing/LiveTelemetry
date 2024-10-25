@@ -3,7 +3,7 @@ import websockets
 import json
 import time
 connected_clients = set()
-BATCH_SIZE = 2000
+TIME_THRESH = 10
 
 async def handler(websocket, path):
     connected_clients.add(websocket)
@@ -30,8 +30,8 @@ async def begin(translated_data, terminate_event):
             start_time = time.time()
             combined = {}
 
-            # Run the inner loop for exactly 1 second
-            while time.time() - start_time < 1 and not terminate_event.is_set():
+            # Run the inner loop for the time_thresh amount of time
+            while time.time() - start_time < TIME_THRESH and not terminate_event.is_set():
                 item = await translated_data.get()
                 combined.update(json.loads(item))
                 translated_data.task_done()
