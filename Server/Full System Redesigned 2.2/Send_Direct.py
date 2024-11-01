@@ -3,7 +3,7 @@ import websockets
 import json
 import time
 connected_clients = set()
-TIME_THRESH = 5
+TIME_THRESH = 0.1
 
 async def handler(websocket, path):
     connected_clients.add(websocket)
