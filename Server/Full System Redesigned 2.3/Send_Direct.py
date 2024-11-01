@@ -1,9 +1,9 @@
 import asyncio
 import websockets
 import json
-
+import time
 connected_clients = set()
-BATCH_SIZE = 2000
+TIME_THRESH = 5
 
 async def handler(websocket, path):
     connected_clients.add(websocket)
@@ -27,19 +27,29 @@ async def begin(translated_data, terminate_event):
         print('Started WebSocket')
 
         while not terminate_event.is_set():
-            await asyncio.sleep(0.1)
-            # print(f'Translated Data Queue Size: {translated_data.qsize()}')
-            if translated_data.qsize() >= BATCH_SIZE:
-                combined = {}
-                for _ in range(BATCH_SIZE):
-                    item = await translated_data.get()
+            start_time = time.time()
+            combined = {}
+            combined_json = ''
+
+            # Run the inner loop for the time_thresh amount of time
+            while time.time() - start_time < TIME_THRESH and not terminate_event.is_set():
+                try:
+                    item = await asyncio.wait_for(translated_data.get(), timeout=0.5*TIME_THRESH)
                     combined.update(json.loads(item))
                     translated_data.task_done()
-                combined_json = json.dumps(combined)
-                try:
-                    pass
-                    await send_updates(combined_json)
-                    # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
+                    combined_json = json.dumps(combined)
                 except asyncio.TimeoutError:
+                    # Timeout reached without getting an item
                     continue
+
+            try:
+                # pass
+                await send_updates(combined_json)
+                if combined_json:
+                    with open("Test_dict.json", "w") as json_data:
+                        json_data.write(combined_json)
+                # print(f'Update sent at time {time.time()}')
+                # await asyncio.sleep(1)              # Limit rate data is sent to site to prevent crashing
+            except asyncio.TimeoutError:
+                continue
         print("Server stopping...")
