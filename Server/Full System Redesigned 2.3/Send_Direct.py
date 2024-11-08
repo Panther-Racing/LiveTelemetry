@@ -29,13 +29,23 @@ async def begin(translated_data, terminate_event):
         while not terminate_event.is_set():
             start_time = time.time()
             combined = {}
+            counts = {}
             combined_json = ''
 
             # Run the inner loop for the time_thresh amount of time
             while time.time() - start_time < TIME_THRESH and not terminate_event.is_set():
                 try:
                     item = await asyncio.wait_for(translated_data.get(), timeout=0.5*TIME_THRESH)
-                    combined.update(json.loads(item))
+                    data = json.loads(item)
+                    
+                    for key, value in data.items():
+                        if key in combined:
+                            counts[key] += 1
+                            combined[key] = (combined[key] * (counts[key] - 1) + value) / counts[key]
+                        else:
+                            combined[key] = value
+                            counts[key] = 1
+                            
                     translated_data.task_done()
                     combined_json = json.dumps(combined)
                 except asyncio.TimeoutError:
