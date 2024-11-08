@@ -20,6 +20,8 @@ def remove_ignored_fields(d):
         }
     elif isinstance(d, list):
         return [remove_ignored_fields(item) for item in d]
+    elif isinstance(d, (int, float)):  # Normalize numbers to float for comparison
+        return float(d)
     else:
         return d
 
