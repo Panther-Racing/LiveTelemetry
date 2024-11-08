@@ -2,7 +2,8 @@ import json
 import os
 
 # List of fields to ignore during comparison
-ignored_fields = {"Timestamp", "Latency", "Arduino_Time", "Counter", "Lost_packages", "Percent_lost"}
+ignored_fields = {"Timestamp", "Latency", "Arduino_Time", "Counter", "Lost_packages", "Percent_lost", "Blank",
+                  "Blank1", "Blank2", "Blank3", "Blank4", "CRC_Checksum"}
 
 # Use full paths to avoid FileNotFoundError
 file_name1 = r"Golden_dict.json"    #Input the file path
