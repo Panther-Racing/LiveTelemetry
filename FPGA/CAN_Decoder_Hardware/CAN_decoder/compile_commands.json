@@ -1,0 +1,50 @@
+[
+  {
+    "directory": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder",
+    "arguments": [
+      "C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\common\\technology\\autopilot",
+      "",
+      "-c",
+      "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/can_message_decoder.cpp"
+    ],
+    "file": "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/can_message_decoder.cpp"
+  },
+  {
+    "directory": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder",
+    "arguments": [
+      "C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\testbench.cpp"
+    ],
+    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\testbench.cpp"
+  },
+  {
+    "directory": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder",
+    "arguments": [
+      "C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp"
+    ],
+    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp"
+  },
+  {
+    "directory": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder",
+    "arguments": [
+      "C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\vcxx\\libexec\\clang++.exe",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\include",
+      "",
+      "-c",
+      "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/testbench.cpp"
+    ],
+    "file": "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/testbench.cpp"
+  }
+]

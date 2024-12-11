@@ -1,0 +1,7 @@
+{
+  "workspaceRoot": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware",
+  "mapping": {
+    "CAN_decoder\\can_message_decoder.cpp": "CAN_decoder",
+    "CAN_decoder\\testbench.cpp": "CAN_decoder"
+  }
+}
