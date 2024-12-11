@@ -110,8 +110,8 @@ void decode_can_message(can_message_t message, decoded_signal_t decoded_signals[
 
     // Extract fields from the found entry
     ap_uint<MESSAGE_DEF_WIDTH> entry = msg_lut[found_index];
-    ap_uint<7> num_signals = entry(38, 32);
-    ap_uint<16> signal_def_pointer = entry(54, 39);
+    ap_uint<7> num_signals = entry(22, 16);
+    ap_uint<16> signal_def_pointer = entry(15, 0);
 
     // Decode each signal
     for (int j = 0; j < num_signals; j++) {
@@ -120,24 +120,27 @@ void decode_can_message(can_message_t message, decoded_signal_t decoded_signals[
         ap_uint<SIGNAL_DEF_WIDTH> signal_def = signal_def_mem[signal_def_pointer + j + 1];
 
         // Extract signal definition fields
-        ap_uint<11> signal_name_index = signal_def(79, 69);
-        ap_uint<7> start_bit = signal_def(68, 62);
-        ap_uint<7> length = signal_def(61, 55);
-        ap_uint<1> is_signed = signal_def[54];
-        ap_uint<1> endianness = signal_def[53];
-        ap_uint<24> scale = signal_def(52, 29);
-        ap_uint<24> offset = signal_def(28, 5);
+        ap_uint<11> signal_name_index = signal_def(74, 64);
+        ap_uint<7> start_bit = signal_def(63, 57);
+        ap_uint<7> length = signal_def(56, 50);
+        ap_uint<1> is_signed = signal_def[49];
+        ap_uint<1> endianness = signal_def[48];
+        ap_uint<24> scale = signal_def(47, 24);
+        ap_uint<24> offset = signal_def(23, 0);
 
-        // Extract the raw signal value
+        // Extract the raw signal value using the start bit and length
         ap_uint<64> data = message.data;
         ap_uint<32> raw_value = (data >> start_bit) & ((1 << length) - 1);
 
-        // Apply scaling and offset
         ap_int<32> value = raw_value;
+
+        //Sign extend the value if it is a signed value
         if (is_signed && value[length - 1]) {
-            value = value - (1 << length); // Sign extend if needed
+            value = value - (1 << length);
         }
-        value = (value * scale) / (1 << 24) + offset / (1 << 24);
+
+        //Scale the value and apply the offset
+        value = (value * scale) / SCALE_FACTOR + offset / OFFSET_FACTOR;
 
         // Store the decoded signal
         decoded_signals[*num_decoded_signals].signal_name_index = signal_name_index;
