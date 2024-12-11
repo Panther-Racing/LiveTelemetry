@@ -1,0 +1,3 @@
+relativeroot=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder
+original_argv=--mode hls --csim --config C:\Users\flaud\Documents\GitHub\LiveTelemetry\FPGA\CAN_Decoder_Hardware\CAN_decoder\hls_config.cfg --work_dir CAN_decoder 
+

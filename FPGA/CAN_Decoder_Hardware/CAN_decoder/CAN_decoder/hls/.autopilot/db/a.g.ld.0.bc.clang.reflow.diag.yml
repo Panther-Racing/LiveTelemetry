@@ -1,0 +1,22 @@
+--- !HLSUnsupported
+Pass:            reflow-entirety-access-check
+Name:            NonEntiretyAccessOnArrayToStream
+DebugLoc:        { File: can_message_decoder.cpp, Line: 195, Column: 63 }
+Function:        _Z18decode_can_message13can_message_tP16decoded_signal_tPi
+Args:            
+  - String:          'in function '''
+  - Function:        'decode_can_message(can_message_t, decoded_signal_t*, int*)'
+    DebugLoc:        { File: can_message_decoder.cpp, Line: 113, Column: 0 }
+  - String:          ''': '
+  - String:          'Failed to implement stream interface on variable '''
+  - Name:            decoded_signals
+  - String:          '''. Each array element of '''
+  - Name:            decoded_signals
+  - String:          ''' must: (a) be accessed only once, (b) read or write the whole array element in one operation and (c) be accessed in sequential order.'
+...
+--- !HLSReportFatalError
+Pass:            reflow-entirety-access-check
+Name:            HLSFatalError
+Args:            
+  - Msg:             Fail to Synthesize.
+...

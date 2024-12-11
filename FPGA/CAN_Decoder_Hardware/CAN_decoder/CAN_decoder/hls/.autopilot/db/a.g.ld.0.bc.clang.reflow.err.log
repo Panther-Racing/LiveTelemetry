@@ -1,0 +1,2 @@
+error: can_message_decoder.cpp:195:63: in function 'decode_can_message(can_message_t, decoded_signal_t*, int*)': Failed to implement stream interface on variable 'decoded_signals'. Each array element of 'decoded_signals' must: (a) be accessed only once, (b) read or write the whole array element in one operation and (c) be accessed in sequential order.
+error: Fail to Synthesize.

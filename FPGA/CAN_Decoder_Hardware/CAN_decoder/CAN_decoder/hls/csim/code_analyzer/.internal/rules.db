@@ -1,0 +1,89 @@
+{
+    "rules": {
+        "['C:\\\\Users\\\\flaud\\\\Documents\\\\GitHub\\\\LiveTelemetry\\\\FPGA\\\\CAN_Decoder_Hardware\\\\CAN_decoder\\\\CAN_decoder\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\can_message_decoder.cpp.0.bc', 'C:\\\\Users\\\\flaud\\\\Documents\\\\GitHub\\\\LiveTelemetry\\\\FPGA\\\\CAN_Decoder_Hardware\\\\CAN_decoder\\\\CAN_decoder\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\can_message_decoder.cpp.0.bc.d']": {
+            "command": [
+                "c:\\xilinx\\2024.1\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-emit-llvm",
+                "-MD",
+                "-MF",
+                "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\CAN_decoder\\hls\\csim\\code_analyzer\\.internal\\build\\can_message_decoder.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=c:\\xilinx\\2024.1\\vitis_hls\\2024.1\\vcxx\\data\\autopilot",
+                "-vitis-hls=C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1",
+                "--sysroot=C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=decode_can_message",
+                "-fslxtrace",
+                "can_message_decoder.cpp",
+                "-o",
+                "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\CAN_decoder\\hls\\csim\\code_analyzer\\.internal\\build\\can_message_decoder.cpp.0.bc"
+            ],
+            "exectime": 10.713453531265259,
+            "cwd": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder"
+        },
+        "['C:\\\\Users\\\\flaud\\\\Documents\\\\GitHub\\\\LiveTelemetry\\\\FPGA\\\\CAN_Decoder_Hardware\\\\CAN_decoder\\\\CAN_decoder\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\testbench.cpp.0.o', 'C:\\\\Users\\\\flaud\\\\Documents\\\\GitHub\\\\LiveTelemetry\\\\FPGA\\\\CAN_Decoder_Hardware\\\\CAN_decoder\\\\CAN_decoder\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\testbench.cpp.0.o.d']": {
+            "command": [
+                "c:\\xilinx\\2024.1\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-MD",
+                "-MF",
+                "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\CAN_decoder\\hls\\csim\\code_analyzer\\.internal\\build\\testbench.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=c:\\xilinx\\2024.1\\vitis_hls\\2024.1\\vcxx\\data\\include",
+                "-vitis-hls=C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1",
+                "--sysroot=C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=decode_can_message",
+                "-fslxskipfunctionbody",
+                "-fslxtrace",
+                "testbench.cpp",
+                "-o",
+                "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\CAN_decoder\\hls\\csim\\code_analyzer\\.internal\\build\\testbench.cpp.0.o"
+            ],
+            "exectime": 1.9032199382781982,
+            "cwd": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder"
+        },
+        "['C:\\\\Users\\\\flaud\\\\Documents\\\\GitHub\\\\LiveTelemetry\\\\FPGA\\\\CAN_Decoder_Hardware\\\\CAN_decoder\\\\CAN_decoder\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\can_message_decoder.cpp.0.o', 'C:\\\\Users\\\\flaud\\\\Documents\\\\GitHub\\\\LiveTelemetry\\\\FPGA\\\\CAN_Decoder_Hardware\\\\CAN_decoder\\\\CAN_decoder\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\can_message_decoder.cpp.0.o.d']": {
+            "command": [
+                "c:\\xilinx\\2024.1\\vitis_hls\\2024.1\\vcxx\\/libexec/clang.exe",
+                "-c",
+                "-MD",
+                "-MF",
+                "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\CAN_decoder\\hls\\csim\\code_analyzer\\.internal\\build\\can_message_decoder.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=c:\\xilinx\\2024.1\\vitis_hls\\2024.1\\vcxx\\data\\include",
+                "-vitis-hls=C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1",
+                "--sysroot=C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\tps\\mingw\\10.0.0\\win64.o\\nt",
+                "-fhlstoplevel=decode_can_message",
+                "-fslxskipfunctionbody",
+                "-fslxtrace",
+                "can_message_decoder.cpp",
+                "-o",
+                "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\CAN_decoder\\hls\\csim\\code_analyzer\\.internal\\build\\can_message_decoder.cpp.0.o"
+            ],
+            "exectime": 1.6421382427215576,
+            "cwd": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder"
+        },
+        "['C:\\\\Users\\\\flaud\\\\Documents\\\\GitHub\\\\LiveTelemetry\\\\FPGA\\\\CAN_Decoder_Hardware\\\\CAN_decoder\\\\CAN_decoder\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.bc']": {
+            "command": [
+                "c:\\xilinx\\2024.1\\vitis_hls\\2024.1\\vcxx\\/libexec/llvm-link.exe",
+                "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\CAN_decoder\\hls\\csim\\code_analyzer\\.internal\\build\\can_message_decoder.cpp.0.bc",
+                "-o",
+                "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\CAN_decoder\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc"
+            ],
+            "exectime": 1.272291898727417,
+            "cwd": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder"
+        },
+        "['C:\\\\Users\\\\flaud\\\\Documents\\\\GitHub\\\\LiveTelemetry\\\\FPGA\\\\CAN_Decoder_Hardware\\\\CAN_decoder\\\\CAN_decoder\\\\hls\\\\csim\\\\code_analyzer\\\\.internal\\\\build\\\\syn_srcs.opt.bc']": {
+            "command": [
+                "c:\\xilinx\\2024.1\\vitis_hls\\2024.1\\vcxx\\/libexec/opt.exe",
+                "-check-single-toplevel",
+                "-make-non-toplevel-internal",
+                "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\CAN_decoder\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.bc",
+                "-o",
+                "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\CAN_decoder\\hls\\csim\\code_analyzer\\.internal\\build\\syn_srcs.opt.bc"
+            ],
+            "exectime": 4.661763668060303,
+            "cwd": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder"
+        }
+    }
+}

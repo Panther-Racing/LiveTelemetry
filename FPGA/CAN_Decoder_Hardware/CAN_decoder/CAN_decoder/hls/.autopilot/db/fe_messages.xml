@@ -1,0 +1,36 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="initialize_hash_table" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=decode_can_message" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:114:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_memory depth=1024 port=msg_lut" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:115:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_memory depth=1024 port=signal_def_mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:116:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_memory depth=1024 port=signal_names" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:117:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_fifo port=decoded_signals" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:118:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=message" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:119:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=num_decoded_signals" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:120:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:151:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=68" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-244" msg_severity="ERROR" msg_loc="can_message_decoder.cpp:195:63" msg_body="in function 'decode_can_message(can_message_t, decoded_signal_t*, int*)': Failed to implement stream interface on variable 'decoded_signals'. Each array element of 'decoded_signals' must: (a) be accessed only once, (b) read or write the whole array element in one operation and (c) be accessed in sequential order.">
+        <args Function="decode_can_message(can_message_t, decoded_signal_t*, int*)" Function-DebugLoc="File can_message_decoder.cpp Line 113 Column 0" Name="islist decoded_signals decoded_signals"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

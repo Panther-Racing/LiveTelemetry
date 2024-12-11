@@ -1,0 +1,66 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\CAN_decoder\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Dec 11 16:54:17 2024",
+ "timestampMillis": "1733954057393",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Dec 11 16:54:17 2024",
+ "timestampMillis": "1733954057393",
+ "buildStep": {
+  "cmdId": "77fb7362-b80a-11ef-a4c3-28d04356c81b",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 11 16:54:17 2024",
+ "timestampMillis": "1733954057393",
+ "status": {
+  "cmdId": "77fb7362-b80a-11ef-a4c3-28d04356c81b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Dec 11 16:54:44 2024",
+ "timestampMillis": "1733954084915",
+ "status": {
+  "cmdId": "77fb7362-b80a-11ef-a4c3-28d04356c81b",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
