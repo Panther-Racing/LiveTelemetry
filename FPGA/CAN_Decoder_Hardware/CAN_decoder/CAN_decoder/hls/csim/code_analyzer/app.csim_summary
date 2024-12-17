@@ -9,8 +9,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Wed Dec 11 16:54:17 2024",
- "timestampMillis": "1733954057393",
+ "dateTimestamp": "Tue Dec 17 11:51:10 2024",
+ "timestampMillis": "1734454270149",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -27,10 +27,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Wed Dec 11 16:54:17 2024",
- "timestampMillis": "1733954057393",
+ "dateTimestamp": "Tue Dec 17 11:51:10 2024",
+ "timestampMillis": "1734454270151",
  "buildStep": {
-  "cmdId": "77fb7362-b80a-11ef-a4c3-28d04356c81b",
+  "cmdId": "1e052bfc-bc97-11ef-8cf2-28d04356c81b",
   "name": "vitis_c++",
   "logFile": "",
   "commandLine": "vitis_c++ code_analyzer",
@@ -45,10 +45,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Dec 11 16:54:17 2024",
- "timestampMillis": "1733954057393",
+ "dateTimestamp": "Tue Dec 17 11:51:10 2024",
+ "timestampMillis": "1734454270151",
  "status": {
-  "cmdId": "77fb7362-b80a-11ef-a4c3-28d04356c81b",
+  "cmdId": "1e052bfc-bc97-11ef-8cf2-28d04356c81b",
   "state": "CS_RUNNING"
  }
 }
@@ -56,11 +56,25 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Wed Dec 11 16:54:44 2024",
- "timestampMillis": "1733954084915",
+ "dateTimestamp": "Tue Dec 17 11:51:28 2024",
+ "timestampMillis": "1734454288754",
  "status": {
-  "cmdId": "77fb7362-b80a-11ef-a4c3-28d04356c81b",
-  "state": "CS_FAILED"
+  "cmdId": "1e052bfc-bc97-11ef-8cf2-28d04356c81b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Tue Dec 17 11:51:28 2024",
+ "timestampMillis": "1734454288755",
+ "report": {
+  "path": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "1e052bfc-bc97-11ef-8cf2-28d04356c81b"
  }
 }
 </ENTRY>

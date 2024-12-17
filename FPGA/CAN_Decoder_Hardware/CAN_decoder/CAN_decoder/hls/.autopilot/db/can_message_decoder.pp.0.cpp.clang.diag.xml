@@ -9,7 +9,7 @@
       <key>filename</key>
       <string>can_message_decoder.cpp</string>
       <key>line</key>
-      <integer>70</integer>
+      <integer>18</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -41,11 +41,11 @@
       <key>filename</key>
       <string>can_message_decoder.cpp</string>
       <key>line</key>
-      <integer>114</integer>
+      <integer>64</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_memory depth=1024 port=msg_lut_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_memory depth=512 port=msg_lut_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -57,11 +57,11 @@
       <key>filename</key>
       <string>can_message_decoder.cpp</string>
       <key>line</key>
-      <integer>115</integer>
+      <integer>65</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_memory depth=1024 port=signal_def_mem_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_memory depth=512 port=signal_def_mem_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -73,11 +73,11 @@
       <key>filename</key>
       <string>can_message_decoder.cpp</string>
       <key>line</key>
-      <integer>116</integer>
+      <integer>66</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_memory depth=1024 port=signal_names_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_memory depth=512 port=signal_names_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -89,11 +89,11 @@
       <key>filename</key>
       <string>can_message_decoder.cpp</string>
       <key>line</key>
-      <integer>117</integer>
+      <integer>67</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_fifo port=decoded_signals_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_memory port=decoded_signals_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -105,7 +105,7 @@
       <key>filename</key>
       <string>can_message_decoder.cpp</string>
       <key>line</key>
-      <integer>118</integer>
+      <integer>68</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -121,7 +121,7 @@
       <key>filename</key>
       <string>can_message_decoder.cpp</string>
       <key>line</key>
-      <integer>119</integer>
+      <integer>69</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -137,11 +137,123 @@
       <key>filename</key>
       <string>can_message_decoder.cpp</string>
       <key>line</key>
-      <integer>120</integer>
+      <integer>72</integer>
+      <key>column</key>
+      <integer>83</integer>
+      <key>message</key>
+      <string>format specifies type &apos;unsigned int&apos; but the argument has type &apos;ap_uint&lt;29&gt;&apos;</string>
+      <key>ID</key>
+      <integer>4855</integer>
+      <key>WarningOption</key>
+      <string>format</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>can_message_decoder.cpp</string>
+      <key>line</key>
+      <integer>72</integer>
+      <key>column</key>
+      <integer>95</integer>
+      <key>message</key>
+      <string>format specifies type &apos;unsigned int&apos; but the argument has type &apos;ap_uint&lt;64&gt;&apos;</string>
+      <key>ID</key>
+      <integer>4855</integer>
+      <key>WarningOption</key>
+      <string>format</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>can_message_decoder.cpp</string>
+      <key>line</key>
+      <integer>79</integer>
+      <key>column</key>
+      <integer>71</integer>
+      <key>message</key>
+      <string>format specifies type &apos;unsigned int&apos; but the argument has type &apos;ap_uint&lt;29&gt;&apos;</string>
+      <key>ID</key>
+      <integer>4855</integer>
+      <key>WarningOption</key>
+      <string>format</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>can_message_decoder.cpp</string>
+      <key>line</key>
+      <integer>86</integer>
+      <key>column</key>
+      <integer>87</integer>
+      <key>message</key>
+      <string>format specifies type &apos;unsigned int&apos; but the argument has type &apos;ap_uint&lt;29&gt;&apos;</string>
+      <key>ID</key>
+      <integer>4855</integer>
+      <key>WarningOption</key>
+      <string>format</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>can_message_decoder.cpp</string>
+      <key>line</key>
+      <integer>86</integer>
+      <key>column</key>
+      <integer>114</integer>
+      <key>message</key>
+      <string>format specifies type &apos;unsigned int&apos; but the argument has type &apos;ap_uint&lt;29&gt;&apos;</string>
+      <key>ID</key>
+      <integer>4855</integer>
+      <key>WarningOption</key>
+      <string>format</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>can_message_decoder.cpp</string>
+      <key>line</key>
+      <integer>105</integer>
+      <key>column</key>
+      <integer>47</integer>
+      <key>message</key>
+      <string>format specifies type &apos;unsigned int&apos; but the argument has type &apos;ap_uint&lt;56&gt;&apos;</string>
+      <key>ID</key>
+      <integer>4855</integer>
+      <key>WarningOption</key>
+      <string>format</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>can_message_decoder.cpp</string>
+      <key>line</key>
+      <integer>106</integer>
+      <key>column</key>
+      <integer>97</integer>
+      <key>message</key>
+      <string>format specifies type &apos;unsigned int&apos; but the argument has type &apos;ap_uint&lt;7&gt;&apos;</string>
+      <key>ID</key>
+      <integer>4855</integer>
+      <key>WarningOption</key>
+      <string>format</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>can_message_decoder.cpp</string>
+      <key>line</key>
+      <integer>118</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_ctrl_none port=return_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=factor=68_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -153,15 +265,15 @@
       <key>filename</key>
       <string>can_message_decoder.cpp</string>
       <key>line</key>
-      <integer>151</integer>
+      <integer>160</integer>
       <key>column</key>
-      <integer>9</integer>
+      <integer>46</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=factor=68_XLX_SEP_</string>
+      <string>format specifies type &apos;unsigned long long&apos; but the argument has type &apos;ap_int&lt;32&gt;&apos;</string>
       <key>ID</key>
-      <integer>5471</integer>
+      <integer>4855</integer>
       <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
+      <string>format</string>
     </dict>
   </array>
 </dict>

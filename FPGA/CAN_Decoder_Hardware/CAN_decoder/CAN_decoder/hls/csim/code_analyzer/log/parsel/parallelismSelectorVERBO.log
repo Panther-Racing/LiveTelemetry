@@ -1,0 +1,2597 @@
+parallelismSelector::VERBO: Summary of inputs: 
+parallelismSelector::VERBO: Output directory: "C:\Users\flaud\Documents\GitHub\LiveTelemetry\FPGA\CAN_Decoder_Hardware\CAN_decoder\CAN_decoder\hls\csim\code_analyzer\output"
+parallelismSelector::VERBO: spec:0:0: info: Will use basepath at location C:\Users\flaud\Documents\GitHub\LiveTelemetry\FPGA\CAN_Decoder_Hardware\CAN_decoder
+parallelismSelector::VERBO: FPGA clock frequency is set to 100 MHz
+parallelismSelector::VERBO: Will use user-driven complete partitioning settings
+parallelismSelector::VERBO: Arrays with less than or equal to 4 elements that appear in the codegen directives will be completely partitioned
+parallelismSelector::VERBO: spec:0:0: info: Will use IR Module file at location C:\Users\flaud\Documents\GitHub\LiveTelemetry\FPGA\CAN_Decoder_Hardware\CAN_decoder\CAN_decoder\hls\csim\code_analyzer\.internal\instrument\app_0\project.symbols.bc
+parallelismSelector::VERBO: FPGA frequency: 100000000 Hz
+parallelismSelector::VERBO: Using FPGA frequency for HLS estimations: 100000000 Hz
+parallelismSelector::VERBO: [Model Builder] Extracting logic model object from: C:\Xilinx\2024.1\Vitis_HLS\2024.1\vcxx\data\platform\logic\zynq.logic
+parallelismSelector::VERBO: Using Program Model file: C:\Users\flaud\Documents\GitHub\LiveTelemetry\FPGA\CAN_Decoder_Hardware\CAN_decoder\CAN_decoder\hls\csim\code_analyzer\output\reduced_programmodel.app
+parallelismSelector::VERBO: Device characteristics: Area -- (LUTs: 53200, FFs: 106400, DSPs: 220, BRAMs: 280, URAMs: 0)
+parallelismSelector::VERBO: Maximum area for the hardware functions: AreaConstraint -- (LUTs: 53200, FFs: 106400, DSPs: 220, BRAMs: 280, URAMs: 0)
+parallelismSelector::VERBO: Code Analyzer Id: 8
+parallelismSelector::VERBO: Dataflow Hardware Function: _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE
+parallelismSelector::VERBO: Adding outline as primary transformation
+parallelismSelector::VERBO: RecipeFile: "C:\Users\flaud\Documents\GitHub\LiveTelemetry\FPGA\CAN_Decoder_Hardware\CAN_decoder\CAN_decoder\hls\csim\code_analyzer\.internal\dataflow\8\recipe.json"
+parallelismSelector::VERBO: Applying transformation: (region_outline)
+parallelismSelector::VERBO: Applying transformation: (outline)
+parallelismSelector::VERBO: Cannot find VarId of argument 
+parallelismSelector::VERBO: Cannot find VarId of argument 
+parallelismSelector::VERBO: Alias Equivalence: (Var <- { Pointees })
+                              1750 <- {1750}
+                              1751 <- {1751}
+                              1752 <- {1752}
+                              1753 <- {1753}
+                              1754 <- {1754}
+                              1782 <- {1749}
+                              1783 <- {1784}
+                              1785 <- {1784}
+                              1786 <- {1752}
+                              1787 <- {1749}
+                              1788 <- {1789}
+                              1790 <- {1789}
+                              1791 <- {1752}
+                              1792 <- {1749}
+                              1793 <- {1789}
+                              1794 <- {1795}
+                              1796 <- {1795}
+                              1797 <- {1789}
+                              1798 <- {1752}
+                              1799 <- {1753}
+                              1807 <- {1789}
+                              1808 <- {1811}
+                              1809 <- {1812}
+                              1813 <- {1814}
+                              1815 <- {1814}
+                              1816 <- {1817}
+                              1818 <- {1817}
+                              1819 <- {1789}
+                              1820 <- {1752}
+                              1821 <- {1789}
+                              1822 <- {1823}
+                              1824 <- {1823}
+                              1825 <- {1811}
+                              1826 <- {1812}
+                              1831 <- {1754}
+                              1840 <- {1789}
+                              1841 <- {1752}
+                              1843 <- {1749}
+                              1844 <- {1845}
+                              1846 <- {1845}
+                              1847 <- {1752}
+                              1848 <- {1753}
+                              1860 <- {1754}
+                              1862 <- {1751}
+                              1863 <- {1750}
+                            
+parallelismSelector::VERBO: Cannot find VarId of argument 
+parallelismSelector::VERBO: Variable Infos:
+parallelismSelector::VERBO:     'signal_names' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:7:0 VariableId 11
+                                  ElementBitsize=512
+                                  IsHlsStream=no
+                                  FunctionId=--
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=no
+                                  Elements=[ 512 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'timer' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:9:0 VariableId 12
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId=--
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1689
+                                  ElementBitsize=56
+                                  IsHlsStream=no
+                                  FunctionId= 880
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1690
+                                  ElementBitsize=56
+                                  IsHlsStream=no
+                                  FunctionId= 880
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1691
+                                  ElementBitsize=56
+                                  IsHlsStream=no
+                                  FunctionId= 880
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1692
+                                  ElementBitsize=56
+                                  IsHlsStream=no
+                                  FunctionId= 880
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1693
+                                  ElementBitsize=33
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1694
+                                  ElementBitsize=34
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1695
+                                  ElementBitsize=33
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1696
+                                  ElementBitsize=34
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1702
+                                  ElementBitsize=34
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1703
+                                  ElementBitsize=33
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1704
+                                  ElementBitsize=33
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1705
+                                  ElementBitsize=56
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1706
+                                  ElementBitsize=33
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1707
+                                  ElementBitsize=64
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1710
+                                  ElementBitsize=33
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1711
+                                  ElementBitsize=56
+                                  IsHlsStream=no
+                                  FunctionId= 884
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1712
+                                  ElementBitsize=56
+                                  IsHlsStream=no
+                                  FunctionId= 884
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1713
+                                  ElementBitsize=56
+                                  IsHlsStream=no
+                                  FunctionId= 884
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1714
+                                  ElementBitsize=56
+                                  IsHlsStream=no
+                                  FunctionId= 884
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1715
+                                  ElementBitsize=33
+                                  IsHlsStream=no
+                                  FunctionId= 884
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1716
+                                  ElementBitsize=34
+                                  IsHlsStream=no
+                                  FunctionId= 884
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1720
+                                  ElementBitsize=34
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1721
+                                  ElementBitsize=33
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1731
+                                  ElementBitsize=33
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1734
+                                  ElementBitsize=33
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1736
+                                  ElementBitsize=33
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1738
+                                  ElementBitsize=56
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1743
+                                  ElementBitsize=34
+                                  IsHlsStream=no
+                                  FunctionId= 884
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1744
+                                  ElementBitsize=33
+                                  IsHlsStream=no
+                                  FunctionId= 884
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'message' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:61:0 VariableId 1749
+                                  ElementBitsize=128
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'decoded_signals' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:61:0 VariableId 1750
+                                  ElementBitsize=64
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 68 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'num_decoded_signals' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:62:0 VariableId 1751
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'hash_table' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:62:0 VariableId 1752
+                                  ElementBitsize=4480
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 512 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'msg_lut' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:63:0 VariableId 1753
+                                  ElementBitsize=56
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 512 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'signal_def_mem' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:63:0 VariableId 1754
+                                  ElementBitsize=80
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 512 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'can_id' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:12:0 VariableId 1778
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 873
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'unnamed' unknown source VariableId 1781
+                                  ElementBitsize=8
+                                  IsHlsStream=no
+                                  FunctionId= 874
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=yes
+parallelismSelector::VERBO:     'hash_index' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:76:0 VariableId 1783
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 876
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'hash_index' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:76:0 VariableId 1784
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'hash_table' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:62:0 VariableId 1786
+                                  ElementBitsize=4480
+                                  IsHlsStream=no
+                                  FunctionId= 878
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 512 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'hash_index' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:76:0 VariableId 1788
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 878
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'hash_index' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:76:0 VariableId 1789
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'hash_table' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:62:0 VariableId 1791
+                                  ElementBitsize=4480
+                                  IsHlsStream=no
+                                  FunctionId= 879
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 512 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'hash_index' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:76:0 VariableId 1793
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 879
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '{Return Token}' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:0:0 VariableId 1794
+                                  ElementBitsize=1
+                                  IsHlsStream=no
+                                  FunctionId= 879
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '{Return Token}' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:0:0 VariableId 1795
+                                  ElementBitsize=1
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'hash_table' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:62:0 VariableId 1798
+                                  ElementBitsize=4480
+                                  IsHlsStream=no
+                                  FunctionId= 880
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 512 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'msg_lut' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:63:0 VariableId 1799
+                                  ElementBitsize=56
+                                  IsHlsStream=no
+                                  FunctionId= 880
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 512 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'hash_index' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:76:0 VariableId 1807
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 880
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'num_signals' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:100:0 VariableId 1808
+                                  ElementBitsize=7
+                                  IsHlsStream=no
+                                  FunctionId= 880
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'signal_def_pointer' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:101:0 VariableId 1809
+                                  ElementBitsize=16
+                                  IsHlsStream=no
+                                  FunctionId= 880
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'num_signals' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:100:0 VariableId 1811
+                                  ElementBitsize=7
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'signal_def_pointer' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:101:0 VariableId 1812
+                                  ElementBitsize=16
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '{Return Token}' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:0:0 VariableId 1813
+                                  ElementBitsize=1
+                                  IsHlsStream=no
+                                  FunctionId= 880
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '{Return Token}' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:0:0 VariableId 1814
+                                  ElementBitsize=1
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '{Return Token}' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:0:0 VariableId 1816
+                                  ElementBitsize=1
+                                  IsHlsStream=no
+                                  FunctionId= 881
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '{Return Token}' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:0:0 VariableId 1817
+                                  ElementBitsize=1
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'hash_table' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:62:0 VariableId 1820
+                                  ElementBitsize=4480
+                                  IsHlsStream=no
+                                  FunctionId= 882
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 512 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'hash_index' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:76:0 VariableId 1821
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 882
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '{Return Token}' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:0:0 VariableId 1822
+                                  ElementBitsize=1
+                                  IsHlsStream=no
+                                  FunctionId= 882
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '{Return Token}' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:0:0 VariableId 1823
+                                  ElementBitsize=1
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'signal_def_mem' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:63:0 VariableId 1831
+                                  ElementBitsize=80
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 512 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'hash_table' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:62:0 VariableId 1841
+                                  ElementBitsize=4480
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 512 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '{Return Token}' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:0:0 VariableId 1844
+                                  ElementBitsize=1
+                                  IsHlsStream=no
+                                  FunctionId= 883
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     '{Return Token}' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:0:0 VariableId 1845
+                                  ElementBitsize=1
+                                  IsHlsStream=no
+                                  FunctionId= 872
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=no
+                                  Elements=[ ]
+                                  HlsStream=--
+                                  HasInsertionLoc=no
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'hash_table' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:62:0 VariableId 1847
+                                  ElementBitsize=4480
+                                  IsHlsStream=no
+                                  FunctionId= 884
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 512 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'msg_lut' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:63:0 VariableId 1848
+                                  ElementBitsize=56
+                                  IsHlsStream=no
+                                  FunctionId= 884
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 512 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'signal_def_mem' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:63:0 VariableId 1860
+                                  ElementBitsize=80
+                                  IsHlsStream=no
+                                  FunctionId= 884
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 512 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'num_decoded_signals' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:62:0 VariableId 1862
+                                  ElementBitsize=32
+                                  IsHlsStream=no
+                                  FunctionId= 884
+                                  IsArray=no
+                                  IsValidArray=no
+                                  IsArgument=yes
+                                  Elements=[-- ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO:     'decoded_signals' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:61:0 VariableId 1863
+                                  ElementBitsize=64
+                                  IsHlsStream=no
+                                  FunctionId= 884
+                                  IsArray=yes
+                                  IsValidArray=yes
+                                  IsArgument=yes
+                                  Elements=[ 68 ]
+                                  HlsStream=--
+                                  HasInsertionLoc=yes
+                                  IsFromSystemFunction=no
+parallelismSelector::VERBO: Variable IDs '1779' and '1897' are missing variable infos. This might lead to IDs without variable infos in the equivalence. Preferring ID '1779'
+parallelismSelector::VERBO: Variable IDs '1897' and '1779' are missing variable infos. This might lead to IDs without variable infos in the equivalence. Preferring ID '1779'
+parallelismSelector::VERBO: Variable ID '1779' was in the variable equivalence, but no corresponding variable info was found for it.
+parallelismSelector::VERBO: Equivalence table
+                             Object with value: 11 is mapped to the object with value: 11
+                             Object with value: 1750 is mapped to the object with value: 1750
+                             Object with value: 1752 is mapped to the object with value: 1752
+                             Object with value: 1753 is mapped to the object with value: 1753
+                             Object with value: 1754 is mapped to the object with value: 1754
+                             Object with value: 1783 is mapped to the object with value: 1784
+                             Object with value: 1786 is mapped to the object with value: 1752
+                             Object with value: 1788 is mapped to the object with value: 1789
+                             Object with value: 1791 is mapped to the object with value: 1752
+                             Object with value: 1793 is mapped to the object with value: 1789
+                             Object with value: 1794 is mapped to the object with value: 1795
+                             Object with value: 1798 is mapped to the object with value: 1752
+                             Object with value: 1799 is mapped to the object with value: 1753
+                             Object with value: 1807 is mapped to the object with value: 1789
+                             Object with value: 1808 is mapped to the object with value: 1811
+                             Object with value: 1809 is mapped to the object with value: 1812
+                             Object with value: 1813 is mapped to the object with value: 1814
+                             Object with value: 1816 is mapped to the object with value: 1817
+                             Object with value: 1820 is mapped to the object with value: 1752
+                             Object with value: 1821 is mapped to the object with value: 1789
+                             Object with value: 1822 is mapped to the object with value: 1823
+                             Object with value: 1831 is mapped to the object with value: 1754
+                             Object with value: 1841 is mapped to the object with value: 1752
+                             Object with value: 1844 is mapped to the object with value: 1845
+                             Object with value: 1847 is mapped to the object with value: 1752
+                             Object with value: 1848 is mapped to the object with value: 1753
+                             Object with value: 1860 is mapped to the object with value: 1754
+                             Object with value: 1863 is mapped to the object with value: 1750
+                            
+parallelismSelector::VERBO: Creating MAs for _GLOBAL__sub_I_testbench.cpp
+parallelismSelector::VERBO: Creating MAs for __cxx_global_var_init
+parallelismSelector::VERBO: Creating MAs for _ZN10ap_privateILi29ELb0ELb1EE15clearUnusedBitsEv
+parallelismSelector::VERBO: Creating MAs for _ZN10ap_privateILi80ELb0ELb0EE15clearUnusedBitsEv
+parallelismSelector::VERBO: Creating MAs for _ZN10ap_privateILi56ELb0ELb1EE15clearUnusedBitsEv
+parallelismSelector::VERBO: Creating MAs for _GLOBAL__sub_I_can_message_decoder.cpp
+parallelismSelector::VERBO: Creating MAs for __cxx_global_var_init.2
+parallelismSelector::VERBO: Creating MAs for __cxx_global_var_init.1
+parallelismSelector::VERBO: Creating MAs for __cxx_global_var_init.2.3
+parallelismSelector::VERBO: Creating MAs for __cxx_global_var_init.3
+parallelismSelector::VERBO: Creating MAs for __cxx_global_var_init.4
+parallelismSelector::VERBO: Creating MAs for _ZN9HashEntryC1Ev
+parallelismSelector::VERBO: Creating MAs for _ZN9HashEntryC2Ev
+parallelismSelector::VERBO: Creating MAs for _ZN7ap_uintILi29EEC1Ev
+parallelismSelector::VERBO: Creating MAs for _ZN17SignalAccumulatorC1Ev
+parallelismSelector::VERBO: Creating MAs for _ZN17SignalAccumulatorC2Ev
+parallelismSelector::VERBO: Creating MAs for _ZN7ap_uintILi29EEC2Ev
+parallelismSelector::VERBO: Creating MAs for _ZN11ap_int_baseILi29ELb0EEC2Ev
+parallelismSelector::VERBO: Creating MAs for _ZN12ssdm_int_simILi29ELb0EEC2Ev
+parallelismSelector::VERBO: Creating MAs for _ZN10ap_privateILi29ELb0ELb1EEC1Ev
+parallelismSelector::VERBO: Creating MAs for _ZN10ap_privateILi29ELb0ELb1EEC2Ev
+parallelismSelector::VERBO: Creating MAs for _ZN7ap_uintILi80EEC1Ev
+parallelismSelector::VERBO: Creating MAs for _ZN7ap_uintILi80EEC2Ev
+parallelismSelector::VERBO: Creating MAs for _ZN11ap_int_baseILi80ELb0EEC2Ev
+parallelismSelector::VERBO: Creating MAs for _ZN12ssdm_int_simILi80ELb0EEC2Ev
+parallelismSelector::VERBO: Creating MAs for _ZN10ap_privateILi80ELb0ELb0EEC1Ev
+parallelismSelector::VERBO: Creating MAs for _ZN10ap_privateILi80ELb0ELb0EEC2Ev
+parallelismSelector::VERBO: Creating MAs for _ZN7ap_uintILi56EEC1Ev
+parallelismSelector::VERBO: Creating MAs for _ZN7ap_uintILi56EEC2Ev
+parallelismSelector::VERBO: Creating MAs for _ZN11ap_int_baseILi56ELb0EEC2Ev
+parallelismSelector::VERBO: Creating MAs for _ZN12ssdm_int_simILi56ELb0EEC2Ev
+parallelismSelector::VERBO: Creating MAs for _ZN10ap_privateILi56ELb0ELb1EEC1Ev
+parallelismSelector::VERBO: Creating MAs for _ZN10ap_privateILi56ELb0ELb1EEC2Ev
+parallelismSelector::VERBO: Creating MAs for _GLOBAL__sub_I_can_message_decoder.cpp.65
+parallelismSelector::VERBO: Creating MAs for __cxx_global_var_init.66
+parallelismSelector::VERBO: Creating MAs for _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE
+parallelismSelector::VERBO: Creating MAs for _Z12compute_hash7ap_uintILi29EE
+parallelismSelector::VERBO: Creating MAs for _ZL6printfPKcz
+parallelismSelector::VERBO: Creating MAs for Outline_T3_F872_R2_Switch
+parallelismSelector::VERBO: Creating MAs for Outline_T4_F872_R5_Call
+parallelismSelector::VERBO: Creating MAs for Outline_T5_F872_R6_Switch
+parallelismSelector::VERBO: Creating MAs for Outline_T6_F872_R9_Loop
+parallelismSelector::VERBO:     HMA (VariableId 1786)  %i11 = load i29, i29* %message_id, align 4, !dbg !25442, !tbaa !25443 Scev: {((560 * (sext i32 %call.loc.val to i64))<nsw> + %hash_table),+,560}<nw><%while.cond>: IndexFunction: 0 140
+parallelismSelector::VERBO: Creating MAs for Outline_T7_F872_R22_Switch
+parallelismSelector::VERBO:     HMA (VariableId 1791)  %i18 = load i29, i29* %message_id9, align 4, !dbg !25439, !tbaa !25440 Scev: ((560 * (sext i32 %hash_index.0.loc.val to i64))<nsw> + %hash_table): SCEV not regular: 
+parallelismSelector::VERBO: Creating MAs for Outline_T8_F872_R26_Atomic
+parallelismSelector::VERBO:     HMA (VariableId 1798)  %i23 = load i32, i32* %lut_index, align 4, !dbg !25364, !tbaa !25365 Scev: (4 + (560 * (sext i32 %hash_index.0.reload.loc.val to i64))<nsw> + %hash_table): SCEV not regular: 
+parallelismSelector::VERBO:     HMA (VariableId 1799)  %i24 = load i56, i56* %arrayidx17, align 8, !dbg !25363 Scev: ((8 * (sext i32 %i23 to i64))<nsw> + %msg_lut): SCEV not regular: 
+parallelismSelector::VERBO: Creating MAs for Outline_T9_F872_R27_Switch
+parallelismSelector::VERBO: Creating MAs for Outline_T10_F872_R30_Atomic
+parallelismSelector::VERBO:     HMA (VariableId 1820)  %i49 = load i32, i32* %counter, align 4, !dbg !24983, !tbaa !24984 Scev: (552 + (560 * (sext i32 %hash_index.0.reload.reload.loc.val to i64))<nsw> + %hash_table): SCEV not regular: 
+parallelismSelector::VERBO:     HMA (VariableId 1820)  store i32 %add.i.i222, i32* %counter, align 4, !dbg !24983, !tbaa !24984 Scev: (552 + (560 * (sext i32 %hash_index.0.reload.reload.loc.val to i64))<nsw> + %hash_table): SCEV not regular: 
+parallelismSelector::VERBO: Creating MAs for Outline_T11_F872_R31_Loop
+parallelismSelector::VERBO:     HMA (VariableId 1831)  %i63 = load i80, i80* %arrayidx32, align 8, !dbg !25878 Scev: ((16 * (sext i34 %i62 to i64))<nsw> + %signal_def_mem): SCEV not regular: 
+parallelismSelector::VERBO:     HMA (VariableId 1841)  %i184 = load i64, i64* %arrayidx87, align 8, !dbg !26310, !tbaa !26311 Scev: {(8 + (560 * (sext i32 %hash_index.0.reload.reload.reload.loc.val to i64))<nsw> + %hash_table),+,8}<nw><%for.body>: IndexFunction: 1 1
+parallelismSelector::VERBO:     HMA (VariableId 1841)  store i64 %add.i, i64* %arrayidx87, align 8, !dbg !26310, !tbaa !26311 Scev: {(8 + (560 * (sext i32 %hash_index.0.reload.reload.reload.loc.val to i64))<nsw> + %hash_table),+,8}<nw><%for.body>: IndexFunction: 1 1
+parallelismSelector::VERBO: Creating MAs for Outline_T12_F872_R93_Switch
+parallelismSelector::VERBO:     HMA (VariableId 1847)  %i190 = load i32, i32* %counter99, align 4, !dbg !25386, !tbaa !25387 Scev: {(552 + %hash_table),+,560}<nuw><%for.body95>: IndexFunction: 138 140
+parallelismSelector::VERBO:     HMA (VariableId 1847)  %i194 = load i32, i32* %lut_index105, align 4, !dbg !25405, !tbaa !25406 Scev: {(4 + %hash_table),+,560}<nw><%for.body95>: IndexFunction: 1 140
+parallelismSelector::VERBO:     HMA (VariableId 1848)  %i195 = load i56, i56* %arrayidx107, align 8, !dbg !25385 Scev: ((8 * (sext i32 %i194 to i64))<nsw> + %msg_lut): SCEV not regular: 
+parallelismSelector::VERBO:     HMA (VariableId 1847)  store i32 0, i32* %counter99, align 8, !dbg !25385 Scev: {(552 + %hash_table),+,560}<nuw><%for.body95>: IndexFunction: 138 140
+parallelismSelector::VERBO:     HMA (VariableId 1860)  %i233 = load i80, i80* %arrayidx127, align 8, !dbg !25796, !tbaa !25797 Scev: ((16 * (sext i34 %i230 to i64))<nsw> + %signal_def_mem): SCEV not regular: 
+parallelismSelector::VERBO:     HMA (VariableId 1863)  store i11 %conv.i.i.i, i11* %signal_name_index130, align 4, !dbg !25385 Scev: {((8 * (sext i32 %num_decoded_signals.promoted to i64))<nsw> + %decoded_signals),+,8}<nw><%for.body115>: IndexFunction: 0 4 0
+parallelismSelector::VERBO:     HMA (VariableId 1847)  %i247 = load i64, i64* %arrayidx138, align 8, !dbg !25802, !tbaa !25803 Scev: {{(8 + %hash_table),+,560}<nw><%for.body95>,+,8}<nuw><%for.body115>: IndexFunction: 1 1 70
+parallelismSelector::VERBO:     HMA (VariableId 1847)  %i248 = load i32, i32* %counter99, align 4, !dbg !25802, !tbaa !25387 Scev: {(552 + %hash_table),+,560}<nuw><%for.body95>: IndexFunction: 138 0 140
+parallelismSelector::VERBO:     HMA (VariableId 1863)  store i32 %conv.i.i, i32* %value149, align 4, !dbg !25385 Scev: {(4 + (8 * (sext i32 %num_decoded_signals.promoted to i64))<nsw> + %decoded_signals),+,8}<nw><%for.body115>: IndexFunction: 1 2 0
+parallelismSelector::VERBO:     HMA (VariableId 1847)  store i64 0, i64* %arrayidx138, align 8, !dbg !25385 Scev: {{(8 + %hash_table),+,560}<nw><%for.body95>,+,8}<nuw><%for.body115>: IndexFunction: 1 1 70
+parallelismSelector::VERBO: Nesting structure:
+                            +- Loop with id 119, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=0, TripCount=--, StaticTripCountUpperBound=--, MaxDynamicTripCount= 69, MinDynamicTripCount= 0, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:84:5, Vars=1752,
+                            +- Loop with id 118, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=0, TripCount=--, StaticTripCountUpperBound= 127, MaxDynamicTripCount= 68, MinDynamicTripCount= 1, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:117:5, Vars=1752,1754,
+                            +- Loop with id 116, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=0, TripCount= 512, StaticTripCountUpperBound= 512, MaxDynamicTripCount= 512, MinDynamicTripCount= 512, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=1, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:172:9, Vars=1752,1753,
+                               +- Loop with id 117, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=1, TripCount=--, StaticTripCountUpperBound= 127, MaxDynamicTripCount= 68, MinDynamicTripCount= 1, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=1, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:182:17, Vars=1750,1752,1754,
+                            
+parallelismSelector::VERBO: Nesting structure after dynamic trip count update:
+                            +- Loop with id 119, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=0, TripCount=--, StaticTripCountUpperBound=--, MaxDynamicTripCount= 69, MinDynamicTripCount= 0, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:84:5, Vars=1752,
+                            +- Loop with id 118, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=0, TripCount=--, StaticTripCountUpperBound= 127, MaxDynamicTripCount= 68, MinDynamicTripCount= 1, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:117:5, Vars=1752,1754,
+                            +- Loop with id 116, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=0, TripCount= 512, StaticTripCountUpperBound= 512, MaxDynamicTripCount= 512, MinDynamicTripCount= 512, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=1, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:172:9, Vars=1752,1753,
+                               +- Loop with id 117, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=1, TripCount=--, StaticTripCountUpperBound= 127, MaxDynamicTripCount= 68, MinDynamicTripCount= 1, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=1, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:182:17, Vars=1750,1752,1754,
+                            
+parallelismSelector::VERBO: Function 'decode_can_message' not inlined as per top-levels
+parallelismSelector::VERBO: Function 'Outline_T3_F872_R2_Switch' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'Outline_T4_F872_R5_Call' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'Outline_T5_F872_R6_Switch' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'Outline_T6_F872_R9_Loop' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'Outline_T7_F872_R22_Switch' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'Outline_T8_F872_R26_Atomic' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'Outline_T9_F872_R27_Switch' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'Outline_T10_F872_R30_Atomic' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'Outline_T11_F872_R31_Loop' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'Outline_T12_F872_R93_Switch' not inlined as per dataflow task
+parallelismSelector::VERBO: Function 'compute_hash' inlined as per Vitis C++ heuristic
+parallelismSelector::VERBO: Function 'printf' inlined as per Vitis C++ heuristic
+parallelismSelector::VERBO: Nesting structure after static trip count upper bound calculation for symbolically bounded loops:
+                            +- Loop with id 119, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=0, TripCount=--, StaticTripCountUpperBound=--, MaxDynamicTripCount= 69, MinDynamicTripCount= 0, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:84:5, Vars=1752,
+                            +- Loop with id 118, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=0, TripCount=--, StaticTripCountUpperBound= 127, MaxDynamicTripCount= 68, MinDynamicTripCount= 1, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:117:5, Vars=1752,1754,
+                            +- Loop with id 116, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=0, TripCount= 512, StaticTripCountUpperBound= 512, MaxDynamicTripCount= 512, MinDynamicTripCount= 512, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=1, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:172:9, Vars=1752,1753,
+                               +- Loop with id 117, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=1, TripCount=--, StaticTripCountUpperBound= 127, MaxDynamicTripCount= 68, MinDynamicTripCount= 1, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=1, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:182:17, Vars=1750,1752,1754,
+                            
+parallelismSelector::VERBO: LCDs collected in function '_GLOBAL__sub_I_testbench':
+parallelismSelector::VERBO: LCDs collected in function '__cxx_global_var_init':
+parallelismSelector::VERBO: LCDs collected in function 'ap_private<29, false, true>::clearUnusedBits':
+parallelismSelector::VERBO: LCDs collected in function 'ap_private<80, false, false>::clearUnusedBits':
+parallelismSelector::VERBO: LCDs collected in function 'ap_private<56, false, true>::clearUnusedBits':
+parallelismSelector::VERBO: LCDs collected in function '_GLOBAL__sub_I_can_message_decoder':
+parallelismSelector::VERBO: LCDs collected in function '__cxx_global_var_init':
+parallelismSelector::VERBO: LCDs collected in function '__cxx_global_var_init':
+parallelismSelector::VERBO:     LoopId 98 with label '--', hasRAW: 0
+parallelismSelector::VERBO: LCDs collected in function '__cxx_global_var_init':
+parallelismSelector::VERBO:     LoopId 99 with label '--', hasRAW: 0
+parallelismSelector::VERBO: LCDs collected in function '__cxx_global_var_init':
+parallelismSelector::VERBO: LCDs collected in function '__cxx_global_var_init':
+parallelismSelector::VERBO:     LoopId 101 with label '--', hasRAW: 0
+parallelismSelector::VERBO: LCDs collected in function 'HashEntry::HashEntry':
+parallelismSelector::VERBO: LCDs collected in function 'HashEntry::HashEntry':
+parallelismSelector::VERBO: LCDs collected in function 'ap_uint<29>::ap_uint':
+parallelismSelector::VERBO: LCDs collected in function 'SignalAccumulator::SignalAccumulator':
+parallelismSelector::VERBO: LCDs collected in function 'SignalAccumulator::SignalAccumulator':
+parallelismSelector::VERBO: LCDs collected in function 'ap_uint<29>::ap_uint':
+parallelismSelector::VERBO: LCDs collected in function 'ap_int_base<29, false>::ap_int_base':
+parallelismSelector::VERBO: LCDs collected in function 'ssdm_int_sim<29, false>::ssdm_int_sim':
+parallelismSelector::VERBO: LCDs collected in function 'ap_private<29, false, true>::ap_private':
+parallelismSelector::VERBO: LCDs collected in function 'ap_private<29, false, true>::ap_private':
+parallelismSelector::VERBO: LCDs collected in function 'ap_uint<80>::ap_uint':
+parallelismSelector::VERBO: LCDs collected in function 'ap_uint<80>::ap_uint':
+parallelismSelector::VERBO: LCDs collected in function 'ap_int_base<80, false>::ap_int_base':
+parallelismSelector::VERBO: LCDs collected in function 'ssdm_int_sim<80, false>::ssdm_int_sim':
+parallelismSelector::VERBO: LCDs collected in function 'ap_private<80, false, false>::ap_private':
+parallelismSelector::VERBO: LCDs collected in function 'ap_private<80, false, false>::ap_private':
+parallelismSelector::VERBO: LCDs collected in function 'ap_uint<56>::ap_uint':
+parallelismSelector::VERBO: LCDs collected in function 'ap_uint<56>::ap_uint':
+parallelismSelector::VERBO: LCDs collected in function 'ap_int_base<56, false>::ap_int_base':
+parallelismSelector::VERBO: LCDs collected in function 'ssdm_int_sim<56, false>::ssdm_int_sim':
+parallelismSelector::VERBO: LCDs collected in function 'ap_private<56, false, true>::ap_private':
+parallelismSelector::VERBO: LCDs collected in function 'ap_private<56, false, true>::ap_private':
+parallelismSelector::VERBO: LCDs collected in function '_GLOBAL__sub_I_can_message_decoder':
+parallelismSelector::VERBO: LCDs collected in function '__cxx_global_var_init':
+parallelismSelector::VERBO: LCDs collected in function 'decode_can_message':
+parallelismSelector::VERBO: LCDs collected in function 'compute_hash':
+parallelismSelector::VERBO: LCDs collected in function 'printf':
+parallelismSelector::VERBO: LCDs collected in function 'Outline_T3_F872_R2_Switch':
+parallelismSelector::VERBO: LCDs collected in function 'Outline_T4_F872_R5_Call':
+parallelismSelector::VERBO: LCDs collected in function 'Outline_T5_F872_R6_Switch':
+parallelismSelector::VERBO: LCDs collected in function 'Outline_T6_F872_R9_Loop':
+parallelismSelector::VERBO:     LoopId 119 with label '--', hasRAW: 0
+parallelismSelector::VERBO: LCDs collected in function 'Outline_T7_F872_R22_Switch':
+parallelismSelector::VERBO: LCDs collected in function 'Outline_T8_F872_R26_Atomic':
+parallelismSelector::VERBO: LCDs collected in function 'Outline_T9_F872_R27_Switch':
+parallelismSelector::VERBO: LCDs collected in function 'Outline_T10_F872_R30_Atomic':
+parallelismSelector::VERBO: LCDs collected in function 'Outline_T11_F872_R31_Loop':
+parallelismSelector::VERBO:     LoopId 118 with label '--', hasRAW: 0
+parallelismSelector::VERBO: LCDs collected in function 'Outline_T12_F872_R93_Switch':
+parallelismSelector::VERBO:     LoopId 116 with label '--', hasRAW: 1
+parallelismSelector::VERBO:         Recurrence: LCD=3
+parallelismSelector::VERBO:          Src: '10:32' "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp":4294967295:0
+parallelismSelector::VERBO:                store i64 0, i64* %arrayidx138, align 8, !dbg !25385
+parallelismSelector::VERBO:          Sink: '4:4' "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp":174:50
+parallelismSelector::VERBO:                 %i190 = load i32, i32* %counter99, align 4, !dbg !25386, !tbaa !25387
+parallelismSelector::VERBO:         Recurrence: LCD=4
+parallelismSelector::VERBO:          Src: '10:32' "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp":4294967295:0
+parallelismSelector::VERBO:                store i64 0, i64* %arrayidx138, align 8, !dbg !25385
+parallelismSelector::VERBO:          Sink: '10:25' "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp":184:115
+parallelismSelector::VERBO:                 %i247 = load i64, i64* %arrayidx138, align 8, !dbg !25802, !tbaa !25803
+parallelismSelector::VERBO:         Recurrence: LCD=5
+parallelismSelector::VERBO:          Src: '10:32' "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp":4294967295:0
+parallelismSelector::VERBO:                store i64 0, i64* %arrayidx138, align 8, !dbg !25385
+parallelismSelector::VERBO:          Sink: '10:26' "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp":184:115
+parallelismSelector::VERBO:                 %i248 = load i32, i32* %counter99, align 4, !dbg !25802, !tbaa !25387
+parallelismSelector::VERBO:         Recurrence: LCD=6
+parallelismSelector::VERBO:          Src: '7:1' "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp":0:0
+parallelismSelector::VERBO:                store i32 %inc157.lcssa, i32* %num_decoded_signals, align 4, !dbg !24970, !tbaa !25374
+parallelismSelector::VERBO:          Sink: '9:0'--
+parallelismSelector::VERBO:                 %num_decoded_signals.promoted = load i32, i32* %num_decoded_signals, align 4, !tbaa !25374
+parallelismSelector::VERBO:     LoopId 117 with label '--', hasRAW: 1
+parallelismSelector::VERBO:         Recurrence: LCD=1
+parallelismSelector::VERBO:          Src: '10:32' "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp":4294967295:0
+parallelismSelector::VERBO:                store i64 0, i64* %arrayidx138, align 8, !dbg !25385
+parallelismSelector::VERBO:          Sink: '10:25' "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp":184:115
+parallelismSelector::VERBO:                 %i247 = load i64, i64* %arrayidx138, align 8, !dbg !25802, !tbaa !25803
+parallelismSelector::VERBO:         Recurrence: LCD=2
+parallelismSelector::VERBO:          Src: '10:32' "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp":4294967295:0
+parallelismSelector::VERBO:                store i64 0, i64* %arrayidx138, align 8, !dbg !25385
+parallelismSelector::VERBO:          Sink: '10:26' "C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp":184:115
+parallelismSelector::VERBO:                 %i248 = load i32, i32* %counter99, align 4, !dbg !25802, !tbaa !25387
+parallelismSelector::VERBO: 
+                            The following user pragmas were detected in the application:
+parallelismSelector::VERBO: can_message_decoder.cpp:118:9: warning: User pragma 'unroll' found in function Outline_T11_F872_R31_Loop
+parallelismSelector::VERBO: Max iterations for loop 116 are 512
+parallelismSelector::VERBO:  - loop 116 is  C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:172:9
+parallelismSelector::VERBO: Partitioning variable 'signal_names' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:7:0 VariableId 11
+parallelismSelector::VERBO: Partitioning variable 'decoded_signals' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:61:0 VariableId 1750
+parallelismSelector::VERBO: Partitioning variable 'hash_table' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:62:0 VariableId 1752
+parallelismSelector::VERBO: Partitioning variable 'msg_lut' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:63:0 VariableId 1753
+parallelismSelector::VERBO: Partitioning variable 'signal_def_mem' C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:63:0 VariableId 1754
+parallelismSelector::VERBO: Initial branch:
+                            FunctionPipelineTopLevel: Maybe
+                            Partition {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName signal_names) (VariableId 11)
+                            Reshape {dim 0: cyclic 1, 2, 4, 17, 34 complete} (VariableName decoded_signals) (VariableId 1750)
+                            Reshape {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName hash_table) (VariableId 1752)
+                            Reshape {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName msg_lut) (VariableId 1753)
+                            Reshape {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName signal_def_mem) (VariableId 1754)
+                            +- pipeline, unroll with factors 1 (LoopId 119)
+                            +- pipeline, unroll with factors 1, 127 (LoopId 118)
+                            +- pipeline, unroll with factors 1, 512 (LoopId 116)
+                               +- pipeline, unroll with factors 1, 127 (LoopId 117)
+                            
+parallelismSelector::VERBO: Function pipeline is not legal because the static trip count upper bound of loop 119 is unknown
+parallelismSelector::VERBO: Initial branch after first round of constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName signal_names) (VariableId 11)
+                            Reshape {dim 0: cyclic 1, 2, 4, 17, 34 complete} (VariableName decoded_signals) (VariableId 1750)
+                            Reshape {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName hash_table) (VariableId 1752)
+                            Reshape {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName msg_lut) (VariableId 1753)
+                            Reshape {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName signal_def_mem) (VariableId 1754)
+                            +- pipeline, unroll with factors 1 (LoopId 119)
+                            +- pipeline, unroll with factors 1, 127 (LoopId 118)
+                            +- pipeline, unroll with factors 1, 512 (LoopId 116)
+                               +- pipeline, unroll with factors 1, 127 (LoopId 117)
+                            
+parallelismSelector::VERBO: Nesting structure after user pragma constraints:
+                            +- Loop with id 119, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=0, TripCount=--, StaticTripCountUpperBound=--, MaxDynamicTripCount= 69, MinDynamicTripCount= 0, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=0, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:84:5, Vars=1752,
+                            +- Loop with id 118, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=0, TripCount=--, StaticTripCountUpperBound= 127, MaxDynamicTripCount= 68, MinDynamicTripCount= 1, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=1, hasRAW=0, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:117:5, Vars=1752,1754,
+                            +- Loop with id 116, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=0, TripCount= 512, StaticTripCountUpperBound= 512, MaxDynamicTripCount= 512, MinDynamicTripCount= 512, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=1, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:172:9, Vars=1752,1753,
+                               +- Loop with id 117, HasPerfectlyNestedSubLoop=0, HasComputableTotalTC=1, TripCount=--, StaticTripCountUpperBound= 127, MaxDynamicTripCount= 68, MinDynamicTripCount= 1, IsCompilerGenerated=0, HasInsertionLoc=1, HasUserInputPragma=0, hasRAW=1, Loc=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder\can_message_decoder.cpp:182:17, Vars=1750,1752,1754,
+                            
+parallelismSelector::VERBO: Initial branch after applying user pragma constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName signal_names) (VariableId 11)
+                            Reshape {dim 0: cyclic 1, 2, 4, 17, 34 complete} (VariableName decoded_signals) (VariableId 1750)
+                            Reshape {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName hash_table) (VariableId 1752)
+                            Reshape {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName msg_lut) (VariableId 1753)
+                            Reshape {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName signal_def_mem) (VariableId 1754)
+                            +- pipeline, unroll with factors 1 (LoopId 119)
+                            +- unroll with factors 68 (LoopId 118)
+                            +- pipeline, unroll with factors 1, 512 (LoopId 116)
+                               +- pipeline, unroll with factors 1, 127 (LoopId 117)
+                            
+parallelismSelector::VERBO: Initial branch after applying Xilinx constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName signal_names) (VariableId 11)
+                            Reshape {dim 0: cyclic 1, 2, 4, 17, 34 complete} (VariableName decoded_signals) (VariableId 1750)
+                            Reshape {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName hash_table) (VariableId 1752)
+                            Reshape {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName msg_lut) (VariableId 1753)
+                            Reshape {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName signal_def_mem) (VariableId 1754)
+                            +- pipeline, unroll with factors 1 (LoopId 119)
+                            +- unroll with factors 68 (LoopId 118)
+                            +- pipeline, unroll with factors 1, 512 (LoopId 116)
+                               +- pipeline, unroll with factors 1, 127 (LoopId 117)
+                            
+parallelismSelector::VERBO: DataflowConstrainer: Constraining Func/Loop with Id 872
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1784
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1749
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1789
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1749
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1795
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1789
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1814
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1817
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1789
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1823
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1789
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1812
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1811
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1751
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1845
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=12
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1751
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=12
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1751
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=12
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=1751
+parallelismSelector::VERBO: DataflowConstrainer: Has no VariableSettingSpace: VarId=12
+parallelismSelector::VERBO: DataflowConstrainer: Constrained: VarId=1750
+parallelismSelector::VERBO: DataflowConstrainer: Constrained: VarId=1752
+parallelismSelector::VERBO: DataflowConstrainer: Constrained: VarId=1753
+parallelismSelector::VERBO: DataflowConstrainer: Constrained: VarId=1754
+parallelismSelector::VERBO: Initial branch after applying dataflow constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1, 2, 4, 8, 16, 32, 64, 128, 256 complete} (VariableName signal_names) (VariableId 11)
+                            Reshape {dim 0: cyclic 1} (VariableName decoded_signals) (VariableId 1750)
+                            Reshape {dim 0: cyclic 1} (VariableName hash_table) (VariableId 1752)
+                            Reshape {dim 0: cyclic 1} (VariableName msg_lut) (VariableId 1753)
+                            Reshape {dim 0: cyclic 1} (VariableName signal_def_mem) (VariableId 1754)
+                            +- pipeline, unroll with factors 1 (LoopId 119)
+                            +- unroll with factors 68 (LoopId 118)
+                            +- pipeline, unroll with factors 1, 512 (LoopId 116)
+                               +- pipeline, unroll with factors 1, 127 (LoopId 117)
+                            
+parallelismSelector::VERBO: Removing unroll factor 512 from loop 116 because it violates the recursive unroll limit of 4096
+parallelismSelector::VERBO: Setting design space of variable 11 to 'no partition/reshape' because we do not see any accesses to that variable.
+parallelismSelector::VERBO: Removing reshape options from the design space because optimizing reshape is disabled
+                            
+parallelismSelector::VERBO: Initial branch after applying heuristic constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1} (VariableName signal_names) (VariableId 11)
+                            Reshape {dim 0: cyclic 1} (VariableName decoded_signals) (VariableId 1750)
+                            Reshape {dim 0: cyclic 1} (VariableName hash_table) (VariableId 1752)
+                            Reshape {dim 0: cyclic 1} (VariableName msg_lut) (VariableId 1753)
+                            Reshape {dim 0: cyclic 1} (VariableName signal_def_mem) (VariableId 1754)
+                            +- pipeline, unroll with factors 1 (LoopId 119)
+                            +- unroll with factors 68 (LoopId 118)
+                            +- pipeline, unroll with factors 1 (LoopId 116)
+                               +- pipeline, unroll with factors 1, 127 (LoopId 117)
+                            
+parallelismSelector::VERBO: Initial branch after applying second round of Xilinx constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1} (VariableName signal_names) (VariableId 11)
+                            Reshape {dim 0: cyclic 1} (VariableName decoded_signals) (VariableId 1750)
+                            Reshape {dim 0: cyclic 1} (VariableName hash_table) (VariableId 1752)
+                            Reshape {dim 0: cyclic 1} (VariableName msg_lut) (VariableId 1753)
+                            Reshape {dim 0: cyclic 1} (VariableName signal_def_mem) (VariableId 1754)
+                            +- pipeline, unroll with factors 1 (LoopId 119)
+                            +- unroll with factors 68 (LoopId 118)
+                            +- pipeline, unroll with factors 1 (LoopId 116)
+                               +- pipeline, unroll with factors 1, 127 (LoopId 117)
+                            
+parallelismSelector::VERBO: Initial branch after PerfEst evaluation constraints:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1} (VariableName signal_names) (VariableId 11)
+                            Reshape {dim 0: cyclic 1} (VariableName decoded_signals) (VariableId 1750)
+                            Reshape {dim 0: cyclic 1} (VariableName hash_table) (VariableId 1752)
+                            Reshape {dim 0: cyclic 1} (VariableName msg_lut) (VariableId 1753)
+                            Reshape {dim 0: cyclic 1} (VariableName signal_def_mem) (VariableId 1754)
+                            +- unroll with factors 1 (LoopId 119)
+                            +- unroll with factors 68 (LoopId 118)
+                            +- unroll with factors 1 (LoopId 116)
+                               +- unroll with factors 1 (LoopId 117)
+                            
+parallelismSelector::VERBO: Initial constrained branch:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1} (VariableName signal_names) (VariableId 11)
+                            Reshape {dim 0: cyclic 1} (VariableName decoded_signals) (VariableId 1750)
+                            Reshape {dim 0: cyclic 1} (VariableName hash_table) (VariableId 1752)
+                            Reshape {dim 0: cyclic 1} (VariableName msg_lut) (VariableId 1753)
+                            Reshape {dim 0: cyclic 1} (VariableName signal_def_mem) (VariableId 1754)
+                            +- unroll with factors 1 (LoopId 119)
+                            +- unroll with factors 68 (LoopId 118)
+                            +- unroll with factors 1 (LoopId 116)
+                               +- unroll with factors 1 (LoopId 117)
+                            
+parallelismSelector::VERBO: C:\Xilinx\2024.1\Vitis_HLS\2024.1\tps\mingw\10.0.0\win64.o\nt/x86_64-w64-mingw32/include/stdio.h:371:35: warning: Call to external function 'llvm.va_start' cannot be estimated
+                            
+parallelismSelector::VERBO: C:\Xilinx\2024.1\Vitis_HLS\2024.1\tps\mingw\10.0.0\win64.o\nt/x86_64-w64-mingw32/include/stdio.h:372:32: warning: Call to external function '__acrt_iob_func' cannot be estimated
+                            
+parallelismSelector::VERBO: C:\Xilinx\2024.1\Vitis_HLS\2024.1\tps\mingw\10.0.0\win64.o\nt/x86_64-w64-mingw32/include/stdio.h:372:14: warning: Call to external function '__mingw_vfprintf' cannot be estimated
+                            
+parallelismSelector::VERBO: C:\Xilinx\2024.1\Vitis_HLS\2024.1\tps\mingw\10.0.0\win64.o\nt/x86_64-w64-mingw32/include/stdio.h:373:3: warning: Call to external function 'llvm.va_end' cannot be estimated
+                            
+parallelismSelector::VERBO: HPE - Calculating latency and area for design space...
+                            Setting Space: FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1} (VariableId 11)
+                            Reshape {dim 0: cyclic 1} (VariableId 1750)
+                            Reshape {dim 0: cyclic 1} (VariableId 1752)
+                            Reshape {dim 0: cyclic 1} (VariableId 1753)
+                            Reshape {dim 0: cyclic 1} (VariableId 1754)
+                            +- unroll with factors 1 (LoopId 119)
+                            +- unroll with factors 68 (LoopId 118)
+                            +- unroll with factors 1 (LoopId 116)
+                               +- unroll with factors 1 (LoopId 117)
+                            
+parallelismSelector::VERBO: Calculating latency for top level hw function: decode_can_message
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(29 F=875) 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                            
+parallelismSelector::VERBO: Analyzing Function "Outline_T3_F872_R2_Switch" (FunctionId 875):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T3_F872_R2_Switch
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 0}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 0}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(30 F=876) (1783->1784)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1783 is mapped to the object with value: 1784
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(39 F=873) 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1783 is mapped to the object with value: 1784
+                            
+parallelismSelector::VERBO: Analyzing Function "compute_hash" (FunctionId 873):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _Z12compute_hash7ap_uintILi29EE
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 0}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 0}
+parallelismSelector::VERBO:        - Critical path: entry
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T4_F872_R5_Call" (FunctionId 876):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T4_F872_R5_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso1 -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot_iso0, newFuncRoot, newFuncRoot_iso1
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(31 F=877) 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                            
+parallelismSelector::VERBO: Analyzing Function "Outline_T5_F872_R6_Switch" (FunctionId 877):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T5_F872_R6_Switch
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 0}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 0}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(32 F=878) (1786->1752)(1788->1789)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1786 is mapped to the object with value: 1752
+                             Object with value: 1788 is mapped to the object with value: 1789
+                            
+parallelismSelector::VERBO: Analyzing Loop "while.cond" (LoopId 119):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 119
+parallelismSelector::VERBO:          - EndCycles: while.cond -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: land.end -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: land.rhs -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
+parallelismSelector::VERBO:        - Critical path: while.cond, land.end, land.rhs
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {1: 0.5}, OwnedIIMem: {1: 0.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T6_F872_R9_Loop" (FunctionId 878):
+parallelismSelector::VERBO:         LoopId: 119, TC: 69, IL: {1: 2}, IIMem: {1: 0.5}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 138
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 119): 138
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T6_F872_R9_Loop
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: land.end -> {1: 139}
+parallelismSelector::VERBO:          - EndCycles: while.end -> {1: 139}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 139}
+parallelismSelector::VERBO:        - Critical path: while.cond, newFuncRoot, land.end, while.end
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(33 F=879) (1791->1752)(1793->1789)(1794->1795)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1791 is mapped to the object with value: 1752
+                             Object with value: 1793 is mapped to the object with value: 1789
+                             Object with value: 1794 is mapped to the object with value: 1795
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(40 F=874) (1779->1897)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1779 is mapped to the object with value: 1897
+                             Object with value: 1791 is mapped to the object with value: 1752
+                             Object with value: 1793 is mapped to the object with value: 1789
+                             Object with value: 1794 is mapped to the object with value: 1795
+                            
+parallelismSelector::VERBO: Analyzing Function "printf" (FunctionId 874):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _ZL6printfPKcz
+parallelismSelector::VERBO:          - EndCycles: entry_iso0 -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: entry_iso3 -> {1: 4}
+parallelismSelector::VERBO:          - EndCycles: entry_iso1 -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: entry_iso2 -> {1: 4}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 4}
+parallelismSelector::VERBO:        - Critical path: entry_iso0, entry, entry_iso3, entry_iso1, entry_iso2
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T7_F872_R22_Switch" (FunctionId 879):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T7_F872_R22_Switch
+parallelismSelector::VERBO:          - EndCycles: if.end -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: if.then -> {1: 7}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: UnifiedReturnBlock -> {1: 7}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 7}
+parallelismSelector::VERBO:        - Critical path: if.then, newFuncRoot, UnifiedReturnBlock
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(34 F=880) (1798->1752)(1799->1753)(1807->1789)(1808->1811)(1809->1812)(1813->1814)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1798 is mapped to the object with value: 1752
+                             Object with value: 1799 is mapped to the object with value: 1753
+                             Object with value: 1807 is mapped to the object with value: 1789
+                             Object with value: 1808 is mapped to the object with value: 1811
+                             Object with value: 1809 is mapped to the object with value: 1812
+                             Object with value: 1813 is mapped to the object with value: 1814
+                            
+parallelismSelector::VERBO: Analyzing Function "Outline_T8_F872_R26_Atomic" (FunctionId 880):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T8_F872_R26_Atomic
+parallelismSelector::VERBO:          - EndCycles: UnifiedReturnBlock -> {1: 6}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: if.end_iso11 -> {1: 6}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 6}
+parallelismSelector::VERBO:        - Critical path: UnifiedReturnBlock, newFuncRoot, if.end_iso11
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(35 F=881) (1816->1817)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1816 is mapped to the object with value: 1817
+                            
+parallelismSelector::VERBO: Analyzing Function "Outline_T9_F872_R27_Switch" (FunctionId 881):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T9_F872_R27_Switch
+parallelismSelector::VERBO:          - EndCycles: if.end_iso12 -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: UnifiedReturnBlock -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
+parallelismSelector::VERBO:        - Critical path: if.end_iso12, UnifiedReturnBlock, newFuncRoot
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(36 F=882) (1820->1752)(1821->1789)(1822->1823)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1820 is mapped to the object with value: 1752
+                             Object with value: 1821 is mapped to the object with value: 1789
+                             Object with value: 1822 is mapped to the object with value: 1823
+                            
+parallelismSelector::VERBO: Analyzing Function "Outline_T10_F872_R30_Atomic" (FunctionId 882):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T10_F872_R30_Atomic
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: if.end_iso14 -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: UnifiedReturnBlock -> {1: 3}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 3}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, if.end_iso14, UnifiedReturnBlock
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(37 F=883) (1831->1754)(1841->1752)(1844->1845)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1831 is mapped to the object with value: 1754
+                             Object with value: 1841 is mapped to the object with value: 1752
+                             Object with value: 1844 is mapped to the object with value: 1845
+                            
+parallelismSelector::VERBO: Analyzing Loop "for.body" (LoopId 118):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 118
+parallelismSelector::VERBO:          - EndCycles: if.then.i -> {68: 10}
+parallelismSelector::VERBO:          - EndCycles: if.end10.i -> {68: 8}
+parallelismSelector::VERBO:          - EndCycles: if.end13.i -> {68: 9}
+parallelismSelector::VERBO:          - EndCycles: for.body -> {68: 8}
+parallelismSelector::VERBO:          - EndCycles: if.end.i -> {68: 11}
+parallelismSelector::VERBO:          - EndCycles: if.then44.i.i.i -> {68: 70}
+parallelismSelector::VERBO:          - EndCycles: if.then42.i.i.i -> {68: 69}
+parallelismSelector::VERBO:          - EndCycles: _ZN6ap_intILi32EEC1Ed.exit -> {68: 76}
+parallelismSelector::VERBO:          - EndCycles: if.then66 -> {68: 19}
+parallelismSelector::VERBO:          - EndCycles: if.then36.i.i.i -> {68: 68}
+parallelismSelector::VERBO:          - EndCycles: if.then67.i.i.i -> {68: 74}
+parallelismSelector::VERBO:          - EndCycles: if.else40.i.i.i -> {68: 68}
+parallelismSelector::VERBO:          - EndCycles: if.then56.i.i.i -> {68: 70}
+parallelismSelector::VERBO:          - EndCycles: _ZNK11ap_int_baseILi64ELb0EErsILi33EEE7ap_uintILi64EERKS_IXT_ELb1EE.exit -> {68: 12}
+parallelismSelector::VERBO:          - EndCycles: if.end75 -> {68: 66}
+parallelismSelector::VERBO:          - EndCycles: if.else.i.i.i -> {68: 67}
+parallelismSelector::VERBO:          - EndCycles: if.else53.i.i.i -> {68: 69}
+parallelismSelector::VERBO:          - EndCycles: land.rhs58 -> {68: 15}
+parallelismSelector::VERBO:          - EndCycles: if.end66.i.i.i -> {68: 71}
+parallelismSelector::VERBO:          - EndCycles: land.end65 -> {68: 16}
+parallelismSelector::VERBO:        - MaxEndCycle: {68: 76}
+parallelismSelector::VERBO:        - Critical path: if.then.i, for.body, if.end.i, if.then44.i.i.i, if.then42.i.i.i, _ZN6ap_intILi32EEC1Ed.exit, if.then66, if.then67.i.i.i, if.else40.i.i.i, if.then56.i.i.i, _ZNK11ap_int_baseILi64ELb0EErsILi33EEE7ap_uintILi64EERKS_IXT_ELb1EE.exit, if.end75, if.else.i.i.i, if.else53.i.i.i, land.rhs58, if.end66.i.i.i, land.end65
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:        - IIMem: {68: 1}, OwnedIIMem: {68: 1}, NestedIIMem: {68: 0}
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:118 V:1752{68: 67}
+parallelismSelector::VERBO:       L:118 V:1754{68: 33}
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:118{68: 76}
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1180
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T11_F872_R31_Loop" (FunctionId 883):
+parallelismSelector::VERBO:         LoopId: 118, TC: 68, IL: {68: 76}, IIMem: {68: 1}, IIDep 0
+parallelismSelector::VERBO:         	unroll 68 Cycles: 143
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 118): 143
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T11_F872_R31_Loop
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.cond.for.end_crit_edge -> {1: 147}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 148}
+parallelismSelector::VERBO:          - EndCycles: for.body.lr.ph -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: _ZN6ap_intILi32EEC1Ed.exit -> {1: 146}
+parallelismSelector::VERBO:          - EndCycles: UnifiedReturnBlock -> {1: 148}
+parallelismSelector::VERBO:          - EndCycles: if.end_iso15 -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 148}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, for.cond.for.end_crit_edge, for.end, for.body.lr.ph, for.body, _ZN6ap_intILi32EEC1Ed.exit, UnifiedReturnBlock, if.end_iso15
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:118 V:1752{68: 67}
+parallelismSelector::VERBO:       L:118 V:1754{68: 33}
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:118{68: 76}
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1180
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(38 F=884) (1847->1752)(1848->1753)(1860->1754)(1862->1751)(1863->1750)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1847 is mapped to the object with value: 1752
+                             Object with value: 1848 is mapped to the object with value: 1753
+                             Object with value: 1860 is mapped to the object with value: 1754
+                             Object with value: 1862 is mapped to the object with value: 1751
+                             Object with value: 1863 is mapped to the object with value: 1750
+                            
+parallelismSelector::VERBO: Analyzing Loop "for.body115" (LoopId 117):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 117
+parallelismSelector::VERBO:          - EndCycles: for.body115 -> {1: 69}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 69}
+parallelismSelector::VERBO:        - Critical path: for.body115
+parallelismSelector::VERBO:     hasRAW: 1
+parallelismSelector::VERBO:     Recurrence: Circuit=10:1 -> 10:34 -> 10:1
+parallelismSelector::VERBO:       distance=1
+parallelismSelector::VERBO:        - IIMem: {1: 1.5}, OwnedIIMem: {1: 1.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:117 V:1752{1: 1}
+parallelismSelector::VERBO:       L:118 V:1752{68: 67}
+parallelismSelector::VERBO:       L:118 V:1754{68: 33}
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:117{1: 69}
+parallelismSelector::VERBO:       L:118{68: 76}
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1171
+parallelismSelector::VERBO:       L:1180
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "for.body95" (LoopId 116):
+parallelismSelector::VERBO:         LoopId: 117, TC: 68, IL: {1: 69}, IIMem: {1: 1.5}, IIDep 1
+parallelismSelector::VERBO:         	unroll 1 Cycles: 4760
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 117): 4760
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 116
+parallelismSelector::VERBO:          - EndCycles: for.body95 -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.body115 -> {1: 4766}
+parallelismSelector::VERBO:          - EndCycles: for.end160 -> {1: 4768}
+parallelismSelector::VERBO:          - EndCycles: for.body115.lr.ph -> {1: 6}
+parallelismSelector::VERBO:          - EndCycles: if.then101 -> {1: 6}
+parallelismSelector::VERBO:          - EndCycles: for.cond113.for.end160_crit_edge -> {1: 4767}
+parallelismSelector::VERBO:          - EndCycles: if.end166 -> {1: 4769}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 4769}
+parallelismSelector::VERBO:        - Critical path: for.body95, for.body115, for.end160, for.body115.lr.ph, if.then101, for.cond113.for.end160_crit_edge, if.end166
+parallelismSelector::VERBO:     hasRAW: 1
+parallelismSelector::VERBO:     Recurrence: Circuit=9:0 -> 10:0 -> 10:33 -> 7:0 -> 7:1 -> 9:0
+parallelismSelector::VERBO:       distance=3
+parallelismSelector::VERBO:        - IIMem: {1: 0.5}, OwnedIIMem: {1: 0.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:116 V:1752{1: 1}
+parallelismSelector::VERBO:       L:116 V:1753{1: 0}
+parallelismSelector::VERBO:       L:117 V:1752{1: 1}
+parallelismSelector::VERBO:       L:118 V:1752{68: 67}
+parallelismSelector::VERBO:       L:118 V:1754{68: 33}
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:116{1: 4769}
+parallelismSelector::VERBO:       L:117{1: 69}
+parallelismSelector::VERBO:       L:118{68: 76}
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1163
+parallelismSelector::VERBO:       L:1171
+parallelismSelector::VERBO:       L:1180
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T12_F872_R93_Switch" (FunctionId 884):
+parallelismSelector::VERBO:         LoopId: 116, TC: 512, IL: {1: 4769}, IIMem: {1: 0.5}, IIDep 3
+parallelismSelector::VERBO:         	unroll 1 Cycles: 2.44173e+06
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 116): 2441728
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T12_F872_R93_Switch
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: if.then92 -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: for.end169 -> {1: 2441732}
+parallelismSelector::VERBO:          - EndCycles: if.end170 -> {1: 2441733}
+parallelismSelector::VERBO:          - EndCycles: return.exitStub -> {1: 2441733}
+parallelismSelector::VERBO:          - EndCycles: if.end166 -> {1: 2441731}
+parallelismSelector::VERBO:          - EndCycles: for.end_iso31 -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2441733}
+parallelismSelector::VERBO:        - Critical path: for.body95, newFuncRoot, if.then92, for.end169, if.end170, return.exitStub, if.end166, for.end_iso31
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:116 V:1752{1: 1}
+parallelismSelector::VERBO:       L:116 V:1753{1: 0}
+parallelismSelector::VERBO:       L:117 V:1752{1: 1}
+parallelismSelector::VERBO:       L:118 V:1752{68: 67}
+parallelismSelector::VERBO:       L:118 V:1754{68: 33}
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:116{1: 4769}
+parallelismSelector::VERBO:       L:117{1: 69}
+parallelismSelector::VERBO:       L:118{68: 76}
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1163
+parallelismSelector::VERBO:       L:1171
+parallelismSelector::VERBO:       L:1180
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "decode_can_message" (FunctionId 872):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE
+parallelismSelector::VERBO:          - EndCycles: codeRepl7 -> {1: 167}
+parallelismSelector::VERBO:          - EndCycles: codeRepl11 -> {1: 321}
+parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: codeRepl13 -> {1: 2442055}
+parallelismSelector::VERBO:          - EndCycles: codeRepl5 -> {1: 164}
+parallelismSelector::VERBO:          - EndCycles: codeRepl1 -> {1: 6}
+parallelismSelector::VERBO:          - EndCycles: codeRepl9 -> {1: 171}
+parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 7}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: codeRepl3 -> {1: 148}
+parallelismSelector::VERBO:          - EndCycles: codeRepl4 -> {1: 157}
+parallelismSelector::VERBO:          - EndCycles: return -> {1: 2442055}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2442055}
+parallelismSelector::VERBO:        - Critical path: codeRepl7, codeRepl11, codeRepl, codeRepl13, codeRepl5, codeRepl1, codeRepl9, codeRepl2, entry, codeRepl3, codeRepl4, return
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:116 V:1752{1: 1}
+parallelismSelector::VERBO:       L:116 V:1753{1: 0}
+parallelismSelector::VERBO:       L:117 V:1752{1: 1}
+parallelismSelector::VERBO:       L:118 V:1752{68: 67}
+parallelismSelector::VERBO:       L:118 V:1754{68: 33}
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:116{1: 4769}
+parallelismSelector::VERBO:       L:117{1: 69}
+parallelismSelector::VERBO:       L:118{68: 76}
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1163
+parallelismSelector::VERBO:       L:1171
+parallelismSelector::VERBO:       L:1180
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Filling in latencies and intervals per loop...
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     LoopId: 119, TC: 69, IL: {1: 2}, IIMem: {1: 0.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 2
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 119, TC: 69, IL: {1: 2}, IIMem: {1: 0.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 138
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     LoopId: 118, TC: 68, IL: {68: 76}, IIMem: {68: 1}, IIDep 0
+parallelismSelector::VERBO:     	unroll 68 Cycles: 143
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 118, TC: 68, IL: {68: 76}, IIMem: {68: 1}, IIDep 0
+parallelismSelector::VERBO:     	unroll 68 Cycles: 143
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     LoopId: 117, TC: 68, IL: {1: 69}, IIMem: {1: 1.5}, IIDep 1
+parallelismSelector::VERBO:     	unroll 1 Cycles: 70
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 117, TC: 68, IL: {1: 69}, IIMem: {1: 1.5}, IIDep 1
+parallelismSelector::VERBO:     	unroll 1 Cycles: 4760
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     LoopId: 116, TC: 512, IL: {1: 4769}, IIMem: {1: 0.5}, IIDep 3
+parallelismSelector::VERBO:     	unroll 1 Cycles: 4769
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 116, TC: 512, IL: {1: 4769}, IIMem: {1: 0.5}, IIDep 3
+parallelismSelector::VERBO:     	unroll 1 Cycles: 2.44173e+06
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE : 872
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(29 F=875) 
+parallelismSelector::VERBO:   New Equivalence table
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T3_F872_R2_Switch : 875
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(30 F=876) (1783->1784)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1783 is mapped to the object with value: 1784
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T4_F872_R5_Call : 876
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(39 F=873) 
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1783 is mapped to the object with value: 1784
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _Z12compute_hash7ap_uintILi29EE : 873
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 9 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 9 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 9 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 9 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(31 F=877) 
+parallelismSelector::VERBO:   New Equivalence table
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T5_F872_R6_Switch : 877
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(32 F=878) (1786->1752)(1788->1789)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1786 is mapped to the object with value: 1752
+                             Object with value: 1788 is mapped to the object with value: 1789
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T6_F872_R9_Loop : 878
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 119
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {119: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 52 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 24 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 52 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(33 F=879) (1791->1752)(1793->1789)(1794->1795)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1791 is mapped to the object with value: 1752
+                             Object with value: 1793 is mapped to the object with value: 1789
+                             Object with value: 1794 is mapped to the object with value: 1795
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T7_F872_R22_Switch : 879
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(40 F=874) (1779->1897)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1779 is mapped to the object with value: 1897
+                             Object with value: 1791 is mapped to the object with value: 1752
+                             Object with value: 1793 is mapped to the object with value: 1789
+                             Object with value: 1794 is mapped to the object with value: 1795
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _ZL6printfPKcz : 874
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 12 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 12 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(34 F=880) (1798->1752)(1799->1753)(1807->1789)(1808->1811)(1809->1812)(1813->1814)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1798 is mapped to the object with value: 1752
+                             Object with value: 1799 is mapped to the object with value: 1753
+                             Object with value: 1807 is mapped to the object with value: 1789
+                             Object with value: 1808 is mapped to the object with value: 1811
+                             Object with value: 1809 is mapped to the object with value: 1812
+                             Object with value: 1813 is mapped to the object with value: 1814
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T8_F872_R26_Atomic : 880
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(35 F=881) (1816->1817)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1816 is mapped to the object with value: 1817
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T9_F872_R27_Switch : 881
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(36 F=882) (1820->1752)(1821->1789)(1822->1823)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1820 is mapped to the object with value: 1752
+                             Object with value: 1821 is mapped to the object with value: 1789
+                             Object with value: 1822 is mapped to the object with value: 1823
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T10_F872_R30_Atomic : 882
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 32 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 32 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(37 F=883) (1831->1754)(1841->1752)(1844->1845)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1831 is mapped to the object with value: 1754
+                             Object with value: 1841 is mapped to the object with value: 1752
+                             Object with value: 1844 is mapped to the object with value: 1845
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T11_F872_R31_Loop : 883
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 118
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 1520 FFs: 709 DSPs: 3 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {118: 2}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 3040 FFs: 1418 DSPs: 6 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 3040 FFs: 1418 DSPs: 6 BRAMs: 0 Total unshareable area: LUTs: 109460 FFs: 23052 DSPs: 340 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 1520 FFs: 709 DSPs: 3 BRAMs: 0 Self unshareable area: LUTs: 1582 FFs: 339 DSPs: 5 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 3040 FFs: 1418 DSPs: 6 BRAMs: 0 Total unshareable area: LUTs: 109464 FFs: 23052 DSPs: 340 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 4 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(38 F=884) (1847->1752)(1848->1753)(1860->1754)(1862->1751)(1863->1750)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1847 is mapped to the object with value: 1752
+                             Object with value: 1848 is mapped to the object with value: 1753
+                             Object with value: 1860 is mapped to the object with value: 1754
+                             Object with value: 1862 is mapped to the object with value: 1751
+                             Object with value: 1863 is mapped to the object with value: 1750
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T12_F872_R93_Switch : 884
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 116
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 117
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 774 FFs: 847 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {117: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 774 FFs: 847 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 774 FFs: 847 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 247 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 774 FFs: 847 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 79 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [visitNestedHeader] Adding nested shareable area from loop(id) 117 LUTs: 774 FFs: 847 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {116: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 774 FFs: 847 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 395 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 36 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 774 FFs: 847 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 439 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 44 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: Calculate statically allocated area for variable ID 11
+parallelismSelector::VERBO:     Array bits: 262144. Elements: 512. Element bits: 512
+parallelismSelector::VERBO:     Estimate statically allocated area assuming the BRAM resource type
+parallelismSelector::VERBO:         Would allocate 15 BRAMs according to the partition factor
+parallelismSelector::VERBO: Initial constrained branch with estimates:
+                            FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1} (VariableId 11)
+                            Reshape {dim 0: cyclic 1} (VariableId 1750)
+                            Reshape {dim 0: cyclic 1} (VariableId 1752)
+                               +- Penalty on LoopId 116: {1: lat/intv 1} (unroll: latency/interval)
+                               +- Penalty on LoopId 117: {1: lat/intv 1} (unroll: latency/interval)
+                               +- Penalty on LoopId 118: {68: lat/intv 67} (unroll: latency/interval)
+                               +- Penalty on LoopId 119: {1: lat/intv 0} (unroll: latency/interval)
+                            Reshape {dim 0: cyclic 1} (VariableId 1753)
+                               +- Penalty on LoopId 116: {1: lat/intv 0} (unroll: latency/interval)
+                            Reshape {dim 0: cyclic 1} (VariableId 1754)
+                               +- Penalty on LoopId 118: {68: lat/intv 33} (unroll: latency/interval)
+                            +- unroll with factors 1 (LoopId 119), min-max latency/interval: {unroll 1: lat/intv 138}
+                               +- Access to VariableId 1752: {1: lat/intv 0} (unroll: latency/interval)
+                            +- unroll with factors 68 (LoopId 118), min-max latency/interval: {unroll 68: lat/intv 143}
+                               +- Access to VariableId 1752: {68: lat/intv 67} (unroll: latency/interval)
+                               +- Access to VariableId 1754: {68: lat/intv 33} (unroll: latency/interval)
+                            +- unroll with factors 1 (LoopId 116), min-max latency/interval: {unroll 1: lat/intv 2441728}
+                               +- Access to VariableId 1752: {1: lat/intv 1} (unroll: latency/interval)
+                               +- Access to VariableId 1753: {1: lat/intv 0} (unroll: latency/interval)
+                               +- unroll with factors 1 (LoopId 117), min-max latency/interval: {unroll 1: lat/intv 4760}
+                                  +- Access to VariableId 1752: {1: lat/intv 1} (unroll: latency/interval)
+                            Id:  0 contains valid solution: maybe, min-max latency/interval: lat 2442055 intv 2442056, min-max area: LUTs: 113822 FFs: 25317 DSPs: 346 BRAMs: 15
+parallelismSelector::VERBO: Initial FPGA area occupied (min): Area -- (LUTs: 113822, FFs: 25317, DSPs: 346, BRAMs: 15, URAMs: 0)
+parallelismSelector::VERBO: Initial FPGA area occupied (max): Area -- (LUTs: 113822, FFs: 25317, DSPs: 346, BRAMs: 15, URAMs: 0)
+parallelismSelector::VERBO: HPE - Calculating latency and area for design space...
+                            Setting Space: FunctionPipelineTopLevel: No
+                            Partition {dim 0: cyclic 1} (VariableId 11)
+                            Reshape {dim 0: cyclic 1} (VariableId 1750)
+                            Reshape {dim 0: cyclic 1} (VariableId 1752)
+                            Reshape {dim 0: cyclic 1} (VariableId 1753)
+                            Reshape {dim 0: cyclic 1} (VariableId 1754)
+                            +- unroll with factors 1 (LoopId 119)
+                            +- unroll with factors 68 (LoopId 118)
+                            +- unroll with factors 1 (LoopId 116)
+                               +- unroll with factors 1 (LoopId 117)
+                            
+parallelismSelector::VERBO: Calculating latency for top level hw function: decode_can_message
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(29 F=875) 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                            
+parallelismSelector::VERBO: Analyzing Function "Outline_T3_F872_R2_Switch" (FunctionId 875):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T3_F872_R2_Switch
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 0}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 0}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(30 F=876) (1783->1784)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1783 is mapped to the object with value: 1784
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(39 F=873) 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1783 is mapped to the object with value: 1784
+                            
+parallelismSelector::VERBO: Analyzing Function "compute_hash" (FunctionId 873):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _Z12compute_hash7ap_uintILi29EE
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 0}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 0}
+parallelismSelector::VERBO:        - Critical path: entry
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T4_F872_R5_Call" (FunctionId 876):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T4_F872_R5_Call
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso0 -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot_iso1 -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot_iso0, newFuncRoot, newFuncRoot_iso1
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(31 F=877) 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                            
+parallelismSelector::VERBO: Analyzing Function "Outline_T5_F872_R6_Switch" (FunctionId 877):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T5_F872_R6_Switch
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 0}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 0}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(32 F=878) (1786->1752)(1788->1789)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1786 is mapped to the object with value: 1752
+                             Object with value: 1788 is mapped to the object with value: 1789
+                            
+parallelismSelector::VERBO: Analyzing Loop "while.cond" (LoopId 119):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 119
+parallelismSelector::VERBO:          - EndCycles: while.cond -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: land.end -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: land.rhs -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
+parallelismSelector::VERBO:        - Critical path: while.cond, land.end, land.rhs
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:     Collect memory port metrics for LoopId: 119
+                                
+parallelismSelector::VERBO:     VarId: 1786, number of direct accesses: 1, number of indirect accesses: 0, RequiredPorts: 1, Available ports: 2
+                                
+parallelismSelector::VERBO:        - IIMem: {1: 0.5}, OwnedIIMem: {1: 0.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T6_F872_R9_Loop" (FunctionId 878):
+parallelismSelector::VERBO:         LoopId: 119, TC: 69, IL: {1: 2}, IIMem: {1: 0.5}, IIDep 0
+parallelismSelector::VERBO:         	unroll 1 Cycles: 138
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 119): 138
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T6_F872_R9_Loop
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: land.end -> {1: 139}
+parallelismSelector::VERBO:          - EndCycles: while.end -> {1: 139}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 139}
+parallelismSelector::VERBO:        - Critical path: while.cond, newFuncRoot, land.end, while.end
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(33 F=879) (1791->1752)(1793->1789)(1794->1795)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1791 is mapped to the object with value: 1752
+                             Object with value: 1793 is mapped to the object with value: 1789
+                             Object with value: 1794 is mapped to the object with value: 1795
+                            
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(40 F=874) (1779->1897)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1779 is mapped to the object with value: 1897
+                             Object with value: 1791 is mapped to the object with value: 1752
+                             Object with value: 1793 is mapped to the object with value: 1789
+                             Object with value: 1794 is mapped to the object with value: 1795
+                            
+parallelismSelector::VERBO: Analyzing Function "printf" (FunctionId 874):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _ZL6printfPKcz
+parallelismSelector::VERBO:          - EndCycles: entry_iso0 -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: entry_iso3 -> {1: 4}
+parallelismSelector::VERBO:          - EndCycles: entry_iso1 -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: entry_iso2 -> {1: 4}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 4}
+parallelismSelector::VERBO:        - Critical path: entry_iso0, entry, entry_iso3, entry_iso1, entry_iso2
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T7_F872_R22_Switch" (FunctionId 879):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T7_F872_R22_Switch
+parallelismSelector::VERBO:          - EndCycles: if.end -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: if.then -> {1: 7}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: UnifiedReturnBlock -> {1: 7}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 7}
+parallelismSelector::VERBO:        - Critical path: if.then, newFuncRoot, UnifiedReturnBlock
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(34 F=880) (1798->1752)(1799->1753)(1807->1789)(1808->1811)(1809->1812)(1813->1814)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1798 is mapped to the object with value: 1752
+                             Object with value: 1799 is mapped to the object with value: 1753
+                             Object with value: 1807 is mapped to the object with value: 1789
+                             Object with value: 1808 is mapped to the object with value: 1811
+                             Object with value: 1809 is mapped to the object with value: 1812
+                             Object with value: 1813 is mapped to the object with value: 1814
+                            
+parallelismSelector::VERBO: Analyzing Function "Outline_T8_F872_R26_Atomic" (FunctionId 880):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T8_F872_R26_Atomic
+parallelismSelector::VERBO:          - EndCycles: UnifiedReturnBlock -> {1: 6}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: if.end_iso11 -> {1: 6}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 6}
+parallelismSelector::VERBO:        - Critical path: UnifiedReturnBlock, newFuncRoot, if.end_iso11
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(35 F=881) (1816->1817)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1816 is mapped to the object with value: 1817
+                            
+parallelismSelector::VERBO: Analyzing Function "Outline_T9_F872_R27_Switch" (FunctionId 881):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T9_F872_R27_Switch
+parallelismSelector::VERBO:          - EndCycles: if.end_iso12 -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: UnifiedReturnBlock -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2}
+parallelismSelector::VERBO:        - Critical path: if.end_iso12, UnifiedReturnBlock, newFuncRoot
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(36 F=882) (1820->1752)(1821->1789)(1822->1823)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1820 is mapped to the object with value: 1752
+                             Object with value: 1821 is mapped to the object with value: 1789
+                             Object with value: 1822 is mapped to the object with value: 1823
+                            
+parallelismSelector::VERBO: Analyzing Function "Outline_T10_F872_R30_Atomic" (FunctionId 882):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T10_F872_R30_Atomic
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: if.end_iso14 -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: UnifiedReturnBlock -> {1: 3}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 3}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, if.end_iso14, UnifiedReturnBlock
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(37 F=883) (1831->1754)(1841->1752)(1844->1845)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1831 is mapped to the object with value: 1754
+                             Object with value: 1841 is mapped to the object with value: 1752
+                             Object with value: 1844 is mapped to the object with value: 1845
+                            
+parallelismSelector::VERBO: Analyzing Loop "for.body" (LoopId 118):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 118
+parallelismSelector::VERBO:          - EndCycles: if.then.i -> {68: 10}
+parallelismSelector::VERBO:          - EndCycles: if.end10.i -> {68: 8}
+parallelismSelector::VERBO:          - EndCycles: if.end13.i -> {68: 9}
+parallelismSelector::VERBO:          - EndCycles: for.body -> {68: 8}
+parallelismSelector::VERBO:          - EndCycles: if.end.i -> {68: 11}
+parallelismSelector::VERBO:          - EndCycles: if.then44.i.i.i -> {68: 70}
+parallelismSelector::VERBO:          - EndCycles: if.then42.i.i.i -> {68: 69}
+parallelismSelector::VERBO:          - EndCycles: _ZN6ap_intILi32EEC1Ed.exit -> {68: 76}
+parallelismSelector::VERBO:          - EndCycles: if.then66 -> {68: 19}
+parallelismSelector::VERBO:          - EndCycles: if.then36.i.i.i -> {68: 68}
+parallelismSelector::VERBO:          - EndCycles: if.then67.i.i.i -> {68: 74}
+parallelismSelector::VERBO:          - EndCycles: if.else40.i.i.i -> {68: 68}
+parallelismSelector::VERBO:          - EndCycles: if.then56.i.i.i -> {68: 70}
+parallelismSelector::VERBO:          - EndCycles: _ZNK11ap_int_baseILi64ELb0EErsILi33EEE7ap_uintILi64EERKS_IXT_ELb1EE.exit -> {68: 12}
+parallelismSelector::VERBO:          - EndCycles: if.end75 -> {68: 66}
+parallelismSelector::VERBO:          - EndCycles: if.else.i.i.i -> {68: 67}
+parallelismSelector::VERBO:          - EndCycles: if.else53.i.i.i -> {68: 69}
+parallelismSelector::VERBO:          - EndCycles: land.rhs58 -> {68: 15}
+parallelismSelector::VERBO:          - EndCycles: if.end66.i.i.i -> {68: 71}
+parallelismSelector::VERBO:          - EndCycles: land.end65 -> {68: 16}
+parallelismSelector::VERBO:        - MaxEndCycle: {68: 76}
+parallelismSelector::VERBO:        - Critical path: if.then.i, for.body, if.end.i, if.then44.i.i.i, if.then42.i.i.i, _ZN6ap_intILi32EEC1Ed.exit, if.then66, if.then67.i.i.i, if.else40.i.i.i, if.then56.i.i.i, _ZNK11ap_int_baseILi64ELb0EErsILi33EEE7ap_uintILi64EERKS_IXT_ELb1EE.exit, if.end75, if.else.i.i.i, if.else53.i.i.i, land.rhs58, if.end66.i.i.i, land.end65
+parallelismSelector::VERBO:     hasRAW: 0
+parallelismSelector::VERBO:     Collect memory port metrics for LoopId: 118
+                                
+parallelismSelector::VERBO:     VarId: 1831, number of direct accesses: 1, number of indirect accesses: 0, RequiredPorts: 68, Available ports: 2
+                                
+parallelismSelector::VERBO:     VarId: 1841, number of direct accesses: 2, number of indirect accesses: 0, RequiredPorts: 136, Available ports: 2
+                                
+parallelismSelector::VERBO:        - IIMem: {68: 1}, OwnedIIMem: {68: 1}, NestedIIMem: {68: 0}
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:118 V:1752{68: 67}
+parallelismSelector::VERBO:       L:118 V:1754{68: 33}
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:118{68: 76}
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1180
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T11_F872_R31_Loop" (FunctionId 883):
+parallelismSelector::VERBO:         LoopId: 118, TC: 68, IL: {68: 76}, IIMem: {68: 1}, IIDep 0
+parallelismSelector::VERBO:         	unroll 68 Cycles: 143
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 118): 143
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T11_F872_R31_Loop
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: for.cond.for.end_crit_edge -> {1: 147}
+parallelismSelector::VERBO:          - EndCycles: for.end -> {1: 148}
+parallelismSelector::VERBO:          - EndCycles: for.body.lr.ph -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: _ZN6ap_intILi32EEC1Ed.exit -> {1: 146}
+parallelismSelector::VERBO:          - EndCycles: UnifiedReturnBlock -> {1: 148}
+parallelismSelector::VERBO:          - EndCycles: if.end_iso15 -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 148}
+parallelismSelector::VERBO:        - Critical path: newFuncRoot, for.cond.for.end_crit_edge, for.end, for.body.lr.ph, for.body, _ZN6ap_intILi32EEC1Ed.exit, UnifiedReturnBlock, if.end_iso15
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:118 V:1752{68: 67}
+parallelismSelector::VERBO:       L:118 V:1754{68: 33}
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:118{68: 76}
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1180
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: [LatencyEstimationVisitor] CallSite: CS(38 F=884) (1847->1752)(1848->1753)(1860->1754)(1862->1751)(1863->1750)
+parallelismSelector::VERBO: [LatencyEstimationVisitor] Equivalence table
+                             Object with value: 1847 is mapped to the object with value: 1752
+                             Object with value: 1848 is mapped to the object with value: 1753
+                             Object with value: 1860 is mapped to the object with value: 1754
+                             Object with value: 1862 is mapped to the object with value: 1751
+                             Object with value: 1863 is mapped to the object with value: 1750
+                            
+parallelismSelector::VERBO: Analyzing Loop "for.body115" (LoopId 117):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 117
+parallelismSelector::VERBO:          - EndCycles: for.body115 -> {1: 69}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 69}
+parallelismSelector::VERBO:        - Critical path: for.body115
+parallelismSelector::VERBO:     hasRAW: 1
+parallelismSelector::VERBO:     Recurrence: Circuit=10:1 -> 10:34 -> 10:1
+parallelismSelector::VERBO:       distance=1
+parallelismSelector::VERBO:     Collect memory port metrics for LoopId: 117
+                                
+parallelismSelector::VERBO:     VarId: 1847, number of direct accesses: 3, number of indirect accesses: 0, RequiredPorts: 3, Available ports: 2
+                                
+parallelismSelector::VERBO:     VarId: 1860, number of direct accesses: 1, number of indirect accesses: 0, RequiredPorts: 1, Available ports: 2
+                                
+parallelismSelector::VERBO:     VarId: 1863, number of direct accesses: 2, number of indirect accesses: 0, RequiredPorts: 2, Available ports: 2
+                                
+parallelismSelector::VERBO:        - IIMem: {1: 1.5}, OwnedIIMem: {1: 1.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:117 V:1752{1: 1}
+parallelismSelector::VERBO:       L:118 V:1752{68: 67}
+parallelismSelector::VERBO:       L:118 V:1754{68: 33}
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:117{1: 69}
+parallelismSelector::VERBO:       L:118{68: 76}
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1171
+parallelismSelector::VERBO:       L:1180
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Loop "for.body95" (LoopId 116):
+parallelismSelector::VERBO:         LoopId: 117, TC: 68, IL: {1: 69}, IIMem: {1: 1.5}, IIDep 1
+parallelismSelector::VERBO:         	unroll 1 Cycles: 4760
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 117): 4760
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - LoopId: 116
+parallelismSelector::VERBO:          - EndCycles: for.body95 -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: for.body115 -> {1: 4766}
+parallelismSelector::VERBO:          - EndCycles: for.end160 -> {1: 4768}
+parallelismSelector::VERBO:          - EndCycles: for.body115.lr.ph -> {1: 6}
+parallelismSelector::VERBO:          - EndCycles: if.then101 -> {1: 6}
+parallelismSelector::VERBO:          - EndCycles: for.cond113.for.end160_crit_edge -> {1: 4767}
+parallelismSelector::VERBO:          - EndCycles: if.end166 -> {1: 4769}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 4769}
+parallelismSelector::VERBO:        - Critical path: for.body95, for.body115, for.end160, for.body115.lr.ph, if.then101, for.cond113.for.end160_crit_edge, if.end166
+parallelismSelector::VERBO:     hasRAW: 1
+parallelismSelector::VERBO:     Recurrence: Circuit=9:0 -> 10:0 -> 10:33 -> 7:0 -> 7:1 -> 9:0
+parallelismSelector::VERBO:       distance=3
+parallelismSelector::VERBO:     Collect memory port metrics for LoopId: 116
+                                
+parallelismSelector::VERBO:     VarId: 1847, number of direct accesses: 3, number of indirect accesses: 3, RequiredPorts: 6, Available ports: 2
+                                
+parallelismSelector::VERBO:     VarId: 1848, number of direct accesses: 1, number of indirect accesses: 0, RequiredPorts: 1, Available ports: 2
+                                
+parallelismSelector::VERBO:     VarId: 1860, number of direct accesses: 0, number of indirect accesses: 1, RequiredPorts: 1, Available ports: 2
+                                
+parallelismSelector::VERBO:     VarId: 1863, number of direct accesses: 0, number of indirect accesses: 2, RequiredPorts: 2, Available ports: 2
+                                
+parallelismSelector::VERBO:        - IIMem: {1: 0.5}, OwnedIIMem: {1: 0.5}, NestedIIMem: {1: 0}
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:116 V:1752{1: 1}
+parallelismSelector::VERBO:       L:116 V:1753{1: 0}
+parallelismSelector::VERBO:       L:117 V:1752{1: 1}
+parallelismSelector::VERBO:       L:118 V:1752{68: 67}
+parallelismSelector::VERBO:       L:118 V:1754{68: 33}
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:116{1: 4769}
+parallelismSelector::VERBO:       L:117{1: 69}
+parallelismSelector::VERBO:       L:118{68: 76}
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1163
+parallelismSelector::VERBO:       L:1171
+parallelismSelector::VERBO:       L:1180
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "Outline_T12_F872_R93_Switch" (FunctionId 884):
+parallelismSelector::VERBO:         LoopId: 116, TC: 512, IL: {1: 4769}, IIMem: {1: 0.5}, IIDep 3
+parallelismSelector::VERBO:         	unroll 1 Cycles: 2.44173e+06
+parallelismSelector::VERBO:         Overall latency for nested loop (LoopId 116): 2441728
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: Outline_T12_F872_R93_Switch
+parallelismSelector::VERBO:          - EndCycles: newFuncRoot -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: if.then92 -> {1: 3}
+parallelismSelector::VERBO:          - EndCycles: for.end169 -> {1: 2441732}
+parallelismSelector::VERBO:          - EndCycles: if.end170 -> {1: 2441733}
+parallelismSelector::VERBO:          - EndCycles: return.exitStub -> {1: 2441733}
+parallelismSelector::VERBO:          - EndCycles: if.end166 -> {1: 2441731}
+parallelismSelector::VERBO:          - EndCycles: for.end_iso31 -> {1: 2}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2441733}
+parallelismSelector::VERBO:        - Critical path: for.body95, newFuncRoot, if.then92, for.end169, if.end170, return.exitStub, if.end166, for.end_iso31
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:116 V:1752{1: 1}
+parallelismSelector::VERBO:       L:116 V:1753{1: 0}
+parallelismSelector::VERBO:       L:117 V:1752{1: 1}
+parallelismSelector::VERBO:       L:118 V:1752{68: 67}
+parallelismSelector::VERBO:       L:118 V:1754{68: 33}
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:116{1: 4769}
+parallelismSelector::VERBO:       L:117{1: 69}
+parallelismSelector::VERBO:       L:118{68: 76}
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1163
+parallelismSelector::VERBO:       L:1171
+parallelismSelector::VERBO:       L:1180
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Analyzing Function "decode_can_message" (FunctionId 872):
+parallelismSelector::VERBO:     MARegionScheduler::finalize():
+parallelismSelector::VERBO:        - Function: _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE
+parallelismSelector::VERBO:          - EndCycles: codeRepl7 -> {1: 167}
+parallelismSelector::VERBO:          - EndCycles: codeRepl11 -> {1: 321}
+parallelismSelector::VERBO:          - EndCycles: codeRepl -> {1: 2}
+parallelismSelector::VERBO:          - EndCycles: codeRepl13 -> {1: 2442055}
+parallelismSelector::VERBO:          - EndCycles: codeRepl5 -> {1: 164}
+parallelismSelector::VERBO:          - EndCycles: codeRepl1 -> {1: 6}
+parallelismSelector::VERBO:          - EndCycles: codeRepl9 -> {1: 171}
+parallelismSelector::VERBO:          - EndCycles: codeRepl2 -> {1: 7}
+parallelismSelector::VERBO:          - EndCycles: entry -> {1: 1}
+parallelismSelector::VERBO:          - EndCycles: codeRepl3 -> {1: 148}
+parallelismSelector::VERBO:          - EndCycles: codeRepl4 -> {1: 157}
+parallelismSelector::VERBO:          - EndCycles: return -> {1: 2442055}
+parallelismSelector::VERBO:        - MaxEndCycle: {1: 2442055}
+parallelismSelector::VERBO:        - Critical path: codeRepl7, codeRepl11, codeRepl, codeRepl13, codeRepl5, codeRepl1, codeRepl9, codeRepl2, entry, codeRepl3, codeRepl4, return
+parallelismSelector::VERBO:     Collected Var penalties
+parallelismSelector::VERBO:       L:116 V:1752{1: 1}
+parallelismSelector::VERBO:       L:116 V:1753{1: 0}
+parallelismSelector::VERBO:       L:117 V:1752{1: 1}
+parallelismSelector::VERBO:       L:118 V:1752{68: 67}
+parallelismSelector::VERBO:       L:118 V:1754{68: 33}
+parallelismSelector::VERBO:       L:119 V:1752{1: 0}
+parallelismSelector::VERBO:     Collected latencies
+parallelismSelector::VERBO:       L:116{1: 4769}
+parallelismSelector::VERBO:       L:117{1: 69}
+parallelismSelector::VERBO:       L:118{68: 76}
+parallelismSelector::VERBO:       L:119{1: 2}
+parallelismSelector::VERBO:     Collected Interval ranges
+parallelismSelector::VERBO:       L:1163
+parallelismSelector::VERBO:       L:1171
+parallelismSelector::VERBO:       L:1180
+parallelismSelector::VERBO:       L:1190
+parallelismSelector::VERBO: 
+parallelismSelector::VERBO: Filling in latencies and intervals per loop...
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     LoopId: 119, TC: 69, IL: {1: 2}, IIMem: {1: 0.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 2
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 119, TC: 69, IL: {1: 2}, IIMem: {1: 0.5}, IIDep 0
+parallelismSelector::VERBO:     	unroll 1 Cycles: 138
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     LoopId: 118, TC: 68, IL: {68: 76}, IIMem: {68: 1}, IIDep 0
+parallelismSelector::VERBO:     	unroll 68 Cycles: 143
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 118, TC: 68, IL: {68: 76}, IIMem: {68: 1}, IIDep 0
+parallelismSelector::VERBO:     	unroll 68 Cycles: 143
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     LoopId: 117, TC: 68, IL: {1: 69}, IIMem: {1: 1.5}, IIDep 1
+parallelismSelector::VERBO:     	unroll 1 Cycles: 70
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 117, TC: 68, IL: {1: 69}, IIMem: {1: 1.5}, IIDep 1
+parallelismSelector::VERBO:     	unroll 1 Cycles: 4760
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO:     Interval:
+parallelismSelector::VERBO:     LoopId: 116, TC: 512, IL: {1: 4769}, IIMem: {1: 0.5}, IIDep 3
+parallelismSelector::VERBO:     	unroll 1 Cycles: 4769
+parallelismSelector::VERBO:     Latency:
+parallelismSelector::VERBO:     LoopId: 116, TC: 512, IL: {1: 4769}, IIMem: {1: 0.5}, IIDep 3
+parallelismSelector::VERBO:     	unroll 1 Cycles: 2.44173e+06
+parallelismSelector::VERBO:     Mem Interval:
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE : 872
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(29 F=875) 
+parallelismSelector::VERBO:   New Equivalence table
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T3_F872_R2_Switch : 875
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(30 F=876) (1783->1784)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1783 is mapped to the object with value: 1784
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T4_F872_R5_Call : 876
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(39 F=873) 
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1783 is mapped to the object with value: 1784
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _Z12compute_hash7ap_uintILi29EE : 873
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 9 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 9 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 9 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 9 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(31 F=877) 
+parallelismSelector::VERBO:   New Equivalence table
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T5_F872_R6_Switch : 877
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(32 F=878) (1786->1752)(1788->1789)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1786 is mapped to the object with value: 1752
+                             Object with value: 1788 is mapped to the object with value: 1789
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T6_F872_R9_Loop : 878
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 119
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {119: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 52 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 24 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 52 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(33 F=879) (1791->1752)(1793->1789)(1794->1795)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1791 is mapped to the object with value: 1752
+                             Object with value: 1793 is mapped to the object with value: 1789
+                             Object with value: 1794 is mapped to the object with value: 1795
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T7_F872_R22_Switch : 879
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(40 F=874) (1779->1897)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1779 is mapped to the object with value: 1897
+                             Object with value: 1791 is mapped to the object with value: 1752
+                             Object with value: 1793 is mapped to the object with value: 1789
+                             Object with value: 1794 is mapped to the object with value: 1795
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: _ZL6printfPKcz : 874
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 12 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 12 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(34 F=880) (1798->1752)(1799->1753)(1807->1789)(1808->1811)(1809->1812)(1813->1814)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1798 is mapped to the object with value: 1752
+                             Object with value: 1799 is mapped to the object with value: 1753
+                             Object with value: 1807 is mapped to the object with value: 1789
+                             Object with value: 1808 is mapped to the object with value: 1811
+                             Object with value: 1809 is mapped to the object with value: 1812
+                             Object with value: 1813 is mapped to the object with value: 1814
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T8_F872_R26_Atomic : 880
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(35 F=881) (1816->1817)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1816 is mapped to the object with value: 1817
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T9_F872_R27_Switch : 881
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(36 F=882) (1820->1752)(1821->1789)(1822->1823)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1820 is mapped to the object with value: 1752
+                             Object with value: 1821 is mapped to the object with value: 1789
+                             Object with value: 1822 is mapped to the object with value: 1823
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T10_F872_R30_Atomic : 882
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 32 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 32 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(37 F=883) (1831->1754)(1841->1752)(1844->1845)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1831 is mapped to the object with value: 1754
+                             Object with value: 1841 is mapped to the object with value: 1752
+                             Object with value: 1844 is mapped to the object with value: 1845
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T11_F872_R31_Loop : 883
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 118
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 1520 FFs: 709 DSPs: 3 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {118: 2}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 3040 FFs: 1418 DSPs: 6 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 3040 FFs: 1418 DSPs: 6 BRAMs: 0 Total unshareable area: LUTs: 109460 FFs: 23052 DSPs: 340 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 1520 FFs: 709 DSPs: 3 BRAMs: 0 Self unshareable area: LUTs: 1582 FFs: 339 DSPs: 5 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 3040 FFs: 1418 DSPs: 6 BRAMs: 0 Total unshareable area: LUTs: 109464 FFs: 23052 DSPs: 340 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 4 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] CallSite: CS(38 F=884) (1847->1752)(1848->1753)(1860->1754)(1862->1751)(1863->1750)
+parallelismSelector::VERBO:   New Equivalence table
+                             Object with value: 1847 is mapped to the object with value: 1752
+                             Object with value: 1848 is mapped to the object with value: 1753
+                             Object with value: 1860 is mapped to the object with value: 1754
+                             Object with value: 1862 is mapped to the object with value: 1751
+                             Object with value: 1863 is mapped to the object with value: 1750
+                            
+parallelismSelector::VERBO: [AreaEstimationVisitor] Func: Outline_T12_F872_R93_Switch : 884
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 116
+parallelismSelector::VERBO: [AreaEstimationVisitor] Loop: 117
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 774 FFs: 847 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {117: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 774 FFs: 847 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 774 FFs: 847 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 247 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 774 FFs: 847 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 79 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [visitNestedHeader] Adding nested shareable area from loop(id) 117 LUTs: 774 FFs: 847 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] ParallelOperationNumPerLoop: {116: 1}
+parallelismSelector::VERBO: [Finalize] Contribution of this loop to shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 774 FFs: 847 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 395 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 36 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 774 FFs: 847 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 439 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 44 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [Finalize] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Total shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Total unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: [AreaEstimationVisitor] Self shareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0 Self unshareable area: LUTs: 0 FFs: 0 DSPs: 0 BRAMs: 0
+parallelismSelector::VERBO: Calculate statically allocated area for variable ID 11
+parallelismSelector::VERBO:     Array bits: 262144. Elements: 512. Element bits: 512
+parallelismSelector::VERBO:     Estimate statically allocated area assuming the BRAM resource type
+parallelismSelector::VERBO:         Would allocate 15 BRAMs according to the partition factor
+parallelismSelector::VERBO: Estimated metrics for the application:
+parallelismSelector::VERBO: Loop with Id 116:
+parallelismSelector::VERBO:     Circuit: { num_decoded_signals.promoted i2404 inc157 inc157.lcssa  }, Cycles: 3
+parallelismSelector::VERBO:     Variable with Id 1847 (hash_table):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 6 - 6
+parallelismSelector::VERBO:     Variable with Id 1848 (msg_lut):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Variable with Id 1860 (signal_def_mem):
+parallelismSelector::VERBO:         II mem: None
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Variable with Id 1863 (decoded_signals):
+parallelismSelector::VERBO:         II mem: None
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 2 - 2
+parallelismSelector::VERBO:     Trip count: 512 - 512
+parallelismSelector::VERBO:     II: 4769 - 4769
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Loop with Id 117:
+parallelismSelector::VERBO:     Circuit: { j112.02 inc159 }, Cycles: 1
+parallelismSelector::VERBO:     Variable with Id 1847 (hash_table):
+parallelismSelector::VERBO:         II mem: 2 - 2
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 3 - 3
+parallelismSelector::VERBO:     Variable with Id 1860 (signal_def_mem):
+parallelismSelector::VERBO:         II mem: 1 - 2
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Variable with Id 1863 (decoded_signals):
+parallelismSelector::VERBO:         II mem: 1 - 2
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 2 - 2
+parallelismSelector::VERBO:     Trip count: 1 - 68
+parallelismSelector::VERBO:     II: 70 - 70
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Loop with Id 118:
+parallelismSelector::VERBO:     Variable with Id 1831 (signal_def_mem):
+parallelismSelector::VERBO:         II mem: 34 - 34
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 68 - 68
+parallelismSelector::VERBO:     Variable with Id 1841 (hash_table):
+parallelismSelector::VERBO:         II mem: 68 - 68
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 136 - 136
+parallelismSelector::VERBO:     Trip count: 1 - 1
+parallelismSelector::VERBO:     II: 143 - 143
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Loop with Id 119:
+parallelismSelector::VERBO:     Variable with Id 1786 (hash_table):
+parallelismSelector::VERBO:         II mem: 1 - 1
+                                    NumAvailMemPorts: 2 - 2
+                                    NumRequiredMemPorts: 1 - 1
+parallelismSelector::VERBO:     Trip count: 0 - 69
+parallelismSelector::VERBO:     II: 2 - 2
+parallelismSelector::VERBO:     
+parallelismSelector::VERBO: Function with Id 872:
+parallelismSelector::VERBO:     Interval: 2442056 - 2442056
+                                Latency: 2442055 - 2442055
+parallelismSelector::VERBO: Function with Id 873:
+parallelismSelector::VERBO:     Interval: 1 - 1
+                                Latency: 0 - 0
+parallelismSelector::VERBO: Function with Id 874:
+parallelismSelector::VERBO:     Interval: 5 - 5
+                                Latency: 4 - 4
+parallelismSelector::VERBO: Function with Id 875:
+parallelismSelector::VERBO:     Interval: 1 - 1
+                                Latency: 0 - 0
+parallelismSelector::VERBO: Function with Id 876:
+parallelismSelector::VERBO:     Interval: 3 - 3
+                                Latency: 2 - 2
+parallelismSelector::VERBO: Function with Id 877:
+parallelismSelector::VERBO:     Interval: 1 - 1
+                                Latency: 0 - 0
+parallelismSelector::VERBO: Function with Id 878:
+parallelismSelector::VERBO:     Interval: 140 - 140
+                                Latency: 139 - 139
+parallelismSelector::VERBO: Function with Id 879:
+parallelismSelector::VERBO:     Interval: 8 - 8
+                                Latency: 7 - 7
+parallelismSelector::VERBO: Function with Id 880:
+parallelismSelector::VERBO:     Interval: 7 - 7
+                                Latency: 6 - 6
+parallelismSelector::VERBO: Function with Id 881:
+parallelismSelector::VERBO:     Interval: 3 - 3
+                                Latency: 2 - 2
+parallelismSelector::VERBO: Function with Id 882:
+parallelismSelector::VERBO:     Interval: 4 - 4
+                                Latency: 3 - 3
+parallelismSelector::VERBO: Function with Id 883:
+parallelismSelector::VERBO:     Interval: 149 - 149
+                                Latency: 148 - 148
+parallelismSelector::VERBO: Function with Id 884:
+parallelismSelector::VERBO:     Interval: 2441734 - 2441734
+                                Latency: 2441733 - 2441733
+parallelismSelector::VERBO: Adding CallGuidance(SourceRange: C:\Users\flaud\Documents\GitHub\LiveTelemetry\FPGA\CAN_Decoder_Hardware\CAN_decoder\can_message_decoder.cpp:76-76:22-45, TI: 1) for RegionTask 'Task(T4,F872,R3)'

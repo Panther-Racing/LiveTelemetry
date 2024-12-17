@@ -57,6 +57,11 @@ for message in db.messages:
         # 0 for little, 1 for big
         endianness = 0 if signal.byte_order == 'little_endian' else 1
 
+        # Calculate byte-aligned positions and re-map start_bit
+        byte_index = start_bit // 8             # Which byte the signal starts in
+        bit_within_byte = 7 - (start_bit % 8)   # Motorola bit position within the byte
+        start_bit = (byte_index * 8) + bit_within_byte
+
         # Convert scale and offset to fixed-point representation
         scale = int(signal.scale * SCALE_FACTOR)
         offset = int(signal.offset * OFFSET_FACTOR)
@@ -90,6 +95,9 @@ for message in db.messages:
             ((scale & 0xFFFFFF) << 24) |             # 24 bits for scale
             (offset & 0xFFFFFF)                      # 24 bits for offset
         )
+
+        if message_id == 54:
+            print(f'Signal: {signal_name}: start_bit: {start_bit}, length: {length}, endianness: {endianness}, scale: {scale}, offset: {offset}')
 
         # Append the signal definition to the list
         signal_definitions.append(signal_def)
@@ -147,8 +155,13 @@ for index, entry in enumerate(lut_entries):
     num_signals = entry['num_signals']
 
     # Write to msg_lut.coe
-    # Format: message_id (29 bits), num_signals (7 bits), signal_def_pointer (16 bits)
     # Total of 52 bits - pad with leading 0s to make it 56 bits (7 bytes)
+    """
+        Bits 51 - 23: Message ID (29 bits)
+        Bits 22 - 16: Number of Signals (7 bits)
+        Bits 15 - 0: Signal Definition Pointer (16 bits)
+    """
+
     msg_lut_entry = (message_id << 23) | (num_signals << 16) | (signal_def_pointer & 0xFFFF)
     msg_lut_entry_hex = format(msg_lut_entry, '014X')
     if index != len(lut_entries) - 1:
@@ -170,51 +183,12 @@ signal_def_mem_file.close()
 print(f"LUT messages .coe file has been generated at: {msg_lut_file_path}")
 print(f"Signal Definition .coe file has been generated at: {signal_def_mem_file_path}")
 
-# Generate the signal names .coe file
-signal_names_coe_path = 'signal_names.coe'
-with open(signal_names_coe_path, 'w') as signal_names_coe:
-    # Write the header information
-    signal_names_coe.write(f"memory_initialization_radix={radix};\n")
-    signal_names_coe.write("memory_initialization_vector=\n")
-
-    # Write the size of the signal names LUT as the first entry
-    signal_names_coe.write(f"{format(len(index_to_signal_name), f'0{MAX_SIGNAL_NAME_HEX}X')},\n")
-
-    # For each signal name, write it to the .coe file
+# Generate the signal names .txt file
+signal_names_txt_path = 'signal_names.txt'
+with open(signal_names_txt_path, 'w') as signal_names_txt:
+    # For each signal name, write it to the .txt file in order of the signals so that the name pointer is correct
     for index, signal_name in enumerate(index_to_signal_name):
-        # Convert signal name to ASCII codes, fixed length
-        signal_name_ascii = [ord(c) for c in signal_name]
-        # Convert to bytes
-        signal_name_bytes = bytes(signal_name_ascii)
-        # Convert to integer
-        signal_name_int = int.from_bytes(signal_name_bytes, byteorder='big')
-        # Determine the number of bits
-        signal_name_bits = len(signal_name_bytes) * 8
-        # Convert to hex string
-        num_hex_digits = (signal_name_bits + 3) // 4
-        signal_name_hex = format(signal_name_int, f'0{MAX_SIGNAL_NAME_HEX}X')
+        signal_names_txt.write(f'{signal_name}\n')
 
-        if num_hex_digits > MAX_SIGNAL_NAME_HEX:
-            signal_name_hex = signal_name_hex[num_hex_digits-MAX_SIGNAL_NAME_HEX:num_hex_digits]
-            # Convert the truncated hex to a string for display
-            # Convert to int
-            signal_name_int = int(signal_name_hex, 16)
-            # Convert to bytes
-            # Determine the length of the bytes (each hex digit represents 4 bits)
-            num_bytes = (len(signal_name_hex) + 1) // 2
-            signal_name_bytes = signal_name_int.to_bytes(num_bytes, byteorder='big')
-            # Convert bytes to ASCII string
-            signal_name_truncated = signal_name_bytes.decode('ascii')
-
-            print(signal_name)  # Output: "SIGNAL"
-            print(f"Signal Name: {signal_name} was too long. Truncating to {signal_name_truncated}")
-
-        # Write the value to the .coe file
-        if index != len(index_to_signal_name) - 1:
-            signal_names_coe.write(f"{signal_name_hex},\n")
-        else:
-            # If it is the last entry, put a semicolon after it
-            signal_names_coe.write(f"{signal_name_hex};\n")
-
-print(f"Signal names .coe file has been generated at: {signal_names_coe_path}")
-print(f"Total number of signal names: {len(index_to_signal_name)}")
+print(f'Signal names .txt file has been generated at: {signal_names_txt_path}')
+print(f'Total number of signal names: {len(index_to_signal_name)}')

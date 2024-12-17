@@ -1,28 +1,28 @@
 {
   "0": {
-    "basicblocks": 44,
+    "basicblocks": 40,
     "calls": "1",
     "file": "can_message_decoder.cpp",
-    "fileloc": 113,
-    "instructions": 423,
+    "fileloc": 61,
+    "instructions": 502,
     "loads": {
-      "G": 8,
+      "G": 1,
       "L": 8,
-      "T": 3
+      "T": 8
     },
     "name": "decode_can_message",
     "stores": {
       "G": 2,
-      "L": 9,
-      "T": 3
+      "L": 8,
+      "T": 5
     },
-    "total_instructions": 2323
+    "total_instructions": 3081
   },
   "1": {
     "basicblocks": 1,
     "calls": "",
     "file": "can_message_decoder.cpp",
-    "fileloc": 64,
+    "fileloc": 12,
     "instructions": 14,
     "name": "compute_hash",
     "total_instructions": 165

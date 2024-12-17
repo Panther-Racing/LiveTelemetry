@@ -1,26 +1,26 @@
-INFO: [v++ 60-1548] Creating build summary session with primary output C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder\CAN_decoder.hlscompile_summary, at 12/11/24 16:52:07
+INFO: [v++ 60-1548] Creating build summary session with primary output C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder\CAN_decoder.hlscompile_summary, at 12/17/24 11:27:20
 INFO: [v++ 82-31] Launching vitis_hls: vitis_hls -nolog -run csynth -work_dir C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder -config C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/hls_config.cfg -cmdlineconfig C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/config.cmdline
 
 ****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1.2 (64-bit)
   **** SW Build 5096458 on Sep  5 2024
   **** IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
   **** SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
-  **** Start of session at: Wed Dec 11 16:52:09 2024
+  **** Start of session at: Tue Dec 17 11:27:24 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source C:/Xilinx/2024.1/Vitis_HLS/2024.1/scripts/vitis_hls/hls.tcl -notrace
-INFO: [HLS 200-10] For user 'flaud' on host 'jackzenbook' (Windows NT_amd64 version 10.0) on Wed Dec 11 16:52:10 -0500 2024
+INFO: [HLS 200-10] For user 'flaud' on host 'jackzenbook' (Windows NT_amd64 version 10.0) on Tue Dec 17 11:27:27 -0500 2024
 INFO: [HLS 200-10] In directory 'C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder'
 INFO: [HLS 200-2005] Using work_dir C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
-INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/can_message_decoder.cpp' from C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/can_message_decoder.cpp' from C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/hls_config.cfg(12)
 INFO: [HLS 200-10] Adding design file 'C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/can_message_decoder.cpp' to the project
-INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/testbench.cpp' from C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'syn.file=can_message_decoder.hpp' from C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/can_message_decoder.hpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=testbench.cpp' from C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/hls_config.cfg(10)
 INFO: [HLS 200-10] Adding test bench file 'C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/testbench.cpp' to the project
-INFO: [HLS 200-1465] Applying ini 'tb.file=can_message_decoder.cpp' from C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/hls_config.cfg(11)
-INFO: [HLS 200-10] Adding test bench file 'C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/can_message_decoder.cpp' to the project
 INFO: [HLS 200-1465] Applying ini 'syn.top=decode_can_message' from C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/hls_config.cfg(9)
 INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/hls_config.cfg(4)
 INFO: [HLS 200-1505] Using flow_target 'vivado'
@@ -31,14 +31,246 @@ INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/flaud/Documents/Git
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=0.5ns' from C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/hls_config.cfg(8)
 INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.5ns.
+INFO: [HLS 200-1465] Applying ini 'csim.clean=0' from C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/hls_config.cfg(11)
 INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/hls_config.cfg(5)
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 3.43 seconds; current allocated memory: 250.391 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 11.103 seconds; current allocated memory: 263.555 MB.
 INFO: [HLS 200-10] Analyzing design file 'can_message_decoder.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.41 seconds; current allocated memory: 253.289 MB.
+WARNING: [HLS 207-4855] format specifies type 'unsigned int' but the argument has type 'ap_uint<29>' (can_message_decoder.cpp:72:83)
+WARNING: [HLS 207-4855] format specifies type 'unsigned int' but the argument has type 'ap_uint<64>' (can_message_decoder.cpp:72:95)
+WARNING: [HLS 207-4855] format specifies type 'unsigned int' but the argument has type 'ap_uint<29>' (can_message_decoder.cpp:79:71)
+WARNING: [HLS 207-4855] format specifies type 'unsigned int' but the argument has type 'ap_uint<29>' (can_message_decoder.cpp:86:87)
+WARNING: [HLS 207-4855] format specifies type 'unsigned int' but the argument has type 'ap_uint<29>' (can_message_decoder.cpp:86:114)
+WARNING: [HLS 207-4855] format specifies type 'unsigned int' but the argument has type 'ap_uint<56>' (can_message_decoder.cpp:105:47)
+WARNING: [HLS 207-4855] format specifies type 'unsigned int' but the argument has type 'ap_uint<7>' (can_message_decoder.cpp:106:97)
+WARNING: [HLS 207-4855] format specifies type 'unsigned long long' but the argument has type 'ap_int<32>' (can_message_decoder.cpp:160:46)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.923 seconds; current allocated memory: 266.543 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 200-1995] There were 2,323 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
-ERROR: [HLS 214-244] in function 'decode_can_message(can_message_t, decoded_signal_t*, int*)': Failed to implement stream interface on variable 'decoded_signals'. Each array element of 'decoded_signals' must: (a) be accessed only once, (b) read or write the whole array element in one operation and (c) be accessed in sequential order. (can_message_decoder.cpp:195:63)
-Resolution: For help on HLS 214-244 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=214-244.html
-ERROR: [HLS 200-1715] Encountered problem during source synthesis
-ERROR: Pre-synthesis failed.
-INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 16.118 seconds; peak allocated memory: 253.957 MB.
+INFO: [HLS 200-1995] There were 3,081 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 8,847 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7,860 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7,660 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,704 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,706 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,706 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,856 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,988 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,992 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,712 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,709 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,708 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,708 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,719 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,732 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/flaud/Documents/GitHub/LiveTelemetry/FPGA/CAN_Decoder_Hardware/CAN_decoder/CAN_decoder/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-210] Disaggregating variable 'hash_table'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'hash_table_accumulator'
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-188] Unrolling loop 'VITIS_LOOP_117_2' (can_message_decoder.cpp:117:23) in function 'decode_can_message' partially with a factor of 68 (can_message_decoder.cpp:63:0)
+INFO: [HLS 214-178] Inlining function 'compute_hash(ap_uint<29>)' into 'decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint<56>*, ap_uint<80>*)' (can_message_decoder.cpp:63:0)
+INFO: [HLS 214-178] Inlining function 'ap_int<32>::ap_int(double)' into 'decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint<56>*, ap_uint<80>*)' (can_message_decoder.cpp:63:0)
+INFO: [HLS 214-241] Aggregating bram variable 'hash_table_accumulator_accumulated_values' with compact=bit mode in 64-bits
+INFO: [HLS 214-241] Aggregating bram variable 'decoded_signals' with compact=bit mode in 43-bits (can_message_decoder.cpp:63:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_84_1> at can_message_decoder.cpp:84:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_117_2> at can_message_decoder.cpp:117:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_182_4> at can_message_decoder.cpp:182:35 
+INFO: [HLS 214-437] Automatically disabling loop flattening for loop 'VITIS_LOOP_172_3'. (can_message_decoder.cpp:172:27)
+WARNING: [HLS 214-385] Cannot apply INTERFACE pragma on a global variable. In function 'decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint<56>*, ap_uint<80>*)' (can_message_decoder.cpp:66:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.432 seconds; current allocated memory: 268.508 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.006 seconds; current allocated memory: 268.508 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.5 seconds; current allocated memory: 288.324 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] can_message_decoder.cpp:147: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.431 seconds; current allocated memory: 297.367 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:117:32) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (can_message_decoder.cpp:119:61) to (can_message_decoder.cpp:117:23) in function 'decode_can_message'... converting 12 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 8.309 seconds; current allocated memory: 344.164 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.816 seconds; current allocated memory: 366.633 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'decode_can_message' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decode_can_message_Pipeline_VITIS_LOOP_84_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_84_1'.
+WARNING: [HLS 200-878] Unable to schedule the loop exit test ('and' operation 1 bit ('and_ln84', can_message_decoder.cpp:84)) in the first pipeline iteration (II = 1 cycles).
+Resolution: For help on HLS 200-878 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-878.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 2, loop 'VITIS_LOOP_84_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.32 seconds; current allocated memory: 370.980 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.045 seconds; current allocated memory: 372.176 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decode_can_message_Pipeline_VITIS_LOOP_117_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_117_2'.
+WARNING: [HLS 200-885] The II Violation in module 'decode_can_message_Pipeline_VITIS_LOOP_117_2' (loop 'VITIS_LOOP_117_2'): Unable to schedule 'load' operation 80 bit ('signal_def', can_message_decoder.cpp:119) on array 'signal_def_mem' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'signal_def_mem'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'decode_can_message_Pipeline_VITIS_LOOP_117_2' (loop 'VITIS_LOOP_117_2'): Unable to schedule 'load' operation 80 bit ('signal_def', can_message_decoder.cpp:119) on array 'signal_def_mem' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'signal_def_mem'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'decode_can_message_Pipeline_VITIS_LOOP_117_2' (loop 'VITIS_LOOP_117_2'): Unable to schedule 'load' operation 80 bit ('signal_def', can_message_decoder.cpp:119) on array 'signal_def_mem' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'signal_def_mem'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'decode_can_message_Pipeline_VITIS_LOOP_117_2' (loop 'VITIS_LOOP_117_2'): Unable to schedule 'load' operation 80 bit ('signal_def', can_message_decoder.cpp:119) on array 'signal_def_mem' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'signal_def_mem'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'decode_can_message_Pipeline_VITIS_LOOP_117_2' (loop 'VITIS_LOOP_117_2'): Unable to schedule 'store' operation 0 bit ('hash_table_accumulator_accumulated_values_addr_65_write_ln164', can_message_decoder.cpp:164) of variable 'add_ln164_65', can_message_decoder.cpp:164 on array 'hash_table_accumulator_accumulated_values' due to limited memory ports (II = 67). Please consider using a memory core with more ports or partitioning the array 'hash_table_accumulator_accumulated_values'.
+Resolution: For help on HLS 200-885 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.1%20English&url=ug1448-hls-guidance&resourceid=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 68, Depth = 316, loop 'VITIS_LOOP_117_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 34 seconds. CPU system time: 1 seconds. Elapsed time: 35.305 seconds; current allocated memory: 444.070 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] After resource sharing, estimated clock period (11.099ns) exceeds the target (target clock period: 10.000ns, clock uncertainty: 0.500ns, effective delay budget: 9.500ns).
+INFO: [BIND 205-100] The critical path consists of the following:
+	'ddiv' operation 64 bit ('div_i116_1', can_message_decoder.cpp:157) (11.0992 ns)
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 8 seconds. CPU system time: 0 seconds. Elapsed time: 8.631 seconds; current allocated memory: 453.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decode_can_message_Pipeline_VITIS_LOOP_182_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_182_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 69, loop 'VITIS_LOOP_182_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 3.213 seconds; current allocated memory: 456.234 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.059 seconds; current allocated memory: 456.258 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decode_can_message' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.099 seconds; current allocated memory: 456.391 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 456.473 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decode_can_message_Pipeline_VITIS_LOOP_84_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decode_can_message_Pipeline_VITIS_LOOP_84_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.229 seconds; current allocated memory: 458.086 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decode_can_message_Pipeline_VITIS_LOOP_117_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'decode_can_message_Pipeline_VITIS_LOOP_117_2' pipeline 'VITIS_LOOP_117_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'ddiv_64ns_64ns_64_31_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_24ns_56_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_64s_64_5_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_32_1_1': 68 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'uitodp_32ns_64_5_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decode_can_message_Pipeline_VITIS_LOOP_117_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.554 seconds; current allocated memory: 524.129 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decode_can_message_Pipeline_VITIS_LOOP_182_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'decode_can_message_Pipeline_VITIS_LOOP_182_4' pipeline 'VITIS_LOOP_182_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sdiv_64ns_33ns_32_68_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decode_can_message_Pipeline_VITIS_LOOP_182_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 7 seconds. CPU system time: 13 seconds. Elapsed time: 21.464 seconds; current allocated memory: 646.684 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decode_can_message' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decode_can_message/message' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decode_can_message/decoded_signals' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decode_can_message/num_decoded_signals' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decode_can_message/hash_table_message_id' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decode_can_message/hash_table_lut_index' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decode_can_message/hash_table_accumulator_accumulated_values' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decode_can_message/hash_table_accumulator_counter' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decode_can_message/msg_lut' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'decode_can_message/signal_def_mem' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'decode_can_message' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'message' and 'num_decoded_signals' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decode_can_message'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.387 seconds; current allocated memory: 646.684 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 1.662 seconds; current allocated memory: 650.230 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.505 seconds; current allocated memory: 688.211 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for decode_can_message.
+INFO: [VLOG 209-307] Generating Verilog RTL for decode_can_message.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 90.10 MHz
+INFO: [HLS 200-112] Total CPU user time: 70 seconds. Total CPU system time: 18 seconds. Total elapsed time: 116.435 seconds; peak allocated memory: 688.211 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 2m 3s

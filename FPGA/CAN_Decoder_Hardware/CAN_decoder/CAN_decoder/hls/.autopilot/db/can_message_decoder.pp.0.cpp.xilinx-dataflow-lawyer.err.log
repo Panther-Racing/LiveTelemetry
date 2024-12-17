@@ -1,0 +1,9 @@
+format specifies type 'unsigned int' but the argument has type 'ap_uint<29>'
+format specifies type 'unsigned int' but the argument has type 'ap_uint<64>'
+format specifies type 'unsigned int' but the argument has type 'ap_uint<29>'
+format specifies type 'unsigned int' but the argument has type 'ap_uint<29>'
+format specifies type 'unsigned int' but the argument has type 'ap_uint<29>'
+format specifies type 'unsigned int' but the argument has type 'ap_uint<56>'
+format specifies type 'unsigned int' but the argument has type 'ap_uint<7>'
+format specifies type 'unsigned long long' but the argument has type 'ap_int<32>'
+8 warnings generated.

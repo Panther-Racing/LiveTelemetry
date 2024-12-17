@@ -1,5 +1,5 @@
 C:\Users\flaud\Documents\GitHub\LiveTelemetry\FPGA\CAN_Decoder_Hardware\CAN_decoder\CAN_decoder\hls\csim\code_analyzer\.internal\build\can_message_decoder.cpp.0.o: \
-  can_message_decoder.cpp \
+  can_message_decoder.cpp can_message_decoder.hpp \
   c:/xilinx/2024.1/vitis_hls/2024.1/vcxx/lib/clang/14.0.6/include/stdint.h \
   C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/stdint.h \
   C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/crtdefs.h \

@@ -1,36 +1,75 @@
 <xilinx:hls_fe_msgs>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:70:9" msg_body="HLS pragma dump">
+    <msg msg_groups="" msg_id="207-4855" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:72:83" msg_body="format specifies type 'unsigned int' but the argument has type 'ap_uint&lt;29&gt;'">
+        <args ClangWarningOption="format"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4855" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:72:95" msg_body="format specifies type 'unsigned int' but the argument has type 'ap_uint&lt;64&gt;'">
+        <args ClangWarningOption="format"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4855" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:79:71" msg_body="format specifies type 'unsigned int' but the argument has type 'ap_uint&lt;29&gt;'">
+        <args ClangWarningOption="format"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4855" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:86:87" msg_body="format specifies type 'unsigned int' but the argument has type 'ap_uint&lt;29&gt;'">
+        <args ClangWarningOption="format"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4855" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:86:114" msg_body="format specifies type 'unsigned int' but the argument has type 'ap_uint&lt;29&gt;'">
+        <args ClangWarningOption="format"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4855" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:105:47" msg_body="format specifies type 'unsigned int' but the argument has type 'ap_uint&lt;56&gt;'">
+        <args ClangWarningOption="format"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4855" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:106:97" msg_body="format specifies type 'unsigned int' but the argument has type 'ap_uint&lt;7&gt;'">
+        <args ClangWarningOption="format"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4855" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:160:46" msg_body="format specifies type 'unsigned long long' but the argument has type 'ap_int&lt;32&gt;'">
+        <args ClangWarningOption="format"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:18:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="initialize_hash_table" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=decode_can_message" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:114:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_memory depth=1024 port=msg_lut" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:64:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_memory depth=512 port=msg_lut" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:115:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_memory depth=1024 port=signal_def_mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:65:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_memory depth=512 port=signal_def_mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:116:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_memory depth=1024 port=signal_names" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:66:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_memory depth=512 port=signal_names" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:117:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_fifo port=decoded_signals" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:67:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_memory port=decoded_signals" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:118:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:68:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=message" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:119:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:69:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=num_decoded_signals" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:120:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:151:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:118:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="decode_can_message" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=68" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-244" msg_severity="ERROR" msg_loc="can_message_decoder.cpp:195:63" msg_body="in function 'decode_can_message(can_message_t, decoded_signal_t*, int*)': Failed to implement stream interface on variable 'decoded_signals'. Each array element of 'decoded_signals' must: (a) be accessed only once, (b) read or write the whole array element in one operation and (c) be accessed in sequential order.">
-        <args Function="decode_can_message(can_message_t, decoded_signal_t*, int*)" Function-DebugLoc="File can_message_decoder.cpp Line 113 Column 0" Name="islist decoded_signals decoded_signals"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="can_message_decoder.cpp:63:0" msg_body="Unrolling loop 'VITIS_LOOP_117_2' (can_message_decoder.cpp:117:23) in function 'decode_can_message' partially with a factor of 68">
+        <args Factor="68" LoopLoc="can_message_decoder.cpp:117:23" LoopName="VITIS_LOOP_117_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="can_message_decoder.cpp:63:0" msg_body="Inlining function 'compute_hash(ap_uint&lt;29&gt;)' into 'decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint&lt;56&gt;*, ap_uint&lt;80&gt;*)'">
+        <args Callee="compute_hash(ap_uint&lt;29&gt;)" Callee-DebugLoc="File can_message_decoder.cpp Line 12 Column 0" Caller="decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint&lt;56&gt;*, ap_uint&lt;80&gt;*)" Caller-DebugLoc="File can_message_decoder.cpp Line 63 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="can_message_decoder.cpp:63:0" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(double)' into 'decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint&lt;56&gt;*, ap_uint&lt;80&gt;*)'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(double)" Callee-DebugLoc="File {C:/Xilinx/2024.1/Vitis_HLS/2024.1/common/technology/autopilot\ap_int.h} Line 140 Column 0" Caller="decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint&lt;56&gt;*, ap_uint&lt;80&gt;*)" Caller-DebugLoc="File can_message_decoder.cpp Line 63 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="can_message_decoder.cpp:63:0" msg_body="Aggregating bram variable 'decoded_signals' with compact=bit mode in 43-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="43" HwTyName="bram" Name="decoded_signals"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-437" msg_severity="INFO" msg_loc="can_message_decoder.cpp:172:27" msg_body="Automatically disabling loop flattening for loop 'VITIS_LOOP_172_3'.">
+        <args LoopName="VITIS_LOOP_172_3"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="can_message_decoder.cpp:172:27" msg_body="loop_flatten 0 1 decode_can_message can_message_decoder.cpp:172:27VITIS_LOOP_172_3 can_message_decoder.cpp:172:27">
+        <args LoopLoc="can_message_decoder.cpp:172:27" LoopLoc-DebugLoc="File can_message_decoder.cpp Line 172 Column 27" LoopName="VITIS_LOOP_172_3" PragmaFunction="decode_can_message" PragmaIsAuto="1" PragmaOptions="0" PragmaSrcLoc="can_message_decoder.cpp:172:27" PragmaSrcLoc-DebugLoc="File can_message_decoder.cpp Line 172 Column 27" PragmaType="loop_flatten"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-385" msg_severity="WARNING" msg_loc="can_message_decoder.cpp:66:9" msg_body="Cannot apply INTERFACE pragma on a global variable. In function 'decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint&lt;56&gt;*, ap_uint&lt;80&gt;*)'">
+        <args Function="decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint&lt;56&gt;*, ap_uint&lt;80&gt;*)" Function-DebugLoc="File can_message_decoder.cpp Line 63 Column 0"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

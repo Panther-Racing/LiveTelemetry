@@ -1,31 +1,52 @@
-can_message_decoder.cpp:70:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=initialize_hash_table_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
+can_message_decoder.cpp:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=initialize_hash_table_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS PIPELINE II=1
         ^
 directive:1:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=name=decode_can_message_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLSDIRECTIVE TOP name=decode_can_message
         ^
-can_message_decoder.cpp:114:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_memory depth=1024 port=msg_lut_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE ap_memory depth=1024 port=msg_lut
+can_message_decoder.cpp:64:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_memory depth=512 port=msg_lut_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_memory depth=512 port=msg_lut
         ^
-can_message_decoder.cpp:115:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_memory depth=1024 port=signal_def_mem_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE ap_memory depth=1024 port=signal_def_mem
+can_message_decoder.cpp:65:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_memory depth=512 port=signal_def_mem_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_memory depth=512 port=signal_def_mem
         ^
-can_message_decoder.cpp:116:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_memory depth=1024 port=signal_names_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE ap_memory depth=1024 port=signal_names
+can_message_decoder.cpp:66:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_memory depth=512 port=signal_names_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_memory depth=512 port=signal_names
         ^
-can_message_decoder.cpp:117:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_fifo port=decoded_signals_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE ap_fifo port=decoded_signals
+can_message_decoder.cpp:67:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_memory port=decoded_signals_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE ap_memory port=decoded_signals
         ^
-can_message_decoder.cpp:118:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=s_axilite port=message_XLX_SEP_ [-Wdump-hls-pragmas]
+can_message_decoder.cpp:68:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=s_axilite port=message_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE s_axilite port=message
         ^
-can_message_decoder.cpp:119:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=s_axilite port=num_decoded_signals_XLX_SEP_ [-Wdump-hls-pragmas]
+can_message_decoder.cpp:69:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=s_axilite port=num_decoded_signals_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS INTERFACE s_axilite port=num_decoded_signals
         ^
-can_message_decoder.cpp:120:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=ap_ctrl_none port=return_XLX_SEP_ [-Wdump-hls-pragmas]
-#pragma HLS INTERFACE ap_ctrl_none port=return
-        ^
-can_message_decoder.cpp:151:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=factor=68_XLX_SEP_ [-Wdump-hls-pragmas]
+can_message_decoder.cpp:72:83: warning: format specifies type 'unsigned int' but the argument has type 'ap_uint<29>' [-Wformat]
+        printf("Input to can message decoder: id: %08x \t data: %016x\n", message.id, message.data);
+                                                  ~~~~                            ^~
+can_message_decoder.cpp:72:95: warning: format specifies type 'unsigned int' but the argument has type 'ap_uint<64>' [-Wformat]
+        printf("Input to can message decoder: id: %08x \t data: %016x\n", message.id, message.data);
+                                                                ~~~~~                         ^~~~
+can_message_decoder.cpp:79:71: warning: format specifies type 'unsigned int' but the argument has type 'ap_uint<29>' [-Wformat]
+        printf("Message at that hash: %08x\n", hash_table[hash_index].message_id);
+                                      ~~~~                            ^~~~~~~~~~
+can_message_decoder.cpp:86:87: warning: format specifies type 'unsigned int' but the argument has type 'ap_uint<29>' [-Wformat]
+            printf("Searching for non-conflicting hash index: %08x\t %08x\n", message.id, hash_table[hash_index].message_id);
+                                                              ~~~~                    ^~
+can_message_decoder.cpp:86:114: warning: format specifies type 'unsigned int' but the argument has type 'ap_uint<29>' [-Wformat]
+            printf("Searching for non-conflicting hash index: %08x\t %08x\n", message.id, hash_table[hash_index].message_id);
+                                                                     ~~~~                                        ^~~~~~~~~~
+can_message_decoder.cpp:105:47: warning: format specifies type 'unsigned int' but the argument has type 'ap_uint<56>' [-Wformat]
+        printf("Message Decode Raw: %014x\n", msg_lut[hash_table[hash_index].lut_index]);
+                                    ~~~~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+can_message_decoder.cpp:106:97: warning: format specifies type 'unsigned int' but the argument has type 'ap_uint<7>' [-Wformat]
+        printf("Message Decode Information: Num Signals: %02x \t Signal Def Pointer: %04llx\n", num_signals, (unsigned long long)signal_def_pointer);
+                                                         ~~~~                                   ^~~~~~~~~~~
+can_message_decoder.cpp:118:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=decode_can_message_XLX_SEP_ PragmaOptions=factor=68_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS UNROLL factor=68
         ^
-10 warnings generated.
+can_message_decoder.cpp:160:46: warning: format specifies type 'unsigned long long' but the argument has type 'ap_int<32>' [-Wformat]
+            printf("Decoded value %06llx\n", value);
+                                  ~~~~~~     ^~~~~
+17 warnings generated.

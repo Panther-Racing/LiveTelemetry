@@ -1,0 +1,25 @@
+can_message_decoder.cpp:72:83: warning: format specifies type 'unsigned int' but the argument has type 'ap_uint<29>' [-Wformat]
+        printf("Input to can message decoder: id: %08x \t data: %016x\n", message.id, message.data);
+                                                  ~~~~                            ^~
+can_message_decoder.cpp:72:95: warning: format specifies type 'unsigned int' but the argument has type 'ap_uint<64>' [-Wformat]
+        printf("Input to can message decoder: id: %08x \t data: %016x\n", message.id, message.data);
+                                                                ~~~~~                         ^~~~
+can_message_decoder.cpp:79:71: warning: format specifies type 'unsigned int' but the argument has type 'ap_uint<29>' [-Wformat]
+        printf("Message at that hash: %08x\n", hash_table[hash_index].message_id);
+                                      ~~~~                            ^~~~~~~~~~
+can_message_decoder.cpp:86:87: warning: format specifies type 'unsigned int' but the argument has type 'ap_uint<29>' [-Wformat]
+            printf("Searching for non-conflicting hash index: %08x\t %08x\n", message.id, hash_table[hash_index].message_id);
+                                                              ~~~~                    ^~
+can_message_decoder.cpp:86:114: warning: format specifies type 'unsigned int' but the argument has type 'ap_uint<29>' [-Wformat]
+            printf("Searching for non-conflicting hash index: %08x\t %08x\n", message.id, hash_table[hash_index].message_id);
+                                                                     ~~~~                                        ^~~~~~~~~~
+can_message_decoder.cpp:105:47: warning: format specifies type 'unsigned int' but the argument has type 'ap_uint<56>' [-Wformat]
+        printf("Message Decode Raw: %014x\n", msg_lut[hash_table[hash_index].lut_index]);
+                                    ~~~~~     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+can_message_decoder.cpp:106:97: warning: format specifies type 'unsigned int' but the argument has type 'ap_uint<7>' [-Wformat]
+        printf("Message Decode Information: Num Signals: %02x \t Signal Def Pointer: %04llx\n", num_signals, (unsigned long long)signal_def_pointer);
+                                                         ~~~~                                   ^~~~~~~~~~~
+can_message_decoder.cpp:160:46: warning: format specifies type 'unsigned long long' but the argument has type 'ap_int<32>' [-Wformat]
+            printf("Decoded value %06llx\n", value);
+                                  ~~~~~~     ^~~~~
+8 warnings generated.

@@ -153,6 +153,10 @@ extern "C" {
 }
 # 2 "<built-in>" 2
 # 1 "can_message_decoder.cpp" 2
+# 1 "./can_message_decoder.hpp" 1
+
+
+
 # 1 "C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\stdint.h" 1 3
 # 63 "C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\stdint.h" 3
 # 1 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdint.h" 1 3
@@ -383,7 +387,7 @@ __extension__ typedef unsigned long long uint_fast64_t;
 __extension__ typedef long long intmax_t;
 __extension__ typedef unsigned long long uintmax_t;
 # 64 "C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\stdint.h" 2 3
-# 2 "can_message_decoder.cpp" 2
+# 5 "./can_message_decoder.hpp" 2
 # 1 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/common/technology/autopilot\\ap_int.h" 1
 # 10 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/common/technology/autopilot\\ap_int.h"
 # 1 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/common/technology/autopilot\\etc/ap_common.h" 1
@@ -5944,37 +5948,23 @@ inline __attribute__((nodebug)) bool operator!=(
 }
 # 366 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/common/technology/autopilot\\ap_fixed.h" 2
 # 361 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/common/technology/autopilot\\ap_int.h" 2
-# 3 "can_message_decoder.cpp" 2
-# 28 "can_message_decoder.cpp"
-ap_uint<56> msg_lut[1024];
-ap_uint<80> signal_def_mem[1024];
-ap_uint<512> signal_names[1024];
-
-
+# 6 "./can_message_decoder.hpp" 2
+# 24 "./can_message_decoder.hpp"
 struct SignalAccumulator {
     ap_int<64> accumulated_values[68];
     ap_uint<32> counter;
 };
 
-
 struct HashEntry {
     ap_uint<29> message_id;
     int lut_index;
-    SignalAccumulator* accumulator;
-    HashEntry* next;
+    SignalAccumulator accumulator;
 };
-
-HashEntry hash_table[1024];
-
-
-unsigned int timer = 0;
-
 
 typedef struct {
     ap_uint<29> id;
     ap_uint<64> data;
 } can_message_t;
-
 
 typedef struct {
     ap_uint<11> signal_name_index;
@@ -5982,99 +5972,711 @@ typedef struct {
 } decoded_signal_t;
 
 
-int compute_hash(ap_uint<29> can_id) {
-    return (can_id * 31) % 1024;
+int compute_hash(ap_uint<29> can_id);
+void initialize_hash_table(int msg_lut_size, HashEntry hash_table[512]);
+__attribute__((sdx_kernel("decode_can_message", 0))) void decode_can_message(can_message_t message, decoded_signal_t decoded_signals[68],
+                        int *num_decoded_signals, HashEntry hash_table[512],
+                        ap_uint<56> msg_lut[512], ap_uint<80> signal_def_mem[512]);
+# 2 "can_message_decoder.cpp" 2
+# 1 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 1 3
+# 11 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+# 1 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw_print_push.h" 1 3
+# 12 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 2 3
+
+#pragma pack(push,_CRT_PACKING)
+
+
+extern "C" {
+# 26 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+  struct _iobuf {
+    char *_ptr;
+    int _cnt;
+    char *_base;
+    int _flag;
+    int _file;
+    int _charbuf;
+    int _bufsiz;
+    char *_tmpfname;
+  };
+  typedef struct _iobuf FILE;
+# 80 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+# 1 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw_off_t.h" 1 3
+
+
+
+
+  typedef long _off_t;
+
+  typedef long off32_t;
+
+
+
+
+
+  __extension__ typedef long long _off64_t;
+
+  __extension__ typedef long long off64_t;
+# 26 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw_off_t.h" 3
+typedef off32_t off_t;
+# 81 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 2 3
+
+__attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) __acrt_iob_func(unsigned index);
+
+
+  __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) __iob_func(void);
+# 104 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+  __extension__ typedef long fpos_t;
+# 162 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+extern
+  __attribute__((__format__ (gnu_scanf, 2, 3))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_sscanf(const char * __restrict__ _Src,const char * __restrict__ _Format,...);
+extern
+  __attribute__((__format__ (gnu_scanf, 2, 0))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_vsscanf (const char * __restrict__ _Str,const char * __restrict__ Format,va_list argp);
+extern
+  __attribute__((__format__ (gnu_scanf, 1, 2))) __attribute__ ((__nonnull__ (1)))
+  int __attribute__((__cdecl__)) __mingw_scanf(const char * __restrict__ _Format,...);
+extern
+  __attribute__((__format__ (gnu_scanf, 1, 0))) __attribute__ ((__nonnull__ (1)))
+  int __attribute__((__cdecl__)) __mingw_vscanf(const char * __restrict__ Format, va_list argp);
+extern
+  __attribute__((__format__ (gnu_scanf, 2, 3))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_fscanf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+extern
+  __attribute__((__format__ (gnu_scanf, 2, 0))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_vfscanf (FILE * __restrict__ fp, const char * __restrict__ Format,va_list argp);
+
+extern
+  __attribute__((__format__ (gnu_printf, 3, 0))) __attribute__ ((__nonnull__ (3)))
+  int __attribute__((__cdecl__)) __mingw_vsnprintf(char * __restrict__ _DstBuf,size_t _MaxCount,const char * __restrict__ _Format,
+                               va_list _ArgList);
+extern
+  __attribute__((__format__ (gnu_printf, 3, 4))) __attribute__ ((__nonnull__ (3)))
+  int __attribute__((__cdecl__)) __mingw_snprintf(char * __restrict__ s, size_t n, const char * __restrict__ format, ...);
+extern
+  __attribute__((__format__ (gnu_printf, 1, 2))) __attribute__ ((__nonnull__ (1)))
+  int __attribute__((__cdecl__)) __mingw_printf(const char * __restrict__ , ... ) __attribute__ ((__nothrow__));
+extern
+  __attribute__((__format__ (gnu_printf, 1, 0))) __attribute__ ((__nonnull__ (1)))
+  int __attribute__((__cdecl__)) __mingw_vprintf (const char * __restrict__ , va_list) __attribute__ ((__nothrow__));
+extern
+  __attribute__((__format__ (gnu_printf, 2, 3))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_fprintf (FILE * __restrict__ , const char * __restrict__ , ...) __attribute__ ((__nothrow__));
+extern
+  __attribute__((__format__ (gnu_printf, 2, 0))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_vfprintf (FILE * __restrict__ , const char * __restrict__ , va_list) __attribute__ ((__nothrow__));
+extern
+  __attribute__((__format__ (gnu_printf, 2, 3))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_sprintf (char * __restrict__ , const char * __restrict__ , ...) __attribute__ ((__nothrow__));
+extern
+  __attribute__((__format__ (gnu_printf, 2, 0))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_vsprintf (char * __restrict__ , const char * __restrict__ , va_list) __attribute__ ((__nothrow__));
+extern
+  __attribute__((__format__ (gnu_printf, 2, 3))) __attribute__((nonnull (1,2)))
+  int __attribute__((__cdecl__)) __mingw_asprintf(char ** __restrict__ , const char * __restrict__ , ...) __attribute__ ((__nothrow__));
+extern
+  __attribute__((__format__ (gnu_printf, 2, 0))) __attribute__((nonnull (1,2)))
+  int __attribute__((__cdecl__)) __mingw_vasprintf(char ** __restrict__ , const char * __restrict__ , va_list) __attribute__ ((__nothrow__));
+# 506 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+  __attribute__((__format__ (ms_printf, 2, 3))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) fprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,...);
+  __attribute__((__format__ (ms_printf, 1, 2))) __attribute__ ((__nonnull__ (1)))
+  int __attribute__((__cdecl__)) printf(const char * __restrict__ _Format,...);
+  __attribute__((__format__ (ms_printf, 2, 3))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) sprintf(char * __restrict__ _Dest,const char * __restrict__ _Format,...) ;
+
+  __attribute__((__format__ (ms_printf, 2, 0))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) vfprintf(FILE * __restrict__ _File,const char * __restrict__ _Format,va_list _ArgList);
+  __attribute__((__format__ (ms_printf, 1, 0))) __attribute__ ((__nonnull__ (1)))
+  int __attribute__((__cdecl__)) vprintf(const char * __restrict__ _Format,va_list _ArgList);
+  __attribute__((__format__ (ms_printf, 2, 0))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) vsprintf(char * __restrict__ _Dest,const char * __restrict__ _Format,va_list _Args) ;
+
+  __attribute__((__format__ (ms_scanf, 2, 3))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) fscanf(FILE * __restrict__ _File,const char * __restrict__ _Format,...) ;
+  __attribute__((__format__ (ms_scanf, 1, 2))) __attribute__ ((__nonnull__ (1)))
+  int __attribute__((__cdecl__)) scanf(const char * __restrict__ _Format,...) ;
+  __attribute__((__format__ (ms_scanf, 2, 3))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) sscanf(const char * __restrict__ _Src,const char * __restrict__ _Format,...) ;
+
+
+
+
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wshadow"
+
+
+ __attribute__((__format__ (ms_scanf, 1, 0))) __attribute__ ((__nonnull__ (1)))
+  int __attribute__((__cdecl__)) __ms_vscanf(const char * __restrict__ Format, va_list argp);
+  __attribute__((__format__ (ms_scanf, 2, 0))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __ms_vfscanf (FILE * __restrict__ fp, const char * __restrict__ Format,va_list argp);
+  __attribute__((__format__ (ms_scanf, 2, 0))) __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __ms_vsscanf (const char * __restrict__ _Str,const char * __restrict__ Format,va_list argp);
+
+  inline __attribute__((__cdecl__))
+  __attribute__((__format__ (ms_scanf, 2, 0))) __attribute__ ((__nonnull__ (2)))
+  int vfscanf (FILE *__stream, const char *__format, __builtin_va_list __local_argv)
+  {
+    return __ms_vfscanf (__stream, __format, __local_argv);
+  }
+
+  inline __attribute__((__cdecl__))
+  __attribute__((__format__ (ms_scanf, 2, 0))) __attribute__ ((__nonnull__ (2)))
+  int vsscanf (const char * __restrict__ __source, const char * __restrict__ __format, __builtin_va_list __local_argv)
+  {
+    return __ms_vsscanf( __source, __format, __local_argv );
+  }
+  inline __attribute__((__cdecl__))
+  __attribute__((__format__ (ms_scanf, 1, 0))) __attribute__ ((__nonnull__ (1)))
+  int vscanf(const char *__format, __builtin_va_list __local_argv)
+  {
+    return __ms_vscanf (__format, __local_argv);
+  }
+
+
+#pragma GCC diagnostic pop
+
+
+
+
+
+
+ __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _filbuf(FILE *_File);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _flsbuf(int _Ch,FILE *_File);
+
+
+
+  __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) _fsopen(const char *_Filename,const char *_Mode,int _ShFlag);
+
+  void __attribute__((__cdecl__)) clearerr(FILE *_File);
+  int __attribute__((__cdecl__)) fclose(FILE *_File);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _fcloseall(void);
+
+
+
+  __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) _fdopen(int _FileHandle,const char *_Mode);
+
+  int __attribute__((__cdecl__)) feof(FILE *_File);
+  int __attribute__((__cdecl__)) ferror(FILE *_File);
+  int __attribute__((__cdecl__)) fflush(FILE *_File);
+  int __attribute__((__cdecl__)) fgetc(FILE *_File);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _fgetchar(void);
+  int __attribute__((__cdecl__)) fgetpos(FILE * __restrict__ _File ,fpos_t * __restrict__ _Pos);
+  int __attribute__((__cdecl__)) fgetpos64(FILE * __restrict__ _File ,fpos_t * __restrict__ _Pos);
+  char *__attribute__((__cdecl__)) fgets(char * __restrict__ _Buf,int _MaxCount,FILE * __restrict__ _File);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _fileno(FILE *_File);
+
+
+
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _tempnam(const char *_DirName,const char *_FilePrefix);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _flushall(void);
+  FILE *__attribute__((__cdecl__)) fopen(const char * __restrict__ _Filename,const char * __restrict__ _Mode) ;
+  FILE *fopen64(const char * __restrict__ filename,const char * __restrict__ mode);
+  int __attribute__((__cdecl__)) fputc(int _Ch,FILE *_File);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _fputchar(int _Ch);
+  int __attribute__((__cdecl__)) fputs(const char * __restrict__ _Str,FILE * __restrict__ _File);
+  size_t __attribute__((__cdecl__)) fread(void * __restrict__ _DstBuf,size_t _ElementSize,size_t _Count,FILE * __restrict__ _File);
+  FILE *__attribute__((__cdecl__)) freopen(const char * __restrict__ _Filename,const char * __restrict__ _Mode,FILE * __restrict__ _File) ;
+  int __attribute__((__cdecl__)) fsetpos(FILE *_File,const fpos_t *_Pos);
+  int __attribute__((__cdecl__)) fsetpos64(FILE *_File,const fpos_t *_Pos);
+  int __attribute__((__cdecl__)) fseek(FILE *_File,long _Offset,int _Origin);
+  long __attribute__((__cdecl__)) ftell(FILE *_File);
+# 631 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+  __extension__ int __attribute__((__cdecl__)) _fseeki64(FILE *_File,long _Offset,int _Origin);
+  __extension__ long __attribute__((__cdecl__)) _ftelli64(FILE *_File);
+  int fseeko64(FILE* stream, _off64_t offset, int whence);
+  int fseeko(FILE* stream, _off_t offset, int whence);
+
+  _off_t ftello(FILE * stream);
+  _off64_t ftello64(FILE * stream);
+# 654 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+  size_t __attribute__((__cdecl__)) fwrite(const void * __restrict__ _Str,size_t _Size,size_t _Count,FILE * __restrict__ _File);
+  int __attribute__((__cdecl__)) getc(FILE *_File);
+  int __attribute__((__cdecl__)) getchar(void);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _getmaxstdio(void);
+  char *__attribute__((__cdecl__)) gets(char *_Buffer) ;
+  int __attribute__((__cdecl__)) _getw(FILE *_File);
+
+
+  void __attribute__((__cdecl__)) perror(const char *_ErrMsg);
+
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _pclose(FILE *_File);
+  __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) _popen(const char *_Command,const char *_Mode);
+
+
+
+
+  int __attribute__((__cdecl__)) putc(int _Ch,FILE *_File);
+  int __attribute__((__cdecl__)) putchar(int _Ch);
+  int __attribute__((__cdecl__)) puts(const char *_Str);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _putw(int _Word,FILE *_File);
+
+
+  int __attribute__((__cdecl__)) remove(const char *_Filename);
+  int __attribute__((__cdecl__)) rename(const char *_OldFilename,const char *_NewFilename);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _unlink(const char *_Filename);
+
+  int __attribute__((__cdecl__)) unlink(const char *_Filename) ;
+
+
+  void __attribute__((__cdecl__)) rewind(FILE *_File);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _rmtmp(void);
+  void __attribute__((__cdecl__)) setbuf(FILE * __restrict__ _File,char * __restrict__ _Buffer) ;
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _setmaxstdio(int _Max);
+  __attribute__ ((__dllimport__)) unsigned int __attribute__((__cdecl__)) _set_output_format(unsigned int _Format);
+  __attribute__ ((__dllimport__)) unsigned int __attribute__((__cdecl__)) _get_output_format(void);
+  int __attribute__((__cdecl__)) setvbuf(FILE * __restrict__ _File,char * __restrict__ _Buf,int _Mode,size_t _Size);
+# 712 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _scprintf(const char * __restrict__ _Format,...);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _snscanf(const char * __restrict__ _Src,size_t _MaxCount,const char * __restrict__ _Format,...) ;
+
+  FILE *__attribute__((__cdecl__)) tmpfile(void) ;
+  char *__attribute__((__cdecl__)) tmpnam(char *_Buffer);
+  int __attribute__((__cdecl__)) ungetc(int _Ch,FILE *_File);
+# 734 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+  __attribute__((__format__ (ms_printf, 3, 4))) __attribute__ ((__nonnull__ (3)))
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _snprintf(char * __restrict__ _Dest,size_t _Count,const char * __restrict__ _Format,...) ;
+  __attribute__((__format__ (ms_printf, 3, 0))) __attribute__ ((__nonnull__ (3)))
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _vsnprintf(char * __restrict__ _Dest,size_t _Count,const char * __restrict__ _Format,va_list _Args) ;
+# 761 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wshadow"
+
+
+
+
+
+
+ __attribute__((__format__ (ms_printf, 3, 0))) __attribute__ ((__nonnull__ (3)))
+  int __attribute__((__cdecl__)) __ms_vsnprintf(char * __restrict__ d,size_t n,const char * __restrict__ format,va_list arg)
+                                                                         ;
+
+  inline __attribute__((__cdecl__))
+  __attribute__((__format__ (ms_printf, 3, 0))) __attribute__ ((__nonnull__ (3)))
+  int vsnprintf (char * __restrict__ __stream, size_t __n, const char * __restrict__ __format, va_list __local_argv)
+  {
+    return __ms_vsnprintf (__stream, __n, __format, __local_argv);
+  }
+
+  __attribute__((__format__ (ms_printf, 3, 4))) __attribute__ ((__nonnull__ (3)))
+  int __attribute__((__cdecl__)) __ms_snprintf(char * __restrict__ s, size_t n, const char * __restrict__ format, ...);
+
+
+inline __attribute__((__cdecl__))
+__attribute__((__format__ (ms_printf, 3, 4))) __attribute__ ((__nonnull__ (3)))
+int snprintf (char * __restrict__ __stream, size_t __n, const char * __restrict__ __format, ...)
+{
+  int __retval;
+  __builtin_va_list __local_argv; __builtin_va_start( __local_argv, __format );
+  __retval = __ms_vsnprintf (__stream, __n, __format, __local_argv);
+  __builtin_va_end( __local_argv );
+  return __retval;
 }
 
 
-void initialize_hash_table(int msg_lut_size) {
+
+
+
+#pragma GCC diagnostic pop
+# 811 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+ __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _vscprintf(const char * __restrict__ _Format,va_list _ArgList);
+
+
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _set_printf_count_output(int _Value);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _get_printf_count_output(void);
+
+
+
+
+                                                     __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_swscanf(const wchar_t * __restrict__ _Src,const wchar_t * __restrict__ _Format,...);
+                                                     __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_vswscanf (const wchar_t * __restrict__ _Str,const wchar_t * __restrict__ Format,va_list argp);
+                                                     __attribute__ ((__nonnull__ (1)))
+  int __attribute__((__cdecl__)) __mingw_wscanf(const wchar_t * __restrict__ _Format,...);
+                                                     __attribute__ ((__nonnull__ (1)))
+  int __attribute__((__cdecl__)) __mingw_vwscanf(const wchar_t * __restrict__ Format, va_list argp);
+                                                     __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_fwscanf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,...);
+                                                     __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_vfwscanf (FILE * __restrict__ fp, const wchar_t * __restrict__ Format,va_list argp);
+
+                                                      __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_fwprintf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,...);
+                                                      __attribute__ ((__nonnull__ (1)))
+  int __attribute__((__cdecl__)) __mingw_wprintf(const wchar_t * __restrict__ _Format,...);
+                                                     __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_vfwprintf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,va_list _ArgList);
+                                                     __attribute__ ((__nonnull__ (1)))
+  int __attribute__((__cdecl__)) __mingw_vwprintf(const wchar_t * __restrict__ _Format,va_list _ArgList);
+                                                      __attribute__ ((__nonnull__ (3)))
+  int __attribute__((__cdecl__)) __mingw_snwprintf (wchar_t * __restrict__ s, size_t n, const wchar_t * __restrict__ format, ...);
+                                                      __attribute__ ((__nonnull__ (3)))
+  int __attribute__((__cdecl__)) __mingw_vsnwprintf (wchar_t * __restrict__ , size_t, const wchar_t * __restrict__ , va_list);
+                                                      __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_swprintf(wchar_t * __restrict__ , const wchar_t * __restrict__ , ...);
+                                                      __attribute__ ((__nonnull__ (2)))
+  int __attribute__((__cdecl__)) __mingw_vswprintf(wchar_t * __restrict__ , const wchar_t * __restrict__ ,va_list);
+# 1061 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+  int __attribute__((__cdecl__)) fwscanf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,...) ;
+  int __attribute__((__cdecl__)) swscanf(const wchar_t * __restrict__ _Src,const wchar_t * __restrict__ _Format,...) ;
+  int __attribute__((__cdecl__)) wscanf(const wchar_t * __restrict__ _Format,...) ;
+
+  int __attribute__((__cdecl__)) __ms_vwscanf (const wchar_t * __restrict__ , va_list);
+  int __attribute__((__cdecl__)) __ms_vfwscanf (FILE * __restrict__ ,const wchar_t * __restrict__ ,va_list);
+  int __attribute__((__cdecl__)) __ms_vswscanf (const wchar_t * __restrict__ ,const wchar_t * __restrict__ ,va_list);
+
+  inline __attribute__((__cdecl__))
+  __attribute__ ((__nonnull__ (2)))
+  int vfwscanf (FILE *__stream, const wchar_t *__format, __builtin_va_list __local_argv)
+  {
+    return __ms_vfwscanf (__stream, __format, __local_argv);
+  }
+
+  inline __attribute__((__cdecl__))
+  __attribute__ ((__nonnull__ (2)))
+  int vswscanf (const wchar_t * __restrict__ __source, const wchar_t * __restrict__ __format, __builtin_va_list __local_argv)
+  {
+    return __ms_vswscanf( __source, __format, __local_argv );
+  }
+  inline __attribute__((__cdecl__))
+  __attribute__ ((__nonnull__ (1)))
+  int vwscanf(const wchar_t *__format, __builtin_va_list __local_argv)
+  {
+    return __ms_vwscanf (__format, __local_argv);
+  }
+
+
+
+  int __attribute__((__cdecl__)) fwprintf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,...);
+  int __attribute__((__cdecl__)) wprintf(const wchar_t * __restrict__ _Format,...);
+  int __attribute__((__cdecl__)) vfwprintf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,va_list _ArgList);
+  int __attribute__((__cdecl__)) vwprintf(const wchar_t * __restrict__ _Format,va_list _ArgList);
+# 1105 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+  __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) _wfsopen(const wchar_t *_Filename,const wchar_t *_Mode,int _ShFlag);
+
+
+  wint_t __attribute__((__cdecl__)) fgetwc(FILE *_File);
+  __attribute__ ((__dllimport__)) wint_t __attribute__((__cdecl__)) _fgetwchar(void);
+  wint_t __attribute__((__cdecl__)) fputwc(wchar_t _Ch,FILE *_File);
+  __attribute__ ((__dllimport__)) wint_t __attribute__((__cdecl__)) _fputwchar(wchar_t _Ch);
+  wint_t __attribute__((__cdecl__)) getwc(FILE *_File);
+  wint_t __attribute__((__cdecl__)) getwchar(void);
+  wint_t __attribute__((__cdecl__)) putwc(wchar_t _Ch,FILE *_File);
+  wint_t __attribute__((__cdecl__)) putwchar(wchar_t _Ch);
+  wint_t __attribute__((__cdecl__)) ungetwc(wint_t _Ch,FILE *_File);
+  wchar_t *__attribute__((__cdecl__)) fgetws(wchar_t * __restrict__ _Dst,int _SizeInWords,FILE * __restrict__ _File);
+  int __attribute__((__cdecl__)) fputws(const wchar_t * __restrict__ _Str,FILE * __restrict__ _File);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _getws(wchar_t *_String) ;
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _putws(const wchar_t *_Str);
+# 1186 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _scwprintf(const wchar_t * __restrict__ _Format,...);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _swprintf_c(wchar_t * __restrict__ _DstBuf,size_t _SizeInWords,const wchar_t * __restrict__ _Format,...);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _vswprintf_c(wchar_t * __restrict__ _DstBuf,size_t _SizeInWords,const wchar_t * __restrict__ _Format,va_list _ArgList);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _snwprintf(wchar_t * __restrict__ _Dest,size_t _Count,const wchar_t * __restrict__ _Format,...) ;
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _vsnwprintf(wchar_t * __restrict__ _Dest,size_t _Count,const wchar_t * __restrict__ _Format,va_list _Args) ;
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _vscwprintf(const wchar_t * __restrict__ _Format,va_list _ArgList);
+# 1200 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+  int __attribute__((__cdecl__)) __ms_snwprintf (wchar_t * __restrict__ s, size_t n, const wchar_t * __restrict__ format, ...);
+  int __attribute__((__cdecl__)) __ms_vsnwprintf (wchar_t * __restrict__ , size_t, const wchar_t * __restrict__ , va_list);
+  inline __attribute__((__cdecl__))
+  int snwprintf (wchar_t * __restrict__ s, size_t n, const wchar_t * __restrict__ format, ...)
+  {
+    int r;
+    va_list argp;
+    __builtin_va_start (argp, format);
+    r = _vsnwprintf (s, n, format, argp);
+    __builtin_va_end (argp);
+    return r;
+  }
+  inline __attribute__((__cdecl__))
+  int __attribute__((__cdecl__)) vsnwprintf (wchar_t * __restrict__ s, size_t n, const wchar_t * __restrict__ format, va_list arg)
+  {
+    return _vsnwprintf(s,n,format,arg);
+  }
+
+
+
+
+
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _swprintf(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Format,...);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _vswprintf(wchar_t * __restrict__ _Dest,const wchar_t * __restrict__ _Format,va_list _Args);
+
+
+
+
+# 1 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\swprintf.inl" 1 3
+# 10 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\swprintf.inl" 3
+# 1 "C:\\Xilinx\\2024.1\\Vitis_HLS\\2024.1\\win64\\tools\\clang-3.9-csynth\\lib\\clang\\7.0.0\\include\\vadefs.h" 1 3
+# 11 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\swprintf.inl" 2 3
+# 25 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\swprintf.inl" 3
+static __attribute__ ((__unused__)) __inline__ __attribute__((__cdecl__))
+                                                      __attribute__ ((__nonnull__ (3)))
+int vswprintf (wchar_t *__stream, size_t __count, const wchar_t *__format, __builtin_va_list __local_argv)
+{
+  return vsnwprintf( __stream, __count, __format, __local_argv );
+}
+
+static __attribute__ ((__unused__)) __inline__ __attribute__((__cdecl__))
+                                                      __attribute__ ((__nonnull__ (3)))
+int swprintf (wchar_t *__stream, size_t __count, const wchar_t *__format, ...)
+{
+  int __retval;
+  __builtin_va_list __local_argv;
+
+  __builtin_va_start( __local_argv, __format );
+  __retval = vswprintf( __stream, __count, __format, __local_argv );
+  __builtin_va_end( __local_argv );
+  return __retval;
+}
+
+
+
+extern "C++" {
+
+static __attribute__ ((__unused__)) __inline__ __attribute__((__cdecl__))
+                                                      __attribute__ ((__nonnull__ (2)))
+int vswprintf (wchar_t *__stream, const wchar_t *__format, __builtin_va_list __local_argv)
+{
+
+
+
+  return _vswprintf( __stream, __format, __local_argv );
+
+}
+
+static __attribute__ ((__unused__)) __inline__ __attribute__((__cdecl__))
+                                                      __attribute__ ((__nonnull__ (2)))
+int swprintf (wchar_t *__stream, const wchar_t *__format, ...)
+{
+  int __retval;
+  __builtin_va_list __local_argv;
+
+  __builtin_va_start( __local_argv, __format );
+  __retval = vswprintf( __stream, __format, __local_argv );
+  __builtin_va_end( __local_argv );
+  return __retval;
+}
+
+}
+# 1228 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 2 3
+# 1237 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wtempnam(const wchar_t *_Directory,const wchar_t *_FilePrefix);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _snwscanf(const wchar_t * __restrict__ _Src,size_t _MaxCount,const wchar_t * __restrict__ _Format,...);
+  __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) _wfdopen(int _FileHandle ,const wchar_t *_Mode);
+  __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) _wfopen(const wchar_t * __restrict__ _Filename,const wchar_t *__restrict__ _Mode) ;
+  __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) _wfreopen(const wchar_t * __restrict__ _Filename,const wchar_t * __restrict__ _Mode,FILE * __restrict__ _OldFile) ;
+
+
+
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _wperror(const wchar_t *_ErrMsg);
+
+  __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) _wpopen(const wchar_t *_Command,const wchar_t *_Mode);
+
+
+
+
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wremove(const wchar_t *_Filename);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wtmpnam(wchar_t *_Buffer);
+  __attribute__ ((__dllimport__)) wint_t __attribute__((__cdecl__)) _fgetwc_nolock(FILE *_File);
+  __attribute__ ((__dllimport__)) wint_t __attribute__((__cdecl__)) _fputwc_nolock(wchar_t _Ch,FILE *_File);
+  __attribute__ ((__dllimport__)) wint_t __attribute__((__cdecl__)) _ungetwc_nolock(wint_t _Ch,FILE *_File);
+# 1293 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _lock_file(FILE *_File);
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _unlock_file(FILE *_File);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _fclose_nolock(FILE *_File);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _fflush_nolock(FILE *_File);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _fread_nolock(void * __restrict__ _DstBuf,size_t _ElementSize,size_t _Count,FILE * __restrict__ _File);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _fseek_nolock(FILE *_File,long _Offset,int _Origin);
+  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _ftell_nolock(FILE *_File);
+  __extension__ __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _fseeki64_nolock(FILE *_File,long _Offset,int _Origin);
+  __extension__ __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _ftelli64_nolock(FILE *_File);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _fwrite_nolock(const void * __restrict__ _DstBuf,size_t _Size,size_t _Count,FILE * __restrict__ _File);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _ungetc_nolock(int _Ch,FILE *_File);
+
+
+
+
+
+  char *__attribute__((__cdecl__)) tempnam(const char *_Directory,const char *_FilePrefix) ;
+  int __attribute__((__cdecl__)) fcloseall(void) ;
+  FILE *__attribute__((__cdecl__)) fdopen(int _FileHandle,const char *_Format) ;
+  int __attribute__((__cdecl__)) fgetchar(void) ;
+  int __attribute__((__cdecl__)) fileno(FILE *_File) ;
+  int __attribute__((__cdecl__)) flushall(void) ;
+  int __attribute__((__cdecl__)) fputchar(int _Ch) ;
+  int __attribute__((__cdecl__)) getw(FILE *_File) ;
+  int __attribute__((__cdecl__)) putw(int _Ch,FILE *_File) ;
+  int __attribute__((__cdecl__)) rmtmp(void) ;
+# 1335 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+int __attribute__((__cdecl__)) __mingw_str_wide_utf8 (const wchar_t * const wptr, char **mbptr, size_t * buflen);
+# 1349 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+int __attribute__((__cdecl__)) __mingw_str_utf8_wide (const char *const mbptr, wchar_t ** wptr, size_t * buflen);
+# 1358 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+void __attribute__((__cdecl__)) __mingw_str_free(void *ptr);
+
+
+
+
+
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wspawnl(int _Mode,const wchar_t *_Filename,const wchar_t *_ArgList,...);
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wspawnle(int _Mode,const wchar_t *_Filename,const wchar_t *_ArgList,...);
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wspawnlp(int _Mode,const wchar_t *_Filename,const wchar_t *_ArgList,...);
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wspawnlpe(int _Mode,const wchar_t *_Filename,const wchar_t *_ArgList,...);
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wspawnv(int _Mode,const wchar_t *_Filename,const wchar_t *const *_ArgList);
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wspawnve(int _Mode,const wchar_t *_Filename,const wchar_t *const *_ArgList,const wchar_t *const *_Env);
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wspawnvp(int _Mode,const wchar_t *_Filename,const wchar_t *const *_ArgList);
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wspawnvpe(int _Mode,const wchar_t *_Filename,const wchar_t *const *_ArgList,const wchar_t *const *_Env);
+# 1388 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 3
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _spawnv(int _Mode,const char *_Filename,const char *const *_ArgList);
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _spawnve(int _Mode,const char *_Filename,const char *const *_ArgList,const char *const *_Env);
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _spawnvp(int _Mode,const char *_Filename,const char *const *_ArgList);
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _spawnvpe(int _Mode,const char *_Filename,const char *const *_ArgList,const char *const *_Env);
+
+
+
+}
+
+
+#pragma pack(pop)
+
+
+# 1 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\sec_api/stdio_s.h" 1 3
+
+
+
+
+
+
+
+
+# 1 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 1 3
+# 10 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\sec_api/stdio_s.h" 2 3
+# 1401 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 2 3
+
+# 1 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw_print_pop.h" 1 3
+# 1403 "C:/Xilinx/2024.1/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdio.h" 2 3
+# 3 "can_message_decoder.cpp" 2
+
+
+ap_uint<56> msg_lut[512];
+ap_uint<80> signal_def_mem[512];
+ap_uint<512> signal_names[512];
+HashEntry hash_table[512];
+unsigned int timer = 0;
+
+
+int compute_hash(ap_uint<29> can_id) {
+    return (can_id * 31) % 512;
+}
+
+
+void initialize_hash_table(int msg_lut_size, HashEntry hash_table[512]) {
 #pragma HLS PIPELINE II=1
 
 
- VITIS_LOOP_73_1: for (int i = 0; i < 1024; i++) {
+ VITIS_LOOP_21_1: for (int i = 0; i < 512; i++) {
         hash_table[i].message_id = 0;
         hash_table[i].lut_index = 0;
-        hash_table[i].accumulator = nullptr;
-        hash_table[i].next = nullptr;
+        hash_table[i].accumulator.counter = 0;
+
+        VITIS_LOOP_26_2: for(int j = 0; j < 68; j++){
+            hash_table[i].accumulator.accumulated_values[j] = 0;
+        }
     }
 
 
-    VITIS_LOOP_81_2: for (int i = 1; i <= msg_lut_size; i++) {
-        ap_uint<56> entry = msg_lut[i];
-        ap_uint<29> message_id = entry(56 -1, 56 -29);
+    VITIS_LOOP_32_3: for (int i = 1; i <= msg_lut_size; i++) {
+        ap_uint<56> message_def = msg_lut[i];
+        ap_uint<29> message_id = message_def(51, 23);
+        ap_uint<7> num_signals = message_def(22, 16);
         int hash_index = compute_hash(message_id);
+# 45 "can_message_decoder.cpp"
+        VITIS_LOOP_45_4: while(hash_table[hash_index].message_id != 0){
+            ++hash_index;
 
-
-        HashEntry* new_entry = new HashEntry();
-        new_entry->message_id = message_id;
-        new_entry->lut_index = i;
-        new_entry->accumulator = new SignalAccumulator();
-
-        new_entry->accumulator->counter = 0;
-        VITIS_LOOP_93_3: for (int j = 0; j < 68; j++) {
-            new_entry->accumulator->accumulated_values[j] = 0;
         }
-        new_entry->next = nullptr;
 
 
-        if (hash_table[hash_index].message_id == 0) {
-            hash_table[hash_index] = *new_entry;
-        } else {
 
-            HashEntry* current = &hash_table[hash_index];
-            VITIS_LOOP_104_4: while (current->next != nullptr) {
-                current = current->next;
-            }
-            current->next = new_entry;
-        }
+        hash_table[hash_index].message_id = message_id;
+        hash_table[hash_index].lut_index = i;
+
+
+
     }
 }
 
 
-__attribute__((sdx_kernel("decode_can_message", 0))) void decode_can_message(can_message_t message, decoded_signal_t decoded_signals[68], int *num_decoded_signals) {
+__attribute__((sdx_kernel("decode_can_message", 0))) void decode_can_message(can_message_t message, decoded_signal_t decoded_signals[68],
+                        int *num_decoded_signals, HashEntry hash_table[512],
+                        ap_uint<56> msg_lut[512], ap_uint<80> signal_def_mem[512]) {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=decode_can_message
-# 113 "can_message_decoder.cpp"
+# 63 "can_message_decoder.cpp"
 
-#pragma HLS INTERFACE ap_memory depth=1024 port=msg_lut
-#pragma HLS INTERFACE ap_memory depth=1024 port=signal_def_mem
-#pragma HLS INTERFACE ap_memory depth=1024 port=signal_names
-#pragma HLS INTERFACE ap_fifo port=decoded_signals
+#pragma HLS INTERFACE ap_memory depth=512 port=msg_lut
+#pragma HLS INTERFACE ap_memory depth=512 port=signal_def_mem
+#pragma HLS INTERFACE ap_memory depth=512 port=signal_names
+#pragma HLS INTERFACE ap_memory port=decoded_signals
 #pragma HLS INTERFACE s_axilite port=message
 #pragma HLS INTERFACE s_axilite port=num_decoded_signals
-#pragma HLS INTERFACE ap_ctrl_none port=return
 
-
- int hash_index = compute_hash(message.id);
-
-
-    HashEntry* current = &hash_table[hash_index];
-    SignalAccumulator* accumulator = nullptr;
-    VITIS_LOOP_128_1: while (current != nullptr) {
-        if (current->message_id == message.id) {
-            accumulator = current->accumulator;
-            break;
-        }
-        current = current->next;
+ if(0){
+        printf("Input to can message decoder: id: %08x \t data: %016x\n", message.id, message.data);
     }
 
-    if (accumulator == nullptr) {
 
+    int hash_index = compute_hash(message.id);
+    if(0){
+        printf("Computed hash index %d\n", hash_index);
+        printf("Message at that hash: %08x\n", hash_table[hash_index].message_id);
+    }
+
+
+
+    VITIS_LOOP_84_1: while(hash_table[hash_index].message_id != message.id && hash_index < 512){
+        if(0){
+            printf("Searching for non-conflicting hash index: %08x\t %08x\n", message.id, hash_table[hash_index].message_id);
+        }
+        ++hash_index;
+    }
+
+
+
+    if(hash_table[hash_index].message_id != message.id){
+        printf("Message not found, returning");
         return;
     }
 
 
-    ap_uint<56> entry = msg_lut[current->lut_index];
+    ap_uint<56> entry = msg_lut[hash_table[hash_index].lut_index];
     ap_uint<7> num_signals = entry(22, 16);
     ap_uint<16> signal_def_pointer = entry(15, 0);
 
+    if(0){
+        printf("LUT Index: %d\n", hash_table[hash_index].lut_index);
+        printf("Message Decode Raw: %014x\n", msg_lut[hash_table[hash_index].lut_index]);
+        printf("Message Decode Information: Num Signals: %02x \t Signal Def Pointer: %04llx\n", num_signals, (unsigned long long)signal_def_pointer);
+    }
 
-    ++accumulator->counter;
+
+    ++hash_table[hash_index].accumulator.counter;
 
 
-    VITIS_LOOP_150_2: for (int j = 0; j < num_signals; j++) {
+
+
+
+
+    VITIS_LOOP_117_2: for (int j = 0; j < num_signals; j++) {
 #pragma HLS UNROLL factor=68
  ap_uint<80> signal_def = signal_def_mem[signal_def_pointer + j + 1];
+
+        if(0){
+            printf("Signal Def: %020llx\n", (unsigned long long)signal_def);
+        }
 
 
         ap_uint<11> signal_name_index = signal_def(74, 64);
@@ -6085,9 +6687,15 @@ __attribute__((sdx_kernel("decode_can_message", 0))) void decode_can_message(can
         ap_uint<24> scale = signal_def(47, 24);
         ap_uint<24> offset = signal_def(23, 0);
 
+        if(0){
+            printf("Signal Definition Details: Start Bit: %02llx, Length: %02llx, Signed: %01llx, Endianness: %01llx, Scale: %06llx, Offset: %06llx, Signal Name Index: %03llx\n",
+                (unsigned long long)start_bit, (unsigned long long)length, (unsigned long long)is_signed, (unsigned long long)endianness, (unsigned long long)scale,
+                (unsigned long long)offset, (unsigned long long)signal_name_index);
+        }
+
 
         ap_uint<64> data = message.data;
-        ap_uint<32> raw_value = (data >> start_bit) & ((1 << length) - 1);
+        ap_uint<32> raw_value = (data >> (64 - (start_bit+length))) & ((1 << length) - 1);
 
         ap_int<32> value = raw_value;
 
@@ -6096,39 +6704,48 @@ __attribute__((sdx_kernel("decode_can_message", 0))) void decode_can_message(can
             value = value - (1 << length);
         }
 
+        if(0){
+            printf("Data: %016llx \t Raw Value: %08llx \t Sign Extended: %08llx\n",
+                (unsigned long long)data, (unsigned long long)raw_value, (unsigned long long)value);
+        }
+
 
         value = (value * scale) / 1e6 + offset / 1e3;
 
+        if(0){
+            printf("Decoded value %06llx\n", value);
+        }
 
-        accumulator->accumulated_values[j] += value;
+
+        hash_table[hash_index].accumulator.accumulated_values[j] += value;
     }
 
 
-    if (++timer >= 1000) {
+    if (++timer >= 1) {
         timer = 0;
 
 
-        VITIS_LOOP_186_3: for (int i = 0; i < 1024; i++) {
-            HashEntry* current = &hash_table[i];
-            VITIS_LOOP_188_4: while (current != nullptr) {
-                SignalAccumulator* acc = current->accumulator;
+        VITIS_LOOP_172_3: for (int i = 0; i < 512; i++) {
 
-                if(acc->counter > 0){
-                    VITIS_LOOP_192_5: for (int j = 0; j < 68; j++) {
-
-                        decoded_signals[*num_decoded_signals].signal_name_index = signal_def_mem[j + 1](74, 64);
-                        decoded_signals[*num_decoded_signals].value = acc->accumulated_values[j] / acc->counter;
+            if(hash_table[i].accumulator.counter > 0){
 
 
-                        acc->accumulated_values[j] = 0;
+                ap_uint<56> entry = msg_lut[hash_table[i].lut_index];
+                ap_uint<7> num_signals = entry(22, 16);
+                ap_uint<16> signal_def_pointer = entry(15, 0);
 
-                        (*num_decoded_signals)++;
-                    }
 
-                    acc->counter = 0;
+                VITIS_LOOP_182_4: for (int j = 0; j < num_signals; j++) {
+                    decoded_signals[*num_decoded_signals].signal_name_index = signal_def_mem[signal_def_pointer + j + 1](74, 64);
+                    decoded_signals[*num_decoded_signals].value = hash_table[i].accumulator.accumulated_values[j] / hash_table[i].accumulator.counter;
+
+
+                    hash_table[i].accumulator.accumulated_values[j] = 0;
+
+                    (*num_decoded_signals)++;
                 }
 
-                current = current->next;
+                hash_table[i].accumulator.counter = 0;
             }
         }
     }

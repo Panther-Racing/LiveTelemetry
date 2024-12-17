@@ -1,0 +1,4 @@
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable decoded_signals which has the interface type ap_memory
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable hash_table which has the interface type default
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable msg_lut which has the interface type ap_memory
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable signal_def_mem which has the interface type ap_memory

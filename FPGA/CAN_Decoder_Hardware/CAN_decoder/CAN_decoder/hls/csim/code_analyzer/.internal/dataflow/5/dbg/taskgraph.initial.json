@@ -1,0 +1,2867 @@
+[
+    {
+        "name": "_Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE",
+        "df_function": "%F776",
+        "df_type": "Function",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 61,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 174,
+                        "column": 1
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 61,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 174,
+                        "column": 1
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<Call(R2 decode_can_message) BB 'entry_iso0' Callee 'printf'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 71,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 71,
+                        "column": 95
+                    }
+                },
+                "display_name": "Process 1",
+                "io_signatures": {
+                    "has_unresolved_accesses": true,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 61,
+                                    "column": 39
+                                },
+                                "id": "VId_1437_.A0(0,32)",
+                                "name": "message.id",
+                                "display_name": "ap_uint<29> can_message_t::id"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 61,
+                                    "column": 39
+                                },
+                                "id": "VId_1437_.A1(64,64)",
+                                "name": "message.data",
+                                "display_name": "ap_uint<64> can_message_t::data"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 8,
+                                                "end": 16,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F776_R2",
+                        "description": "<call 'printf'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 71,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 71,
+                                "column": 95
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "4": {
+                "id": "4",
+                "name": "Region<Call(R3 decode_can_message) BB 'entry_iso1' Callee 'compute_hash'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 74,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 74,
+                        "column": 46
+                    }
+                },
+                "display_name": "Process 2",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 61,
+                                    "column": 39
+                                },
+                                "id": "VId_1437_.A0(0,32)",
+                                "name": "message.id",
+                                "display_name": "ap_uint<29> can_message_t::id"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 74,
+                                    "column": 22
+                                },
+                                "id": "V_0x0x1d16e29a7e0_!c?(?,?)",
+                                "name": "call15",
+                                "display_name": "i32 call15"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "SSA",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F776_R3",
+                        "description": "<call 'compute_hash'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 74,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 74,
+                                "column": 46
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F778",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 74,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 74,
+                                "column": 46
+                            }
+                        }
+                    }
+                ]
+            },
+            "5": {
+                "id": "5",
+                "name": "Region<Call(R4 decode_can_message) BB 'entry_iso2' Callee 'printf'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 75,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 75,
+                        "column": 50
+                    }
+                },
+                "display_name": "Process 3",
+                "io_signatures": {
+                    "has_unresolved_accesses": true,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 74,
+                                    "column": 22
+                                },
+                                "id": "V_0x0x1d16e29a7e0_!c?(?,?)",
+                                "name": "call15",
+                                "display_name": "i32 call15"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F776_R4",
+                        "description": "<call 'printf'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 75,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 75,
+                                "column": 50
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "6": {
+                "id": "6",
+                "name": "Region<Call(R5 decode_can_message) BB 'entry_iso3' Callee 'printf'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 76,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 76,
+                        "column": 77
+                    }
+                },
+                "display_name": "Process 4",
+                "io_signatures": {
+                    "has_unresolved_accesses": true,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1440_[?(?,4480)]dc.A0(0,32)",
+                                "name": "hash_table[*].message_id",
+                                "display_name": "ap_uint<29> HashEntry::message_id"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 74,
+                                    "column": 22
+                                },
+                                "id": "V_0x0x1d16e29a7e0_!c?(?,?)",
+                                "name": "call15",
+                                "display_name": "i32 call15"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "sext",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F776_R5",
+                        "description": "<call 'printf'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 76,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 76,
+                                "column": 77
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "7": {
+                "id": "7",
+                "name": "Region<Loop(R6 decode_can_message) Name 'while.cond'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 80,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 83,
+                        "column": 5
+                    }
+                },
+                "display_name": "Process 5",
+                "io_signatures": {
+                    "has_unresolved_accesses": true,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1440_[?(?,4480)]dc.A0(0,32)",
+                                "name": "hash_table[*].message_id",
+                                "display_name": "ap_uint<29> HashEntry::message_id"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 0
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 0
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 61,
+                                    "column": 39
+                                },
+                                "id": "VId_1437_.A0(0,32)",
+                                "name": "message.id",
+                                "display_name": "ap_uint<29> can_message_t::id"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 0
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 0
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 74,
+                                    "column": 22
+                                },
+                                "id": "V_0x0x1d16e29a7e0_!c?(?,?)",
+                                "name": "call15",
+                                "display_name": "i32 call15"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "phi",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 0,
+                                    "column": 0
+                                },
+                                "id": "V_0x0x1d16e19d238_!c?(?,?)",
+                                "name": "hash_index.0",
+                                "display_name": "i32 hash_index.0"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "phi",
+                                    "exec_count": 0
+                                }
+                            ],
+                            "kind": "SSA",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F776_R6",
+                        "description": "<loop 'while.cond'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 80,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 83,
+                                "column": 5
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "8": {
+                "id": "8",
+                "name": "Region<Switch(R17 decode_can_message)>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 87,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 90,
+                        "column": 5
+                    }
+                },
+                "display_name": "Process 6",
+                "io_signatures": {
+                    "has_unresolved_accesses": true,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1440_[?(?,4480)]dc.A0(0,32)",
+                                "name": "hash_table[*].message_id",
+                                "display_name": "ap_uint<29> HashEntry::message_id"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 61,
+                                    "column": 39
+                                },
+                                "id": "VId_1437_.A0(0,32)",
+                                "name": "message.id",
+                                "display_name": "ap_uint<29> can_message_t::id"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 0,
+                                    "column": 0
+                                },
+                                "id": "V_0x0x1d16e19d238_!c?(?,?)",
+                                "name": "hash_index.0",
+                                "display_name": "i32 hash_index.0"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "sext",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F776_R17",
+                        "description": "<switch>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 87,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 90,
+                                "column": 5
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "9": {
+                "id": "9",
+                "name": "Region<Atomic(R21 decode_can_message) BB 'if.end_iso9'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 93,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 95,
+                        "column": 50
+                    }
+                },
+                "display_name": "Process 7",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1440_[?(?,4480)]dc.A1(32,32)",
+                                "name": "hash_table[*].lut_index",
+                                "display_name": "int HashEntry::lut_index"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 63,
+                                    "column": 0
+                                },
+                                "id": "VId_1441_[?(?,64)]dc",
+                                "name": "msg_lut[*]",
+                                "display_name": "ap_uint<56> msg_lut[512]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 5
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 0,
+                                    "column": 0
+                                },
+                                "id": "V_0x0x1d16e19d238_!c?(?,?)",
+                                "name": "hash_index.0",
+                                "display_name": "i32 hash_index.0"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "sext",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 94,
+                                    "column": 30
+                                },
+                                "id": "V_0x0x1d16e254860_!c?(?,?)",
+                                "name": "conv.i.i.i224",
+                                "display_name": "i7 conv.i.i.i224"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "trunc",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "SSA",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 95,
+                                    "column": 38
+                                },
+                                "id": "V_0x0x1d16e255ac0_!c?(?,?)",
+                                "name": "conv.i.i.i266",
+                                "display_name": "i16 conv.i.i.i266"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "trunc",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "SSA",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F776_R21",
+                        "description": "<atomic 'if.end_iso9'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 93,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 95,
+                                "column": 50
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "10": {
+                "id": "10",
+                "name": "Region<Call(R22 decode_can_message) BB 'if.end_iso10' Callee 'printf'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 97,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 97,
+                        "column": 63
+                    }
+                },
+                "display_name": "Process 8",
+                "io_signatures": {
+                    "has_unresolved_accesses": true,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1440_[?(?,4480)]dc.A1(32,32)",
+                                "name": "hash_table[*].lut_index",
+                                "display_name": "int HashEntry::lut_index"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 0,
+                                    "column": 0
+                                },
+                                "id": "V_0x0x1d16e19d238_!c?(?,?)",
+                                "name": "hash_index.0",
+                                "display_name": "i32 hash_index.0"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "sext",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F776_R22",
+                        "description": "<call 'printf'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 97,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 97,
+                                "column": 63
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "11": {
+                "id": "11",
+                "name": "Region<Call(R23 decode_can_message) BB 'if.end_iso11' Callee 'printf'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 98,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 98,
+                        "column": 84
+                    }
+                },
+                "display_name": "Process 9",
+                "io_signatures": {
+                    "has_unresolved_accesses": true,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1440_[?(?,4480)]dc.A1(32,32)",
+                                "name": "hash_table[*].lut_index",
+                                "display_name": "int HashEntry::lut_index"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 63,
+                                    "column": 0
+                                },
+                                "id": "VId_1441_[?(?,64)]dc",
+                                "name": "msg_lut[*]",
+                                "display_name": "ap_uint<56> msg_lut[512]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 5
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 0,
+                                    "column": 0
+                                },
+                                "id": "V_0x0x1d16e19d238_!c?(?,?)",
+                                "name": "hash_index.0",
+                                "display_name": "i32 hash_index.0"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "sext",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F776_R23",
+                        "description": "<call 'printf'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 98,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 98,
+                                "column": 84
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "12": {
+                "id": "12",
+                "name": "Region<Call(R24 decode_can_message) BB 'if.end_iso12' Callee 'printf'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 99,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 99,
+                        "column": 144
+                    }
+                },
+                "display_name": "Process 10",
+                "io_signatures": {
+                    "has_unresolved_accesses": true,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 95,
+                                    "column": 38
+                                },
+                                "id": "V_0x0x1d16e255ac0_!c?(?,?)",
+                                "name": "conv.i.i.i266",
+                                "display_name": "i16 conv.i.i.i266"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "zext",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 94,
+                                    "column": 30
+                                },
+                                "id": "V_0x0x1d16e254860_!c?(?,?)",
+                                "name": "conv.i.i.i224",
+                                "display_name": "i7 conv.i.i.i224"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "zext",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F776_R24",
+                        "description": "<call 'printf'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 99,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 99,
+                                "column": 144
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "13": {
+                "id": "13",
+                "name": "Region<Atomic(R25 decode_can_message) BB 'if.end_iso13'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 102,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 102,
+                        "column": 42
+                    }
+                },
+                "display_name": "Process 11",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A1(4352,32)",
+                                "name": "hash_table[*].accumulator.counter",
+                                "display_name": "ap_uint<32> HashEntry::SignalAccumulator::counter"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 0,
+                                    "column": 0
+                                },
+                                "id": "V_0x0x1d16e19d238_!c?(?,?)",
+                                "name": "hash_index.0",
+                                "display_name": "i32 hash_index.0"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "sext",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F776_R25",
+                        "description": "<atomic 'if.end_iso13'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 102,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 102,
+                                "column": 42
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "14": {
+                "id": "14",
+                "name": "Region<Loop(R26 decode_can_message) Name 'for.cond'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 109,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 143,
+                        "column": 5
+                    }
+                },
+                "display_name": "Process 12",
+                "io_signatures": {
+                    "has_unresolved_accesses": true,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 63,
+                                    "column": 0
+                                },
+                                "id": "VId_1442_[?(?,128)]dc",
+                                "name": "signal_def_mem[*]",
+                                "display_name": "ap_uint<80> signal_def_mem[512]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 6
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A0(0,4352)[?(?,64)]",
+                                "name": "hash_table[*].accumulator.accumulated_values[*]",
+                                "display_name": "ap_int<64> HashEntry::SignalAccumulator::accumulated_values[68]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 4
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 61,
+                                    "column": 39
+                                },
+                                "id": "VId_1437_.A1(64,64)",
+                                "name": "message.data",
+                                "display_name": "ap_uint<64> can_message_t::data"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 8,
+                                                "end": 16,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 94,
+                                    "column": 30
+                                },
+                                "id": "V_0x0x1d16e254860_!c?(?,?)",
+                                "name": "conv.i.i.i224",
+                                "display_name": "i7 conv.i.i.i224"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "zext",
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 95,
+                                    "column": 38
+                                },
+                                "id": "V_0x0x1d16e255ac0_!c?(?,?)",
+                                "name": "conv.i.i.i266",
+                                "display_name": "i16 conv.i.i.i266"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "zext",
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 0,
+                                    "column": 0
+                                },
+                                "id": "V_0x0x1d16e19d238_!c?(?,?)",
+                                "name": "hash_index.0",
+                                "display_name": "i32 hash_index.0"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "sext",
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F776_R26",
+                        "description": "<loop 'for.cond'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 109,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 143,
+                                "column": 5
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "15": {
+                "id": "15",
+                "name": "Region<GuardedLoop<R(79 decode_can_message)>>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 146,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                        "line": 173,
+                        "column": 5
+                    }
+                },
+                "display_name": "Process 13",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A1(4352,32)",
+                                "name": "hash_table[*].accumulator.counter",
+                                "display_name": "ap_uint<32> HashEntry::SignalAccumulator::counter"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 552,
+                                                "end": 286716,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 0
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 552,
+                                                "end": 286716,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 0
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 552,
+                                                "end": 286716,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 0
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1440_[?(?,4480)]dc.A1(32,32)",
+                                "name": "hash_table[*].lut_index",
+                                "display_name": "int HashEntry::lut_index"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 4,
+                                                "end": 286168,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 0
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 63,
+                                    "column": 0
+                                },
+                                "id": "VId_1441_[?(?,64)]dc",
+                                "name": "msg_lut[*]",
+                                "display_name": "ap_uint<56> msg_lut[512]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 0
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 5
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1439_*0(0,32)arg",
+                                "name": "(*num_decoded_signals)",
+                                "display_name": "int *num_decoded_signals"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 0
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 0
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 0
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 0
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 3
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 61,
+                                    "column": 0
+                                },
+                                "id": "VId_1438_[?(?,64)]dc.A0(0,16)",
+                                "name": "decoded_signals[*].signal_name_index",
+                                "display_name": "ap_uint<11> decoded_signal_t::signal_name_index"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 0
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 2
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 62,
+                                    "column": 0
+                                },
+                                "id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A0(0,4352)[?(?,64)]",
+                                "name": "hash_table[*].accumulator.accumulated_values[*]",
+                                "display_name": "ap_int<64> HashEntry::SignalAccumulator::accumulated_values[68]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 0
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 0
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 61,
+                                    "column": 0
+                                },
+                                "id": "VId_1438_[?(?,64)]dc.A1(32,32)",
+                                "name": "decoded_signals[*].value",
+                                "display_name": "ap_int<32> decoded_signal_t::value"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 0
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 2
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                    "line": 9,
+                                    "column": 0
+                                },
+                                "id": "VId_10_!c?(?,?)",
+                                "name": "timer",
+                                "display_name": "unsigned int timer"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "subregions": [
+                    {
+                        "id": "%F776_R79",
+                        "description": "<switch>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 146,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 173,
+                                "column": 5
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%L112",
+                        "region_type": "Loop",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 150,
+                                "column": 9
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 172,
+                                "column": 9
+                            }
+                        }
+                    },
+                    {
+                        "id": "%L113",
+                        "region_type": "Loop",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 160,
+                                "column": 17
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                                "line": 168,
+                                "column": 17
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "channels": {
+            "message.id_RAR_3_4_#0": {
+                "name": "message.id_RAR_3_4_#0",
+                "variable_id": "VId_1437_.A0(0,32)",
+                "variable_name": "message.id",
+                "declaration": "ap_uint<29> can_message_t::id",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 61,
+                    "column": 39
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "call15_RAW_4_5_#1": {
+                "name": "call15_RAW_4_5_#1",
+                "variable_id": "V_0x0x1d16e29a7e0_!c?(?,?)",
+                "variable_name": "call15",
+                "declaration": "i32 call15",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 74,
+                    "column": 22
+                },
+                "source": "4",
+                "sink": "5"
+            },
+            "hash_table[*].message_id_RAW_1_6_#2": {
+                "name": "hash_table[*].message_id_RAW_1_6_#2",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A0(0,32)",
+                "variable_name": "hash_table[*].message_id",
+                "declaration": "ap_uint<29> HashEntry::message_id",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "6"
+            },
+            "call15_RAR_5_6_#3": {
+                "name": "call15_RAR_5_6_#3",
+                "variable_id": "V_0x0x1d16e29a7e0_!c?(?,?)",
+                "variable_name": "call15",
+                "declaration": "i32 call15",
+                "kind": "SSA",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 74,
+                    "column": 22
+                },
+                "source": "5",
+                "sink": "6"
+            },
+            "hash_table[*].message_id_RAR_6_7_#4": {
+                "name": "hash_table[*].message_id_RAR_6_7_#4",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A0(0,32)",
+                "variable_name": "hash_table[*].message_id",
+                "declaration": "ap_uint<29> HashEntry::message_id",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "6",
+                "sink": "7"
+            },
+            "message.id_RAR_4_7_#5": {
+                "name": "message.id_RAR_4_7_#5",
+                "variable_id": "VId_1437_.A0(0,32)",
+                "variable_name": "message.id",
+                "declaration": "ap_uint<29> can_message_t::id",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 61,
+                    "column": 39
+                },
+                "source": "4",
+                "sink": "7"
+            },
+            "call15_RAR_6_7_#6": {
+                "name": "call15_RAR_6_7_#6",
+                "variable_id": "V_0x0x1d16e29a7e0_!c?(?,?)",
+                "variable_name": "call15",
+                "declaration": "i32 call15",
+                "kind": "SSA",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 74,
+                    "column": 22
+                },
+                "source": "6",
+                "sink": "7"
+            },
+            "hash_index.0_RAW_7_8_#7": {
+                "name": "hash_index.0_RAW_7_8_#7",
+                "variable_id": "V_0x0x1d16e19d238_!c?(?,?)",
+                "variable_name": "hash_index.0",
+                "declaration": "i32 hash_index.0",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 0,
+                    "column": 0
+                },
+                "source": "7",
+                "sink": "8"
+            },
+            "hash_table[*].message_id_RAR_7_8_#8": {
+                "name": "hash_table[*].message_id_RAR_7_8_#8",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A0(0,32)",
+                "variable_name": "hash_table[*].message_id",
+                "declaration": "ap_uint<29> HashEntry::message_id",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "7",
+                "sink": "8"
+            },
+            "message.id_RAR_7_8_#9": {
+                "name": "message.id_RAR_7_8_#9",
+                "variable_id": "VId_1437_.A0(0,32)",
+                "variable_name": "message.id",
+                "declaration": "ap_uint<29> can_message_t::id",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 61,
+                    "column": 39
+                },
+                "source": "7",
+                "sink": "8"
+            },
+            "hash_table[*].lut_index_RAW_1_9_#10": {
+                "name": "hash_table[*].lut_index_RAW_1_9_#10",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A1(32,32)",
+                "variable_name": "hash_table[*].lut_index",
+                "declaration": "int HashEntry::lut_index",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "9"
+            },
+            "msg_lut[*]_RAW_1_9_#11": {
+                "name": "msg_lut[*]_RAW_1_9_#11",
+                "variable_id": "VId_1441_[?(?,64)]dc",
+                "variable_name": "msg_lut[*]",
+                "declaration": "ap_uint<56> msg_lut[512]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 63,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "9"
+            },
+            "hash_index.0_RAR_8_9_#12": {
+                "name": "hash_index.0_RAR_8_9_#12",
+                "variable_id": "V_0x0x1d16e19d238_!c?(?,?)",
+                "variable_name": "hash_index.0",
+                "declaration": "i32 hash_index.0",
+                "kind": "SSA",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 0,
+                    "column": 0
+                },
+                "source": "8",
+                "sink": "9"
+            },
+            "hash_table[*].lut_index_RAR_9_10_#13": {
+                "name": "hash_table[*].lut_index_RAR_9_10_#13",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A1(32,32)",
+                "variable_name": "hash_table[*].lut_index",
+                "declaration": "int HashEntry::lut_index",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "9",
+                "sink": "10"
+            },
+            "hash_index.0_RAR_9_10_#14": {
+                "name": "hash_index.0_RAR_9_10_#14",
+                "variable_id": "V_0x0x1d16e19d238_!c?(?,?)",
+                "variable_name": "hash_index.0",
+                "declaration": "i32 hash_index.0",
+                "kind": "SSA",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 0,
+                    "column": 0
+                },
+                "source": "9",
+                "sink": "10"
+            },
+            "hash_table[*].lut_index_RAR_10_11_#15": {
+                "name": "hash_table[*].lut_index_RAR_10_11_#15",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A1(32,32)",
+                "variable_name": "hash_table[*].lut_index",
+                "declaration": "int HashEntry::lut_index",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "10",
+                "sink": "11"
+            },
+            "msg_lut[*]_RAR_9_11_#16": {
+                "name": "msg_lut[*]_RAR_9_11_#16",
+                "variable_id": "VId_1441_[?(?,64)]dc",
+                "variable_name": "msg_lut[*]",
+                "declaration": "ap_uint<56> msg_lut[512]",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 63,
+                    "column": 0
+                },
+                "source": "9",
+                "sink": "11"
+            },
+            "hash_index.0_RAR_10_11_#17": {
+                "name": "hash_index.0_RAR_10_11_#17",
+                "variable_id": "V_0x0x1d16e19d238_!c?(?,?)",
+                "variable_name": "hash_index.0",
+                "declaration": "i32 hash_index.0",
+                "kind": "SSA",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 0,
+                    "column": 0
+                },
+                "source": "10",
+                "sink": "11"
+            },
+            "conv.i.i.i224_RAW_9_12_#18": {
+                "name": "conv.i.i.i224_RAW_9_12_#18",
+                "variable_id": "V_0x0x1d16e254860_!c?(?,?)",
+                "variable_name": "conv.i.i.i224",
+                "declaration": "i7 conv.i.i.i224",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 94,
+                    "column": 30
+                },
+                "source": "9",
+                "sink": "12"
+            },
+            "conv.i.i.i266_RAW_9_12_#19": {
+                "name": "conv.i.i.i266_RAW_9_12_#19",
+                "variable_id": "V_0x0x1d16e255ac0_!c?(?,?)",
+                "variable_name": "conv.i.i.i266",
+                "declaration": "i16 conv.i.i.i266",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 95,
+                    "column": 38
+                },
+                "source": "9",
+                "sink": "12"
+            },
+            "hash_table[*].accumulator.counter_RAW_1_13_#20": {
+                "name": "hash_table[*].accumulator.counter_RAW_1_13_#20",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A1(4352,32)",
+                "variable_name": "hash_table[*].accumulator.counter",
+                "declaration": "ap_uint<32> HashEntry::SignalAccumulator::counter",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "13"
+            },
+            "hash_table[*].accumulator.counter_WAW_1_13_#21": {
+                "name": "hash_table[*].accumulator.counter_WAW_1_13_#21",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A1(4352,32)",
+                "variable_name": "hash_table[*].accumulator.counter",
+                "declaration": "ap_uint<32> HashEntry::SignalAccumulator::counter",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "13"
+            },
+            "hash_index.0_RAR_11_13_#22": {
+                "name": "hash_index.0_RAR_11_13_#22",
+                "variable_id": "V_0x0x1d16e19d238_!c?(?,?)",
+                "variable_name": "hash_index.0",
+                "declaration": "i32 hash_index.0",
+                "kind": "SSA",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 0,
+                    "column": 0
+                },
+                "source": "11",
+                "sink": "13"
+            },
+            "hash_table[*].accumulator.accumulated_values[*]_RAW_1_14_#23": {
+                "name": "hash_table[*].accumulator.accumulated_values[*]_RAW_1_14_#23",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A0(0,4352)[?(?,64)]",
+                "variable_name": "hash_table[*].accumulator.accumulated_values[*]",
+                "declaration": "ap_int<64> HashEntry::SignalAccumulator::accumulated_values[68]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "14"
+            },
+            "signal_def_mem[*]_RAW_1_14_#24": {
+                "name": "signal_def_mem[*]_RAW_1_14_#24",
+                "variable_id": "VId_1442_[?(?,128)]dc",
+                "variable_name": "signal_def_mem[*]",
+                "declaration": "ap_uint<80> signal_def_mem[512]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 63,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "14"
+            },
+            "hash_table[*].accumulator.accumulated_values[*]_WAW_1_14_#25": {
+                "name": "hash_table[*].accumulator.accumulated_values[*]_WAW_1_14_#25",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A0(0,4352)[?(?,64)]",
+                "variable_name": "hash_table[*].accumulator.accumulated_values[*]",
+                "declaration": "ap_int<64> HashEntry::SignalAccumulator::accumulated_values[68]",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "14"
+            },
+            "message.data_RAR_3_14_#26": {
+                "name": "message.data_RAR_3_14_#26",
+                "variable_id": "VId_1437_.A1(64,64)",
+                "variable_name": "message.data",
+                "declaration": "ap_uint<64> can_message_t::data",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 61,
+                    "column": 39
+                },
+                "source": "3",
+                "sink": "14"
+            },
+            "hash_index.0_RAR_13_14_#27": {
+                "name": "hash_index.0_RAR_13_14_#27",
+                "variable_id": "V_0x0x1d16e19d238_!c?(?,?)",
+                "variable_name": "hash_index.0",
+                "declaration": "i32 hash_index.0",
+                "kind": "SSA",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 0,
+                    "column": 0
+                },
+                "source": "13",
+                "sink": "14"
+            },
+            "conv.i.i.i224_RAR_12_14_#28": {
+                "name": "conv.i.i.i224_RAR_12_14_#28",
+                "variable_id": "V_0x0x1d16e254860_!c?(?,?)",
+                "variable_name": "conv.i.i.i224",
+                "declaration": "i7 conv.i.i.i224",
+                "kind": "SSA",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 94,
+                    "column": 30
+                },
+                "source": "12",
+                "sink": "14"
+            },
+            "conv.i.i.i266_RAR_12_14_#29": {
+                "name": "conv.i.i.i266_RAR_12_14_#29",
+                "variable_id": "V_0x0x1d16e255ac0_!c?(?,?)",
+                "variable_name": "conv.i.i.i266",
+                "declaration": "i16 conv.i.i.i266",
+                "kind": "SSA",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 95,
+                    "column": 38
+                },
+                "source": "12",
+                "sink": "14"
+            },
+            "(*num_decoded_signals)_RAW_1_15_#30": {
+                "name": "(*num_decoded_signals)_RAW_1_15_#30",
+                "variable_id": "VId_1439_*0(0,32)arg",
+                "variable_name": "(*num_decoded_signals)",
+                "declaration": "int *num_decoded_signals",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "15"
+            },
+            "hash_table[*].accumulator.accumulated_values[*]_RAW_14_15_#31": {
+                "name": "hash_table[*].accumulator.accumulated_values[*]_RAW_14_15_#31",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A0(0,4352)[?(?,64)]",
+                "variable_name": "hash_table[*].accumulator.accumulated_values[*]",
+                "declaration": "ap_int<64> HashEntry::SignalAccumulator::accumulated_values[68]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "14",
+                "sink": "15"
+            },
+            "hash_table[*].accumulator.counter_RAW_13_15_#32": {
+                "name": "hash_table[*].accumulator.counter_RAW_13_15_#32",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A1(4352,32)",
+                "variable_name": "hash_table[*].accumulator.counter",
+                "declaration": "ap_uint<32> HashEntry::SignalAccumulator::counter",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "13",
+                "sink": "15"
+            },
+            "timer_RAW_1_15_#33": {
+                "name": "timer_RAW_1_15_#33",
+                "variable_id": "VId_10_!c?(?,?)",
+                "variable_name": "timer",
+                "declaration": "unsigned int timer",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 9,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "15"
+            },
+            "hash_table[*].accumulator.accumulated_values[*]_WAR_14_15_#34": {
+                "name": "hash_table[*].accumulator.accumulated_values[*]_WAR_14_15_#34",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A0(0,4352)[?(?,64)]",
+                "variable_name": "hash_table[*].accumulator.accumulated_values[*]",
+                "declaration": "ap_int<64> HashEntry::SignalAccumulator::accumulated_values[68]",
+                "kind": "Ptr",
+                "dependence": "WAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "14",
+                "sink": "15"
+            },
+            "hash_table[*].accumulator.counter_WAR_13_15_#35": {
+                "name": "hash_table[*].accumulator.counter_WAR_13_15_#35",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A1(4352,32)",
+                "variable_name": "hash_table[*].accumulator.counter",
+                "declaration": "ap_uint<32> HashEntry::SignalAccumulator::counter",
+                "kind": "Ptr",
+                "dependence": "WAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "13",
+                "sink": "15"
+            },
+            "(*num_decoded_signals)_WAW_1_15_#36": {
+                "name": "(*num_decoded_signals)_WAW_1_15_#36",
+                "variable_id": "VId_1439_*0(0,32)arg",
+                "variable_name": "(*num_decoded_signals)",
+                "declaration": "int *num_decoded_signals",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "15"
+            },
+            "hash_table[*].accumulator.accumulated_values[*]_WAW_14_15_#37": {
+                "name": "hash_table[*].accumulator.accumulated_values[*]_WAW_14_15_#37",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A0(0,4352)[?(?,64)]",
+                "variable_name": "hash_table[*].accumulator.accumulated_values[*]",
+                "declaration": "ap_int<64> HashEntry::SignalAccumulator::accumulated_values[68]",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "14",
+                "sink": "15"
+            },
+            "hash_table[*].accumulator.counter_WAW_13_15_#38": {
+                "name": "hash_table[*].accumulator.counter_WAW_13_15_#38",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A1(4352,32)",
+                "variable_name": "hash_table[*].accumulator.counter",
+                "declaration": "ap_uint<32> HashEntry::SignalAccumulator::counter",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "13",
+                "sink": "15"
+            },
+            "timer_WAW_1_15_#39": {
+                "name": "timer_WAW_1_15_#39",
+                "variable_id": "VId_10_!c?(?,?)",
+                "variable_name": "timer",
+                "declaration": "unsigned int timer",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 9,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "15"
+            },
+            "hash_table[*].lut_index_RAR_11_15_#40": {
+                "name": "hash_table[*].lut_index_RAR_11_15_#40",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A1(32,32)",
+                "variable_name": "hash_table[*].lut_index",
+                "declaration": "int HashEntry::lut_index",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "11",
+                "sink": "15"
+            },
+            "hash_table[*].accumulator.accumulated_values[*]_RAR_14_15_#41": {
+                "name": "hash_table[*].accumulator.accumulated_values[*]_RAR_14_15_#41",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A0(0,4352)[?(?,64)]",
+                "variable_name": "hash_table[*].accumulator.accumulated_values[*]",
+                "declaration": "ap_int<64> HashEntry::SignalAccumulator::accumulated_values[68]",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "14",
+                "sink": "15"
+            },
+            "hash_table[*].accumulator.counter_RAR_13_15_#42": {
+                "name": "hash_table[*].accumulator.counter_RAR_13_15_#42",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A1(4352,32)",
+                "variable_name": "hash_table[*].accumulator.counter",
+                "declaration": "ap_uint<32> HashEntry::SignalAccumulator::counter",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "13",
+                "sink": "15"
+            },
+            "msg_lut[*]_RAR_11_15_#43": {
+                "name": "msg_lut[*]_RAR_11_15_#43",
+                "variable_id": "VId_1441_[?(?,64)]dc",
+                "variable_name": "msg_lut[*]",
+                "declaration": "ap_uint<56> msg_lut[512]",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 63,
+                    "column": 0
+                },
+                "source": "11",
+                "sink": "15"
+            },
+            "decoded_signals[*].signal_name_index_RAW_15_2_#44": {
+                "name": "decoded_signals[*].signal_name_index_RAW_15_2_#44",
+                "variable_id": "VId_1438_[?(?,64)]dc.A0(0,16)",
+                "variable_name": "decoded_signals[*].signal_name_index",
+                "declaration": "ap_uint<11> decoded_signal_t::signal_name_index",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 61,
+                    "column": 0
+                },
+                "source": "15",
+                "sink": "2"
+            },
+            "decoded_signals[*].value_RAW_15_2_#45": {
+                "name": "decoded_signals[*].value_RAW_15_2_#45",
+                "variable_id": "VId_1438_[?(?,64)]dc.A1(32,32)",
+                "variable_name": "decoded_signals[*].value",
+                "declaration": "ap_int<32> decoded_signal_t::value",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 61,
+                    "column": 0
+                },
+                "source": "15",
+                "sink": "2"
+            },
+            "(*num_decoded_signals)_RAW_15_2_#46": {
+                "name": "(*num_decoded_signals)_RAW_15_2_#46",
+                "variable_id": "VId_1439_*0(0,32)arg",
+                "variable_name": "(*num_decoded_signals)",
+                "declaration": "int *num_decoded_signals",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "15",
+                "sink": "2"
+            },
+            "hash_table[*].accumulator.accumulated_values[*]_RAW_15_2_#47": {
+                "name": "hash_table[*].accumulator.accumulated_values[*]_RAW_15_2_#47",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A0(0,4352)[?(?,64)]",
+                "variable_name": "hash_table[*].accumulator.accumulated_values[*]",
+                "declaration": "ap_int<64> HashEntry::SignalAccumulator::accumulated_values[68]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "15",
+                "sink": "2"
+            },
+            "hash_table[*].accumulator.counter_RAW_15_2_#48": {
+                "name": "hash_table[*].accumulator.counter_RAW_15_2_#48",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A1(4352,32)",
+                "variable_name": "hash_table[*].accumulator.counter",
+                "declaration": "ap_uint<32> HashEntry::SignalAccumulator::counter",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "15",
+                "sink": "2"
+            },
+            "timer_RAW_15_2_#49": {
+                "name": "timer_RAW_15_2_#49",
+                "variable_id": "VId_10_!c?(?,?)",
+                "variable_name": "timer",
+                "declaration": "unsigned int timer",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 9,
+                    "column": 0
+                },
+                "source": "15",
+                "sink": "2"
+            },
+            "(*num_decoded_signals)_RAR_15_2_#50": {
+                "name": "(*num_decoded_signals)_RAR_15_2_#50",
+                "variable_id": "VId_1439_*0(0,32)arg",
+                "variable_name": "(*num_decoded_signals)",
+                "declaration": "int *num_decoded_signals",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "15",
+                "sink": "2"
+            },
+            "hash_table[*].accumulator.accumulated_values[*]_RAR_15_2_#51": {
+                "name": "hash_table[*].accumulator.accumulated_values[*]_RAR_15_2_#51",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A0(0,4352)[?(?,64)]",
+                "variable_name": "hash_table[*].accumulator.accumulated_values[*]",
+                "declaration": "ap_int<64> HashEntry::SignalAccumulator::accumulated_values[68]",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "15",
+                "sink": "2"
+            },
+            "hash_table[*].accumulator.counter_RAR_15_2_#52": {
+                "name": "hash_table[*].accumulator.counter_RAR_15_2_#52",
+                "variable_id": "VId_1440_[?(?,4480)]dc.A2(64,4416).A1(4352,32)",
+                "variable_name": "hash_table[*].accumulator.counter",
+                "declaration": "ap_uint<32> HashEntry::SignalAccumulator::counter",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 62,
+                    "column": 0
+                },
+                "source": "15",
+                "sink": "2"
+            },
+            "timer_RAR_15_2_#53": {
+                "name": "timer_RAR_15_2_#53",
+                "variable_id": "VId_10_!c?(?,?)",
+                "variable_name": "timer",
+                "declaration": "unsigned int timer",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 0,
+                "src_loc": {
+                    "file": "C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+                    "line": 9,
+                    "column": 0
+                },
+                "source": "15",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "3",
+                "sink": "4"
+            },
+            {
+                "source": "4",
+                "sink": "5"
+            },
+            {
+                "source": "5",
+                "sink": "6"
+            },
+            {
+                "source": "6",
+                "sink": "7"
+            },
+            {
+                "source": "7",
+                "sink": "8"
+            },
+            {
+                "source": "8",
+                "sink": "9"
+            },
+            {
+                "source": "9",
+                "sink": "10"
+            },
+            {
+                "source": "10",
+                "sink": "11"
+            },
+            {
+                "source": "11",
+                "sink": "12"
+            },
+            {
+                "source": "12",
+                "sink": "13"
+            },
+            {
+                "source": "13",
+                "sink": "14"
+            },
+            {
+                "source": "14",
+                "sink": "15"
+            },
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "15",
+                "sink": "2"
+            }
+        ]
+    }
+]

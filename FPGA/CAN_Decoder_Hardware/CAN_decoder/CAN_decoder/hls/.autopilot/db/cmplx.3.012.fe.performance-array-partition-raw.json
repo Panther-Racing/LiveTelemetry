@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 970,
+    "calls": "",
+    "file": "can_message_decoder.cpp",
+    "fileloc": 61,
+    "instructions": 6708,
+    "loads": {
+      "G": 1,
+      "T": 146
+    },
+    "name": "decode_can_message",
+    "stores": {
+      "G": 2,
+      "T": 73
+    },
+    "total_instructions": 6708
+  }
+}

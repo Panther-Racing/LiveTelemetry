@@ -1,0 +1,240 @@
+
+
+================================================================
+== Vitis HLS Report for 'decode_can_message'
+================================================================
+* Date:           Tue Dec 17 11:29:15 2024
+
+* Version:        2024.1.2 (Build 5096458 on Sep  5 2024)
+* Project:        CAN_decoder
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  10.00 ns|  11.099 ns|     0.50 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------------------+----------------------------------------------+---------+---------+-----------+----------+-----+-----+-----------------------------------------------+
+        |                                                         |                                              |  Latency (cycles) |  Latency (absolute)  |  Interval |                    Pipeline                   |
+        |                         Instance                        |                    Module                    |   min   |   max   |    min    |    max   | min | max |                      Type                     |
+        +---------------------------------------------------------+----------------------------------------------+---------+---------+-----------+----------+-----+-----+-----------------------------------------------+
+        |grp_decode_can_message_Pipeline_VITIS_LOOP_84_1_fu_205   |decode_can_message_Pipeline_VITIS_LOOP_84_1   |        ?|        ?|          ?|         ?|    0|    0|  loop auto-rewind stp(delay=0 clock cycles(s))|
+        |grp_decode_can_message_Pipeline_VITIS_LOOP_117_2_fu_216  |decode_can_message_Pipeline_VITIS_LOOP_117_2  |      316|      452|   3.507 us|  5.017 us|   68|  204|  loop auto-rewind stp(delay=0 clock cycles(s))|
+        |grp_decode_can_message_Pipeline_VITIS_LOOP_182_4_fu_229  |decode_can_message_Pipeline_VITIS_LOOP_182_4  |        2|      196|  20.000 ns|  1.960 us|    1|  128|  loop auto-rewind stp(delay=0 clock cycles(s))|
+        +---------------------------------------------------------+----------------------------------------------+---------+---------+-----------+----------+-----+-----+-----------------------------------------------+
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_172_3  |     1536|   102912|   3 ~ 201|          -|          -|   512|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|     195|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        0|    5|   73721|  111641|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       0|     280|    -|
+|Register         |        -|    -|     294|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    5|   74015|  112116|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      280|  220|  106400|   53200|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    2|      69|     210|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------------------+----------------------------------------------+---------+----+-------+--------+-----+
+    |                         Instance                        |                    Module                    | BRAM_18K| DSP|   FF  |   LUT  | URAM|
+    +---------------------------------------------------------+----------------------------------------------+---------+----+-------+--------+-----+
+    |control_s_axi_U                                          |control_s_axi                                 |        0|   0|    240|     424|    0|
+    |grp_decode_can_message_Pipeline_VITIS_LOOP_117_2_fu_216  |decode_can_message_Pipeline_VITIS_LOOP_117_2  |        0|   5|  64528|  104331|    0|
+    |grp_decode_can_message_Pipeline_VITIS_LOOP_182_4_fu_229  |decode_can_message_Pipeline_VITIS_LOOP_182_4  |        0|   0|   8921|    6769|    0|
+    |grp_decode_can_message_Pipeline_VITIS_LOOP_84_1_fu_205   |decode_can_message_Pipeline_VITIS_LOOP_84_1   |        0|   0|     32|     117|    0|
+    +---------------------------------------------------------+----------------------------------------------+---------+----+-------+--------+-----+
+    |Total                                                    |                                              |        0|   5|  73721|  111641|    0|
+    +---------------------------------------------------------+----------------------------------------------+---------+----+-------+--------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln110_fu_325_p2               |         +|   0|  0|  39|          32|           1|
+    |add_ln172_fu_345_p2               |         +|   0|  0|  13|          10|           1|
+    |add_ln182_fu_417_p2               |         +|   0|  0|  39|          32|          32|
+    |add_ln184_fu_380_p2               |         +|   0|  0|  23|          16|          16|
+    |hash_index_fu_283_p2              |         -|   0|  0|  14|           9|           9|
+    |ap_block_state12_on_subcall_done  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln172_fu_339_p2              |      icmp|   0|  0|  12|          10|          11|
+    |icmp_ln174_fu_386_p2              |      icmp|   0|  0|  39|          32|           1|
+    |icmp_ln182_fu_411_p2              |      icmp|   0|  0|  14|           7|           1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 195|         149|          73|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------------------+----+-----------+-----+-----------+
+    |                        Name                        | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                                           |  65|         13|    1|         13|
+    |hash_table_accumulator_accumulated_values_address0  |  14|          3|   16|         48|
+    |hash_table_accumulator_accumulated_values_address1  |  14|          3|   16|         48|
+    |hash_table_accumulator_accumulated_values_ce0       |  14|          3|    1|          3|
+    |hash_table_accumulator_accumulated_values_ce1       |  14|          3|    1|          3|
+    |hash_table_accumulator_accumulated_values_d0        |  14|          3|   64|        192|
+    |hash_table_accumulator_accumulated_values_we0       |  14|          3|    1|          3|
+    |hash_table_accumulator_accumulated_values_we1       |   9|          2|    1|          2|
+    |hash_table_accumulator_counter_address0_local       |  25|          5|    9|         45|
+    |hash_table_accumulator_counter_d0_local             |  14|          3|   32|         96|
+    |hash_table_lut_index_address0_local                 |  14|          3|    9|         27|
+    |i_fu_118                                            |   9|          2|   10|         20|
+    |msg_lut_address0_local                              |  14|          3|    9|         27|
+    |num_decoded_signals_o                               |   9|          2|   32|         64|
+    |signal_def_mem_address0                             |  14|          3|    9|         27|
+    |signal_def_mem_ce0                                  |  14|          3|    1|          3|
+    |signal_def_mem_ce1                                  |   9|          2|    1|          2|
+    +----------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                               | 280|         59|  213|        623|
+    +----------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------------------+----+----+-----+-----------+
+    |                                 Name                                 | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------------------------------+----+----+-----+-----------+
+    |add_ln172_reg_500                                                     |  10|   0|   10|          0|
+    |add_ln184_reg_515                                                     |  14|   0|   16|          2|
+    |ap_CS_fsm                                                             |  12|   0|   12|          0|
+    |empty_reg_549                                                         |   7|   0|    7|          0|
+    |grp_decode_can_message_Pipeline_VITIS_LOOP_117_2_fu_216_ap_start_reg  |   1|   0|    1|          0|
+    |grp_decode_can_message_Pipeline_VITIS_LOOP_182_4_fu_229_ap_start_reg  |   1|   0|    1|          0|
+    |grp_decode_can_message_Pipeline_VITIS_LOOP_84_1_fu_205_ap_start_reg   |   1|   0|    1|          0|
+    |hash_index_reg_450                                                    |   9|   0|    9|          0|
+    |hash_table_accumulator_counter_addr_1_reg_510                         |   9|   0|    9|          0|
+    |hash_table_accumulator_counter_addr_reg_472                           |   9|   0|    9|          0|
+    |hash_table_accumulator_counter_load_1_reg_520                         |  32|   0|   32|          0|
+    |i_fu_118                                                              |  10|   0|   10|          0|
+    |icmp_ln174_reg_525                                                    |   1|   0|    1|          0|
+    |icmp_ln84_loc_fu_106                                                  |   1|   0|    1|          0|
+    |icmp_ln84_loc_load_reg_463                                            |   1|   0|    1|          0|
+    |message_data_reg_455                                                  |  64|   0|   64|          0|
+    |message_id_reg_445                                                    |  29|   0|   29|          0|
+    |mul_ln164_loc_fu_110                                                  |  16|   0|   16|          0|
+    |num_decoded_signals_read_reg_544                                      |  32|   0|   32|          0|
+    |reg_255                                                               |   7|   0|    7|          0|
+    |trunc_ln117_reg_489                                                   |   9|   0|    9|          0|
+    |trunc_ln182_reg_539                                                   |   9|   0|    9|          0|
+    |zext_ln172_reg_505                                                    |  10|   0|   64|         54|
+    +----------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                 | 294|   0|  350|         56|
+    +----------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------------------------------+-----+-----+------------+-------------------------------------------+--------------+
+|                      RTL Ports                     | Dir | Bits|  Protocol  |               Source Object               |    C Type    |
++----------------------------------------------------+-----+-----+------------+-------------------------------------------+--------------+
+|s_axi_control_AWVALID                               |   in|    1|       s_axi|                                    control|       pointer|
+|s_axi_control_AWREADY                               |  out|    1|       s_axi|                                    control|       pointer|
+|s_axi_control_AWADDR                                |   in|    6|       s_axi|                                    control|       pointer|
+|s_axi_control_WVALID                                |   in|    1|       s_axi|                                    control|       pointer|
+|s_axi_control_WREADY                                |  out|    1|       s_axi|                                    control|       pointer|
+|s_axi_control_WDATA                                 |   in|   32|       s_axi|                                    control|       pointer|
+|s_axi_control_WSTRB                                 |   in|    4|       s_axi|                                    control|       pointer|
+|s_axi_control_ARVALID                               |   in|    1|       s_axi|                                    control|       pointer|
+|s_axi_control_ARREADY                               |  out|    1|       s_axi|                                    control|       pointer|
+|s_axi_control_ARADDR                                |   in|    6|       s_axi|                                    control|       pointer|
+|s_axi_control_RVALID                                |  out|    1|       s_axi|                                    control|       pointer|
+|s_axi_control_RREADY                                |   in|    1|       s_axi|                                    control|       pointer|
+|s_axi_control_RDATA                                 |  out|   32|       s_axi|                                    control|       pointer|
+|s_axi_control_RRESP                                 |  out|    2|       s_axi|                                    control|       pointer|
+|s_axi_control_BVALID                                |  out|    1|       s_axi|                                    control|       pointer|
+|s_axi_control_BREADY                                |   in|    1|       s_axi|                                    control|       pointer|
+|s_axi_control_BRESP                                 |  out|    2|       s_axi|                                    control|       pointer|
+|ap_clk                                              |   in|    1|  ap_ctrl_hs|                         decode_can_message|  return value|
+|ap_rst_n                                            |   in|    1|  ap_ctrl_hs|                         decode_can_message|  return value|
+|ap_start                                            |   in|    1|  ap_ctrl_hs|                         decode_can_message|  return value|
+|ap_done                                             |  out|    1|  ap_ctrl_hs|                         decode_can_message|  return value|
+|ap_idle                                             |  out|    1|  ap_ctrl_hs|                         decode_can_message|  return value|
+|ap_ready                                            |  out|    1|  ap_ctrl_hs|                         decode_can_message|  return value|
+|decoded_signals_address0                            |  out|    7|   ap_memory|                            decoded_signals|         array|
+|decoded_signals_ce0                                 |  out|    1|   ap_memory|                            decoded_signals|         array|
+|decoded_signals_we0                                 |  out|    1|   ap_memory|                            decoded_signals|         array|
+|decoded_signals_d0                                  |  out|   43|   ap_memory|                            decoded_signals|         array|
+|hash_table_message_id_address0                      |  out|    9|   ap_memory|                      hash_table_message_id|         array|
+|hash_table_message_id_ce0                           |  out|    1|   ap_memory|                      hash_table_message_id|         array|
+|hash_table_message_id_q0                            |   in|   29|   ap_memory|                      hash_table_message_id|         array|
+|hash_table_lut_index_address0                       |  out|    9|   ap_memory|                       hash_table_lut_index|         array|
+|hash_table_lut_index_ce0                            |  out|    1|   ap_memory|                       hash_table_lut_index|         array|
+|hash_table_lut_index_q0                             |   in|   32|   ap_memory|                       hash_table_lut_index|         array|
+|hash_table_accumulator_accumulated_values_address0  |  out|   16|   ap_memory|  hash_table_accumulator_accumulated_values|         array|
+|hash_table_accumulator_accumulated_values_ce0       |  out|    1|   ap_memory|  hash_table_accumulator_accumulated_values|         array|
+|hash_table_accumulator_accumulated_values_we0       |  out|    1|   ap_memory|  hash_table_accumulator_accumulated_values|         array|
+|hash_table_accumulator_accumulated_values_d0        |  out|   64|   ap_memory|  hash_table_accumulator_accumulated_values|         array|
+|hash_table_accumulator_accumulated_values_q0        |   in|   64|   ap_memory|  hash_table_accumulator_accumulated_values|         array|
+|hash_table_accumulator_accumulated_values_address1  |  out|   16|   ap_memory|  hash_table_accumulator_accumulated_values|         array|
+|hash_table_accumulator_accumulated_values_ce1       |  out|    1|   ap_memory|  hash_table_accumulator_accumulated_values|         array|
+|hash_table_accumulator_accumulated_values_we1       |  out|    1|   ap_memory|  hash_table_accumulator_accumulated_values|         array|
+|hash_table_accumulator_accumulated_values_d1        |  out|   64|   ap_memory|  hash_table_accumulator_accumulated_values|         array|
+|hash_table_accumulator_accumulated_values_q1        |   in|   64|   ap_memory|  hash_table_accumulator_accumulated_values|         array|
+|hash_table_accumulator_counter_address0             |  out|    9|   ap_memory|             hash_table_accumulator_counter|         array|
+|hash_table_accumulator_counter_ce0                  |  out|    1|   ap_memory|             hash_table_accumulator_counter|         array|
+|hash_table_accumulator_counter_we0                  |  out|    1|   ap_memory|             hash_table_accumulator_counter|         array|
+|hash_table_accumulator_counter_d0                   |  out|   32|   ap_memory|             hash_table_accumulator_counter|         array|
+|hash_table_accumulator_counter_q0                   |   in|   32|   ap_memory|             hash_table_accumulator_counter|         array|
+|msg_lut_address0                                    |  out|    9|   ap_memory|                                    msg_lut|         array|
+|msg_lut_ce0                                         |  out|    1|   ap_memory|                                    msg_lut|         array|
+|msg_lut_q0                                          |   in|   56|   ap_memory|                                    msg_lut|         array|
+|signal_def_mem_address0                             |  out|    9|   ap_memory|                             signal_def_mem|         array|
+|signal_def_mem_ce0                                  |  out|    1|   ap_memory|                             signal_def_mem|         array|
+|signal_def_mem_q0                                   |   in|   80|   ap_memory|                             signal_def_mem|         array|
+|signal_def_mem_address1                             |  out|    9|   ap_memory|                             signal_def_mem|         array|
+|signal_def_mem_ce1                                  |  out|    1|   ap_memory|                             signal_def_mem|         array|
+|signal_def_mem_q1                                   |   in|   80|   ap_memory|                             signal_def_mem|         array|
++----------------------------------------------------+-----+-----+------------+-------------------------------------------+--------------+
+

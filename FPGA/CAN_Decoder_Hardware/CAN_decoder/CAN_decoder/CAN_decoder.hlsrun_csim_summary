@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "12/11/24 16:54:09",
- "timestampMillis": "3082228870",
+ "dateTimestamp": "12/17/24 11:51:02",
+ "timestampMillis": "3582441901",
  "buildStep": {
-  "cmdId": "1bf86302-f910-4305-ad69-97fb98740fd6",
+  "cmdId": "f68bad3e-ae19-4cd2-8bf7-42939c820f2f",
   "name": "vitis-run",
   "logFile": "C:/Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\CAN_decoder\\logs\\CAN_decoder.steps.log",
   "commandLine": "C:/Xilinx/2024.1/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\hls_config.cfg --work_dir CAN_decoder ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "12/11/24 16:54:09",
- "timestampMillis": "3082228870",
+ "dateTimestamp": "12/17/24 11:51:02",
+ "timestampMillis": "3582441902",
  "status": {
-  "cmdId": "1bf86302-f910-4305-ad69-97fb98740fd6",
+  "cmdId": "f68bad3e-ae19-4cd2-8bf7-42939c820f2f",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "12/11/24 16:54:14",
- "timestampMillis": "3082234443",
+ "dateTimestamp": "12/17/24 11:51:07",
+ "timestampMillis": "3582447317",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -64,7 +64,8 @@
      "uuid": ""
     },
     "sources": [
-     "C:/Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp"
+     "C:/Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.cpp",
+     "C:/Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\can_message_decoder.hpp"
     ],
     "psSources": [],
     "cuNames": [],
@@ -80,10 +81,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "12/11/24 16:54:14",
- "timestampMillis": "3082234444",
+ "dateTimestamp": "12/17/24 11:51:07",
+ "timestampMillis": "3582447318",
  "buildStep": {
-  "cmdId": "854dc2b2-3263-42d7-a665-842ee2ba7ec4",
+  "cmdId": "47cff919-9976-46f1-8ed9-468c7c3fb3e7",
   "name": "csim_design",
   "logFile": "C:/Users\\flaud\\Documents\\GitHub\\LiveTelemetry\\FPGA\\CAN_Decoder_Hardware\\CAN_decoder\\CAN_decoder\\hls\\hls.log",
   "commandLine": "csim_design",
@@ -96,10 +97,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "12/11/24 16:54:14",
- "timestampMillis": "3082234445",
+ "dateTimestamp": "12/17/24 11:51:07",
+ "timestampMillis": "3582447319",
  "status": {
-  "cmdId": "854dc2b2-3263-42d7-a665-842ee2ba7ec4",
+  "cmdId": "47cff919-9976-46f1-8ed9-468c7c3fb3e7",
   "state": "CS_RUNNING"
  }
 }
@@ -107,30 +108,30 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "12/11/24 16:54:45",
- "timestampMillis": "3082264731",
+ "dateTimestamp": "12/17/24 11:51:28",
+ "timestampMillis": "3582468584",
  "status": {
-  "cmdId": "854dc2b2-3263-42d7-a665-842ee2ba7ec4",
-  "state": "CS_FAILED"
+  "cmdId": "47cff919-9976-46f1-8ed9-468c7c3fb3e7",
+  "state": "CS_PASSED"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "12/11/24 16:54:45",
- "timestampMillis": "3082265044",
+ "dateTimestamp": "12/17/24 11:51:29",
+ "timestampMillis": "3582468882",
  "status": {
-  "cmdId": "1bf86302-f910-4305-ad69-97fb98740fd6",
-  "state": "CS_FAILED"
+  "cmdId": "f68bad3e-ae19-4cd2-8bf7-42939c820f2f",
+  "state": "CS_PASSED"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "12/11/24 16:54:45",
- "timestampMillis": "3082265045",
+ "dateTimestamp": "12/17/24 11:51:29",
+ "timestampMillis": "3582468882",
  "report": {
   "path": "",
   "name": "",
@@ -143,8 +144,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "12/11/24 16:54:45",
- "timestampMillis": "3082265045",
+ "dateTimestamp": "12/17/24 11:51:29",
+ "timestampMillis": "3582468883",
  "report": {
   "path": "",
   "name": "",

@@ -1,0 +1,5 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="can_message_decoder.cpp:84:22" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="can_message_decoder.cpp:84:22" LoopName="VITIS_LOOP_84_1" ParentFunc="decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint&lt;56&gt;*, ap_uint&lt;80&gt;*)"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="can_message_decoder.cpp:117:23" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="can_message_decoder.cpp:117:23" LoopName="VITIS_LOOP_117_2" ParentFunc="decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint&lt;56&gt;*, ap_uint&lt;80&gt;*)"/>
+</VitisHLS:BurstInfo>
+

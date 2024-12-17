@@ -2,26 +2,43 @@
 == Design Size Report
 ================================================================
 
-* C-Synthesis has not completed!
-
 * Total Instructions per Compilation Phase
-+---------------+--------------+----------------------------------------------------------------------------------+
-| Phase         | Instructions | Description                                                                      |
-+---------------+--------------+----------------------------------------------------------------------------------+
-| Compile/Link  | 2,323        | After all functions are compiled and linked into a single design                 |
-| Unroll/Inline | pending      | After user unroll and inline pragmas are applied                                 |
-| Array/Struct  |              | After user array partition and struct aggregate/disaggregate pragmas are applied |
-| Performance   |              | After transformations are applied to meet performance pragma targets             |
-| HW Transforms |              | After hardware transfomations                                                    |
-+---------------+--------------+----------------------------------------------------------------------------------+
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 3,081        | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 8,847        | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 7,860        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 7,660        | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 6,704        | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 6,706        | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 6,706        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 6,856        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 6,988        | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 6,992        | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 6,712        | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 6,709        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 6,708        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 6,708        | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 6,719        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 6,732        | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
 
 * Instructions per Function for each Compilation Phase
-+----------------------+-----------------------------+--------------+
-| Function             | Location                    | Compile/Link |
-+----------------------+-----------------------------+--------------+
-| + decode_can_message | can_message_decoder.cpp:113 | 2,323        |
-|    compute_hash      | can_message_decoder.cpp:64  |  165         |
-+----------------------+-----------------------------+--------------+
++----------------------+----------------------------+--------------+---------------+--------------+-------------+---------------+
+| Function             | Location                   | Compile/Link | Unroll/Inline | Array/Struct | Performance | HW Transforms |
++----------------------+----------------------------+--------------+---------------+--------------+-------------+---------------+
+| + decode_can_message | can_message_decoder.cpp:61 | 3,081        | 6,704         | 6,992        | 6,708       | 6,732         |
+|    compute_hash      | can_message_decoder.cpp:12 |  165         |               |              |             |               |
++----------------------+----------------------------+--------------+---------------+--------------+-------------+---------------+
 
 * Design Size Message Settings
 +---------------------------------------------+--------+------------------------------------------------------------------+

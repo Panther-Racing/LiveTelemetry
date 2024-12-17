@@ -1,22 +1,214 @@
---- !HLSUnsupported
-Pass:            reflow-entirety-access-check
-Name:            NonEntiretyAccessOnArrayToStream
-DebugLoc:        { File: can_message_decoder.cpp, Line: 195, Column: 63 }
-Function:        _Z18decode_can_message13can_message_tP16decoded_signal_tPi
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        apatb_decode_can_message_ir
 Args:            
-  - String:          'in function '''
-  - Function:        'decode_can_message(can_message_t, decoded_signal_t*, int*)'
-    DebugLoc:        { File: can_message_decoder.cpp, Line: 113, Column: 0 }
-  - String:          ''': '
-  - String:          'Failed to implement stream interface on variable '''
-  - Name:            decoded_signals
-  - String:          '''. Each array element of '''
-  - Name:            decoded_signals
-  - String:          ''' must: (a) be accessed only once, (b) read or write the whole array element in one operation and (c) be accessed in sequential order.'
+  - String:          'Disaggregating variable '''
+  - Name:            hash_table
+  - String:          ''''
 ...
---- !HLSReportFatalError
-Pass:            reflow-entirety-access-check
-Name:            HLSFatalError
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        apatb_decode_can_message_ir
 Args:            
-  - Msg:             Fail to Synthesize.
+  - String:          'Disaggregating variable '''
+  - Name:            hash_table_accumulator
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaPartiallyUnroll
+DebugLoc:        { File: can_message_decoder.cpp, Line: 63, Column: 0 }
+Function:        _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_117_2
+  - String:          ''' ('
+  - LoopLoc:         'can_message_decoder.cpp:117:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          decode_can_message
+  - String:          ''' partially '
+  - String:          ''
+  - String:          'with a factor of '
+  - Factor:          '68'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: can_message_decoder.cpp, Line: 63, Column: 0 }
+Function:        _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'compute_hash(ap_uint<29>)'
+    DebugLoc:        { File: can_message_decoder.cpp, Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint<56>*, ap_uint<80>*)'
+    DebugLoc:        { File: can_message_decoder.cpp, Line: 63, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: can_message_decoder.cpp, Line: 63, Column: 0 }
+Function:        _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'ap_int<32>::ap_int(double)'
+    DebugLoc:        { File: 'C:/Xilinx/2024.1/Vitis_HLS/2024.1/common/technology/autopilot\ap_int.h', 
+                       Line: 140, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint<56>*, ap_uint<80>*)'
+    DebugLoc:        { File: can_message_decoder.cpp, Line: 63, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+Function:        apatb_decode_can_message_ir
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        bram
+  - String:          ' variable '''
+  - Name:            hash_table_accumulator_accumulated_values
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '64'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: can_message_decoder.cpp, Line: 63, Column: 0 }
+Function:        _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        bram
+  - String:          ' variable '''
+  - Name:            decoded_signals
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '43'
+  - String:          '-bits'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: can_message_decoder.cpp, Line: 84, Column: 22 }
+Function:        _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_84_1
+  - String:          ' '
+  - LoopLoc:         'can_message_decoder.cpp:84:22'
+  - String:          ' '
+  - Function:        'decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint<56>*, ap_uint<80>*)'
+    DebugLoc:        { File: can_message_decoder.cpp, Line: 63, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: can_message_decoder.cpp, Line: 117, Column: 23 }
+Function:        _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_117_2
+  - String:          ' '
+  - LoopLoc:         'can_message_decoder.cpp:117:23'
+  - String:          ' '
+  - Function:        'decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint<56>*, ap_uint<80>*)'
+    DebugLoc:        { File: can_message_decoder.cpp, Line: 63, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: can_message_decoder.cpp, Line: 84, Column: 22 }
+Function:        _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_84_1
+  - String:          '''('
+  - LoopLoc:         'can_message_decoder.cpp:84:22'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_84_1
+  - String:          '> at '
+  - LoopLoc:         'can_message_decoder.cpp:84:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_117_2
+  - String:          '> at '
+  - LoopLoc:         'can_message_decoder.cpp:117:23'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_182_4
+  - String:          '> at '
+  - LoopLoc:         'can_message_decoder.cpp:182:35'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            FlattenOffInference
+DebugLoc:        { File: can_message_decoder.cpp, Line: 172, Column: 27 }
+Function:        _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE
+Args:            
+  - String:          'Automatically disabling loop flattening for loop '''
+  - LoopName:        VITIS_LOOP_172_3
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-loop-flatten-cost-model
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: can_message_decoder.cpp, Line: 172, Column: 27 }
+Function:        _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE
+Args:            
+  - PragmaType:      loop_flatten
+  - String:          ' '
+  - PragmaOptions:   off
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  decode_can_message
+  - String:          ' '
+  - PragmaSrcLoc:    'can_message_decoder.cpp:172:27'
+    DebugLoc:        { File: can_message_decoder.cpp, Line: 172, Column: 27 }
+  - LoopName:        VITIS_LOOP_172_3
+  - String:          ' '
+  - LoopLoc:         'can_message_decoder.cpp:172:27'
+    DebugLoc:        { File: can_message_decoder.cpp, Line: 172, Column: 27 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-interface-encoding-change
+Name:            InterfaceForGlobalVariable
+DebugLoc:        { File: can_message_decoder.cpp, Line: 66, Column: 9 }
+Function:        _Z18decode_can_message13can_message_tP16decoded_signal_tPiP9HashEntryP7ap_uintILi56EEPS5_ILi80EE
+Args:            
+  - String:          'Cannot apply INTERFACE pragma on a global variable. '
+  - String:          'In function '''
+  - Function:        'decode_can_message(can_message_t, decoded_signal_t*, int*, HashEntry*, ap_uint<56>*, ap_uint<80>*)'
+    DebugLoc:        { File: can_message_decoder.cpp, Line: 63, Column: 0 }
+  - String:          ''''
 ...
