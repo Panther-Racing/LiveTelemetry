@@ -154,6 +154,13 @@ for index, entry in enumerate(lut_entries):
     message_id = entry['message_id']
     num_signals = entry['num_signals']
 
+    # Message Definition Format (total of 52 bits):
+    """
+    Bits 51 - 23: Message ID (29 bits)
+    Bits 22 - 16: Number of Signals (7 bits)
+    Bits 15 - 0: Signal Definition Pointer (16 bits)
+    """
+
     # Write to msg_lut.coe
     # Total of 52 bits - pad with leading 0s to make it 56 bits (7 bytes)
     """
