@@ -1,0 +1,117 @@
+Change Component Footprint: Designator=D4 Old Footprint=WL-SMCW_0805_150080xx75000 New Footprint=WL-SMCW_0805_150080xx75000
+Change Component Footprint: Designator=D5 Old Footprint=WL-SMCW_0805_150080xx75000 New Footprint=WL-SMCW_0805_150080xx75000
+Change Component Footprint: Designator=D6 Old Footprint=WL-SMCW_0805_150080xx75000 New Footprint=WL-SMCW_0805_150080xx75000
+Change Component Footprint: Designator=D7 Old Footprint=WL-SMCW_0805_150080xx75000 New Footprint=WL-SMCW_0805_150080xx75000
+Add Component: Footprint Not Found CAPC2012X135N
+Add Component: Footprint Not Found CAPC2012X135N
+Add Component: Footprint Not Found CAPC2012X88N
+Add Component: Footprint Not Found CAPC2012X135N
+Add Component: Footprint Not Found CAPC2012X95N
+Add Component: Footprint Not Found CAPC3216X160N
+Add Component: Footprint Not Found CAPC2012X135N
+Add Component: Footprint Not Found SMT-JUMPER_2_NO_SILK
+Add Component: Footprint Not Found SMT-JUMPER_2_NO_SILK
+Add Component: Footprint Not Found SMT-JUMPER_2_NO_SILK
+Add Component: Footprint Not Found SAMTEC_TSW-104-07-F-S
+Add Component: Footprint Not Found SOT95P230X110-3N
+Add Component: Footprint Not Found SODFL3619X98N
+Add Component: Footprint Not Found 7499711421
+Add Component: Footprint Not Found QFP50P900X900X160-48N
+Add Pin To Net: Unknown Pin: Pin C1-1
+Add Pin To Net: Unknown Pin: Pin C1-2
+Add Pin To Net: Unknown Pin: Pin C2-1
+Add Pin To Net: Unknown Pin: Pin C2-2
+Add Pin To Net: Unknown Pin: Pin C3-1
+Add Pin To Net: Unknown Pin: Pin C3-2
+Add Pin To Net: Unknown Pin: Pin C5-1
+Add Pin To Net: Unknown Pin: Pin C5-2
+Add Pin To Net: Unknown Pin: Pin C11-1
+Add Pin To Net: Unknown Pin: Pin C11-2
+Add Pin To Net: Unknown Pin: Pin C12-1
+Add Pin To Net: Unknown Pin: Pin C12-2
+Add Pin To Net: Unknown Pin: Pin C13-1
+Add Pin To Net: Unknown Pin: Pin C13-2
+Add Pin To Net: Unknown Pin: Pin CAN_CS1-1
+Add Pin To Net: Unknown Pin: Pin CAN_CS1-2
+Add Pin To Net: Unknown Pin: Pin CAN_INT1-1
+Add Pin To Net: Unknown Pin: Pin CAN_INT1-2
+Add Pin To Net: Unknown Pin: Pin CAN_TR1-1
+Add Pin To Net: Unknown Pin: Pin CAN_TR1-2
+Add Pin To Net: Unknown Pin: Pin CAN Con.1-01
+Add Pin To Net: Unknown Pin: Pin CAN Con.1-02
+Add Pin To Net: Unknown Pin: Pin CAN Con.1-03
+Add Pin To Net: Unknown Pin: Pin CAN Con.1-04
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Add Pin To Net: Unknown Pin: Pin D1-3
+Add Pin To Net: Unknown Pin: Pin D3-1
+Add Pin To Net: Unknown Pin: Pin D3-2
+Add Pin To Net: Unknown Pin: Pin ICSP1-1
+Add Pin To Net: Unknown Pin: Pin ICSP1-2
+Add Pin To Net: Unknown Pin: Pin ICSP1-3
+Add Pin To Net: Unknown Pin: Pin ICSP1-4
+Add Pin To Net: Unknown Pin: Pin ICSP1-5
+Add Pin To Net: Unknown Pin: Pin ICSP1-6
+Add Pin To Net: Unknown Pin: Pin RJ1-1
+Add Pin To Net: Unknown Pin: Pin RJ1-2
+Add Pin To Net: Unknown Pin: Pin RJ1-3
+Add Pin To Net: Unknown Pin: Pin RJ1-7
+Add Pin To Net: Unknown Pin: Pin RJ1-8
+Add Pin To Net: Unknown Pin: Pin RJ1-9
+Add Pin To Net: Unknown Pin: Pin RJ1-17
+Add Pin To Net: Unknown Pin: Pin RJ1-18
+Add Pin To Net: Unknown Pin: Pin RJ1-19
+Add Pin To Net: Unknown Pin: Pin RJ1-20
+Add Pin To Net: Unknown Pin: Pin RJ1-MH3
+Add Pin To Net: Unknown Pin: Pin RJ1-MH4
+Add Pin To Net: Unknown Pin: Pin W1-1
+Add Pin To Net: Unknown Pin: Pin W1-2
+Add Pin To Net: Unknown Pin: Pin W1-3
+Add Pin To Net: Unknown Pin: Pin W1-4
+Add Pin To Net: Unknown Pin: Pin W1-5
+Add Pin To Net: Unknown Pin: Pin W1-6
+Add Pin To Net: Unknown Pin: Pin W1-8
+Add Pin To Net: Unknown Pin: Pin W1-9
+Add Pin To Net: Unknown Pin: Pin W1-10
+Add Pin To Net: Unknown Pin: Pin W1-11
+Add Pin To Net: Unknown Pin: Pin W1-14
+Add Pin To Net: Unknown Pin: Pin W1-15
+Add Pin To Net: Unknown Pin: Pin W1-16
+Add Pin To Net: Unknown Pin: Pin W1-17
+Add Pin To Net: Unknown Pin: Pin W1-19
+Add Pin To Net: Unknown Pin: Pin W1-20
+Add Pin To Net: Unknown Pin: Pin W1-21
+Add Pin To Net: Unknown Pin: Pin W1-22
+Add Pin To Net: Unknown Pin: Pin W1-24
+Add Pin To Net: Unknown Pin: Pin W1-25
+Add Pin To Net: Unknown Pin: Pin W1-26
+Add Pin To Net: Unknown Pin: Pin W1-27
+Add Pin To Net: Unknown Pin: Pin W1-28
+Add Pin To Net: Unknown Pin: Pin W1-29
+Add Pin To Net: Unknown Pin: Pin W1-30
+Add Pin To Net: Unknown Pin: Pin W1-31
+Add Pin To Net: Unknown Pin: Pin W1-32
+Add Pin To Net: Unknown Pin: Pin W1-33
+Add Pin To Net: Unknown Pin: Pin W1-34
+Add Pin To Net: Unknown Pin: Pin W1-35
+Add Pin To Net: Unknown Pin: Pin W1-36
+Add Pin To Net: Unknown Pin: Pin W1-37
+Add Pin To Net: Unknown Pin: Pin W1-43
+Add Pin To Net: Unknown Pin: Pin W1-44
+Add Pin To Net: Unknown Pin: Pin W1-45
+Add Pin To Net: Unknown Pin: Pin W1-48
+Add Class Member: Failed to add class member : Component C1 0.1uF
+Add Class Member: Failed to add class member : Component C2 0.1uF
+Add Class Member: Failed to add class member : Component C3 10nF
+Add Class Member: Failed to add class member : Component C5 0.1uF
+Add Class Member: Failed to add class member : Component C11 0.33uF
+Add Class Member: Failed to add class member : Component C12 47uF
+Add Class Member: Failed to add class member : Component C13 .1uF
+Add Class Member: Failed to add class member : Component CAN_CS1
+Add Class Member: Failed to add class member : Component CAN_INT1
+Add Class Member: Failed to add class member : Component CAN_TR1
+Add Class Member: Failed to add class member : Component CAN Con.1 TSW-104-07-F-S
+Add Class Member: Failed to add class member : Component D1 PESD1CAN,215
+Add Class Member: Failed to add class member : Component D3 SMF4L14AT1G
+Add Class Member: Failed to add class member : Component RJ1 7499711421
+Add Class Member: Failed to add class member : Component W1 W5500

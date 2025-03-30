@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Li.Tel VTM V1 Rev2.PrjPcb]
+   Generated File[Li.Tel VTM V1 Rev2 PCB.TXT]
+   Generated File[Li.Tel VTM V1 Rev2 PCB.LDP]
+   Generated File[Li.Tel VTM V1 Rev2 PCB.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 11:13:12 PM On 2/8/2025

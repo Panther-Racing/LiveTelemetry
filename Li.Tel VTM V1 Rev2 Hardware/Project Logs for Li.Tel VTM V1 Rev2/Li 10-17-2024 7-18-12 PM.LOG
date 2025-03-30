@@ -1,0 +1,91 @@
+Change Component Footprint: Designator=D4 Old Footprint=WL-SMCW_0805_150080xx75000 New Footprint=WL-SMCW_0805_150080xx75000
+Change Component Footprint: Designator=D5 Old Footprint=WL-SMCW_0805_150080xx75000 New Footprint=WL-SMCW_0805_150080xx75000
+Change Component Footprint: Designator=D6 Old Footprint=WL-SMCW_0805_150080xx75000 New Footprint=WL-SMCW_0805_150080xx75000
+Change Component Footprint: Designator=D7 Old Footprint=WL-SMCW_0805_150080xx75000 New Footprint=WL-SMCW_0805_150080xx75000
+Add Component: Footprint Not Found CAPC2012X135N
+Add Component: Footprint Not Found CAPC2012X135N
+Add Component: Footprint Not Found CAPC2012X88N
+Add Component: Footprint Not Found CAPC2012X135N
+Add Component: Footprint Not Found CAPC2012X95N
+Add Component: Footprint Not Found CAPC3216X160N
+Add Component: Footprint Not Found CAPC2012X135N
+Added Component: Designator=CAN_CS1(SMT-JUMPER_2_NO_SILK)
+Add component (AddParameter): Name = "DeviceName"; Value = "_SILK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DeviceSetName"; Value = "JUMPER-SMT_2_NO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "GateName_1"; Value = "G$1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LibraryName"; Value = "SparkFun-Jumpers"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMT-JUMPER_2_NO_SILK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SymbolName_1"; Value = "SMT-JUMPER_2_NO"; VariantName = "[No Variations]"
+Added Component: Designator=CAN_INT1(SMT-JUMPER_2_NO_SILK)
+Add component (AddParameter): Name = "DeviceName"; Value = "_SILK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DeviceSetName"; Value = "JUMPER-SMT_2_NO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "GateName_1"; Value = "G$1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LibraryName"; Value = "SparkFun-Jumpers"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMT-JUMPER_2_NO_SILK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SymbolName_1"; Value = "SMT-JUMPER_2_NO"; VariantName = "[No Variations]"
+Added Component: Designator=CAN_TR1(SMT-JUMPER_2_NO_SILK)
+Add component (AddParameter): Name = "DeviceName"; Value = "_SILK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DeviceSetName"; Value = "JUMPER-SMT_2_NO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "GateName_1"; Value = "G$1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LibraryName"; Value = "SparkFun-Jumpers"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMT-JUMPER_2_NO_SILK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SymbolName_1"; Value = "SMT-JUMPER_2_NO"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found SOT95P230X110-3N
+Add Component: Footprint Not Found SODFL3619X98N
+Add Component: Footprint Not Found 7499711421
+Add Pin To Net: Unknown Pin: Pin C1-1
+Add Pin To Net: Unknown Pin: Pin C1-2
+Add Pin To Net: Unknown Pin: Pin C2-1
+Add Pin To Net: Unknown Pin: Pin C2-2
+Add Pin To Net: Unknown Pin: Pin C3-1
+Add Pin To Net: Unknown Pin: Pin C3-2
+Add Pin To Net: Unknown Pin: Pin C5-1
+Add Pin To Net: Unknown Pin: Pin C5-2
+Add Pin To Net: Unknown Pin: Pin C11-1
+Add Pin To Net: Unknown Pin: Pin C11-2
+Add Pin To Net: Unknown Pin: Pin C12-1
+Add Pin To Net: Unknown Pin: Pin C12-2
+Add Pin To Net: Unknown Pin: Pin C13-1
+Add Pin To Net: Unknown Pin: Pin C13-2
+Added Pin To Net: NetName=CS Pin=CAN_CS1-1
+Added Pin To Net: NetName=CAN_CS Pin=CAN_CS1-2
+Added Pin To Net: NetName=D2 Pin=CAN_INT1-1
+Added Pin To Net: NetName=CAN_INT Pin=CAN_INT1-2
+Added Pin To Net: NetName=CAN_P Pin=CAN_TR1-1
+Added Pin To Net: NetName=NetCAN_TR1_2 Pin=CAN_TR1-2
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Add Pin To Net: Unknown Pin: Pin D1-3
+Add Pin To Net: Unknown Pin: Pin D3-1
+Add Pin To Net: Unknown Pin: Pin D3-2
+Add Pin To Net: Unknown Pin: Pin ICSP1-1
+Add Pin To Net: Unknown Pin: Pin ICSP1-2
+Add Pin To Net: Unknown Pin: Pin ICSP1-3
+Add Pin To Net: Unknown Pin: Pin ICSP1-4
+Add Pin To Net: Unknown Pin: Pin ICSP1-5
+Add Pin To Net: Unknown Pin: Pin ICSP1-6
+Add Pin To Net: Unknown Pin: Pin RJ1-1
+Add Pin To Net: Unknown Pin: Pin RJ1-2
+Add Pin To Net: Unknown Pin: Pin RJ1-3
+Add Pin To Net: Unknown Pin: Pin RJ1-7
+Add Pin To Net: Unknown Pin: Pin RJ1-8
+Add Pin To Net: Unknown Pin: Pin RJ1-9
+Add Pin To Net: Unknown Pin: Pin RJ1-17
+Add Pin To Net: Unknown Pin: Pin RJ1-18
+Add Pin To Net: Unknown Pin: Pin RJ1-19
+Add Pin To Net: Unknown Pin: Pin RJ1-20
+Add Pin To Net: Unknown Pin: Pin RJ1-MH3
+Add Pin To Net: Unknown Pin: Pin RJ1-MH4
+Add Class Member: Failed to add class member : Component C1 0.1uF
+Add Class Member: Failed to add class member : Component C2 0.1uF
+Add Class Member: Failed to add class member : Component C3 10nF
+Add Class Member: Failed to add class member : Component C5 0.1uF
+Add Class Member: Failed to add class member : Component C11 0.33uF
+Add Class Member: Failed to add class member : Component C12 47uF
+Add Class Member: Failed to add class member : Component C13 .1uF
+Added Member To Class: ClassName=Microprocessor and CAN Member=Component CAN_CS1
+Added Member To Class: ClassName=Microprocessor and CAN Member=Component CAN_INT1
+Added Member To Class: ClassName=Power Schematic Member=Component CAN_TR1
+Add Class Member: Failed to add class member : Component D1 PESD1CAN,215
+Add Class Member: Failed to add class member : Component D3 SMF4L14AT1G
+Add Class Member: Failed to add class member : Component RJ1 7499711421

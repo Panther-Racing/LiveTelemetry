@@ -1,0 +1,10 @@
+Board Information Report
+Filename     : C:\Users\agkau\Documents\li.tel-VTM\Hardware\Li.Tel VTM V1 Rev2\Li.Tel VTM V1 Rev2 PCB.PcbDoc
+Date         : 2/4/2025
+Time         : 6:42:00 PM
+Time Elapsed : 00:00:00
+
+General
+    Board Size, 51.0392mmx105.1447mm
+    Components on board, 96
+count : 2

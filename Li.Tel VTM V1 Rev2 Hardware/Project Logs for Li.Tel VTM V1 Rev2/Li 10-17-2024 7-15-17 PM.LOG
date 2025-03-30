@@ -1,0 +1,134 @@
+Change Component Footprint: Designator=D4 Old Footprint=WL-SMCW_0805_150080xx75000 New Footprint=WL-SMCW_0805_150080xx75000
+Change Component Footprint: Designator=D5 Old Footprint=WL-SMCW_0805_150080xx75000 New Footprint=WL-SMCW_0805_150080xx75000
+Change Component Footprint: Designator=D6 Old Footprint=WL-SMCW_0805_150080xx75000 New Footprint=WL-SMCW_0805_150080xx75000
+Change Component Footprint: Designator=D7 Old Footprint=WL-SMCW_0805_150080xx75000 New Footprint=WL-SMCW_0805_150080xx75000
+Add Component: Footprint Not Found CAPC2012X135N
+Add Component: Footprint Not Found CAPC2012X135N
+Add Component: Footprint Not Found CAPC2012X88N
+Add Component: Footprint Not Found CAPC2012X135N
+Add Component: Footprint Not Found CAPC2012X95N
+Add Component: Footprint Not Found CAPC3216X160N
+Add Component: Footprint Not Found CAPC2012X135N
+Add Component: Footprint Not Found SMT-JUMPER_2_NO_SILK
+Add Component: Footprint Not Found SMT-JUMPER_2_NO_SILK
+Add Component: Footprint Not Found SMT-JUMPER_2_NO_SILK
+Added Component: Designator=CAN Con.1(SAMTEC_TSW-104-07-F-S)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samtec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "TSW-104-07-F-S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "MTSW-104-07-F-S-170-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found SOT95P230X110-3N
+Add Component: Footprint Not Found SODFL3619X98N
+Add Component: Footprint Not Found 7499711421
+Added Component: Designator=W1(QFP50P900X900X160-48N)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/W5500/WIZnet/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "WIZnet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "W5500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/W5500/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/W5500/WIZnet/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin C1-1
+Add Pin To Net: Unknown Pin: Pin C1-2
+Add Pin To Net: Unknown Pin: Pin C2-1
+Add Pin To Net: Unknown Pin: Pin C2-2
+Add Pin To Net: Unknown Pin: Pin C3-1
+Add Pin To Net: Unknown Pin: Pin C3-2
+Add Pin To Net: Unknown Pin: Pin C5-1
+Add Pin To Net: Unknown Pin: Pin C5-2
+Add Pin To Net: Unknown Pin: Pin C11-1
+Add Pin To Net: Unknown Pin: Pin C11-2
+Add Pin To Net: Unknown Pin: Pin C12-1
+Add Pin To Net: Unknown Pin: Pin C12-2
+Add Pin To Net: Unknown Pin: Pin C13-1
+Add Pin To Net: Unknown Pin: Pin C13-2
+Add Pin To Net: Unknown Pin: Pin CAN_CS1-1
+Add Pin To Net: Unknown Pin: Pin CAN_CS1-2
+Add Pin To Net: Unknown Pin: Pin CAN_INT1-1
+Add Pin To Net: Unknown Pin: Pin CAN_INT1-2
+Add Pin To Net: Unknown Pin: Pin CAN_TR1-1
+Add Pin To Net: Unknown Pin: Pin CAN_TR1-2
+Added Pin To Net: NetName=GND Pin=CAN Con.1-01
+Added Pin To Net: NetName=CAN_N Pin=CAN Con.1-02
+Added Pin To Net: NetName=CAN_P Pin=CAN Con.1-03
+Added Pin To Net: NetName=PWR IN Pin=CAN Con.1-04
+Add Pin To Net: Unknown Pin: Pin D1-1
+Add Pin To Net: Unknown Pin: Pin D1-2
+Add Pin To Net: Unknown Pin: Pin D1-3
+Add Pin To Net: Unknown Pin: Pin D3-1
+Add Pin To Net: Unknown Pin: Pin D3-2
+Add Pin To Net: Unknown Pin: Pin ICSP1-1
+Add Pin To Net: Unknown Pin: Pin ICSP1-2
+Add Pin To Net: Unknown Pin: Pin ICSP1-3
+Add Pin To Net: Unknown Pin: Pin ICSP1-4
+Add Pin To Net: Unknown Pin: Pin ICSP1-5
+Add Pin To Net: Unknown Pin: Pin ICSP1-6
+Add Pin To Net: Unknown Pin: Pin RJ1-1
+Add Pin To Net: Unknown Pin: Pin RJ1-2
+Add Pin To Net: Unknown Pin: Pin RJ1-3
+Add Pin To Net: Unknown Pin: Pin RJ1-7
+Add Pin To Net: Unknown Pin: Pin RJ1-8
+Add Pin To Net: Unknown Pin: Pin RJ1-9
+Add Pin To Net: Unknown Pin: Pin RJ1-17
+Add Pin To Net: Unknown Pin: Pin RJ1-18
+Add Pin To Net: Unknown Pin: Pin RJ1-19
+Add Pin To Net: Unknown Pin: Pin RJ1-20
+Add Pin To Net: Unknown Pin: Pin RJ1-MH3
+Add Pin To Net: Unknown Pin: Pin RJ1-MH4
+Added Pin To Net: NetName=NetR12_1 Pin=W1-1
+Added Pin To Net: NetName=NetR13_1 Pin=W1-2
+Added Pin To Net: NetName=GND Pin=W1-3
+Added Pin To Net: NetName=3V3_FILTERED Pin=W1-4
+Added Pin To Net: NetName=NetR15_1 Pin=W1-5
+Added Pin To Net: NetName=NetR16_1 Pin=W1-6
+Added Pin To Net: NetName=3V3_FILTERED Pin=W1-8
+Added Pin To Net: NetName=GND Pin=W1-9
+Added Pin To Net: NetName=NetR19_2 Pin=W1-10
+Added Pin To Net: NetName=3V3_FILTERED Pin=W1-11
+Added Pin To Net: NetName=GND Pin=W1-14
+Added Pin To Net: NetName=3V3_FILTERED Pin=W1-15
+Added Pin To Net: NetName=GND Pin=W1-16
+Added Pin To Net: NetName=3V3_FILTERED Pin=W1-17
+Added Pin To Net: NetName=GND Pin=W1-19
+Added Pin To Net: NetName=NetC19_1 Pin=W1-20
+Added Pin To Net: NetName=3V3_FILTERED Pin=W1-21
+Added Pin To Net: NetName=NetC21_1 Pin=W1-22
+Added Pin To Net: NetName=SPDLED Pin=W1-24
+Added Pin To Net: NetName=LINKn Pin=W1-25
+Added Pin To Net: NetName=DUPn Pin=W1-26
+Added Pin To Net: NetName=ACTn Pin=W1-27
+Added Pin To Net: NetName=3V3_FILTERED Pin=W1-28
+Added Pin To Net: NetName=GND Pin=W1-29
+Added Pin To Net: NetName=NetC16_2 Pin=W1-30
+Added Pin To Net: NetName=NetR8_1 Pin=W1-31
+Added Pin To Net: NetName=CS Pin=W1-32
+Added Pin To Net: NetName=SCLK3 Pin=W1-33
+Added Pin To Net: NetName=MISO3 Pin=W1-34
+Added Pin To Net: NetName=MOSI3 Pin=W1-35
+Added Pin To Net: NetName=INTn Pin=W1-36
+Added Pin To Net: NetName=NetR5_1 Pin=W1-37
+Added Pin To Net: NetName=3V3_FILTERED Pin=W1-43
+Added Pin To Net: NetName=3V3_FILTERED Pin=W1-44
+Added Pin To Net: NetName=3V3_FILTERED Pin=W1-45
+Added Pin To Net: NetName=GND Pin=W1-48
+Add Class Member: Failed to add class member : Component C1 0.1uF
+Add Class Member: Failed to add class member : Component C2 0.1uF
+Add Class Member: Failed to add class member : Component C3 10nF
+Add Class Member: Failed to add class member : Component C5 0.1uF
+Add Class Member: Failed to add class member : Component C11 0.33uF
+Add Class Member: Failed to add class member : Component C12 47uF
+Add Class Member: Failed to add class member : Component C13 .1uF
+Add Class Member: Failed to add class member : Component CAN_CS1
+Add Class Member: Failed to add class member : Component CAN_INT1
+Add Class Member: Failed to add class member : Component CAN_TR1
+Added Member To Class: ClassName=Power Schematic Member=Component CAN Con.1 TSW-104-07-F-S
+Add Class Member: Failed to add class member : Component D1 PESD1CAN,215
+Add Class Member: Failed to add class member : Component D3 SMF4L14AT1G
+Add Class Member: Failed to add class member : Component RJ1 7499711421
+Added Member To Class: ClassName=Ethernet Schematic Member=Component W1 W5500
